@@ -6,13 +6,17 @@
 </description>
     <link>http://vinyanalista.github.io/</link>
     <atom:link href="http://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 May 2015 13:44:01 -0300</pubDate>
-    <lastBuildDate>Wed, 27 May 2015 13:44:01 -0300</lastBuildDate>
+    <pubDate>Wed, 27 May 2015 17:49:42 -0300</pubDate>
+    <lastBuildDate>Wed, 27 May 2015 17:49:42 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Controlando o VLC a partir do navegador ou do celular</title>
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.videolan.org/vlc/&quot;&gt;VLC&lt;/a&gt; é o verdadeiro canivete suíço dos vídeos, é um player com vários recursos interessantes, dentre eles a possibilidade de controlar a reprodução remotamente, através do navegador ou do celular. A depender de como você o usa para reproduzir seus arquivos multimídia, isso pode ser interessante. Veja aqui como fazê-lo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_00.jpg&quot; alt=&quot;vlc_remoto_00&quot; /&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;Vou supor que você já possui o VLC instalado. Senão, pode baixá-lo &lt;a href=&quot;http://www.videolan.org/vlc/&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
 
@@ -148,6 +152,8 @@
 
 &lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/01/virtualbox.png&quot; alt=&quot;VirtualBox&quot; /&gt;&lt;/p&gt;
 
+&lt;!--more--&gt;
+
 &lt;p&gt;Primeiro, é necessário executar um utilitário na &lt;strong&gt;máquina virtual&lt;/strong&gt; (&lt;em&gt;guest&lt;/em&gt;), que vai transformar todo o espaço livre em &lt;em&gt;bits&lt;/em&gt; zero no disco rígido virtual. Se sua máquina virtual roda Linux, esse utilitário é o &lt;strong&gt;zerofree&lt;/strong&gt;, se roda Windows, há o &lt;strong&gt;SDelete&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;A &lt;a href=&quot;http://www.thelinuxdaily.com/2010/02/shrinking-a-dynamic-virtualbox-disk-image/&quot;&gt;página na qual descobri o zerofree&lt;/a&gt; recomenda reiniciar o Linux (da máquina virtual) no modo de recuperação (&lt;em&gt;safe mode&lt;/em&gt; ou &lt;em&gt;recovery mode&lt;/em&gt;) para executar o &lt;strong&gt;zerofree&lt;/strong&gt;. Pra simplificar a vida, eu prefiro inicializar a máquina virtual utilizando um LiveCD.&lt;/p&gt;
@@ -220,7 +226,11 @@
     
       <item>
         <title>Recuperando o boot do Windows ap&amp;oacute;s instala&amp;ccedil;&amp;atilde;o do Linux</title>
-        <description>&lt;p&gt;É, pessoal, sei que é uma situação um tanto inusitada, mas aconteceu comigo hoje, quando tentei instalar o &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;openSUSE&lt;/a&gt; 12.3 no meu computador, que até então só tinha o Windows 7. O problema mais comum é quando &lt;a href=&quot;http://www.vivaolinux.com.br/dica/Restaurando-o-GRUB-apos-a-instalacao-de-outro-sistema-operacional&quot;&gt;o Linux já está instalado e então instalamos o Windows&lt;/a&gt;, que a princípio impede que outros sistemas sejam inicializados, reservando o computador para si. Mas hoje comigo aconteceu isso: após instalar o openSUSE 12.3, o menu do &lt;a href=&quot;http://en.opensuse.org/GRUB&quot;&gt;GRUB2&lt;/a&gt; não oferecia a opção de inicializar o Windows. Venho aqui (tentar) descrever a solução.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2013/07/windows-startup-recovery1.jpg&quot; alt=&quot;windows-startup-recovery1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;É, pessoal, sei que é uma situação um tanto inusitada, mas aconteceu comigo hoje, quando tentei instalar o &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;openSUSE&lt;/a&gt; 12.3 no meu computador, que até então só tinha o Windows 7. O problema mais comum é quando &lt;a href=&quot;http://www.vivaolinux.com.br/dica/Restaurando-o-GRUB-apos-a-instalacao-de-outro-sistema-operacional&quot;&gt;o Linux já está instalado e então instalamos o Windows&lt;/a&gt;, que a princípio impede que outros sistemas sejam inicializados, reservando o computador para si. Mas hoje comigo aconteceu isso: após instalar o openSUSE 12.3, o menu do &lt;a href=&quot;http://en.opensuse.org/GRUB&quot;&gt;GRUB2&lt;/a&gt; não oferecia a opção de inicializar o Windows. Venho aqui (tentar) descrever a solução.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;h3 id=&quot;instalao-do-opensuse&quot;&gt;Instalação do openSUSE&lt;/h3&gt;
 
@@ -338,6 +348,8 @@ Disk identifier: 0x1ba01b9f
 &lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_01.jpg&quot; alt=&quot;jboss_as_mysql_01&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Aqui também há uma dica para usuários do banco de dados &lt;a href=&quot;http://www.postgresql.org/&quot;&gt;PostgreSQL&lt;/a&gt; que quiserem fazer o mesmo: leiam o final do post!&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;No &lt;a href=&quot;/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7.html&quot;&gt;post anterior&lt;/a&gt;, você foi apresentado ao JBoss AS. Nesse post, veremos como configurar nele uma conexão com o MySQL, e veremos também como configurar uma aplicação Java EE para utilizar essa conexão. Para fins didáticos, vou supor que você possui o JBoss AS e o MySQL instalados em seu computador, e que você criou uma base de dados chamada “teste” (para esse passo-a-passo a estrutura da base de dados não é importante, focaremos na conexão).&lt;/p&gt;
 
@@ -467,6 +479,8 @@ Disk identifier: 0x1ba01b9f
 
 &lt;p&gt;Essa é a segunda parte de dois posts que visam apresentar o JBoss AS 7. Se você desejava acessar a primeira parte, &lt;a href=&quot;/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7.html&quot;&gt;clique aqui&lt;/a&gt;. Senão, continue lendo.&lt;/p&gt;
 
+&lt;!--more--&gt;
+
 &lt;h3 id=&quot;console-de-administrao-web-do-jboss-as&quot;&gt;Console de administração Web do JBoss AS&lt;/h3&gt;
 
 &lt;p&gt;Podemos gerenciar o servidor de aplicação JBoss AS através de um console Web, que nos permite realizar, entre outras configurações, deploy e undeploy de aplicações, iniciar ou interromper a execução de aplicações, verificar o consumo de memória do servidor, configurar datasources, etc. Esse console, por padrão (se você não alterar as configurações de portas) é acessado através do endereço “&lt;a href=&quot;http://localhost:9990/&quot;&gt;http://localhost:9990/&lt;/a&gt;“.&lt;/p&gt;
@@ -590,6 +604,8 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.jboss.org/jbossas/&quot;&gt;JBoss Application Server&lt;/a&gt; (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela &lt;a href=&quot;http://www.jboss.org/&quot;&gt;JBoss&lt;/a&gt; (atualmente, uma divisão da &lt;a href=&quot;http://www.redhat.com/&quot;&gt;Red Hat&lt;/a&gt;) para a plataforma &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/&quot;&gt;Java EE&lt;/a&gt;. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações Java para a Web utilizando esse servidor.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_01.jpg&quot; alt=&quot;jboss_as_01&quot; /&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;O JBoss AS 7 é completamente compatível com a especificação Java EE 6 (diz-se “Java EE 6 Full Profile”), tendo recebido inclusive &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html&quot;&gt;certificação da Oracle&lt;/a&gt;. Assim, ao executar nossas aplicações Web nesse servidor, se elas foram desenvolvidas obedecendo aos padrões da plataforma, teremos a certeza de que elas funcionarão como desejamos (é claro que eventualmente erros de lógica podem ser cometidos por programadores, o fato de uma aplicação atender à especificação não garante que ela esteja livre desses erros, rsrsrs).&lt;/p&gt;
 
@@ -783,6 +799,8 @@ INFO: JBoss Remoting version 3.2.3.GA
 
 &lt;p&gt;O Maven é uma ferramenta que facilita e automatiza bastante o gerenciamento de projetos em Java, auxiliando os desenvolvedores nas etapas de definição, codificação, compilação, testes, empacotamento, implantação, documentação e distribuição da aplicação.&lt;/p&gt;
 
+&lt;!--more--&gt;
+
 &lt;p&gt;Nesse post, demonstrarei como instalar o Maven e como criar um pequeno projeto, apenas para dar uma noção de como funciona a ferramenta.&lt;/p&gt;
 
 &lt;p&gt;Antes de começarmos, é necessário que o Java Development Kit (JDK) esteja instalado no computador onde se deseja executar o Maven. Em &lt;a href=&quot;/2012/07/10/instalacao-do-java-development-kit-jdk.html&quot;&gt;outro post&lt;/a&gt; nesse blog expliquei como instalar o JDK e verificar que ele está funcionando perfeitamente. Se você ainda não possui o JDK, prossiga à leitura daquela página primeiro. Se você não tem certeza se o JDK está instalado em seu computador, execute os testes propostos naquela mesma página e, se for o caso, instale-o.&lt;/p&gt;
@@ -905,6 +923,8 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 &lt;p&gt;A seguir, forneço instruções para instalar, configurar e executar a versão mais recente do JDK (atualmente, a &lt;strong&gt;1.7.0_05&lt;/strong&gt;) em sistemas Windows e Linux.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/java.jpg&quot; alt=&quot;Java&quot; /&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;h3 id=&quot;download-e-instalao-do-jdk&quot;&gt;Download e instalação do JDK&lt;/h3&gt;
 
@@ -1064,7 +1084,11 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
     
       <item>
         <title>Problemas envolvendo bootloaders, MBR e tabela de parti&amp;ccedil;&amp;otilde;es</title>
-        <description>&lt;p&gt;Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações curiosas sobre o ocorrido.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/04/computador-maluco.jpg&quot; alt=&quot;computador-maluco&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações curiosas sobre o ocorrido.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;É algo que não desejo a ninguém, mas se algum dia alguém vier a passar pelo que eu passei (ou algo parecido) pode ler as páginas aqui indicadas e ver se alguma das soluções propostas por elas se aplica ao caso.&lt;/p&gt;
 
@@ -1214,7 +1238,13 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
     
       <item>
         <title>Onde reciclar cartuchos de tinta em Aracaju</title>
-        <description>&lt;p&gt;O que fazer com isso depois que não servir mais? Jogar no lixo? Reciclar? Será que dá pra reciclar? Aonde eu devo levar? São algumas das perguntas que nos fazemos quando nossos eletrônicos não servem mais. Pois bem, algo me chamou a atenção quando estive no &lt;a href=&quot;http://www.shoppingjardins.com.br/&quot;&gt;Shopping Jardins&lt;/a&gt; há &lt;a href=&quot;http://jornalnerds.blogspot.com.br/2010/12/reciclagem-cartuchos-de-impressora.html&quot;&gt;um tempo&lt;/a&gt; foi um banner da &lt;a href=&quot;http://www.infranet.com.br/&quot;&gt;Infranet&lt;/a&gt; que dizia que eles reciclavam cartuchos de tinta e toners:&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/04/reciclagem-de-cartuchos.jpg&quot; alt=&quot;reciclagem-de-cartuchos&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O que fazer com isso depois que não servir mais? Jogar no lixo? Reciclar? Será que dá pra reciclar? Aonde eu devo levar? São algumas das perguntas que nos fazemos quando nossos eletrônicos não servem mais.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Pois bem, algo me chamou a atenção quando estive no &lt;a href=&quot;http://www.shoppingjardins.com.br/&quot;&gt;Shopping Jardins&lt;/a&gt; há &lt;a href=&quot;http://jornalnerds.blogspot.com.br/2010/12/reciclagem-cartuchos-de-impressora.html&quot;&gt;um tempo&lt;/a&gt; foi um banner da &lt;a href=&quot;http://www.infranet.com.br/&quot;&gt;Infranet&lt;/a&gt; que dizia que eles reciclavam cartuchos de tinta e toners:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/04/reciclagem-infranet.jpg&quot; alt=&quot;Reciclagem de cartuchos na Infranet&quot; /&gt;&lt;/p&gt;
 

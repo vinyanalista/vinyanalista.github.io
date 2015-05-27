@@ -103,6 +103,8 @@
 
 <p>Aqui também há uma dica para usuários do banco de dados <a href="http://www.postgresql.org/">PostgreSQL</a> que quiserem fazer o mesmo: leiam o final do post!</p>
 
+<!--more-->
+
 <p>No <a href="/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7.html">post anterior</a>, você foi apresentado ao JBoss AS. Nesse post, veremos como configurar nele uma conexão com o MySQL, e veremos também como configurar uma aplicação Java EE para utilizar essa conexão. Para fins didáticos, vou supor que você possui o JBoss AS e o MySQL instalados em seu computador, e que você criou uma base de dados chamada “teste” (para esse passo-a-passo a estrutura da base de dados não é importante, focaremos na conexão).</p>
 
 <p>Há outras páginas na Internet que explicam exatamente o que vou explicar aqui (como <a href="https://zorq.net/b/2011/07/12/adding-a-mysql-datasource-to-jboss-as-7/">essa</a>, <a href="http://www.messiasbittencourt.com/168/jboss-7-mysql/">essa</a>, <a href="http://filosofisto.wordpress.com/2012/02/13/configurando-mysql-no-jboss-7-as/">essa</a> e <a href="http://jbossdivers.wordpress.com/2012/01/20/introducao-ao-jboss-as-7-parte-2/">essa</a>, e aproveito para dizer que essas foram algumas das minhas referências na elaboração desse post), porém aqui proponho uma abordagem diferente, que só percebi que era possível quando li mais atentamente o <a href="https://docs.jboss.org/author/display/AS7/Admin+Guide#AdminGuide-Datasources">guia de administração do JBoss AS</a> (a referência que encerra a lista): realizar toda a configuração da conexão pelo console Web de administração do servidor.</p>
