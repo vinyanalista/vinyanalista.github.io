@@ -6,8 +6,8 @@
 </description>
     <link>http://vinyanalista.github.io/</link>
     <atom:link href="http://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 May 2015 17:51:28 -0300</pubDate>
-    <lastBuildDate>Wed, 27 May 2015 17:51:28 -0300</lastBuildDate>
+    <pubDate>Wed, 27 May 2015 18:46:00 -0300</pubDate>
+    <lastBuildDate>Wed, 27 May 2015 18:46:00 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -140,8 +140,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 23 Sep 2014 15:38:39 -0300</pubDate>
-        <link>http://vinyanalista.github.io/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular.html</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular.html</guid>
+        <link>http://vinyanalista.github.io/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</link>
+        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</guid>
         
         
       </item>
@@ -218,8 +218,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 20 Jan 2014 03:53:32 -0300</pubDate>
-        <link>http://vinyanalista.github.io/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox.html</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox.html</guid>
+        <link>http://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</link>
+        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</guid>
         
         
       </item>
@@ -234,7 +234,7 @@
 
 &lt;h3 id=&quot;instalao-do-opensuse&quot;&gt;Instalação do openSUSE&lt;/h3&gt;
 
-&lt;p&gt;A configuração dos meus HDs é bastante semelhante àquela encontrada ano passado quando escrevi &lt;a href=&quot;/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes.html&quot;&gt;outro post&lt;/a&gt; sobre problemas com &lt;em&gt;dual boot&lt;/em&gt;. Naquela época, usava Debian e estava pensando em migrar pro openSUSE, o que de fato aconteceu e desde então é a distribuição que uso. Aliás, foi bom reler aquele post e perceber que &lt;a href=&quot;/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes.html&quot;&gt;essa não é a primeira vez que tenho problemas em relação ao &lt;em&gt;dual boot&lt;/em&gt; com openSUSE&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A configuração dos meus HDs é bastante semelhante àquela encontrada ano passado quando escrevi &lt;a href=&quot;/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;outro post&lt;/a&gt; sobre problemas com &lt;em&gt;dual boot&lt;/em&gt;. Naquela época, usava Debian e estava pensando em migrar pro openSUSE, o que de fato aconteceu e desde então é a distribuição que uso. Aliás, foi bom reler aquele post e perceber que &lt;a href=&quot;/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;essa não é a primeira vez que tenho problemas em relação ao &lt;em&gt;dual boot&lt;/em&gt; com openSUSE&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Executando o comando &lt;strong&gt;fdisk&lt;/strong&gt;, obtenho o seguinte:&lt;/p&gt;
 
@@ -266,7 +266,7 @@ Disk identifier: 0x1ba01b9f
 
 &lt;h3 id=&quot;recuperao-do-bootloader-do-windows&quot;&gt;Recuperação do bootloader do Windows&lt;/h3&gt;
 
-&lt;p&gt;Na busca por soluções, encontrei &lt;a href=&quot;http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/&quot;&gt;este site&lt;/a&gt; e tentei algumas alternativas nele apresentadas, que descrevo a seguir (só depois vim perceber que já havia as listado no &lt;a href=&quot;/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes.html&quot;&gt;post anterior&lt;/a&gt;, mas tudo bem, não custa repetir):&lt;/p&gt;
+&lt;p&gt;Na busca por soluções, encontrei &lt;a href=&quot;http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/&quot;&gt;este site&lt;/a&gt; e tentei algumas alternativas nele apresentadas, que descrevo a seguir (só depois vim perceber que já havia as listado no &lt;a href=&quot;/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;post anterior&lt;/a&gt;, mas tudo bem, não custa repetir):&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Iniciei o computador pelo DVD de instalação do Windows 7. Na tela inicial, escolhi meu idioma (que não é inglês, quero reconhecer &lt;a href=&quot;http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/&quot;&gt;o crédito do autor das imagens&lt;/a&gt;) e cliquei em “Avançar”:&lt;/li&gt;
@@ -335,8 +335,8 @@ Disk identifier: 0x1ba01b9f
 &lt;p&gt;Abraço a todos e até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Tue, 30 Jul 2013 02:50:45 -0300</pubDate>
-        <link>http://vinyanalista.github.io/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux.html</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux.html</guid>
+        <link>http://vinyanalista.github.io/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</link>
+        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</guid>
         
         
       </item>
@@ -351,7 +351,7 @@ Disk identifier: 0x1ba01b9f
 
 &lt;!--more--&gt;
 
-&lt;p&gt;No &lt;a href=&quot;/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7.html&quot;&gt;post anterior&lt;/a&gt;, você foi apresentado ao JBoss AS. Nesse post, veremos como configurar nele uma conexão com o MySQL, e veremos também como configurar uma aplicação Java EE para utilizar essa conexão. Para fins didáticos, vou supor que você possui o JBoss AS e o MySQL instalados em seu computador, e que você criou uma base de dados chamada “teste” (para esse passo-a-passo a estrutura da base de dados não é importante, focaremos na conexão).&lt;/p&gt;
+&lt;p&gt;No &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/&quot;&gt;post anterior&lt;/a&gt;, você foi apresentado ao JBoss AS. Nesse post, veremos como configurar nele uma conexão com o MySQL, e veremos também como configurar uma aplicação Java EE para utilizar essa conexão. Para fins didáticos, vou supor que você possui o JBoss AS e o MySQL instalados em seu computador, e que você criou uma base de dados chamada “teste” (para esse passo-a-passo a estrutura da base de dados não é importante, focaremos na conexão).&lt;/p&gt;
 
 &lt;p&gt;Há outras páginas na Internet que explicam exatamente o que vou explicar aqui (como &lt;a href=&quot;https://zorq.net/b/2011/07/12/adding-a-mysql-datasource-to-jboss-as-7/&quot;&gt;essa&lt;/a&gt;, &lt;a href=&quot;http://www.messiasbittencourt.com/168/jboss-7-mysql/&quot;&gt;essa&lt;/a&gt;, &lt;a href=&quot;http://filosofisto.wordpress.com/2012/02/13/configurando-mysql-no-jboss-7-as/&quot;&gt;essa&lt;/a&gt; e &lt;a href=&quot;http://jbossdivers.wordpress.com/2012/01/20/introducao-ao-jboss-as-7-parte-2/&quot;&gt;essa&lt;/a&gt;, e aproveito para dizer que essas foram algumas das minhas referências na elaboração desse post), porém aqui proponho uma abordagem diferente, que só percebi que era possível quando li mais atentamente o &lt;a href=&quot;https://docs.jboss.org/author/display/AS7/Admin+Guide#AdminGuide-Datasources&quot;&gt;guia de administração do JBoss AS&lt;/a&gt; (a referência que encerra a lista): realizar toda a configuração da conexão pelo console Web de administração do servidor.&lt;/p&gt;
 
@@ -363,9 +363,9 @@ Disk identifier: 0x1ba01b9f
 
 &lt;p&gt;Entre na &lt;a href=&quot;http://www.mysql.com/downloads/connector/j/&quot;&gt;página de downloads do MySQL Connector/J&lt;/a&gt; e baixe um dos pacotes disponíveis. Para os usuários de Windows, eu recomendo o download do arquivo &lt;strong&gt;.zip&lt;/strong&gt;, e para os usuários de Linux, eu recomendo o download do arquivo &lt;strong&gt;.tar.gz&lt;/strong&gt;. Descompacte o conteúdo do arquivo baixado para uma pasta de fácil acesso. Para demonstração, utilizarei o Linux, e baixarei o arquivo para minha pasta pessoal (“/home/vinicius/”):&lt;/p&gt;
 
-&lt;p&gt;Quando o conteúdo do arquivo é extraído, é criada uma pasta “mysql-connector-java-5.1.21″. Dentro dessa pasta, está o arquivo “mysql-connector-java-5.1.21-bin.jar”. Implante esse arquivo no servidor utilizando o console Web de administração do JBoss AS, exatamente como descrito na &lt;a href=&quot;/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2.html&quot;&gt;segunda parte do post anterior&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Quando o conteúdo do arquivo é extraído, é criada uma pasta “mysql-connector-java-5.1.21″. Dentro dessa pasta, está o arquivo “mysql-connector-java-5.1.21-bin.jar”. Implante esse arquivo no servidor utilizando o console Web de administração do JBoss AS, exatamente como descrito na &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/&quot;&gt;segunda parte do post anterior&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Ao final do processo, o driver JDBC do MySQL deve aparecer habilitado na lista de aplicações implantadas, como mostra a figura (curiosamente, a &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/&quot;&gt;aplicação de exemplo&lt;/a&gt; que implantamos &lt;a href=&quot;/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2.html&quot;&gt;naquele post&lt;/a&gt; ainda está no servidor):&lt;/p&gt;
+&lt;p&gt;Ao final do processo, o driver JDBC do MySQL deve aparecer habilitado na lista de aplicações implantadas, como mostra a figura (curiosamente, a &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/&quot;&gt;aplicação de exemplo&lt;/a&gt; que implantamos &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/&quot;&gt;naquele post&lt;/a&gt; ainda está no servidor):&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_02.jpg&quot; alt=&quot;jboss_as_mysql_02&quot; /&gt;&lt;/p&gt;
 
@@ -446,7 +446,7 @@ Disk identifier: 0x1ba01b9f
 
 &lt;h3 id=&quot;aplicao-de-exemplo&quot;&gt;Aplicação de exemplo&lt;/h3&gt;
 
-&lt;p&gt;Uma boa pedida é escolher uma das &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/&quot;&gt;aplicações de exemplo do JBoss AS&lt;/a&gt;, alterar suas configurações e executá-la. No &lt;a href=&quot;/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7.html&quot;&gt;post anterior&lt;/a&gt;, nós compilamos, empacotamos, implantamos e executamos a aplicação de exemplo &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/&quot;&gt;helloworld-jsf&lt;/a&gt;. Vou aproveitar o arquivo que já baixei e extraí naquele post, mas aqui vamos utilizar a aplicação &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/greeter/&quot;&gt;greeter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Uma boa pedida é escolher uma das &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/&quot;&gt;aplicações de exemplo do JBoss AS&lt;/a&gt;, alterar suas configurações e executá-la. No &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/&quot;&gt;post anterior&lt;/a&gt;, nós compilamos, empacotamos, implantamos e executamos a aplicação de exemplo &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/&quot;&gt;helloworld-jsf&lt;/a&gt;. Vou aproveitar o arquivo que já baixei e extraí naquele post, mas aqui vamos utilizar a aplicação &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/greeter/&quot;&gt;greeter&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Entre na pasta da aplicação (no meu caso, “/home/vinicius/jboss-jdf-jboss-as-quickstart-8505020/greeter/”), exclua o arquivo “greeter-quickstart-ds.xml” que está na pasta “src/main/webapp/WEB-INF/” e altere o arquivo “persistence.xml” dentro da pasta “src/main/resources/META-INF/” para que tenha o conteúdo acima.&lt;/p&gt;
 
@@ -465,8 +465,8 @@ Disk identifier: 0x1ba01b9f
 &lt;p&gt;Bem, pessoal, vou ficando por aqui, espero que tenham gostado… até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Jul 2012 04:36:13 -0300</pubDate>
-        <link>http://vinyanalista.github.io/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as.html</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as.html</guid>
+        <link>http://vinyanalista.github.io/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</link>
+        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</guid>
         
         
       </item>
@@ -477,7 +477,7 @@ Disk identifier: 0x1ba01b9f
 
 &lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_01.jpg&quot; alt=&quot;jboss_as_01&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Essa é a segunda parte de dois posts que visam apresentar o JBoss AS 7. Se você desejava acessar a primeira parte, &lt;a href=&quot;/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7.html&quot;&gt;clique aqui&lt;/a&gt;. Senão, continue lendo.&lt;/p&gt;
+&lt;p&gt;Essa é a segunda parte de dois posts que visam apresentar o JBoss AS 7. Se você desejava acessar a primeira parte, &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/&quot;&gt;clique aqui&lt;/a&gt;. Senão, continue lendo.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -593,8 +593,8 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
 &lt;p&gt;Abraço a todos e até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Jul 2012 23:16:17 -0300</pubDate>
-        <link>http://vinyanalista.github.io/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2.html</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2.html</guid>
+        <link>http://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</link>
+        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</guid>
         
         
       </item>
@@ -609,9 +609,9 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
 
 &lt;p&gt;O JBoss AS 7 é completamente compatível com a especificação Java EE 6 (diz-se “Java EE 6 Full Profile”), tendo recebido inclusive &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html&quot;&gt;certificação da Oracle&lt;/a&gt;. Assim, ao executar nossas aplicações Web nesse servidor, se elas foram desenvolvidas obedecendo aos padrões da plataforma, teremos a certeza de que elas funcionarão como desejamos (é claro que eventualmente erros de lógica podem ser cometidos por programadores, o fato de uma aplicação atender à especificação não garante que ela esteja livre desses erros, rsrsrs).&lt;/p&gt;
 
-&lt;p&gt;É necessário que o Java Development Kit (JDK) esteja instalado no computador para que o JBoss AS possa ser executado. Também é importante que a variável de ambiente JAVA_HOME esteja configurada, o JBoss AS obtém o valor dessa variável e o utiliza para saber a localização do JDK no sistema. Se precisar de ajuda com relação a isso, leia &lt;a href=&quot;/2012/07/10/instalacao-do-java-development-kit-jdk.html&quot;&gt;esse outro post&lt;/a&gt;, no qual explico como instalar e testar o JDK.&lt;/p&gt;
+&lt;p&gt;É necessário que o Java Development Kit (JDK) esteja instalado no computador para que o JBoss AS possa ser executado. Também é importante que a variável de ambiente JAVA_HOME esteja configurada, o JBoss AS obtém o valor dessa variável e o utiliza para saber a localização do JDK no sistema. Se precisar de ajuda com relação a isso, leia &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;esse outro post&lt;/a&gt;, no qual explico como instalar e testar o JDK.&lt;/p&gt;
 
-&lt;p&gt;Precisaremos também do Maven, que já foi abordado em &lt;a href=&quot;/2012/07/18/instalacao-do-apache-maven.html&quot;&gt;outro post&lt;/a&gt;. Ele não é necessário à execução do JBoss AS, mas precisaremos dele nesse passo-a-passo para implantar uma aplicação de exemplo no servidor.&lt;/p&gt;
+&lt;p&gt;Precisaremos também do Maven, que já foi abordado em &lt;a href=&quot;/blog/2012/07/18/instalacao-do-apache-maven/&quot;&gt;outro post&lt;/a&gt;. Ele não é necessário à execução do JBoss AS, mas precisaremos dele nesse passo-a-passo para implantar uma aplicação de exemplo no servidor.&lt;/p&gt;
 
 &lt;h3 id=&quot;download-do-jboss-as&quot;&gt;Download do JBoss AS&lt;/h3&gt;
 
@@ -625,7 +625,7 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
 
 &lt;h3 id=&quot;instalao-do-jboss-as&quot;&gt;Instalação do JBoss AS&lt;/h3&gt;
 
-&lt;p&gt;Tanto no Windows quanto no Linux, basta descompactar o arquivo baixado que o JBoss AS já pode ser executado a partir daquele local. Assim como acontece com o &lt;a href=&quot;/2012/07/10/instalacao-do-java-development-kit-jdk.html&quot;&gt;JDK&lt;/a&gt;, é possível instalar em uma localização visível a todos os usuários (como “C:\” no Windows ou “/opt/” no Linux) ou visível apenas ao seu usuário (no meu caso, “C:\Users\Vinicius\Documents” ou “/home/vinicius”). Em ambos os casos, o arquivo descompactado gera uma pasta chamada “jboss-as-7.1.1.Final? e pode ser excluído após a extração.&lt;/p&gt;
+&lt;p&gt;Tanto no Windows quanto no Linux, basta descompactar o arquivo baixado que o JBoss AS já pode ser executado a partir daquele local. Assim como acontece com o &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;JDK&lt;/a&gt;, é possível instalar em uma localização visível a todos os usuários (como “C:\” no Windows ou “/opt/” no Linux) ou visível apenas ao seu usuário (no meu caso, “C:\Users\Vinicius\Documents” ou “/home/vinicius”). Em ambos os casos, o arquivo descompactado gera uma pasta chamada “jboss-as-7.1.1.Final? e pode ser excluído após a extração.&lt;/p&gt;
 
 &lt;p&gt;É necessário prestar atenção a esse local pois sempre que quisermos invocar o JBoss AS, digitaremos o caminho para esse local. Assim, recomendo renomear a pasta para algo menor, como “jboss-as”.&lt;/p&gt;
 
@@ -717,7 +717,7 @@ JAVA_OPTS:  -server -XX:+TieredCompilation -Xms64m -Xmx512m -XX:MaxPermSize=256m
 
 &lt;p&gt;Para verificar o funcionamento do JBoss AS, vamos instalar e executar (diz-se fazer deploy no servidor) de uma das &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/&quot;&gt;aplicações de exemplo oferecidas no site do servidor&lt;/a&gt;. No caso, vou utilizar a &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/&quot;&gt;helloworld-jsf&lt;/a&gt;, que é simples, mas um pouco mais interessante que a tradicional &lt;a href=&quot;http://jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld/&quot;&gt;helloworld&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;As instruções fornecidas aqui se aplicam tanto ao Windows quanto ao Linux, mas vou utilizar o Linux para explicar as etapas. Necessitaremos do &lt;a href=&quot;http://maven.apache.org/&quot;&gt;Maven&lt;/a&gt; para compilar, empacotar e fazer deploy da aplicação. Se você ainda não possui o Maven em seu computador, prossiga à leitura &lt;a href=&quot;/2012/07/18/instalacao-do-apache-maven.html&quot;&gt;dessa página&lt;/a&gt; antes de continuar.&lt;/p&gt;
+&lt;p&gt;As instruções fornecidas aqui se aplicam tanto ao Windows quanto ao Linux, mas vou utilizar o Linux para explicar as etapas. Necessitaremos do &lt;a href=&quot;http://maven.apache.org/&quot;&gt;Maven&lt;/a&gt; para compilar, empacotar e fazer deploy da aplicação. Se você ainda não possui o Maven em seu computador, prossiga à leitura &lt;a href=&quot;/blog/2012/07/18/instalacao-do-apache-maven/&quot;&gt;dessa página&lt;/a&gt; antes de continuar.&lt;/p&gt;
 
 &lt;p&gt;Vá até a &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/&quot;&gt;página das aplicações de exemplo do JBoss AS&lt;/a&gt; e clique em “Get the source”. Depois, clique em “Source zip”:&lt;/p&gt;
 
@@ -782,11 +782,11 @@ INFO: JBoss Remoting version 3.2.3.GA
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mvn jboss-as:undeploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Também podemos fazer deploy e undeploy de aplicações no servidor, entre outras configurações, usando o console de administração do JBoss AS. Examinaremos esse console na &lt;a href=&quot;/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2.html&quot;&gt;segunda parte desse post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Também podemos fazer deploy e undeploy de aplicações no servidor, entre outras configurações, usando o console de administração do JBoss AS. Examinaremos esse console na &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/&quot;&gt;segunda parte desse post&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Jul 2012 22:18:38 -0300</pubDate>
-        <link>http://vinyanalista.github.io/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7.html</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7.html</guid>
+        <link>http://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</link>
+        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</guid>
         
         
       </item>
@@ -803,7 +803,7 @@ INFO: JBoss Remoting version 3.2.3.GA
 
 &lt;p&gt;Nesse post, demonstrarei como instalar o Maven e como criar um pequeno projeto, apenas para dar uma noção de como funciona a ferramenta.&lt;/p&gt;
 
-&lt;p&gt;Antes de começarmos, é necessário que o Java Development Kit (JDK) esteja instalado no computador onde se deseja executar o Maven. Em &lt;a href=&quot;/2012/07/10/instalacao-do-java-development-kit-jdk.html&quot;&gt;outro post&lt;/a&gt; nesse blog expliquei como instalar o JDK e verificar que ele está funcionando perfeitamente. Se você ainda não possui o JDK, prossiga à leitura daquela página primeiro. Se você não tem certeza se o JDK está instalado em seu computador, execute os testes propostos naquela mesma página e, se for o caso, instale-o.&lt;/p&gt;
+&lt;p&gt;Antes de começarmos, é necessário que o Java Development Kit (JDK) esteja instalado no computador onde se deseja executar o Maven. Em &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;outro post&lt;/a&gt; nesse blog expliquei como instalar o JDK e verificar que ele está funcionando perfeitamente. Se você ainda não possui o JDK, prossiga à leitura daquela página primeiro. Se você não tem certeza se o JDK está instalado em seu computador, execute os testes propostos naquela mesma página e, se for o caso, instale-o.&lt;/p&gt;
 
 &lt;p&gt;Só prossiga à leitura desta página quando tiver certeza de que o JDK está instalado e funcionando no seu computador. Também é importante que a variável de ambiente JAVA_HOME esteja configurada.&lt;/p&gt;
 
@@ -821,7 +821,7 @@ INFO: JBoss Remoting version 3.2.3.GA
 
 &lt;p&gt;Tanto no Windows quanto no Linux basta descompactar o arquivo baixado que o Maven já pode ser executado a partir daquele local. Assim como acontece com o &lt;a href=&quot;http://www.vinyanalista.com.br/blog/2012/07/18/instalacao-do-apache-maven/www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;JDK&lt;/a&gt;, é possível instalar em uma localização visível a todos os usuários (como “C:\” no Windows ou “/opt/” no Linux) ou visível apenas ao seu usuário (no meu caso, “C:\Users\Vinicius\Documents” ou “/home/vinicius”). Em ambos os casos, o arquivo descompactado gera uma pasta chamada “apache-maven-3.0.4″ e pode ser excluído após a extração.&lt;/p&gt;
 
-&lt;p&gt;É necessário prestar atenção a esse local pois, assim como fizemos na &lt;a href=&quot;/2012/07/10/instalacao-do-java-development-kit-jdk.html&quot;&gt;instalação do JDK&lt;/a&gt;, aqui vamos configurar uma variável de ambiente que aponte para a localização do Maven, chamada de M2_HOME.&lt;/p&gt;
+&lt;p&gt;É necessário prestar atenção a esse local pois, assim como fizemos na &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;instalação do JDK&lt;/a&gt;, aqui vamos configurar uma variável de ambiente que aponte para a localização do Maven, chamada de M2_HOME.&lt;/p&gt;
 
 &lt;p&gt;No Windows, fiz a extração do arquivo na raiz do disco “C:\” e renomeei a pasta “apache-maven-3.0.4″ para apenas “maven”. O caminho para o Maven no meu sistema é, então, “C:\maven”.&lt;/p&gt;
 
@@ -849,9 +849,9 @@ INFO: JBoss Remoting version 3.2.3.GA
 
 &lt;h3 id=&quot;configurao-da-varivel-m2home&quot;&gt;Configuração da variável M2_HOME&lt;/h3&gt;
 
-&lt;p&gt;De maneira análoga à &lt;a href=&quot;/2012/07/10/instalacao-do-java-development-kit-jdk.html&quot;&gt;instalação do JDK&lt;/a&gt;, aqui vamos criar uma variável de ambiente M2_HOME que informe para os demais aplicativos do sistema a localização do Maven. Depois vamos atualizar o valor da variável de ambiente PATH para que possamos invocar o Maven diretamente da linha de comando, sem precisar informar sua localização completa sempre que quisermos fazer isso.&lt;/p&gt;
+&lt;p&gt;De maneira análoga à &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;instalação do JDK&lt;/a&gt;, aqui vamos criar uma variável de ambiente M2_HOME que informe para os demais aplicativos do sistema a localização do Maven. Depois vamos atualizar o valor da variável de ambiente PATH para que possamos invocar o Maven diretamente da linha de comando, sem precisar informar sua localização completa sempre que quisermos fazer isso.&lt;/p&gt;
 
-&lt;p&gt;No Windows, o procedimento é bem semelhante ao &lt;a href=&quot;/2012/07/10/instalacao-do-java-development-kit-jdk.html&quot;&gt;descrito no post anterior&lt;/a&gt;, só mudando os nomes das variáveis e os valores:&lt;/p&gt;
+&lt;p&gt;No Windows, o procedimento é bem semelhante ao &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;descrito no post anterior&lt;/a&gt;, só mudando os nomes das variáveis e os valores:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/maven2.jpg&quot; alt=&quot;maven2&quot; /&gt;&lt;/p&gt;
 
@@ -910,8 +910,8 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 &lt;p&gt;Abraço a todos, e até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Jul 2012 02:57:24 -0300</pubDate>
-        <link>http://vinyanalista.github.io/2012/07/18/instalacao-do-apache-maven.html</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/2012/07/18/instalacao-do-apache-maven.html</guid>
+        <link>http://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/</link>
+        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/</guid>
         
         
       </item>
@@ -1076,8 +1076,8 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 &lt;p&gt;Espero que esse post possa ser útil a programadores Java iniciantes de uma maneira em geral. Agradeço previamente opiniões e críticas construtivas. Ofereço o espaço para perguntas também. Abraço a todos e até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Jul 2012 01:01:10 -0300</pubDate>
-        <link>http://vinyanalista.github.io/2012/07/10/instalacao-do-java-development-kit-jdk.html</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/2012/07/10/instalacao-do-java-development-kit-jdk.html</guid>
+        <link>http://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</link>
+        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</guid>
         
         
       </item>
@@ -1230,8 +1230,8 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 &lt;p&gt;Um abraço a todos, e até a próxima aventura deste técnico que vos escreve! E espero que alguém mais entendido possa me esclarecer o motivo da confusão. Não a confusão “do início”, que fui eu que causei, mas a confusão “do meio”, imagino que a solução do meu problema não deveria ter tantos arrodeios, já que a maioria dos usuários relatam que um ou dois comandos deveriam resolver os problemas (podem conferir nos links que eu mencionei ao longo da resolução)…&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Apr 2012 05:42:01 -0300</pubDate>
-        <link>http://vinyanalista.github.io/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes.html</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes.html</guid>
+        <link>http://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/</link>
+        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/</guid>
         
         
       </item>
@@ -1273,8 +1273,8 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 &lt;p&gt;Telefone: (79)3222-3310&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Apr 2012 19:00:07 -0300</pubDate>
-        <link>http://vinyanalista.github.io/2012/04/15/onde-reciclar-cartuchos-de-tinta-em-aracaju.html</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/2012/04/15/onde-reciclar-cartuchos-de-tinta-em-aracaju.html</guid>
+        <link>http://vinyanalista.github.io/blog/2012/04/15/onde-reciclar-cartuchos-de-tinta-em-aracaju/</link>
+        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/04/15/onde-reciclar-cartuchos-de-tinta-em-aracaju/</guid>
         
         
       </item>

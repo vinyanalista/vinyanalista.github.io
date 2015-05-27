@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Antônio Vinícius Menezes Medeiros">
+    <meta name="description" content="O JBoss Application Server (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela JBoss (atualmente, uma divisão da Red...">
+
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="shortcut icon" href="/img/favicon.png">
+
+    <title>Apresentando o servidor de aplica&ccedil;&atilde;o JBoss AS 7 (parte 2) - vinyanalista.com.br</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/lib/paper/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/comum.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/lib/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="/lib/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--<link rel="stylesheet" href="/css/main.css">-->
+    <link rel="canonical" href="http://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/">
+    <link rel="alternate" type="application/rss+xml" title="vinyanalista.com.br" href="http://vinyanalista.github.io/feed.xml" />
+</head>
+    <body>
+        <!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Exibir/esconder</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">vinyanalista.com.br</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/">Blog</a>
+                </li>
+                <li>
+                    <a href="/blog/category/trabalhos/">Trabalhos</a>
+                </li>
+                <li>
+                    <a href="http://lattes.cnpq.br/2162371468280338">Currículo</a>
+                </li>
+            </ul>
+            
+            <form class="navbar-form navbar-right" role="search">
+                <div class="input-group" id="grupo_pesquisar">
+                    <input type="text" class="form-control"  name="q" placeholder="Pesquisar" />
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            
+        </div><!-- #navbar -->
+    </div><!-- .container -->
+</nav>
+        <div class="container">
+            <div class="row">
+                <div class='col-sm-8' id='blog-principal'>
+                    <div class="blog-post panel panel-default">
+    <div class="panel-heading">
+        <h2 class="blog-post-titulo">
+            <a href="">Apresentando o servidor de aplica&ccedil;&atilde;o JBoss AS 7 (parte 2)</a>
+        </h2>
+        <div class="blog-post-meta row">
+            <div class='col-sm-6'>
+                <div class='blog-post-data'>
+                    18 de
+                    
+                    Julho
+                    
+                    de 2012
+                </div>
+            </div>
+            <div class='col-sm-6'>
+                <div class='blog-post-redes-sociais'>
+                    Fa &nbsp Tw &nbsp G+ &nbsp +
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog-post-conteudo panel-body">
+        <p>O <a href="http://www.jboss.org/jbossas/">JBoss Application Server</a> (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela <a href="http://www.jboss.org/">JBoss</a> (atualmente, uma divisão da <a href="http://www.redhat.com/">Red Hat</a>) para a plataforma <a href="http://www.oracle.com/technetwork/java/javaee/">Java EE</a>. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações Java para a Web utilizando esse servidor.</p>
+
+<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_01.jpg" alt="jboss_as_01" /></p>
+
+<p>Essa é a segunda parte de dois posts que visam apresentar o JBoss AS 7. Se você desejava acessar a primeira parte, <a href="/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/">clique aqui</a>. Senão, continue lendo.</p>
+
+<!--more-->
+
+<h3 id="console-de-administrao-web-do-jboss-as">Console de administração Web do JBoss AS</h3>
+
+<p>Podemos gerenciar o servidor de aplicação JBoss AS através de um console Web, que nos permite realizar, entre outras configurações, deploy e undeploy de aplicações, iniciar ou interromper a execução de aplicações, verificar o consumo de memória do servidor, configurar datasources, etc. Esse console, por padrão (se você não alterar as configurações de portas) é acessado através do endereço “<a href="http://localhost:9990/">http://localhost:9990/</a>“.</p>
+
+<p>Na primeira vez em que você tentar acessar esse console, no entanto, ele emitirá uma mensagem de erro (é bonita, eu sei, mas se você examinar seu conteúdo, verá que é uma mensagem de erro, rsrsrs):</p>
+
+<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_05.jpg" alt="jboss_as_05" /></p>
+
+<p>Esse aviso nos diz que é necessário definir um usuário e uma senha para acessar o console de administração Web. Vamos fazer isso.</p>
+
+<p>Execute o script “add-user” dentro da pasta “bin” do servidor (“C:\jboss-as\bin\add-user.bat” no Windows, e “/home/vinicius/jboss-as/bin/add-user.sh” no Linux):</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>/home/vinicius/jboss-as/bin/add-user.sh</code></pre></div>
+
+<p>Após iniciar o script, você será guiado no processo de adicionar um novo usuário:</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">What type of user do you wish to add?
+a) Management User (mgmt-users.properties)
+b) Application User (application-users.properties)
+(a):</code></pre></div>
+
+<p>Nesse caso, como estamos criando um usuário com a finalidade de administrar o servidor, escolhemos a opção “a”. Ela já é a opção padrão, apenas tecle Enter.</p>
+
+<p>Você será solicitado a fornecer informações sobre o novo usuário. Quando questionado sobre o domínio do usuário (Realm), aceite a opção padrão (ManagementRealm), para isso basta teclar Enter quando chegar nesse campo. No mais, digite nome de usuário, senha e confirme a senha.</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">Enter the details of the new user to add.
+Realm (ManagementRealm) :
+Username :
+Password :
+Re-enter Password :</code></pre></div>
+
+<p>Se não houver nada errado, uma mensagem de confirmação será exibida na tela.</p>
+
+<p>Feito isso, nós já podemos acessar o console de administração Web, informando o usuário e senha criados quando solicitados (lembrando que o endereço é “<a href="http://localhost:9990/">http://localhost:9990/</a>“):</p>
+
+<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_06.jpg" alt="jboss_as_06" /></p>
+
+<p>Vamos fazer undeploy e deploy da aplicação usando o console de administração Web. Para isso, no menu do lado esquerdo, clique em “Manage Deployments”. É exibida uma lista das aplicações instaladas no servidor:</p>
+
+<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_07.jpg" alt="jboss_as_07" /></p>
+
+<p>Clicando em “Disable”, interromperíamos a aplicação, fazendo com que ela não ficasse mais disponível ao usuário final, mas ainda permanecesse no servidor. Não é o que queremos aqui. Clique em “Remove” para de fato remover a aplicação do servidor. Aparece uma mensagem de confirmação na tela, clique em “Confirm”.</p>
+
+<p>Feito isso a aplicação desaparece da lista, ela já não está mais no servidor (e muito menos acessível):</p>
+
+<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_08.jpg" alt="jboss_as_08" /></p>
+
+<p>Se você tentar acessá-la pelo seu endereço (“<a href="http://localhost:8080/jboss-as-helloworld-jsf/">http://localhost:8080/jboss-as-helloworld-jsf/</a>“), visualizará uma página de erro no navegador.</p>
+
+<p>De volta ao console de administração Web, clique no botão “Add Content” para fazermos deploy da aplicação novamente.</p>
+
+<p>O primeiro passo é selecionar o arquivo que você deseja fazer deploy. Na janela que aparece, clique em “Browse…”, navegue até a pasta do exemplo (aqui, “/home/vinicius/jboss-jdf-jboss-as-quickstart-8505020/helloworld-jsf/”) e, dentro da pasta “target”, escolha o arquivo “jboss-as-helloworld-jsf.war”, que representa a aplicação compilada e empacotada em um formato próprio de aplicação Web (arquivo <strong>.war</strong>), análogo ao formato de aplicação Desktop (arquivo <strong>.jar</strong>). Por último, clique em “Next”:</p>
+
+<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_09.jpg" alt="jboss_as_09" /></p>
+
+<p>Ele pede para confirmar as informações. Simplesmente clique em “Save”:</p>
+
+<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_10.jpg" alt="jboss_as_10" /></p>
+
+<p>De volta à lista de aplicações, a aplicação foi instalada no servidor, mas não foi iniciada:</p>
+
+<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_11.jpg" alt="jboss_as_11" /></p>
+
+<p>Clique em Enable para iniciá-la. Aparece uma mensagem de confirmação na tela, clique em “Confirm”. Feito isso a aplicação passa a aparecer na lista como habilitada:</p>
+
+<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_12.jpg" alt="jboss_as_12" /></p>
+
+<p>Agora é possível acessá-la novamente pelo endereço “<a href="http://localhost:8080/jboss-as-helloworld-jsf/">http://localhost:8080/jboss-as-helloworld-jsf/</a>“.</p>
+
+<h3 id="encerrando-o-jboss-as">Encerrando o JBoss AS</h3>
+
+<p>Encerrar o servidor, tanto no Windows quanto no Linux, é um procedimento bastante simples: basta abortar a execução do comando na janela de terminal onde o servidor está sendo executado. Para isso, basta apertar Ctrl + C (vale para ambos os sistemas).</p>
+
+<p>Aqui ele encerrou o servidor em pequeníssimos 143 milissegundos:</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">15:09:21,996 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011942: Stopping OSGi Framework
+15:09:22,034 INFO  [org.jboss.as.logging] JBAS011503: Restored bootstrap log handlers
+15:09:22,044 INFO  [org.jboss.weld.deployer] JBAS016009: Stopping weld service for deployment jboss-as-helloworld-jsf.war
+15:09:22,053 INFO  [org.apache.coyote.http11.Http11Protocol] Pausing Coyote HTTP/1.1 on http--127.0.0.1-8080
+15:09:22,058 INFO  [org.apache.coyote.http11.Http11Protocol] Stopping Coyote HTTP/1.1 on http--127.0.0.1-8080
+15:09:22,083 INFO  [com.arjuna.ats.jbossatx] ARJUNA032018: Destroying TransactionManagerService
+15:09:22,111 INFO  [com.arjuna.ats.jbossatx] ARJUNA032014: Stopping transaction recovery manager
+15:09:22,111 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment jboss-as-helloworld-jsf.war in 132ms
+15:09:22,114 INFO  [org.jboss.as.controller] JBAS014774: Service status report
+JBAS014776:    Newly corrected services:
+service jboss.server.controller.management.security_realm.ApplicationRealm.properties_authentication (new available)
+
+15:09:22,121 INFO  [org.jboss.as] JBAS015950: JBoss AS 7.1.1.Final &quot;Brontes&quot; stopped in 143ms</code></pre></div>
+
+<h3 id="mais-informaes-sobre-o-jboss-as">Mais informações sobre o JBoss AS</h3>
+
+<p>Pois é, pessoal. Vou encerrando minha apresentação do JBoss AS por aqui. Gostaria apenas de fazer algumas considerações finais e deixar as páginas que usei como referência para escrever esse post.</p>
+
+<p>Também é possível administrar o JBoss AS através do terminal (da linha de comando), mas não apresentei essa ferramenta aqui por considerar o console Web muito mais simples de usar. Mais informações sobre essas duas ferramentas (o console Web e o console via terminal) vocês encontram no <a href="https://docs.jboss.org/author/display/AS71/Admin+Guide">guia de administração do JBoss AS</a>.</p>
+
+<p>Um bom ponto de partida para quem quiser conhecer mais o JBoss AS (assim como o Maven e a plataforma Java EE) é explorar as <a href="http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/">aplicações de exemplo</a> do servidor. Há um <a href="https://docs.jboss.org/author/display/AS71/Getting+Started+Developing+Applications+Guide">guia passo-a-passo</a> que fornece explicações sobre alguns desses exemplos.</p>
+
+<p>Quem utiliza a IDE <a href="http://www.eclipse.org/">Eclipse</a> pode se interessar em instalar o plugin <a href="http://www.jboss.org/tools/">JBoss Tools</a>, que acrescenta funcionalidades no Eclipse próprias para a utilização do JBoss AS como servidor Java EE dentro da IDE (como adicionar o servidor na view Servers, executar aplicações Web desenvolvidas pela IDE no servidor, fazer deploy e undeploy de aplicações, iniciar ou interromper aplicações, realizar depuração remota) e para o desenvolvimento de aplicações Web (acrescenta assistentes para a criação de arquivos próprios dessas aplicações, melhora a compleção de código, entre outras).</p>
+
+<p>Encerrando as considerações, há um vídeo na Internet que demonstra <a href="http://vimeo.com/25831010">5 maneiras de fazer deploy da sua aplicação no JBoss AS 7</a>. Nesse vídeo, ele realiza deploy da aplicação de exemplo <a href="http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld/">helloworld</a> de 5 maneiras diferentes.</p>
+
+<p>As páginas da <a href="https://docs.jboss.org/author/display/AS71/Documentation">documentação oficial do JBoss AS</a> que utilizei como referência para escrever esse post foram:</p>
+
+<ul>
+  <li><a href="https://docs.jboss.org/author/display/AS71/Getting+Started+Guide">Getting Started Guide</a></li>
+  <li><a href="https://docs.jboss.org/author/display/AS71/Getting+Started+Developing+Applications+Guide">Getting Started Developing Applications Guide</a></li>
+  <li><a href="https://docs.jboss.org/author/display/AS71/Admin+Guide">Admin Guide</a></li>
+</ul>
+
+<p>Abraço a todos e até a próxima!</p>
+
+    </div><!-- .blog-post-conteudo -->
+</div><!-- .blog-post -->
+                </div><!-- #blog-principal -->
+                <div class="col-sm-4" id="blog-lateral">
+                    <div class="panel panel-default" id='sobre'>
+    <div class="panel-heading">
+        <h4>Sobre mim</h4>
+    </div>
+    <div class="panel-body">
+        <p>
+        Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+    </p>
+    </div>
+</div>
+
+<div class="panel panel-default" id='arquivos'>
+    <div class="panel-heading">
+        <h4>Arquivos</h4>
+    </div>
+    <div class="panel-body">
+        <ol class="list-unstyled">
+            <li>
+                <a href="#">March 2014</a>
+            </li>
+            <li>
+                <a href="#">February 2014</a>
+            </li>
+            <li>
+                <a href="#">January 2014</a>
+            </li>
+            <li>
+                <a href="#">December 2013</a>
+            </li>
+            <li>
+                <a href="#">November 2013</a>
+            </li>
+            <li>
+                <a href="#">October 2013</a>
+            </li>
+            <li>
+                <a href="#">September 2013</a>
+            </li>
+            <li>
+                <a href="#">August 2013</a>
+            </li>
+            <li>
+                <a href="#">July 2013</a>
+            </li>
+            <li>
+                <a href="#">June 2013</a>
+            </li>
+            <li>
+                <a href="#">May 2013</a>
+            </li>
+            <li>
+                <a href="#">April 2013</a>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Elsewhere</h4>
+    </div>
+    <div class="panel-body">
+        <ol class="list-unstyled">
+            <li>
+                <a href="https://facebook.com/vinyanalista">Facebook</a>
+            </li>
+            <li>
+                <a href="https://github.com/vinyanalista">GitHub</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/vinyanalista">Twitter</a>
+            </li>
+        </ol>
+    </div>
+</div>
+                </div><!-- #blog-lateral -->
+            </div>
+        </div>
+        <footer class="footer">
+    <div class="container text-center">
+        Copyright © 2015. <a href='#sobre'>Antônio Vinícius Menezes Medeiros</a>. Todos os direitos reservados. Blog construído sobre o <a href="http://jekyllrb.com/" target='_blank'>Jekyll</a>. Tema <a href="https://bootswatch.com/paper/" target='_blank'>Paper</a>.
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/lib/jquery/1.11.3/jquery-1.11.3.min.js"></script>
+<script src="/lib/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/lib/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
