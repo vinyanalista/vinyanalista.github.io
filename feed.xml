@@ -6,15 +6,15 @@
 </description>
     <link>http://vinyanalista.github.io/</link>
     <atom:link href="http://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 May 2015 17:49:42 -0300</pubDate>
-    <lastBuildDate>Wed, 27 May 2015 17:49:42 -0300</lastBuildDate>
+    <pubDate>Wed, 27 May 2015 17:51:28 -0300</pubDate>
+    <lastBuildDate>Wed, 27 May 2015 17:51:28 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Controlando o VLC a partir do navegador ou do celular</title>
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.videolan.org/vlc/&quot;&gt;VLC&lt;/a&gt; é o verdadeiro canivete suíço dos vídeos, é um player com vários recursos interessantes, dentre eles a possibilidade de controlar a reprodução remotamente, através do navegador ou do celular. A depender de como você o usa para reproduzir seus arquivos multimídia, isso pode ser interessante. Veja aqui como fazê-lo.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_00.jpg&quot; alt=&quot;vlc_remoto_00&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_00.jpg&quot; alt=&quot;vlc_remoto_00&quot; /&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -26,48 +26,48 @@
   &lt;li&gt;Inicie o VLC, abra o menu “Ferramentas” e clique em “Preferências”.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_01.jpg&quot; alt=&quot;vlc_remoto_01&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_01.jpg&quot; alt=&quot;vlc_remoto_01&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A caixa de diálogo “Preferências” aparecerá como na imagem abaixo.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_02.jpg&quot; alt=&quot;vlc_remoto_02&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_02.jpg&quot; alt=&quot;vlc_remoto_02&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Na caixa de seleção “Exibir configurações”, selecione “Detalhado”, para que todas as opções de configuração sejam exibidas.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_03.jpg&quot; alt=&quot;vlc_remoto_03&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_03.jpg&quot; alt=&quot;vlc_remoto_03&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Na lista da esquerda, procure “Interfaces principais”, dentro de “Interface”. Dentre as opções que aparecem à direita, em “Módulos adicionais de interface”, marque “Web”.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_04.jpg&quot; alt=&quot;vlc_remoto_04&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_04.jpg&quot; alt=&quot;vlc_remoto_04&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Reinicie o VLC para que as configurações tenham efeito.&lt;/li&gt;
   &lt;li&gt;Adicione vídeos à sua lista de reprodução.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_05.jpg&quot; alt=&quot;vlc_remoto_05&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_05.jpg&quot; alt=&quot;vlc_remoto_05&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Para habilitar o controle remoto, abra o menu “Exibir”, depois vá em “Adicionar Interface” e marque “Web”.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_06.jpg&quot; alt=&quot;vlc_remoto_06&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_06.jpg&quot; alt=&quot;vlc_remoto_06&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Agora o controle remoto está disponível no endereço “&lt;a href=&quot;http://127.0.0.1:8080/&quot;&gt;http://127.0.0.1:8080&lt;/a&gt;” (ou, se preferir, “&lt;a href=&quot;http://localhost:8080/&quot;&gt;http://localhost:8080/&lt;/a&gt;“). Abra seu navegador favorito e acesse esse endereço.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_07.jpg&quot; alt=&quot;vlc_remoto_07&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_07.jpg&quot; alt=&quot;vlc_remoto_07&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Se na lista de reprodução você expandir “Não Definido”, verá os itens que adicionou antes de habilitar a interface Web.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_08.jpg&quot; alt=&quot;vlc_remoto_08&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_08.jpg&quot; alt=&quot;vlc_remoto_08&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Você pode clicar nos controles no controle remoto aberto no navegador e verificar que o VLC responde de acordo.&lt;/p&gt;
 
@@ -81,19 +81,19 @@
   &lt;li&gt;Abra seu editor de texto favorito com permissões de administrador. No Windows, recomendo utilizar o WordPad ou o &lt;a href=&quot;http://notepad-plus-plus.org/&quot;&gt;Notepad++&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_09.jpg&quot; alt=&quot;vlc_remoto_09&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_09.jpg&quot; alt=&quot;vlc_remoto_09&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Abra o arquivo “.hosts” no caminho já indicado.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_10.jpg&quot; alt=&quot;vlc_remoto_10&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_10.jpg&quot; alt=&quot;vlc_remoto_10&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Descomente, removendo o caractere de jogo da velha (“#”), as linhas abaixo do comentário “# private addresses” (endereços particulares).&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_11.jpg&quot; alt=&quot;vlc_remoto_11&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_11.jpg&quot; alt=&quot;vlc_remoto_11&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Salve o arquivo e reinicie o VLC para que as alterações tenham efeito.&lt;/li&gt;
@@ -105,7 +105,7 @@
 
 &lt;p&gt;O mais interessante de poder controlar o VLC remotamente é comandar a reprodução a partir de um celular Android. Desse jeito, temos a impressão que realmente estamos utilizando um controle remoto, como o de uma TV. Isso pode ser feito habilitando-se a interface Web, como descrito nos procedimentos anteriores, e executando um aplicativo como o &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.vlcforandroid.vlcdirectprofree&quot;&gt;VLC Direct&lt;/a&gt; ou o &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.hobbyistsoftware.android.vlcremote_usfree&quot;&gt;VLC Remote&lt;/a&gt;. Eles estão disponíveis gratuitamente, mas também apresentam versões pagas que possuem mais recursos.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_vlc_direct.jpg&quot; alt=&quot;vlc_remoto_vlc_direct&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_vlc_direct.jpg&quot; alt=&quot;vlc_remoto_vlc_direct&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Também deve haver aplicativos como esses para iOS, mas no momento desconheço.&lt;/p&gt;
 
@@ -113,19 +113,19 @@
 
 &lt;p&gt;A depender de como o controle remoto apareça no seu navegador, uma imagem pode impedi-lo de acessar a lista de reprodução, como na imagem a seguir.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_12.jpg&quot; alt=&quot;vlc_remoto_12&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_12.jpg&quot; alt=&quot;vlc_remoto_12&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Um truque de web designer para remover essa imagem é clicar com o botão direito nela e em seguida clicar em “Inspecionar elemento”.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_13.jpg&quot; alt=&quot;vlc_remoto_13&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_13.jpg&quot; alt=&quot;vlc_remoto_13&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;No painel que aparece, o código HTML dela deve aparecer em destaque. Clique com o botão direito nele e em seguida clique em “Excluir nó”.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_14.jpg&quot; alt=&quot;vlc_remoto_14&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_14.jpg&quot; alt=&quot;vlc_remoto_14&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A imagem deve desaparecer.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/vlc_remoto_07.jpg&quot; alt=&quot;vlc_remoto_07&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_07.jpg&quot; alt=&quot;vlc_remoto_07&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Isso não é uma solução definitiva. Se você recarregar a página, a imagem ainda está lá. Espero que os desenvolvedores do VLC consertem logo esse bug chato…&lt;/p&gt;
 
