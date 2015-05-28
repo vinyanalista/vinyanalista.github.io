@@ -99,7 +99,11 @@
     <div class="blog-post-conteudo panel-body">
         <p>O <a href="http://www.mysql.com/">MySQL</a> é um banco de dados de código aberto desenvolvido pela <a href="http://www.oracle.com/">Oracle</a>. Ele se tornou um dos bancos de dados mais utilizados no mundo devido ao fato de se integrar perfeitamente ao <a href="http://www.php.net/">PHP</a>, sendo oferecido pela maioria dos serviços de hospedagem de sites em conjunto com o suporte a essa linguagem. Nesse post, você verá como utilizá-lo em conjunto com o servidor de aplicação <a href="http://www.jboss.org/jbossas/">JBoss AS</a> para satisfazer as necessidades de armazenamento de dados de suas aplicações <a href="http://www.oracle.com/technetwork/java/javaee/">Java EE</a>.</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_01.jpg" alt="jboss_as_mysql_01" /></p>
+<p class="text-center">
+    <a href="/files/2012/07/jboss_as_mysql_01.jpg" title="">
+        <img src="/files/2012/07/jboss_as_mysql_01.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <p>Aqui também há uma dica para usuários do banco de dados <a href="http://www.postgresql.org/">PostgreSQL</a> que quiserem fazer o mesmo: leiam o final do post!</p>
 
@@ -121,49 +125,93 @@
 
 <p>Ao final do processo, o driver JDBC do MySQL deve aparecer habilitado na lista de aplicações implantadas, como mostra a figura (curiosamente, a <a href="http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/">aplicação de exemplo</a> que implantamos <a href="/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/">naquele post</a> ainda está no servidor):</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_02.jpg" alt="jboss_as_mysql_02" /></p>
+<p class="text-center">
+    <a href="/files/2012/07/jboss_as_mysql_02.jpg" title="">
+        <img src="/files/2012/07/jboss_as_mysql_02.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <h3 id="criao-do-datasource">Criação do datasource</h3>
 
 <p>No painel superior do console Web, clique em “Profile”, e em seguida, no menu da esquerda, clique em “Datasources”. É exibida uma lista com todos os datasources configurados (nesse caso, só há o <a href="https://docs.jboss.org/author/display/AS7/Getting+Started+Guide#GettingStartedGuide-ModifyingtheExampleDataSource">datasource de exemplo</a>, que já vem configurado com o servidor de aplicação):</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_03.jpg" alt="jboss_as_mysql_03" /></p>
+<p class="text-center">
+    <a href="/files/2012/07/jboss_as_mysql_03.jpg" title="">
+        <img src="/files/2012/07/jboss_as_mysql_03.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <p>Clique em “Add”. Na caixa de diálogo que aparece, forneça ao datasource um nome (esse nome não afeta a conexão, serve apenas para distinguir o datasource na lista, aqui forneci “TesteDS”) e um nome <a href="http://www.oracle.com/technetwork/java/jndi/">JNDI</a> (esse sim importa à conexão, é usado para localizar um recurso na rede e deve começar sempre com “java:/” ou “java:jboss/”, aqui digitei “java:/teste”), e em seguida clique em “Next”:</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_04.jpg" alt="jboss_as_mysql_04" /></p>
+<p class="text-center">
+    <a href="/files/2012/07/jboss_as_mysql_04.jpg" title="">
+        <img src="/files/2012/07/jboss_as_mysql_04.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <p>Selecione um driver JDBC na lista de drivers disponíveis. No nosso caso, devemos selecionar o MySQL Connector/J. Depois clique em “Next”:</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_05.jpg" alt="jboss_as_mysql_05" /></p>
+<p class="text-center">
+    <a href="/files/2012/07/jboss_as_mysql_05.jpg" title="">
+        <img src="/files/2012/07/jboss_as_mysql_05.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <p>Finalmente, devemos informar os detalhes da conexão: o endereço JDBC de acesso ao banco (aqui, preenchi com “jdbc:mysql://localhost:3306/teste”, o formato desse endereço é “jdbc:mysql://servidor:porta/base”), o usuário e a senha que serão utilizados. Depois de preencher os campos, clique em “Done”:</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_06.jpg" alt="jboss_as_mysql_06" /></p>
+<p class="text-center">
+    <a href="/files/2012/07/jboss_as_mysql_06.jpg" title="">
+        <img src="/files/2012/07/jboss_as_mysql_06.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <p>O datasource é criado e passa a aparecer na lista, mas ainda não está habilitado:</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_07.jpg" alt="jboss_as_mysql_07" /></p>
+<p class="text-center">
+    <a href="/files/2012/07/jboss_as_mysql_07.jpg" title="">
+        <img src="/files/2012/07/jboss_as_mysql_07.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <p>Antes de habilitá-lo, tornando-o assim disponível para conexão, vamos permitir que esse datasource seja gerenciado pela API de transações do Java (<a href="http://www.oracle.com/technetwork/java/javaee/jta/index.html">Java Transaction API</a>, ou JTA). Selecione-o na lista e, descendo na página, clique na aba “Connection”. Perceba que a JTA está desabilitada para esse datasource. Clique em “Edit” para alterar isso:</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_08.jpg" alt="jboss_as_mysql_08" /></p>
+<p class="text-center">
+    <a href="/files/2012/07/jboss_as_mysql_08.jpg" title="">
+        <img src="/files/2012/07/jboss_as_mysql_08.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <p>Marque as duas últimas opções e clique em “Save”:</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_09.jpg" alt="jboss_as_mysql_09" /></p>
+<p class="text-center">
+    <a href="/files/2012/07/jboss_as_mysql_09.jpg" title="">
+        <img src="/files/2012/07/jboss_as_mysql_09.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <p>Agora a JTA está habilitada:</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_10.jpg" alt="jboss_as_mysql_10" /></p>
+<p class="text-center">
+    <a href="/files/2012/07/jboss_as_mysql_10.jpg" title="">
+        <img src="/files/2012/07/jboss_as_mysql_10.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <p>Agora sim vamos habilitar o datasource: ainda com ele selecionado, clique no botão “Enable”, acima da lista. O datasource é então habilitado:</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_11.jpg" alt="jboss_as_mysql_11" /></p>
+<p class="text-center">
+    <a href="/files/2012/07/jboss_as_mysql_11.jpg" title="">
+        <img src="/files/2012/07/jboss_as_mysql_11.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <p>Ainda com o datasource selecionado na lista e a aba “Connection” aberta na parte de baixo, clique no botão “Test Connection”. Se você forneceu os dados corretamente, o servidor de aplicação conseguirá estabelecer uma conexão com o banco de dados, e a seguinte mensagem será exibida:</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_12.jpg" alt="jboss_as_mysql_12" /></p>
+<p class="text-center">
+    <a href="/files/2012/07/jboss_as_mysql_12.jpg" title="">
+        <img src="/files/2012/07/jboss_as_mysql_12.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <p>Da parte do servidor está tudo OK. Agora é só configurar a aplicação para utilizar o datasource.</p>
 

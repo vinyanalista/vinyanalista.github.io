@@ -6,15 +6,19 @@
 </description>
     <link>http://vinyanalista.github.io/</link>
     <atom:link href="http://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 May 2015 22:07:50 -0300</pubDate>
-    <lastBuildDate>Wed, 27 May 2015 22:07:50 -0300</lastBuildDate>
+    <pubDate>Wed, 27 May 2015 23:14:51 -0300</pubDate>
+    <lastBuildDate>Wed, 27 May 2015 23:14:51 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Controlando o VLC a partir do navegador ou do celular</title>
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.videolan.org/vlc/&quot;&gt;VLC&lt;/a&gt; é o verdadeiro canivete suíço dos vídeos, é um player com vários recursos interessantes, dentre eles a possibilidade de controlar a reprodução remotamente, através do navegador ou do celular. A depender de como você o usa para reproduzir seus arquivos multimídia, isso pode ser interessante. Veja aqui como fazê-lo.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_00.jpg&quot; alt=&quot;vlc_remoto_00&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_00.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_00.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -26,48 +30,80 @@
   &lt;li&gt;Inicie o VLC, abra o menu “Ferramentas” e clique em “Preferências”.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_01.jpg&quot; alt=&quot;vlc_remoto_01&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_01.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_01.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;A caixa de diálogo “Preferências” aparecerá como na imagem abaixo.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_02.jpg&quot; alt=&quot;vlc_remoto_02&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_02.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_02.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Na caixa de seleção “Exibir configurações”, selecione “Detalhado”, para que todas as opções de configuração sejam exibidas.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_03.jpg&quot; alt=&quot;vlc_remoto_03&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_03.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_03.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Na lista da esquerda, procure “Interfaces principais”, dentro de “Interface”. Dentre as opções que aparecem à direita, em “Módulos adicionais de interface”, marque “Web”.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_04.jpg&quot; alt=&quot;vlc_remoto_04&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_04.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_04.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Reinicie o VLC para que as configurações tenham efeito.&lt;/li&gt;
   &lt;li&gt;Adicione vídeos à sua lista de reprodução.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_05.jpg&quot; alt=&quot;vlc_remoto_05&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_05.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_05.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Para habilitar o controle remoto, abra o menu “Exibir”, depois vá em “Adicionar Interface” e marque “Web”.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_06.jpg&quot; alt=&quot;vlc_remoto_06&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_06.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_06.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Agora o controle remoto está disponível no endereço “&lt;a href=&quot;http://127.0.0.1:8080/&quot;&gt;http://127.0.0.1:8080&lt;/a&gt;” (ou, se preferir, “&lt;a href=&quot;http://localhost:8080/&quot;&gt;http://localhost:8080/&lt;/a&gt;“). Abra seu navegador favorito e acesse esse endereço.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_07.jpg&quot; alt=&quot;vlc_remoto_07&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_07.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_07.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Se na lista de reprodução você expandir “Não Definido”, verá os itens que adicionou antes de habilitar a interface Web.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_08.jpg&quot; alt=&quot;vlc_remoto_08&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_08.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_08.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Você pode clicar nos controles no controle remoto aberto no navegador e verificar que o VLC responde de acordo.&lt;/p&gt;
 
@@ -81,19 +117,31 @@
   &lt;li&gt;Abra seu editor de texto favorito com permissões de administrador. No Windows, recomendo utilizar o WordPad ou o &lt;a href=&quot;http://notepad-plus-plus.org/&quot;&gt;Notepad++&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_09.jpg&quot; alt=&quot;vlc_remoto_09&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_09.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_09.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Abra o arquivo “.hosts” no caminho já indicado.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_10.jpg&quot; alt=&quot;vlc_remoto_10&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_10.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_10.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Descomente, removendo o caractere de jogo da velha (“#”), as linhas abaixo do comentário “# private addresses” (endereços particulares).&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_11.jpg&quot; alt=&quot;vlc_remoto_11&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_11.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_11.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Salve o arquivo e reinicie o VLC para que as alterações tenham efeito.&lt;/li&gt;
@@ -105,7 +153,11 @@
 
 &lt;p&gt;O mais interessante de poder controlar o VLC remotamente é comandar a reprodução a partir de um celular Android. Desse jeito, temos a impressão que realmente estamos utilizando um controle remoto, como o de uma TV. Isso pode ser feito habilitando-se a interface Web, como descrito nos procedimentos anteriores, e executando um aplicativo como o &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.vlcforandroid.vlcdirectprofree&quot;&gt;VLC Direct&lt;/a&gt; ou o &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.hobbyistsoftware.android.vlcremote_usfree&quot;&gt;VLC Remote&lt;/a&gt;. Eles estão disponíveis gratuitamente, mas também apresentam versões pagas que possuem mais recursos.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_vlc_direct.jpg&quot; alt=&quot;vlc_remoto_vlc_direct&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_vlc_direct.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_vlc_direct.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Também deve haver aplicativos como esses para iOS, mas no momento desconheço.&lt;/p&gt;
 
@@ -113,19 +165,35 @@
 
 &lt;p&gt;A depender de como o controle remoto apareça no seu navegador, uma imagem pode impedi-lo de acessar a lista de reprodução, como na imagem a seguir.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_12.jpg&quot; alt=&quot;vlc_remoto_12&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_12.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_12.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Um truque de web designer para remover essa imagem é clicar com o botão direito nela e em seguida clicar em “Inspecionar elemento”.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_13.jpg&quot; alt=&quot;vlc_remoto_13&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_13.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_13.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;No painel que aparece, o código HTML dela deve aparecer em destaque. Clique com o botão direito nele e em seguida clique em “Excluir nó”.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_14.jpg&quot; alt=&quot;vlc_remoto_14&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_14.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_14.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;A imagem deve desaparecer.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/09/vlc_remoto_07.jpg&quot; alt=&quot;vlc_remoto_07&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/09/vlc_remoto_07.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/09/vlc_remoto_07.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Isso não é uma solução definitiva. Se você recarregar a página, a imagem ainda está lá. Espero que os desenvolvedores do VLC consertem logo esse bug chato…&lt;/p&gt;
 
@@ -150,7 +218,11 @@
         <title>Reduzindo o tamanho de discos r&amp;iacute;gidos virtuais do VirtualBox</title>
         <description>&lt;p&gt;É verdade que quando criamos um disco rígido virtual dinamicamente alocado no &lt;a href=&quot;http://www.virtualbox.org/&quot;&gt;VirtualBox&lt;/a&gt;, ele cresce à medida em que arquivos são gravados. No entanto, seu tamanho não diminui à medida em que excluímos arquivos. Veja agora como é possível reduzir discos rígidos desse tipo no VirtualBox.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2014/01/virtualbox.png&quot; alt=&quot;VirtualBox&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2014/01/virtualbox.png&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2014/01/virtualbox.png&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -226,7 +298,11 @@
     
       <item>
         <title>Recuperando o boot do Windows ap&amp;oacute;s instala&amp;ccedil;&amp;atilde;o do Linux</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2013/07/windows-startup-recovery1.jpg&quot; alt=&quot;windows-startup-recovery1&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2013/07/windows-startup-recovery1.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2013/07/windows-startup-recovery1.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;É, pessoal, sei que é uma situação um tanto inusitada, mas aconteceu comigo hoje, quando tentei instalar o &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;openSUSE&lt;/a&gt; 12.3 no meu computador, que até então só tinha o Windows 7. O problema mais comum é quando &lt;a href=&quot;http://www.vivaolinux.com.br/dica/Restaurando-o-GRUB-apos-a-instalacao-de-outro-sistema-operacional&quot;&gt;o Linux já está instalado e então instalamos o Windows&lt;/a&gt;, que a princípio impede que outros sistemas sejam inicializados, reservando o computador para si. Mas hoje comigo aconteceu isso: após instalar o openSUSE 12.3, o menu do &lt;a href=&quot;http://en.opensuse.org/GRUB&quot;&gt;GRUB2&lt;/a&gt; não oferecia a opção de inicializar o Windows. Venho aqui (tentar) descrever a solução.&lt;/p&gt;
 
@@ -272,25 +348,41 @@ Disk identifier: 0x1ba01b9f
   &lt;li&gt;Iniciei o computador pelo DVD de instalação do Windows 7. Na tela inicial, escolhi meu idioma (que não é inglês, quero reconhecer &lt;a href=&quot;http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/&quot;&gt;o crédito do autor das imagens&lt;/a&gt;) e cliquei em “Avançar”:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2013/07/windows-startup-recovery2.jpg&quot; alt=&quot;windows-startup-recovery2&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2013/07/windows-startup-recovery2.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2013/07/windows-startup-recovery2.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Em seguida, cliquei em “Reparar o computador”:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2013/07/windows-startup-recovery3.jpg&quot; alt=&quot;windows-startup-recovery3&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2013/07/windows-startup-recovery3.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2013/07/windows-startup-recovery3.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Nessa tela, escolhi a primeira opção, não selecionei nada na lista, e cliquei em “Avançar”:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2013/07/windows-startup-recovery4.jpg&quot; alt=&quot;windows-startup-recovery4&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2013/07/windows-startup-recovery4.png&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2013/07/windows-startup-recovery4.png&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Finalmente, nessa tela, diferentemente do autor, escolhi a primeira opção, “Startup Recovery”:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2013/07/windows-startup-recovery5.jpg&quot; alt=&quot;windows-startup-recovery5&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2013/07/windows-startup-recovery5.png&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2013/07/windows-startup-recovery5.png&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;A instalação executou seus procedimentos de manutenção, após os quais reiniciei o computador. Ainda nada de Windows, e agora ele não exibia mais nem o menu do GRUB2, acusando que havia múltiplas partições ativas.&lt;/p&gt;
 
@@ -345,7 +437,11 @@ Disk identifier: 0x1ba01b9f
         <title>Configurando um datasource do MySQL no JBoss AS</title>
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.mysql.com/&quot;&gt;MySQL&lt;/a&gt; é um banco de dados de código aberto desenvolvido pela &lt;a href=&quot;http://www.oracle.com/&quot;&gt;Oracle&lt;/a&gt;. Ele se tornou um dos bancos de dados mais utilizados no mundo devido ao fato de se integrar perfeitamente ao &lt;a href=&quot;http://www.php.net/&quot;&gt;PHP&lt;/a&gt;, sendo oferecido pela maioria dos serviços de hospedagem de sites em conjunto com o suporte a essa linguagem. Nesse post, você verá como utilizá-lo em conjunto com o servidor de aplicação &lt;a href=&quot;http://www.jboss.org/jbossas/&quot;&gt;JBoss AS&lt;/a&gt; para satisfazer as necessidades de armazenamento de dados de suas aplicações &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/&quot;&gt;Java EE&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_01.jpg&quot; alt=&quot;jboss_as_mysql_01&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_01.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_01.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Aqui também há uma dica para usuários do banco de dados &lt;a href=&quot;http://www.postgresql.org/&quot;&gt;PostgreSQL&lt;/a&gt; que quiserem fazer o mesmo: leiam o final do post!&lt;/p&gt;
 
@@ -367,49 +463,93 @@ Disk identifier: 0x1ba01b9f
 
 &lt;p&gt;Ao final do processo, o driver JDBC do MySQL deve aparecer habilitado na lista de aplicações implantadas, como mostra a figura (curiosamente, a &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/&quot;&gt;aplicação de exemplo&lt;/a&gt; que implantamos &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/&quot;&gt;naquele post&lt;/a&gt; ainda está no servidor):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_02.jpg&quot; alt=&quot;jboss_as_mysql_02&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_02.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_02.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;h3 id=&quot;criao-do-datasource&quot;&gt;Criação do datasource&lt;/h3&gt;
 
 &lt;p&gt;No painel superior do console Web, clique em “Profile”, e em seguida, no menu da esquerda, clique em “Datasources”. É exibida uma lista com todos os datasources configurados (nesse caso, só há o &lt;a href=&quot;https://docs.jboss.org/author/display/AS7/Getting+Started+Guide#GettingStartedGuide-ModifyingtheExampleDataSource&quot;&gt;datasource de exemplo&lt;/a&gt;, que já vem configurado com o servidor de aplicação):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_03.jpg&quot; alt=&quot;jboss_as_mysql_03&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_03.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_03.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Clique em “Add”. Na caixa de diálogo que aparece, forneça ao datasource um nome (esse nome não afeta a conexão, serve apenas para distinguir o datasource na lista, aqui forneci “TesteDS”) e um nome &lt;a href=&quot;http://www.oracle.com/technetwork/java/jndi/&quot;&gt;JNDI&lt;/a&gt; (esse sim importa à conexão, é usado para localizar um recurso na rede e deve começar sempre com “java:/” ou “java:jboss/”, aqui digitei “java:/teste”), e em seguida clique em “Next”:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_04.jpg&quot; alt=&quot;jboss_as_mysql_04&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_04.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_04.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Selecione um driver JDBC na lista de drivers disponíveis. No nosso caso, devemos selecionar o MySQL Connector/J. Depois clique em “Next”:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_05.jpg&quot; alt=&quot;jboss_as_mysql_05&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_05.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_05.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Finalmente, devemos informar os detalhes da conexão: o endereço JDBC de acesso ao banco (aqui, preenchi com “jdbc:mysql://localhost:3306/teste”, o formato desse endereço é “jdbc:mysql://servidor:porta/base”), o usuário e a senha que serão utilizados. Depois de preencher os campos, clique em “Done”:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_06.jpg&quot; alt=&quot;jboss_as_mysql_06&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_06.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_06.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;O datasource é criado e passa a aparecer na lista, mas ainda não está habilitado:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_07.jpg&quot; alt=&quot;jboss_as_mysql_07&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_07.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_07.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Antes de habilitá-lo, tornando-o assim disponível para conexão, vamos permitir que esse datasource seja gerenciado pela API de transações do Java (&lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/jta/index.html&quot;&gt;Java Transaction API&lt;/a&gt;, ou JTA). Selecione-o na lista e, descendo na página, clique na aba “Connection”. Perceba que a JTA está desabilitada para esse datasource. Clique em “Edit” para alterar isso:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_08.jpg&quot; alt=&quot;jboss_as_mysql_08&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_08.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_08.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Marque as duas últimas opções e clique em “Save”:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_09.jpg&quot; alt=&quot;jboss_as_mysql_09&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_09.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_09.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Agora a JTA está habilitada:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_10.jpg&quot; alt=&quot;jboss_as_mysql_10&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_10.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_10.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Agora sim vamos habilitar o datasource: ainda com ele selecionado, clique no botão “Enable”, acima da lista. O datasource é então habilitado:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_11.jpg&quot; alt=&quot;jboss_as_mysql_11&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_11.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_11.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Ainda com o datasource selecionado na lista e a aba “Connection” aberta na parte de baixo, clique no botão “Test Connection”. Se você forneceu os dados corretamente, o servidor de aplicação conseguirá estabelecer uma conexão com o banco de dados, e a seguinte mensagem será exibida:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_mysql_12.jpg&quot; alt=&quot;jboss_as_mysql_12&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_12.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_12.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Da parte do servidor está tudo OK. Agora é só configurar a aplicação para utilizar o datasource.&lt;/p&gt;
 
@@ -475,7 +615,11 @@ Disk identifier: 0x1ba01b9f
         <title>Apresentando o servidor de aplica&amp;ccedil;&amp;atilde;o JBoss AS 7 (parte 2)</title>
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.jboss.org/jbossas/&quot;&gt;JBoss Application Server&lt;/a&gt; (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela &lt;a href=&quot;http://www.jboss.org/&quot;&gt;JBoss&lt;/a&gt; (atualmente, uma divisão da &lt;a href=&quot;http://www.redhat.com/&quot;&gt;Red Hat&lt;/a&gt;) para a plataforma &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/&quot;&gt;Java EE&lt;/a&gt;. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações Java para a Web utilizando esse servidor.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_01.jpg&quot; alt=&quot;jboss_as_01&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_01.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_01.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Essa é a segunda parte de dois posts que visam apresentar o JBoss AS 7. Se você desejava acessar a primeira parte, &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/&quot;&gt;clique aqui&lt;/a&gt;. Senão, continue lendo.&lt;/p&gt;
 
@@ -487,7 +631,11 @@ Disk identifier: 0x1ba01b9f
 
 &lt;p&gt;Na primeira vez em que você tentar acessar esse console, no entanto, ele emitirá uma mensagem de erro (é bonita, eu sei, mas se você examinar seu conteúdo, verá que é uma mensagem de erro, rsrsrs):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_05.jpg&quot; alt=&quot;jboss_as_05&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_05.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_05.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Esse aviso nos diz que é necessário definir um usuário e uma senha para acessar o console de administração Web. Vamos fazer isso.&lt;/p&gt;
 
@@ -516,17 +664,29 @@ Re-enter Password :&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Feito isso, nós já podemos acessar o console de administração Web, informando o usuário e senha criados quando solicitados (lembrando que o endereço é “&lt;a href=&quot;http://localhost:9990/&quot;&gt;http://localhost:9990/&lt;/a&gt;“):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_06.jpg&quot; alt=&quot;jboss_as_06&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_06.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_06.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Vamos fazer undeploy e deploy da aplicação usando o console de administração Web. Para isso, no menu do lado esquerdo, clique em “Manage Deployments”. É exibida uma lista das aplicações instaladas no servidor:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_07.jpg&quot; alt=&quot;jboss_as_07&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_07.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_07.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Clicando em “Disable”, interromperíamos a aplicação, fazendo com que ela não ficasse mais disponível ao usuário final, mas ainda permanecesse no servidor. Não é o que queremos aqui. Clique em “Remove” para de fato remover a aplicação do servidor. Aparece uma mensagem de confirmação na tela, clique em “Confirm”.&lt;/p&gt;
 
 &lt;p&gt;Feito isso a aplicação desaparece da lista, ela já não está mais no servidor (e muito menos acessível):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_08.jpg&quot; alt=&quot;jboss_as_08&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_08.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_08.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Se você tentar acessá-la pelo seu endereço (“&lt;a href=&quot;http://localhost:8080/jboss-as-helloworld-jsf/&quot;&gt;http://localhost:8080/jboss-as-helloworld-jsf/&lt;/a&gt;“), visualizará uma página de erro no navegador.&lt;/p&gt;
 
@@ -534,19 +694,35 @@ Re-enter Password :&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;O primeiro passo é selecionar o arquivo que você deseja fazer deploy. Na janela que aparece, clique em “Browse…”, navegue até a pasta do exemplo (aqui, “/home/vinicius/jboss-jdf-jboss-as-quickstart-8505020/helloworld-jsf/”) e, dentro da pasta “target”, escolha o arquivo “jboss-as-helloworld-jsf.war”, que representa a aplicação compilada e empacotada em um formato próprio de aplicação Web (arquivo &lt;strong&gt;.war&lt;/strong&gt;), análogo ao formato de aplicação Desktop (arquivo &lt;strong&gt;.jar&lt;/strong&gt;). Por último, clique em “Next”:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_09.jpg&quot; alt=&quot;jboss_as_09&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_09.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_09.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Ele pede para confirmar as informações. Simplesmente clique em “Save”:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_10.jpg&quot; alt=&quot;jboss_as_10&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_10.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_10.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;De volta à lista de aplicações, a aplicação foi instalada no servidor, mas não foi iniciada:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_11.jpg&quot; alt=&quot;jboss_as_11&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_11.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_11.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Clique em Enable para iniciá-la. Aparece uma mensagem de confirmação na tela, clique em “Confirm”. Feito isso a aplicação passa a aparecer na lista como habilitada:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_12.jpg&quot; alt=&quot;jboss_as_12&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_12.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_12.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Agora é possível acessá-la novamente pelo endereço “&lt;a href=&quot;http://localhost:8080/jboss-as-helloworld-jsf/&quot;&gt;http://localhost:8080/jboss-as-helloworld-jsf/&lt;/a&gt;“.&lt;/p&gt;
 
@@ -603,7 +779,11 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
         <title>Apresentando o servidor de aplica&amp;ccedil;&amp;atilde;o JBoss AS 7</title>
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.jboss.org/jbossas/&quot;&gt;JBoss Application Server&lt;/a&gt; (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela &lt;a href=&quot;http://www.jboss.org/&quot;&gt;JBoss&lt;/a&gt; (atualmente, uma divisão da &lt;a href=&quot;http://www.redhat.com/&quot;&gt;Red Hat&lt;/a&gt;) para a plataforma &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/&quot;&gt;Java EE&lt;/a&gt;. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações Java para a Web utilizando esse servidor.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_01.jpg&quot; alt=&quot;jboss_as_01&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_01.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_01.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -711,7 +891,11 @@ JAVA_OPTS:  -server -XX:+TieredCompilation -Xms64m -Xmx512m -XX:MaxPermSize=256m
 
 &lt;p&gt;Tanto no Windows quanto no Linux, após iniciado o servidor, abra seu navegador de preferência e acesse o endereço “&lt;a href=&quot;http://localhost:8080&quot;&gt;http://localhost:8080&lt;/a&gt;” (a porta 8080 é a utilizada pelo JBoss AS por padrão, mas essa porta pode ser alterada na configuração do servidor). Você deve ver a tela de boas vindas do JBoss AS:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_02.jpg&quot; alt=&quot;jboss_as_02&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_02.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_02.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;h3 id=&quot;executando-uma-aplicao-web&quot;&gt;Executando uma aplicação Web&lt;/h3&gt;
 
@@ -721,7 +905,11 @@ JAVA_OPTS:  -server -XX:+TieredCompilation -Xms64m -Xmx512m -XX:MaxPermSize=256m
 
 &lt;p&gt;Vá até a &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/&quot;&gt;página das aplicações de exemplo do JBoss AS&lt;/a&gt; e clique em “Get the source”. Depois, clique em “Source zip”:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_03.jpg&quot; alt=&quot;jboss_as_03&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_03.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_03.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Você está baixando um arquivo &lt;strong&gt;.zip&lt;/strong&gt; (no momento da escrita deste post, nomeado “jboss-jdf-jboss-as-quickstart-7.1.1.Final-0-gbcbcf69.zip”) com todas as aplicações de exemplo do JBoss AS (se quiser por curiosidade conferir a lista, são todas essas que aparecem listadas nessa mesma página).&lt;/p&gt;
 
@@ -774,7 +962,11 @@ INFO: JBoss Remoting version 3.2.3.GA
 
 &lt;p&gt;Feito isso, podemos acessar a aplicação usando o navegador através do endereço “&lt;a href=&quot;http://localhost:8080/jboss-as-helloworld-jsf/&quot;&gt;http://localhost:8080/jboss-as-helloworld-jsf/&lt;/a&gt;“:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jboss_as_04.jpg&quot; alt=&quot;jboss_as_04&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jboss_as_04.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jboss_as_04.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Essa é uma aplicação Web 2.0 com &lt;a href=&quot;http://www.w3schools.com/ajax/default.asp&quot;&gt;AJAX&lt;/a&gt; na qual ao digitar um nome no campo de texto, ele reproduz esse nome em uma mensagem de olá do lado direito desse campo. É realmente a única coisa que essa aplicação faz. Os componentes exibidos na tela são estilizados por causa da utilização do framework de apresentação &lt;a href=&quot;http://www.jboss.org/richfaces/&quot;&gt;Richfaces&lt;/a&gt; para renderizar esses componentes.&lt;/p&gt;
 
@@ -795,7 +987,11 @@ INFO: JBoss Remoting version 3.2.3.GA
         <title>Instala&amp;ccedil;&amp;atilde;o do Apache Maven</title>
         <description>&lt;p&gt;Olá, pessoal, nesse post vocês vão ver como instalar e executar pela primeira vez o &lt;a href=&quot;http://maven.apache.org/&quot;&gt;Apache Maven&lt;/a&gt; em seus computadores.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/maven1.gif&quot; alt=&quot;Maven&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/maven1.gif&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/maven1.gif&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;O Maven é uma ferramenta que facilita e automatiza bastante o gerenciamento de projetos em Java, auxiliando os desenvolvedores nas etapas de definição, codificação, compilação, testes, empacotamento, implantação, documentação e distribuição da aplicação.&lt;/p&gt;
 
@@ -853,9 +1049,17 @@ INFO: JBoss Remoting version 3.2.3.GA
 
 &lt;p&gt;No Windows, o procedimento é bem semelhante ao &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;descrito no post anterior&lt;/a&gt;, só mudando os nomes das variáveis e os valores:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/maven2.jpg&quot; alt=&quot;maven2&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/maven2.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/maven2.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/maven3.jpg&quot; alt=&quot;maven3&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/maven3.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/maven3.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;No Linux, se você instalou o Maven apenas para o seu usuário,  abra com o seu editor de preferência o arquivo “~/.bashrc” e acrescente as seguintes linhas no final do arquivo (você deve substituir, se necessário, a localização do Maven, que no nosso exemplo foi “/home/vinicius/apache-maven-3.0.4″):&lt;/p&gt;
 
@@ -922,7 +1126,11 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 
 &lt;p&gt;A seguir, forneço instruções para instalar, configurar e executar a versão mais recente do JDK (atualmente, a &lt;strong&gt;1.7.0_05&lt;/strong&gt;) em sistemas Windows e Linux.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/java.jpg&quot; alt=&quot;Java&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/java.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/java.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -930,7 +1138,11 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 
 &lt;p&gt;O primeiro passo é baixar o JDK. Vá até a &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/&quot;&gt;página de downloads do Java SE&lt;/a&gt;, aceite o contrato de licença e escolha a versão do JDK apropriada para o seu sistema:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jdk7_1.jpg&quot; alt=&quot;jdk7_1&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jdk7_1.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jdk7_1.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;h4 id=&quot;download-e-instalao-do-jdk-no-windows&quot;&gt;Download e instalação do JDK no Windows&lt;/h4&gt;
 
@@ -982,31 +1194,59 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 
 &lt;p&gt;Caso sua Área de Trabalho apresente o ícone do Meu Computador, clique com o botão direito nesse ícone e clique em Propriedades. Caso contrário, abra o Menu Iniciar, clique em Painel de Controle e, na janela que se abre, procure a opção Sistema.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jdk7_2.jpg&quot; alt=&quot;jdk7_2&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jdk7_2.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jdk7_2.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Na janela Sistema, clique na opção Configurações avançadas do sistema, no painel esquerdo.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jdk7_3.jpg&quot; alt=&quot;jdk7_3&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jdk7_3.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jdk7_3.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Na caixa de diálogo Propriedades do Sistema, clique no botão Variáveis de Ambiente.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jdk7_4.jpg&quot; alt=&quot;jdk7_4&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jdk7_4.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jdk7_4.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Na caixa de diálogo Variáveis de Ambiente, na seção Variáveis do sistema, clique no botão Novo.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jdk7_5.jpg&quot; alt=&quot;jdk7_5&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jdk7_5.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jdk7_5.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Informe JAVA_HOME como nome da variável e no campo valor digite a localização do JDK (no meu caso, ele foi instalado em “C:\Program Files (x86)\Java\jdk1.7.0_05″). Quando acabar de digitar esses valores, clique em OK.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jdk7_6.jpg&quot; alt=&quot;jdk7_6&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jdk7_6.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jdk7_6.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;De volta à caixa de diálogo Variáveis de Ambiente, também na seção Variáveis do sistema, procure na lista a variável Path, selecione-a e clique no botão Editar.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jdk7_7.jpg&quot; alt=&quot;jdk7_7&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jdk7_7.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jdk7_7.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Posicione o cursor no início do valor da variável, insira o texto “%JAVA_HOME\bin;” (não inclua as aspas e não esqueça do ponto-e-vírgula) e clique em OK.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jdk7_8.jpg&quot; alt=&quot;jdk7_8&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jdk7_8.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jdk7_8.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;De volta à caixa de diálogo Variáveis de Ambiente, clique em OK. Em seguida, você pode fechar a janela Sistema. A partir de agora, qualquer nova janela de terminal aberta ou comando invocado refletirá essas alterações.&lt;/p&gt;
 
@@ -1067,11 +1307,19 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 
 &lt;p&gt;Para verificar que o navegador reconhece o plugin, digite na aba de endereços “about:plugins” e tecle Enter. O plugin do Java deve aparecer na lista de plugins instalados:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jdk7_9.jpg&quot; alt=&quot;jdk7_9&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jdk7_9.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jdk7_9.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;É possível também verificar na &lt;a href=&quot;http://www.java.com/pt_BR/download/testjava.jsp&quot;&gt;página de teste do Java&lt;/a&gt; se a versão do plugin instalada no seu sistema corresponde à mais atual:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/07/jdk7_10.jpg&quot; alt=&quot;jdk7_10&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/07/jdk7_10.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/07/jdk7_10.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Espero que esse post possa ser útil a programadores Java iniciantes de uma maneira em geral. Agradeço previamente opiniões e críticas construtivas. Ofereço o espaço para perguntas também. Abraço a todos e até a próxima!&lt;/p&gt;
 </description>
@@ -1084,7 +1332,11 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
     
       <item>
         <title>Problemas envolvendo bootloaders, MBR e tabela de parti&amp;ccedil;&amp;otilde;es</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/04/computador-maluco.jpg&quot; alt=&quot;computador-maluco&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/04/computador-maluco.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/04/computador-maluco.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações curiosas sobre o ocorrido.&lt;/p&gt;
 
@@ -1148,7 +1400,17 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
   &lt;li&gt;Eis que apareceu a seguinte tela com as opções de recuperação oferecidas pelo DVD de instalação do Windows 7 (volto a falar dela já já):&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/04/win7-system-recovery-options.jpg&quot; alt=&quot;Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/04/win7-system-recovery-options.jpg&quot; title=&quot;Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7&quot;&gt;
+        &lt;img src=&quot;/files/2012/04/win7-system-recovery-options.jpg&quot; alt=&quot;Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;em&gt;
+        Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7
+    &lt;/em&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Eu cliquei em “Startup Repair”, esperei ele concluir o reparo, e após isso, reiniciei o computador, mas nada mudou.&lt;/p&gt;
 
@@ -1180,11 +1442,31 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 
 &lt;p&gt;Imaginava que agora eu conseguiria acessar o Windows, mas esbarrei em um novo problema. A tela exibida quando eu iniciava o computador e escolhia o Windows na lista do GRUB era a seguinte (clique na imagem para ampliar):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/04/erro-0xc000000e.jpg&quot; alt=&quot;Erro 0xc000000e&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/04/erro-0xc000000e.jpg&quot; title=&quot;Erro 0xc000000e&quot;&gt;
+        &lt;img src=&quot;/files/2012/04/erro-0xc000000e.jpg&quot; alt=&quot;Erro 0xc000000e&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;em&gt;
+        Erro 0xc000000e
+    &lt;/em&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Mais uma rodada de tentativas executando aqueles comandos que eu mostrei acima, e dessa vez houve algum resultado: só que o sistema ainda não funcionou, o erro foi que mudou. Agora a tela exibia:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/04/erro-bootmgr.png&quot; alt=&quot;BOOTMGR is missing&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/04/erro-bootmgr.png&quot; title=&quot;BOOTMGR is missing&quot;&gt;
+        &lt;img src=&quot;/files/2012/04/erro-bootmgr.png&quot; alt=&quot;BOOTMGR is missing&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;em&gt;
+        BOOTMGR is missing
+    &lt;/em&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Encontrei algumas soluções na Internet, mas decidi tentar primeiro a que tinha &lt;a href=&quot;http://support.microsoft.com/kb/2622803&quot;&gt;no site da Microsoft&lt;/a&gt;: tentei o método 2 fornecido nessa página, que consiste em executar, da mesma forma que os comandos anteriores, o comando:&lt;/p&gt;
 
@@ -1203,9 +1485,29 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 
 &lt;p&gt;Só que essa solução me trouxe dois problemas: o GRUB sumiu (imagina só: agora que eu consegui acessar o Windows, não consigo mais acessar o Linux!) e aquela imagem da bandeira do Windows brilhando não aparece mais na inicialização, ao invés disso, é a barra verde do Vista (isso não chega a ser um problema, mas não deveria acontecer, veja nas imagens a seguir o antes e o depois).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/04/win7-boot.jpg&quot; alt=&quot;O que aparecia antes enquanto o Windows 7 era carregado&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/04/win7-boot.jpg&quot; title=&quot;O que aparecia antes enquanto o Windows 7 era carregado&quot;&gt;
+        &lt;img src=&quot;/files/2012/04/win7-boot.jpg&quot; alt=&quot;O que aparecia antes enquanto o Windows 7 era carregado&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/04/winvista-boot.jpg&quot; alt=&quot;O que aparece agora&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;em&gt;
+        O que aparecia antes enquanto o Windows 7 era carregado
+    &lt;/em&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/04/winvista-boot.jpg&quot; title=&quot;O que aparece agora&quot;&gt;
+        &lt;img src=&quot;/files/2012/04/winvista-boot.jpg&quot; alt=&quot;O que aparece agora&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;em&gt;
+        O que aparece agora
+    &lt;/em&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Eu poderia &lt;a href=&quot;http://www.vivaolinux.com.br/dica/Restaurando-o-GRUB-apos-a-instalacao-de-outro-sistema-operacional&quot;&gt;facilmente recuperar o GRUB&lt;/a&gt; para conseguir acessar o Linux, mas como a instalação do Ubuntu era provisória, preferi gravar o CD do openSUSE e instalá-lo por cima do Ubuntu, o que devolveu o GRUB ao MBR e o atualizou para fornecer o Windows 7 e o openSUSE como opções. Desliguei o computador, devolvi o cabo de força do outro HD, liguei de novo pra ver se estava tudo bem, ele reconheceu o “novo” disco rígido… Agora está tudo como era antes, e com o Linux novo, como eu queria.&lt;/p&gt;
 
@@ -1238,7 +1540,11 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
     
       <item>
         <title>Onde reciclar cartuchos de tinta em Aracaju</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/04/reciclagem-de-cartuchos.jpg&quot; alt=&quot;reciclagem-de-cartuchos&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/04/reciclagem-de-cartuchos.jpg&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/files/2012/04/reciclagem-de-cartuchos.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
 
 &lt;p&gt;O que fazer com isso depois que não servir mais? Jogar no lixo? Reciclar? Será que dá pra reciclar? Aonde eu devo levar? São algumas das perguntas que nos fazemos quando nossos eletrônicos não servem mais.&lt;/p&gt;
 
@@ -1246,7 +1552,17 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 
 &lt;p&gt;Pois bem, algo me chamou a atenção quando estive no &lt;a href=&quot;http://www.shoppingjardins.com.br/&quot;&gt;Shopping Jardins&lt;/a&gt; há &lt;a href=&quot;http://jornalnerds.blogspot.com.br/2010/12/reciclagem-cartuchos-de-impressora.html&quot;&gt;um tempo&lt;/a&gt; foi um banner da &lt;a href=&quot;http://www.infranet.com.br/&quot;&gt;Infranet&lt;/a&gt; que dizia que eles reciclavam cartuchos de tinta e toners:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://vinyanalista.github.io/files/2012/04/reciclagem-infranet.jpg&quot; alt=&quot;Reciclagem de cartuchos na Infranet&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;a href=&quot;/files/2012/04/reciclagem-infranet.jpg&quot; title=&quot;Reciclagem de cartuchos na Infranet&quot;&gt;
+        &lt;img src=&quot;/files/2012/04/reciclagem-infranet.jpg&quot; alt=&quot;Reciclagem de cartuchos na Infranet&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;
+    &lt;em&gt;
+        Reciclagem de cartuchos na Infranet
+    &lt;/em&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Abaixo você confere os endereços e os telefones das lojas Infranet em Aracaju (ambas prestam esse serviço).&lt;/p&gt;
 

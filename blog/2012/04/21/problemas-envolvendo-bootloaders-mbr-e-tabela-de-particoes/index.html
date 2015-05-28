@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="author" content="Antônio Vinícius Menezes Medeiros">
-    <meta name="description" content="Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e p...">
+    <meta name="description" content="                Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os m...">
 
     <link rel="apple-touch-icon" href="/img/favicon.png">
     <link rel="icon" href="/img/favicon.png">
@@ -97,7 +97,11 @@
         </div>
     </div>
     <div class="blog-post-conteudo panel-body">
-        <p><img src="http://vinyanalista.github.io/files/2012/04/computador-maluco.jpg" alt="computador-maluco" /></p>
+        <p class="text-center">
+    <a href="/files/2012/04/computador-maluco.jpg" title="">
+        <img src="/files/2012/04/computador-maluco.jpg" alt="" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
 <p>Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações curiosas sobre o ocorrido.</p>
 
@@ -161,7 +165,17 @@
   <li>Eis que apareceu a seguinte tela com as opções de recuperação oferecidas pelo DVD de instalação do Windows 7 (volto a falar dela já já):</li>
 </ol>
 
-<p><img src="http://vinyanalista.github.io/files/2012/04/win7-system-recovery-options.jpg" alt="Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7" /></p>
+<p class="text-center">
+    <a href="/files/2012/04/win7-system-recovery-options.jpg" title="Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7">
+        <img src="/files/2012/04/win7-system-recovery-options.jpg" alt="Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7" class="img-responsive img-thumbnail" />
+    </a>
+</p>
+
+<p class="text-center">
+    <em>
+        Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7
+    </em>
+</p>
 
 <p>Eu cliquei em “Startup Repair”, esperei ele concluir o reparo, e após isso, reiniciei o computador, mas nada mudou.</p>
 
@@ -193,11 +207,31 @@
 
 <p>Imaginava que agora eu conseguiria acessar o Windows, mas esbarrei em um novo problema. A tela exibida quando eu iniciava o computador e escolhia o Windows na lista do GRUB era a seguinte (clique na imagem para ampliar):</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/04/erro-0xc000000e.jpg" alt="Erro 0xc000000e" /></p>
+<p class="text-center">
+    <a href="/files/2012/04/erro-0xc000000e.jpg" title="Erro 0xc000000e">
+        <img src="/files/2012/04/erro-0xc000000e.jpg" alt="Erro 0xc000000e" class="img-responsive img-thumbnail" />
+    </a>
+</p>
+
+<p class="text-center">
+    <em>
+        Erro 0xc000000e
+    </em>
+</p>
 
 <p>Mais uma rodada de tentativas executando aqueles comandos que eu mostrei acima, e dessa vez houve algum resultado: só que o sistema ainda não funcionou, o erro foi que mudou. Agora a tela exibia:</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/04/erro-bootmgr.png" alt="BOOTMGR is missing" /></p>
+<p class="text-center">
+    <a href="/files/2012/04/erro-bootmgr.png" title="BOOTMGR is missing">
+        <img src="/files/2012/04/erro-bootmgr.png" alt="BOOTMGR is missing" class="img-responsive img-thumbnail" />
+    </a>
+</p>
+
+<p class="text-center">
+    <em>
+        BOOTMGR is missing
+    </em>
+</p>
 
 <p>Encontrei algumas soluções na Internet, mas decidi tentar primeiro a que tinha <a href="http://support.microsoft.com/kb/2622803">no site da Microsoft</a>: tentei o método 2 fornecido nessa página, que consiste em executar, da mesma forma que os comandos anteriores, o comando:</p>
 
@@ -216,9 +250,29 @@
 
 <p>Só que essa solução me trouxe dois problemas: o GRUB sumiu (imagina só: agora que eu consegui acessar o Windows, não consigo mais acessar o Linux!) e aquela imagem da bandeira do Windows brilhando não aparece mais na inicialização, ao invés disso, é a barra verde do Vista (isso não chega a ser um problema, mas não deveria acontecer, veja nas imagens a seguir o antes e o depois).</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/04/win7-boot.jpg" alt="O que aparecia antes enquanto o Windows 7 era carregado" /></p>
+<p class="text-center">
+    <a href="/files/2012/04/win7-boot.jpg" title="O que aparecia antes enquanto o Windows 7 era carregado">
+        <img src="/files/2012/04/win7-boot.jpg" alt="O que aparecia antes enquanto o Windows 7 era carregado" class="img-responsive img-thumbnail" />
+    </a>
+</p>
 
-<p><img src="http://vinyanalista.github.io/files/2012/04/winvista-boot.jpg" alt="O que aparece agora" /></p>
+<p class="text-center">
+    <em>
+        O que aparecia antes enquanto o Windows 7 era carregado
+    </em>
+</p>
+
+<p class="text-center">
+    <a href="/files/2012/04/winvista-boot.jpg" title="O que aparece agora">
+        <img src="/files/2012/04/winvista-boot.jpg" alt="O que aparece agora" class="img-responsive img-thumbnail" />
+    </a>
+</p>
+
+<p class="text-center">
+    <em>
+        O que aparece agora
+    </em>
+</p>
 
 <p>Eu poderia <a href="http://www.vivaolinux.com.br/dica/Restaurando-o-GRUB-apos-a-instalacao-de-outro-sistema-operacional">facilmente recuperar o GRUB</a> para conseguir acessar o Linux, mas como a instalação do Ubuntu era provisória, preferi gravar o CD do openSUSE e instalá-lo por cima do Ubuntu, o que devolveu o GRUB ao MBR e o atualizou para fornecer o Windows 7 e o openSUSE como opções. Desliguei o computador, devolvi o cabo de força do outro HD, liguei de novo pra ver se estava tudo bem, ele reconheceu o “novo” disco rígido… Agora está tudo como era antes, e com o Linux novo, como eu queria.</p>
 
