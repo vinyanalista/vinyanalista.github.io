@@ -6,19 +6,13 @@
 </description>
     <link>http://vinyanalista.github.io/</link>
     <atom:link href="http://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 May 2015 23:14:51 -0300</pubDate>
-    <lastBuildDate>Wed, 27 May 2015 23:14:51 -0300</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2015 18:30:35 -0300</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2015 18:30:35 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Controlando o VLC a partir do navegador ou do celular</title>
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.videolan.org/vlc/&quot;&gt;VLC&lt;/a&gt; é o verdadeiro canivete suíço dos vídeos, é um player com vários recursos interessantes, dentre eles a possibilidade de controlar a reprodução remotamente, através do navegador ou do celular. A depender de como você o usa para reproduzir seus arquivos multimídia, isso pode ser interessante. Veja aqui como fazê-lo.&lt;/p&gt;
-
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_00.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_00.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
-    &lt;/a&gt;
-&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -215,16 +209,16 @@
       </item>
     
       <item>
-        <title>Reduzindo o tamanho de discos r&amp;iacute;gidos virtuais do VirtualBox</title>
+        <title>Reduzindo o tamanho de discos rígidos virtuais do VirtualBox</title>
         <description>&lt;p&gt;É verdade que quando criamos um disco rígido virtual dinamicamente alocado no &lt;a href=&quot;http://www.virtualbox.org/&quot;&gt;VirtualBox&lt;/a&gt;, ele cresce à medida em que arquivos são gravados. No entanto, seu tamanho não diminui à medida em que excluímos arquivos. Veja agora como é possível reduzir discos rígidos desse tipo no VirtualBox.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p class=&quot;text-center&quot;&gt;
     &lt;a href=&quot;/files/2014/01/virtualbox.png&quot; title=&quot;&quot;&gt;
         &lt;img src=&quot;/files/2014/01/virtualbox.png&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
     &lt;/a&gt;
 &lt;/p&gt;
-
-&lt;!--more--&gt;
 
 &lt;p&gt;Primeiro, é necessário executar um utilitário na &lt;strong&gt;máquina virtual&lt;/strong&gt; (&lt;em&gt;guest&lt;/em&gt;), que vai transformar todo o espaço livre em &lt;em&gt;bits&lt;/em&gt; zero no disco rígido virtual. Se sua máquina virtual roda Linux, esse utilitário é o &lt;strong&gt;zerofree&lt;/strong&gt;, se roda Windows, há o &lt;strong&gt;SDelete&lt;/strong&gt;.&lt;/p&gt;
 
@@ -289,7 +283,7 @@
   &lt;li&gt;&lt;a href=&quot;http://www.maketecheasier.com/shrink-your-virtualbox-vm&quot;&gt;How To Shrink Your Virtualbox VM And Free Up Space For Your Hard Disk – Make Tech Easier&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 20 Jan 2014 03:53:32 -0300</pubDate>
+        <pubDate>Mon, 20 Jan 2014 04:53:32 -0200</pubDate>
         <link>http://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</link>
         <guid isPermaLink="true">http://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</guid>
         
@@ -297,16 +291,8 @@
       </item>
     
       <item>
-        <title>Recuperando o boot do Windows ap&amp;oacute;s instala&amp;ccedil;&amp;atilde;o do Linux</title>
-        <description>&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2013/07/windows-startup-recovery1.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2013/07/windows-startup-recovery1.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
-    &lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;É, pessoal, sei que é uma situação um tanto inusitada, mas aconteceu comigo hoje, quando tentei instalar o &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;openSUSE&lt;/a&gt; 12.3 no meu computador, que até então só tinha o Windows 7. O problema mais comum é quando &lt;a href=&quot;http://www.vivaolinux.com.br/dica/Restaurando-o-GRUB-apos-a-instalacao-de-outro-sistema-operacional&quot;&gt;o Linux já está instalado e então instalamos o Windows&lt;/a&gt;, que a princípio impede que outros sistemas sejam inicializados, reservando o computador para si. Mas hoje comigo aconteceu isso: após instalar o openSUSE 12.3, o menu do &lt;a href=&quot;http://en.opensuse.org/GRUB&quot;&gt;GRUB2&lt;/a&gt; não oferecia a opção de inicializar o Windows. Venho aqui (tentar) descrever a solução.&lt;/p&gt;
-
-&lt;!--more--&gt;
+        <title>Recuperando o boot do Windows após instalação do Linux</title>
+        <description>&lt;p&gt;É, pessoal, sei que é uma situação um tanto inusitada, mas aconteceu comigo hoje, quando tentei instalar o &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;openSUSE&lt;/a&gt; 12.3 no meu computador, que até então só tinha o Windows 7. O problema mais comum é quando &lt;a href=&quot;http://www.vivaolinux.com.br/dica/Restaurando-o-GRUB-apos-a-instalacao-de-outro-sistema-operacional&quot;&gt;o Linux já está instalado e então instalamos o Windows&lt;/a&gt;, que a princípio impede que outros sistemas sejam inicializados, reservando o computador para si. Mas hoje comigo aconteceu isso: após instalar o openSUSE 12.3, o menu do &lt;a href=&quot;http://en.opensuse.org/GRUB&quot;&gt;GRUB2&lt;/a&gt; não oferecia a opção de inicializar o Windows. Venho aqui (tentar) descrever a solução.&lt;/p&gt;
 
 &lt;h3 id=&quot;instalao-do-opensuse&quot;&gt;Instalação do openSUSE&lt;/h3&gt;
 
@@ -612,7 +598,7 @@ Disk identifier: 0x1ba01b9f
       </item>
     
       <item>
-        <title>Apresentando o servidor de aplica&amp;ccedil;&amp;atilde;o JBoss AS 7 (parte 2)</title>
+        <title>Apresentando o servidor de aplicação JBoss AS 7 (parte 2)</title>
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.jboss.org/jbossas/&quot;&gt;JBoss Application Server&lt;/a&gt; (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela &lt;a href=&quot;http://www.jboss.org/&quot;&gt;JBoss&lt;/a&gt; (atualmente, uma divisão da &lt;a href=&quot;http://www.redhat.com/&quot;&gt;Red Hat&lt;/a&gt;) para a plataforma &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/&quot;&gt;Java EE&lt;/a&gt;. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações Java para a Web utilizando esse servidor.&lt;/p&gt;
 
 &lt;p class=&quot;text-center&quot;&gt;
@@ -776,7 +762,7 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
       </item>
     
       <item>
-        <title>Apresentando o servidor de aplica&amp;ccedil;&amp;atilde;o JBoss AS 7</title>
+        <title>Apresentando o servidor de aplicação JBoss AS 7</title>
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.jboss.org/jbossas/&quot;&gt;JBoss Application Server&lt;/a&gt; (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela &lt;a href=&quot;http://www.jboss.org/&quot;&gt;JBoss&lt;/a&gt; (atualmente, uma divisão da &lt;a href=&quot;http://www.redhat.com/&quot;&gt;Red Hat&lt;/a&gt;) para a plataforma &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/&quot;&gt;Java EE&lt;/a&gt;. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações Java para a Web utilizando esse servidor.&lt;/p&gt;
 
 &lt;p class=&quot;text-center&quot;&gt;
@@ -984,7 +970,7 @@ INFO: JBoss Remoting version 3.2.3.GA
       </item>
     
       <item>
-        <title>Instala&amp;ccedil;&amp;atilde;o do Apache Maven</title>
+        <title>Instalação do Apache Maven</title>
         <description>&lt;p&gt;Olá, pessoal, nesse post vocês vão ver como instalar e executar pela primeira vez o &lt;a href=&quot;http://maven.apache.org/&quot;&gt;Apache Maven&lt;/a&gt; em seus computadores.&lt;/p&gt;
 
 &lt;p class=&quot;text-center&quot;&gt;
@@ -995,9 +981,9 @@ INFO: JBoss Remoting version 3.2.3.GA
 
 &lt;p&gt;O Maven é uma ferramenta que facilita e automatiza bastante o gerenciamento de projetos em Java, auxiliando os desenvolvedores nas etapas de definição, codificação, compilação, testes, empacotamento, implantação, documentação e distribuição da aplicação.&lt;/p&gt;
 
-&lt;!--more--&gt;
-
 &lt;p&gt;Nesse post, demonstrarei como instalar o Maven e como criar um pequeno projeto, apenas para dar uma noção de como funciona a ferramenta.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;Antes de começarmos, é necessário que o Java Development Kit (JDK) esteja instalado no computador onde se deseja executar o Maven. Em &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;outro post&lt;/a&gt; nesse blog expliquei como instalar o JDK e verificar que ele está funcionando perfeitamente. Se você ainda não possui o JDK, prossiga à leitura daquela página primeiro. Se você não tem certeza se o JDK está instalado em seu computador, execute os testes propostos naquela mesma página e, se for o caso, instale-o.&lt;/p&gt;
 
@@ -1331,18 +1317,18 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
       </item>
     
       <item>
-        <title>Problemas envolvendo bootloaders, MBR e tabela de parti&amp;ccedil;&amp;otilde;es</title>
-        <description>&lt;p class=&quot;text-center&quot;&gt;
+        <title>Problemas envolvendo bootloaders, MBR e tabela de partições</title>
+        <description>&lt;p&gt;Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações curiosas sobre o ocorrido.&lt;/p&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;
     &lt;a href=&quot;/files/2012/04/computador-maluco.jpg&quot; title=&quot;&quot;&gt;
         &lt;img src=&quot;/files/2012/04/computador-maluco.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;p&gt;Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações curiosas sobre o ocorrido.&lt;/p&gt;
+&lt;p&gt;É algo que não desejo a ninguém, mas se algum dia alguém vier a passar pelo que eu passei (ou algo parecido) pode ler as páginas aqui indicadas e ver se alguma das soluções propostas por elas se aplica ao caso.&lt;/p&gt;
 
 &lt;!--more--&gt;
-
-&lt;p&gt;É algo que não desejo a ninguém, mas se algum dia alguém vier a passar pelo que eu passei (ou algo parecido) pode ler as páginas aqui indicadas e ver se alguma das soluções propostas por elas se aplica ao caso.&lt;/p&gt;
 
 &lt;h3 id=&quot;o-que-aconteceu&quot;&gt;O que aconteceu&lt;/h3&gt;
 
@@ -1540,17 +1526,7 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
     
       <item>
         <title>Onde reciclar cartuchos de tinta em Aracaju</title>
-        <description>&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/04/reciclagem-de-cartuchos.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/04/reciclagem-de-cartuchos.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
-    &lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;O que fazer com isso depois que não servir mais? Jogar no lixo? Reciclar? Será que dá pra reciclar? Aonde eu devo levar? São algumas das perguntas que nos fazemos quando nossos eletrônicos não servem mais.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Pois bem, algo me chamou a atenção quando estive no &lt;a href=&quot;http://www.shoppingjardins.com.br/&quot;&gt;Shopping Jardins&lt;/a&gt; há &lt;a href=&quot;http://jornalnerds.blogspot.com.br/2010/12/reciclagem-cartuchos-de-impressora.html&quot;&gt;um tempo&lt;/a&gt; foi um banner da &lt;a href=&quot;http://www.infranet.com.br/&quot;&gt;Infranet&lt;/a&gt; que dizia que eles reciclavam cartuchos de tinta e toners:&lt;/p&gt;
+        <description>&lt;p&gt;O que fazer com isso depois que não servir mais? Jogar no lixo? Reciclar? Será que dá pra reciclar? Aonde eu devo levar? São algumas das perguntas que nos fazemos quando nossos eletrônicos não servem mais. Pois bem, algo me chamou a atenção quando estive no &lt;a href=&quot;http://www.shoppingjardins.com.br/&quot;&gt;Shopping Jardins&lt;/a&gt; há &lt;a href=&quot;http://jornalnerds.blogspot.com.br/2010/12/reciclagem-cartuchos-de-impressora.html&quot;&gt;um tempo&lt;/a&gt; foi um banner da &lt;a href=&quot;http://www.infranet.com.br/&quot;&gt;Infranet&lt;/a&gt; que dizia que eles reciclavam cartuchos de tinta e toners:&lt;/p&gt;
 
 &lt;p class=&quot;text-center&quot;&gt;
     &lt;a href=&quot;/files/2012/04/reciclagem-infranet.jpg&quot; title=&quot;Reciclagem de cartuchos na Infranet&quot;&gt;
@@ -1563,6 +1539,8 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
         Reciclagem de cartuchos na Infranet
     &lt;/em&gt;
 &lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;Abaixo você confere os endereços e os telefones das lojas Infranet em Aracaju (ambas prestam esse serviço).&lt;/p&gt;
 

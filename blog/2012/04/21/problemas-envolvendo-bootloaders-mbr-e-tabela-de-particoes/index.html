@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" xmlns:addthis="http://www.addthis.com/help/api-spec">
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="author" content="Antônio Vinícius Menezes Medeiros">
-    <meta name="description" content="                Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os m...">
+    <meta name="description" content="Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações...">
+    <meta property="og:url" content="/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Problemas envolvendo bootloaders, MBR e tabela de partições - vinyanalista.com.br" />
+    <meta property="og:description" content="Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações..." />
+    <meta property="og:image" content="/files/2012/04/computador-maluco.jpg" />
 
     <link rel="apple-touch-icon" href="/img/favicon.png">
     <link rel="icon" href="/img/favicon.png">
     <link rel="shortcut icon" href="/img/favicon.png">
 
-    <title>Problemas envolvendo bootloaders, MBR e tabela de parti&ccedil;&otilde;es - vinyanalista.com.br</title>
+    <title>Problemas envolvendo bootloaders, MBR e tabela de partições - vinyanalista.com.br</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/lib/paper/3.3.4/css/bootstrap.min.css" rel="stylesheet">
@@ -77,37 +82,48 @@
                     <div class="blog-post panel panel-default">
     <div class="panel-heading">
         <h2 class="blog-post-titulo">
-            <a href="">Problemas envolvendo bootloaders, MBR e tabela de parti&ccedil;&otilde;es</a>
+            <a href="">Problemas envolvendo bootloaders, MBR e tabela de partições</a>
         </h2>
         <div class="blog-post-meta row">
             <div class='col-sm-6'>
                 <div class='blog-post-data'>
-                    21 de
-                    
-                    Abril
-                    
-                    de 2012
+                    <p>
+                        21 de
+                        
+                        Abril
+                        
+                        de 2012
+                    </p>
                 </div>
             </div>
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
-                    Fa &nbsp Tw &nbsp G+ &nbsp +
+                    <!-- AddThis Button BEGIN -->
+                    <div class="addthis_toolbox addthis_default_style"  addthis:url="" addthis:title="" addthis:description="">
+                        <a class="addthis_button_facebook"></a>
+                        <a class="addthis_button_twitter" data-via="vinyanalista"></a>
+                        <a class="addthis_button_google_plusone_share"></a>
+                        <a class="addthis_button_favorites"></a>
+                        <a class="addthis_button_compact"></a>
+                        <a class="addthis_counter addthis_bubble_style"></a>
+                    </div>
+                    <!-- AddThis Button END -->
                 </div>
             </div>
         </div>
     </div>
     <div class="blog-post-conteudo panel-body">
-        <p class="text-center">
+        <p>Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações curiosas sobre o ocorrido.</p>
+
+<p class="text-center">
     <a href="/files/2012/04/computador-maluco.jpg" title="">
         <img src="/files/2012/04/computador-maluco.jpg" alt="" class="img-responsive img-thumbnail" />
     </a>
 </p>
 
-<p>Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações curiosas sobre o ocorrido.</p>
+<p>É algo que não desejo a ninguém, mas se algum dia alguém vier a passar pelo que eu passei (ou algo parecido) pode ler as páginas aqui indicadas e ver se alguma das soluções propostas por elas se aplica ao caso.</p>
 
 <!--more-->
-
-<p>É algo que não desejo a ninguém, mas se algum dia alguém vier a passar pelo que eu passei (ou algo parecido) pode ler as páginas aqui indicadas e ver se alguma das soluções propostas por elas se aplica ao caso.</p>
 
 <h3 id="o-que-aconteceu">O que aconteceu</h3>
 
@@ -296,6 +312,41 @@
 
 <p>Um abraço a todos, e até a próxima aventura deste técnico que vos escreve! E espero que alguém mais entendido possa me esclarecer o motivo da confusão. Não a confusão “do início”, que fui eu que causei, mas a confusão “do meio”, imagino que a solução do meu problema não deveria ter tantos arrodeios, já que a maioria dos usuários relatam que um ou dois comandos deveriam resolver os problemas (podem conferir nos links que eu mencionei ao longo da resolução)…</p>
 
+        <div class="gap"></div>
+        
+        <h3>Gostou? Então compartilha!</h3>
+        <!-- AddThis Button BEGIN -->
+        <div class="addthis_toolbox addthis_default_style addthis_32x32_style gap">
+            <a class="addthis_button_facebook"></a>
+            <a class="addthis_button_twitter"></a>
+            <a class="addthis_button_google_plusone_share"></a>
+            <a class="addthis_button_email"></a>
+            <a class="addthis_button_favorites"></a>
+            <a class="addthis addthis_button_print"></a>
+            <a class="addthis_button_pdfonline"></a>
+            <a class="addthis_button_compact"></a>
+            <a class="addthis_counter addthis_bubble_style"></a>
+        </div>
+        <!-- AddThis Button END -->
+        
+        <h3>Comentários</h3>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'vinyanalista';
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>
+            <p><a href="http://www.enable-javascript.com/pt/" target="_blank">Habilite o JavaScript</a> para ver os <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentários providos pelo Disqus</a>.</p>
+        </noscript>
     </div><!-- .blog-post-conteudo -->
 </div><!-- .blog-post -->
                 </div><!-- #blog-principal -->
@@ -306,8 +357,19 @@
     </div>
     <div class="panel-body">
         <p>
-        Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-    </p>
+            Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+        </p>
+        <!-- AddThis Follow BEGIN -->
+        <div class="addthis_toolbox addthis_32x32_style addthis_default_style center-block">
+            <a class="addthis_button_facebook_follow" addthis:userid="vinyanalista"></a>
+            <a class="addthis_button_twitter_follow" addthis:userid="vinyanalista"></a>
+            <a class="addthis_button_linkedin_follow" addthis:userid="vinyanalista"></a>
+            <a class="addthis_button_google_follow" addthis:userid="117526731689139505675"></a>
+            <a class="addthis_button_youtube_follow" addthis:userid="viniciusifse"></a>
+            <a class="addthis_button_foursquare_follow" addthis:userid="vinyanalista"></a>
+            <a class="addthis_button_github_follow" addthis:userid="vinyanalista"></a>
+        </div>
+        <!-- AddThis Follow END -->
     </div>
 </div>
 
@@ -391,5 +453,16 @@
 <script src="/lib/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/lib/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>
+<!-- AddThis -->
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
+<script type="text/javascript">
+    var addthis_share = {
+        url: "/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/",
+        title: document.title,
+        description: "Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações..."
+    };
+</script>
+<!-- Comum -->
+<script src="/js/comum.js"></script>
     </body>
 </html>

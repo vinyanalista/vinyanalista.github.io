@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" xmlns:addthis="http://www.addthis.com/help/api-spec">
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="author" content="Antônio Vinícius Menezes Medeiros">
-    <meta name="description" content="É verdade que quando criamos um disco rígido virtual dinamicamente alocado no VirtualBox, ele cresce à medida em que arquivos são gravados. No entanto, seu t...">
+    <meta name="description" content="É verdade que quando criamos um disco rígido virtual dinamicamente alocado no VirtualBox, ele cresce à medida em que arquivos são gravados. No entanto, seu tamanho não diminui à medida em que excluímos arquivos. Veja agora como é possível reduzir discos rígidos desse tipo no VirtualBox.">
+    <meta property="og:url" content="/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Reduzindo o tamanho de discos rígidos virtuais do VirtualBox - vinyanalista.com.br" />
+    <meta property="og:description" content="É verdade que quando criamos um disco rígido virtual dinamicamente alocado no VirtualBox, ele cresce à medida em que arquivos são gravados. No entanto, seu tamanho não diminui à medida em que excluímos arquivos. Veja agora como é possível reduzir discos rígidos desse tipo no VirtualBox." />
+    <meta property="og:image" content="/files/2014/01/virtualbox.png" />
 
     <link rel="apple-touch-icon" href="/img/favicon.png">
     <link rel="icon" href="/img/favicon.png">
     <link rel="shortcut icon" href="/img/favicon.png">
 
-    <title>Reduzindo o tamanho de discos r&iacute;gidos virtuais do VirtualBox - vinyanalista.com.br</title>
+    <title>Reduzindo o tamanho de discos rígidos virtuais do VirtualBox - vinyanalista.com.br</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/lib/paper/3.3.4/css/bootstrap.min.css" rel="stylesheet">
@@ -77,21 +82,32 @@
                     <div class="blog-post panel panel-default">
     <div class="panel-heading">
         <h2 class="blog-post-titulo">
-            <a href="">Reduzindo o tamanho de discos r&iacute;gidos virtuais do VirtualBox</a>
+            <a href="">Reduzindo o tamanho de discos rígidos virtuais do VirtualBox</a>
         </h2>
         <div class="blog-post-meta row">
             <div class='col-sm-6'>
                 <div class='blog-post-data'>
-                    20 de
-                    
-                    Janeiro
-                    
-                    de 2014
+                    <p>
+                        20 de
+                        
+                        Janeiro
+                        
+                        de 2014
+                    </p>
                 </div>
             </div>
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
-                    Fa &nbsp Tw &nbsp G+ &nbsp +
+                    <!-- AddThis Button BEGIN -->
+                    <div class="addthis_toolbox addthis_default_style"  addthis:url="" addthis:title="" addthis:description="">
+                        <a class="addthis_button_facebook"></a>
+                        <a class="addthis_button_twitter" data-via="vinyanalista"></a>
+                        <a class="addthis_button_google_plusone_share"></a>
+                        <a class="addthis_button_favorites"></a>
+                        <a class="addthis_button_compact"></a>
+                        <a class="addthis_counter addthis_bubble_style"></a>
+                    </div>
+                    <!-- AddThis Button END -->
                 </div>
             </div>
         </div>
@@ -99,13 +115,13 @@
     <div class="blog-post-conteudo panel-body">
         <p>É verdade que quando criamos um disco rígido virtual dinamicamente alocado no <a href="http://www.virtualbox.org/">VirtualBox</a>, ele cresce à medida em que arquivos são gravados. No entanto, seu tamanho não diminui à medida em que excluímos arquivos. Veja agora como é possível reduzir discos rígidos desse tipo no VirtualBox.</p>
 
+<!--more-->
+
 <p class="text-center">
     <a href="/files/2014/01/virtualbox.png" title="">
         <img src="/files/2014/01/virtualbox.png" alt="" class="img-responsive img-thumbnail" />
     </a>
 </p>
-
-<!--more-->
 
 <p>Primeiro, é necessário executar um utilitário na <strong>máquina virtual</strong> (<em>guest</em>), que vai transformar todo o espaço livre em <em>bits</em> zero no disco rígido virtual. Se sua máquina virtual roda Linux, esse utilitário é o <strong>zerofree</strong>, se roda Windows, há o <strong>SDelete</strong>.</p>
 
@@ -170,6 +186,41 @@
   <li><a href="http://www.maketecheasier.com/shrink-your-virtualbox-vm">How To Shrink Your Virtualbox VM And Free Up Space For Your Hard Disk – Make Tech Easier</a></li>
 </ul>
 
+        <div class="gap"></div>
+        
+        <h3>Gostou? Então compartilha!</h3>
+        <!-- AddThis Button BEGIN -->
+        <div class="addthis_toolbox addthis_default_style addthis_32x32_style gap">
+            <a class="addthis_button_facebook"></a>
+            <a class="addthis_button_twitter"></a>
+            <a class="addthis_button_google_plusone_share"></a>
+            <a class="addthis_button_email"></a>
+            <a class="addthis_button_favorites"></a>
+            <a class="addthis addthis_button_print"></a>
+            <a class="addthis_button_pdfonline"></a>
+            <a class="addthis_button_compact"></a>
+            <a class="addthis_counter addthis_bubble_style"></a>
+        </div>
+        <!-- AddThis Button END -->
+        
+        <h3>Comentários</h3>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'vinyanalista';
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>
+            <p><a href="http://www.enable-javascript.com/pt/" target="_blank">Habilite o JavaScript</a> para ver os <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentários providos pelo Disqus</a>.</p>
+        </noscript>
     </div><!-- .blog-post-conteudo -->
 </div><!-- .blog-post -->
                 </div><!-- #blog-principal -->
@@ -180,8 +231,19 @@
     </div>
     <div class="panel-body">
         <p>
-        Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-    </p>
+            Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+        </p>
+        <!-- AddThis Follow BEGIN -->
+        <div class="addthis_toolbox addthis_32x32_style addthis_default_style center-block">
+            <a class="addthis_button_facebook_follow" addthis:userid="vinyanalista"></a>
+            <a class="addthis_button_twitter_follow" addthis:userid="vinyanalista"></a>
+            <a class="addthis_button_linkedin_follow" addthis:userid="vinyanalista"></a>
+            <a class="addthis_button_google_follow" addthis:userid="117526731689139505675"></a>
+            <a class="addthis_button_youtube_follow" addthis:userid="viniciusifse"></a>
+            <a class="addthis_button_foursquare_follow" addthis:userid="vinyanalista"></a>
+            <a class="addthis_button_github_follow" addthis:userid="vinyanalista"></a>
+        </div>
+        <!-- AddThis Follow END -->
     </div>
 </div>
 
@@ -265,5 +327,16 @@
 <script src="/lib/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/lib/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>
+<!-- AddThis -->
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
+<script type="text/javascript">
+    var addthis_share = {
+        url: "/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/",
+        title: document.title,
+        description: "É verdade que quando criamos um disco rígido virtual dinamicamente alocado no VirtualBox, ele cresce à medida em que arquivos são gravados. No entanto, seu tamanho não diminui à medida em que excluímos arquivos. Veja agora como é possível reduzir discos rígidos desse tipo no VirtualBox."
+    };
+</script>
+<!-- Comum -->
+<script src="/js/comum.js"></script>
     </body>
 </html>
