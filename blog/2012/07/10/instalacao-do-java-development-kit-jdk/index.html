@@ -22,7 +22,12 @@
     <!-- Bootstrap core CSS -->
     <link href="/lib/paper/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- SyntaxHighlighter -->
+    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shCore.css"/>
+    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shThemeDefault.css"/>
+    
     <!-- Custom styles for this template -->
+    <link href="/css/syntax.css" rel="stylesheet">
     <link href="/css/comum.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,7 +37,6 @@
     <script src="/lib/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--<link rel="stylesheet" href="/css/main.css">-->
     <link rel="canonical" href="http://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/">
     <link rel="alternate" type="application/rss+xml" title="vinyanalista.com.br" href="http://vinyanalista.github.io/feed.xml" />
 </head>
@@ -117,31 +121,31 @@
 
 <p>A seguir, forneço instruções para instalar, configurar e executar a versão mais recente do JDK (atualmente, a <strong>1.7.0_05</strong>) em sistemas Windows e Linux.</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/java.jpg" title="">
-        <img src="/files/2012/07/java.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/java.jpg' title=''>
+        <img src='/files/2012/07/java.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <!--more-->
 
-<h3 id="download-e-instalao-do-jdk">Download e instalação do JDK</h3>
+<h3>Download e instalação do JDK</h3>
 
 <p>O primeiro passo é baixar o JDK. Vá até a <a href="http://www.oracle.com/technetwork/java/javase/downloads/">página de downloads do Java SE</a>, aceite o contrato de licença e escolha a versão do JDK apropriada para o seu sistema:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jdk7_1.jpg" title="">
-        <img src="/files/2012/07/jdk7_1.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jdk7_1.jpg' title=''>
+        <img src='/files/2012/07/jdk7_1.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
-<h4 id="download-e-instalao-do-jdk-no-windows">Download e instalação do JDK no Windows</h4>
+<h4>Download e instalação do JDK no Windows</h4>
 
 <p>No Windows, o instalador do JDK facilita bastante o processo de instalação. Baixe do site do JDK a versão do instalador apropriada para o seu sistema (Windows de 32 ou de 64 bits) e execute-o em seguida.</p>
 
 <p>Normalmente, aceitar as opções padrão, avançando em todas as telas, deve funcionar. Atente-se apenas à pasta na qual o JDK será instalado (no meu computador, o padrão oferecido foi “C:\Program Files (x86)\Java\jdk1.7.0_05″).</p>
 
-<h4 id="download-e-instalao-do-jdk-no-linux-distribuies-especficas">Download e instalação do JDK no Linux (distribuições específicas)</h4>
+<h4>Download e instalação do JDK no Linux (distribuições específicas)</h4>
 
 <p>Se a distribuição Linux que você usa provê um método padrão de instalar o JDK, é recomendado você seguir as instruções fornecidas para instalar o JDK na sua distribuição. Se sua distribuição não provê o JDK, ou se você prefere se assegurar de instalar em seu computador a versão oficial mais recente, pode seguir as instruções de instalação genéricas, que devem servir para qualquer distribuição (veja mais adiante).</p>
 
@@ -151,164 +155,163 @@
 
 <p>Usuários de distribuições que utilizam o sistema de empacotamento RPM (como RedHat, CentOS, Fedora, Mandriva, openSUSE, etc.) podem instalar a versão mais recente do JDK através do pacote RPM disponibilizado na <a href="http://www.oracle.com/technetwork/java/javase/downloads/">página de downloads do Java SE</a>.</p>
 
-<h4 id="download-e-instalao-do-jdk-no-linux-qualquer-distribuio">Download e instalação do JDK no Linux (qualquer distribuição)</h4>
+<h4>Download e instalação do JDK no Linux (qualquer distribuição)</h4>
 
 <p>Se sua distribuição não provê um meio padrão de instalar o JDK (ou se por qualquer motivo você não quer instalá-lo por esse meio), há na <a href="http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/www.oracle.com/technetwork/java/javase/downloads/">página de downloads do Java SE</a> um arquivo <strong>.tar.gz</strong> que contém o JDK compactado. Uma vez extraído o conteúdo desse arquivo, o JDK já pode ser executado, e esse procedimento de instalação deve funcionar em qualquer distribuição Linux.</p>
 
 <p>Para instalar o JDK dessa maneira, baixe-o da <a href="http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/www.oracle.com/technetwork/java/javase/downloads/">página de downloads do Java SE</a> utilizando o navegador de sua preferência ou o comando <strong>wget</strong> no terminal (a seguir, forneço o link para download direto da versão do JDK usada nesse tutorial):</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /home/vinicius/
-<span class="nv">$ </span>wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.tar.gz</code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd /home/vinicius/
+$ wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.tar.gz
+</code></pre></div>
 <p>No Linux, é possível instalar o JDK em um local global, de forma que todos os usuários do sistema possam utilizá-lo (requer permissão de administrador), ou na sua pasta pessoal, de forma que apenas você possa utilizá-lo (não requer permissão, além de ser mais simples para iniciantes).</p>
 
 <p>Para demonstrar como instalar o JDK numa localização global, vou utilizar a pasta “/opt”. Para fazer isso, mova o arquivo baixado (no nosso exemplo aqui, “jdk-7u5-linux-i586.tar.gz”) para essa pasta e lá extraia seu conteúdo. O caminho para o JDK será então “/opt/jdk1.7.0_05″ (se atente a esse caminho). Após a extração, o arquivo baixado pode ser excluído. Os comandos de terminal para realizar esses procedimentos são:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># mv /home/vinicius/jdk-7u5-linux-i586.tar.gz /opt</span>
-<span class="c"># cd /opt</span>
-<span class="c"># tar zxvf jdk-7u5-linux-i586.tar.gz</span>
-<span class="c"># rm jdk-7u5-linux-i586.tar.gz</span></code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text"># mv /home/vinicius/jdk-7u5-linux-i586.tar.gz /opt
+# cd /opt
+# tar zxvf jdk-7u5-linux-i586.tar.gz
+# rm jdk-7u5-linux-i586.tar.gz
+</code></pre></div>
 <p>Para instalar o JDK na sua pasta pessoal o procedimento é parecido. No meu caso, como já baixei o JDK nessa pasta, apenas precisei descompactá-lo. O comando que utilizei para isso foi:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>tar zxvf jdk-7u5-linux-i586.tar.gz</code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ tar zxvf jdk-7u5-linux-i586.tar.gz
+</code></pre></div>
 <p>Nesse caso, o caminho para o JDK será “/home/vinicius/jdk1.7.0_05″.</p>
 
-<h3 id="configurao-da-varivel-javahome">Configuração da variável JAVA_HOME</h3>
+<h3>Configuração da variável JAVA_HOME</h3>
 
 <p>A variável de ambiente JAVA_HOME é utilizada por alguns programas (como o Maven, o Eclipse e o JBoss AS, por exemplo) para determinar a localização do JDK ou do JRE instalado no computador. Essa etapa é opcional a usuários comuns de programas Java que apenas desejam instalar o ambiente de execução (JRE). Mas já que se trata da instalação do JDK, é costume não apenas definir o valor dessa variável, como acrescentar o caminho do JDK na variável de ambiente PATH, para que possamos invocar as ferramentas do JDK de qualquer pasta. Do contrário, todas as vezes em que quisermos invocar essas ferramentas teremos que digitar o caminho completo para elas.</p>
 
 <p>A seguir, instruções para configurar essas variáveis tanto no Windows quanto no Linux.</p>
 
-<h4 id="configurao-da-varivel-javahome-no-windows">Configuração da variável JAVA_HOME no Windows</h4>
+<h4>Configuração da variável JAVA_HOME no Windows</h4>
 
 <p>Caso sua Área de Trabalho apresente o ícone do Meu Computador, clique com o botão direito nesse ícone e clique em Propriedades. Caso contrário, abra o Menu Iniciar, clique em Painel de Controle e, na janela que se abre, procure a opção Sistema.</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jdk7_2.jpg" title="">
-        <img src="/files/2012/07/jdk7_2.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jdk7_2.jpg' title=''>
+        <img src='/files/2012/07/jdk7_2.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Na janela Sistema, clique na opção Configurações avançadas do sistema, no painel esquerdo.</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jdk7_3.jpg" title="">
-        <img src="/files/2012/07/jdk7_3.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jdk7_3.jpg' title=''>
+        <img src='/files/2012/07/jdk7_3.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Na caixa de diálogo Propriedades do Sistema, clique no botão Variáveis de Ambiente.</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jdk7_4.jpg" title="">
-        <img src="/files/2012/07/jdk7_4.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jdk7_4.jpg' title=''>
+        <img src='/files/2012/07/jdk7_4.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Na caixa de diálogo Variáveis de Ambiente, na seção Variáveis do sistema, clique no botão Novo.</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jdk7_5.jpg" title="">
-        <img src="/files/2012/07/jdk7_5.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jdk7_5.jpg' title=''>
+        <img src='/files/2012/07/jdk7_5.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
-<p>Informe JAVA_HOME como nome da variável e no campo valor digite a localização do JDK (no meu caso, ele foi instalado em “C:\Program Files (x86)\Java\jdk1.7.0_05″). Quando acabar de digitar esses valores, clique em OK.</p>
+<p>Informe JAVA<em>HOME como nome da variável e no campo valor digite a localização do JDK (no meu caso, ele foi instalado em “C:\Program Files (x86)\Java\jdk1.7.0</em>05″). Quando acabar de digitar esses valores, clique em OK.</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jdk7_6.jpg" title="">
-        <img src="/files/2012/07/jdk7_6.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jdk7_6.jpg' title=''>
+        <img src='/files/2012/07/jdk7_6.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>De volta à caixa de diálogo Variáveis de Ambiente, também na seção Variáveis do sistema, procure na lista a variável Path, selecione-a e clique no botão Editar.</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jdk7_7.jpg" title="">
-        <img src="/files/2012/07/jdk7_7.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jdk7_7.jpg' title=''>
+        <img src='/files/2012/07/jdk7_7.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Posicione o cursor no início do valor da variável, insira o texto “%JAVA_HOME\bin;” (não inclua as aspas e não esqueça do ponto-e-vírgula) e clique em OK.</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jdk7_8.jpg" title="">
-        <img src="/files/2012/07/jdk7_8.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jdk7_8.jpg' title=''>
+        <img src='/files/2012/07/jdk7_8.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>De volta à caixa de diálogo Variáveis de Ambiente, clique em OK. Em seguida, você pode fechar a janela Sistema. A partir de agora, qualquer nova janela de terminal aberta ou comando invocado refletirá essas alterações.</p>
 
-<h4 id="configurao-da-varivel-javahome-no-linux">Configuração da variável JAVA_HOME no Linux</h4>
+<h4>Configuração da variável JAVA_HOME no Linux</h4>
 
 <p>Se você instalou o JDK utilizando o mecanismo preferido de sua distribuição, é importante verificar se <a href="http://www.cyberciti.biz/faq/linux-unix-set-java_home-path-variable/">a variável JAVA_HOME</a> já foi definida e se já é possível invocar os utilitários do JDK da linha de comando. Para isso, passe ao próximo tópico, realize os testes, e apenas se encontrar erros, volte a ler este.</p>
 
 <p>Se você instalou o JDK para todos os usuários, abra com o seu editor de preferência o arquivo “/etc/profile” e acrescente as seguintes linhas no final (você deve substituir, se necessário, a localização do JDK, que no nosso exemplo foi “/opt/jdk1.7.0_05″):</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">export </span><span class="nv">JAVA_HOME</span><span class="o">=</span><span class="s2">&quot;/opt/jdk1.7.0_05&quot;</span>
-<span class="nb">export </span><span class="nv">CLASSPATH</span><span class="o">=</span><span class="s2">&quot;$JAVA_HOME/lib&quot;</span>
-<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;$PATH:$JAVA_HOME/bin&quot;</span>
-<span class="nb">export </span><span class="nv">MANPATH</span><span class="o">=</span><span class="s2">&quot;$MANPATH:$JAVA_HOME/man&quot;</span></code></pre></div>
+<script type="syntaxhighlighter" class="brush: bash; gutter: false"><![CDATA[
+export JAVA_HOME="/opt/jdk1.7.0_05"
+export CLASSPATH="$JAVA_HOME/lib"
+export PATH="$PATH:$JAVA_HOME/bin"
+export MANPATH="$MANPATH:$JAVA_HOME/man"
+]]></script>
 
 <p>Se você instalou o JDK apenas para o seu usuário, a alteração deve ocorrer no arquivo “~/.bashrc”. Abra esse arquivo com o seu editor de preferência e acrescente as seguintes linhas no final (você deve substituir, se necessário, a localização do JDK, que no nosso exemplo foi “/home/vinicius/jdk1.7.0_05″):</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">export </span><span class="nv">JAVA_HOME</span><span class="o">=</span><span class="s2">&quot;/home/vinicius/jdk1.7.0_05&quot;</span>
-<span class="nb">export </span><span class="nv">CLASSPATH</span><span class="o">=</span><span class="s2">&quot;$JAVA_HOME/lib&quot;</span>
-<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;$PATH:$JAVA_HOME/bin&quot;</span>
-<span class="nb">export </span><span class="nv">MANPATH</span><span class="o">=</span><span class="s2">&quot;$MANPATH:$JAVA_HOME/man&quot;</span></code></pre></div>
+<script type="syntaxhighlighter" class="brush: bash; gutter: false"><![CDATA[
+export JAVA_HOME="/home/vinicius/jdk1.7.0_05"
+export CLASSPATH="$JAVA_HOME/lib"
+export PATH="$PATH:$JAVA_HOME/bin"
+export MANPATH="$MANPATH:$JAVA_HOME/man"
+]]></script>
 
 <p>Em qualquer um dos dois casos, as alterações serão aplicadas a qualquer nova janela de terminal aberta.</p>
 
-<h3 id="teste-do-jdk">Teste do JDK</h3>
+<h3>Teste do JDK</h3>
 
 <p>As instruções a seguir servem para Windows e Linux. Para testar a instalação do JDK, abra uma janela de terminal e execute o comando a seguir, que deve informar a versão do JDK instalado no seu computador:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>javac -version</code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ javac -version
+</code></pre></div>
 <p>Como teste, também podemos criar um pequeno programa Java, compilá-lo e executá-lo. Em alguma pasta à qual você tenha acesso (aqui utilizarei minha pasta pessoal no Linux, “/home/vinicius”), crie um arquivo de texto simples chamado “Teste.java”. Abra esse arquivo com um editor de texto e insira o seguinte conteúdo:</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Teste</span> <span class="o">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Olá!&quot;</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span></code></pre></div>
+<script type="syntaxhighlighter" class="brush: java; gutter: false"><![CDATA[
+public class Teste {
+    public static void main(String args[]) {
+        System.out.println("Olá!");
+    }
+}
+]]></script>
 
 <p>Agora no terminal, entre nessa pasta e invoque o compilador do Java (<strong>javac</strong>) passando o arquivo que você acabou de criar como parâmetro:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /home/vinicius/
-<span class="nv">$ </span>javac Teste.java</code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd /home/vinicius/
+$ javac Teste.java
+</code></pre></div>
 <p>Perceba que um arquivo “Teste.class” é criado como resultado da compilação. Ainda no terminal, invoque a máquina virtual Java (<strong>java</strong>) passando o nome da classe compilada como parâmetro:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>java Teste</code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ java Teste
+</code></pre></div>
 <p>Se a mensagem “Olá!” apareceu na tela, tudo está funcionando perfeitamente.</p>
 
-<h3 id="plugin-do-java-para-o-navegador-firefox">Plugin do Java para o navegador Firefox</h3>
+<h3>Plugin do Java para o navegador Firefox</h3>
 
 <p>Se você pretende utilizar o JDK para desenvolver Applets, é interessante verificar se o plugin do Java funciona adequadamente no seu navegador. Aqui, fornecerei instruções para o Firefox.</p>
 
 <p>No Windows, o instalador do JDK já se encarrega de instalar e configurar o plugin do Java para o navegador Firefox.</p>
 
 <p>No Linux, esse plugin acompanha o JDK, mas é necessário criar um link simbólico na pasta onde o Firefox está instalado para que o navegador consiga localizar o plugin. Para isso, supondo que o JDK encontra-se em “/opt/jdk1.7.0_5/” e o Firefox em “/usr/lib/mozilla”, basta executar o seguinte comando no terminal:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># ln -s /opt/jdk1.7.0_5/jre/lib/i386/libnpjp2.so /usr/lib/mozilla/plugins/</span></code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text"># ln -s /opt/jdk1.7.0_5/jre/lib/i386/libnpjp2.so /usr/lib/mozilla/plugins/
+</code></pre></div>
 <p>Para verificar que o navegador reconhece o plugin, digite na aba de endereços “about:plugins” e tecle Enter. O plugin do Java deve aparecer na lista de plugins instalados:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jdk7_9.jpg" title="">
-        <img src="/files/2012/07/jdk7_9.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jdk7_9.jpg' title=''>
+        <img src='/files/2012/07/jdk7_9.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>É possível também verificar na <a href="http://www.java.com/pt_BR/download/testjava.jsp">página de teste do Java</a> se a versão do plugin instalada no seu sistema corresponde à mais atual:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jdk7_10.jpg" title="">
-        <img src="/files/2012/07/jdk7_10.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jdk7_10.jpg' title=''>
+        <img src='/files/2012/07/jdk7_10.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
@@ -455,6 +458,7 @@
 <script src="/lib/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/lib/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>
+
 <!-- AddThis -->
 <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
 <script type="text/javascript">
@@ -464,6 +468,33 @@
         description: "Para começar a programar em Java, seja para Desktop, Web ou celular, devemos instalar no computador o Java Development Kit (abreviadamente, JDK), que nada mais é que um conjunto de ferramentas que nos auxilia a compilar, testar e documentar programas escritos na linguagem Java. Ele também traz embutido o Java Runtime Environment (JRE), assim não..."
     };
 </script>
+
+<!-- SyntaxHighlighter -->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shCore.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushAS3.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushBash.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushColdFusion.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCpp.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCSharp.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDelphi.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDiff.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushErlang.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushGroovy.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJava.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJavaFX.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPerl.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPhp.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPlain.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPython.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushRuby.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushScala.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushSql.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushVb.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushXml.js"></script>
+
 <!-- Comum -->
 <script src="/js/comum.js"></script>
     </body>

@@ -22,7 +22,12 @@
     <!-- Bootstrap core CSS -->
     <link href="/lib/paper/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- SyntaxHighlighter -->
+    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shCore.css"/>
+    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shThemeDefault.css"/>
+    
     <!-- Custom styles for this template -->
+    <link href="/css/syntax.css" rel="stylesheet">
     <link href="/css/comum.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,7 +37,6 @@
     <script src="/lib/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--<link rel="stylesheet" href="/css/main.css">-->
     <link rel="canonical" href="http://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/">
     <link rel="alternate" type="application/rss+xml" title="vinyanalista.com.br" href="http://vinyanalista.github.io/feed.xml" />
 </head>
@@ -115,9 +119,9 @@
     <div class="blog-post-conteudo panel-body">
         <p>Olá, pessoal, nesse post vocês vão ver como instalar e executar pela primeira vez o <a href="http://maven.apache.org/">Apache Maven</a> em seus computadores.</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/maven1.gif" title="">
-        <img src="/files/2012/07/maven1.gif" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/maven1.gif' title=''>
+        <img src='/files/2012/07/maven1.gif' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
@@ -131,17 +135,16 @@
 
 <p>Só prossiga à leitura desta página quando tiver certeza de que o JDK está instalado e funcionando no seu computador. Também é importante que a variável de ambiente JAVA_HOME esteja configurada.</p>
 
-<h3 id="download-do-maven">Download do Maven</h3>
+<h3>Download do Maven</h3>
 
 <p>Instalado o JDK, é hora de baixar o Maven. Na <a href="http://maven.apache.org/download.html">página de downloads do site oficial do Maven</a> estão disponíveis algumas opções. Para os usuários de Windows, eu recomendo o download do arquivo <strong>.zip</strong>, e para os usuários de Linux, eu recomendo o download do arquivo <strong>.tar.gz</strong>, pois esses formatos são os mais comuns nesses dois sistemas.</p>
 
 <p>Se a distribuição Linux que você usa provê um método padrão de instalar o Maven, você pode preferir baixá-lo e instalá-lo por esse método. No tópico seguinte eu forneço instruções para o Debian e o Ubuntu.</p>
 
 <p>No momento da escrita deste post, a versão mais atual do Maven é a 3.0.4. Os links para download direto dos arquivos mencionados acima são esse e esse. No caso do Linux, é possível baixar este arquivo pelo terminal usando o comando wget:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz</code></pre></div>
-
-<h3 id="instalao-do-maven">Instalação do Maven</h3>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
+</code></pre></div>
+<h3>Instalação do Maven</h3>
 
 <p>Tanto no Windows quanto no Linux basta descompactar o arquivo baixado que o Maven já pode ser executado a partir daquele local. Assim como acontece com o <a href="http://www.vinyanalista.com.br/blog/2012/07/18/instalacao-do-apache-maven/www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/">JDK</a>, é possível instalar em uma localização visível a todos os usuários (como “C:\” no Windows ou “/opt/” no Linux) ou visível apenas ao seu usuário (no meu caso, “C:\Users\Vinicius\Documents” ou “/home/vinicius”). Em ambos os casos, o arquivo descompactado gera uma pasta chamada “apache-maven-3.0.4″ e pode ser excluído após a extração.</p>
 
@@ -150,91 +153,91 @@
 <p>No Windows, fiz a extração do arquivo na raiz do disco “C:\” e renomeei a pasta “apache-maven-3.0.4″ para apenas “maven”. O caminho para o Maven no meu sistema é, então, “C:\maven”.</p>
 
 <p>No Linux é mais prático fazer a instalação na pasta home do usuário. No terminal, os comandos para download e extração seriam:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /home/vinicius/
-<span class="nv">$ </span>wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
-<span class="nv">$ </span>tar zxvf apache-maven-3.0.4-bin.tar.gz
-<span class="nv">$ </span>rm apache-maven-3.0.4-bin.tar.gz</code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd /home/vinicius/
+$ wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
+$ tar zxvf apache-maven-3.0.4-bin.tar.gz
+$ rm apache-maven-3.0.4-bin.tar.gz
+</code></pre></div>
 <p>É possível instalar também em uma localização global, visível a todos os usuários. Nesse caso, o procedimento é parecido, mas é necessário ter permissões de administrador:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /home/vinicius/
-<span class="nv">$ </span>wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
-<span class="c"># mv apache-maven-3.0.4-bin.tar.gz /opt</span>
-<span class="c"># cd /opt</span>
-<span class="c"># tar zxvf apache-maven-3.0.4-bin.tar.gz</span>
-<span class="c"># rm apache-maven-3.0.4-bin.tar.gz</span></code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd /home/vinicius/
+$ wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
+# mv apache-maven-3.0.4-bin.tar.gz /opt
+# cd /opt
+# tar zxvf apache-maven-3.0.4-bin.tar.gz
+# rm apache-maven-3.0.4-bin.tar.gz
+</code></pre></div>
 <p>No primeiro caso, o caminho para o Maven passa a ser “/home/vinicius/apache-maven-3.0.4″ e, no segundo, “/opt/apache-maven-3.0.4″.</p>
 
 <p>Se você utiliza a versão mais recente do Ubuntu (no momento da escrita deste post, a 12.04), pode preferir instalar o Maven através do pacote <a href="http://packages.ubuntu.com/maven">maven</a> usando o utilitário <strong>apt-get</strong>, incluído na distribuição.</p>
 
 <p>Usuários do Debian podem obter nos repositórios oficiais da versão estável (atualmente o Debian Squeeze 6.0) uma versão anterior do Maven (não garanto que funcione da mesma maneira que a atual), através do pacote <a href="http://packages.debian.org/maven2">maven2</a> usando o utilitário <strong>apt-get</strong>, incluído na distribuição. Usuários mais experientes do Debian podem tentar instalar o Maven 3.0.4 (versão mais recente até o momento da escrita) através do pacote <a href="http://packages.debian.org/maven">maven</a> dos repositórios da próxima versão do Debian, que ainda está em teste.</p>
 
-<h3 id="configurao-da-varivel-m2home">Configuração da variável M2_HOME</h3>
+<h3>Configuração da variável M2_HOME</h3>
 
 <p>De maneira análoga à <a href="/blog/2012/07/10/instalacao-do-java-development-kit-jdk/">instalação do JDK</a>, aqui vamos criar uma variável de ambiente M2_HOME que informe para os demais aplicativos do sistema a localização do Maven. Depois vamos atualizar o valor da variável de ambiente PATH para que possamos invocar o Maven diretamente da linha de comando, sem precisar informar sua localização completa sempre que quisermos fazer isso.</p>
 
 <p>No Windows, o procedimento é bem semelhante ao <a href="/blog/2012/07/10/instalacao-do-java-development-kit-jdk/">descrito no post anterior</a>, só mudando os nomes das variáveis e os valores:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/maven2.jpg" title="">
-        <img src="/files/2012/07/maven2.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/maven2.jpg' title=''>
+        <img src='/files/2012/07/maven2.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
-<p class="text-center">
-    <a href="/files/2012/07/maven3.jpg" title="">
-        <img src="/files/2012/07/maven3.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/maven3.jpg' title=''>
+        <img src='/files/2012/07/maven3.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>No Linux, se você instalou o Maven apenas para o seu usuário,  abra com o seu editor de preferência o arquivo “~/.bashrc” e acrescente as seguintes linhas no final do arquivo (você deve substituir, se necessário, a localização do Maven, que no nosso exemplo foi “/home/vinicius/apache-maven-3.0.4″):</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">export </span><span class="nv">M2_HOME</span><span class="o">=</span><span class="s2">&quot;/home/vinicius/apache-maven-3.0.4&quot;</span>
-<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;$PATH:$M2_HOME/bin&quot;</span></code></pre></div>
+<script type="syntaxhighlighter" class="brush: bash; gutter: false"><![CDATA[
+export M2_HOME="/home/vinicius/apache-maven-3.0.4"
+export PATH="$PATH:$M2_HOME/bin"
+]]></script>
 
 <p>Se você instalou o Maven para todos os usuários, a alteração deve ocorrer no arquivo “/etc/profile”. Abra esse arquivo com o seu editor de preferência e acrescente as seguintes linhas no final do arquivo (você deve substituir, se necessário, a localização do Maven, que no nosso exemplo foi “/opt/apache-maven-3.0.4″):</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">export </span><span class="nv">M2_HOME</span><span class="o">=</span><span class="s2">&quot;/opt/apache-maven-3.0.4&quot;</span>
-<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;$PATH:$M2_HOME/bin&quot;</span></code></pre></div>
+<script type="syntaxhighlighter" class="brush: bash; gutter: false"><![CDATA[
+export M2_HOME="/opt/apache-maven-3.0.4"
+export PATH="$PATH:$M2_HOME/bin"
+]]></script>
 
-<h3 id="teste-do-maven">Teste do Maven</h3>
+<h3>Teste do Maven</h3>
 
 <p>As instruções a seguir servem para Windows e Linux. Para testar a instalação do Maven, abra uma nova janela de terminal e execute o comando a seguir, que deve exibir  informações sobre a instalação do Maven no seu computador:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>mvn -v</code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mvn -v
+</code></pre></div>
 <p>A saída deve ser algo parecido com isso:</p>
 
-<div class="highlight"><pre><code class="language-text" data-lang="text">Apache Maven 3.0.4 (r1232337; 2012-01-17 08:44:56+0000)
+<script type="syntaxhighlighter" class="brush: text"><![CDATA[
+Apache Maven 3.0.4 (r1232337; 2012-01-17 08:44:56+0000)
 Maven home: /home/vinicius/apache-maven-3.0.4
 Java version: 1.7.0_147-icedtea, vendor: Oracle Corporation
 Java home: /usr/lib/jvm/java-7-openjdk-i386/jre
 Default locale: en_US, platform encoding: UTF-8
-OS name: &quot;linux&quot;, version: &quot;3.0.0-12-generic&quot;, arch: &quot;i386&quot;, family: &quot;unix&quot;</code></pre></div>
+OS name: "linux", version: "3.0.0-12-generic", arch: "i386", family: "unix"
+]]></script>
 
 <p>Como teste, também vamos criar um pequeno projeto Java, compilá-lo, empacotá-lo e executá-lo. Em alguma pasta à qual você tenha acesso (aqui utilizarei minha pasta pessoal no Linux, “/home/vinicius”), execute o seguinte comando:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>mvn archetype:generate <span class="se">\</span>
--DgroupId<span class="o">=</span>br.com.vinyanalista.tutorial <span class="se">\</span>
--DartifactId<span class="o">=</span>projeto.exemplo <span class="se">\</span>
--DarchetypeArtifactId<span class="o">=</span>maven-archetype-quickstart <span class="se">\</span>
--DinteractiveMode<span class="o">=</span><span class="nb">false</span></code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ mvn archetype:generate \
+-DgroupId=br.com.vinyanalista.tutorial \
+-DartifactId=projeto.exemplo \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DinteractiveMode=false
+</code></pre></div>
 <p>A primeira execução do Maven demora um pouco. Isso porque ele vai baixar algumas bibliotecas e plugins necessárias ao projeto. No meu computador, esse processo demorou cerca de 6 minutos. Outros projetos reaproveitam as bibliotecas e plugins já baixados, por isso esse é um processo demorado que ocorre apenas uma vez.</p>
 
 <p>Perceba que foi criada uma pasta “projeto.exemplo”. Essa pasta contém o nosso projeto. Vamos entrar nela e mandar o Maven compilar e empacotar o projeto:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>projeto.exemplo
-<span class="nv">$ </span>mvn package</code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd projeto.exemplo
+$ mvn package
+</code></pre></div>
 <p>Na verdade, ordenamos apenas que o Maven empacotasse o projeto. No entanto, como a compilação deve ocorrer antes para que o projeto possa ser empacotado, o Maven executa a compilação automaticamente antes de realizar o empacotamento do projeto de fato. O comando acima deu origem a uma pasta target e, dentro dela, um arquivo .jar contendo o projeto compilado e empacotado.</p>
 
 <p>Vamos executar a classe principal do projeto:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>java -cp target/projeto.exemplo-1.0-SNAPSHOT.jar br.com.vinyanalista.tutorial.App</code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ java -cp target/projeto.exemplo-1.0-SNAPSHOT.jar br.com.vinyanalista.tutorial.App
+</code></pre></div>
 <p>Se uma mensagem do tipo “Hello, World!” apareceu na tela, então tudo funcionou conforme o esperado e o Maven está devidamente instalado e funcionando em seu computador.</p>
 
 <p>Então, é isso, pessoal. Por hora, vou ficando por aqui. Em outro post, falarei mais sobre o Maven, como gerenciar seus projetos Java utilizando essa ferramenta,  explicando inclusive os arquivos gerados nesse exemplo e como alterá-los conforme suas necessidades. Deixo como referências o blog <a href="http://maven3tutorial.blogspot.com.br/">Maven 3 Tutorial</a>, bastante completo e didático, com várias informações sobre o uso do Maven, e o blog da <a href="http://www.caelum.com.br/">Caelum</a>, também bastante completo e didático, que contém <a href="http://blog.caelum.com.br/processo-de-build-com-o-maven/">um post dedicado a falar apenas sobre o Maven</a>.</p>
@@ -382,6 +385,7 @@ OS name: &quot;linux&quot;, version: &quot;3.0.0-12-generic&quot;, arch: &quot;i
 <script src="/lib/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/lib/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>
+
 <!-- AddThis -->
 <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
 <script type="text/javascript">
@@ -391,6 +395,33 @@ OS name: &quot;linux&quot;, version: &quot;3.0.0-12-generic&quot;, arch: &quot;i
         description: "Olá, pessoal, nesse post vocês vão ver como instalar e executar pela primeira vez o Apache Maven em seus computadores. O Maven é uma ferramenta que facilita e automatiza bastante o gerenciamento de projetos em Java, auxiliando os desenvolvedores nas etapas de definição, codificação, compilação, testes, empacotamento, implantação, documentação e distribuição da aplicação.Nesse post, demonstrarei..."
     };
 </script>
+
+<!-- SyntaxHighlighter -->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shCore.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushAS3.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushBash.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushColdFusion.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCpp.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCSharp.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDelphi.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDiff.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushErlang.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushGroovy.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJava.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJavaFX.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPerl.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPhp.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPlain.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPython.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushRuby.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushScala.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushSql.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushVb.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushXml.js"></script>
+
 <!-- Comum -->
 <script src="/js/comum.js"></script>
     </body>

@@ -6,8 +6,8 @@
 </description>
     <link>http://vinyanalista.github.io/</link>
     <atom:link href="http://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 03 Jun 2015 18:58:02 -0300</pubDate>
-    <lastBuildDate>Wed, 03 Jun 2015 18:58:02 -0300</lastBuildDate>
+    <pubDate>Thu, 04 Jun 2015 12:50:11 -0300</pubDate>
+    <lastBuildDate>Thu, 04 Jun 2015 12:50:11 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -18,84 +18,84 @@
 
 &lt;p&gt;Vou supor que você já possui o VLC instalado. Senão, pode baixá-lo &lt;a href=&quot;http://www.videolan.org/vlc/&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;habilitando-o-controle-remoto-do-vlc&quot;&gt;Habilitando o controle remoto do VLC&lt;/h3&gt;
+&lt;h3&gt;Habilitando o controle remoto do VLC&lt;/h3&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Inicie o VLC, abra o menu “Ferramentas” e clique em “Preferências”.&lt;/li&gt;
+&lt;li&gt;Inicie o VLC, abra o menu “Ferramentas” e clique em “Preferências”.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_01.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_01.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_01.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;A caixa de diálogo “Preferências” aparecerá como na imagem abaixo.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_02.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_02.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_02.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Na caixa de seleção “Exibir configurações”, selecione “Detalhado”, para que todas as opções de configuração sejam exibidas.&lt;/li&gt;
+&lt;li&gt;Na caixa de seleção “Exibir configurações”, selecione “Detalhado”, para que todas as opções de configuração sejam exibidas.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_03.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_03.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_03.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Na lista da esquerda, procure “Interfaces principais”, dentro de “Interface”. Dentre as opções que aparecem à direita, em “Módulos adicionais de interface”, marque “Web”.&lt;/li&gt;
+&lt;li&gt;Na lista da esquerda, procure “Interfaces principais”, dentro de “Interface”. Dentre as opções que aparecem à direita, em “Módulos adicionais de interface”, marque “Web”.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_04.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_04.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_04.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Reinicie o VLC para que as configurações tenham efeito.&lt;/li&gt;
-  &lt;li&gt;Adicione vídeos à sua lista de reprodução.&lt;/li&gt;
+&lt;li&gt;Reinicie o VLC para que as configurações tenham efeito.&lt;/li&gt;
+&lt;li&gt;Adicione vídeos à sua lista de reprodução.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_05.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_05.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_05.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Para habilitar o controle remoto, abra o menu “Exibir”, depois vá em “Adicionar Interface” e marque “Web”.&lt;/li&gt;
+&lt;li&gt;Para habilitar o controle remoto, abra o menu “Exibir”, depois vá em “Adicionar Interface” e marque “Web”.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_06.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_06.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_06.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Agora o controle remoto está disponível no endereço “&lt;a href=&quot;http://127.0.0.1:8080/&quot;&gt;http://127.0.0.1:8080&lt;/a&gt;” (ou, se preferir, “&lt;a href=&quot;http://localhost:8080/&quot;&gt;http://localhost:8080/&lt;/a&gt;“). Abra seu navegador favorito e acesse esse endereço.&lt;/li&gt;
+&lt;li&gt;Agora o controle remoto está disponível no endereço “&lt;a href=&quot;http://127.0.0.1:8080/&quot;&gt;http://127.0.0.1:8080&lt;/a&gt;” (ou, se preferir, “&lt;a href=&quot;http://localhost:8080/&quot;&gt;http://localhost:8080/&lt;/a&gt;“). Abra seu navegador favorito e acesse esse endereço.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_07.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_07.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_07.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Se na lista de reprodução você expandir “Não Definido”, verá os itens que adicionou antes de habilitar a interface Web.&lt;/li&gt;
+&lt;li&gt;Se na lista de reprodução você expandir “Não Definido”, verá os itens que adicionou antes de habilitar a interface Web.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_08.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_08.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_08.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
@@ -103,102 +103,102 @@
 
 &lt;p&gt;As configurações padrão do VLC, no entanto, permitem apenas o acesso local, feito a partir própria máquina onde ele está sendo executado. Vamos habilitar o controle a partir outros computadores dentro da mesma rede.&lt;/p&gt;
 
-&lt;h3 id=&quot;habilitando-o-controle-a-partir-de-outros-computadores-na-mesma-rede&quot;&gt;Habilitando o controle a partir de outros computadores na mesma rede&lt;/h3&gt;
+&lt;h3&gt;Habilitando o controle a partir de outros computadores na mesma rede&lt;/h3&gt;
 
 &lt;p&gt;O VLC possui uma lista de computadores (hosts) habilitados a controlá-lo remotamente. Essa lista se encontra em “C:\Arquivos de Programas\VideoLAN\VLC\lua\http.hosts” (no Windows) ou em “/usr/share/vlc/lua/http/.hosts” (no Linux). Vamos editá-la para permitir que o VLC aceite receber comandos de computadores que estejam na mesma rede que o computador que está reproduzindo os arquivos multimídia.&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Abra seu editor de texto favorito com permissões de administrador. No Windows, recomendo utilizar o WordPad ou o &lt;a href=&quot;http://notepad-plus-plus.org/&quot;&gt;Notepad++&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Abra seu editor de texto favorito com permissões de administrador. No Windows, recomendo utilizar o WordPad ou o &lt;a href=&quot;http://notepad-plus-plus.org/&quot;&gt;Notepad++&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_09.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_09.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_09.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Abra o arquivo “.hosts” no caminho já indicado.&lt;/li&gt;
+&lt;li&gt;Abra o arquivo “.hosts” no caminho já indicado.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_10.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_10.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_10.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Descomente, removendo o caractere de jogo da velha (“#”), as linhas abaixo do comentário “# private addresses” (endereços particulares).&lt;/li&gt;
+&lt;li&gt;Descomente, removendo o caractere de jogo da velha (“#”), as linhas abaixo do comentário “# private addresses” (endereços particulares).&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_11.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_11.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_11.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Salve o arquivo e reinicie o VLC para que as alterações tenham efeito.&lt;/li&gt;
+&lt;li&gt;Salve o arquivo e reinicie o VLC para que as alterações tenham efeito.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;A partir de agora, a interface Web pode ser acessada a partir de outros computadores que estejam na mesma rede que o computador que executa o VLC. Lembre-se que para acessá-lo você deve digitar no seu navegador o endereço IP da máquina que executa o VLC acompanhado da porta 8080, que é a porta escutada pelo controle remoto por padrão.&lt;/p&gt;
 
-&lt;h3 id=&quot;controlando-o-vlc-a-partir-de-um-celular-android&quot;&gt;Controlando o VLC a partir de um celular Android&lt;/h3&gt;
+&lt;h3&gt;Controlando o VLC a partir de um celular Android&lt;/h3&gt;
 
 &lt;p&gt;O mais interessante de poder controlar o VLC remotamente é comandar a reprodução a partir de um celular Android. Desse jeito, temos a impressão que realmente estamos utilizando um controle remoto, como o de uma TV. Isso pode ser feito habilitando-se a interface Web, como descrito nos procedimentos anteriores, e executando um aplicativo como o &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.vlcforandroid.vlcdirectprofree&quot;&gt;VLC Direct&lt;/a&gt; ou o &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.hobbyistsoftware.android.vlcremote_usfree&quot;&gt;VLC Remote&lt;/a&gt;. Eles estão disponíveis gratuitamente, mas também apresentam versões pagas que possuem mais recursos.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_vlc_direct.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_vlc_direct.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_vlc_direct.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_vlc_direct.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Também deve haver aplicativos como esses para iOS, mas no momento desconheço.&lt;/p&gt;
 
-&lt;h3 id=&quot;dica-sobre-defeito-no-controle-web&quot;&gt;Dica sobre defeito no controle Web&lt;/h3&gt;
+&lt;h3&gt;Dica sobre defeito no controle Web&lt;/h3&gt;
 
 &lt;p&gt;A depender de como o controle remoto apareça no seu navegador, uma imagem pode impedi-lo de acessar a lista de reprodução, como na imagem a seguir.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_12.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_12.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_12.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Um truque de web designer para remover essa imagem é clicar com o botão direito nela e em seguida clicar em “Inspecionar elemento”.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_13.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_13.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_13.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;No painel que aparece, o código HTML dela deve aparecer em destaque. Clique com o botão direito nele e em seguida clique em “Excluir nó”.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_14.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_14.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_14.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_14.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;A imagem deve desaparecer.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/09/vlc_remoto_07.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/09/vlc_remoto_07.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/09/vlc_remoto_07.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/09/vlc_remoto_07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;p&gt;Isso não é uma solução definitiva. Se você recarregar a página, a imagem ainda está lá. Espero que os desenvolvedores do VLC consertem logo esse bug chato…&lt;/p&gt;
+&lt;p&gt;Isso não é uma solução definitiva. Se você recarregar a página, a imagem ainda está lá. Espero que os desenvolvedores do VLC consertem logo esse bug chato...&lt;/p&gt;
 
 &lt;p&gt;É isso, pessoal, espero que vocês tenham gostado. Abraço e até a próxima!&lt;/p&gt;
 
-&lt;h3 id=&quot;referncias&quot;&gt;Referências&lt;/h3&gt;
+&lt;h3&gt;Referências&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://wiki.videolan.org/Documentation:Modules/http_intf/&quot;&gt;Documentation:Modules/http intf – VideoLAN Wiki&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://wiki.videolan.org/Control_VLC_via_a_browser/&quot;&gt;Control VLC via a browser – VideoLAN Wiki&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://wiki.videolan.org/Control_VLC_from_an_Android_Phone/&quot;&gt;Control VLC from an Android Phone – VideoLAN Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://wiki.videolan.org/Documentation:Modules/http_intf/&quot;&gt;Documentation:Modules/http intf – VideoLAN Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://wiki.videolan.org/Control_VLC_via_a_browser/&quot;&gt;Control VLC via a browser – VideoLAN Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://wiki.videolan.org/Control_VLC_from_an_Android_Phone/&quot;&gt;Control VLC from an Android Phone – VideoLAN Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 23 Sep 2014 15:38:39 -0300</pubDate>
@@ -214,9 +214,9 @@
 
 &lt;!--more--&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2014/01/virtualbox.png&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2014/01/virtualbox.png&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2014/01/virtualbox.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2014/01/virtualbox.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
@@ -225,62 +225,46 @@
 &lt;p&gt;A &lt;a href=&quot;http://www.thelinuxdaily.com/2010/02/shrinking-a-dynamic-virtualbox-disk-image/&quot;&gt;página na qual descobri o zerofree&lt;/a&gt; recomenda reiniciar o Linux (da máquina virtual) no modo de recuperação (&lt;em&gt;safe mode&lt;/em&gt; ou &lt;em&gt;recovery mode&lt;/em&gt;) para executar o &lt;strong&gt;zerofree&lt;/strong&gt;. Pra simplificar a vida, eu prefiro inicializar a máquina virtual utilizando um LiveCD.&lt;/p&gt;
 
 &lt;p&gt;Se você tiver um LiveCD do Ubuntu, o &lt;strong&gt;zerofree&lt;/strong&gt; pode ser instalado nele via:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# apt-get install zerofree&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# apt-get install zerofree
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;O openSUSE também possui o &lt;strong&gt;zerofree&lt;/strong&gt; nos repositórios oficiais da distribuição:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# zypper in zerofree&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# zypper in zerofree
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Se for usar o LiveCD de outra distribuição, pesquise na Internet como obter o &lt;strong&gt;zerofree&lt;/strong&gt; para a sua distribuição.&lt;/p&gt;
 
 &lt;p&gt;Se você não souber identificar o disco rígido, o utilitário &lt;strong&gt;fdisk&lt;/strong&gt; pode dar uma pista:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# fdisk -l&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# fdisk -l
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;No meu caso, vou compactar o &lt;strong&gt;/dev/sda1&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Montamos o disco rígido como somente leitura em uma pasta temporária e executamos o &lt;strong&gt;zerofree&lt;/strong&gt; nele:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# mkdir /mnt/tmp&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# mount -o ro /dev/sda1 /mnt/tmp&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# zerofree /dev/sda1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# mkdir /mnt/tmp
+# mount -o ro /dev/sda1 /mnt/tmp
+# zerofree /dev/sda1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Se sua máquina virtual roda Windows, você deve baixar o &lt;a href=&quot;http://technet.microsoft.com/en-us/sysinternals/bb897443.aspx&quot;&gt;SDelete&lt;/a&gt;, abrir o Prompt de Comando, ir até a pasta onde o &lt;strong&gt;SDelete&lt;/strong&gt; foi baixado e executar o comando:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sdelete&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; sdelete -c C:/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Onde &lt;strong&gt;C&lt;/strong&gt; é a letra da unidade cujo espaço livre deseja-se converter em &lt;strong&gt;bits&lt;/strong&gt; zero.&lt;/p&gt;
 
 &lt;p&gt;Após executar o &lt;strong&gt;zerofree&lt;/strong&gt; ou o &lt;strong&gt;SDelete&lt;/strong&gt;, devemos voltar à &lt;strong&gt;máquina real&lt;/strong&gt; (&lt;em&gt;host&lt;/em&gt;) e executar o utilitário do VirtualBox que vai de fato compactar o disco rígido virtual, reduzindo seu tamanho fisicamente.&lt;/p&gt;
 
 &lt;p&gt;Se sua máquina real roda Linux:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;VBoxManage modifyhd /caminho/para/o/hd/virtual.vdi --compact&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ VBoxManage modifyhd /caminho/para/o/hd/virtual.vdi --compact
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Se sua máquina real roda Windows, provavelmente você terá que ir até a pasta do VirtualBox para executar o comando:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;C:\Program Files\Oracle\VirtualBox&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;VBoxManage&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;modifyhd&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;C:\caminho\para\o\hd\virtual.vdi&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;-compact&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; cd &amp;quot;C:\Program Files\Oracle\VirtualBox&amp;quot;
+&amp;gt; VBoxManage modifyhd &amp;quot;C:\caminho\para\o\hd\virtual.vdi&amp;quot; --compact
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Foi assim que hoje consegui reduzir um disco rígido virtual de 6,5GB para 5GB. Foi uma redução pequena, mas isso varia de um caso para outro. O autor &lt;a href=&quot;http://www.maketecheasier.com/shrink-your-virtualbox-vm&quot;&gt;desse post no Make Tech Easier&lt;/a&gt; conseguiu uma redução de 45% no espaço que o disco rígido virtual ocupava (de 10GB para 5,5GB).&lt;/p&gt;
 
 &lt;p&gt;Abraço a todos e até mais!&lt;/p&gt;
 
-&lt;h3 id=&quot;referncias&quot;&gt;Referências&lt;/h3&gt;
+&lt;h3&gt;Referências&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;[Shrinking a Dynamic VirtualBox Disk Image&lt;/td&gt;
-          &lt;td&gt;The Linux Daily](http://www.thelinuxdaily.com/2010/02/shrinking-a-dynamic-virtualbox-disk-image/)&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.maketecheasier.com/shrink-your-virtualbox-vm&quot;&gt;How To Shrink Your Virtualbox VM And Free Up Space For Your Hard Disk – Make Tech Easier&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.thelinuxdaily.com/2010/02/shrinking-a-dynamic-virtualbox-disk-image/&quot;&gt;Shrinking a Dynamic VirtualBox Disk Image | The Linux Daily&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.maketecheasier.com/shrink-your-virtualbox-vm&quot;&gt;How To Shrink Your Virtualbox VM And Free Up Space For Your Hard Disk – Make Tech Easier&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 20 Jan 2014 04:53:32 -0200</pubDate>
@@ -294,121 +278,121 @@
         <title>Recuperando o boot do Windows após instalação do Linux</title>
         <description>&lt;p&gt;É, pessoal, sei que é uma situação um tanto inusitada, mas aconteceu comigo hoje, quando tentei instalar o &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;openSUSE&lt;/a&gt; 12.3 no meu computador, que até então só tinha o Windows 7. O problema mais comum é quando &lt;a href=&quot;http://www.vivaolinux.com.br/dica/Restaurando-o-GRUB-apos-a-instalacao-de-outro-sistema-operacional&quot;&gt;o Linux já está instalado e então instalamos o Windows&lt;/a&gt;, que a princípio impede que outros sistemas sejam inicializados, reservando o computador para si. Mas hoje comigo aconteceu isso: após instalar o openSUSE 12.3, o menu do &lt;a href=&quot;http://en.opensuse.org/GRUB&quot;&gt;GRUB2&lt;/a&gt; não oferecia a opção de inicializar o Windows. Venho aqui (tentar) descrever a solução.&lt;/p&gt;
 
-&lt;h3 id=&quot;instalao-do-opensuse&quot;&gt;Instalação do openSUSE&lt;/h3&gt;
+&lt;h3&gt;Instalação do openSUSE&lt;/h3&gt;
 
 &lt;p&gt;A configuração dos meus HDs é bastante semelhante àquela encontrada ano passado quando escrevi &lt;a href=&quot;/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;outro post&lt;/a&gt; sobre problemas com &lt;em&gt;dual boot&lt;/em&gt;. Naquela época, usava Debian e estava pensando em migrar pro openSUSE, o que de fato aconteceu e desde então é a distribuição que uso. Aliás, foi bom reler aquele post e perceber que &lt;a href=&quot;/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;essa não é a primeira vez que tenho problemas em relação ao &lt;em&gt;dual boot&lt;/em&gt; com openSUSE&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Executando o comando &lt;strong&gt;fdisk&lt;/strong&gt;, obtenho o seguinte:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;Disk /dev/sda: 1000.2 GB, &lt;span class=&quot;m&quot;&gt;1000204886016&lt;/span&gt; bytes
-&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt; heads, &lt;span class=&quot;m&quot;&gt;63&lt;/span&gt; sectors/track, &lt;span class=&quot;m&quot;&gt;121601&lt;/span&gt; cylinders, total &lt;span class=&quot;m&quot;&gt;1953525168&lt;/span&gt; sectors
-&lt;span class=&quot;nv&quot;&gt;Units&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; sectors of &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; * &lt;span class=&quot;nv&quot;&gt;512&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;512&lt;/span&gt; bytes
-Sector size &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;logical/physical&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;m&quot;&gt;512&lt;/span&gt; bytes / &lt;span class=&quot;m&quot;&gt;512&lt;/span&gt; bytes
-I/O size &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;minimum/optimal&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;m&quot;&gt;512&lt;/span&gt; bytes / &lt;span class=&quot;m&quot;&gt;512&lt;/span&gt; bytes
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text&quot;&gt;&lt;![CDATA[
+Disk /dev/sda: 1000.2 GB, 1000204886016 bytes
+255 heads, 63 sectors/track, 121601 cylinders, total 1953525168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disk identifier: 0xa1a11ae7
 
    Device Boot      Start         End      Blocks   Id  System
-/dev/sda1            &lt;span class=&quot;m&quot;&gt;2048&lt;/span&gt;   &lt;span class=&quot;m&quot;&gt;419432447&lt;/span&gt;   &lt;span class=&quot;m&quot;&gt;209715200&lt;/span&gt;    &lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;  HPFS/NTFS/exFAT
-/dev/sda2       &lt;span class=&quot;m&quot;&gt;419432448&lt;/span&gt;  &lt;span class=&quot;m&quot;&gt;1468008447&lt;/span&gt;   &lt;span class=&quot;m&quot;&gt;524288000&lt;/span&gt;    &lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;  HPFS/NTFS/exFAT
-/dev/sda3      &lt;span class=&quot;m&quot;&gt;1468010496&lt;/span&gt;  &lt;span class=&quot;m&quot;&gt;1887440895&lt;/span&gt;   &lt;span class=&quot;m&quot;&gt;209715200&lt;/span&gt;    &lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;  HPFS/NTFS/exFAT
-/dev/sda4   *  &lt;span class=&quot;m&quot;&gt;1887442942&lt;/span&gt;  &lt;span class=&quot;m&quot;&gt;1953523711&lt;/span&gt;    &lt;span class=&quot;m&quot;&gt;33040385&lt;/span&gt;    &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;  Extended
-/dev/sda5      &lt;span class=&quot;m&quot;&gt;1887442944&lt;/span&gt;  &lt;span class=&quot;m&quot;&gt;1953523711&lt;/span&gt;    &lt;span class=&quot;m&quot;&gt;33040384&lt;/span&gt;   &lt;span class=&quot;m&quot;&gt;83&lt;/span&gt;  Linux
+/dev/sda1            2048   419432447   209715200    7  HPFS/NTFS/exFAT
+/dev/sda2       419432448  1468008447   524288000    7  HPFS/NTFS/exFAT
+/dev/sda3      1468010496  1887440895   209715200    7  HPFS/NTFS/exFAT
+/dev/sda4   *  1887442942  1953523711    33040385    5  Extended
+/dev/sda5      1887442944  1953523711    33040384   83  Linux
 
-Disk /dev/sdb: 250.1 GB, &lt;span class=&quot;m&quot;&gt;250059350016&lt;/span&gt; bytes
-&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt; heads, &lt;span class=&quot;m&quot;&gt;63&lt;/span&gt; sectors/track, &lt;span class=&quot;m&quot;&gt;30401&lt;/span&gt; cylinders, total &lt;span class=&quot;m&quot;&gt;488397168&lt;/span&gt; sectors
-&lt;span class=&quot;nv&quot;&gt;Units&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; sectors of &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; * &lt;span class=&quot;nv&quot;&gt;512&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;512&lt;/span&gt; bytes
-Sector size &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;logical/physical&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;m&quot;&gt;512&lt;/span&gt; bytes / &lt;span class=&quot;m&quot;&gt;512&lt;/span&gt; bytes
-I/O size &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;minimum/optimal&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;m&quot;&gt;512&lt;/span&gt; bytes / &lt;span class=&quot;m&quot;&gt;512&lt;/span&gt; bytes
+Disk /dev/sdb: 250.1 GB, 250059350016 bytes
+255 heads, 63 sectors/track, 30401 cylinders, total 488397168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disk identifier: 0x1ba01b9f
 
    Device Boot      Start         End      Blocks   Id  System
-/dev/sdb1            &lt;span class=&quot;m&quot;&gt;2048&lt;/span&gt;   &lt;span class=&quot;m&quot;&gt;488396799&lt;/span&gt;   &lt;span class=&quot;m&quot;&gt;244197376&lt;/span&gt;    &lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;  HPFS/NTFS/exFAT&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+/dev/sdb1            2048   488396799   244197376    7  HPFS/NTFS/exFAT
+]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Durante a instalação do openSUSE 12.3, não alterei as configurações do &lt;em&gt;bootloader&lt;/em&gt;. O instalador automaticamente selecionou a melhor configuração para o meu computador (que no caso de o Linux estar em uma partição estendida, é &lt;a href=&quot;http://en.opensuse.org/SDB:Prefered_bootloader_options&quot;&gt;instalar o &lt;em&gt;bootloader&lt;/em&gt; na partição estendida&lt;/a&gt;).&lt;/p&gt;
 
-&lt;h3 id=&quot;recuperao-do-bootloader-do-windows&quot;&gt;Recuperação do bootloader do Windows&lt;/h3&gt;
+&lt;h3&gt;Recuperação do bootloader do Windows&lt;/h3&gt;
 
 &lt;p&gt;Na busca por soluções, encontrei &lt;a href=&quot;http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/&quot;&gt;este site&lt;/a&gt; e tentei algumas alternativas nele apresentadas, que descrevo a seguir (só depois vim perceber que já havia as listado no &lt;a href=&quot;/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;post anterior&lt;/a&gt;, mas tudo bem, não custa repetir):&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Iniciei o computador pelo DVD de instalação do Windows 7. Na tela inicial, escolhi meu idioma (que não é inglês, quero reconhecer &lt;a href=&quot;http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/&quot;&gt;o crédito do autor das imagens&lt;/a&gt;) e cliquei em “Avançar”:&lt;/li&gt;
+&lt;li&gt;Iniciei o computador pelo DVD de instalação do Windows 7. Na tela inicial, escolhi meu idioma (que não é inglês, quero reconhecer &lt;a href=&quot;http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/&quot;&gt;o crédito do autor das imagens&lt;/a&gt;) e cliquei em “Avançar”:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2013/07/windows-startup-recovery2.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2013/07/windows-startup-recovery2.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2013/07/windows-startup-recovery2.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2013/07/windows-startup-recovery2.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Em seguida, cliquei em “Reparar o computador”:&lt;/li&gt;
+&lt;li&gt;Em seguida, cliquei em “Reparar o computador”:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2013/07/windows-startup-recovery3.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2013/07/windows-startup-recovery3.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2013/07/windows-startup-recovery3.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2013/07/windows-startup-recovery3.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Nessa tela, escolhi a primeira opção, não selecionei nada na lista, e cliquei em “Avançar”:&lt;/li&gt;
+&lt;li&gt;Nessa tela, escolhi a primeira opção, não selecionei nada na lista, e cliquei em “Avançar”:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2013/07/windows-startup-recovery4.png&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2013/07/windows-startup-recovery4.png&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2013/07/windows-startup-recovery4.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2013/07/windows-startup-recovery4.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Finalmente, nessa tela, diferentemente do autor, escolhi a primeira opção, “Startup Recovery”:&lt;/li&gt;
+&lt;li&gt;Finalmente, nessa tela, diferentemente do autor, escolhi a primeira opção, “Startup Recovery”:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2013/07/windows-startup-recovery5.png&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2013/07/windows-startup-recovery5.png&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2013/07/windows-startup-recovery5.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2013/07/windows-startup-recovery5.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;A instalação executou seus procedimentos de manutenção, após os quais reiniciei o computador. Ainda nada de Windows, e agora ele não exibia mais nem o menu do GRUB2, acusando que havia múltiplas partições ativas.&lt;/p&gt;
 
 &lt;p&gt;Executei novamente os passos 1 a 3 acima, até chegar naquela tela em que cliquei em “Startup Recovery”, mas dessa vez escolhi “Command Prompt”. Executei o seguinte comando e reiniciei o computador:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; bootrec /rebuildbcd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Nada mudou: além de não conseguir acessar o Windows, não conseguia acessar o menu do GRUB2, e ainda havia a reclamação de duas partições ativas. Agora vejo no meu post anterior que &lt;a href=&quot;http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;eu poderia ter tentado outros comandos&lt;/a&gt;, mas enfim… hoje o que eu executei foi esse e consegui resolver. Não após ele, ainda falta alguns passos da minha solução...&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bootrec&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rebuildbcd&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Nada mudou: além de não conseguir acessar o Windows, não conseguia acessar o menu do GRUB2, e ainda havia a reclamação de duas partições ativas. Agora vejo no meu post anterior que &lt;a href=&quot;http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;eu poderia ter tentado outros comandos&lt;/a&gt;, mas enfim… hoje o que eu executei foi esse e consegui resolver. Não após ele, ainda falta alguns passos da minha solução…&lt;/p&gt;
-
-&lt;h3 id=&quot;definio-da-partio-ativa&quot;&gt;Definição da partição ativa&lt;/h3&gt;
+&lt;h3&gt;Definição da partição ativa&lt;/h3&gt;
 
 &lt;p&gt;Reiniciei o computador dessa vez usando o LiveDVD do openSUSE 12.3. Abri o &lt;a href=&quot;http://gparted.sourceforge.net/&quot;&gt;GParted&lt;/a&gt; e vi que tanto a partição do Windows (&lt;strong&gt;/dev/sda1&lt;/strong&gt;) quanto a partição estendida (&lt;strong&gt;/dev/sda4&lt;/strong&gt;) estavam definidas como ativas. Defini que apenas a partição estendida deveria ser ativa.&lt;/p&gt;
 
 &lt;p&gt;Reiniciei novamente o computador e dessa vez consegui o menu do GRUB2, ainda sem a opção do Windows. Só faltava isso para o problema estar resolvido.&lt;/p&gt;
 
-&lt;h3 id=&quot;reconfigurao-do-grub2&quot;&gt;Reconfiguração do GRUB2&lt;/h3&gt;
+&lt;h3&gt;Reconfiguração do GRUB2&lt;/h3&gt;
 
 &lt;p&gt;Iniciei o computador pelo openSUSE instalado no HD. Após pesquisar e ler um bocadinho, descobri que o comando responsável pela reconfiguração do GRUB2 no openSUSE é o seguinte:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# grub2-mkconfig -o /boot/grub2/grub.cfg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Reiniciei o computador, mas nada mudou... iniciei o openSUSE novamente. Agora não me perguntem por que cargas d’água, &lt;strong&gt;esse comando só funcionou depois que eu montei a partição do Windows&lt;/strong&gt; (isso pode ser feito pelo Dolphin, ao tentar abrir a partição do Windows, ou, para os mais experientes, usando o comando &lt;strong&gt;mount&lt;/strong&gt;). Montei a partição do Windows, executei a reconfiguração do GRUB2 novamente e, dessa vez, quando reiniciei o computador, tudo estava normal de novo…&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# grub2-mkconfig -o /boot/grub2/grub.cfg&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Reiniciei o computador, mas nada mudou… iniciei o openSUSE novamente. Agora não me perguntem por que cargas d’água, &lt;strong&gt;esse comando só funcionou depois que eu montei a partição do Windows&lt;/strong&gt; (isso pode ser feito pelo Dolphin, ao tentar abrir a partição do Windows, ou, para os mais experientes, usando o comando &lt;strong&gt;mount&lt;/strong&gt;). Montei a partição do Windows, executei a reconfiguração do GRUB2 novamente e, dessa vez, quando reiniciei o computador, tudo estava normal de novo…&lt;/p&gt;
-
-&lt;h3 id=&quot;configurando-o-grub2-para-iniciar-o-windows-por-padro&quot;&gt;Configurando o GRUB2 para iniciar o Windows por padrão&lt;/h3&gt;
+&lt;h3&gt;Configurando o GRUB2 para iniciar o Windows por padrão&lt;/h3&gt;
 
 &lt;p&gt;Aproveito a oportunidade para passar aqui uma dica preciosa para os usuários de Linux que, infelizmente, não são os únicos usuários do computador. Na minha casa, tanto meu irmão quanto minha mãe só usam Windows. Por isso, sempre deixo o Windows iniciando por padrão. No openSUSE, isso &lt;a href=&quot;http://doc.opensuse.org/documentation/html/openSUSE/opensuse-reference/grub2.html#grub2.yast2.config.default&quot;&gt;pode ser feito de maneira fácil através da interface gráfica do YaST&lt;/a&gt;:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Inicie o YaST pelo Kickoff. Forneça a senha de root para que ele possa abrir.&lt;/li&gt;
-  &lt;li&gt;Clique em “Carregador de inicialização” (&lt;em&gt;Boot loader&lt;/em&gt;, no inglês).&lt;/li&gt;
-  &lt;li&gt;Clique em “Opções do carregador de inicialização” (&lt;em&gt;Boot Loader Options&lt;/em&gt;).&lt;/li&gt;
-  &lt;li&gt;Em “Seção de inicialização padrão” (&lt;em&gt;Default Boot Section&lt;/em&gt;), selecione qual sistema deseja que seja iniciado por padrão.&lt;/li&gt;
-  &lt;li&gt;Clique em “OK” e depois em “OK” novamente para ativar as mudanças.&lt;/li&gt;
+&lt;li&gt;Inicie o YaST pelo Kickoff. Forneça a senha de root para que ele possa abrir.&lt;/li&gt;
+&lt;li&gt;Clique em “Carregador de inicialização” (&lt;em&gt;Boot loader&lt;/em&gt;, no inglês).&lt;/li&gt;
+&lt;li&gt;Clique em “Opções do carregador de inicialização” (&lt;em&gt;Boot Loader Options&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Em “Seção de inicialização padrão” (&lt;em&gt;Default Boot Section&lt;/em&gt;), selecione qual sistema deseja que seja iniciado por padrão.&lt;/li&gt;
+&lt;li&gt;Clique em “OK” e depois em “OK” novamente para ativar as mudanças.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;consideraes-finais&quot;&gt;Considerações finais&lt;/h3&gt;
+&lt;h3&gt;Considerações finais&lt;/h3&gt;
 
 &lt;p&gt;Pois é, pessoal. Não sei explicar o que ocasionou esse problema no meu computador, mas sei que ele aconteceu, eu tive que buscar uma solução, encontrei e estou compartilhando aqui com vocês. Parece que nem sempre o instalador do openSUSE, apesar de muito inteligente, faz as coisas como deveria… o dual boot será algo que a equipe do openSUSE precisa rever em seu instalador?&lt;/p&gt;
 
-&lt;p&gt;Aliás, essa não é a única coisa estranha que percebo no openSUSE: meu netbook (que só eu uso, é um &lt;a href=&quot;http://www.asus.com/Notebooks_Ultrabooks/Eee_PC_1015PEM/&quot;&gt;ASUS EeePC 1015PEM&lt;/a&gt;) às vezes suspende quando volta da hibernação. Acontece o seguinte: eu paro de usar o netbook e o fecho. Ele inicia a hibernação. Quando o abro e volto a usar (ele volta da hibernação), alguns segundos depois o KDE avisa que a bateria está em nível crítico (0%, que loucura!) e que necessita suspender, e é isso que ele faz. Se conecto o carregador antes de abrir o netbook, consigo evitar a suspensão, mas não sei porque isso acontece, mesmo quando ele tá com a bateria cheia…&lt;/p&gt;
+&lt;p&gt;Aliás, essa não é a única coisa estranha que percebo no openSUSE: meu netbook (que só eu uso, é um &lt;a href=&quot;http://www.asus.com/Notebooks_Ultrabooks/Eee_PC_1015PEM/&quot;&gt;ASUS EeePC 1015PEM&lt;/a&gt;) às vezes suspende quando volta da hibernação. Acontece o seguinte: eu paro de usar o netbook e o fecho. Ele inicia a hibernação. Quando o abro e volto a usar (ele volta da hibernação), alguns segundos depois o KDE avisa que a bateria está em nível crítico (0%, que loucura!) e que necessita suspender, e é isso que ele faz. Se conecto o carregador antes de abrir o netbook, consigo evitar a suspensão, mas não sei porque isso acontece, mesmo quando ele tá com a bateria cheia...&lt;/p&gt;
 
 &lt;p&gt;Abraço a todos e até a próxima!&lt;/p&gt;
 </description>
@@ -423,9 +407,9 @@ Disk identifier: 0x1ba01b9f
         <title>Configurando um datasource do MySQL no JBoss AS</title>
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.mysql.com/&quot;&gt;MySQL&lt;/a&gt; é um banco de dados de código aberto desenvolvido pela &lt;a href=&quot;http://www.oracle.com/&quot;&gt;Oracle&lt;/a&gt;. Ele se tornou um dos bancos de dados mais utilizados no mundo devido ao fato de se integrar perfeitamente ao &lt;a href=&quot;http://www.php.net/&quot;&gt;PHP&lt;/a&gt;, sendo oferecido pela maioria dos serviços de hospedagem de sites em conjunto com o suporte a essa linguagem. Nesse post, você verá como utilizá-lo em conjunto com o servidor de aplicação &lt;a href=&quot;http://www.jboss.org/jbossas/&quot;&gt;JBoss AS&lt;/a&gt; para satisfazer as necessidades de armazenamento de dados de suas aplicações &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/&quot;&gt;Java EE&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_01.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_01.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_mysql_01.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_mysql_01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
@@ -439,7 +423,7 @@ Disk identifier: 0x1ba01b9f
 
 &lt;p&gt;Dividirei a explicação em 3 etapas: fazer deploy do driver JDBC, criação do datasource e configurar a aplicação Web para utilizar esse datasource. As explicações aqui fornecidas se aplicam a qualquer sistema operacional onde seja possível executar o JBoss AS.&lt;/p&gt;
 
-&lt;h3 id=&quot;deploy-do-driver-jdbc-do-mysql&quot;&gt;Deploy do driver JDBC do MySQL&lt;/h3&gt;
+&lt;h3&gt;Deploy do driver JDBC do MySQL&lt;/h3&gt;
 
 &lt;p&gt;Em primeiro lugar, precisamos do driver JDBC do MySQL. Ele é distribuído como um pacote no site do MySQL (os desenvolvedores do MySQL chamam seu driver JDBC de “MySQL Connector/J”), juntamente com seus código-fonte e documentação.&lt;/p&gt;
 
@@ -449,140 +433,145 @@ Disk identifier: 0x1ba01b9f
 
 &lt;p&gt;Ao final do processo, o driver JDBC do MySQL deve aparecer habilitado na lista de aplicações implantadas, como mostra a figura (curiosamente, a &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/&quot;&gt;aplicação de exemplo&lt;/a&gt; que implantamos &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/&quot;&gt;naquele post&lt;/a&gt; ainda está no servidor):&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_02.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_02.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_mysql_02.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_mysql_02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&quot;criao-do-datasource&quot;&gt;Criação do datasource&lt;/h3&gt;
+&lt;h3&gt;Criação do datasource&lt;/h3&gt;
 
 &lt;p&gt;No painel superior do console Web, clique em “Profile”, e em seguida, no menu da esquerda, clique em “Datasources”. É exibida uma lista com todos os datasources configurados (nesse caso, só há o &lt;a href=&quot;https://docs.jboss.org/author/display/AS7/Getting+Started+Guide#GettingStartedGuide-ModifyingtheExampleDataSource&quot;&gt;datasource de exemplo&lt;/a&gt;, que já vem configurado com o servidor de aplicação):&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_03.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_03.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_mysql_03.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_mysql_03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Clique em “Add”. Na caixa de diálogo que aparece, forneça ao datasource um nome (esse nome não afeta a conexão, serve apenas para distinguir o datasource na lista, aqui forneci “TesteDS”) e um nome &lt;a href=&quot;http://www.oracle.com/technetwork/java/jndi/&quot;&gt;JNDI&lt;/a&gt; (esse sim importa à conexão, é usado para localizar um recurso na rede e deve começar sempre com “java:/” ou “java:jboss/”, aqui digitei “java:/teste”), e em seguida clique em “Next”:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_04.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_04.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_mysql_04.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_mysql_04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Selecione um driver JDBC na lista de drivers disponíveis. No nosso caso, devemos selecionar o MySQL Connector/J. Depois clique em “Next”:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_05.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_05.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_mysql_05.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_mysql_05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Finalmente, devemos informar os detalhes da conexão: o endereço JDBC de acesso ao banco (aqui, preenchi com “jdbc:mysql://localhost:3306/teste”, o formato desse endereço é “jdbc:mysql://servidor:porta/base”), o usuário e a senha que serão utilizados. Depois de preencher os campos, clique em “Done”:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_06.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_06.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_mysql_06.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_mysql_06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;O datasource é criado e passa a aparecer na lista, mas ainda não está habilitado:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_07.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_07.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_mysql_07.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_mysql_07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Antes de habilitá-lo, tornando-o assim disponível para conexão, vamos permitir que esse datasource seja gerenciado pela API de transações do Java (&lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/jta/index.html&quot;&gt;Java Transaction API&lt;/a&gt;, ou JTA). Selecione-o na lista e, descendo na página, clique na aba “Connection”. Perceba que a JTA está desabilitada para esse datasource. Clique em “Edit” para alterar isso:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_08.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_08.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_mysql_08.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_mysql_08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Marque as duas últimas opções e clique em “Save”:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_09.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_09.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_mysql_09.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_mysql_09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Agora a JTA está habilitada:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_10.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_10.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_mysql_10.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_mysql_10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Agora sim vamos habilitar o datasource: ainda com ele selecionado, clique no botão “Enable”, acima da lista. O datasource é então habilitado:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_11.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_11.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_mysql_11.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_mysql_11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Ainda com o datasource selecionado na lista e a aba “Connection” aberta na parte de baixo, clique no botão “Test Connection”. Se você forneceu os dados corretamente, o servidor de aplicação conseguirá estabelecer uma conexão com o banco de dados, e a seguinte mensagem será exibida:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_mysql_12.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_mysql_12.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_mysql_12.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_mysql_12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Da parte do servidor está tudo OK. Agora é só configurar a aplicação para utilizar o datasource.&lt;/p&gt;
 
-&lt;h3 id=&quot;configurao-da-aplicao&quot;&gt;Configuração da aplicação&lt;/h3&gt;
+&lt;h3&gt;Configuração da aplicação&lt;/h3&gt;
 
 &lt;p&gt;Agora nós precisamos configurar nossa aplicação para se comunicar com a base de dados utilizando o datasource configurado no servidor de aplicação. O arquivo central da configuração da JPA (&lt;a href=&quot;http://docs.oracle.com/javaee/6/tutorial/doc/bnbpy.html&quot;&gt;Java Persistence API&lt;/a&gt;) no projeto, o “META-INF/persistence.xml”, vai sofrer algumas alterações. Observe as linhas destacadas:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;persistence&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://java.sun.com/xml/ns/persistence&amp;quot;&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;xmlns:xsi=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;xsi:schemaLocation=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd&amp;quot;&lt;/span&gt;
-   &lt;span class=&quot;na&quot;&gt;version=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;2.0&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;&amp;lt;persistence-unit&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;TestePU&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;provider&amp;gt;&lt;/span&gt;org.hibernate.ejb.HibernatePersistence&lt;span class=&quot;nt&quot;&gt;&amp;lt;/provider&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;jta-data-source&amp;gt;&lt;/span&gt;java:/teste&lt;span class=&quot;nt&quot;&gt;&amp;lt;/jta-data-source&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;properties&amp;gt;&lt;/span&gt;
-         &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;hibernate.hbm2ddl.auto&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;create-drop&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-         &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;hibernate.show_sql&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/properties&amp;gt;&lt;/span&gt;
-   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/persistence-unit&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/persistence&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: xml; highlight: [6, 8]&quot;&gt;&lt;![CDATA[
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;persistence xmlns=&quot;http://java.sun.com/xml/ns/persistence&quot;
+   xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+   xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd&quot;
+   version=&quot;2.0&quot;&gt;
+   &lt;persistence-unit name=&quot;TestePU&quot;&gt;
+      &lt;provider&gt;org.hibernate.ejb.HibernatePersistence&lt;/provider&gt;
+      &lt;jta-data-source&gt;java:/teste&lt;/jta-data-source&gt;
+      &lt;properties&gt;
+         &lt;property name=&quot;hibernate.hbm2ddl.auto&quot; value=&quot;create-drop&quot; /&gt;
+         &lt;property name=&quot;hibernate.show_sql&quot; value=&quot;true&quot; /&gt;
+      &lt;/properties&gt;
+   &lt;/persistence-unit&gt;
+&lt;/persistence&gt;
+]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Observe que estou utilizando o &lt;a href=&quot;http://www.hibernate.org/&quot;&gt;Hibernate&lt;/a&gt; como implementação JPA, já que estamos utilizando o JBoss AS como servidor de aplicação.&lt;/p&gt;
 
 &lt;p&gt;No código-fonte da aplicação, sempre for necessário um &lt;a href=&quot;http://docs.oracle.com/javaee/6/api/javax/persistence/EntityManager.html&quot;&gt;EntityManager&lt;/a&gt; para &lt;a href=&quot;http://docs.oracle.com/javaee/6/tutorial/doc/bnbqw.html&quot;&gt;manusear entidades JPA&lt;/a&gt;, você pode solicitar ao servidor de aplicação que injete-o (isso significa que você não precisa criar o objeto manualmente, o servidor de aplicação cria o objeto para você) anotando sua variável com &lt;a href=&quot;http://docs.oracle.com/javaee/6/api/javax/persistence/PersistenceContext.html&quot;&gt;@PersistenceContext&lt;/a&gt; e especificando o nome da persistence-unit, como definida no arquivo “META-INF/persistence.xml”:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@PersistenceContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;TestePU&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;EntityManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entityManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: java; gutter: false&quot;&gt;&lt;![CDATA[
+@PersistenceContext(name=&quot;TestePU&quot;)
+EntityManager entityManager;
+]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Se sua aplicação possui apenas uma persistence-unit, essa informação pode ser omitida:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@PersistenceContext&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;EntityManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entityManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: java; gutter: false&quot;&gt;&lt;![CDATA[
+@PersistenceContext
+EntityManager entityManager;
+]]&gt;&lt;/script&gt;
 
-&lt;h3 id=&quot;aplicao-de-exemplo&quot;&gt;Aplicação de exemplo&lt;/h3&gt;
+&lt;h3&gt;Aplicação de exemplo&lt;/h3&gt;
 
 &lt;p&gt;Uma boa pedida é escolher uma das &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/&quot;&gt;aplicações de exemplo do JBoss AS&lt;/a&gt;, alterar suas configurações e executá-la. No &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/&quot;&gt;post anterior&lt;/a&gt;, nós compilamos, empacotamos, implantamos e executamos a aplicação de exemplo &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/&quot;&gt;helloworld-jsf&lt;/a&gt;. Vou aproveitar o arquivo que já baixei e extraí naquele post, mas aqui vamos utilizar a aplicação &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/greeter/&quot;&gt;greeter&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Entre na pasta da aplicação (no meu caso, “/home/vinicius/jboss-jdf-jboss-as-quickstart-8505020/greeter/”), exclua o arquivo “greeter-quickstart-ds.xml” que está na pasta “src/main/webapp/WEB-INF/” e altere o arquivo “persistence.xml” dentro da pasta “src/main/resources/META-INF/” para que tenha o conteúdo acima.&lt;/p&gt;
 
 &lt;p&gt;Pronto! Agora é só implantar a aplicação com o &lt;a href=&quot;http://maven.apache.org/&quot;&gt;Maven&lt;/a&gt; (caso você não tenha o Maven em seu computador, leia &lt;a href=&quot;http://www.vinyanalista.com.br/blog/2012/07/18/instalacao-do-apache-maven/&quot;&gt;esse post&lt;/a&gt;):&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mvn package jboss-as:deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;mvn package jboss-as:deploy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Se tudo ocorrer conforme o esperado, a aplicação de exemplo poderá ser acessada através do endereço “&lt;a href=&quot;http://localhost:8080/jboss-as-greeter/&quot;&gt;http://localhost:8080/jboss-as-greeter/&lt;/a&gt;“.&lt;/p&gt;
 
-&lt;h3 id=&quot;dica-aos-usurios-de-postgresql&quot;&gt;Dica aos usuários de PostgreSQL&lt;/h3&gt;
+&lt;h3&gt;Dica aos usuários de PostgreSQL&lt;/h3&gt;
 
 &lt;p&gt;As instruções fornecidas aqui podem ser aplicadas sem maiores problemas a outros bancos de dados. Veja, por exemplo, essa página que ensina &lt;a href=&quot;http://blog.xebia.com/2011/07/19/developing-a-jpa-application-on-jboss-as-7/&quot;&gt;como configurar um datasource do PostgreSQL no JBoss AS&lt;/a&gt;.&lt;/p&gt;
 
@@ -601,9 +590,9 @@ Disk identifier: 0x1ba01b9f
         <title>Apresentando o servidor de aplicação JBoss AS 7 (parte 2)</title>
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.jboss.org/jbossas/&quot;&gt;JBoss Application Server&lt;/a&gt; (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela &lt;a href=&quot;http://www.jboss.org/&quot;&gt;JBoss&lt;/a&gt; (atualmente, uma divisão da &lt;a href=&quot;http://www.redhat.com/&quot;&gt;Red Hat&lt;/a&gt;) para a plataforma &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/&quot;&gt;Java EE&lt;/a&gt;. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações Java para a Web utilizando esse servidor.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_01.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_01.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_01.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
@@ -611,56 +600,53 @@ Disk identifier: 0x1ba01b9f
 
 &lt;!--more--&gt;
 
-&lt;h3 id=&quot;console-de-administrao-web-do-jboss-as&quot;&gt;Console de administração Web do JBoss AS&lt;/h3&gt;
+&lt;h3&gt;Console de administração Web do JBoss AS&lt;/h3&gt;
 
 &lt;p&gt;Podemos gerenciar o servidor de aplicação JBoss AS através de um console Web, que nos permite realizar, entre outras configurações, deploy e undeploy de aplicações, iniciar ou interromper a execução de aplicações, verificar o consumo de memória do servidor, configurar datasources, etc. Esse console, por padrão (se você não alterar as configurações de portas) é acessado através do endereço “&lt;a href=&quot;http://localhost:9990/&quot;&gt;http://localhost:9990/&lt;/a&gt;“.&lt;/p&gt;
 
 &lt;p&gt;Na primeira vez em que você tentar acessar esse console, no entanto, ele emitirá uma mensagem de erro (é bonita, eu sei, mas se você examinar seu conteúdo, verá que é uma mensagem de erro, rsrsrs):&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_05.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_05.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_05.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Esse aviso nos diz que é necessário definir um usuário e uma senha para acessar o console de administração Web. Vamos fazer isso.&lt;/p&gt;
 
 &lt;p&gt;Execute o script “add-user” dentro da pasta “bin” do servidor (“C:\jboss-as\bin\add-user.bat” no Windows, e “/home/vinicius/jboss-as/bin/add-user.sh” no Linux):&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;/home/vinicius/jboss-as/bin/add-user.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ /home/vinicius/jboss-as/bin/add-user.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Após iniciar o script, você será guiado no processo de adicionar um novo usuário:&lt;/p&gt;
-
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;What type of user do you wish to add?
 a) Management User (mgmt-users.properties)
 b) Application User (application-users.properties)
-(a):&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+(a):
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Nesse caso, como estamos criando um usuário com a finalidade de administrar o servidor, escolhemos a opção “a”. Ela já é a opção padrão, apenas tecle Enter.&lt;/p&gt;
 
 &lt;p&gt;Você será solicitado a fornecer informações sobre o novo usuário. Quando questionado sobre o domínio do usuário (Realm), aceite a opção padrão (ManagementRealm), para isso basta teclar Enter quando chegar nesse campo. No mais, digite nome de usuário, senha e confirme a senha.&lt;/p&gt;
-
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Enter the details of the new user to add.
 Realm (ManagementRealm) :
 Username :
 Password :
-Re-enter Password :&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+Re-enter Password :
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Se não houver nada errado, uma mensagem de confirmação será exibida na tela.&lt;/p&gt;
 
 &lt;p&gt;Feito isso, nós já podemos acessar o console de administração Web, informando o usuário e senha criados quando solicitados (lembrando que o endereço é “&lt;a href=&quot;http://localhost:9990/&quot;&gt;http://localhost:9990/&lt;/a&gt;“):&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_06.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_06.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_06.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Vamos fazer undeploy e deploy da aplicação usando o console de administração Web. Para isso, no menu do lado esquerdo, clique em “Manage Deployments”. É exibida uma lista das aplicações instaladas no servidor:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_07.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_07.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_07.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
@@ -668,9 +654,9 @@ Re-enter Password :&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Feito isso a aplicação desaparece da lista, ela já não está mais no servidor (e muito menos acessível):&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_08.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_08.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_08.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
@@ -680,45 +666,46 @@ Re-enter Password :&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;O primeiro passo é selecionar o arquivo que você deseja fazer deploy. Na janela que aparece, clique em “Browse…”, navegue até a pasta do exemplo (aqui, “/home/vinicius/jboss-jdf-jboss-as-quickstart-8505020/helloworld-jsf/”) e, dentro da pasta “target”, escolha o arquivo “jboss-as-helloworld-jsf.war”, que representa a aplicação compilada e empacotada em um formato próprio de aplicação Web (arquivo &lt;strong&gt;.war&lt;/strong&gt;), análogo ao formato de aplicação Desktop (arquivo &lt;strong&gt;.jar&lt;/strong&gt;). Por último, clique em “Next”:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_09.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_09.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_09.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Ele pede para confirmar as informações. Simplesmente clique em “Save”:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_10.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_10.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_10.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;De volta à lista de aplicações, a aplicação foi instalada no servidor, mas não foi iniciada:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_11.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_11.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_11.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Clique em Enable para iniciá-la. Aparece uma mensagem de confirmação na tela, clique em “Confirm”. Feito isso a aplicação passa a aparecer na lista como habilitada:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_12.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_12.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_12.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Agora é possível acessá-la novamente pelo endereço “&lt;a href=&quot;http://localhost:8080/jboss-as-helloworld-jsf/&quot;&gt;http://localhost:8080/jboss-as-helloworld-jsf/&lt;/a&gt;“.&lt;/p&gt;
 
-&lt;h3 id=&quot;encerrando-o-jboss-as&quot;&gt;Encerrando o JBoss AS&lt;/h3&gt;
+&lt;h3&gt;Encerrando o JBoss AS&lt;/h3&gt;
 
 &lt;p&gt;Encerrar o servidor, tanto no Windows quanto no Linux, é um procedimento bastante simples: basta abortar a execução do comando na janela de terminal onde o servidor está sendo executado. Para isso, basta apertar Ctrl + C (vale para ambos os sistemas).&lt;/p&gt;
 
 &lt;p&gt;Aqui ele encerrou o servidor em pequeníssimos 143 milissegundos:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;15:09:21,996 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011942: Stopping OSGi Framework
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text&quot;&gt;&lt;![CDATA[
+15:09:21,996 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011942: Stopping OSGi Framework
 15:09:22,034 INFO  [org.jboss.as.logging] JBAS011503: Restored bootstrap log handlers
 15:09:22,044 INFO  [org.jboss.weld.deployer] JBAS016009: Stopping weld service for deployment jboss-as-helloworld-jsf.war
 15:09:22,053 INFO  [org.apache.coyote.http11.Http11Protocol] Pausing Coyote HTTP/1.1 on http--127.0.0.1-8080
@@ -730,9 +717,10 @@ Re-enter Password :&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 JBAS014776:    Newly corrected services:
 service jboss.server.controller.management.security_realm.ApplicationRealm.properties_authentication (new available)
 
-15:09:22,121 INFO  [org.jboss.as] JBAS015950: JBoss AS 7.1.1.Final &amp;quot;Brontes&amp;quot; stopped in 143ms&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+15:09:22,121 INFO  [org.jboss.as] JBAS015950: JBoss AS 7.1.1.Final &quot;Brontes&quot; stopped in 143ms
+]]&gt;&lt;/script&gt;
 
-&lt;h3 id=&quot;mais-informaes-sobre-o-jboss-as&quot;&gt;Mais informações sobre o JBoss AS&lt;/h3&gt;
+&lt;h3&gt;Mais informações sobre o JBoss AS&lt;/h3&gt;
 
 &lt;p&gt;Pois é, pessoal. Vou encerrando minha apresentação do JBoss AS por aqui. Gostaria apenas de fazer algumas considerações finais e deixar as páginas que usei como referência para escrever esse post.&lt;/p&gt;
 
@@ -747,9 +735,9 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
 &lt;p&gt;As páginas da &lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Documentation&quot;&gt;documentação oficial do JBoss AS&lt;/a&gt; que utilizei como referência para escrever esse post foram:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Getting+Started+Guide&quot;&gt;Getting Started Guide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Getting+Started+Developing+Applications+Guide&quot;&gt;Getting Started Developing Applications Guide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Admin+Guide&quot;&gt;Admin Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Getting+Started+Guide&quot;&gt;Getting Started Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Getting+Started+Developing+Applications+Guide&quot;&gt;Getting Started Developing Applications Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Admin+Guide&quot;&gt;Admin Guide&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Abraço a todos e até a próxima!&lt;/p&gt;
@@ -765,9 +753,9 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
         <title>Apresentando o servidor de aplicação JBoss AS 7</title>
         <description>&lt;p&gt;O &lt;a href=&quot;http://www.jboss.org/jbossas/&quot;&gt;JBoss Application Server&lt;/a&gt; (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela &lt;a href=&quot;http://www.jboss.org/&quot;&gt;JBoss&lt;/a&gt; (atualmente, uma divisão da &lt;a href=&quot;http://www.redhat.com/&quot;&gt;Red Hat&lt;/a&gt;) para a plataforma &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/&quot;&gt;Java EE&lt;/a&gt;. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações Java para a Web utilizando esse servidor.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_01.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_01.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_01.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
@@ -779,17 +767,16 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
 
 &lt;p&gt;Precisaremos também do Maven, que já foi abordado em &lt;a href=&quot;/blog/2012/07/18/instalacao-do-apache-maven/&quot;&gt;outro post&lt;/a&gt;. Ele não é necessário à execução do JBoss AS, mas precisaremos dele nesse passo-a-passo para implantar uma aplicação de exemplo no servidor.&lt;/p&gt;
 
-&lt;h3 id=&quot;download-do-jboss-as&quot;&gt;Download do JBoss AS&lt;/h3&gt;
+&lt;h3&gt;Download do JBoss AS&lt;/h3&gt;
 
 &lt;p&gt;Na &lt;a href=&quot;http://www.jboss.org/jbossas/downloads/&quot;&gt;página de downloads do JBoss AS 7&lt;/a&gt; há várias opções de download. Vamos nos concentrar aqui naquelas que se referem à versão mais atual do servidor de aplicação (no momento da escrita deste post, a versão 7.1.1, apelido “Brontes”). Para os usuários de Windows, eu recomendo o download do arquivo &lt;strong&gt;.zip&lt;/strong&gt;, e para os usuários de Linux, eu recomendo o download do arquivo &lt;strong&gt;.tar.gz&lt;/strong&gt;, pois esses formatos são os mais comuns nesses dois sistemas.&lt;/p&gt;
 
 &lt;p&gt;Nesse passo-a-passo, precisaremos ainda do código-fonte da aplicação de exemplo que demonstrarei, mas como ela não é necessária à instalação do servidor, deixarei seu download para um momento mais oportuno.&lt;/p&gt;
 
 &lt;p&gt;Os links para download direto dos arquivos mencionados acima são &lt;a href=&quot;http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip&quot;&gt;esse&lt;/a&gt; e &lt;a href=&quot;http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.tar.gz&quot;&gt;esse&lt;/a&gt;. No caso do Linux, é possível baixar este arquivo pelo terminal usando o comando &lt;strong&gt;wget&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;instalao-do-jboss-as&quot;&gt;Instalação do JBoss AS&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ wget http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Instalação do JBoss AS&lt;/h3&gt;
 
 &lt;p&gt;Tanto no Windows quanto no Linux, basta descompactar o arquivo baixado que o JBoss AS já pode ser executado a partir daquele local. Assim como acontece com o &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;JDK&lt;/a&gt;, é possível instalar em uma localização visível a todos os usuários (como “C:\” no Windows ou “/opt/” no Linux) ou visível apenas ao seu usuário (no meu caso, “C:\Users\Vinicius\Documents” ou “/home/vinicius”). Em ambos os casos, o arquivo descompactado gera uma pasta chamada “jboss-as-7.1.1.Final? e pode ser excluído após a extração.&lt;/p&gt;
 
@@ -798,44 +785,41 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
 &lt;p&gt;No Windows, fiz a extração do arquivo na raiz do disco “C:\” e renomeei a pasta “jboss-as-7.1.1.Final” para apenas “jboss-as”. O caminho para o JBoss AS no meu sistema é, então, “C:\jboss-as”.&lt;/p&gt;
 
 &lt;p&gt;No Linux é mais prático fazer a instalação na pasta home do usuário. Se a finalidade de usar o JBoss AS é didática, recomendo essa instalação, porque é mais fácil de manter (não é necessário obter privilégios de administrador sempre que for necessário alterar algum arquivo à mão, por exemplo). No terminal, os comandos para download e extração seriam (já estou incluindo o comando para renomear a pasta, conforme sugeri):&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/vinicius/
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.tar.gz
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tar zxvf jboss-as-7.1.1.Final.tar.gz
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mv jboss-as-7.1.1.Final jboss-as
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rm jboss-as-7.1.1.Final.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd /home/vinicius/
+$ wget http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.tar.gz
+$ tar zxvf jboss-as-7.1.1.Final.tar.gz
+$ mv jboss-as-7.1.1.Final jboss-as
+$ rm jboss-as-7.1.1.Final.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;É possível instalar também em uma localização global, visível a todos os usuários. No caso específico do JBoss AS, já que estamos falando de um servidor, talvez essa seja a instalação mais comum. Para fazer isso, o procedimento é parecido, mas é necessário ter permissões de administrador:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/vinicius/
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.tar.gz
-&lt;span class=&quot;c&quot;&gt;# mv jboss-as-7.1.1.Final.tar.gz /opt&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# cd /opt&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# tar zxvf jboss-as-7.1.1.Final.tar.gz&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# mv jboss-as-7.1.1.Final jboss-as&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# rm jboss-as-7.1.1.Final.tar.gz&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd /home/vinicius/
+$ wget http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.tar.gz
+# mv jboss-as-7.1.1.Final.tar.gz /opt
+# cd /opt
+# tar zxvf jboss-as-7.1.1.Final.tar.gz
+# mv jboss-as-7.1.1.Final jboss-as
+# rm jboss-as-7.1.1.Final.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;No primeiro caso, o caminho para o JBoss AS passa a ser “/home/vinicius/jboss-as” e, no segundo, “/opt/jboss-as”.&lt;/p&gt;
 
-&lt;h3 id=&quot;inicializando-o-servidor&quot;&gt;Inicializando o servidor&lt;/h3&gt;
+&lt;h3&gt;Inicializando o servidor&lt;/h3&gt;
 
 &lt;p&gt;De acordo com a &lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Getting+Started+Guide&quot;&gt;documentação do JBoss AS&lt;/a&gt;, há duas maneiras de iniciar o servidor de aplicação: em modo “standalone”, onde cada instância do servidor é um processo que atua de maneira independente; ou em modo de domínio (“domain”), onde várias máquinas (físicas ou virtuais) executando o servidor de aplicação compõem um domínio, no qual há uma máquina central responsável por gerenciar as demais. Para fins de demonstração, nessa página (e nas demais em que eu me referir ao JBoss AS) usarei o servidor em modo “standalone”.&lt;/p&gt;
 
 &lt;p&gt;Para iniciar o servidor dessa maneira, no Windows, usando o Windows Explorer mesmo, você pode ir até a pasta na qual o JBoss AS está instalado (no meu caso, “C:\jboss-as”), abrir a pasta “bin” e dar um duplo-clique no script “standalone.bat”. Uma nova janela de terminal se abre com a saída do servidor. É interessante criar um atalho para esse arquivo em algum local de fácil acesso, para facilitar sempre que se desejar iniciar o servidor.&lt;/p&gt;
 
 &lt;p&gt;No Windows, também é possível iniciar o JBoss AS pela linha de comando, invocando esse mesmo script. Nesse caso, a própria janela de terminal na qual o comando é invocado passa a exibir a saída do servidor (é importante observar que não é possível executar nenhum outro comando nessa mesma janela enquanto o servidor estiver em execução). O comando fica:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jboss&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-as&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;standalone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bat&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; C:\jboss-as\bin\standalone.bat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;No Linux, para iniciar o JBoss AS em modo standalone, devemos executar em uma janela de terminal o seguinte comando (supondo que o JBoss AS esteja instalado na pasta “/home/vinicius/jboss-as”):&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./home/vinicius/jboss-as/bin/standalone.sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ ./home/vinicius/jboss-as/bin/standalone.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Nesse caso, a própria janela de terminal na qual o comando é invocado passa a exibir a saída do servidor e, assim como acontece no Windows, não é possível executar nenhum outro comando nessa mesma janela enquanto o servidor estiver em execução.&lt;/p&gt;
 
 &lt;p&gt;O terminal deve exibir uma saída parecida com essa, resultado da inicialização do servidor:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;=========================================================================
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text&quot;&gt;&lt;![CDATA[
+=========================================================================
 
 JBoss Bootstrap Environment
 
@@ -849,7 +833,7 @@ JAVA_OPTS:  -server -XX:+TieredCompilation -Xms64m -Xmx512m -XX:MaxPermSize=256m
 
 04:35:28,890 INFO  [org.jboss.modules] JBoss Modules version 1.1.1.GA
 04:35:29,488 INFO  [org.jboss.msc] JBoss MSC version 1.0.2.GA
-04:35:29,647 INFO  [org.jboss.as] JBAS015899: JBoss AS 7.1.1.Final &amp;quot;Brontes&amp;quot; starting
+04:35:29,647 INFO  [org.jboss.as] JBAS015899: JBoss AS 7.1.1.Final &quot;Brontes&quot; starting
 04:35:32,341 INFO  [org.xnio] XNIO Version 3.0.3.GA
 04:35:32,366 INFO  [org.xnio.nio] XNIO NIO Implementation Version 3.0.3.GA
 04:35:32,457 INFO  [org.jboss.as.server] JBAS015888: Creating http management service using socket-binding (management-http)
@@ -873,17 +857,18 @@ JAVA_OPTS:  -server -XX:+TieredCompilation -Xms64m -Xmx512m -XX:MaxPermSize=256m
 04:35:36,119 INFO  [org.jboss.as.remoting] (MSC service thread 1-2) JBAS017100: Listening on /127.0.0.1:4447
 04:35:36,270 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source 1
 04:35:36,294 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
-04:35:36,295 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss AS 7.1.1.Final &amp;quot;Brontes&amp;quot; started in 8025ms - Started 133 of 208 services (74 services are passive or on-demand)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+04:35:36,295 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss AS 7.1.1.Final &quot;Brontes&quot; started in 8025ms - Started 133 of 208 services (74 services are passive or on-demand)
+]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Tanto no Windows quanto no Linux, após iniciado o servidor, abra seu navegador de preferência e acesse o endereço “&lt;a href=&quot;http://localhost:8080&quot;&gt;http://localhost:8080&lt;/a&gt;” (a porta 8080 é a utilizada pelo JBoss AS por padrão, mas essa porta pode ser alterada na configuração do servidor). Você deve ver a tela de boas vindas do JBoss AS:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_02.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_02.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_02.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&quot;executando-uma-aplicao-web&quot;&gt;Executando uma aplicação Web&lt;/h3&gt;
+&lt;h3&gt;Executando uma aplicação Web&lt;/h3&gt;
 
 &lt;p&gt;Para verificar o funcionamento do JBoss AS, vamos instalar e executar (diz-se fazer deploy no servidor) de uma das &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/&quot;&gt;aplicações de exemplo oferecidas no site do servidor&lt;/a&gt;. No caso, vou utilizar a &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/&quot;&gt;helloworld-jsf&lt;/a&gt;, que é simples, mas um pouco mais interessante que a tradicional &lt;a href=&quot;http://jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld/&quot;&gt;helloworld&lt;/a&gt;.&lt;/p&gt;
 
@@ -891,29 +876,27 @@ JAVA_OPTS:  -server -XX:+TieredCompilation -Xms64m -Xmx512m -XX:MaxPermSize=256m
 
 &lt;p&gt;Vá até a &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/&quot;&gt;página das aplicações de exemplo do JBoss AS&lt;/a&gt; e clique em “Get the source”. Depois, clique em “Source zip”:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_03.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_03.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_03.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Você está baixando um arquivo &lt;strong&gt;.zip&lt;/strong&gt; (no momento da escrita deste post, nomeado “jboss-jdf-jboss-as-quickstart-7.1.1.Final-0-gbcbcf69.zip”) com todas as aplicações de exemplo do JBoss AS (se quiser por curiosidade conferir a lista, são todas essas que aparecem listadas nessa mesma página).&lt;/p&gt;
 
 &lt;p&gt;Quando o download acabar, extraia o conteúdo desse arquivo para uma pasta de fácil acesso. No Linux, o comando para extração desse arquivo é:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;unzip jboss-jdf-jboss-as-quickstart-7.1.1.Final-0-gbcbcf69.zip&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ unzip jboss-jdf-jboss-as-quickstart-7.1.1.Final-0-gbcbcf69.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Isso cria uma pasta contendo as aplicações de exemplo (aqui se chama “jboss-jdf-jboss-as-quickstart-8505020″), entre nessa pasta e, em seguida, entre na pasta “helloworld-jsf” (usuários de Windows também devem entrar nessa pasta pelo terminal, já que vamos executar um comando do Maven dentro dela):&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;jboss-jdf-jboss-as-quickstart-8505020/helloworld-jsf&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd jboss-jdf-jboss-as-quickstart-8505020/helloworld-jsf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Certifique-se de que o JBoss AS esteja em execução e invoque o seguinte comando do Maven, que compilará, testará, empacotará e realizará o deploy da aplicação no servidor:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mvn package jboss-as:deploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mvn package jboss-as:deploy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Ao final do processo, o console do Maven deve mostrar uma saída parecida com essa, informando que tudo ocorreu conforme o esperado:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Jul 18, 2012 1:50:00 PM org.xnio.Xnio
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text&quot;&gt;&lt;![CDATA[
+Jul 18, 2012 1:50:00 PM org.xnio.Xnio
 INFO: XNIO Version 3.0.3.GA
 Jul 18, 2012 1:50:00 PM org.xnio.nio.NioXnio
 INFO: XNIO NIO Implementation Version 3.0.3.GA
@@ -925,41 +908,43 @@ INFO: JBoss Remoting version 3.2.3.GA
 [INFO] Total time: 4:26.810s
 [INFO] Finished at: Wed Jul 18 13:50:14 GMT+00:00 2012
 [INFO] Final Memory: 9M/41M
-[INFO] ------------------------------------------------------------------------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+[INFO] ------------------------------------------------------------------------
+]]&gt;&lt;/script&gt;
 
 &lt;p&gt;O console do JBoss AS deve mostrar que o deploy da aplicação foi realizado com sucesso:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;13:50:04,206 INFO  [org.jboss.as.repository] (management-handler-thread - 2) JBAS014900: Content added at location /root/jboss-as/standalone/data/content/1d/9f4c3c67cd2fb194ee4aacb3d990ab70da0b48/content
-13:50:04,261 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of &amp;quot;jboss-as-helloworld-jsf.war&amp;quot;
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text&quot;&gt;&lt;![CDATA[
+13:50:04,206 INFO  [org.jboss.as.repository] (management-handler-thread - 2) JBAS014900: Content added at location /root/jboss-as/standalone/data/content/1d/9f4c3c67cd2fb194ee4aacb3d990ab70da0b48/content
+13:50:04,261 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of &quot;jboss-as-helloworld-jsf.war&quot;
 13:50:06,650 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016002: Processing weld deployment jboss-as-helloworld-jsf.war
 13:50:06,979 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016005: Starting Services for CDI deployment: jboss-as-helloworld-jsf.war
 13:50:07,045 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900 1.1.5 (AS71)
 13:50:07,578 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016008: Starting weld service for deployment jboss-as-helloworld-jsf.war
-13:50:08,753 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-2) Initializing Mojarra 2.1.7-jbossorg-1 (20120227-1401) for context &amp;#39;/jboss-as-helloworld-jsf&amp;#39;
+13:50:08,753 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-2) Initializing Mojarra 2.1.7-jbossorg-1 (20120227-1401) for context &#39;/jboss-as-helloworld-jsf&#39;
 13:50:11,774 INFO  [org.hibernate.validator.util.Version] (MSC service thread 1-2) Hibernate Validator 4.2.0.Final
 13:50:14,120 INFO  [org.richfaces.log.Cache] (MSC service thread 1-2) Selected fallback cache factory
 13:50:14,125 INFO  [org.richfaces.log.Cache] (MSC service thread 1-2) Creating LRUMap cache instance using parameters: {javax.faces.PROJECT_STAGE=Development}
 13:50:14,186 INFO  [org.richfaces.log.Cache] (MSC service thread 1-2) Creating LRUMap cache instance of 512 items capacity
 13:50:14,195 INFO  [org.richfaces.log.Application] (MSC service thread 1-2) RichFaces Core Implementation by JBoss by Red Hat, version v.4.2.0.Final
-13:50:14,428 WARNING [org.richfaces.log.Application] (MSC service thread 1-2) JMS API was found on the classpath; if you want to enable RichFaces Push JMS integration, set context-param &amp;#39;org.richfaces.push.jms.enabled&amp;#39; in web.xml
+13:50:14,428 WARNING [org.richfaces.log.Application] (MSC service thread 1-2) JMS API was found on the classpath; if you want to enable RichFaces Push JMS integration, set context-param &#39;org.richfaces.push.jms.enabled&#39; in web.xml
 13:50:14,435 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-2) Monitoring jndi:/default-host/jboss-as-helloworld-jsf/WEB-INF/faces-config.xml for modifications
 13:50:14,487 INFO  [org.jboss.web] (MSC service thread 1-2) JBAS018210: Registering web context: /jboss-as-helloworld-jsf
-13:50:14,539 INFO  [org.jboss.as.server] (management-handler-thread - 2) JBAS018559: Deployed &amp;quot;jboss-as-helloworld-jsf.war&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+13:50:14,539 INFO  [org.jboss.as.server] (management-handler-thread - 2) JBAS018559: Deployed &quot;jboss-as-helloworld-jsf.war&quot;
+]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Feito isso, podemos acessar a aplicação usando o navegador através do endereço “&lt;a href=&quot;http://localhost:8080/jboss-as-helloworld-jsf/&quot;&gt;http://localhost:8080/jboss-as-helloworld-jsf/&lt;/a&gt;“:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jboss_as_04.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jboss_as_04.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jboss_as_04.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jboss_as_04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Essa é uma aplicação Web 2.0 com &lt;a href=&quot;http://www.w3schools.com/ajax/default.asp&quot;&gt;AJAX&lt;/a&gt; na qual ao digitar um nome no campo de texto, ele reproduz esse nome em uma mensagem de olá do lado direito desse campo. É realmente a única coisa que essa aplicação faz. Os componentes exibidos na tela são estilizados por causa da utilização do framework de apresentação &lt;a href=&quot;http://www.jboss.org/richfaces/&quot;&gt;Richfaces&lt;/a&gt; para renderizar esses componentes.&lt;/p&gt;
 
 &lt;p&gt;Se quisermos, podemos remover a aplicação do servidor (diz-se fazer o undeploy) através do Maven, usando o comando (deve ser executado da pasta que contém o código-fonte da aplicação):&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mvn jboss-as:undeploy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mvn jboss-as:undeploy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Também podemos fazer deploy e undeploy de aplicações no servidor, entre outras configurações, usando o console de administração do JBoss AS. Examinaremos esse console na &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/&quot;&gt;segunda parte desse post&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Jul 2012 22:18:38 -0300</pubDate>
@@ -973,9 +958,9 @@ INFO: JBoss Remoting version 3.2.3.GA
         <title>Instalação do Apache Maven</title>
         <description>&lt;p&gt;Olá, pessoal, nesse post vocês vão ver como instalar e executar pela primeira vez o &lt;a href=&quot;http://maven.apache.org/&quot;&gt;Apache Maven&lt;/a&gt; em seus computadores.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/maven1.gif&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/maven1.gif&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/maven1.gif&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/maven1.gif&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
@@ -989,17 +974,16 @@ INFO: JBoss Remoting version 3.2.3.GA
 
 &lt;p&gt;Só prossiga à leitura desta página quando tiver certeza de que o JDK está instalado e funcionando no seu computador. Também é importante que a variável de ambiente JAVA_HOME esteja configurada.&lt;/p&gt;
 
-&lt;h3 id=&quot;download-do-maven&quot;&gt;Download do Maven&lt;/h3&gt;
+&lt;h3&gt;Download do Maven&lt;/h3&gt;
 
 &lt;p&gt;Instalado o JDK, é hora de baixar o Maven. Na &lt;a href=&quot;http://maven.apache.org/download.html&quot;&gt;página de downloads do site oficial do Maven&lt;/a&gt; estão disponíveis algumas opções. Para os usuários de Windows, eu recomendo o download do arquivo &lt;strong&gt;.zip&lt;/strong&gt;, e para os usuários de Linux, eu recomendo o download do arquivo &lt;strong&gt;.tar.gz&lt;/strong&gt;, pois esses formatos são os mais comuns nesses dois sistemas.&lt;/p&gt;
 
 &lt;p&gt;Se a distribuição Linux que você usa provê um método padrão de instalar o Maven, você pode preferir baixá-lo e instalá-lo por esse método. No tópico seguinte eu forneço instruções para o Debian e o Ubuntu.&lt;/p&gt;
 
 &lt;p&gt;No momento da escrita deste post, a versão mais atual do Maven é a 3.0.4. Os links para download direto dos arquivos mencionados acima são esse e esse. No caso do Linux, é possível baixar este arquivo pelo terminal usando o comando wget:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;instalao-do-maven&quot;&gt;Instalação do Maven&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Instalação do Maven&lt;/h3&gt;
 
 &lt;p&gt;Tanto no Windows quanto no Linux basta descompactar o arquivo baixado que o Maven já pode ser executado a partir daquele local. Assim como acontece com o &lt;a href=&quot;http://www.vinyanalista.com.br/blog/2012/07/18/instalacao-do-apache-maven/www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;JDK&lt;/a&gt;, é possível instalar em uma localização visível a todos os usuários (como “C:\” no Windows ou “/opt/” no Linux) ou visível apenas ao seu usuário (no meu caso, “C:\Users\Vinicius\Documents” ou “/home/vinicius”). Em ambos os casos, o arquivo descompactado gera uma pasta chamada “apache-maven-3.0.4″ e pode ser excluído após a extração.&lt;/p&gt;
 
@@ -1008,91 +992,91 @@ INFO: JBoss Remoting version 3.2.3.GA
 &lt;p&gt;No Windows, fiz a extração do arquivo na raiz do disco “C:\” e renomeei a pasta “apache-maven-3.0.4″ para apenas “maven”. O caminho para o Maven no meu sistema é, então, “C:\maven”.&lt;/p&gt;
 
 &lt;p&gt;No Linux é mais prático fazer a instalação na pasta home do usuário. No terminal, os comandos para download e extração seriam:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/vinicius/
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tar zxvf apache-maven-3.0.4-bin.tar.gz
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rm apache-maven-3.0.4-bin.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd /home/vinicius/
+$ wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
+$ tar zxvf apache-maven-3.0.4-bin.tar.gz
+$ rm apache-maven-3.0.4-bin.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;É possível instalar também em uma localização global, visível a todos os usuários. Nesse caso, o procedimento é parecido, mas é necessário ter permissões de administrador:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/vinicius/
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
-&lt;span class=&quot;c&quot;&gt;# mv apache-maven-3.0.4-bin.tar.gz /opt&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# cd /opt&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# tar zxvf apache-maven-3.0.4-bin.tar.gz&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# rm apache-maven-3.0.4-bin.tar.gz&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd /home/vinicius/
+$ wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
+# mv apache-maven-3.0.4-bin.tar.gz /opt
+# cd /opt
+# tar zxvf apache-maven-3.0.4-bin.tar.gz
+# rm apache-maven-3.0.4-bin.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;No primeiro caso, o caminho para o Maven passa a ser “/home/vinicius/apache-maven-3.0.4″ e, no segundo, “/opt/apache-maven-3.0.4″.&lt;/p&gt;
 
 &lt;p&gt;Se você utiliza a versão mais recente do Ubuntu (no momento da escrita deste post, a 12.04), pode preferir instalar o Maven através do pacote &lt;a href=&quot;http://packages.ubuntu.com/maven&quot;&gt;maven&lt;/a&gt; usando o utilitário &lt;strong&gt;apt-get&lt;/strong&gt;, incluído na distribuição.&lt;/p&gt;
 
 &lt;p&gt;Usuários do Debian podem obter nos repositórios oficiais da versão estável (atualmente o Debian Squeeze 6.0) uma versão anterior do Maven (não garanto que funcione da mesma maneira que a atual), através do pacote &lt;a href=&quot;http://packages.debian.org/maven2&quot;&gt;maven2&lt;/a&gt; usando o utilitário &lt;strong&gt;apt-get&lt;/strong&gt;, incluído na distribuição. Usuários mais experientes do Debian podem tentar instalar o Maven 3.0.4 (versão mais recente até o momento da escrita) através do pacote &lt;a href=&quot;http://packages.debian.org/maven&quot;&gt;maven&lt;/a&gt; dos repositórios da próxima versão do Debian, que ainda está em teste.&lt;/p&gt;
 
-&lt;h3 id=&quot;configurao-da-varivel-m2home&quot;&gt;Configuração da variável M2_HOME&lt;/h3&gt;
+&lt;h3&gt;Configuração da variável M2_HOME&lt;/h3&gt;
 
 &lt;p&gt;De maneira análoga à &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;instalação do JDK&lt;/a&gt;, aqui vamos criar uma variável de ambiente M2_HOME que informe para os demais aplicativos do sistema a localização do Maven. Depois vamos atualizar o valor da variável de ambiente PATH para que possamos invocar o Maven diretamente da linha de comando, sem precisar informar sua localização completa sempre que quisermos fazer isso.&lt;/p&gt;
 
 &lt;p&gt;No Windows, o procedimento é bem semelhante ao &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;descrito no post anterior&lt;/a&gt;, só mudando os nomes das variáveis e os valores:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/maven2.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/maven2.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/maven2.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/maven2.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/maven3.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/maven3.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/maven3.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/maven3.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;No Linux, se você instalou o Maven apenas para o seu usuário,  abra com o seu editor de preferência o arquivo “~/.bashrc” e acrescente as seguintes linhas no final do arquivo (você deve substituir, se necessário, a localização do Maven, que no nosso exemplo foi “/home/vinicius/apache-maven-3.0.4″):&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;M2_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/home/vinicius/apache-maven-3.0.4&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PATH:$M2_HOME/bin&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: bash; gutter: false&quot;&gt;&lt;![CDATA[
+export M2_HOME=&quot;/home/vinicius/apache-maven-3.0.4&quot;
+export PATH=&quot;$PATH:$M2_HOME/bin&quot;
+]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Se você instalou o Maven para todos os usuários, a alteração deve ocorrer no arquivo “/etc/profile”. Abra esse arquivo com o seu editor de preferência e acrescente as seguintes linhas no final do arquivo (você deve substituir, se necessário, a localização do Maven, que no nosso exemplo foi “/opt/apache-maven-3.0.4″):&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;M2_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/opt/apache-maven-3.0.4&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PATH:$M2_HOME/bin&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: bash; gutter: false&quot;&gt;&lt;![CDATA[
+export M2_HOME=&quot;/opt/apache-maven-3.0.4&quot;
+export PATH=&quot;$PATH:$M2_HOME/bin&quot;
+]]&gt;&lt;/script&gt;
 
-&lt;h3 id=&quot;teste-do-maven&quot;&gt;Teste do Maven&lt;/h3&gt;
+&lt;h3&gt;Teste do Maven&lt;/h3&gt;
 
 &lt;p&gt;As instruções a seguir servem para Windows e Linux. Para testar a instalação do Maven, abra uma nova janela de terminal e execute o comando a seguir, que deve exibir  informações sobre a instalação do Maven no seu computador:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mvn -v&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mvn -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;A saída deve ser algo parecido com isso:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Apache Maven 3.0.4 (r1232337; 2012-01-17 08:44:56+0000)
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text&quot;&gt;&lt;![CDATA[
+Apache Maven 3.0.4 (r1232337; 2012-01-17 08:44:56+0000)
 Maven home: /home/vinicius/apache-maven-3.0.4
 Java version: 1.7.0_147-icedtea, vendor: Oracle Corporation
 Java home: /usr/lib/jvm/java-7-openjdk-i386/jre
 Default locale: en_US, platform encoding: UTF-8
-OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot;, arch: &amp;quot;i386&amp;quot;, family: &amp;quot;unix&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+OS name: &quot;linux&quot;, version: &quot;3.0.0-12-generic&quot;, arch: &quot;i386&quot;, family: &quot;unix&quot;
+]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Como teste, também vamos criar um pequeno projeto Java, compilá-lo, empacotá-lo e executá-lo. Em alguma pasta à qual você tenha acesso (aqui utilizarei minha pasta pessoal no Linux, “/home/vinicius”), execute o seguinte comando:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mvn archetype:generate &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--DgroupId&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;br.com.vinyanalista.tutorial &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--DartifactId&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;projeto.exemplo &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--DarchetypeArtifactId&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;maven-archetype-quickstart &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--DinteractiveMode&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mvn archetype:generate \
+-DgroupId=br.com.vinyanalista.tutorial \
+-DartifactId=projeto.exemplo \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DinteractiveMode=false
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;A primeira execução do Maven demora um pouco. Isso porque ele vai baixar algumas bibliotecas e plugins necessárias ao projeto. No meu computador, esse processo demorou cerca de 6 minutos. Outros projetos reaproveitam as bibliotecas e plugins já baixados, por isso esse é um processo demorado que ocorre apenas uma vez.&lt;/p&gt;
 
 &lt;p&gt;Perceba que foi criada uma pasta “projeto.exemplo”. Essa pasta contém o nosso projeto. Vamos entrar nela e mandar o Maven compilar e empacotar o projeto:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;projeto.exemplo
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mvn package&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd projeto.exemplo
+$ mvn package
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Na verdade, ordenamos apenas que o Maven empacotasse o projeto. No entanto, como a compilação deve ocorrer antes para que o projeto possa ser empacotado, o Maven executa a compilação automaticamente antes de realizar o empacotamento do projeto de fato. O comando acima deu origem a uma pasta target e, dentro dela, um arquivo .jar contendo o projeto compilado e empacotado.&lt;/p&gt;
 
 &lt;p&gt;Vamos executar a classe principal do projeto:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;java -cp target/projeto.exemplo-1.0-SNAPSHOT.jar br.com.vinyanalista.tutorial.App&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ java -cp target/projeto.exemplo-1.0-SNAPSHOT.jar br.com.vinyanalista.tutorial.App
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Se uma mensagem do tipo “Hello, World!” apareceu na tela, então tudo funcionou conforme o esperado e o Maven está devidamente instalado e funcionando em seu computador.&lt;/p&gt;
 
 &lt;p&gt;Então, é isso, pessoal. Por hora, vou ficando por aqui. Em outro post, falarei mais sobre o Maven, como gerenciar seus projetos Java utilizando essa ferramenta,  explicando inclusive os arquivos gerados nesse exemplo e como alterá-los conforme suas necessidades. Deixo como referências o blog &lt;a href=&quot;http://maven3tutorial.blogspot.com.br/&quot;&gt;Maven 3 Tutorial&lt;/a&gt;, bastante completo e didático, com várias informações sobre o uso do Maven, e o blog da &lt;a href=&quot;http://www.caelum.com.br/&quot;&gt;Caelum&lt;/a&gt;, também bastante completo e didático, que contém &lt;a href=&quot;http://blog.caelum.com.br/processo-de-build-com-o-maven/&quot;&gt;um post dedicado a falar apenas sobre o Maven&lt;/a&gt;.&lt;/p&gt;
@@ -1112,31 +1096,31 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 
 &lt;p&gt;A seguir, forneço instruções para instalar, configurar e executar a versão mais recente do JDK (atualmente, a &lt;strong&gt;1.7.0_05&lt;/strong&gt;) em sistemas Windows e Linux.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/java.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/java.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/java.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/java.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;!--more--&gt;
 
-&lt;h3 id=&quot;download-e-instalao-do-jdk&quot;&gt;Download e instalação do JDK&lt;/h3&gt;
+&lt;h3&gt;Download e instalação do JDK&lt;/h3&gt;
 
 &lt;p&gt;O primeiro passo é baixar o JDK. Vá até a &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/&quot;&gt;página de downloads do Java SE&lt;/a&gt;, aceite o contrato de licença e escolha a versão do JDK apropriada para o seu sistema:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jdk7_1.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jdk7_1.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jdk7_1.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jdk7_1.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;h4 id=&quot;download-e-instalao-do-jdk-no-windows&quot;&gt;Download e instalação do JDK no Windows&lt;/h4&gt;
+&lt;h4&gt;Download e instalação do JDK no Windows&lt;/h4&gt;
 
 &lt;p&gt;No Windows, o instalador do JDK facilita bastante o processo de instalação. Baixe do site do JDK a versão do instalador apropriada para o seu sistema (Windows de 32 ou de 64 bits) e execute-o em seguida.&lt;/p&gt;
 
 &lt;p&gt;Normalmente, aceitar as opções padrão, avançando em todas as telas, deve funcionar. Atente-se apenas à pasta na qual o JDK será instalado (no meu computador, o padrão oferecido foi “C:\Program Files (x86)\Java\jdk1.7.0_05″).&lt;/p&gt;
 
-&lt;h4 id=&quot;download-e-instalao-do-jdk-no-linux-distribuies-especficas&quot;&gt;Download e instalação do JDK no Linux (distribuições específicas)&lt;/h4&gt;
+&lt;h4&gt;Download e instalação do JDK no Linux (distribuições específicas)&lt;/h4&gt;
 
 &lt;p&gt;Se a distribuição Linux que você usa provê um método padrão de instalar o JDK, é recomendado você seguir as instruções fornecidas para instalar o JDK na sua distribuição. Se sua distribuição não provê o JDK, ou se você prefere se assegurar de instalar em seu computador a versão oficial mais recente, pode seguir as instruções de instalação genéricas, que devem servir para qualquer distribuição (veja mais adiante).&lt;/p&gt;
 
@@ -1146,164 +1130,163 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 
 &lt;p&gt;Usuários de distribuições que utilizam o sistema de empacotamento RPM (como RedHat, CentOS, Fedora, Mandriva, openSUSE, etc.) podem instalar a versão mais recente do JDK através do pacote RPM disponibilizado na &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/&quot;&gt;página de downloads do Java SE&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&quot;download-e-instalao-do-jdk-no-linux-qualquer-distribuio&quot;&gt;Download e instalação do JDK no Linux (qualquer distribuição)&lt;/h4&gt;
+&lt;h4&gt;Download e instalação do JDK no Linux (qualquer distribuição)&lt;/h4&gt;
 
 &lt;p&gt;Se sua distribuição não provê um meio padrão de instalar o JDK (ou se por qualquer motivo você não quer instalá-lo por esse meio), há na &lt;a href=&quot;http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/www.oracle.com/technetwork/java/javase/downloads/&quot;&gt;página de downloads do Java SE&lt;/a&gt; um arquivo &lt;strong&gt;.tar.gz&lt;/strong&gt; que contém o JDK compactado. Uma vez extraído o conteúdo desse arquivo, o JDK já pode ser executado, e esse procedimento de instalação deve funcionar em qualquer distribuição Linux.&lt;/p&gt;
 
 &lt;p&gt;Para instalar o JDK dessa maneira, baixe-o da &lt;a href=&quot;http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/www.oracle.com/technetwork/java/javase/downloads/&quot;&gt;página de downloads do Java SE&lt;/a&gt; utilizando o navegador de sua preferência ou o comando &lt;strong&gt;wget&lt;/strong&gt; no terminal (a seguir, forneço o link para download direto da versão do JDK usada nesse tutorial):&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/vinicius/
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd /home/vinicius/
+$ wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;No Linux, é possível instalar o JDK em um local global, de forma que todos os usuários do sistema possam utilizá-lo (requer permissão de administrador), ou na sua pasta pessoal, de forma que apenas você possa utilizá-lo (não requer permissão, além de ser mais simples para iniciantes).&lt;/p&gt;
 
 &lt;p&gt;Para demonstrar como instalar o JDK numa localização global, vou utilizar a pasta “/opt”. Para fazer isso, mova o arquivo baixado (no nosso exemplo aqui, “jdk-7u5-linux-i586.tar.gz”) para essa pasta e lá extraia seu conteúdo. O caminho para o JDK será então “/opt/jdk1.7.0_05″ (se atente a esse caminho). Após a extração, o arquivo baixado pode ser excluído. Os comandos de terminal para realizar esses procedimentos são:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# mv /home/vinicius/jdk-7u5-linux-i586.tar.gz /opt&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# cd /opt&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# tar zxvf jdk-7u5-linux-i586.tar.gz&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# rm jdk-7u5-linux-i586.tar.gz&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# mv /home/vinicius/jdk-7u5-linux-i586.tar.gz /opt
+# cd /opt
+# tar zxvf jdk-7u5-linux-i586.tar.gz
+# rm jdk-7u5-linux-i586.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Para instalar o JDK na sua pasta pessoal o procedimento é parecido. No meu caso, como já baixei o JDK nessa pasta, apenas precisei descompactá-lo. O comando que utilizei para isso foi:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tar zxvf jdk-7u5-linux-i586.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ tar zxvf jdk-7u5-linux-i586.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Nesse caso, o caminho para o JDK será “/home/vinicius/jdk1.7.0_05″.&lt;/p&gt;
 
-&lt;h3 id=&quot;configurao-da-varivel-javahome&quot;&gt;Configuração da variável JAVA_HOME&lt;/h3&gt;
+&lt;h3&gt;Configuração da variável JAVA_HOME&lt;/h3&gt;
 
 &lt;p&gt;A variável de ambiente JAVA_HOME é utilizada por alguns programas (como o Maven, o Eclipse e o JBoss AS, por exemplo) para determinar a localização do JDK ou do JRE instalado no computador. Essa etapa é opcional a usuários comuns de programas Java que apenas desejam instalar o ambiente de execução (JRE). Mas já que se trata da instalação do JDK, é costume não apenas definir o valor dessa variável, como acrescentar o caminho do JDK na variável de ambiente PATH, para que possamos invocar as ferramentas do JDK de qualquer pasta. Do contrário, todas as vezes em que quisermos invocar essas ferramentas teremos que digitar o caminho completo para elas.&lt;/p&gt;
 
 &lt;p&gt;A seguir, instruções para configurar essas variáveis tanto no Windows quanto no Linux.&lt;/p&gt;
 
-&lt;h4 id=&quot;configurao-da-varivel-javahome-no-windows&quot;&gt;Configuração da variável JAVA_HOME no Windows&lt;/h4&gt;
+&lt;h4&gt;Configuração da variável JAVA_HOME no Windows&lt;/h4&gt;
 
 &lt;p&gt;Caso sua Área de Trabalho apresente o ícone do Meu Computador, clique com o botão direito nesse ícone e clique em Propriedades. Caso contrário, abra o Menu Iniciar, clique em Painel de Controle e, na janela que se abre, procure a opção Sistema.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jdk7_2.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jdk7_2.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jdk7_2.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jdk7_2.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Na janela Sistema, clique na opção Configurações avançadas do sistema, no painel esquerdo.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jdk7_3.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jdk7_3.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jdk7_3.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jdk7_3.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Na caixa de diálogo Propriedades do Sistema, clique no botão Variáveis de Ambiente.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jdk7_4.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jdk7_4.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jdk7_4.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jdk7_4.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Na caixa de diálogo Variáveis de Ambiente, na seção Variáveis do sistema, clique no botão Novo.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jdk7_5.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jdk7_5.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jdk7_5.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jdk7_5.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;p&gt;Informe JAVA_HOME como nome da variável e no campo valor digite a localização do JDK (no meu caso, ele foi instalado em “C:\Program Files (x86)\Java\jdk1.7.0_05″). Quando acabar de digitar esses valores, clique em OK.&lt;/p&gt;
+&lt;p&gt;Informe JAVA&lt;em&gt;HOME como nome da variável e no campo valor digite a localização do JDK (no meu caso, ele foi instalado em “C:\Program Files (x86)\Java\jdk1.7.0&lt;/em&gt;05″). Quando acabar de digitar esses valores, clique em OK.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jdk7_6.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jdk7_6.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jdk7_6.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jdk7_6.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;De volta à caixa de diálogo Variáveis de Ambiente, também na seção Variáveis do sistema, procure na lista a variável Path, selecione-a e clique no botão Editar.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jdk7_7.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jdk7_7.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jdk7_7.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jdk7_7.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Posicione o cursor no início do valor da variável, insira o texto “%JAVA_HOME\bin;” (não inclua as aspas e não esqueça do ponto-e-vírgula) e clique em OK.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jdk7_8.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jdk7_8.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jdk7_8.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jdk7_8.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;De volta à caixa de diálogo Variáveis de Ambiente, clique em OK. Em seguida, você pode fechar a janela Sistema. A partir de agora, qualquer nova janela de terminal aberta ou comando invocado refletirá essas alterações.&lt;/p&gt;
 
-&lt;h4 id=&quot;configurao-da-varivel-javahome-no-linux&quot;&gt;Configuração da variável JAVA_HOME no Linux&lt;/h4&gt;
+&lt;h4&gt;Configuração da variável JAVA_HOME no Linux&lt;/h4&gt;
 
 &lt;p&gt;Se você instalou o JDK utilizando o mecanismo preferido de sua distribuição, é importante verificar se &lt;a href=&quot;http://www.cyberciti.biz/faq/linux-unix-set-java_home-path-variable/&quot;&gt;a variável JAVA_HOME&lt;/a&gt; já foi definida e se já é possível invocar os utilitários do JDK da linha de comando. Para isso, passe ao próximo tópico, realize os testes, e apenas se encontrar erros, volte a ler este.&lt;/p&gt;
 
 &lt;p&gt;Se você instalou o JDK para todos os usuários, abra com o seu editor de preferência o arquivo “/etc/profile” e acrescente as seguintes linhas no final (você deve substituir, se necessário, a localização do JDK, que no nosso exemplo foi “/opt/jdk1.7.0_05″):&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;JAVA_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/opt/jdk1.7.0_05&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;CLASSPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$JAVA_HOME/lib&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PATH:$JAVA_HOME/bin&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MANPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$MANPATH:$JAVA_HOME/man&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: bash; gutter: false&quot;&gt;&lt;![CDATA[
+export JAVA_HOME=&quot;/opt/jdk1.7.0_05&quot;
+export CLASSPATH=&quot;$JAVA_HOME/lib&quot;
+export PATH=&quot;$PATH:$JAVA_HOME/bin&quot;
+export MANPATH=&quot;$MANPATH:$JAVA_HOME/man&quot;
+]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Se você instalou o JDK apenas para o seu usuário, a alteração deve ocorrer no arquivo “~/.bashrc”. Abra esse arquivo com o seu editor de preferência e acrescente as seguintes linhas no final (você deve substituir, se necessário, a localização do JDK, que no nosso exemplo foi “/home/vinicius/jdk1.7.0_05″):&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;JAVA_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/home/vinicius/jdk1.7.0_05&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;CLASSPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$JAVA_HOME/lib&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PATH:$JAVA_HOME/bin&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MANPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$MANPATH:$JAVA_HOME/man&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: bash; gutter: false&quot;&gt;&lt;![CDATA[
+export JAVA_HOME=&quot;/home/vinicius/jdk1.7.0_05&quot;
+export CLASSPATH=&quot;$JAVA_HOME/lib&quot;
+export PATH=&quot;$PATH:$JAVA_HOME/bin&quot;
+export MANPATH=&quot;$MANPATH:$JAVA_HOME/man&quot;
+]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Em qualquer um dos dois casos, as alterações serão aplicadas a qualquer nova janela de terminal aberta.&lt;/p&gt;
 
-&lt;h3 id=&quot;teste-do-jdk&quot;&gt;Teste do JDK&lt;/h3&gt;
+&lt;h3&gt;Teste do JDK&lt;/h3&gt;
 
 &lt;p&gt;As instruções a seguir servem para Windows e Linux. Para testar a instalação do JDK, abra uma janela de terminal e execute o comando a seguir, que deve informar a versão do JDK instalado no seu computador:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;javac -version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ javac -version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Como teste, também podemos criar um pequeno programa Java, compilá-lo e executá-lo. Em alguma pasta à qual você tenha acesso (aqui utilizarei minha pasta pessoal no Linux, “/home/vinicius”), crie um arquivo de texto simples chamado “Teste.java”. Abra esse arquivo com um editor de texto e insira o seguinte conteúdo:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Teste&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Olá!&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: java; gutter: false&quot;&gt;&lt;![CDATA[
+public class Teste {
+    public static void main(String args[]) {
+        System.out.println(&quot;Olá!&quot;);
+    }
+}
+]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Agora no terminal, entre nessa pasta e invoque o compilador do Java (&lt;strong&gt;javac&lt;/strong&gt;) passando o arquivo que você acabou de criar como parâmetro:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/vinicius/
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;javac Teste.java&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd /home/vinicius/
+$ javac Teste.java
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Perceba que um arquivo “Teste.class” é criado como resultado da compilação. Ainda no terminal, invoque a máquina virtual Java (&lt;strong&gt;java&lt;/strong&gt;) passando o nome da classe compilada como parâmetro:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;java Teste&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ java Teste
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Se a mensagem “Olá!” apareceu na tela, tudo está funcionando perfeitamente.&lt;/p&gt;
 
-&lt;h3 id=&quot;plugin-do-java-para-o-navegador-firefox&quot;&gt;Plugin do Java para o navegador Firefox&lt;/h3&gt;
+&lt;h3&gt;Plugin do Java para o navegador Firefox&lt;/h3&gt;
 
 &lt;p&gt;Se você pretende utilizar o JDK para desenvolver Applets, é interessante verificar se o plugin do Java funciona adequadamente no seu navegador. Aqui, fornecerei instruções para o Firefox.&lt;/p&gt;
 
 &lt;p&gt;No Windows, o instalador do JDK já se encarrega de instalar e configurar o plugin do Java para o navegador Firefox.&lt;/p&gt;
 
 &lt;p&gt;No Linux, esse plugin acompanha o JDK, mas é necessário criar um link simbólico na pasta onde o Firefox está instalado para que o navegador consiga localizar o plugin. Para isso, supondo que o JDK encontra-se em “/opt/jdk1.7.0_5/” e o Firefox em “/usr/lib/mozilla”, basta executar o seguinte comando no terminal:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# ln -s /opt/jdk1.7.0_5/jre/lib/i386/libnpjp2.so /usr/lib/mozilla/plugins/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# ln -s /opt/jdk1.7.0_5/jre/lib/i386/libnpjp2.so /usr/lib/mozilla/plugins/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Para verificar que o navegador reconhece o plugin, digite na aba de endereços “about:plugins” e tecle Enter. O plugin do Java deve aparecer na lista de plugins instalados:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jdk7_9.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jdk7_9.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jdk7_9.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jdk7_9.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;É possível também verificar na &lt;a href=&quot;http://www.java.com/pt_BR/download/testjava.jsp&quot;&gt;página de teste do Java&lt;/a&gt; se a versão do plugin instalada no seu sistema corresponde à mais atual:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/07/jdk7_10.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/07/jdk7_10.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/07/jdk7_10.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/07/jdk7_10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
@@ -1320,9 +1303,9 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
         <title>Problemas envolvendo bootloaders, MBR e tabela de partições</title>
         <description>&lt;p&gt;Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações curiosas sobre o ocorrido.&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/04/computador-maluco.jpg&quot; title=&quot;&quot;&gt;
-        &lt;img src=&quot;/files/2012/04/computador-maluco.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/04/computador-maluco.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2012/04/computador-maluco.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
@@ -1330,33 +1313,35 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 
 &lt;!--more--&gt;
 
-&lt;h3 id=&quot;o-que-aconteceu&quot;&gt;O que aconteceu&lt;/h3&gt;
+&lt;h3&gt;O que aconteceu&lt;/h3&gt;
 
 &lt;p&gt;Vou tentar ser breve nessa explicação (realmente é uma longa história, se estiverem mais interessados nas possíveis soluções para o problema, podem pular pros próximos tópicos). Tenho dois HDs, particionados como mostra a saída do comando &lt;code&gt;fdisk&lt;/code&gt; no Linux a seguir. Em resumo, são duas partições pros sistemas operacionais (Windows 7 e &lt;a href=&quot;http://www.debian.org/&quot;&gt;Debian&lt;/a&gt;) e duas partições para arquivos pessoais.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; Disk /dev/sdb: 250.1 GB, 250059350016 bytes
-&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; 255 heads, 63 sectors/track, 30401 cylinders, total 488397168 sectors
-&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt; Units = sectors of 1 * 512 = 512 bytes
-&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt; Sector size (logical/physical): 512 bytes / 512 bytes
-&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt; I/O size (minimum/optimal): 512 bytes / 512 bytes
-&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt; Disk identifier: 0x1ba01b9f
-&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt; 
-&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt; Device    Boot      Start         End      Blocks   Id  System
-&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt; /dev/sdb1            2048   488396799   244197376    7  HPFS/NTFS/exFAT
-&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt; 
-&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt; Disk /dev/sda: 1000.2 GB, 1000204886016 bytes
-&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt; 255 heads, 63 sectors/track, 121601 cylinders, total 1953525168 sectors
-&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt; Units = sectors of 1 * 512 = 512 bytes
-&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt; Sector size (logical/physical): 512 bytes / 512 bytes
-&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt; I/O size (minimum/optimal): 512 bytes / 512 bytes
-&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt; Disk identifier: 0xa1a11ae7
-&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt; 
-&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt; Device    Boot      Start         End      Blocks   Id  System
-&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt; /dev/sda1            2048   419432447   209715200    7  HPFS/NTFS/exFAT
-&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt; /dev/sda2       419432448  1468008447   524288000    7  HPFS/NTFS/exFAT
-&lt;span class=&quot;lineno&quot;&gt;21&lt;/span&gt; /dev/sda3      1468010496  1887440895   209715200    7  HPFS/NTFS/exFAT
-&lt;span class=&quot;lineno&quot;&gt;22&lt;/span&gt; /dev/sda4   *  1887442942  1953523711    33040385    5  Extended
-&lt;span class=&quot;lineno&quot;&gt;23&lt;/span&gt; /dev/sda5      1887442944  1953523711    33040384   83  Linux&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text; gutter: false&quot;&gt;&lt;![CDATA[
+Disk /dev/sdb: 250.1 GB, 250059350016 bytes
+255 heads, 63 sectors/track, 30401 cylinders, total 488397168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x1ba01b9f
+
+Device    Boot      Start         End      Blocks   Id  System
+/dev/sdb1            2048   488396799   244197376    7  HPFS/NTFS/exFAT
+
+Disk /dev/sda: 1000.2 GB, 1000204886016 bytes
+255 heads, 63 sectors/track, 121601 cylinders, total 1953525168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0xa1a11ae7
+
+Device    Boot      Start         End      Blocks   Id  System
+/dev/sda1            2048   419432447   209715200    7  HPFS/NTFS/exFAT
+/dev/sda2       419432448  1468008447   524288000    7  HPFS/NTFS/exFAT
+/dev/sda3      1468010496  1887440895   209715200    7  HPFS/NTFS/exFAT
+/dev/sda4   *  1887442942  1953523711    33040385    5  Extended
+/dev/sda5      1887442944  1953523711    33040384   83  Linux
+]]&gt;&lt;/script&gt;
 
 &lt;p&gt;Como estou pensando em mudar de distribuição, hoje decidi instalar o &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;openSUSE&lt;/a&gt; no lugar do Debian. Gravei o CD do openSUSE, nenhum procedimento de backup, já que estou acostumado a formatações (um erro, admito), iniciei o computador pelo CD, respondi a todas as perguntas do instalador, iniciou-se a cópia dos arquivos, até aí tudo bem.&lt;/p&gt;
 
@@ -1365,34 +1350,32 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 &lt;p&gt;Só que a essa altura do campeonato o instalador já tinha formatado a partição que antes era do Debian, o &lt;a href=&quot;http://www.gnu.org/software/grub/&quot;&gt;GRUB&lt;/a&gt; tornou-se então inutilizável, o que me impediria de acessar o Windows e gravar um novo CD do openSUSE. Iniciei o computador pelo &lt;a href=&quot;http://www.slax.org/&quot;&gt;Slax&lt;/a&gt; que tenho em um pendrive e tentei gravar o CD do openSUSE por ele usando o &lt;a href=&quot;http://k3b.org/&quot;&gt;K3B&lt;/a&gt; (seria a solução mais prática, já que instalando o openSUSE eu teria o GRUB e o Windows de volta, né?), sem sucesso. Eis que decidi &lt;a href=&quot;http://www.cyberciti.biz/faq/linux-how-to-uninstall-grub/&quot;&gt;remover o GRUB do HD&lt;/a&gt; para que o computador iniciasse diretamente pelo Windows. Aí foi onde eu cometi o erro mais grave de todos.&lt;/p&gt;
 
 &lt;p&gt;O comando que eu queria executar deveria apagar apenas o gerenciador de boot (bootloader) do Linux, o GRUB, no entanto ele apagou a MBR inteira, incluindo a tabela de partições. O comando que eu utilizei foi:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# dd if=/dev/null of=/dev/sda bs=512 count=1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# dd if=/dev/null of=/dev/sda bs=512 count=1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Quando deveria ser (esses comandos eu obtive &lt;a href=&quot;http://www.cyberciti.biz/faq/linux-how-to-uninstall-grub/&quot;&gt;aqui&lt;/a&gt;, por que o cidadão que escreveu aquele tutorial tinha que ter colocado aquele comando primeiro, hein?):&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# dd if=/dev/null of=/dev/sda bs=446 count=1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# dd if=/dev/null of=/dev/sda bs=446 count=1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Quando reiniciei o computador, aparece na tela a mensagem de sistema operacional ausente. Foi então que executando o &lt;a href=&quot;http://gparted.sourceforge.net/&quot;&gt;GParted&lt;/a&gt; através de um LiveCD do &lt;a href=&quot;http://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt; percebi o engano: ele informava que o HD não tinha uma tabela de partições (já citei aqui quatro distribuições, perceberam? rsrsrs).&lt;/p&gt;
 
-&lt;h3 id=&quot;primeiro-problema-recuperar-a-tabela-de-parties&quot;&gt;Primeiro problema: recuperar a tabela de partições&lt;/h3&gt;
+&lt;h3&gt;Primeiro problema: recuperar a tabela de partições&lt;/h3&gt;
 
 &lt;p&gt;Inseri o DVD de instalação do Windows 7 e tentei a recuperação de inicialização, como sugerido por &lt;a href=&quot;http://www.howtogeek.com/howto/windows-vista/fixing-bootmgr-is-missing-error-while-trying-to-boot-windows-vista/&quot;&gt;esse site&lt;/a&gt; (lá você encontra o passo-a-passo com imagens, elas são da instalação do Windows Vista, mas as telas permaneceram iguais na instalação do Windows 7, vou copiar apenas a tela que achei mais importante):&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Inseri o DVD de instalação do Windows 7 na unidade e iniciei o computador por ele;&lt;/li&gt;
-  &lt;li&gt;Na primeira tela, selecionei meu idioma e meu modelo de teclado e cliquei em “Avançar”;&lt;/li&gt;
-  &lt;li&gt;Cliquei no link “Reparar seu computador”;&lt;/li&gt;
-  &lt;li&gt;Na lista em que ele manda selecionar o sistema operacional, eu não selecionei nenhum (sem a tabela de partições ele não conseguiria identificar o sistema que estava instalado) e cliquei em Avançar;&lt;/li&gt;
-  &lt;li&gt;Eis que apareceu a seguinte tela com as opções de recuperação oferecidas pelo DVD de instalação do Windows 7 (volto a falar dela já já):&lt;/li&gt;
+&lt;li&gt;Inseri o DVD de instalação do Windows 7 na unidade e iniciei o computador por ele;&lt;/li&gt;
+&lt;li&gt;Na primeira tela, selecionei meu idioma e meu modelo de teclado e cliquei em “Avançar”;&lt;/li&gt;
+&lt;li&gt;Cliquei no link “Reparar seu computador”;&lt;/li&gt;
+&lt;li&gt;Na lista em que ele manda selecionar o sistema operacional, eu não selecionei nenhum (sem a tabela de partições ele não conseguiria identificar o sistema que estava instalado) e cliquei em Avançar;&lt;/li&gt;
+&lt;li&gt;Eis que apareceu a seguinte tela com as opções de recuperação oferecidas pelo DVD de instalação do Windows 7 (volto a falar dela já já):&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/04/win7-system-recovery-options.jpg&quot; title=&quot;Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7&quot;&gt;
-        &lt;img src=&quot;/files/2012/04/win7-system-recovery-options.jpg&quot; alt=&quot;Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/04/win7-system-recovery-options.jpg&#39; title=&#39;Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7&#39;&gt;
+        &lt;img src=&#39;/files/2012/04/win7-system-recovery-options.jpg&#39; alt=&#39;Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
+&lt;p class=&#39;text-center&#39;&gt;
     &lt;em&gt;
         Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7
     &lt;/em&gt;
@@ -1401,40 +1384,37 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 &lt;p&gt;Eu cliquei em “Startup Repair”, esperei ele concluir o reparo, e após isso, reiniciei o computador, mas nada mudou.&lt;/p&gt;
 
 &lt;p&gt;Depois disso iniciei novamente o computador pelo DVD do Windows 7 e tentei reparar manualmente o MBR, como sugerido &lt;a href=&quot;http://www.howtogeek.com/howto/32523/how-to-manually-repair-windows-7-boot-loader-problems/&quot;&gt;nesse outro site&lt;/a&gt;. Os primeiros passos são os mesmos, exceto que, chegando na tela da imagem acima, ao invés de clicar em “Startup Repair” eu cliquei em “Command Prompt” para digitar os comandos manualmente. Tentei o seguinte comando, reiniciei pra ver se algo mudou, e vi que o erro permanecia.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bootrec&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fixmbr&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; bootrec /fixmbr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Repeti os passos, executei esse outro comando, reiniciei novamente, e nada mudou:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bootrec&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fixboot&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; bootrec /fixboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Por último, testei esse outro comando de terminal sugerido &lt;a href=&quot;http://www.ehow.com/how_4836283_repair-mbr-windows.html&quot;&gt;nessa página&lt;/a&gt;, seguindo praticamente os mesmos procedimentos (só mudou o comando, claro), e aparentemente nada mudou, de novo:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bootsect&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nt60&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;all&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; bootsect /nt60 all
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Inseri o LiveCD do Ubuntu na unidade e iniciei o Linux por ele. Já estava disposto a tentar alguma ferramenta Linux, quando abri o &lt;a href=&quot;http://live.gnome.org/Nautilus&quot;&gt;Nautilus&lt;/a&gt; e verifiquei que todas as partições estavam listadas. Eu as abri, abri algumas pastas, abri alguns arquivos, tudo aparentemente estava no lugar.&lt;/p&gt;
 
 &lt;p&gt;Apenas a título de curiosidade, gostaria de listar as duas soluções que (talvez) fossem possíveis no Linux (não cheguei a precisar delas, já que consegui me virar com o DVD do Windows 7, e sinceramente, não sei se pretendo repetir as condições necessárias para testá-las): &lt;a href=&quot;http://ubuntuforums.org/showthread.php?t=370121&quot;&gt;gpart&lt;/a&gt;, um programa que você pode instalar no Ubuntu (há &lt;a href=&quot;http://www.hardware.com.br/dicas/fazendo-backup-recuperando-mbr-tabela-particoes.html&quot;&gt;essa outra página&lt;/a&gt; um tanto desatualizada do Morimoto que também fala dele) que, pelo que eu entendi, lê o HD inteiro e tenta recompor a tabela de partições dele&lt;/p&gt;
 
 &lt;p&gt;Bom, que alívio! Algum dos procedimentos anteriores (não sei qual) recuperou minhas partições. Talvez eu tivesse que instalar novamente o Windows e o Linux, mas meus dados ao menos já estavam salvos. Devolvida a tabela de partições ao HD, agora eu tinha que recuperar a outra parte do MBR: o gerenciador de boot (bootloader).&lt;/p&gt;
 
-&lt;h3 id=&quot;segundo-problema-recuperar-o-gerenciador-de-boot&quot;&gt;Segundo problema: recuperar o gerenciador de boot&lt;/h3&gt;
+&lt;h3&gt;Segundo problema: recuperar o gerenciador de boot&lt;/h3&gt;
 
 &lt;p&gt;Recuperadas as partições, agora eu poderia gravar o CD do openSUSE e continuar com a instalação, mas antes eu precisaria acessar o sistema operacional. Então, eu precisaria que pelo menos o bootloader do Windows estivesse funcionando. Com a tabela de partições comprovadamente recuperada, voltei a tentar os procedimentos acima descritos usando o DVD de instalação do Windows 7, e &lt;strong&gt;nada&lt;/strong&gt;!&lt;/p&gt;
 
 &lt;p&gt;Eis que decidi instalar o Ubuntu para ter ao menos um sistema operacional funcionando no meu disco rígido (no caso, instalei o Ubuntu na partição Linux que antes era do Debian e que eu desejava que fosse então do openSUSE). A instalação devolveu o GRUB ao MBR e, por incrível que pareça, o GRUB listava o Windows 7 juntamente com o Ubuntu como sistemas operacionais disponíveis.&lt;/p&gt;
 
-&lt;h3 id=&quot;terceiro-problema-recuperar-a-inicializao-do-windows&quot;&gt;Terceiro problema: recuperar a inicialização do Windows&lt;/h3&gt;
+&lt;h3&gt;Terceiro problema: recuperar a inicialização do Windows&lt;/h3&gt;
 
 &lt;p&gt;Imaginava que agora eu conseguiria acessar o Windows, mas esbarrei em um novo problema. A tela exibida quando eu iniciava o computador e escolhia o Windows na lista do GRUB era a seguinte (clique na imagem para ampliar):&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/04/erro-0xc000000e.jpg&quot; title=&quot;Erro 0xc000000e&quot;&gt;
-        &lt;img src=&quot;/files/2012/04/erro-0xc000000e.jpg&quot; alt=&quot;Erro 0xc000000e&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/04/erro-0xc000000e.jpg&#39; title=&#39;Erro 0xc000000e&#39;&gt;
+        &lt;img src=&#39;/files/2012/04/erro-0xc000000e.jpg&#39; alt=&#39;Erro 0xc000000e&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
+&lt;p class=&#39;text-center&#39;&gt;
     &lt;em&gt;
         Erro 0xc000000e
     &lt;/em&gt;
@@ -1442,54 +1422,52 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 
 &lt;p&gt;Mais uma rodada de tentativas executando aqueles comandos que eu mostrei acima, e dessa vez houve algum resultado: só que o sistema ainda não funcionou, o erro foi que mudou. Agora a tela exibia:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/04/erro-bootmgr.png&quot; title=&quot;BOOTMGR is missing&quot;&gt;
-        &lt;img src=&quot;/files/2012/04/erro-bootmgr.png&quot; alt=&quot;BOOTMGR is missing&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/04/erro-bootmgr.png&#39; title=&#39;BOOTMGR is missing&#39;&gt;
+        &lt;img src=&#39;/files/2012/04/erro-bootmgr.png&#39; alt=&#39;BOOTMGR is missing&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
+&lt;p class=&#39;text-center&#39;&gt;
     &lt;em&gt;
         BOOTMGR is missing
     &lt;/em&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Encontrei algumas soluções na Internet, mas decidi tentar primeiro a que tinha &lt;a href=&quot;http://support.microsoft.com/kb/2622803&quot;&gt;no site da Microsoft&lt;/a&gt;: tentei o método 2 fornecido nessa página, que consiste em executar, da mesma forma que os comandos anteriores, o comando:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bootrec&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RebuildBcd&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Executei, reiniciei o computador e, novamente, &lt;strong&gt;nada&lt;/strong&gt;! Em dois fóruns (&lt;a href=&quot;http://www.tomshardware.com/forum/6610-63-0xc000000e-caused-media-drive&quot;&gt;aqui&lt;/a&gt; e &lt;a href=&quot;http://forum.clubedohardware.com.br/resolvido-bootmgr-is/674691&quot;&gt;aqui&lt;/a&gt;) eu vi a sugestão de desconectar todos os HDs e dispositivos removíveis (pendrives, cartões de memória, etc.) antes de executar o comando acima, deixando apenas o disco que se quer recuperar. Desliguei meu computador, abri o gabinete, retirei o cabo de força do outro HD que eu tenho, tirei o pendrive que tinha o Slax, reiniciei o procedimento e… &lt;strong&gt;nada&lt;/strong&gt;!&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; Bootrec /RebuildBcd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Executei, reiniciei o computador e, novamente, &lt;strong&gt;nada&lt;/strong&gt;! Em dois fóruns (&lt;a href=&quot;http://www.tomshardware.com/forum/6610-63-0xc000000e-caused-media-drive&quot;&gt;aqui&lt;/a&gt; e &lt;a href=&quot;http://forum.clubedohardware.com.br/resolvido-bootmgr-is/674691&quot;&gt;aqui&lt;/a&gt;) eu vi a sugestão de desconectar todos os HDs e dispositivos removíveis (pendrives, cartões de memória, etc.) antes de executar o comando acima, deixando apenas o disco que se quer recuperar. Desliguei meu computador, abri o gabinete, retirei o cabo de força do outro HD que eu tenho, tirei o pendrive que tinha o Slax, reiniciei o procedimento e... &lt;strong&gt;nada&lt;/strong&gt;!&lt;/p&gt;
 
 &lt;p&gt;A última sugestão que eu tentei foi a solução definitiva. &lt;a href=&quot;http://www.pcdicasuteis.com/bootmgr-is-missing-press-ctrlaltdel-to-restart-windows-7&quot;&gt;Nesse site&lt;/a&gt;, eles indicam copiar o arquivo BOOTMGR do DVD de instalação do Windows pro HD no qual ele está faltando. Eu iniciei o computador por esse DVD, abri o terminal (como indicado acima) e executei os seguintes comandos (suponha que &lt;code&gt;D:&lt;/code&gt; seja a sua unidade de CD/DVD na qual se encontra o DVD de instalação do Windows 7 e &lt;code&gt;C:&lt;/code&gt; seja o disco rígido que você pretende reparar):&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bootmgr&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; cd D:
+&amp;gt; copy bootmgr C:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Simples assim! Reiniciei o computador e ele carregou o sistema operacional do mesmo jeito que estava antes.&lt;/p&gt;
 
-&lt;h3 id=&quot;quarto-problema-recuperar-o-grub-de-novo&quot;&gt;Quarto problema: recuperar o GRUB (de novo)&lt;/h3&gt;
+&lt;h3&gt;Quarto problema: recuperar o GRUB (de novo)&lt;/h3&gt;
 
 &lt;p&gt;Só que essa solução me trouxe dois problemas: o GRUB sumiu (imagina só: agora que eu consegui acessar o Windows, não consigo mais acessar o Linux!) e aquela imagem da bandeira do Windows brilhando não aparece mais na inicialização, ao invés disso, é a barra verde do Vista (isso não chega a ser um problema, mas não deveria acontecer, veja nas imagens a seguir o antes e o depois).&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/04/win7-boot.jpg&quot; title=&quot;O que aparecia antes enquanto o Windows 7 era carregado&quot;&gt;
-        &lt;img src=&quot;/files/2012/04/win7-boot.jpg&quot; alt=&quot;O que aparecia antes enquanto o Windows 7 era carregado&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/04/win7-boot.jpg&#39; title=&#39;O que aparecia antes enquanto o Windows 7 era carregado&#39;&gt;
+        &lt;img src=&#39;/files/2012/04/win7-boot.jpg&#39; alt=&#39;O que aparecia antes enquanto o Windows 7 era carregado&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
+&lt;p class=&#39;text-center&#39;&gt;
     &lt;em&gt;
         O que aparecia antes enquanto o Windows 7 era carregado
     &lt;/em&gt;
 &lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/04/winvista-boot.jpg&quot; title=&quot;O que aparece agora&quot;&gt;
-        &lt;img src=&quot;/files/2012/04/winvista-boot.jpg&quot; alt=&quot;O que aparece agora&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/04/winvista-boot.jpg&#39; title=&#39;O que aparece agora&#39;&gt;
+        &lt;img src=&#39;/files/2012/04/winvista-boot.jpg&#39; alt=&#39;O que aparece agora&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
+&lt;p class=&#39;text-center&#39;&gt;
     &lt;em&gt;
         O que aparece agora
     &lt;/em&gt;
@@ -1498,12 +1476,11 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 &lt;p&gt;Eu poderia &lt;a href=&quot;http://www.vivaolinux.com.br/dica/Restaurando-o-GRUB-apos-a-instalacao-de-outro-sistema-operacional&quot;&gt;facilmente recuperar o GRUB&lt;/a&gt; para conseguir acessar o Linux, mas como a instalação do Ubuntu era provisória, preferi gravar o CD do openSUSE e instalá-lo por cima do Ubuntu, o que devolveu o GRUB ao MBR e o atualizou para fornecer o Windows 7 e o openSUSE como opções. Desliguei o computador, devolvi o cabo de força do outro HD, liguei de novo pra ver se estava tudo bem, ele reconheceu o “novo” disco rígido… Agora está tudo como era antes, e com o Linux novo, como eu queria.&lt;/p&gt;
 
 &lt;p&gt;Antes de instalar o openSUSE, obviamente, eu fiz uma &lt;a href=&quot;http://www.hardware.com.br/dicas/fazendo-backup-recuperando-mbr-tabela-particoes.html&quot;&gt;cópia do MBR&lt;/a&gt;, já pensou se eu tivesse problemas com isso de novo? Para isso, usei o próprio LiveCD do openSUSE, executando o seguinte comando como root em uma janela de terminal (suponha que &lt;code&gt;/dev/sda&lt;/code&gt; seja o caminho para o HD cujo MBR você deseja copiar):&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# dd if=/dev/sda of=backup.mbr bs=512 count=1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# dd if=/dev/sda of=backup.mbr bs=512 count=1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Aqui fica uma dica aos que um dia precisarem fazer algum dia o backup de um MBR: por motivos óbvios, você não deve salvar esse backup no mesmo disco (não falo na mesma partição não, é no mesmo disco, mesmo!). Se acidentalmente o MBR desse disco for excluído, como você vai conseguir acessar dentro do disco o arquivo que contém o backup para restaurá-lo? O trauma com essa experiência foi tão grande que o backup que eu fiz do MBR eu salvei nos meus dois pendrives.&lt;/p&gt;
 
-&lt;h3 id=&quot;consideraes-finais-e-minhas-observaes&quot;&gt;Considerações finais (e minhas observações)&lt;/h3&gt;
+&lt;h3&gt;Considerações finais (e minhas observações)&lt;/h3&gt;
 
 &lt;p&gt;Tudo bem que o problema inicial foi causado por falha humana (e, diga-se de passagem, minha), no entanto, eu observei que alguns dos problemas durante a tentativa de correção foram causados pela &lt;strong&gt;insuficiência das soluções propostas&lt;/strong&gt; em diversos lugares na Internet, seja em termos de &lt;strong&gt;eficiência&lt;/strong&gt; (nenhuma delas corrigia o problema por completo), seja em termos de &lt;strong&gt;documentação&lt;/strong&gt; (cada página poderia explicar o porquê de estarmos usando aquela ou outra solução, ou talvez até haja informação sobre cada uma dessas soluções, mas a urgência em resolver o problema e a falta de tempo em procurar explicações pesaram mais). Isso pode ter me levado a executar um comando ou outro em um momento inapropriado e pode ter adiado o desfecho da história por mais algumas etapas. Mesmo a documentação oficial da Microsoft oferece algumas possíveis soluções para problemas muito semelhantes.&lt;/p&gt;
 
@@ -1515,7 +1492,7 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
 
 &lt;p&gt;E que esse post sirva para refletir sobre &lt;strong&gt;o trabalho e a responsabilidade de um técnico&lt;/strong&gt;: eu ainda sabia o que provocou o erro (até porque fui eu mesmo que causei), mas imagina tentar entender a explicação de um usuário! Vejam também quanta mão-de-obra e quanta paciência requer resolver um problema desses! Como nada é muito bem documentado, eu tive que resolver meu problema na base da tentativa e erro! Muitos “técnicos” simplesmente se limitariam a formatar o computador e obrigar o usuário a reaver (ou refazer, o que seria pior) tudo aquilo que tinha, quando uma solução menos danosa era possível e ele não tentou o bastante!&lt;/p&gt;
 
-&lt;p&gt;Um abraço a todos, e até a próxima aventura deste técnico que vos escreve! E espero que alguém mais entendido possa me esclarecer o motivo da confusão. Não a confusão “do início”, que fui eu que causei, mas a confusão “do meio”, imagino que a solução do meu problema não deveria ter tantos arrodeios, já que a maioria dos usuários relatam que um ou dois comandos deveriam resolver os problemas (podem conferir nos links que eu mencionei ao longo da resolução)…&lt;/p&gt;
+&lt;p&gt;Um abraço a todos, e até a próxima aventura deste técnico que vos escreve! E espero que alguém mais entendido possa me esclarecer o motivo da confusão. Não a confusão “do início”, que fui eu que causei, mas a confusão “do meio”, imagino que a solução do meu problema não deveria ter tantos arrodeios, já que a maioria dos usuários relatam que um ou dois comandos deveriam resolver os problemas (podem conferir nos links que eu mencionei ao longo da resolução)...&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Apr 2012 05:42:01 -0300</pubDate>
         <link>http://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/</link>
@@ -1528,13 +1505,13 @@ OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot
         <title>Onde reciclar cartuchos de tinta em Aracaju</title>
         <description>&lt;p&gt;O que fazer com isso depois que não servir mais? Jogar no lixo? Reciclar? Será que dá pra reciclar? Aonde eu devo levar? São algumas das perguntas que nos fazemos quando nossos eletrônicos não servem mais. Pois bem, algo me chamou a atenção quando estive no &lt;a href=&quot;http://www.shoppingjardins.com.br/&quot;&gt;Shopping Jardins&lt;/a&gt; há &lt;a href=&quot;http://jornalnerds.blogspot.com.br/2010/12/reciclagem-cartuchos-de-impressora.html&quot;&gt;um tempo&lt;/a&gt; foi um banner da &lt;a href=&quot;http://www.infranet.com.br/&quot;&gt;Infranet&lt;/a&gt; que dizia que eles reciclavam cartuchos de tinta e toners:&lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
-    &lt;a href=&quot;/files/2012/04/reciclagem-infranet.jpg&quot; title=&quot;Reciclagem de cartuchos na Infranet&quot;&gt;
-        &lt;img src=&quot;/files/2012/04/reciclagem-infranet.jpg&quot; alt=&quot;Reciclagem de cartuchos na Infranet&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2012/04/reciclagem-infranet.jpg&#39; title=&#39;Reciclagem de cartuchos na Infranet&#39;&gt;
+        &lt;img src=&#39;/files/2012/04/reciclagem-infranet.jpg&#39; alt=&#39;Reciclagem de cartuchos na Infranet&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
 &lt;/p&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;
+&lt;p class=&#39;text-center&#39;&gt;
     &lt;em&gt;
         Reciclagem de cartuchos na Infranet
     &lt;/em&gt;

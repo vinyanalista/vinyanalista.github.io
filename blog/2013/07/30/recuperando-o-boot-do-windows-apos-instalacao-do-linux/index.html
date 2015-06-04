@@ -22,7 +22,12 @@
     <!-- Bootstrap core CSS -->
     <link href="/lib/paper/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- SyntaxHighlighter -->
+    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shCore.css"/>
+    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shThemeDefault.css"/>
+    
     <!-- Custom styles for this template -->
+    <link href="/css/syntax.css" rel="stylesheet">
     <link href="/css/comum.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,7 +37,6 @@
     <script src="/lib/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--<link rel="stylesheet" href="/css/main.css">-->
     <link rel="canonical" href="http://vinyanalista.github.io/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/">
     <link rel="alternate" type="application/rss+xml" title="vinyanalista.com.br" href="http://vinyanalista.github.io/feed.xml" />
 </head>
@@ -115,121 +119,121 @@
     <div class="blog-post-conteudo panel-body">
         <p>É, pessoal, sei que é uma situação um tanto inusitada, mas aconteceu comigo hoje, quando tentei instalar o <a href="http://www.opensuse.org/">openSUSE</a> 12.3 no meu computador, que até então só tinha o Windows 7. O problema mais comum é quando <a href="http://www.vivaolinux.com.br/dica/Restaurando-o-GRUB-apos-a-instalacao-de-outro-sistema-operacional">o Linux já está instalado e então instalamos o Windows</a>, que a princípio impede que outros sistemas sejam inicializados, reservando o computador para si. Mas hoje comigo aconteceu isso: após instalar o openSUSE 12.3, o menu do <a href="http://en.opensuse.org/GRUB">GRUB2</a> não oferecia a opção de inicializar o Windows. Venho aqui (tentar) descrever a solução.</p>
 
-<h3 id="instalao-do-opensuse">Instalação do openSUSE</h3>
+<h3>Instalação do openSUSE</h3>
 
 <p>A configuração dos meus HDs é bastante semelhante àquela encontrada ano passado quando escrevi <a href="/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/">outro post</a> sobre problemas com <em>dual boot</em>. Naquela época, usava Debian e estava pensando em migrar pro openSUSE, o que de fato aconteceu e desde então é a distribuição que uso. Aliás, foi bom reler aquele post e perceber que <a href="/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/">essa não é a primeira vez que tenho problemas em relação ao <em>dual boot</em> com openSUSE</a>.</p>
 
 <p>Executando o comando <strong>fdisk</strong>, obtenho o seguinte:</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">Disk /dev/sda: 1000.2 GB, <span class="m">1000204886016</span> bytes
-<span class="m">255</span> heads, <span class="m">63</span> sectors/track, <span class="m">121601</span> cylinders, total <span class="m">1953525168</span> sectors
-<span class="nv">Units</span> <span class="o">=</span> sectors of <span class="m">1</span> * <span class="nv">512</span> <span class="o">=</span> <span class="m">512</span> bytes
-Sector size <span class="o">(</span>logical/physical<span class="o">)</span>: <span class="m">512</span> bytes / <span class="m">512</span> bytes
-I/O size <span class="o">(</span>minimum/optimal<span class="o">)</span>: <span class="m">512</span> bytes / <span class="m">512</span> bytes
+<script type="syntaxhighlighter" class="brush: text"><![CDATA[
+Disk /dev/sda: 1000.2 GB, 1000204886016 bytes
+255 heads, 63 sectors/track, 121601 cylinders, total 1953525168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disk identifier: 0xa1a11ae7
 
    Device Boot      Start         End      Blocks   Id  System
-/dev/sda1            <span class="m">2048</span>   <span class="m">419432447</span>   <span class="m">209715200</span>    <span class="m">7</span>  HPFS/NTFS/exFAT
-/dev/sda2       <span class="m">419432448</span>  <span class="m">1468008447</span>   <span class="m">524288000</span>    <span class="m">7</span>  HPFS/NTFS/exFAT
-/dev/sda3      <span class="m">1468010496</span>  <span class="m">1887440895</span>   <span class="m">209715200</span>    <span class="m">7</span>  HPFS/NTFS/exFAT
-/dev/sda4   *  <span class="m">1887442942</span>  <span class="m">1953523711</span>    <span class="m">33040385</span>    <span class="m">5</span>  Extended
-/dev/sda5      <span class="m">1887442944</span>  <span class="m">1953523711</span>    <span class="m">33040384</span>   <span class="m">83</span>  Linux
+/dev/sda1            2048   419432447   209715200    7  HPFS/NTFS/exFAT
+/dev/sda2       419432448  1468008447   524288000    7  HPFS/NTFS/exFAT
+/dev/sda3      1468010496  1887440895   209715200    7  HPFS/NTFS/exFAT
+/dev/sda4   *  1887442942  1953523711    33040385    5  Extended
+/dev/sda5      1887442944  1953523711    33040384   83  Linux
 
-Disk /dev/sdb: 250.1 GB, <span class="m">250059350016</span> bytes
-<span class="m">255</span> heads, <span class="m">63</span> sectors/track, <span class="m">30401</span> cylinders, total <span class="m">488397168</span> sectors
-<span class="nv">Units</span> <span class="o">=</span> sectors of <span class="m">1</span> * <span class="nv">512</span> <span class="o">=</span> <span class="m">512</span> bytes
-Sector size <span class="o">(</span>logical/physical<span class="o">)</span>: <span class="m">512</span> bytes / <span class="m">512</span> bytes
-I/O size <span class="o">(</span>minimum/optimal<span class="o">)</span>: <span class="m">512</span> bytes / <span class="m">512</span> bytes
+Disk /dev/sdb: 250.1 GB, 250059350016 bytes
+255 heads, 63 sectors/track, 30401 cylinders, total 488397168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disk identifier: 0x1ba01b9f
 
    Device Boot      Start         End      Blocks   Id  System
-/dev/sdb1            <span class="m">2048</span>   <span class="m">488396799</span>   <span class="m">244197376</span>    <span class="m">7</span>  HPFS/NTFS/exFAT</code></pre></div>
+/dev/sdb1            2048   488396799   244197376    7  HPFS/NTFS/exFAT
+]]></script>
 
 <p>Durante a instalação do openSUSE 12.3, não alterei as configurações do <em>bootloader</em>. O instalador automaticamente selecionou a melhor configuração para o meu computador (que no caso de o Linux estar em uma partição estendida, é <a href="http://en.opensuse.org/SDB:Prefered_bootloader_options">instalar o <em>bootloader</em> na partição estendida</a>).</p>
 
-<h3 id="recuperao-do-bootloader-do-windows">Recuperação do bootloader do Windows</h3>
+<h3>Recuperação do bootloader do Windows</h3>
 
 <p>Na busca por soluções, encontrei <a href="http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/">este site</a> e tentei algumas alternativas nele apresentadas, que descrevo a seguir (só depois vim perceber que já havia as listado no <a href="/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/">post anterior</a>, mas tudo bem, não custa repetir):</p>
 
 <ol>
-  <li>Iniciei o computador pelo DVD de instalação do Windows 7. Na tela inicial, escolhi meu idioma (que não é inglês, quero reconhecer <a href="http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/">o crédito do autor das imagens</a>) e cliquei em “Avançar”:</li>
+<li>Iniciei o computador pelo DVD de instalação do Windows 7. Na tela inicial, escolhi meu idioma (que não é inglês, quero reconhecer <a href="http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/">o crédito do autor das imagens</a>) e cliquei em “Avançar”:</li>
 </ol>
 
-<p class="text-center">
-    <a href="/files/2013/07/windows-startup-recovery2.jpg" title="">
-        <img src="/files/2013/07/windows-startup-recovery2.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2013/07/windows-startup-recovery2.jpg' title=''>
+        <img src='/files/2013/07/windows-startup-recovery2.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <ol>
-  <li>Em seguida, cliquei em “Reparar o computador”:</li>
+<li>Em seguida, cliquei em “Reparar o computador”:</li>
 </ol>
 
-<p class="text-center">
-    <a href="/files/2013/07/windows-startup-recovery3.jpg" title="">
-        <img src="/files/2013/07/windows-startup-recovery3.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2013/07/windows-startup-recovery3.jpg' title=''>
+        <img src='/files/2013/07/windows-startup-recovery3.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <ol>
-  <li>Nessa tela, escolhi a primeira opção, não selecionei nada na lista, e cliquei em “Avançar”:</li>
+<li>Nessa tela, escolhi a primeira opção, não selecionei nada na lista, e cliquei em “Avançar”:</li>
 </ol>
 
-<p class="text-center">
-    <a href="/files/2013/07/windows-startup-recovery4.png" title="">
-        <img src="/files/2013/07/windows-startup-recovery4.png" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2013/07/windows-startup-recovery4.png' title=''>
+        <img src='/files/2013/07/windows-startup-recovery4.png' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <ol>
-  <li>Finalmente, nessa tela, diferentemente do autor, escolhi a primeira opção, “Startup Recovery”:</li>
+<li>Finalmente, nessa tela, diferentemente do autor, escolhi a primeira opção, “Startup Recovery”:</li>
 </ol>
 
-<p class="text-center">
-    <a href="/files/2013/07/windows-startup-recovery5.png" title="">
-        <img src="/files/2013/07/windows-startup-recovery5.png" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2013/07/windows-startup-recovery5.png' title=''>
+        <img src='/files/2013/07/windows-startup-recovery5.png' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>A instalação executou seus procedimentos de manutenção, após os quais reiniciei o computador. Ainda nada de Windows, e agora ele não exibia mais nem o menu do GRUB2, acusando que havia múltiplas partições ativas.</p>
 
 <p>Executei novamente os passos 1 a 3 acima, até chegar naquela tela em que cliquei em “Startup Recovery”, mas dessa vez escolhi “Command Prompt”. Executei o seguinte comando e reiniciei o computador:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; bootrec /rebuildbcd
+</code></pre></div>
+<p>Nada mudou: além de não conseguir acessar o Windows, não conseguia acessar o menu do GRUB2, e ainda havia a reclamação de duas partições ativas. Agora vejo no meu post anterior que <a href="http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/">eu poderia ter tentado outros comandos</a>, mas enfim… hoje o que eu executei foi esse e consegui resolver. Não após ele, ainda falta alguns passos da minha solução...</p>
 
-<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">bootrec</span> <span class="p">/</span><span class="n">rebuildbcd</span></code></pre></div>
-
-<p>Nada mudou: além de não conseguir acessar o Windows, não conseguia acessar o menu do GRUB2, e ainda havia a reclamação de duas partições ativas. Agora vejo no meu post anterior que <a href="http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/">eu poderia ter tentado outros comandos</a>, mas enfim… hoje o que eu executei foi esse e consegui resolver. Não após ele, ainda falta alguns passos da minha solução…</p>
-
-<h3 id="definio-da-partio-ativa">Definição da partição ativa</h3>
+<h3>Definição da partição ativa</h3>
 
 <p>Reiniciei o computador dessa vez usando o LiveDVD do openSUSE 12.3. Abri o <a href="http://gparted.sourceforge.net/">GParted</a> e vi que tanto a partição do Windows (<strong>/dev/sda1</strong>) quanto a partição estendida (<strong>/dev/sda4</strong>) estavam definidas como ativas. Defini que apenas a partição estendida deveria ser ativa.</p>
 
 <p>Reiniciei novamente o computador e dessa vez consegui o menu do GRUB2, ainda sem a opção do Windows. Só faltava isso para o problema estar resolvido.</p>
 
-<h3 id="reconfigurao-do-grub2">Reconfiguração do GRUB2</h3>
+<h3>Reconfiguração do GRUB2</h3>
 
 <p>Iniciei o computador pelo openSUSE instalado no HD. Após pesquisar e ler um bocadinho, descobri que o comando responsável pela reconfiguração do GRUB2 no openSUSE é o seguinte:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># grub2-mkconfig -o /boot/grub2/grub.cfg
+</code></pre></div>
+<p>Reiniciei o computador, mas nada mudou... iniciei o openSUSE novamente. Agora não me perguntem por que cargas d’água, <strong>esse comando só funcionou depois que eu montei a partição do Windows</strong> (isso pode ser feito pelo Dolphin, ao tentar abrir a partição do Windows, ou, para os mais experientes, usando o comando <strong>mount</strong>). Montei a partição do Windows, executei a reconfiguração do GRUB2 novamente e, dessa vez, quando reiniciei o computador, tudo estava normal de novo…</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># grub2-mkconfig -o /boot/grub2/grub.cfg</span></code></pre></div>
-
-<p>Reiniciei o computador, mas nada mudou… iniciei o openSUSE novamente. Agora não me perguntem por que cargas d’água, <strong>esse comando só funcionou depois que eu montei a partição do Windows</strong> (isso pode ser feito pelo Dolphin, ao tentar abrir a partição do Windows, ou, para os mais experientes, usando o comando <strong>mount</strong>). Montei a partição do Windows, executei a reconfiguração do GRUB2 novamente e, dessa vez, quando reiniciei o computador, tudo estava normal de novo…</p>
-
-<h3 id="configurando-o-grub2-para-iniciar-o-windows-por-padro">Configurando o GRUB2 para iniciar o Windows por padrão</h3>
+<h3>Configurando o GRUB2 para iniciar o Windows por padrão</h3>
 
 <p>Aproveito a oportunidade para passar aqui uma dica preciosa para os usuários de Linux que, infelizmente, não são os únicos usuários do computador. Na minha casa, tanto meu irmão quanto minha mãe só usam Windows. Por isso, sempre deixo o Windows iniciando por padrão. No openSUSE, isso <a href="http://doc.opensuse.org/documentation/html/openSUSE/opensuse-reference/grub2.html#grub2.yast2.config.default">pode ser feito de maneira fácil através da interface gráfica do YaST</a>:</p>
 
 <ol>
-  <li>Inicie o YaST pelo Kickoff. Forneça a senha de root para que ele possa abrir.</li>
-  <li>Clique em “Carregador de inicialização” (<em>Boot loader</em>, no inglês).</li>
-  <li>Clique em “Opções do carregador de inicialização” (<em>Boot Loader Options</em>).</li>
-  <li>Em “Seção de inicialização padrão” (<em>Default Boot Section</em>), selecione qual sistema deseja que seja iniciado por padrão.</li>
-  <li>Clique em “OK” e depois em “OK” novamente para ativar as mudanças.</li>
+<li>Inicie o YaST pelo Kickoff. Forneça a senha de root para que ele possa abrir.</li>
+<li>Clique em “Carregador de inicialização” (<em>Boot loader</em>, no inglês).</li>
+<li>Clique em “Opções do carregador de inicialização” (<em>Boot Loader Options</em>).</li>
+<li>Em “Seção de inicialização padrão” (<em>Default Boot Section</em>), selecione qual sistema deseja que seja iniciado por padrão.</li>
+<li>Clique em “OK” e depois em “OK” novamente para ativar as mudanças.</li>
 </ol>
 
-<h3 id="consideraes-finais">Considerações finais</h3>
+<h3>Considerações finais</h3>
 
 <p>Pois é, pessoal. Não sei explicar o que ocasionou esse problema no meu computador, mas sei que ele aconteceu, eu tive que buscar uma solução, encontrei e estou compartilhando aqui com vocês. Parece que nem sempre o instalador do openSUSE, apesar de muito inteligente, faz as coisas como deveria… o dual boot será algo que a equipe do openSUSE precisa rever em seu instalador?</p>
 
-<p>Aliás, essa não é a única coisa estranha que percebo no openSUSE: meu netbook (que só eu uso, é um <a href="http://www.asus.com/Notebooks_Ultrabooks/Eee_PC_1015PEM/">ASUS EeePC 1015PEM</a>) às vezes suspende quando volta da hibernação. Acontece o seguinte: eu paro de usar o netbook e o fecho. Ele inicia a hibernação. Quando o abro e volto a usar (ele volta da hibernação), alguns segundos depois o KDE avisa que a bateria está em nível crítico (0%, que loucura!) e que necessita suspender, e é isso que ele faz. Se conecto o carregador antes de abrir o netbook, consigo evitar a suspensão, mas não sei porque isso acontece, mesmo quando ele tá com a bateria cheia…</p>
+<p>Aliás, essa não é a única coisa estranha que percebo no openSUSE: meu netbook (que só eu uso, é um <a href="http://www.asus.com/Notebooks_Ultrabooks/Eee_PC_1015PEM/">ASUS EeePC 1015PEM</a>) às vezes suspende quando volta da hibernação. Acontece o seguinte: eu paro de usar o netbook e o fecho. Ele inicia a hibernação. Quando o abro e volto a usar (ele volta da hibernação), alguns segundos depois o KDE avisa que a bateria está em nível crítico (0%, que loucura!) e que necessita suspender, e é isso que ele faz. Se conecto o carregador antes de abrir o netbook, consigo evitar a suspensão, mas não sei porque isso acontece, mesmo quando ele tá com a bateria cheia...</p>
 
 <p>Abraço a todos e até a próxima!</p>
 
@@ -374,6 +378,7 @@ Disk identifier: 0x1ba01b9f
 <script src="/lib/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/lib/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>
+
 <!-- AddThis -->
 <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
 <script type="text/javascript">
@@ -383,6 +388,33 @@ Disk identifier: 0x1ba01b9f
         description: "É, pessoal, sei que é uma situação um tanto inusitada, mas aconteceu comigo hoje, quando tentei instalar o openSUSE 12.3 no meu computador, que até então só tinha o Windows 7. O problema mais comum é quando o Linux já está instalado e então instalamos o Windows, que a princípio impede que outros sistemas sejam..."
     };
 </script>
+
+<!-- SyntaxHighlighter -->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shCore.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushAS3.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushBash.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushColdFusion.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCpp.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCSharp.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDelphi.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDiff.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushErlang.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushGroovy.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJava.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJavaFX.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPerl.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPhp.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPlain.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPython.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushRuby.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushScala.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushSql.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushVb.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushXml.js"></script>
+
 <!-- Comum -->
 <script src="/js/comum.js"></script>
     </body>

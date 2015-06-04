@@ -22,7 +22,12 @@
     <!-- Bootstrap core CSS -->
     <link href="/lib/paper/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- SyntaxHighlighter -->
+    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shCore.css"/>
+    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shThemeDefault.css"/>
+    
     <!-- Custom styles for this template -->
+    <link href="/css/syntax.css" rel="stylesheet">
     <link href="/css/comum.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,7 +37,6 @@
     <script src="/lib/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--<link rel="stylesheet" href="/css/main.css">-->
     <link rel="canonical" href="http://vinyanalista.github.io/blog/2012/04/08/minha-pesquisa-cientifica-sobre-processadores/">
     <link rel="alternate" type="application/rss+xml" title="vinyanalista.com.br" href="http://vinyanalista.github.io/feed.xml" />
 </head>
@@ -113,29 +117,30 @@
         </div>
     </div>
     <div class="blog-post-conteudo panel-body">
-        <p class="text-center">
-    <a href="/files/2012/04/processador.jpg" title="">
-        <img src="/files/2012/04/processador.jpg" alt="" class="img-responsive img-thumbnail" />
+        <p class='text-center'>
+    <a href='/files/2012/04/processador.jpg' title=''>
+        <img src='/files/2012/04/processador.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Estava apenas aguardando uma oportunidade de divulgar a pesquisa científica que desenvolvi no IFS no período de 2007 a 2009, e penso que a hora é agora (com a prova de <a href="http://200.17.141.88/index.php/EmentasCC#Arquitetura_de_Computadores_I">Arquitetura de Computadores I</a> chegando aí, hein?), então disponibilizei o <a href="http://pt.scribd.com/doc/88465424/">trabalho no Scribd</a> e estou aqui para falar um pouco mais sobre ele. O resumo do trabalho diz o seguinte:</p>
 
 <blockquote>
-  <p>Este trabalho apresenta os processadores para computadores pessoais baseados no IBM PC, seus componentes, seu funcionamento, suas características e sua evolução. O trabalho apresentado tem como objetivo principal auxiliar a compreensão do funcionamento dos componentes do computador, em especial do processador, e esclarecer as diferenças entre as tecnologias que se encontram hoje disponíveis no mercado. São colocadas considerações referentes às características, inovações e funcionamento dos processadores, de modo que seja possível compará-los em termos de avanço tecnológico, desempenho e custo-benefício.</p>
+<p>Este trabalho apresenta os processadores para computadores pessoais baseados no IBM PC, seus componentes, seu funcionamento, suas características e sua evolução. O trabalho apresentado tem como objetivo principal auxiliar a compreensão do funcionamento dos componentes do computador, em especial do processador, e esclarecer as diferenças entre as tecnologias que se encontram hoje disponíveis no mercado. São colocadas considerações referentes às características, inovações e funcionamento dos processadores, de modo que seja possível compará-los em termos de avanço tecnológico, desempenho e custo-benefício.</p>
 </blockquote>
 
 <p>Resumindo ainda mais, o trabalho apresenta os processadores da Intel fabricados para a arquitetura IBM PC. Muitas explicações que servem para essa arquitetura servem também para outras, de maneira geral. Para ler o trabalho completo, clique no link a seguir (também é possível baixar o arquivo em PDF na <a href="http://pt.scribd.com/doc/88465424/">página do Scribd</a>). Para mais informações sobre o trabalho, continue lendo.</p>
 
-<p style=" margin: 12px auto 6px auto; font-family: Helvetica,Arial,Sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; display: block;">
-    <a title="View Pesquisa Científica - Processadores (2009) on Scribd" href="https://pt.scribd.com/doc/88465424/Pesquisa-Cientifica-Processadores-2009" style="text-decoration: underline;">Pesquisa Científica - Processadores (2009)</a> by <a title="View Antonio Vinicius Menezes Medeiros's profile on Scribd" href="https://www.scribd.com/vinyanalista" style="text-decoration: underline;">Antonio Vinicius Menezes Medeiros</a>
+<p  style=" margin: 12px auto 6px auto; font-family: Helvetica,Arial,Sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; display: block;">
+    <a title="View Pesquisa Científica - Processadores (2009) on Scribd" href="https://pt.scribd.com/doc/88465424/Pesquisa-Cientifica-Processadores-2009"  style="text-decoration: underline;" >Pesquisa Científica - Processadores (2009)</a> by <a title="View Antonio Vinicius Menezes Medeiros's profile on Scribd" href="https://www.scribd.com/vinyanalista"  style="text-decoration: underline;" >Antonio Vinicius Menezes Medeiros</a>
 </p>
-<iframe class="gap scribd_iframe_embed" src="https://www.scribd.com/embeds/88465424/content?start_page=1&amp;view_mode=scroll&amp;access_key=key-9zvuzkb612ddvcamw2b&amp;show_recommendations=false" data-auto-height="false" data-aspect-ratio="0.75" scrolling="no" id="doc_70789" width="100%" height="600" frameborder="0">
+
+<iframe class="gap scribd_iframe_embed" src="https://www.scribd.com/embeds/88465424/content?start_page=1&view_mode=scroll&access_key=key-9zvuzkb612ddvcamw2b&show_recommendations=false" data-auto-height="false" data-aspect-ratio="0.75" scrolling="no" id="doc_70789" width="100%" height="600" frameborder="0">
 </iframe>
 
 <!--more-->
 
-<h3 id="como-surgiu">Como surgiu</h3>
+<h3>Como surgiu</h3>
 
 <p>Em 2007, quando cursava o 1º ano do ensino integrado (ensino médio junto com ensino técnico) de Informática do <a href="http://www.ifs.edu.br/">IFS</a> (Instituto Federal de Educação, Ciência e Tecnologia de Sergipe) fui selecionado juntamente com uma colega para receber uma bolsa de pesquisa do <a href="http://www.fapitec.se.gov.br/modules/wfdownloads/visit.php?cid=7&amp;lid=48">PBICJr</a> (Programa de Bolsas de Iniciação Científica Júnior) pela <a href="http://www.fapitec.se.gov.br/">FAPITEC/SE</a>.</p>
 
@@ -145,41 +150,41 @@
 
 <p>O site não foi construído e o projeto não chegou a ter divulgação fora da instituição de ensino, no entanto eu guardei o último relatório que enviei à FAPITEC/SE e no momento estou disponibilizando-o no meu site, como amostra de um dos trabalhos científicos que já fiz. A data de conclusão consta como 2009 porque  a pesquisa foi interrompida por um tempo por falta de verba do <a href="http://www.cnpq.br">CNPq</a>, que era o órgão fomentador da bolsa. Pelo edital, o projeto deveria durar apenas 1 ano.</p>
 
-<h3 id="primeiro-trabalho">Primeiro trabalho</h3>
+<h3>Primeiro trabalho</h3>
 
 <p>Vale observar que como se tratava de um programa de iniciação científica júnior, a correção do  trabalho não foi tão criteriosa. Apesar de apresentar uma formatação formal, esse trabalho não segue as <a href="/blog/2012/04/08/normas-abnt-para-trabalhos-academicos/">normas da ABNT</a>.</p>
 
-<h3 id="principais-referncias">Principais referências</h3>
+<h3>Principais referências</h3>
 
 <p>Os principais livros utilizados nessa pesquisa foram:</p>
 
-<p class="text-center">
-    <a href="/files/2012/04/introducao-a-organizacao-de-computadores.jpg" title="">
-        <img src="/files/2012/04/introducao-a-organizacao-de-computadores.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/04/introducao-a-organizacao-de-computadores.jpg' title=''>
+        <img src='/files/2012/04/introducao-a-organizacao-de-computadores.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>MONTEIRO, Mário A. Introdução à Organização de Computadores. 4ªEdição. Rio de Janeiro: LTC Editora, 2001.</p>
 
-<p class="text-center">
-    <a href="/files/2012/04/hardware-manual-completo.gif" title="">
-        <img src="/files/2012/04/hardware-manual-completo.gif" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/04/hardware-manual-completo.gif' title=''>
+        <img src='/files/2012/04/hardware-manual-completo.gif' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>MORIMOTO, Carlos E. Manual de Hardware Completo. 3ª Edição. Junho de 2002. Disponível na Internet em: <a href="http://www.hardware.com.br/livros/hardware-manual/">http://www.hardware.com.br/livros/hardware-manual/</a>. Acessado em: 08/04/2012.</p>
 
-<p class="text-center">
-    <a href="/files/2012/04/hardware-curso-completo.gif" title="">
-        <img src="/files/2012/04/hardware-curso-completo.gif" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/04/hardware-curso-completo.gif' title=''>
+        <img src='/files/2012/04/hardware-curso-completo.gif' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>TORRES, Gabriel. HARDWARE Curso Completo. 4ª Edição. Editora AxcelBooks, 2001.</p>
 
-<p class="text-center">
-    <a href="/files/2012/04/hardware-total.jpg" title="">
-        <img src="/files/2012/04/hardware-total.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/04/hardware-total.jpg' title=''>
+        <img src='/files/2012/04/hardware-total.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
@@ -328,6 +333,7 @@
 <script src="/lib/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/lib/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>
+
 <!-- AddThis -->
 <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
 <script type="text/javascript">
@@ -337,6 +343,33 @@
         description: "Estava apenas aguardando uma oportunidade de divulgar a pesquisa científica que desenvolvi no IFS no período de 2007 a 2009, e penso que a hora é agora (com a prova de Arquitetura de Computadores I chegando aí, hein?), então disponibilizei o trabalho no Scribd e estou aqui para falar um pouco mais sobre ele. O..."
     };
 </script>
+
+<!-- SyntaxHighlighter -->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shCore.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushAS3.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushBash.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushColdFusion.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCpp.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCSharp.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDelphi.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDiff.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushErlang.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushGroovy.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJava.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJavaFX.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPerl.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPhp.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPlain.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPython.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushRuby.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushScala.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushSql.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushVb.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushXml.js"></script>
+
 <!-- Comum -->
 <script src="/js/comum.js"></script>
     </body>

@@ -22,7 +22,12 @@
     <!-- Bootstrap core CSS -->
     <link href="/lib/paper/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- SyntaxHighlighter -->
+    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shCore.css"/>
+    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shThemeDefault.css"/>
+    
     <!-- Custom styles for this template -->
+    <link href="/css/syntax.css" rel="stylesheet">
     <link href="/css/comum.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,7 +37,6 @@
     <script src="/lib/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--<link rel="stylesheet" href="/css/main.css">-->
     <link rel="canonical" href="http://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/">
     <link rel="alternate" type="application/rss+xml" title="vinyanalista.com.br" href="http://vinyanalista.github.io/feed.xml" />
 </head>
@@ -115,9 +119,9 @@
     <div class="blog-post-conteudo panel-body">
         <p>O <a href="http://www.jboss.org/jbossas/">JBoss Application Server</a> (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela <a href="http://www.jboss.org/">JBoss</a> (atualmente, uma divisão da <a href="http://www.redhat.com/">Red Hat</a>) para a plataforma <a href="http://www.oracle.com/technetwork/java/javaee/">Java EE</a>. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações Java para a Web utilizando esse servidor.</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_01.jpg" title="">
-        <img src="/files/2012/07/jboss_as_01.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_01.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_01.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
@@ -125,56 +129,53 @@
 
 <!--more-->
 
-<h3 id="console-de-administrao-web-do-jboss-as">Console de administração Web do JBoss AS</h3>
+<h3>Console de administração Web do JBoss AS</h3>
 
 <p>Podemos gerenciar o servidor de aplicação JBoss AS através de um console Web, que nos permite realizar, entre outras configurações, deploy e undeploy de aplicações, iniciar ou interromper a execução de aplicações, verificar o consumo de memória do servidor, configurar datasources, etc. Esse console, por padrão (se você não alterar as configurações de portas) é acessado através do endereço “<a href="http://localhost:9990/">http://localhost:9990/</a>“.</p>
 
 <p>Na primeira vez em que você tentar acessar esse console, no entanto, ele emitirá uma mensagem de erro (é bonita, eu sei, mas se você examinar seu conteúdo, verá que é uma mensagem de erro, rsrsrs):</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_05.jpg" title="">
-        <img src="/files/2012/07/jboss_as_05.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_05.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_05.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Esse aviso nos diz que é necessário definir um usuário e uma senha para acessar o console de administração Web. Vamos fazer isso.</p>
 
 <p>Execute o script “add-user” dentro da pasta “bin” do servidor (“C:\jboss-as\bin\add-user.bat” no Windows, e “/home/vinicius/jboss-as/bin/add-user.sh” no Linux):</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>/home/vinicius/jboss-as/bin/add-user.sh</code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ /home/vinicius/jboss-as/bin/add-user.sh
+</code></pre></div>
 <p>Após iniciar o script, você será guiado no processo de adicionar um novo usuário:</p>
-
 <div class="highlight"><pre><code class="language-text" data-lang="text">What type of user do you wish to add?
 a) Management User (mgmt-users.properties)
 b) Application User (application-users.properties)
-(a):</code></pre></div>
-
+(a):
+</code></pre></div>
 <p>Nesse caso, como estamos criando um usuário com a finalidade de administrar o servidor, escolhemos a opção “a”. Ela já é a opção padrão, apenas tecle Enter.</p>
 
 <p>Você será solicitado a fornecer informações sobre o novo usuário. Quando questionado sobre o domínio do usuário (Realm), aceite a opção padrão (ManagementRealm), para isso basta teclar Enter quando chegar nesse campo. No mais, digite nome de usuário, senha e confirme a senha.</p>
-
 <div class="highlight"><pre><code class="language-text" data-lang="text">Enter the details of the new user to add.
 Realm (ManagementRealm) :
 Username :
 Password :
-Re-enter Password :</code></pre></div>
-
+Re-enter Password :
+</code></pre></div>
 <p>Se não houver nada errado, uma mensagem de confirmação será exibida na tela.</p>
 
 <p>Feito isso, nós já podemos acessar o console de administração Web, informando o usuário e senha criados quando solicitados (lembrando que o endereço é “<a href="http://localhost:9990/">http://localhost:9990/</a>“):</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_06.jpg" title="">
-        <img src="/files/2012/07/jboss_as_06.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_06.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_06.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Vamos fazer undeploy e deploy da aplicação usando o console de administração Web. Para isso, no menu do lado esquerdo, clique em “Manage Deployments”. É exibida uma lista das aplicações instaladas no servidor:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_07.jpg" title="">
-        <img src="/files/2012/07/jboss_as_07.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_07.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_07.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
@@ -182,9 +183,9 @@ Re-enter Password :</code></pre></div>
 
 <p>Feito isso a aplicação desaparece da lista, ela já não está mais no servidor (e muito menos acessível):</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_08.jpg" title="">
-        <img src="/files/2012/07/jboss_as_08.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_08.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_08.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
@@ -194,45 +195,46 @@ Re-enter Password :</code></pre></div>
 
 <p>O primeiro passo é selecionar o arquivo que você deseja fazer deploy. Na janela que aparece, clique em “Browse…”, navegue até a pasta do exemplo (aqui, “/home/vinicius/jboss-jdf-jboss-as-quickstart-8505020/helloworld-jsf/”) e, dentro da pasta “target”, escolha o arquivo “jboss-as-helloworld-jsf.war”, que representa a aplicação compilada e empacotada em um formato próprio de aplicação Web (arquivo <strong>.war</strong>), análogo ao formato de aplicação Desktop (arquivo <strong>.jar</strong>). Por último, clique em “Next”:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_09.jpg" title="">
-        <img src="/files/2012/07/jboss_as_09.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_09.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_09.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Ele pede para confirmar as informações. Simplesmente clique em “Save”:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_10.jpg" title="">
-        <img src="/files/2012/07/jboss_as_10.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_10.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_10.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>De volta à lista de aplicações, a aplicação foi instalada no servidor, mas não foi iniciada:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_11.jpg" title="">
-        <img src="/files/2012/07/jboss_as_11.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_11.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_11.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Clique em Enable para iniciá-la. Aparece uma mensagem de confirmação na tela, clique em “Confirm”. Feito isso a aplicação passa a aparecer na lista como habilitada:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_12.jpg" title="">
-        <img src="/files/2012/07/jboss_as_12.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_12.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_12.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Agora é possível acessá-la novamente pelo endereço “<a href="http://localhost:8080/jboss-as-helloworld-jsf/">http://localhost:8080/jboss-as-helloworld-jsf/</a>“.</p>
 
-<h3 id="encerrando-o-jboss-as">Encerrando o JBoss AS</h3>
+<h3>Encerrando o JBoss AS</h3>
 
 <p>Encerrar o servidor, tanto no Windows quanto no Linux, é um procedimento bastante simples: basta abortar a execução do comando na janela de terminal onde o servidor está sendo executado. Para isso, basta apertar Ctrl + C (vale para ambos os sistemas).</p>
 
 <p>Aqui ele encerrou o servidor em pequeníssimos 143 milissegundos:</p>
 
-<div class="highlight"><pre><code class="language-text" data-lang="text">15:09:21,996 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011942: Stopping OSGi Framework
+<script type="syntaxhighlighter" class="brush: text"><![CDATA[
+15:09:21,996 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011942: Stopping OSGi Framework
 15:09:22,034 INFO  [org.jboss.as.logging] JBAS011503: Restored bootstrap log handlers
 15:09:22,044 INFO  [org.jboss.weld.deployer] JBAS016009: Stopping weld service for deployment jboss-as-helloworld-jsf.war
 15:09:22,053 INFO  [org.apache.coyote.http11.Http11Protocol] Pausing Coyote HTTP/1.1 on http--127.0.0.1-8080
@@ -244,9 +246,10 @@ Re-enter Password :</code></pre></div>
 JBAS014776:    Newly corrected services:
 service jboss.server.controller.management.security_realm.ApplicationRealm.properties_authentication (new available)
 
-15:09:22,121 INFO  [org.jboss.as] JBAS015950: JBoss AS 7.1.1.Final &quot;Brontes&quot; stopped in 143ms</code></pre></div>
+15:09:22,121 INFO  [org.jboss.as] JBAS015950: JBoss AS 7.1.1.Final "Brontes" stopped in 143ms
+]]></script>
 
-<h3 id="mais-informaes-sobre-o-jboss-as">Mais informações sobre o JBoss AS</h3>
+<h3>Mais informações sobre o JBoss AS</h3>
 
 <p>Pois é, pessoal. Vou encerrando minha apresentação do JBoss AS por aqui. Gostaria apenas de fazer algumas considerações finais e deixar as páginas que usei como referência para escrever esse post.</p>
 
@@ -261,9 +264,9 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
 <p>As páginas da <a href="https://docs.jboss.org/author/display/AS71/Documentation">documentação oficial do JBoss AS</a> que utilizei como referência para escrever esse post foram:</p>
 
 <ul>
-  <li><a href="https://docs.jboss.org/author/display/AS71/Getting+Started+Guide">Getting Started Guide</a></li>
-  <li><a href="https://docs.jboss.org/author/display/AS71/Getting+Started+Developing+Applications+Guide">Getting Started Developing Applications Guide</a></li>
-  <li><a href="https://docs.jboss.org/author/display/AS71/Admin+Guide">Admin Guide</a></li>
+<li><a href="https://docs.jboss.org/author/display/AS71/Getting+Started+Guide">Getting Started Guide</a></li>
+<li><a href="https://docs.jboss.org/author/display/AS71/Getting+Started+Developing+Applications+Guide">Getting Started Developing Applications Guide</a></li>
+<li><a href="https://docs.jboss.org/author/display/AS71/Admin+Guide">Admin Guide</a></li>
 </ul>
 
 <p>Abraço a todos e até a próxima!</p>
@@ -409,6 +412,7 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
 <script src="/lib/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/lib/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>
+
 <!-- AddThis -->
 <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
 <script type="text/javascript">
@@ -418,6 +422,33 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
         description: "O JBoss Application Server (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela JBoss (atualmente, uma divisão da Red Hat) para a plataforma Java EE. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações..."
     };
 </script>
+
+<!-- SyntaxHighlighter -->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shCore.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushAS3.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushBash.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushColdFusion.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCpp.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCSharp.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDelphi.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDiff.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushErlang.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushGroovy.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJava.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJavaFX.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPerl.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPhp.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPlain.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPython.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushRuby.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushScala.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushSql.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushVb.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushXml.js"></script>
+
 <!-- Comum -->
 <script src="/js/comum.js"></script>
     </body>

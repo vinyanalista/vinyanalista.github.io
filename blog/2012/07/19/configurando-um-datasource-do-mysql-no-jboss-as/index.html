@@ -22,7 +22,12 @@
     <!-- Bootstrap core CSS -->
     <link href="/lib/paper/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- SyntaxHighlighter -->
+    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shCore.css"/>
+    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shThemeDefault.css"/>
+    
     <!-- Custom styles for this template -->
+    <link href="/css/syntax.css" rel="stylesheet">
     <link href="/css/comum.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,7 +37,6 @@
     <script src="/lib/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--<link rel="stylesheet" href="/css/main.css">-->
     <link rel="canonical" href="http://vinyanalista.github.io/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/">
     <link rel="alternate" type="application/rss+xml" title="vinyanalista.com.br" href="http://vinyanalista.github.io/feed.xml" />
 </head>
@@ -115,9 +119,9 @@
     <div class="blog-post-conteudo panel-body">
         <p>O <a href="http://www.mysql.com/">MySQL</a> é um banco de dados de código aberto desenvolvido pela <a href="http://www.oracle.com/">Oracle</a>. Ele se tornou um dos bancos de dados mais utilizados no mundo devido ao fato de se integrar perfeitamente ao <a href="http://www.php.net/">PHP</a>, sendo oferecido pela maioria dos serviços de hospedagem de sites em conjunto com o suporte a essa linguagem. Nesse post, você verá como utilizá-lo em conjunto com o servidor de aplicação <a href="http://www.jboss.org/jbossas/">JBoss AS</a> para satisfazer as necessidades de armazenamento de dados de suas aplicações <a href="http://www.oracle.com/technetwork/java/javaee/">Java EE</a>.</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_mysql_01.jpg" title="">
-        <img src="/files/2012/07/jboss_as_mysql_01.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_mysql_01.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_mysql_01.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
@@ -131,7 +135,7 @@
 
 <p>Dividirei a explicação em 3 etapas: fazer deploy do driver JDBC, criação do datasource e configurar a aplicação Web para utilizar esse datasource. As explicações aqui fornecidas se aplicam a qualquer sistema operacional onde seja possível executar o JBoss AS.</p>
 
-<h3 id="deploy-do-driver-jdbc-do-mysql">Deploy do driver JDBC do MySQL</h3>
+<h3>Deploy do driver JDBC do MySQL</h3>
 
 <p>Em primeiro lugar, precisamos do driver JDBC do MySQL. Ele é distribuído como um pacote no site do MySQL (os desenvolvedores do MySQL chamam seu driver JDBC de “MySQL Connector/J”), juntamente com seus código-fonte e documentação.</p>
 
@@ -141,140 +145,145 @@
 
 <p>Ao final do processo, o driver JDBC do MySQL deve aparecer habilitado na lista de aplicações implantadas, como mostra a figura (curiosamente, a <a href="http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/">aplicação de exemplo</a> que implantamos <a href="/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/">naquele post</a> ainda está no servidor):</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_mysql_02.jpg" title="">
-        <img src="/files/2012/07/jboss_as_mysql_02.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_mysql_02.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_mysql_02.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
-<h3 id="criao-do-datasource">Criação do datasource</h3>
+<h3>Criação do datasource</h3>
 
 <p>No painel superior do console Web, clique em “Profile”, e em seguida, no menu da esquerda, clique em “Datasources”. É exibida uma lista com todos os datasources configurados (nesse caso, só há o <a href="https://docs.jboss.org/author/display/AS7/Getting+Started+Guide#GettingStartedGuide-ModifyingtheExampleDataSource">datasource de exemplo</a>, que já vem configurado com o servidor de aplicação):</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_mysql_03.jpg" title="">
-        <img src="/files/2012/07/jboss_as_mysql_03.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_mysql_03.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_mysql_03.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Clique em “Add”. Na caixa de diálogo que aparece, forneça ao datasource um nome (esse nome não afeta a conexão, serve apenas para distinguir o datasource na lista, aqui forneci “TesteDS”) e um nome <a href="http://www.oracle.com/technetwork/java/jndi/">JNDI</a> (esse sim importa à conexão, é usado para localizar um recurso na rede e deve começar sempre com “java:/” ou “java:jboss/”, aqui digitei “java:/teste”), e em seguida clique em “Next”:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_mysql_04.jpg" title="">
-        <img src="/files/2012/07/jboss_as_mysql_04.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_mysql_04.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_mysql_04.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Selecione um driver JDBC na lista de drivers disponíveis. No nosso caso, devemos selecionar o MySQL Connector/J. Depois clique em “Next”:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_mysql_05.jpg" title="">
-        <img src="/files/2012/07/jboss_as_mysql_05.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_mysql_05.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_mysql_05.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Finalmente, devemos informar os detalhes da conexão: o endereço JDBC de acesso ao banco (aqui, preenchi com “jdbc:mysql://localhost:3306/teste”, o formato desse endereço é “jdbc:mysql://servidor:porta/base”), o usuário e a senha que serão utilizados. Depois de preencher os campos, clique em “Done”:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_mysql_06.jpg" title="">
-        <img src="/files/2012/07/jboss_as_mysql_06.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_mysql_06.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_mysql_06.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>O datasource é criado e passa a aparecer na lista, mas ainda não está habilitado:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_mysql_07.jpg" title="">
-        <img src="/files/2012/07/jboss_as_mysql_07.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_mysql_07.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_mysql_07.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Antes de habilitá-lo, tornando-o assim disponível para conexão, vamos permitir que esse datasource seja gerenciado pela API de transações do Java (<a href="http://www.oracle.com/technetwork/java/javaee/jta/index.html">Java Transaction API</a>, ou JTA). Selecione-o na lista e, descendo na página, clique na aba “Connection”. Perceba que a JTA está desabilitada para esse datasource. Clique em “Edit” para alterar isso:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_mysql_08.jpg" title="">
-        <img src="/files/2012/07/jboss_as_mysql_08.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_mysql_08.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_mysql_08.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Marque as duas últimas opções e clique em “Save”:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_mysql_09.jpg" title="">
-        <img src="/files/2012/07/jboss_as_mysql_09.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_mysql_09.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_mysql_09.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Agora a JTA está habilitada:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_mysql_10.jpg" title="">
-        <img src="/files/2012/07/jboss_as_mysql_10.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_mysql_10.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_mysql_10.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Agora sim vamos habilitar o datasource: ainda com ele selecionado, clique no botão “Enable”, acima da lista. O datasource é então habilitado:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_mysql_11.jpg" title="">
-        <img src="/files/2012/07/jboss_as_mysql_11.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_mysql_11.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_mysql_11.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Ainda com o datasource selecionado na lista e a aba “Connection” aberta na parte de baixo, clique no botão “Test Connection”. Se você forneceu os dados corretamente, o servidor de aplicação conseguirá estabelecer uma conexão com o banco de dados, e a seguinte mensagem será exibida:</p>
 
-<p class="text-center">
-    <a href="/files/2012/07/jboss_as_mysql_12.jpg" title="">
-        <img src="/files/2012/07/jboss_as_mysql_12.jpg" alt="" class="img-responsive img-thumbnail" />
+<p class='text-center'>
+    <a href='/files/2012/07/jboss_as_mysql_12.jpg' title=''>
+        <img src='/files/2012/07/jboss_as_mysql_12.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
 </p>
 
 <p>Da parte do servidor está tudo OK. Agora é só configurar a aplicação para utilizar o datasource.</p>
 
-<h3 id="configurao-da-aplicao">Configuração da aplicação</h3>
+<h3>Configuração da aplicação</h3>
 
 <p>Agora nós precisamos configurar nossa aplicação para se comunicar com a base de dados utilizando o datasource configurado no servidor de aplicação. O arquivo central da configuração da JPA (<a href="http://docs.oracle.com/javaee/6/tutorial/doc/bnbpy.html">Java Persistence API</a>) no projeto, o “META-INF/persistence.xml”, vai sofrer algumas alterações. Observe as linhas destacadas:</p>
 
-<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
-<span class="nt">&lt;persistence</span> <span class="na">xmlns=</span><span class="s">&quot;http://java.sun.com/xml/ns/persistence&quot;</span>
-   <span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
-   <span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd&quot;</span>
-   <span class="na">version=</span><span class="s">&quot;2.0&quot;</span><span class="nt">&gt;</span>
-   <span class="nt">&lt;persistence-unit</span> <span class="na">name=</span><span class="s">&quot;TestePU&quot;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;provider&gt;</span>org.hibernate.ejb.HibernatePersistence<span class="nt">&lt;/provider&gt;</span>
-      <span class="nt">&lt;jta-data-source&gt;</span>java:/teste<span class="nt">&lt;/jta-data-source&gt;</span>
-      <span class="nt">&lt;properties&gt;</span>
-         <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&quot;hibernate.hbm2ddl.auto&quot;</span> <span class="na">value=</span><span class="s">&quot;create-drop&quot;</span> <span class="nt">/&gt;</span>
-         <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&quot;hibernate.show_sql&quot;</span> <span class="na">value=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
-      <span class="nt">&lt;/properties&gt;</span>
-   <span class="nt">&lt;/persistence-unit&gt;</span>
-<span class="nt">&lt;/persistence&gt;</span></code></pre></div>
+<script type="syntaxhighlighter" class="brush: xml; highlight: [6, 8]"><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+   version="2.0">
+   <persistence-unit name="TestePU">
+      <provider>org.hibernate.ejb.HibernatePersistence</provider>
+      <jta-data-source>java:/teste</jta-data-source>
+      <properties>
+         <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+         <property name="hibernate.show_sql" value="true" />
+      </properties>
+   </persistence-unit>
+</persistence>
+]]></script>
 
 <p>Observe que estou utilizando o <a href="http://www.hibernate.org/">Hibernate</a> como implementação JPA, já que estamos utilizando o JBoss AS como servidor de aplicação.</p>
 
 <p>No código-fonte da aplicação, sempre for necessário um <a href="http://docs.oracle.com/javaee/6/api/javax/persistence/EntityManager.html">EntityManager</a> para <a href="http://docs.oracle.com/javaee/6/tutorial/doc/bnbqw.html">manusear entidades JPA</a>, você pode solicitar ao servidor de aplicação que injete-o (isso significa que você não precisa criar o objeto manualmente, o servidor de aplicação cria o objeto para você) anotando sua variável com <a href="http://docs.oracle.com/javaee/6/api/javax/persistence/PersistenceContext.html">@PersistenceContext</a> e especificando o nome da persistence-unit, como definida no arquivo “META-INF/persistence.xml”:</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="nd">@PersistenceContext</span><span class="o">(</span><span class="n">name</span><span class="o">=</span><span class="s">&quot;TestePU&quot;</span><span class="o">)</span>
-<span class="n">EntityManager</span> <span class="n">entityManager</span><span class="o">;</span></code></pre></div>
+<script type="syntaxhighlighter" class="brush: java; gutter: false"><![CDATA[
+@PersistenceContext(name="TestePU")
+EntityManager entityManager;
+]]></script>
 
 <p>Se sua aplicação possui apenas uma persistence-unit, essa informação pode ser omitida:</p>
 
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="nd">@PersistenceContext</span>
-<span class="n">EntityManager</span> <span class="n">entityManager</span><span class="o">;</span></code></pre></div>
+<script type="syntaxhighlighter" class="brush: java; gutter: false"><![CDATA[
+@PersistenceContext
+EntityManager entityManager;
+]]></script>
 
-<h3 id="aplicao-de-exemplo">Aplicação de exemplo</h3>
+<h3>Aplicação de exemplo</h3>
 
 <p>Uma boa pedida é escolher uma das <a href="http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/">aplicações de exemplo do JBoss AS</a>, alterar suas configurações e executá-la. No <a href="/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/">post anterior</a>, nós compilamos, empacotamos, implantamos e executamos a aplicação de exemplo <a href="http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/">helloworld-jsf</a>. Vou aproveitar o arquivo que já baixei e extraí naquele post, mas aqui vamos utilizar a aplicação <a href="http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/greeter/">greeter</a>.</p>
 
 <p>Entre na pasta da aplicação (no meu caso, “/home/vinicius/jboss-jdf-jboss-as-quickstart-8505020/greeter/”), exclua o arquivo “greeter-quickstart-ds.xml” que está na pasta “src/main/webapp/WEB-INF/” e altere o arquivo “persistence.xml” dentro da pasta “src/main/resources/META-INF/” para que tenha o conteúdo acima.</p>
 
 <p>Pronto! Agora é só implantar a aplicação com o <a href="http://maven.apache.org/">Maven</a> (caso você não tenha o Maven em seu computador, leia <a href="http://www.vinyanalista.com.br/blog/2012/07/18/instalacao-do-apache-maven/">esse post</a>):</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>mvn package jboss-as:deploy</code></pre></div>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">mvn package jboss-as:deploy
+</code></pre></div>
 <p>Se tudo ocorrer conforme o esperado, a aplicação de exemplo poderá ser acessada através do endereço “<a href="http://localhost:8080/jboss-as-greeter/">http://localhost:8080/jboss-as-greeter/</a>“.</p>
 
-<h3 id="dica-aos-usurios-de-postgresql">Dica aos usuários de PostgreSQL</h3>
+<h3>Dica aos usuários de PostgreSQL</h3>
 
 <p>As instruções fornecidas aqui podem ser aplicadas sem maiores problemas a outros bancos de dados. Veja, por exemplo, essa página que ensina <a href="http://blog.xebia.com/2011/07/19/developing-a-jpa-application-on-jboss-as-7/">como configurar um datasource do PostgreSQL no JBoss AS</a>.</p>
 
@@ -423,6 +432,7 @@
 <script src="/lib/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/lib/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>
+
 <!-- AddThis -->
 <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
 <script type="text/javascript">
@@ -432,6 +442,33 @@
         description: "O MySQL é um banco de dados de código aberto desenvolvido pela Oracle. Ele se tornou um dos bancos de dados mais utilizados no mundo devido ao fato de se integrar perfeitamente ao PHP, sendo oferecido pela maioria dos serviços de hospedagem de sites em conjunto com o suporte a essa linguagem. Nesse post, você..."
     };
 </script>
+
+<!-- SyntaxHighlighter -->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shCore.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushAS3.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushBash.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushColdFusion.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCpp.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCSharp.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDelphi.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDiff.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushErlang.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushGroovy.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJava.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJavaFX.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPerl.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPhp.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPlain.js"></script>
+<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPython.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushRuby.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushScala.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushSql.js"></script>
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushVb.js"></script>-->
+<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushXml.js"></script>
+
 <!-- Comum -->
 <script src="/js/comum.js"></script>
     </body>
