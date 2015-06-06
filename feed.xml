@@ -4,10 +4,10 @@
     <title>vinyanalista.com.br</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://vinyanalista.github.io/</link>
-    <atom:link href="http://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Jun 2015 01:24:01 -0300</pubDate>
-    <lastBuildDate>Sat, 06 Jun 2015 01:24:01 -0300</lastBuildDate>
+    <link>http://www.vinyanalista.com.br/</link>
+    <atom:link href="http://www.vinyanalista.com.br/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 06 Jun 2015 01:41:43 -0300</pubDate>
+    <lastBuildDate>Sat, 06 Jun 2015 01:41:43 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -202,8 +202,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 23 Sep 2014 15:38:39 -0300</pubDate>
-        <link>http://vinyanalista.github.io/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</guid>
+        <link>http://www.vinyanalista.com.br/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</link>
+        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</guid>
         
         
       </item>
@@ -268,8 +268,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 20 Jan 2014 04:53:32 -0200</pubDate>
-        <link>http://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</guid>
+        <link>http://www.vinyanalista.com.br/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</link>
+        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</guid>
         
         
       </item>
@@ -397,8 +397,8 @@ Disk identifier: 0x1ba01b9f
 &lt;p&gt;Abraço a todos e até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Tue, 30 Jul 2013 02:50:45 -0300</pubDate>
-        <link>http://vinyanalista.github.io/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</guid>
+        <link>http://www.vinyanalista.com.br/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</link>
+        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</guid>
         
         
       </item>
@@ -580,8 +580,8 @@ EntityManager entityManager;
 &lt;p&gt;Bem, pessoal, vou ficando por aqui, espero que tenham gostado… até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Jul 2012 04:36:13 -0300</pubDate>
-        <link>http://vinyanalista.github.io/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</guid>
+        <link>http://www.vinyanalista.com.br/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</link>
+        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</guid>
         
         
       </item>
@@ -743,8 +743,8 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
 &lt;p&gt;Abraço a todos e até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Jul 2012 23:16:17 -0300</pubDate>
-        <link>http://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</guid>
+        <link>http://www.vinyanalista.com.br/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</link>
+        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</guid>
         
         
       </item>
@@ -948,8 +948,8 @@ INFO: JBoss Remoting version 3.2.3.GA
 &lt;p&gt;Também podemos fazer deploy e undeploy de aplicações no servidor, entre outras configurações, usando o console de administração do JBoss AS. Examinaremos esse console na &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/&quot;&gt;segunda parte desse post&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Jul 2012 22:18:38 -0300</pubDate>
-        <link>http://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</guid>
+        <link>http://www.vinyanalista.com.br/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</link>
+        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</guid>
         
         
       </item>
@@ -1084,8 +1084,8 @@ $ mvn package
 &lt;p&gt;Abraço a todos, e até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Jul 2012 02:57:24 -0300</pubDate>
-        <link>http://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/</guid>
+        <link>http://www.vinyanalista.com.br/blog/2012/07/18/instalacao-do-apache-maven/</link>
+        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/07/18/instalacao-do-apache-maven/</guid>
         
         
       </item>
@@ -1293,8 +1293,8 @@ $ javac Teste.java
 &lt;p&gt;Espero que esse post possa ser útil a programadores Java iniciantes de uma maneira em geral. Agradeço previamente opiniões e críticas construtivas. Ofereço o espaço para perguntas também. Abraço a todos e até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Jul 2012 01:01:10 -0300</pubDate>
-        <link>http://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</guid>
+        <link>http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</link>
+        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</guid>
         
         
       </item>
@@ -1495,8 +1495,8 @@ Device    Boot      Start         End      Blocks   Id  System
 &lt;p&gt;Um abraço a todos, e até a próxima aventura deste técnico que vos escreve! E espero que alguém mais entendido possa me esclarecer o motivo da confusão. Não a confusão “do início”, que fui eu que causei, mas a confusão “do meio”, imagino que a solução do meu problema não deveria ter tantos arrodeios, já que a maioria dos usuários relatam que um ou dois comandos deveriam resolver os problemas (podem conferir nos links que eu mencionei ao longo da resolução)...&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Apr 2012 05:42:01 -0300</pubDate>
-        <link>http://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/</guid>
+        <link>http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/</link>
+        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/</guid>
         
         
       </item>
@@ -1544,8 +1544,8 @@ Device    Boot      Start         End      Blocks   Id  System
 &lt;p&gt;Telefone: (79)3222-3310&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Apr 2012 19:00:07 -0300</pubDate>
-        <link>http://vinyanalista.github.io/blog/2012/04/15/onde-reciclar-cartuchos-de-tinta-em-aracaju/</link>
-        <guid isPermaLink="true">http://vinyanalista.github.io/blog/2012/04/15/onde-reciclar-cartuchos-de-tinta-em-aracaju/</guid>
+        <link>http://www.vinyanalista.com.br/blog/2012/04/15/onde-reciclar-cartuchos-de-tinta-em-aracaju/</link>
+        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/04/15/onde-reciclar-cartuchos-de-tinta-em-aracaju/</guid>
         
         
       </item>
