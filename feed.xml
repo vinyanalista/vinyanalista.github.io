@@ -6,9 +6,118 @@
 </description>
     <link>http://www.vinyanalista.com.br/</link>
     <atom:link href="http://www.vinyanalista.com.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Jun 2015 21:33:08 -0300</pubDate>
-    <lastBuildDate>Tue, 23 Jun 2015 21:33:08 -0300</lastBuildDate>
+    <pubDate>Wed, 24 Jun 2015 00:55:13 -0300</pubDate>
+    <lastBuildDate>Wed, 24 Jun 2015 00:55:13 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Como personalizar o ícone do seu site</title>
+        <description>&lt;p&gt;Sabe como personalizar o ícone do seu &lt;em&gt;site&lt;/em&gt;? Aquele que aparece na barra de título, na aba, ou no menu dos favoritos, quando você adiciona seu &lt;em&gt;site&lt;/em&gt; aos favoritos. Ele é mais conhecido na Internet por &lt;a href=&quot;https://en.wikipedia.org/wiki/Favicon&quot;&gt;&lt;em&gt;favicon&lt;/em&gt;&lt;/a&gt;. &lt;a href=&quot;https://www.codigofonte.net/dicas/html/26_seu-icone-nos-favoritos-em-poucos-passos&quot;&gt;Antigamente&lt;/a&gt;, na época em que o &lt;a href=&quot;http://museudocomputador.org.br/ibmpc.html&quot;&gt;IBM PC&lt;/a&gt;, o &lt;a href=&quot;http://windows.microsoft.com/pt-br/&quot;&gt;Windows&lt;/a&gt; e o &lt;a href=&quot;http://windows.microsoft.com/pt-br/internet-explorer/&quot;&gt;Internet Explorer&lt;/a&gt; dominavam seus respectivos &lt;a href=&quot;http://www.networkworld.com/article/2897729/software/a-visual-history-of-microsofts-internet-explorer.html#slide7&quot;&gt;mercados&lt;/a&gt;, era suficiente criar um arquivo &lt;code&gt;favicon.ico&lt;/code&gt; na raiz do &lt;em&gt;site&lt;/em&gt; e &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/ms537656(v=vs.85).aspx&quot;&gt;adicionar&lt;/a&gt; a seguinte &lt;em&gt;tag&lt;/em&gt; ao cabeçalho da página:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;shortcut icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;favicon.ico&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Agora, com a explosão dos dispositivos móveis (&lt;a href=&quot;https://www.android.com/&quot;&gt;Android&lt;/a&gt;, &lt;a href=&quot;https://www.apple.com/br/ios/what-is/&quot;&gt;iOS&lt;/a&gt;, &lt;a href=&quot;http://br.blackberry.com/&quot;&gt;BlackBerry&lt;/a&gt;, etc.) e a &lt;a href=&quot;https://pt.wikipedia.org/wiki/Guerra_dos_navegadores&quot;&gt;guerra dos navegadores&lt;/a&gt; (&lt;a href=&quot;https://www.mozilla.org/pt-BR/firefox/&quot;&gt;Mozilla Firefox&lt;/a&gt;, &lt;a href=&quot;http://www.google.com.br/chrome/&quot;&gt;Google Chrome&lt;/a&gt;, &lt;a href=&quot;http://www.opera.com/pt-br&quot;&gt;Opera&lt;/a&gt;, &lt;a href=&quot;https://www.apple.com/br/safari/&quot;&gt;Safari&lt;/a&gt;, etc.), é bem verdade que a referida &lt;em&gt;tag&lt;/em&gt; ainda &lt;a href=&quot;https://en.wikipedia.org/wiki/Favicon&quot;&gt;é reconhecida pelos navegadores mais utilizados&lt;/a&gt;, que exibem corretamente o ícone do seu &lt;em&gt;site&lt;/em&gt; para a maioria dos visitantes.&lt;/p&gt;
+
+&lt;p&gt;No entanto, em alguns casos específicos, o navegador procura o ícone do &lt;em&gt;site&lt;/em&gt; em outro arquivo que não o &lt;code&gt;favicon.ico&lt;/code&gt;, ou verifica se existe algum ícone com maior resolução, como faz o navegador Safari no &lt;a href=&quot;https://www.apple.com/br/iphone/&quot;&gt;iPhone&lt;/a&gt;, por exemplo. Alguns sites já provêm vários ícones: o tradicional &lt;code&gt;favicon.ico&lt;/code&gt; e outros ícones para esses casos específicos.&lt;/p&gt;
+
+&lt;p&gt;Aqui mostro como você pode disponibilizar vários ícones para o seu &lt;em&gt;site&lt;/em&gt;, como fiz com o meu. Se não quiser saber como achei a solução, pode pular a seção a seguir.&lt;/p&gt;
+
+&lt;h3&gt;Discussão&lt;/h3&gt;
+
+&lt;p&gt;Isso é realmente necessário? Não, somente se você quiser prover a melhor experiência a seu visitante independente de qual dispositivo ele usa para acessar seu &lt;em&gt;site&lt;/em&gt; (foi a conclusão a que vários entendidos no assunto chegaram após &lt;a href=&quot;https://github.com/h5bp/html5-boilerplate/issues/1367&quot;&gt;essa discussão&lt;/a&gt;). Eu considero isso importante, por isso pesquisei como se fazem ícones para &lt;em&gt;sites&lt;/em&gt; hoje em dia para aplicar as novas técnicas ao meu &lt;em&gt;site&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Iniciei uma pesquisa em profundidade sobre o assunto, tomando como ponto de partida a referida discussão, o que me levou a outras páginas interessantes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://mathiasbynens.be/notes/touch-icons&quot;&gt;Everything you always wanted to know about touch icons · Mathias Bynens&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.apple.com/library/mac/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&quot;&gt;Configuring Web Applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gist.github.com/davidhund/332316f82440ef4377f3&quot;&gt;Pragmatic Touch Icons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://mathiasbynens.be/notes/rel-shortcut-icon&quot;&gt;rel=&amp;quot;shortcut icon&amp;quot; considered harmful · Mathias Bynens&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://realfavicongenerator.net/faq&quot;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/audreyr/favicon-cheat-sheet&quot;&gt;audreyr/favicon-cheat-sheet · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.creativebloq.com/illustrator/create-perfect-favicon-12112760&quot;&gt;Create a favicon for your site in 8 steps | netmag | Creative Bloq&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cheguei a conclusão que, para não me preocupar com as diferenças entre dispositivos e navegadores, o melhor seria utilizar uma ferramenta que as trata para mim. Foi então que decidi usar o &lt;a href=&quot;http://realfavicongenerator.net/&quot;&gt;Real Favicon Generator&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Mão na massa&lt;/h3&gt;
+
+&lt;p&gt;O &lt;a href=&quot;http://realfavicongenerator.net/&quot;&gt;Real Favicon Generator&lt;/a&gt; é uma ferramenta &lt;em&gt;online&lt;/em&gt; gratuita capaz de gerar uma variedade de arquivos de ícones para seu &lt;em&gt;site&lt;/em&gt; com base em uma imagem que você forneça. Não só as imagens, ele provê também as &lt;em&gt;tags&lt;/em&gt; HTML que você deve inserir em suas páginas para que diferentes navegadores e dispositivos determinem e exibam corretamente o ícone do seu &lt;em&gt;site&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/06/favicon_1.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/06/favicon_1.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Para começar, acesse o &lt;a href=&quot;http://realfavicongenerator.net/&quot;&gt;Real Favicon Generator&lt;/a&gt; e forneça uma imagem quadrada. A resolução mínima exigida é 70x70, mas ele recomenda que a resolução da imagem seja 260x260 ou maior para melhores resultados. Isso permitirá que a ferramenta gere ícones de alta definição para dispositivos que os suportam.&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/06/favicon_2.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/06/favicon_2.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Na página seguinte, várias opções são exibidas para que você possa personalizar a aparência do seu ícone em alguns casos específicos. É recomendado colocar os arquivos na raiz do &lt;em&gt;site&lt;/em&gt;, pois alguns navegadores os buscam nesse local (por exemplo, &lt;code&gt;www.vinyanalista.com.br/favicon.ico&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/06/favicon_3.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/06/favicon_3.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Por fim, a ferramenta fornecerá os arquivos que você deve baixar e salvar no seu e o código HTML que você deve inserir nas suas páginas.&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/06/favicon_4.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/06/favicon_4.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;O código gerado deve ser parecido com este:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;apple-touch-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;57x57&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/apple-touch-icon-57x57.png?v=2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;apple-touch-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;60x60&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/apple-touch-icon-60x60.png?v=2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;apple-touch-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;72x72&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/apple-touch-icon-72x72.png?v=2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;apple-touch-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;76x76&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/apple-touch-icon-76x76.png?v=2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;apple-touch-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;114x114&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/apple-touch-icon-114x114.png?v=2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;apple-touch-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;120x120&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/apple-touch-icon-120x120.png?v=2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;apple-touch-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;144x144&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/apple-touch-icon-144x144.png?v=2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;apple-touch-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;152x152&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/apple-touch-icon-152x152.png?v=2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;apple-touch-icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;180x180&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/apple-touch-icon-180x180.png?v=2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;image/png&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/favicon-32x32.png?v=2&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;32x32&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;image/png&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/favicon-194x194.png?v=2&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;194x194&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;image/png&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/favicon-96x96.png?v=2&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;96x96&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;image/png&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/android-chrome-192x192.png?v=2&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;192x192&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;image/png&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/favicon-16x16.png?v=2&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sizes=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;16x16&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;manifest&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/manifest.json?v=2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;shortcut icon&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/favicon.ico?v=2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;msapplication-TileColor&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#2d89ef&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;msapplication-TileImage&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/mstile-144x144.png?v=2&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;theme-color&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#2196f3&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Depois de alterar as páginas e disponibilizá-las &lt;em&gt;online&lt;/em&gt; juntamente com os ícones, a ferramenta também permite verificar se tudo está nos conformes. Para isso, acesse o &lt;a href=&quot;http://realfavicongenerator.net/favicon_checker&quot;&gt;verificador de &lt;em&gt;favicon&lt;/em&gt;&lt;/a&gt; e forneça o endereço do seu &lt;em&gt;site&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/06/favicon_5.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/06/favicon_5.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;No meu caso, como gerei o ícone do meu &lt;em&gt;site&lt;/em&gt; usando a própria ferramenta, obviamente ela não encontrou nenhum erro:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/06/favicon_6.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/06/favicon_6.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Se tiver curiosidade de verificar quais dispositivos e navegadores são suportados pelo Real Favicon Generator, acesse &lt;a href=&quot;http://realfavicongenerator.net/favicon_compatibility&quot;&gt;essa página&lt;/a&gt;. Você também pode tirar quaisquer dúvidas na seção de &lt;a href=&quot;http://realfavicongenerator.net/faq&quot;&gt;perguntas frequentes (FAQ, no inglês)&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 24 Jun 2015 01:00:00 -0300</pubDate>
+        <link>http://www.vinyanalista.com.br/blog/2015/06/24/favicon/</link>
+        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2015/06/24/favicon/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Controlando o VLC a partir do navegador ou do celular</title>
@@ -1497,55 +1606,6 @@ Device    Boot      Start         End      Blocks   Id  System
         <pubDate>Sat, 21 Apr 2012 05:42:01 -0300</pubDate>
         <link>http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/</link>
         <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Onde reciclar cartuchos de tinta em Aracaju</title>
-        <description>&lt;p&gt;O que fazer com isso depois que não servir mais? Jogar no lixo? Reciclar? Será que dá pra reciclar? Aonde eu devo levar? São algumas das perguntas que nos fazemos quando nossos eletrônicos não servem mais. Pois bem, algo me chamou a atenção quando estive no &lt;a href=&quot;http://www.shoppingjardins.com.br/&quot;&gt;Shopping Jardins&lt;/a&gt; há &lt;a href=&quot;http://jornalnerds.blogspot.com.br/2010/12/reciclagem-cartuchos-de-impressora.html&quot;&gt;um tempo&lt;/a&gt; foi um banner da &lt;a href=&quot;http://www.infranet.com.br/&quot;&gt;Infranet&lt;/a&gt; que dizia que eles reciclavam cartuchos de tinta e toners:&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/04/reciclagem-infranet.jpg&#39; title=&#39;Reciclagem de cartuchos na Infranet&#39;&gt;
-        &lt;img src=&#39;/files/2012/04/reciclagem-infranet.jpg&#39; alt=&#39;Reciclagem de cartuchos na Infranet&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;em&gt;
-        Reciclagem de cartuchos na Infranet
-    &lt;/em&gt;
-&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Abaixo você confere os endereços e os telefones das lojas Infranet em Aracaju (ambas prestam esse serviço).&lt;/p&gt;
-
-&lt;p&gt;Um abraço a todos e até a próxima!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Infranet Cartuchos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Av Min Geraldo Barreto Sobral, 215, loja G8 (para facilitar, fica no Shopping Jardins ao lado do GBarbosa)&lt;/p&gt;
-
-&lt;p&gt;Bairro Grageru&lt;/p&gt;
-
-&lt;p&gt;Aracaju/SE&lt;/p&gt;
-
-&lt;p&gt;Telefone: (79)3217-4119&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Infranet Suprimentos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Av Desembargador Maynard, 43 (fica na esquina do cruzamento dessa avenida com a Av Hermes Fontes, indo em direção à Av Beira Mar)&lt;/p&gt;
-
-&lt;p&gt;Bairro Cirurgia&lt;/p&gt;
-
-&lt;p&gt;Aracaju/SE&lt;/p&gt;
-
-&lt;p&gt;Telefone: (79)3222-3310&lt;/p&gt;
-</description>
-        <pubDate>Sun, 15 Apr 2012 19:00:07 -0300</pubDate>
-        <link>http://www.vinyanalista.com.br/blog/2012/04/15/onde-reciclar-cartuchos-de-tinta-em-aracaju/</link>
-        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/04/15/onde-reciclar-cartuchos-de-tinta-em-aracaju/</guid>
         
         
       </item>
