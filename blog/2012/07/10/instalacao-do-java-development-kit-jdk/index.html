@@ -7,6 +7,12 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="author" content="Antônio Vinícius Menezes Medeiros">
     <meta name="description" content="Para começar a programar em Java, seja para Desktop, Web ou celular, devemos instalar no computador o Java Development Kit (abreviadamente, JDK), que nada mais é que um conjunto de ferramentas que nos auxilia a compilar, testar e documentar programas escritos na linguagem Java. Ele também traz embutido o Java Runtime Environment (JRE), assim não...">
+    <link rel="canonical" href="http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/">
+    <link rel="alternate" type="application/rss+xml" title="vinyanalista.com.br" href="http://www.vinyanalista.com.br/feed.xml" />
+
+    <title>Instalação do Java Development Kit (JDK) - vinyanalista.com.br</title>
+
+    <!-- Facebook -->
     <meta property="og:url" content="http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Instalação do Java Development Kit (JDK) - vinyanalista.com.br" />
@@ -34,28 +40,79 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=2">
     <meta name="theme-color" content="#2196f3">
 
-    <title>Instalação do Java Development Kit (JDK) - vinyanalista.com.br</title>
-
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap CSS -->
     <link href="/lib/paper/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="/lib/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="/lib/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    <!-- SyntaxHighlighter -->
+    <!-- SyntaxHighlighter CSS -->
     <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shCore.css"/>
     <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shThemeDefault.css"/>
-    
+
     <!-- Custom styles for this template -->
     <link href="/css/syntax.css" rel="stylesheet">
     <link href="/css/comum.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="/lib/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="/lib/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Bootstrap JS -->
+    <script src="/lib/jquery/1.11.3/jquery-1.11.3.min.js"></script>
+    <script src="/lib/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/lib/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>
 
-    <link rel="canonical" href="http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/">
-    <link rel="alternate" type="application/rss+xml" title="vinyanalista.com.br" href="http://www.vinyanalista.com.br/feed.xml" />
+    <!-- SyntaxHighlighter JS -->
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shCore.js"></script>
+    <!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushAS3.js"></script>-->
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushBash.js"></script>
+    <!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushColdFusion.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCpp.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDelphi.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDiff.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushErlang.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushGroovy.js"></script>-->
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJava.js"></script>
+    <!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJavaFX.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPerl.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPhp.js"></script>-->
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPlain.js"></script>
+    <!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPowerShell.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPython.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushRuby.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushScala.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushSql.js"></script>
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushVb.js"></script>-->
+    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushXml.js"></script>
+
+    <!-- AddThis -->
+    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
+    <script type="text/javascript">
+        var addthis_share = {
+            url: "http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/",
+            title: document.title,
+            description: "Para começar a programar em Java, seja para Desktop, Web ou celular, devemos instalar no computador o Java Development Kit (abreviadamente, JDK), que nada mais é que um conjunto de ferramentas que nos auxilia a compilar, testar e documentar programas escritos na linguagem Java. Ele também traz embutido o Java Runtime Environment (JRE), assim não..."
+        };
+    </script>
+
+    <!-- AdSense -->
+    <script type="text/javascript">
+        var adsense_editor_id = "ca-pub-5193467168351289",
+            adsense_ad_units = [
+                "4511719452",
+                "5988452654",
+                "7465185857"
+            ];
+    </script>
+    <script src="/js/adsense_post.js"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Comum -->
+    <script src="/js/comum.js"></script>
 </head>
     <body>
         <!-- Fixed navbar -->
@@ -423,6 +480,19 @@ $ javac Teste.java
                 
                 
                     <li>
+                        <a href="/blog/2015/07/">
+                            
+                            Julho
+                            
+                            de 2015
+                        </a>
+                    </li>
+                
+            
+                
+                
+                
+                    <li>
                         <a href="/blog/2015/06/">
                             
                             Junho
@@ -548,64 +618,5 @@ $ javac Teste.java
         Copyright &copy; 2015. <a href='#sobre'>Antônio Vinícius Menezes Medeiros</a>. Todos os direitos reservados. Blog construído sobre o <a href="http://jekyllrb.com/" target='_blank'>Jekyll</a>. Tema <a href="https://bootswatch.com/paper/" target='_blank'>Paper</a>.
     </div>
 </footer>
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="/lib/jquery/1.11.3/jquery-1.11.3.min.js"></script>
-<script src="/lib/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="/lib/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>
-
-<!-- AddThis -->
-<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
-<script type="text/javascript">
-    var addthis_share = {
-        url: "http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/",
-        title: document.title,
-        description: "Para começar a programar em Java, seja para Desktop, Web ou celular, devemos instalar no computador o Java Development Kit (abreviadamente, JDK), que nada mais é que um conjunto de ferramentas que nos auxilia a compilar, testar e documentar programas escritos na linguagem Java. Ele também traz embutido o Java Runtime Environment (JRE), assim não..."
-    };
-</script>
-
-<!-- SyntaxHighlighter -->
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shCore.js"></script>
-<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushAS3.js"></script>-->
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushBash.js"></script>
-<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushColdFusion.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCpp.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCSharp.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCss.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDelphi.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDiff.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushErlang.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushGroovy.js"></script>-->
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJava.js"></script>
-<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJavaFX.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJScript.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPerl.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPhp.js"></script>-->
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPlain.js"></script>
-<!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPowerShell.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPython.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushRuby.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushScala.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushSql.js"></script>
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushVb.js"></script>-->
-<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushXml.js"></script>
-
-<!-- AdSense -->
-<script type="text/javascript">
-    var adsense_editor_id = "ca-pub-5193467168351289",
-        adsense_ad_units = [
-            "4511719452",
-            "5988452654",
-            "7465185857"
-        ];
-</script>
-<script src="/js/adsense_post.js"></script>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<!-- Comum -->
-<script src="/js/comum.js"></script>
     </body>
 </html>
