@@ -5,19 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    
+        <!--
+            redirect users to the https version of the website.
+            but: only check when on the production domain, as set in _config.yml.
+        -->
+        <script type="text/javascript">
+            if (("vinyanalista.github.io" == window.location.host) && (window.location.protocol != "https:"))
+                window.location = window.location.toString().replace(/^http:/, "https:");
+        </script>
+    
+    
     <meta name="author" content="Antônio Vinícius Menezes Medeiros">
     <meta name="description" content="Sabe como personalizar o ícone do seu site? Aquele que aparece na barra de título, na aba, ou no menu dos favoritos, quando você adiciona seu site aos favoritos. Ele é mais conhecido na Internet por favicon. Antigamente, na época em que o IBM PC, o Windows e o Internet Explorer dominavam seus respectivos mercados,...">
-    <link rel="canonical" href="http://www.vinyanalista.com.br/blog/2015/06/24/favicon/">
-    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="http://www.vinyanalista.com.br/feed.xml" />
+    <link rel="canonical" href="https://vinyanalista.github.io/blog/2015/06/24/favicon/">
+    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="https://vinyanalista.github.io/feed.xml" />
 
     <title>Como personalizar o ícone do seu site - Antônio Vinícius</title>
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://www.vinyanalista.com.br/blog/2015/06/24/favicon/" />
+    <meta property="og:url" content="https://vinyanalista.github.io/blog/2015/06/24/favicon/" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Como personalizar o ícone do seu site - Antônio Vinícius" />
     <meta property="og:description" content="Sabe como personalizar o ícone do seu site? Aquele que aparece na barra de título, na aba, ou no menu dos favoritos, quando você adiciona seu site aos favoritos. Ele é mais conhecido na Internet por favicon. Antigamente, na época em que o IBM PC, o Windows e o Internet Explorer dominavam seus respectivos mercados,..." />
-    <meta property="og:image" content="http://www.vinyanalista.com.br/files/2015/06/favicon_0.png" />
+    <meta property="og:image" content="https://vinyanalista.github.io/files/2015/06/favicon_0.png" />
 
     <!-- Favicons (by realfavicongenerator.net) -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=2">
@@ -63,7 +75,7 @@
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
     <script type="text/javascript">
         var addthis_share = {
-            url: "http://www.vinyanalista.com.br/blog/2015/06/24/favicon/",
+            url: "https://vinyanalista.github.io/blog/2015/06/24/favicon/",
             title: document.title,
             description: "Sabe como personalizar o ícone do seu site? Aquele que aparece na barra de título, na aba, ou no menu dos favoritos, quando você adiciona seu site aos favoritos. Ele é mais conhecido na Internet por favicon. Antigamente, na época em que o IBM PC, o Windows e o Internet Explorer dominavam seus respectivos mercados,..."
         };
@@ -147,7 +159,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="" addthis:title="" addthis:description="">
+                    <div class="addthis_toolbox addthis_default_style">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
                         <a class="addthis_button_google_plusone_share"></a>
@@ -289,6 +301,7 @@
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES * * */
             var disqus_shortname = 'vinyanalista';
+            var disqus_url = 'https://vinyanalista.github.io/blog/2015/06/24/favicon/';
 
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {

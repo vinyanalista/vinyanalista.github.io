@@ -5,19 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    
+        <!--
+            redirect users to the https version of the website.
+            but: only check when on the production domain, as set in _config.yml.
+        -->
+        <script type="text/javascript">
+            if (("vinyanalista.github.io" == window.location.host) && (window.location.protocol != "https:"))
+                window.location = window.location.toString().replace(/^http:/, "https:");
+        </script>
+    
+    
     <meta name="author" content="Antônio Vinícius Menezes Medeiros">
     <meta name="description" content="Nos dispositivos móveis (Android, iOS, BlackBerry, etc.) , aquele site tradicional projetado para PC com resolução 1024x768 não é exibido de maneira adequada. Muitas vezes, os elementos na tela aparecem muito pequenos, obrigando os visitantes a aumentar o zoom e deslizar a tela pra lá e pra cá para visualizar todo o conteúdo. Não raro,...">
-    <link rel="canonical" href="http://www.vinyanalista.com.br/blog/2015/07/05/bootstrap/">
-    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="http://www.vinyanalista.com.br/feed.xml" />
+    <link rel="canonical" href="https://vinyanalista.github.io/blog/2015/07/05/bootstrap/">
+    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="https://vinyanalista.github.io/feed.xml" />
 
     <title>Design multitelas com Bootstrap - Antônio Vinícius</title>
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://www.vinyanalista.com.br/blog/2015/07/05/bootstrap/" />
+    <meta property="og:url" content="https://vinyanalista.github.io/blog/2015/07/05/bootstrap/" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Design multitelas com Bootstrap - Antônio Vinícius" />
     <meta property="og:description" content="Nos dispositivos móveis (Android, iOS, BlackBerry, etc.) , aquele site tradicional projetado para PC com resolução 1024x768 não é exibido de maneira adequada. Muitas vezes, os elementos na tela aparecem muito pequenos, obrigando os visitantes a aumentar o zoom e deslizar a tela pra lá e pra cá para visualizar todo o conteúdo. Não raro,..." />
-    <meta property="og:image" content="http://www.vinyanalista.com.br/files/2015/07/bootstrap_0.jpg" />
+    <meta property="og:image" content="https://vinyanalista.github.io/files/2015/07/bootstrap_0.jpg" />
 
     <!-- Favicons (by realfavicongenerator.net) -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=2">
@@ -63,7 +75,7 @@
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
     <script type="text/javascript">
         var addthis_share = {
-            url: "http://www.vinyanalista.com.br/blog/2015/07/05/bootstrap/",
+            url: "https://vinyanalista.github.io/blog/2015/07/05/bootstrap/",
             title: document.title,
             description: "Nos dispositivos móveis (Android, iOS, BlackBerry, etc.) , aquele site tradicional projetado para PC com resolução 1024x768 não é exibido de maneira adequada. Muitas vezes, os elementos na tela aparecem muito pequenos, obrigando os visitantes a aumentar o zoom e deslizar a tela pra lá e pra cá para visualizar todo o conteúdo. Não raro,..."
         };
@@ -147,7 +159,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="" addthis:title="" addthis:description="">
+                    <div class="addthis_toolbox addthis_default_style">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
                         <a class="addthis_button_google_plusone_share"></a>
@@ -320,7 +332,7 @@
 <p>Se não quiser depender de servidores de terceiros para usar o Bootstrap, você também pode <a href="http://getbootstrap.com/getting-started/#download">baixá-lo</a> e hospedá-lo em seu próprio servidor. <a href="https://github.com/twbs/bootstrap/releases/download/v3.3.4/bootstrap-3.3.4-dist.zip">Clique aqui</a> para baixar o Bootstrap versão 3.3.4 (a versão mais atual do Bootstrap até o momento). Descompacte-o em algum local no seu servidor e atualize as referências de acordo, por exemplo (supondo que você extraiu o arquivo baixado na mesma pasta do arquivo acima):</p>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;bootstrap/css/bootstrap.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
 </code></pre></div>
-<p>Mais exemplos do Bootstrap em ação podem ser vistos na <a href="http://getbootstrap.com/getting-started/#examples">página de exemplos do Bootstrap</a> ou na <a href="http://expo.getbootstrap.com/">lista de <em>sites</em> feitos com Bootstrap</a>. Vale lembrar que <a href="http://www.vinyanalista.com.br">este <em>site</em></a> que você lê agora também utiliza o Bootstrap.</p>
+<p>Mais exemplos do Bootstrap em ação podem ser vistos na <a href="http://getbootstrap.com/getting-started/#examples">página de exemplos do Bootstrap</a> ou na <a href="http://expo.getbootstrap.com/">lista de <em>sites</em> feitos com Bootstrap</a>. Vale lembrar que <a href="https://vinyanalista.github.io">este <em>site</em></a> que você lê agora também utiliza o Bootstrap.</p>
 
 <h3><em>Design</em> responsivo</h3>
 
@@ -792,6 +804,7 @@
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES * * */
             var disqus_shortname = 'vinyanalista';
+            var disqus_url = 'https://vinyanalista.github.io/blog/2015/07/05/bootstrap/';
 
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {

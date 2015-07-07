@@ -5,19 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    
+        <!--
+            redirect users to the https version of the website.
+            but: only check when on the production domain, as set in _config.yml.
+        -->
+        <script type="text/javascript">
+            if (("vinyanalista.github.io" == window.location.host) && (window.location.protocol != "https:"))
+                window.location = window.location.toString().replace(/^http:/, "https:");
+        </script>
+    
+    
     <meta name="author" content="Antônio Vinícius Menezes Medeiros">
     <meta name="description" content="Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)">
-    <link rel="canonical" href="http://www.vinyanalista.com.br/blog/2014/09/23/">
-    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="http://www.vinyanalista.com.br/feed.xml" />
+    <link rel="canonical" href="https://vinyanalista.github.io/blog/2014/09/23/">
+    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="https://vinyanalista.github.io/feed.xml" />
 
     <title>Antônio Vinícius</title>
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://www.vinyanalista.com.br/blog/2014/09/23/" />
+    <meta property="og:url" content="https://vinyanalista.github.io/blog/2014/09/23/" />
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Antônio Vinícius" />
     <meta property="og:description" content="Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)" />
-    <meta property="og:image" content="http://www.vinyanalista.com.br" />
+    <meta property="og:image" content="https://vinyanalista.github.io" />
 
     <!-- Favicons (by realfavicongenerator.net) -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=2">
@@ -63,7 +75,7 @@
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
     <script type="text/javascript">
         var addthis_share = {
-            url: "http://www.vinyanalista.com.br/blog/2014/09/23/",
+            url: "https://vinyanalista.github.io/blog/2014/09/23/",
             title: document.title,
             description: "Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)"
         };
@@ -165,7 +177,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style" addthis:url="http://www.vinyanalista.com.br/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/" addthis:title="Controlando o VLC a partir do navegador ou do celular" addthis:description="O [VLC](http://www.videolan.org/vlc/) é o verdadeiro canivete suíço dos vídeos, é um player com vários recursos interessantes, dentre eles a possibilidade de controlar a reprodução remotamente, através do navegador ou do celular. A depender de como você o usa para reproduzir seus arquivos multimídia, isso pode ser interessante. Veja aqui como fazê-lo.
+                    <div class="addthis_toolbox addthis_default_style" addthis:url="https://vinyanalista.github.io/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/" addthis:title="Controlando o VLC a partir do navegador ou do celular" addthis:description="O [VLC](http://www.videolan.org/vlc/) é o verdadeiro canivete suíço dos vídeos, é um player com vários recursos interessantes, dentre eles a possibilidade de controlar a reprodução remotamente, através do navegador ou do celular. A depender de como você o usa para reproduzir seus arquivos multimídia, isso pode ser interessante. Veja aqui como fazê-lo.
 
 
 

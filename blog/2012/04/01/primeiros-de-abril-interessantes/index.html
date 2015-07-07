@@ -5,19 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    
+        <!--
+            redirect users to the https version of the website.
+            but: only check when on the production domain, as set in _config.yml.
+        -->
+        <script type="text/javascript">
+            if (("vinyanalista.github.io" == window.location.host) && (window.location.protocol != "https:"))
+                window.location = window.location.toString().replace(/^http:/, "https:");
+        </script>
+    
+    
     <meta name="author" content="Antônio Vinícius Menezes Medeiros">
     <meta name="description" content="Olá, pessoal! É com muito prazer que inauguro esse blog. Espero aqui compartilhar com vocês um pouco do que estudo, um pouco do que faço, um pouco do que acho interessante na Internet, sem muito compromisso em escrever muito elaborado, como faço nos meus artigos e dicas do Viva o Linux, assim posso postar com...">
-    <link rel="canonical" href="http://www.vinyanalista.com.br/blog/2012/04/01/primeiros-de-abril-interessantes/">
-    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="http://www.vinyanalista.com.br/feed.xml" />
+    <link rel="canonical" href="https://vinyanalista.github.io/blog/2012/04/01/primeiros-de-abril-interessantes/">
+    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="https://vinyanalista.github.io/feed.xml" />
 
     <title>Primeiros de abril interessantes - Antônio Vinícius</title>
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://www.vinyanalista.com.br/blog/2012/04/01/primeiros-de-abril-interessantes/" />
+    <meta property="og:url" content="https://vinyanalista.github.io/blog/2012/04/01/primeiros-de-abril-interessantes/" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Primeiros de abril interessantes - Antônio Vinícius" />
     <meta property="og:description" content="Olá, pessoal! É com muito prazer que inauguro esse blog. Espero aqui compartilhar com vocês um pouco do que estudo, um pouco do que faço, um pouco do que acho interessante na Internet, sem muito compromisso em escrever muito elaborado, como faço nos meus artigos e dicas do Viva o Linux, assim posso postar com..." />
-    <meta property="og:image" content="http://www.vinyanalista.com.br/files/2012/04/dia-da-mentira.jpg" />
+    <meta property="og:image" content="https://vinyanalista.github.io/files/2012/04/dia-da-mentira.jpg" />
 
     <!-- Favicons (by realfavicongenerator.net) -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=2">
@@ -63,7 +75,7 @@
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
     <script type="text/javascript">
         var addthis_share = {
-            url: "http://www.vinyanalista.com.br/blog/2012/04/01/primeiros-de-abril-interessantes/",
+            url: "https://vinyanalista.github.io/blog/2012/04/01/primeiros-de-abril-interessantes/",
             title: document.title,
             description: "Olá, pessoal! É com muito prazer que inauguro esse blog. Espero aqui compartilhar com vocês um pouco do que estudo, um pouco do que faço, um pouco do que acho interessante na Internet, sem muito compromisso em escrever muito elaborado, como faço nos meus artigos e dicas do Viva o Linux, assim posso postar com..."
         };
@@ -147,7 +159,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="" addthis:title="" addthis:description="">
+                    <div class="addthis_toolbox addthis_default_style">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
                         <a class="addthis_button_google_plusone_share"></a>
@@ -240,6 +252,7 @@
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES * * */
             var disqus_shortname = 'vinyanalista';
+            var disqus_url = 'https://vinyanalista.github.io/blog/2012/04/01/primeiros-de-abril-interessantes/';
 
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {

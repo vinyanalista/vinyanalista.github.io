@@ -5,19 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    
+        <!--
+            redirect users to the https version of the website.
+            but: only check when on the production domain, as set in _config.yml.
+        -->
+        <script type="text/javascript">
+            if (("vinyanalista.github.io" == window.location.host) && (window.location.protocol != "https:"))
+                window.location = window.location.toString().replace(/^http:/, "https:");
+        </script>
+    
+    
     <meta name="author" content="Antônio Vinícius Menezes Medeiros">
     <meta name="description" content="Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações...">
-    <link rel="canonical" href="http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/">
-    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="http://www.vinyanalista.com.br/feed.xml" />
+    <link rel="canonical" href="https://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/">
+    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="https://vinyanalista.github.io/feed.xml" />
 
     <title>Problemas envolvendo bootloaders, MBR e tabela de partições - Antônio Vinícius</title>
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/" />
+    <meta property="og:url" content="https://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Problemas envolvendo bootloaders, MBR e tabela de partições - Antônio Vinícius" />
     <meta property="og:description" content="Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações..." />
-    <meta property="og:image" content="http://www.vinyanalista.com.br/files/2012/04/computador-maluco.jpg" />
+    <meta property="og:image" content="https://vinyanalista.github.io/files/2012/04/computador-maluco.jpg" />
 
     <!-- Favicons (by realfavicongenerator.net) -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=2">
@@ -63,7 +75,7 @@
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
     <script type="text/javascript">
         var addthis_share = {
-            url: "http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/",
+            url: "https://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/",
             title: document.title,
             description: "Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações..."
         };
@@ -147,7 +159,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="" addthis:title="" addthis:description="">
+                    <div class="addthis_toolbox addthis_default_style">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
                         <a class="addthis_button_google_plusone_share"></a>
@@ -369,6 +381,7 @@ Device    Boot      Start         End      Blocks   Id  System
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES * * */
             var disqus_shortname = 'vinyanalista';
+            var disqus_url = 'https://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/';
 
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {

@@ -3,10 +3,10 @@
   <channel>
     <title>Antônio Vinícius</title>
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
-    <link>http://www.vinyanalista.com.br/</link>
-    <atom:link href="http://www.vinyanalista.com.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Jul 2015 15:31:58 -0300</pubDate>
-    <lastBuildDate>Tue, 07 Jul 2015 15:31:58 -0300</lastBuildDate>
+    <link>https://vinyanalista.github.io/</link>
+    <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 07 Jul 2015 18:31:41 -0300</pubDate>
+    <lastBuildDate>Tue, 07 Jul 2015 18:31:41 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -170,7 +170,7 @@
 &lt;p&gt;Se não quiser depender de servidores de terceiros para usar o Bootstrap, você também pode &lt;a href=&quot;http://getbootstrap.com/getting-started/#download&quot;&gt;baixá-lo&lt;/a&gt; e hospedá-lo em seu próprio servidor. &lt;a href=&quot;https://github.com/twbs/bootstrap/releases/download/v3.3.4/bootstrap-3.3.4-dist.zip&quot;&gt;Clique aqui&lt;/a&gt; para baixar o Bootstrap versão 3.3.4 (a versão mais atual do Bootstrap até o momento). Descompacte-o em algum local no seu servidor e atualize as referências de acordo, por exemplo (supondo que você extraiu o arquivo baixado na mesma pasta do arquivo acima):&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;bootstrap/css/bootstrap.min.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Mais exemplos do Bootstrap em ação podem ser vistos na &lt;a href=&quot;http://getbootstrap.com/getting-started/#examples&quot;&gt;página de exemplos do Bootstrap&lt;/a&gt; ou na &lt;a href=&quot;http://expo.getbootstrap.com/&quot;&gt;lista de &lt;em&gt;sites&lt;/em&gt; feitos com Bootstrap&lt;/a&gt;. Vale lembrar que &lt;a href=&quot;http://www.vinyanalista.com.br&quot;&gt;este &lt;em&gt;site&lt;/em&gt;&lt;/a&gt; que você lê agora também utiliza o Bootstrap.&lt;/p&gt;
+&lt;p&gt;Mais exemplos do Bootstrap em ação podem ser vistos na &lt;a href=&quot;http://getbootstrap.com/getting-started/#examples&quot;&gt;página de exemplos do Bootstrap&lt;/a&gt; ou na &lt;a href=&quot;http://expo.getbootstrap.com/&quot;&gt;lista de &lt;em&gt;sites&lt;/em&gt; feitos com Bootstrap&lt;/a&gt;. Vale lembrar que &lt;a href=&quot;https://vinyanalista.github.io&quot;&gt;este &lt;em&gt;site&lt;/em&gt;&lt;/a&gt; que você lê agora também utiliza o Bootstrap.&lt;/p&gt;
 
 &lt;h3&gt;&lt;em&gt;Design&lt;/em&gt; responsivo&lt;/h3&gt;
 
@@ -621,8 +621,8 @@
 &lt;/script&gt;
 </description>
         <pubDate>Sun, 05 Jul 2015 02:05:00 -0300</pubDate>
-        <link>http://www.vinyanalista.com.br/blog/2015/07/05/bootstrap/</link>
-        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2015/07/05/bootstrap/</guid>
+        <link>https://vinyanalista.github.io/blog/2015/07/05/bootstrap/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/07/05/bootstrap/</guid>
         
         
       </item>
@@ -736,8 +736,8 @@
 &lt;p&gt;Se tiver curiosidade de verificar quais dispositivos e navegadores são suportados pelo Real Favicon Generator, acesse &lt;a href=&quot;http://realfavicongenerator.net/favicon_compatibility&quot;&gt;essa página&lt;/a&gt;. Você também pode tirar quaisquer dúvidas na seção de &lt;a href=&quot;http://realfavicongenerator.net/faq&quot;&gt;perguntas frequentes (FAQ, no inglês)&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 24 Jun 2015 01:00:00 -0300</pubDate>
-        <link>http://www.vinyanalista.com.br/blog/2015/06/24/favicon/</link>
-        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2015/06/24/favicon/</guid>
+        <link>https://vinyanalista.github.io/blog/2015/06/24/favicon/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/06/24/favicon/</guid>
         
         
       </item>
@@ -950,8 +950,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 23 Sep 2014 15:38:39 -0300</pubDate>
-        <link>http://www.vinyanalista.com.br/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</link>
-        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</guid>
+        <link>https://vinyanalista.github.io/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</guid>
         
         
       </item>
@@ -1017,8 +1017,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 20 Jan 2014 04:53:32 -0200</pubDate>
-        <link>http://www.vinyanalista.com.br/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</link>
-        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</guid>
+        <link>https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</guid>
         
         
       </item>
@@ -1147,8 +1147,8 @@ Disk identifier: 0x1ba01b9f
 &lt;p&gt;Abraço a todos e até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Tue, 30 Jul 2013 02:50:45 -0300</pubDate>
-        <link>http://www.vinyanalista.com.br/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</link>
-        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</guid>
+        <link>https://vinyanalista.github.io/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</guid>
         
         
       </item>
@@ -1333,8 +1333,8 @@ Disk identifier: 0x1ba01b9f
 &lt;p&gt;Bem, pessoal, vou ficando por aqui, espero que tenham gostado… até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Jul 2012 04:36:13 -0300</pubDate>
-        <link>http://www.vinyanalista.com.br/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</link>
-        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</guid>
+        <link>https://vinyanalista.github.io/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</guid>
         
         
       </item>
@@ -1502,8 +1502,8 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
 &lt;p&gt;Abraço a todos e até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Jul 2012 23:16:17 -0300</pubDate>
-        <link>http://www.vinyanalista.com.br/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</link>
-        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</guid>
+        <link>https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</guid>
         
         
       </item>
@@ -1702,8 +1702,8 @@ INFO: JBoss Remoting version 3.2.3.GA
 &lt;p&gt;Também podemos fazer deploy e undeploy de aplicações no servidor, entre outras configurações, usando o console de administração do JBoss AS. Examinaremos esse console na &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/&quot;&gt;segunda parte desse post&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Jul 2012 22:18:38 -0300</pubDate>
-        <link>http://www.vinyanalista.com.br/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</link>
-        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</guid>
+        <link>https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</guid>
         
         
       </item>
@@ -1832,8 +1832,8 @@ $ mvn package
 &lt;p&gt;Abraço a todos, e até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Jul 2012 02:57:24 -0300</pubDate>
-        <link>http://www.vinyanalista.com.br/blog/2012/07/18/instalacao-do-apache-maven/</link>
-        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/07/18/instalacao-do-apache-maven/</guid>
+        <link>https://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/</guid>
         
         
       </item>
@@ -2043,8 +2043,8 @@ $ javac Teste.java
 &lt;p&gt;Espero que esse post possa ser útil a programadores Java iniciantes de uma maneira em geral. Agradeço previamente opiniões e críticas construtivas. Ofereço o espaço para perguntas também. Abraço a todos e até a próxima!&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Jul 2012 01:01:10 -0300</pubDate>
-        <link>http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</link>
-        <guid isPermaLink="true">http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</guid>
+        <link>https://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</guid>
         
         
       </item>

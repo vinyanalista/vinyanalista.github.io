@@ -5,19 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    
+        <!--
+            redirect users to the https version of the website.
+            but: only check when on the production domain, as set in _config.yml.
+        -->
+        <script type="text/javascript">
+            if (("vinyanalista.github.io" == window.location.host) && (window.location.protocol != "https:"))
+                window.location = window.location.toString().replace(/^http:/, "https:");
+        </script>
+    
+    
     <meta name="author" content="Antônio Vinícius Menezes Medeiros">
     <meta name="description" content="Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)">
-    <link rel="canonical" href="http://www.vinyanalista.com.br/">
-    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="http://www.vinyanalista.com.br/feed.xml" />
+    <link rel="canonical" href="https://vinyanalista.github.io/">
+    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="https://vinyanalista.github.io/feed.xml" />
 
     <title>Antônio Vinícius</title>
 
     <!-- Facebook -->
-    <meta property="og:url" content="http://www.vinyanalista.com.br/" />
+    <meta property="og:url" content="https://vinyanalista.github.io/" />
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Antônio Vinícius" />
     <meta property="og:description" content="Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)" />
-    <meta property="og:image" content="http://www.vinyanalista.com.br/favicon.png" />
+    <meta property="og:image" content="https://vinyanalista.github.io/favicon.png" />
 
     <!-- Favicons (by realfavicongenerator.net) -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=2">
@@ -63,7 +75,7 @@
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
     <script type="text/javascript">
         var addthis_share = {
-            url: "http://www.vinyanalista.com.br/index.html",
+            url: "https://vinyanalista.github.io/index.html",
             title: document.title,
             description: "Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)"
         };
@@ -148,7 +160,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="http://www.vinyanalista.com.br/blog/2015/07/05/bootstrap/" addthis:title="Design multitelas com Bootstrap" addthis:description="Nos dispositivos móveis (Android, iOS, BlackBerry, etc.) , aquele site tradicional projetado para PC com resolução 1024x768 não é exibido de maneira adequada. Muitas vezes, os elementos na tela aparecem muito pequenos, obrigando os visitantes a aumentar o zoom e deslizar a tela pra lá e pra cá para visualizar todo o conteúdo. Não raro,...">
+                    <div class="addthis_toolbox addthis_default_style"  addthis:url="https://vinyanalista.github.io/blog/2015/07/05/bootstrap/" addthis:title="Design multitelas com Bootstrap" addthis:description="Nos dispositivos móveis (Android, iOS, BlackBerry, etc.) , aquele site tradicional projetado para PC com resolução 1024x768 não é exibido de maneira adequada. Muitas vezes, os elementos na tela aparecem muito pequenos, obrigando os visitantes a aumentar o zoom e deslizar a tela pra lá e pra cá para visualizar todo o conteúdo. Não raro,...">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
                         <a class="addthis_button_google_plusone_share"></a>
@@ -199,7 +211,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="http://www.vinyanalista.com.br/blog/2015/06/24/favicon/" addthis:title="Como personalizar o ícone do seu site" addthis:description="Sabe como personalizar o ícone do seu site? Aquele que aparece na barra de título, na aba, ou no menu dos favoritos, quando você adiciona seu site aos favoritos. Ele é mais conhecido na Internet por favicon. Antigamente, na época em que o IBM PC, o Windows e o Internet Explorer dominavam seus respectivos mercados,...">
+                    <div class="addthis_toolbox addthis_default_style"  addthis:url="https://vinyanalista.github.io/blog/2015/06/24/favicon/" addthis:title="Como personalizar o ícone do seu site" addthis:description="Sabe como personalizar o ícone do seu site? Aquele que aparece na barra de título, na aba, ou no menu dos favoritos, quando você adiciona seu site aos favoritos. Ele é mais conhecido na Internet por favicon. Antigamente, na época em que o IBM PC, o Windows e o Internet Explorer dominavam seus respectivos mercados,...">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
                         <a class="addthis_button_google_plusone_share"></a>
@@ -250,7 +262,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="http://www.vinyanalista.com.br/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/" addthis:title="Controlando o VLC a partir do navegador ou do celular" addthis:description="O VLC é o verdadeiro canivete suíço dos vídeos, é um player com vários recursos interessantes, dentre eles a possibilidade de controlar a reprodução remotamente, através do navegador ou do celular. A depender de como você o usa para reproduzir seus arquivos multimídia, isso pode ser interessante. Veja aqui como fazê-lo.
+                    <div class="addthis_toolbox addthis_default_style"  addthis:url="https://vinyanalista.github.io/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/" addthis:title="Controlando o VLC a partir do navegador ou do celular" addthis:description="O VLC é o verdadeiro canivete suíço dos vídeos, é um player com vários recursos interessantes, dentre eles a possibilidade de controlar a reprodução remotamente, através do navegador ou do celular. A depender de como você o usa para reproduzir seus arquivos multimídia, isso pode ser interessante. Veja aqui como fazê-lo.
 ">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
@@ -302,7 +314,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="http://www.vinyanalista.com.br/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/" addthis:title="Reduzindo o tamanho de discos rígidos virtuais do VirtualBox" addthis:description="É verdade que quando criamos um disco rígido virtual dinamicamente alocado no VirtualBox, ele cresce à medida em que arquivos são gravados. No entanto, seu tamanho não diminui à medida em que excluímos arquivos. Veja agora como é possível reduzir discos rígidos desse tipo no VirtualBox.
+                    <div class="addthis_toolbox addthis_default_style"  addthis:url="https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/" addthis:title="Reduzindo o tamanho de discos rígidos virtuais do VirtualBox" addthis:description="É verdade que quando criamos um disco rígido virtual dinamicamente alocado no VirtualBox, ele cresce à medida em que arquivos são gravados. No entanto, seu tamanho não diminui à medida em que excluímos arquivos. Veja agora como é possível reduzir discos rígidos desse tipo no VirtualBox.
 ">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
@@ -354,7 +366,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="http://www.vinyanalista.com.br/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/" addthis:title="Recuperando o boot do Windows após instalação do Linux" addthis:description="É, pessoal, sei que é uma situação um tanto inusitada, mas aconteceu comigo hoje, quando tentei instalar o openSUSE 12.3 no meu computador, que até então só tinha o Windows 7. O problema mais comum é quando o Linux já está instalado e então instalamos o Windows, que a princípio impede que outros sistemas sejam...">
+                    <div class="addthis_toolbox addthis_default_style"  addthis:url="https://vinyanalista.github.io/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/" addthis:title="Recuperando o boot do Windows após instalação do Linux" addthis:description="É, pessoal, sei que é uma situação um tanto inusitada, mas aconteceu comigo hoje, quando tentei instalar o openSUSE 12.3 no meu computador, que até então só tinha o Windows 7. O problema mais comum é quando o Linux já está instalado e então instalamos o Windows, que a princípio impede que outros sistemas sejam...">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
                         <a class="addthis_button_google_plusone_share"></a>
@@ -405,7 +417,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="http://www.vinyanalista.com.br/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/" addthis:title="Configurando um datasource do MySQL no JBoss AS" addthis:description="O MySQL é um banco de dados de código aberto desenvolvido pela Oracle. Ele se tornou um dos bancos de dados mais utilizados no mundo devido ao fato de se integrar perfeitamente ao PHP, sendo oferecido pela maioria dos serviços de hospedagem de sites em conjunto com o suporte a essa linguagem. Nesse post, você...">
+                    <div class="addthis_toolbox addthis_default_style"  addthis:url="https://vinyanalista.github.io/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/" addthis:title="Configurando um datasource do MySQL no JBoss AS" addthis:description="O MySQL é um banco de dados de código aberto desenvolvido pela Oracle. Ele se tornou um dos bancos de dados mais utilizados no mundo devido ao fato de se integrar perfeitamente ao PHP, sendo oferecido pela maioria dos serviços de hospedagem de sites em conjunto com o suporte a essa linguagem. Nesse post, você...">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
                         <a class="addthis_button_google_plusone_share"></a>
@@ -456,7 +468,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="http://www.vinyanalista.com.br/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/" addthis:title="Apresentando o servidor de aplicação JBoss AS 7 (parte 2)" addthis:description="O JBoss Application Server (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela JBoss (atualmente, uma divisão da Red Hat) para a plataforma Java EE. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações...">
+                    <div class="addthis_toolbox addthis_default_style"  addthis:url="https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/" addthis:title="Apresentando o servidor de aplicação JBoss AS 7 (parte 2)" addthis:description="O JBoss Application Server (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela JBoss (atualmente, uma divisão da Red Hat) para a plataforma Java EE. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações...">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
                         <a class="addthis_button_google_plusone_share"></a>
@@ -507,7 +519,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="http://www.vinyanalista.com.br/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/" addthis:title="Apresentando o servidor de aplicação JBoss AS 7" addthis:description="O JBoss Application Server (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela JBoss (atualmente, uma divisão da Red Hat) para a plataforma Java EE. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações...">
+                    <div class="addthis_toolbox addthis_default_style"  addthis:url="https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/" addthis:title="Apresentando o servidor de aplicação JBoss AS 7" addthis:description="O JBoss Application Server (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela JBoss (atualmente, uma divisão da Red Hat) para a plataforma Java EE. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações...">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
                         <a class="addthis_button_google_plusone_share"></a>
@@ -558,7 +570,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="http://www.vinyanalista.com.br/blog/2012/07/18/instalacao-do-apache-maven/" addthis:title="Instalação do Apache Maven" addthis:description="Olá, pessoal, nesse post vocês vão ver como instalar e executar pela primeira vez o Apache Maven em seus computadores. O Maven é uma ferramenta que facilita e automatiza bastante o gerenciamento de projetos em Java, auxiliando os desenvolvedores nas etapas de definição, codificação, compilação, testes, empacotamento, implantação, documentação e distribuição da aplicação. Nesse post,...">
+                    <div class="addthis_toolbox addthis_default_style"  addthis:url="https://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/" addthis:title="Instalação do Apache Maven" addthis:description="Olá, pessoal, nesse post vocês vão ver como instalar e executar pela primeira vez o Apache Maven em seus computadores. O Maven é uma ferramenta que facilita e automatiza bastante o gerenciamento de projetos em Java, auxiliando os desenvolvedores nas etapas de definição, codificação, compilação, testes, empacotamento, implantação, documentação e distribuição da aplicação. Nesse post,...">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
                         <a class="addthis_button_google_plusone_share"></a>
@@ -609,7 +621,7 @@
             <div class='col-sm-6'>
                 <div class='blog-post-redes-sociais'>
                     <!-- AddThis Button BEGIN -->
-                    <div class="addthis_toolbox addthis_default_style"  addthis:url="http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/" addthis:title="Instalação do Java Development Kit (JDK)" addthis:description="Para começar a programar em Java, seja para Desktop, Web ou celular, devemos instalar no computador o Java Development Kit (abreviadamente, JDK), que nada mais é que um conjunto de ferramentas que nos auxilia a compilar, testar e documentar programas escritos na linguagem Java. Ele também traz embutido o Java Runtime Environment (JRE), assim não...">
+                    <div class="addthis_toolbox addthis_default_style"  addthis:url="https://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/" addthis:title="Instalação do Java Development Kit (JDK)" addthis:description="Para começar a programar em Java, seja para Desktop, Web ou celular, devemos instalar no computador o Java Development Kit (abreviadamente, JDK), que nada mais é que um conjunto de ferramentas que nos auxilia a compilar, testar e documentar programas escritos na linguagem Java. Ele também traz embutido o Java Runtime Environment (JRE), assim não...">
                         <a class="addthis_button_facebook"></a>
                         <a class="addthis_button_twitter" data-via="vinyanalista"></a>
                         <a class="addthis_button_google_plusone_share"></a>
