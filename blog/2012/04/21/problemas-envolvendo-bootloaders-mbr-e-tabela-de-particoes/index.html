@@ -8,14 +8,14 @@
     <meta name="author" content="Antônio Vinícius Menezes Medeiros">
     <meta name="description" content="Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações...">
     <link rel="canonical" href="http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/">
-    <link rel="alternate" type="application/rss+xml" title="vinyanalista.com.br" href="http://www.vinyanalista.com.br/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="http://www.vinyanalista.com.br/feed.xml" />
 
-    <title>Problemas envolvendo bootloaders, MBR e tabela de partições - vinyanalista.com.br</title>
+    <title>Problemas envolvendo bootloaders, MBR e tabela de partições - Antônio Vinícius</title>
 
     <!-- Facebook -->
     <meta property="og:url" content="http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/" />
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Problemas envolvendo bootloaders, MBR e tabela de partições - vinyanalista.com.br" />
+    <meta property="og:title" content="Problemas envolvendo bootloaders, MBR e tabela de partições - Antônio Vinícius" />
     <meta property="og:description" content="Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações..." />
     <meta property="og:image" content="http://www.vinyanalista.com.br/files/2012/04/computador-maluco.jpg" />
 
@@ -49,10 +49,6 @@
         <script src="/lib/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- SyntaxHighlighter CSS -->
-    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shCore.css"/>
-    <link type="text/css" rel="stylesheet" href="/lib/syntaxhighlighter/2.1.382/styles/shThemeDefault.css"/>
-
     <!-- Custom styles for this template -->
     <link href="/css/syntax.css" rel="stylesheet">
     <link href="/css/comum.css" rel="stylesheet">
@@ -63,34 +59,8 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/lib/bootstrap/3.3.4/js/ie10-viewport-bug-workaround.js"></script>
 
-    <!-- SyntaxHighlighter JS -->
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shCore.js"></script>
-    <!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushAS3.js"></script>-->
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushBash.js"></script>
-    <!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushColdFusion.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCpp.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCSharp.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushCss.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDelphi.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushDiff.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushErlang.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushGroovy.js"></script>-->
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJava.js"></script>
-    <!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJavaFX.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushJScript.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPerl.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPhp.js"></script>-->
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPlain.js"></script>
-    <!--<script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPowerShell.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushPython.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushRuby.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushScala.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushSql.js"></script>
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushVb.js"></script>-->
-    <script type="text/javascript" src="/lib/syntaxhighlighter/2.1.382/scripts/shBrushXml.js"></script>
-
     <!-- AddThis -->
-    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f" async="async"></script>
     <script type="text/javascript">
         var addthis_share = {
             url: "http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/",
@@ -108,11 +78,11 @@
                 "7465185857"
             ];
     </script>
-    <script src="/js/adsense_post.js"></script>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <!-- Comum -->
     <script src="/js/comum.js"></script>
+    <script src="/js/adsense.js"></script>
 </head>
     <body>
         <!-- Fixed navbar -->
@@ -125,7 +95,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">vinyanalista.com.br</a>
+            <a class="navbar-brand" href="/">Antônio Vinícius</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -197,6 +167,7 @@
     <a href='/files/2012/04/computador-maluco.jpg' title=''>
         <img src='/files/2012/04/computador-maluco.jpg' alt='' class='img-responsive img-thumbnail'>
     </a>
+    
 </p>
 
 <p>É algo que não desejo a ninguém, mas se algum dia alguém vier a passar pelo que eu passei (ou algo parecido) pode ler as páginas aqui indicadas e ver se alguma das soluções propostas por elas se aplica ao caso.</p>
@@ -206,9 +177,7 @@
 <h3>O que aconteceu</h3>
 
 <p>Vou tentar ser breve nessa explicação (realmente é uma longa história, se estiverem mais interessados nas possíveis soluções para o problema, podem pular pros próximos tópicos). Tenho dois HDs, particionados como mostra a saída do comando <code>fdisk</code> no Linux a seguir. Em resumo, são duas partições pros sistemas operacionais (Windows 7 e <a href="http://www.debian.org/">Debian</a>) e duas partições para arquivos pessoais.</p>
-
-<script type="syntaxhighlighter" class="brush: text; gutter: false"><![CDATA[
-Disk /dev/sdb: 250.1 GB, 250059350016 bytes
+<div class="highlight"><pre><code class="language-text" data-lang="text">Disk /dev/sdb: 250.1 GB, 250059350016 bytes
 255 heads, 63 sectors/track, 30401 cylinders, total 488397168 sectors
 Units = sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
@@ -231,8 +200,7 @@ Device    Boot      Start         End      Blocks   Id  System
 /dev/sda3      1468010496  1887440895   209715200    7  HPFS/NTFS/exFAT
 /dev/sda4   *  1887442942  1953523711    33040385    5  Extended
 /dev/sda5      1887442944  1953523711    33040384   83  Linux
-]]></script>
-
+</code></pre></div>
 <p>Como estou pensando em mudar de distribuição, hoje decidi instalar o <a href="http://www.opensuse.org/">openSUSE</a> no lugar do Debian. Gravei o CD do openSUSE, nenhum procedimento de backup, já que estou acostumado a formatações (um erro, admito), iniciei o computador pelo CD, respondi a todas as perguntas do instalador, iniciou-se a cópia dos arquivos, até aí tudo bem.</p>
 
 <p>O problema começou quando percebi que a cópia dos arquivos estava muito lenta. Imaginei que a causa fosse a mídia, o que confirmei quando reiniciei e executei o teste pelo próprio LiveCD (outro erro: iniciar a instalação sem ter verificado antes a mídia).</p>
@@ -240,7 +208,8 @@ Device    Boot      Start         End      Blocks   Id  System
 <p>Só que a essa altura do campeonato o instalador já tinha formatado a partição que antes era do Debian, o <a href="http://www.gnu.org/software/grub/">GRUB</a> tornou-se então inutilizável, o que me impediria de acessar o Windows e gravar um novo CD do openSUSE. Iniciei o computador pelo <a href="http://www.slax.org/">Slax</a> que tenho em um pendrive e tentei gravar o CD do openSUSE por ele usando o <a href="http://k3b.org/">K3B</a> (seria a solução mais prática, já que instalando o openSUSE eu teria o GRUB e o Windows de volta, né?), sem sucesso. Eis que decidi <a href="http://www.cyberciti.biz/faq/linux-how-to-uninstall-grub/">remover o GRUB do HD</a> para que o computador iniciasse diretamente pelo Windows. Aí foi onde eu cometi o erro mais grave de todos.</p>
 
 <p>O comando que eu queria executar deveria apagar apenas o gerenciador de boot (bootloader) do Linux, o GRUB, no entanto ele apagou a MBR inteira, incluindo a tabela de partições. O comando que eu utilizei foi:</p>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text"># dd if=/dev/null of=/dev/sda bs=512 count=1
+</code></pre></div>
 <p>Quando deveria ser (esses comandos eu obtive <a href="http://www.cyberciti.biz/faq/linux-how-to-uninstall-grub/">aqui</a>, por que o cidadão que escreveu aquele tutorial tinha que ter colocado aquele comando primeiro, hein?):</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text"># dd if=/dev/null of=/dev/sda bs=446 count=1
 </code></pre></div>
@@ -262,12 +231,11 @@ Device    Boot      Start         End      Blocks   Id  System
     <a href='/files/2012/04/win7-system-recovery-options.jpg' title='Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7'>
         <img src='/files/2012/04/win7-system-recovery-options.jpg' alt='Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7' class='img-responsive img-thumbnail'>
     </a>
-</p>
-
-<p class='text-center'>
-    <em>
+    
+    <em class='caption'>
         Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7
     </em>
+    
 </p>
 
 <p>Eu cliquei em “Startup Repair”, esperei ele concluir o reparo, e após isso, reiniciei o computador, mas nada mudou.</p>
@@ -301,12 +269,11 @@ Device    Boot      Start         End      Blocks   Id  System
     <a href='/files/2012/04/erro-0xc000000e.jpg' title='Erro 0xc000000e'>
         <img src='/files/2012/04/erro-0xc000000e.jpg' alt='Erro 0xc000000e' class='img-responsive img-thumbnail'>
     </a>
-</p>
-
-<p class='text-center'>
-    <em>
+    
+    <em class='caption'>
         Erro 0xc000000e
     </em>
+    
 </p>
 
 <p>Mais uma rodada de tentativas executando aqueles comandos que eu mostrei acima, e dessa vez houve algum resultado: só que o sistema ainda não funcionou, o erro foi que mudou. Agora a tela exibia:</p>
@@ -315,12 +282,11 @@ Device    Boot      Start         End      Blocks   Id  System
     <a href='/files/2012/04/erro-bootmgr.png' title='BOOTMGR is missing'>
         <img src='/files/2012/04/erro-bootmgr.png' alt='BOOTMGR is missing' class='img-responsive img-thumbnail'>
     </a>
-</p>
-
-<p class='text-center'>
-    <em>
+    
+    <em class='caption'>
         BOOTMGR is missing
     </em>
+    
 </p>
 
 <p>Encontrei algumas soluções na Internet, mas decidi tentar primeiro a que tinha <a href="http://support.microsoft.com/kb/2622803">no site da Microsoft</a>: tentei o método 2 fornecido nessa página, que consiste em executar, da mesma forma que os comandos anteriores, o comando:</p>
@@ -342,24 +308,22 @@ Device    Boot      Start         End      Blocks   Id  System
     <a href='/files/2012/04/win7-boot.jpg' title='O que aparecia antes enquanto o Windows 7 era carregado'>
         <img src='/files/2012/04/win7-boot.jpg' alt='O que aparecia antes enquanto o Windows 7 era carregado' class='img-responsive img-thumbnail'>
     </a>
-</p>
-
-<p class='text-center'>
-    <em>
+    
+    <em class='caption'>
         O que aparecia antes enquanto o Windows 7 era carregado
     </em>
+    
 </p>
 
 <p class='text-center'>
     <a href='/files/2012/04/winvista-boot.jpg' title='O que aparece agora'>
         <img src='/files/2012/04/winvista-boot.jpg' alt='O que aparece agora' class='img-responsive img-thumbnail'>
     </a>
-</p>
-
-<p class='text-center'>
-    <em>
+    
+    <em class='caption'>
         O que aparece agora
     </em>
+    
 </p>
 
 <p>Eu poderia <a href="http://www.vivaolinux.com.br/dica/Restaurando-o-GRUB-apos-a-instalacao-de-outro-sistema-operacional">facilmente recuperar o GRUB</a> para conseguir acessar o Linux, mas como a instalação do Ubuntu era provisória, preferi gravar o CD do openSUSE e instalá-lo por cima do Ubuntu, o que devolveu o GRUB ao MBR e o atualizou para fornecer o Windows 7 e o openSUSE como opções. Desliguei o computador, devolvi o cabo de força do outro HD, liguei de novo pra ver se estava tudo bem, ele reconheceu o “novo” disco rígido… Agora está tudo como era antes, e com o Linux novo, como eu queria.</p>
@@ -610,5 +574,8 @@ Device    Boot      Start         End      Blocks   Id  System
         Copyright &copy; 2015. <a href='#sobre'>Antônio Vinícius Menezes Medeiros</a>. Todos os direitos reservados. Blog construído sobre o <a href="http://jekyllrb.com/" target='_blank'>Jekyll</a>. Tema <a href="https://bootswatch.com/paper/" target='_blank'>Paper</a>.
     </div>
 </footer>
+
+<input type="hidden" id="is_post" value="true">
+
     </body>
 </html>

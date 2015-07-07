@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vinyanalista.com.br</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
+    <title>Antônio Vinícius</title>
+    <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>http://www.vinyanalista.com.br/</link>
     <atom:link href="http://www.vinyanalista.com.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Jul 2015 02:06:07 -0300</pubDate>
-    <lastBuildDate>Sun, 05 Jul 2015 02:06:07 -0300</lastBuildDate>
+    <pubDate>Tue, 07 Jul 2015 11:41:47 -0300</pubDate>
+    <lastBuildDate>Tue, 07 Jul 2015 11:41:47 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -20,6 +19,7 @@
     &lt;a href=&#39;/files/2015/07/bootstrap_0.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2015/07/bootstrap_0.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Um &lt;strong&gt;&lt;em&gt;design&lt;/em&gt; responsivo&lt;/strong&gt;, explicado de maneira simples, é aquele que se adapta (responde) ao tamanho da tela do dispositivo em que é renderizado. Se um &lt;em&gt;site&lt;/em&gt; é projetado tendo em vista tão somente dispositivos móveis, pode parecer muito grande ou espaçoso em um computador de mesa. Por outro lado, se projetado para computadores de mesa, pode parecer pequeno em dispositivos móveis. Um &lt;em&gt;site&lt;/em&gt; responsivo exibe seu conteúdo de uma maneira em computadores de mesa e de outra maneira em dispositivos móveis, ajustando-se da melhor maneira ao espaço disponível na tela.&lt;/p&gt;
@@ -34,12 +34,14 @@
     &lt;a href=&#39;/files/2015/07/bootstrap_1.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2015/07/bootstrap_1.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p class=&#39;text-center&#39;&gt;
     &lt;a href=&#39;/files/2015/07/bootstrap_2.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2015/07/bootstrap_2.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Sem mais conversa, vejamos como utilizar esse &lt;em&gt;framework&lt;/em&gt; que é uma verdadeira mão na roda! Não apenas responsividade, o Bootstrap provê componentes e estilos prontos, que podem ser utilizados para tornar o &lt;em&gt;site&lt;/em&gt; ou aplicação &lt;em&gt;web&lt;/em&gt; mais bonita e funcional.&lt;/p&gt;
@@ -662,6 +664,7 @@
     &lt;a href=&#39;/files/2015/06/favicon_1.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2015/06/favicon_1.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Para começar, acesse o &lt;a href=&quot;http://realfavicongenerator.net/&quot;&gt;Real Favicon Generator&lt;/a&gt; e forneça uma imagem quadrada. A resolução mínima exigida é 70x70, mas ele recomenda que a resolução da imagem seja 260x260 ou maior para melhores resultados. Isso permitirá que a ferramenta gere ícones de alta definição para dispositivos que os suportam.&lt;/p&gt;
@@ -670,6 +673,7 @@
     &lt;a href=&#39;/files/2015/06/favicon_2.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2015/06/favicon_2.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Na página seguinte, várias opções são exibidas para que você possa personalizar a aparência do seu ícone em alguns casos específicos. É recomendado colocar os arquivos na raiz do &lt;em&gt;site&lt;/em&gt;, pois alguns navegadores os buscam nesse local (por exemplo, &lt;code&gt;www.vinyanalista.com.br/favicon.ico&lt;/code&gt;).&lt;/p&gt;
@@ -678,6 +682,7 @@
     &lt;a href=&#39;/files/2015/06/favicon_3.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2015/06/favicon_3.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Por fim, a ferramenta fornecerá os arquivos que você deve baixar e salvar no seu e o código HTML que você deve inserir nas suas páginas.&lt;/p&gt;
@@ -686,6 +691,7 @@
     &lt;a href=&#39;/files/2015/06/favicon_4.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2015/06/favicon_4.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;O código gerado deve ser parecido com este:&lt;/p&gt;
@@ -715,6 +721,7 @@
     &lt;a href=&#39;/files/2015/06/favicon_5.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2015/06/favicon_5.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;No meu caso, como gerei o ícone do meu &lt;em&gt;site&lt;/em&gt; usando a própria ferramenta, obviamente ela não encontrou nenhum erro:&lt;/p&gt;
@@ -723,6 +730,7 @@
     &lt;a href=&#39;/files/2015/06/favicon_6.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2015/06/favicon_6.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Se tiver curiosidade de verificar quais dispositivos e navegadores são suportados pelo Real Favicon Generator, acesse &lt;a href=&quot;http://realfavicongenerator.net/favicon_compatibility&quot;&gt;essa página&lt;/a&gt;. Você também pode tirar quaisquer dúvidas na seção de &lt;a href=&quot;http://realfavicongenerator.net/faq&quot;&gt;perguntas frequentes (FAQ, no inglês)&lt;/a&gt;.&lt;/p&gt;
@@ -752,6 +760,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_01.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;A caixa de diálogo “Preferências” aparecerá como na imagem abaixo.&lt;/p&gt;
@@ -760,6 +769,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_02.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;ol&gt;
@@ -770,6 +780,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_03.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;ol&gt;
@@ -780,6 +791,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_04.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;ol&gt;
@@ -791,6 +803,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_05.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;ol&gt;
@@ -801,6 +814,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_06.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;ol&gt;
@@ -811,6 +825,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_07.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;ol&gt;
@@ -821,6 +836,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_08.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Você pode clicar nos controles no controle remoto aberto no navegador e verificar que o VLC responde de acordo.&lt;/p&gt;
@@ -839,6 +855,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_09.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;ol&gt;
@@ -849,6 +866,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_10.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;ol&gt;
@@ -859,6 +877,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_11.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;ol&gt;
@@ -875,6 +894,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_vlc_direct.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_vlc_direct.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Também deve haver aplicativos como esses para iOS, mas no momento desconheço.&lt;/p&gt;
@@ -887,6 +907,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_12.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Um truque de web designer para remover essa imagem é clicar com o botão direito nela e em seguida clicar em “Inspecionar elemento”.&lt;/p&gt;
@@ -895,6 +916,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_13.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;No painel que aparece, o código HTML dela deve aparecer em destaque. Clique com o botão direito nele e em seguida clique em “Excluir nó”.&lt;/p&gt;
@@ -903,6 +925,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_14.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_14.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;A imagem deve desaparecer.&lt;/p&gt;
@@ -911,6 +934,7 @@
     &lt;a href=&#39;/files/2014/09/vlc_remoto_07.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/09/vlc_remoto_07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Isso não é uma solução definitiva. Se você recarregar a página, a imagem ainda está lá. Espero que os desenvolvedores do VLC consertem logo esse bug chato...&lt;/p&gt;
@@ -942,6 +966,7 @@
     &lt;a href=&#39;/files/2014/01/virtualbox.png&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2014/01/virtualbox.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Primeiro, é necessário executar um utilitário na &lt;strong&gt;máquina virtual&lt;/strong&gt; (&lt;em&gt;guest&lt;/em&gt;), que vai transformar todo o espaço livre em &lt;em&gt;bits&lt;/em&gt; zero no disco rígido virtual. Se sua máquina virtual roda Linux, esse utilitário é o &lt;strong&gt;zerofree&lt;/strong&gt;, se roda Windows, há o &lt;strong&gt;SDelete&lt;/strong&gt;.&lt;/p&gt;
@@ -1007,9 +1032,7 @@
 &lt;p&gt;A configuração dos meus HDs é bastante semelhante àquela encontrada ano passado quando escrevi &lt;a href=&quot;/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;outro post&lt;/a&gt; sobre problemas com &lt;em&gt;dual boot&lt;/em&gt;. Naquela época, usava Debian e estava pensando em migrar pro openSUSE, o que de fato aconteceu e desde então é a distribuição que uso. Aliás, foi bom reler aquele post e perceber que &lt;a href=&quot;/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;essa não é a primeira vez que tenho problemas em relação ao &lt;em&gt;dual boot&lt;/em&gt; com openSUSE&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Executando o comando &lt;strong&gt;fdisk&lt;/strong&gt;, obtenho o seguinte:&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text&quot;&gt;&lt;![CDATA[
-Disk /dev/sda: 1000.2 GB, 1000204886016 bytes
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Disk /dev/sda: 1000.2 GB, 1000204886016 bytes
 255 heads, 63 sectors/track, 121601 cylinders, total 1953525168 sectors
 Units = sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
@@ -1032,8 +1055,7 @@ Disk identifier: 0x1ba01b9f
 
    Device Boot      Start         End      Blocks   Id  System
 /dev/sdb1            2048   488396799   244197376    7  HPFS/NTFS/exFAT
-]]&gt;&lt;/script&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Durante a instalação do openSUSE 12.3, não alterei as configurações do &lt;em&gt;bootloader&lt;/em&gt;. O instalador automaticamente selecionou a melhor configuração para o meu computador (que no caso de o Linux estar em uma partição estendida, é &lt;a href=&quot;http://en.opensuse.org/SDB:Prefered_bootloader_options&quot;&gt;instalar o &lt;em&gt;bootloader&lt;/em&gt; na partição estendida&lt;/a&gt;).&lt;/p&gt;
 
 &lt;h3&gt;Recuperação do bootloader do Windows&lt;/h3&gt;
@@ -1048,6 +1070,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2013/07/windows-startup-recovery2.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2013/07/windows-startup-recovery2.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;ol&gt;
@@ -1058,6 +1081,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2013/07/windows-startup-recovery3.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2013/07/windows-startup-recovery3.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;ol&gt;
@@ -1068,6 +1092,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2013/07/windows-startup-recovery4.png&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2013/07/windows-startup-recovery4.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;ol&gt;
@@ -1078,6 +1103,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2013/07/windows-startup-recovery5.png&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2013/07/windows-startup-recovery5.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;A instalação executou seus procedimentos de manutenção, após os quais reiniciei o computador. Ainda nada de Windows, e agora ele não exibia mais nem o menu do GRUB2, acusando que havia múltiplas partições ativas.&lt;/p&gt;
@@ -1135,6 +1161,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2012/07/jboss_as_mysql_01.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_mysql_01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Aqui também há uma dica para usuários do banco de dados &lt;a href=&quot;http://www.postgresql.org/&quot;&gt;PostgreSQL&lt;/a&gt; que quiserem fazer o mesmo: leiam o final do post!&lt;/p&gt;
@@ -1161,6 +1188,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2012/07/jboss_as_mysql_02.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_mysql_02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;h3&gt;Criação do datasource&lt;/h3&gt;
@@ -1171,6 +1199,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2012/07/jboss_as_mysql_03.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_mysql_03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Clique em “Add”. Na caixa de diálogo que aparece, forneça ao datasource um nome (esse nome não afeta a conexão, serve apenas para distinguir o datasource na lista, aqui forneci “TesteDS”) e um nome &lt;a href=&quot;http://www.oracle.com/technetwork/java/jndi/&quot;&gt;JNDI&lt;/a&gt; (esse sim importa à conexão, é usado para localizar um recurso na rede e deve começar sempre com “java:/” ou “java:jboss/”, aqui digitei “java:/teste”), e em seguida clique em “Next”:&lt;/p&gt;
@@ -1179,6 +1208,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2012/07/jboss_as_mysql_04.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_mysql_04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Selecione um driver JDBC na lista de drivers disponíveis. No nosso caso, devemos selecionar o MySQL Connector/J. Depois clique em “Next”:&lt;/p&gt;
@@ -1187,6 +1217,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2012/07/jboss_as_mysql_05.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_mysql_05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Finalmente, devemos informar os detalhes da conexão: o endereço JDBC de acesso ao banco (aqui, preenchi com “jdbc:mysql://localhost:3306/teste”, o formato desse endereço é “jdbc:mysql://servidor:porta/base”), o usuário e a senha que serão utilizados. Depois de preencher os campos, clique em “Done”:&lt;/p&gt;
@@ -1195,6 +1226,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2012/07/jboss_as_mysql_06.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_mysql_06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;O datasource é criado e passa a aparecer na lista, mas ainda não está habilitado:&lt;/p&gt;
@@ -1203,6 +1235,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2012/07/jboss_as_mysql_07.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_mysql_07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Antes de habilitá-lo, tornando-o assim disponível para conexão, vamos permitir que esse datasource seja gerenciado pela API de transações do Java (&lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/jta/index.html&quot;&gt;Java Transaction API&lt;/a&gt;, ou JTA). Selecione-o na lista e, descendo na página, clique na aba “Connection”. Perceba que a JTA está desabilitada para esse datasource. Clique em “Edit” para alterar isso:&lt;/p&gt;
@@ -1211,6 +1244,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2012/07/jboss_as_mysql_08.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_mysql_08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Marque as duas últimas opções e clique em “Save”:&lt;/p&gt;
@@ -1219,6 +1253,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2012/07/jboss_as_mysql_09.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_mysql_09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Agora a JTA está habilitada:&lt;/p&gt;
@@ -1227,6 +1262,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2012/07/jboss_as_mysql_10.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_mysql_10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Agora sim vamos habilitar o datasource: ainda com ele selecionado, clique no botão “Enable”, acima da lista. O datasource é então habilitado:&lt;/p&gt;
@@ -1235,6 +1271,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2012/07/jboss_as_mysql_11.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_mysql_11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Ainda com o datasource selecionado na lista e a aba “Connection” aberta na parte de baixo, clique no botão “Test Connection”. Se você forneceu os dados corretamente, o servidor de aplicação conseguirá estabelecer uma conexão com o banco de dados, e a seguinte mensagem será exibida:&lt;/p&gt;
@@ -1243,6 +1280,7 @@ Disk identifier: 0x1ba01b9f
     &lt;a href=&#39;/files/2012/07/jboss_as_mysql_12.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_mysql_12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Da parte do servidor está tudo OK. Agora é só configurar a aplicação para utilizar o datasource.&lt;/p&gt;
@@ -1250,40 +1288,31 @@ Disk identifier: 0x1ba01b9f
 &lt;h3&gt;Configuração da aplicação&lt;/h3&gt;
 
 &lt;p&gt;Agora nós precisamos configurar nossa aplicação para se comunicar com a base de dados utilizando o datasource configurado no servidor de aplicação. O arquivo central da configuração da JPA (&lt;a href=&quot;http://docs.oracle.com/javaee/6/tutorial/doc/bnbpy.html&quot;&gt;Java Persistence API&lt;/a&gt;) no projeto, o “META-INF/persistence.xml”, vai sofrer algumas alterações. Observe as linhas destacadas:&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: xml; highlight: [6, 8]&quot;&gt;&lt;![CDATA[
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;persistence xmlns=&quot;http://java.sun.com/xml/ns/persistence&quot;
-   xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-   xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd&quot;
-   version=&quot;2.0&quot;&gt;
-   &lt;persistence-unit name=&quot;TestePU&quot;&gt;
-      &lt;provider&gt;org.hibernate.ejb.HibernatePersistence&lt;/provider&gt;
-      &lt;jta-data-source&gt;java:/teste&lt;/jta-data-source&gt;
-      &lt;properties&gt;
-         &lt;property name=&quot;hibernate.hbm2ddl.auto&quot; value=&quot;create-drop&quot; /&gt;
-         &lt;property name=&quot;hibernate.show_sql&quot; value=&quot;true&quot; /&gt;
-      &lt;/properties&gt;
-   &lt;/persistence-unit&gt;
-&lt;/persistence&gt;
-]]&gt;&lt;/script&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;persistence&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://java.sun.com/xml/ns/persistence&amp;quot;&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;xmlns:xsi=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;xsi:schemaLocation=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd&amp;quot;&lt;/span&gt;
+   &lt;span class=&quot;na&quot;&gt;version=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;2.0&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hll&quot;&gt;   &lt;span class=&quot;nt&quot;&gt;&amp;lt;persistence-unit&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;TestePU&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;      &lt;span class=&quot;nt&quot;&gt;&amp;lt;provider&amp;gt;&lt;/span&gt;org.hibernate.ejb.HibernatePersistence&lt;span class=&quot;nt&quot;&gt;&amp;lt;/provider&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hll&quot;&gt;      &lt;span class=&quot;nt&quot;&gt;&amp;lt;jta-data-source&amp;gt;&lt;/span&gt;java:/teste&lt;span class=&quot;nt&quot;&gt;&amp;lt;/jta-data-source&amp;gt;&lt;/span&gt;
+&lt;/span&gt;      &lt;span class=&quot;nt&quot;&gt;&amp;lt;properties&amp;gt;&lt;/span&gt;
+         &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;hibernate.hbm2ddl.auto&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;create-drop&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+         &lt;span class=&quot;nt&quot;&gt;&amp;lt;property&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;hibernate.show_sql&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/properties&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/persistence-unit&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/persistence&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Observe que estou utilizando o &lt;a href=&quot;http://www.hibernate.org/&quot;&gt;Hibernate&lt;/a&gt; como implementação JPA, já que estamos utilizando o JBoss AS como servidor de aplicação.&lt;/p&gt;
 
 &lt;p&gt;No código-fonte da aplicação, sempre for necessário um &lt;a href=&quot;http://docs.oracle.com/javaee/6/api/javax/persistence/EntityManager.html&quot;&gt;EntityManager&lt;/a&gt; para &lt;a href=&quot;http://docs.oracle.com/javaee/6/tutorial/doc/bnbqw.html&quot;&gt;manusear entidades JPA&lt;/a&gt;, você pode solicitar ao servidor de aplicação que injete-o (isso significa que você não precisa criar o objeto manualmente, o servidor de aplicação cria o objeto para você) anotando sua variável com &lt;a href=&quot;http://docs.oracle.com/javaee/6/api/javax/persistence/PersistenceContext.html&quot;&gt;@PersistenceContext&lt;/a&gt; e especificando o nome da persistence-unit, como definida no arquivo “META-INF/persistence.xml”:&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: java; gutter: false&quot;&gt;&lt;![CDATA[
-@PersistenceContext(name=&quot;TestePU&quot;)
-EntityManager entityManager;
-]]&gt;&lt;/script&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@PersistenceContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;TestePU&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;EntityManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entityManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Se sua aplicação possui apenas uma persistence-unit, essa informação pode ser omitida:&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: java; gutter: false&quot;&gt;&lt;![CDATA[
-@PersistenceContext
-EntityManager entityManager;
-]]&gt;&lt;/script&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@PersistenceContext&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;EntityManager&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entityManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Aplicação de exemplo&lt;/h3&gt;
 
 &lt;p&gt;Uma boa pedida é escolher uma das &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/&quot;&gt;aplicações de exemplo do JBoss AS&lt;/a&gt;, alterar suas configurações e executá-la. No &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/&quot;&gt;post anterior&lt;/a&gt;, nós compilamos, empacotamos, implantamos e executamos a aplicação de exemplo &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/&quot;&gt;helloworld-jsf&lt;/a&gt;. Vou aproveitar o arquivo que já baixei e extraí naquele post, mas aqui vamos utilizar a aplicação &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/greeter/&quot;&gt;greeter&lt;/a&gt;.&lt;/p&gt;
@@ -1318,6 +1347,7 @@ EntityManager entityManager;
     &lt;a href=&#39;/files/2012/07/jboss_as_01.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Essa é a segunda parte de dois posts que visam apresentar o JBoss AS 7. Se você desejava acessar a primeira parte, &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/&quot;&gt;clique aqui&lt;/a&gt;. Senão, continue lendo.&lt;/p&gt;
@@ -1334,6 +1364,7 @@ EntityManager entityManager;
     &lt;a href=&#39;/files/2012/07/jboss_as_05.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Esse aviso nos diz que é necessário definir um usuário e uma senha para acessar o console de administração Web. Vamos fazer isso.&lt;/p&gt;
@@ -1364,6 +1395,7 @@ Re-enter Password :
     &lt;a href=&#39;/files/2012/07/jboss_as_06.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Vamos fazer undeploy e deploy da aplicação usando o console de administração Web. Para isso, no menu do lado esquerdo, clique em “Manage Deployments”. É exibida uma lista das aplicações instaladas no servidor:&lt;/p&gt;
@@ -1372,6 +1404,7 @@ Re-enter Password :
     &lt;a href=&#39;/files/2012/07/jboss_as_07.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Clicando em “Disable”, interromperíamos a aplicação, fazendo com que ela não ficasse mais disponível ao usuário final, mas ainda permanecesse no servidor. Não é o que queremos aqui. Clique em “Remove” para de fato remover a aplicação do servidor. Aparece uma mensagem de confirmação na tela, clique em “Confirm”.&lt;/p&gt;
@@ -1382,6 +1415,7 @@ Re-enter Password :
     &lt;a href=&#39;/files/2012/07/jboss_as_08.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Se você tentar acessá-la pelo seu endereço (“&lt;a href=&quot;http://localhost:8080/jboss-as-helloworld-jsf/&quot;&gt;http://localhost:8080/jboss-as-helloworld-jsf/&lt;/a&gt;“), visualizará uma página de erro no navegador.&lt;/p&gt;
@@ -1394,6 +1428,7 @@ Re-enter Password :
     &lt;a href=&#39;/files/2012/07/jboss_as_09.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Ele pede para confirmar as informações. Simplesmente clique em “Save”:&lt;/p&gt;
@@ -1402,6 +1437,7 @@ Re-enter Password :
     &lt;a href=&#39;/files/2012/07/jboss_as_10.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;De volta à lista de aplicações, a aplicação foi instalada no servidor, mas não foi iniciada:&lt;/p&gt;
@@ -1410,6 +1446,7 @@ Re-enter Password :
     &lt;a href=&#39;/files/2012/07/jboss_as_11.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Clique em Enable para iniciá-la. Aparece uma mensagem de confirmação na tela, clique em “Confirm”. Feito isso a aplicação passa a aparecer na lista como habilitada:&lt;/p&gt;
@@ -1418,6 +1455,7 @@ Re-enter Password :
     &lt;a href=&#39;/files/2012/07/jboss_as_12.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Agora é possível acessá-la novamente pelo endereço “&lt;a href=&quot;http://localhost:8080/jboss-as-helloworld-jsf/&quot;&gt;http://localhost:8080/jboss-as-helloworld-jsf/&lt;/a&gt;“.&lt;/p&gt;
@@ -1427,9 +1465,7 @@ Re-enter Password :
 &lt;p&gt;Encerrar o servidor, tanto no Windows quanto no Linux, é um procedimento bastante simples: basta abortar a execução do comando na janela de terminal onde o servidor está sendo executado. Para isso, basta apertar Ctrl + C (vale para ambos os sistemas).&lt;/p&gt;
 
 &lt;p&gt;Aqui ele encerrou o servidor em pequeníssimos 143 milissegundos:&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text&quot;&gt;&lt;![CDATA[
-15:09:21,996 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011942: Stopping OSGi Framework
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;15:09:21,996 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011942: Stopping OSGi Framework
 15:09:22,034 INFO  [org.jboss.as.logging] JBAS011503: Restored bootstrap log handlers
 15:09:22,044 INFO  [org.jboss.weld.deployer] JBAS016009: Stopping weld service for deployment jboss-as-helloworld-jsf.war
 15:09:22,053 INFO  [org.apache.coyote.http11.Http11Protocol] Pausing Coyote HTTP/1.1 on http--127.0.0.1-8080
@@ -1441,9 +1477,8 @@ Re-enter Password :
 JBAS014776:    Newly corrected services:
 service jboss.server.controller.management.security_realm.ApplicationRealm.properties_authentication (new available)
 
-15:09:22,121 INFO  [org.jboss.as] JBAS015950: JBoss AS 7.1.1.Final &quot;Brontes&quot; stopped in 143ms
-]]&gt;&lt;/script&gt;
-
+15:09:22,121 INFO  [org.jboss.as] JBAS015950: JBoss AS 7.1.1.Final &amp;quot;Brontes&amp;quot; stopped in 143ms
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Mais informações sobre o JBoss AS&lt;/h3&gt;
 
 &lt;p&gt;Pois é, pessoal. Vou encerrando minha apresentação do JBoss AS por aqui. Gostaria apenas de fazer algumas considerações finais e deixar as páginas que usei como referência para escrever esse post.&lt;/p&gt;
@@ -1481,6 +1516,7 @@ service jboss.server.controller.management.security_realm.ApplicationRealm.prope
     &lt;a href=&#39;/files/2012/07/jboss_as_01.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -1541,9 +1577,7 @@ $ wget http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1
 &lt;p&gt;Nesse caso, a própria janela de terminal na qual o comando é invocado passa a exibir a saída do servidor e, assim como acontece no Windows, não é possível executar nenhum outro comando nessa mesma janela enquanto o servidor estiver em execução.&lt;/p&gt;
 
 &lt;p&gt;O terminal deve exibir uma saída parecida com essa, resultado da inicialização do servidor:&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text&quot;&gt;&lt;![CDATA[
-=========================================================================
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;=========================================================================
 
 JBoss Bootstrap Environment
 
@@ -1557,7 +1591,7 @@ JAVA_OPTS:  -server -XX:+TieredCompilation -Xms64m -Xmx512m -XX:MaxPermSize=256m
 
 04:35:28,890 INFO  [org.jboss.modules] JBoss Modules version 1.1.1.GA
 04:35:29,488 INFO  [org.jboss.msc] JBoss MSC version 1.0.2.GA
-04:35:29,647 INFO  [org.jboss.as] JBAS015899: JBoss AS 7.1.1.Final &quot;Brontes&quot; starting
+04:35:29,647 INFO  [org.jboss.as] JBAS015899: JBoss AS 7.1.1.Final &amp;quot;Brontes&amp;quot; starting
 04:35:32,341 INFO  [org.xnio] XNIO Version 3.0.3.GA
 04:35:32,366 INFO  [org.xnio.nio] XNIO NIO Implementation Version 3.0.3.GA
 04:35:32,457 INFO  [org.jboss.as.server] JBAS015888: Creating http management service using socket-binding (management-http)
@@ -1581,15 +1615,15 @@ JAVA_OPTS:  -server -XX:+TieredCompilation -Xms64m -Xmx512m -XX:MaxPermSize=256m
 04:35:36,119 INFO  [org.jboss.as.remoting] (MSC service thread 1-2) JBAS017100: Listening on /127.0.0.1:4447
 04:35:36,270 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source 1
 04:35:36,294 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
-04:35:36,295 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss AS 7.1.1.Final &quot;Brontes&quot; started in 8025ms - Started 133 of 208 services (74 services are passive or on-demand)
-]]&gt;&lt;/script&gt;
-
+04:35:36,295 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss AS 7.1.1.Final &amp;quot;Brontes&amp;quot; started in 8025ms - Started 133 of 208 services (74 services are passive or on-demand)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Tanto no Windows quanto no Linux, após iniciado o servidor, abra seu navegador de preferência e acesse o endereço “&lt;a href=&quot;http://localhost:8080&quot;&gt;http://localhost:8080&lt;/a&gt;” (a porta 8080 é a utilizada pelo JBoss AS por padrão, mas essa porta pode ser alterada na configuração do servidor). Você deve ver a tela de boas vindas do JBoss AS:&lt;/p&gt;
 
 &lt;p class=&#39;text-center&#39;&gt;
     &lt;a href=&#39;/files/2012/07/jboss_as_02.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;h3&gt;Executando uma aplicação Web&lt;/h3&gt;
@@ -1604,6 +1638,7 @@ JAVA_OPTS:  -server -XX:+TieredCompilation -Xms64m -Xmx512m -XX:MaxPermSize=256m
     &lt;a href=&#39;/files/2012/07/jboss_as_03.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Você está baixando um arquivo &lt;strong&gt;.zip&lt;/strong&gt; (no momento da escrita deste post, nomeado “jboss-jdf-jboss-as-quickstart-7.1.1.Final-0-gbcbcf69.zip”) com todas as aplicações de exemplo do JBoss AS (se quiser por curiosidade conferir a lista, são todas essas que aparecem listadas nessa mesma página).&lt;/p&gt;
@@ -1618,9 +1653,7 @@ JAVA_OPTS:  -server -XX:+TieredCompilation -Xms64m -Xmx512m -XX:MaxPermSize=256m
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mvn package jboss-as:deploy
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Ao final do processo, o console do Maven deve mostrar uma saída parecida com essa, informando que tudo ocorreu conforme o esperado:&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text&quot;&gt;&lt;![CDATA[
-Jul 18, 2012 1:50:00 PM org.xnio.Xnio
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Jul 18, 2012 1:50:00 PM org.xnio.Xnio
 INFO: XNIO Version 3.0.3.GA
 Jul 18, 2012 1:50:00 PM org.xnio.nio.NioXnio
 INFO: XNIO NIO Implementation Version 3.0.3.GA
@@ -1633,35 +1666,32 @@ INFO: JBoss Remoting version 3.2.3.GA
 [INFO] Finished at: Wed Jul 18 13:50:14 GMT+00:00 2012
 [INFO] Final Memory: 9M/41M
 [INFO] ------------------------------------------------------------------------
-]]&gt;&lt;/script&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;O console do JBoss AS deve mostrar que o deploy da aplicação foi realizado com sucesso:&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text&quot;&gt;&lt;![CDATA[
-13:50:04,206 INFO  [org.jboss.as.repository] (management-handler-thread - 2) JBAS014900: Content added at location /root/jboss-as/standalone/data/content/1d/9f4c3c67cd2fb194ee4aacb3d990ab70da0b48/content
-13:50:04,261 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of &quot;jboss-as-helloworld-jsf.war&quot;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;13:50:04,206 INFO  [org.jboss.as.repository] (management-handler-thread - 2) JBAS014900: Content added at location /root/jboss-as/standalone/data/content/1d/9f4c3c67cd2fb194ee4aacb3d990ab70da0b48/content
+13:50:04,261 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of &amp;quot;jboss-as-helloworld-jsf.war&amp;quot;
 13:50:06,650 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016002: Processing weld deployment jboss-as-helloworld-jsf.war
 13:50:06,979 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016005: Starting Services for CDI deployment: jboss-as-helloworld-jsf.war
 13:50:07,045 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900 1.1.5 (AS71)
 13:50:07,578 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016008: Starting weld service for deployment jboss-as-helloworld-jsf.war
-13:50:08,753 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-2) Initializing Mojarra 2.1.7-jbossorg-1 (20120227-1401) for context &#39;/jboss-as-helloworld-jsf&#39;
+13:50:08,753 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-2) Initializing Mojarra 2.1.7-jbossorg-1 (20120227-1401) for context &amp;#39;/jboss-as-helloworld-jsf&amp;#39;
 13:50:11,774 INFO  [org.hibernate.validator.util.Version] (MSC service thread 1-2) Hibernate Validator 4.2.0.Final
 13:50:14,120 INFO  [org.richfaces.log.Cache] (MSC service thread 1-2) Selected fallback cache factory
 13:50:14,125 INFO  [org.richfaces.log.Cache] (MSC service thread 1-2) Creating LRUMap cache instance using parameters: {javax.faces.PROJECT_STAGE=Development}
 13:50:14,186 INFO  [org.richfaces.log.Cache] (MSC service thread 1-2) Creating LRUMap cache instance of 512 items capacity
 13:50:14,195 INFO  [org.richfaces.log.Application] (MSC service thread 1-2) RichFaces Core Implementation by JBoss by Red Hat, version v.4.2.0.Final
-13:50:14,428 WARNING [org.richfaces.log.Application] (MSC service thread 1-2) JMS API was found on the classpath; if you want to enable RichFaces Push JMS integration, set context-param &#39;org.richfaces.push.jms.enabled&#39; in web.xml
+13:50:14,428 WARNING [org.richfaces.log.Application] (MSC service thread 1-2) JMS API was found on the classpath; if you want to enable RichFaces Push JMS integration, set context-param &amp;#39;org.richfaces.push.jms.enabled&amp;#39; in web.xml
 13:50:14,435 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-2) Monitoring jndi:/default-host/jboss-as-helloworld-jsf/WEB-INF/faces-config.xml for modifications
 13:50:14,487 INFO  [org.jboss.web] (MSC service thread 1-2) JBAS018210: Registering web context: /jboss-as-helloworld-jsf
-13:50:14,539 INFO  [org.jboss.as.server] (management-handler-thread - 2) JBAS018559: Deployed &quot;jboss-as-helloworld-jsf.war&quot;
-]]&gt;&lt;/script&gt;
-
+13:50:14,539 INFO  [org.jboss.as.server] (management-handler-thread - 2) JBAS018559: Deployed &amp;quot;jboss-as-helloworld-jsf.war&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Feito isso, podemos acessar a aplicação usando o navegador através do endereço “&lt;a href=&quot;http://localhost:8080/jboss-as-helloworld-jsf/&quot;&gt;http://localhost:8080/jboss-as-helloworld-jsf/&lt;/a&gt;“:&lt;/p&gt;
 
 &lt;p class=&#39;text-center&#39;&gt;
     &lt;a href=&#39;/files/2012/07/jboss_as_04.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jboss_as_04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Essa é uma aplicação Web 2.0 com &lt;a href=&quot;http://www.w3schools.com/ajax/default.asp&quot;&gt;AJAX&lt;/a&gt; na qual ao digitar um nome no campo de texto, ele reproduz esse nome em uma mensagem de olá do lado direito desse campo. É realmente a única coisa que essa aplicação faz. Os componentes exibidos na tela são estilizados por causa da utilização do framework de apresentação &lt;a href=&quot;http://www.jboss.org/richfaces/&quot;&gt;Richfaces&lt;/a&gt; para renderizar esses componentes.&lt;/p&gt;
@@ -1686,6 +1716,7 @@ INFO: JBoss Remoting version 3.2.3.GA
     &lt;a href=&#39;/files/2012/07/maven1.gif&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/maven1.gif&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;O Maven é uma ferramenta que facilita e automatiza bastante o gerenciamento de projetos em Java, auxiliando os desenvolvedores nas etapas de definição, codificação, compilação, testes, empacotamento, implantação, documentação e distribuição da aplicação.&lt;/p&gt;
@@ -1745,44 +1776,37 @@ $ wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.ta
     &lt;a href=&#39;/files/2012/07/maven2.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/maven2.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p class=&#39;text-center&#39;&gt;
     &lt;a href=&#39;/files/2012/07/maven3.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/maven3.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;No Linux, se você instalou o Maven apenas para o seu usuário,  abra com o seu editor de preferência o arquivo “~/.bashrc” e acrescente as seguintes linhas no final do arquivo (você deve substituir, se necessário, a localização do Maven, que no nosso exemplo foi “/home/vinicius/apache-maven-3.0.4″):&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: bash; gutter: false&quot;&gt;&lt;![CDATA[
-export M2_HOME=&quot;/home/vinicius/apache-maven-3.0.4&quot;
-export PATH=&quot;$PATH:$M2_HOME/bin&quot;
-]]&gt;&lt;/script&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;M2_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/home/vinicius/apache-maven-3.0.4&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PATH:$M2_HOME/bin&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Se você instalou o Maven para todos os usuários, a alteração deve ocorrer no arquivo “/etc/profile”. Abra esse arquivo com o seu editor de preferência e acrescente as seguintes linhas no final do arquivo (você deve substituir, se necessário, a localização do Maven, que no nosso exemplo foi “/opt/apache-maven-3.0.4″):&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: bash; gutter: false&quot;&gt;&lt;![CDATA[
-export M2_HOME=&quot;/opt/apache-maven-3.0.4&quot;
-export PATH=&quot;$PATH:$M2_HOME/bin&quot;
-]]&gt;&lt;/script&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;M2_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/opt/apache-maven-3.0.4&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PATH:$M2_HOME/bin&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Teste do Maven&lt;/h3&gt;
 
 &lt;p&gt;As instruções a seguir servem para Windows e Linux. Para testar a instalação do Maven, abra uma nova janela de terminal e execute o comando a seguir, que deve exibir  informações sobre a instalação do Maven no seu computador:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mvn -v
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;A saída deve ser algo parecido com isso:&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: text&quot;&gt;&lt;![CDATA[
-Apache Maven 3.0.4 (r1232337; 2012-01-17 08:44:56+0000)
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Apache Maven 3.0.4 (r1232337; 2012-01-17 08:44:56+0000)
 Maven home: /home/vinicius/apache-maven-3.0.4
 Java version: 1.7.0_147-icedtea, vendor: Oracle Corporation
 Java home: /usr/lib/jvm/java-7-openjdk-i386/jre
 Default locale: en_US, platform encoding: UTF-8
-OS name: &quot;linux&quot;, version: &quot;3.0.0-12-generic&quot;, arch: &quot;i386&quot;, family: &quot;unix&quot;
-]]&gt;&lt;/script&gt;
-
+OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot;, arch: &amp;quot;i386&amp;quot;, family: &amp;quot;unix&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Como teste, também vamos criar um pequeno projeto Java, compilá-lo, empacotá-lo e executá-lo. Em alguma pasta à qual você tenha acesso (aqui utilizarei minha pasta pessoal no Linux, “/home/vinicius”), execute o seguinte comando:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mvn archetype:generate \
 -DgroupId=br.com.vinyanalista.tutorial \
@@ -1824,6 +1848,7 @@ $ mvn package
     &lt;a href=&#39;/files/2012/07/java.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/java.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -1836,6 +1861,7 @@ $ mvn package
     &lt;a href=&#39;/files/2012/07/jdk7_1.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jdk7_1.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;h4&gt;Download e instalação do JDK no Windows&lt;/h4&gt;
@@ -1889,6 +1915,7 @@ $ wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.ta
     &lt;a href=&#39;/files/2012/07/jdk7_2.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jdk7_2.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Na janela Sistema, clique na opção Configurações avançadas do sistema, no painel esquerdo.&lt;/p&gt;
@@ -1897,6 +1924,7 @@ $ wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.ta
     &lt;a href=&#39;/files/2012/07/jdk7_3.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jdk7_3.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Na caixa de diálogo Propriedades do Sistema, clique no botão Variáveis de Ambiente.&lt;/p&gt;
@@ -1905,6 +1933,7 @@ $ wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.ta
     &lt;a href=&#39;/files/2012/07/jdk7_4.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jdk7_4.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Na caixa de diálogo Variáveis de Ambiente, na seção Variáveis do sistema, clique no botão Novo.&lt;/p&gt;
@@ -1913,6 +1942,7 @@ $ wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.ta
     &lt;a href=&#39;/files/2012/07/jdk7_5.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jdk7_5.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Informe JAVA&lt;em&gt;HOME como nome da variável e no campo valor digite a localização do JDK (no meu caso, ele foi instalado em “C:\Program Files (x86)\Java\jdk1.7.0&lt;/em&gt;05″). Quando acabar de digitar esses valores, clique em OK.&lt;/p&gt;
@@ -1921,6 +1951,7 @@ $ wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.ta
     &lt;a href=&#39;/files/2012/07/jdk7_6.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jdk7_6.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;De volta à caixa de diálogo Variáveis de Ambiente, também na seção Variáveis do sistema, procure na lista a variável Path, selecione-a e clique no botão Editar.&lt;/p&gt;
@@ -1929,6 +1960,7 @@ $ wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.ta
     &lt;a href=&#39;/files/2012/07/jdk7_7.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jdk7_7.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Posicione o cursor no início do valor da variável, insira o texto “%JAVA_HOME\bin;” (não inclua as aspas e não esqueça do ponto-e-vírgula) e clique em OK.&lt;/p&gt;
@@ -1937,6 +1969,7 @@ $ wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.ta
     &lt;a href=&#39;/files/2012/07/jdk7_8.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jdk7_8.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;De volta à caixa de diálogo Variáveis de Ambiente, clique em OK. Em seguida, você pode fechar a janela Sistema. A partir de agora, qualquer nova janela de terminal aberta ou comando invocado refletirá essas alterações.&lt;/p&gt;
@@ -1946,23 +1979,17 @@ $ wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.ta
 &lt;p&gt;Se você instalou o JDK utilizando o mecanismo preferido de sua distribuição, é importante verificar se &lt;a href=&quot;http://www.cyberciti.biz/faq/linux-unix-set-java_home-path-variable/&quot;&gt;a variável JAVA_HOME&lt;/a&gt; já foi definida e se já é possível invocar os utilitários do JDK da linha de comando. Para isso, passe ao próximo tópico, realize os testes, e apenas se encontrar erros, volte a ler este.&lt;/p&gt;
 
 &lt;p&gt;Se você instalou o JDK para todos os usuários, abra com o seu editor de preferência o arquivo “/etc/profile” e acrescente as seguintes linhas no final (você deve substituir, se necessário, a localização do JDK, que no nosso exemplo foi “/opt/jdk1.7.0_05″):&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: bash; gutter: false&quot;&gt;&lt;![CDATA[
-export JAVA_HOME=&quot;/opt/jdk1.7.0_05&quot;
-export CLASSPATH=&quot;$JAVA_HOME/lib&quot;
-export PATH=&quot;$PATH:$JAVA_HOME/bin&quot;
-export MANPATH=&quot;$MANPATH:$JAVA_HOME/man&quot;
-]]&gt;&lt;/script&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;JAVA_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/opt/jdk1.7.0_05&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;CLASSPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$JAVA_HOME/lib&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PATH:$JAVA_HOME/bin&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MANPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$MANPATH:$JAVA_HOME/man&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Se você instalou o JDK apenas para o seu usuário, a alteração deve ocorrer no arquivo “~/.bashrc”. Abra esse arquivo com o seu editor de preferência e acrescente as seguintes linhas no final (você deve substituir, se necessário, a localização do JDK, que no nosso exemplo foi “/home/vinicius/jdk1.7.0_05″):&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: bash; gutter: false&quot;&gt;&lt;![CDATA[
-export JAVA_HOME=&quot;/home/vinicius/jdk1.7.0_05&quot;
-export CLASSPATH=&quot;$JAVA_HOME/lib&quot;
-export PATH=&quot;$PATH:$JAVA_HOME/bin&quot;
-export MANPATH=&quot;$MANPATH:$JAVA_HOME/man&quot;
-]]&gt;&lt;/script&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;JAVA_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/home/vinicius/jdk1.7.0_05&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;CLASSPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$JAVA_HOME/lib&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PATH:$JAVA_HOME/bin&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MANPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$MANPATH:$JAVA_HOME/man&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Em qualquer um dos dois casos, as alterações serão aplicadas a qualquer nova janela de terminal aberta.&lt;/p&gt;
 
 &lt;h3&gt;Teste do JDK&lt;/h3&gt;
@@ -1971,15 +1998,12 @@ export MANPATH=&quot;$MANPATH:$JAVA_HOME/man&quot;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ javac -version
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Como teste, também podemos criar um pequeno programa Java, compilá-lo e executá-lo. Em alguma pasta à qual você tenha acesso (aqui utilizarei minha pasta pessoal no Linux, “/home/vinicius”), crie um arquivo de texto simples chamado “Teste.java”. Abra esse arquivo com um editor de texto e insira o seguinte conteúdo:&lt;/p&gt;
-
-&lt;script type=&quot;syntaxhighlighter&quot; class=&quot;brush: java; gutter: false&quot;&gt;&lt;![CDATA[
-public class Teste {
-    public static void main(String args[]) {
-        System.out.println(&quot;Olá!&quot;);
-    }
-}
-]]&gt;&lt;/script&gt;
-
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Teste&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Olá!&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Agora no terminal, entre nessa pasta e invoque o compilador do Java (&lt;strong&gt;javac&lt;/strong&gt;) passando o arquivo que você acabou de criar como parâmetro:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd /home/vinicius/
 $ javac Teste.java
@@ -2004,6 +2028,7 @@ $ javac Teste.java
     &lt;a href=&#39;/files/2012/07/jdk7_9.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jdk7_9.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;É possível também verificar na &lt;a href=&quot;http://www.java.com/pt_BR/download/testjava.jsp&quot;&gt;página de teste do Java&lt;/a&gt; se a versão do plugin instalada no seu sistema corresponde à mais atual:&lt;/p&gt;
@@ -2012,6 +2037,7 @@ $ javac Teste.java
     &lt;a href=&#39;/files/2012/07/jdk7_10.jpg&#39; title=&#39;&#39;&gt;
         &lt;img src=&#39;/files/2012/07/jdk7_10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
     &lt;/a&gt;
+    
 &lt;/p&gt;
 
 &lt;p&gt;Espero que esse post possa ser útil a programadores Java iniciantes de uma maneira em geral. Agradeço previamente opiniões e críticas construtivas. Ofereço o espaço para perguntas também. Abraço a todos e até a próxima!&lt;/p&gt;
