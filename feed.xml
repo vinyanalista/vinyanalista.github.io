@@ -5,9 +5,632 @@
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>https://vinyanalista.github.io/</link>
     <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Jul 2015 10:54:19 -0300</pubDate>
-    <lastBuildDate>Thu, 23 Jul 2015 10:54:19 -0300</lastBuildDate>
+    <pubDate>Thu, 06 Aug 2015 02:15:14 -0300</pubDate>
+    <lastBuildDate>Thu, 06 Aug 2015 02:15:14 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Como criar um tema responsivo do WordPress com o Bootstrap</title>
+        <description>&lt;p&gt;Nesse tutorial, você aprenderá a criar um tema responsivo do &lt;a href=&quot;https://br.wordpress.org/&quot;&gt;WordPress&lt;/a&gt; usando o &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;. Com um tema responsivo, seu &lt;em&gt;blog&lt;/em&gt; ou &lt;em&gt;site&lt;/em&gt; com WordPress aparecerá bem na grande variedade de dispositivos (computadores, &lt;em&gt;smartphones&lt;/em&gt; e &lt;em&gt;tablets&lt;/em&gt;) e navegadores existentes.&lt;/p&gt;
+
+&lt;p&gt;O Bootstrap é um &lt;em&gt;framework&lt;/em&gt; para o desenvolvimento de &lt;em&gt;sites&lt;/em&gt; e aplicações &lt;em&gt;web&lt;/em&gt; responsivos e foi apresentado no &lt;a href=&quot;/blog/2015/07/05/bootstrap/&quot;&gt;&lt;em&gt;post&lt;/em&gt; anterior&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Recentemente eu desenvolvi um tema responsivo para o WordPress usando o &lt;a href=&quot;http://blog.teamtreehouse.com/responsive-wordpress-bootstrap-theme-tutorial&quot;&gt;excelente tutorial apresentado no Treehouse Blog&lt;/a&gt;. Como aquele tutorial parecia estar desatualizado (pelo código dos exemplos, muito provavelmente eles utilizaram &lt;a href=&quot;http://getbootstrap.com/2.3.2/&quot;&gt;uma versão anterior do Bootstrap&lt;/a&gt;), tive a ideia de escrever uma versão atualizada e em português. Para referência, aqui utilizo o Bootstrap 3.3.5 e o WordPress 4.2.3, as versões mais recentes até o momento da escrita.&lt;/p&gt;
+
+&lt;p&gt;Para seguir esse tutorial, você não precisa ter experiência anterior em &lt;a href=&quot;https://codex.wordpress.org/Theme_Development&quot;&gt;desenvolver temas do WordPress&lt;/a&gt;. No entanto, vou assumir que você já tem o mínimo de familiaridade com a ferramenta para &lt;a href=&quot;https://codex.wordpress.org/pt-br:Instalando_o_WordPress&quot;&gt;instalá-la&lt;/a&gt;, &lt;a href=&quot;https://codex.wordpress.org/pt-br:Criando_P%C3%A1ginas&quot;&gt;adicionar páginas&lt;/a&gt; e &lt;a href=&quot;https://codex.wordpress.org/pt-br:Escrevendo_Posts&quot;&gt;&lt;em&gt;posts&lt;/em&gt;&lt;/a&gt; e &lt;a href=&quot;https://codex.wordpress.org/pt-br:Usando_Plugins&quot;&gt;instalar &lt;em&gt;plugins&lt;/em&gt;&lt;/a&gt; utilizando a &lt;a href=&quot;https://codex.wordpress.org/Administration_Panels&quot;&gt;área administrativa&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O tema que vamos construir será baseado no &lt;a href=&quot;http://getbootstrap.com/examples/jumbotron/&quot;&gt;exemplo Jumbotron&lt;/a&gt; (antigamente chamado de &lt;a href=&quot;http://getbootstrap.com/2.3.2/examples/hero.html&quot;&gt;Basic marketing site&lt;/a&gt;) disponível na &lt;a href=&quot;http://getbootstrap.com/getting-started/#examples&quot;&gt;página de exemplos do Bootstrap&lt;/a&gt; e contará com as seguintes páginas e funcionalidades:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Página inicial personalizada&lt;/li&gt;
+&lt;li&gt;Página Sobre&lt;/li&gt;
+&lt;li&gt;Página Notícias, com comentários&lt;/li&gt;
+&lt;li&gt;Página Contato&lt;/li&gt;
+&lt;li&gt;Uma barra lateral com &lt;em&gt;widgets&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Requisitos&lt;/h3&gt;
+
+&lt;p&gt;Antes de começarmos a desenvolver o tema propriamente dito, você precisa baixar e instalar o &lt;a href=&quot;https://br.wordpress.org/&quot;&gt;WordPress&lt;/a&gt;. Para o desenvolvimento, recomendo um servidor &lt;em&gt;web&lt;/em&gt; como o &lt;a href=&quot;https://www.apachefriends.org/pt_br/&quot;&gt;XAMPP&lt;/a&gt; e um ambiente de desenvolvimento integrado como o &lt;a href=&quot;http://www.aptana.com/&quot;&gt;Aptana Studio&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Em nosso tema, utilizaremos o Bootstrap a partir de uma &lt;a href=&quot;http://www.baboo.com.br/internet/entenda-o-que-e-cdn-ou-content-delivery-network/&quot;&gt;CDN (&lt;em&gt;Content Delivery Network&lt;/em&gt;)&lt;/a&gt;. No entanto, você pode &lt;a href=&quot;http://getbootstrap.com/getting-started/#download&quot;&gt;baixar o Bootstrap&lt;/a&gt; se desejar servi-lo com seu &lt;em&gt;site&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Se for desenvolver esse tema utilizando um &lt;em&gt;site&lt;/em&gt; do WordPress que já está no ar, recomendo que você utilize o &lt;a href=&quot;https://wordpress.org/plugins/theme-test-drive/&quot;&gt;&lt;em&gt;plugin&lt;/em&gt; Theme Test Drive para WordPress&lt;/a&gt; para que seus visitantes não vejam o tema enquanto desenvolve. &lt;/p&gt;
+
+&lt;h3&gt;Começando&lt;/h3&gt;
+
+&lt;p&gt;Abra a pasta onde instalou o WordPress e navegue para a pasta &lt;code&gt;wp-content/themes&lt;/code&gt;. É nessa pasta onde ficam armazenados os &lt;a href=&quot;https://codex.wordpress.org/pt-br:Usando_Temas&quot;&gt;temas do WordPress&lt;/a&gt;. Se você acabou de instalar o WordPress, verá apenas os temas padrão: &lt;a href=&quot;https://wordpress.org/themes/twentyfifteen/&quot;&gt;Twenty Fifteen&lt;/a&gt;, &lt;a href=&quot;https://wordpress.org/themes/twentyfourteen/&quot;&gt;Twenty Fourteen&lt;/a&gt; e &lt;a href=&quot;https://wordpress.org/themes/twentythirteen/&quot;&gt;Twenty Thirteen&lt;/a&gt;, cada um em sua pasta.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd wordpress
+$ cd wp-content/themes
+$ ls
+index.php  twentyfifteen  twentyfourteen  twentythirteen
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Vamos criar uma pasta para o nosso tema, chamada &lt;code&gt;wpbootstrap&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mkdir wpbootstrap
+$ cd wpbootstrap
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Se você optou por baixar o Bootstrap, recomendo adicioná-lo a essa pasta agora. Eu recomendo criar uma pasta &lt;code&gt;lib&lt;/code&gt; e colocá-lo dentro de &lt;code&gt;lib/bootstrap/3.3.5&lt;/code&gt;, acredito que assim fica mais organizado.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mkdir -p lib/bootstrap/
+$ unzip ~/Downloads/bootstrap-3.3.5-dist.zip -d lib/bootstrap/
+$ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Dentro da pasta &lt;code&gt;wpbootstrap&lt;/code&gt;, crie um novo arquivo de texto chamado &lt;code&gt;index.php&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ touch index.php
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Agora vamos copiar o código-fonte do &lt;a href=&quot;http://getbootstrap.com/examples/jumbotron/&quot;&gt;exemplo Jumbotron&lt;/a&gt; e colá-lo no arquivo &lt;code&gt;index.php&lt;/code&gt;, fazendo algumas modificações para funcionar com o nosso exemplo. Você também pode ver o arquivo &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/blob/67abfbb04f00aa35c03a0e7f7649226bf8af56c7/index.php&quot;&gt;aqui&lt;/a&gt; e as alterações destacadas &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/commit/67abfbb04f00aa35c03a0e7f7649226bf8af56c7&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;en&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;X-UA-Compatible&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;IE=edge&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;viewport&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;width=device-width, initial-scale=1&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;author&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Jumbotron Template for Bootstrap&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bootstrap core CSS --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Custom styles for this template --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;style &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;padding-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;padding-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!--[if lt IE 9]&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;            &amp;lt;script src=&amp;quot;https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;            &amp;lt;script src=&amp;quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;        &amp;lt;![endif]--&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar navbar-inverse navbar-fixed-top&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-header&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-toggle collapsed&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-toggle=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;collapse&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#navbar&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-expanded=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;false&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-controls=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sr-only&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Toggle navigation&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon-bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon-bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon-bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-brand&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Project name&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-collapse collapse&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-form navbar-right&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;form-group&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                            &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;placeholder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Email&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;form-control&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;form-group&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                            &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;password&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;placeholder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Password&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;form-control&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;submit&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-success&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Sign in&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--/.navbar-collapse --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Main jumbotron for a primary marketing message or call to action --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;jumbotron&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Hello, world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-primary btn-lg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Learn more &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Example row of columns --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-default&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View details &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-default&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View details &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-default&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View details &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&amp;gt;&lt;/span&gt;
+
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;footer&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;copy;&lt;/span&gt; Company 2014&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/footer&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /container --&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bootstrap core JavaScript&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;        ================================================== --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Placed at the end of the document so the pages load faster --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Agora que nós temos uma página de HTML estático, vamos seguir em frente e criar a folha de estilos do tema, o arquivo &lt;code&gt;style.css&lt;/code&gt;. O WordPress &lt;a href=&quot;https://codex.wordpress.org/Theme_Development#Theme_Stylesheet&quot;&gt;requer&lt;/a&gt; que esse arquivo tenha exatamente esse nome e também apresente um comentário com informações específicas no seu início. Ele usa as informações contidas nesse comentário para apresentar o tema na tela de seleção de tema (&lt;strong&gt;Aparência&lt;/strong&gt; &amp;gt; &lt;strong&gt;Temas&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;Na pasta do tema, a mesma onde está o arquivo &lt;code&gt;index.php&lt;/code&gt;, crie um novo arquivo chamado &lt;code&gt;style.css&lt;/code&gt; com o seguinte conteúdo:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;c&quot;&gt;/*&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;Theme Name: WP Bootstrap&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;Theme URI: https://vinyanalista.github.io/blog/2015/08/06/wordpress-bootstrap/&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;Description: Tema criado para o tutorial &amp;lt;a href=&amp;quot;https://vinyanalista.github.io/blog/2015/08/06/wordpress-bootstrap/&amp;quot;&amp;gt;Como criar um tema responsivo do WordPress com o Bootstrap&amp;lt;/a&amp;gt;.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;Author: Antônio Vinícius Menezes Medeiros&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;Author URI: https://vinyanalista.github.io/&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;Version: 1.0&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;Tags: responsive, white, bootstrap&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;License URI: http://creativecommons.org/licenses/by-sa/3.0/&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;Este tema simples foi criado usando o exemplo Jumbotron encontrado no site do Bootstrap http://getbootstrap.com/examples/jumbotron/&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;*/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A última coisa que precisamos fazer para que possamos selecionar e utilizar nosso tema é atribuir-lhe uma imagem. O WordPress &lt;a href=&quot;https://codex.wordpress.org/Theme_Development#Screenshot&quot;&gt;requer&lt;/a&gt; que essa imagem seja chamada &lt;code&gt;screenshot.png&lt;/code&gt; (na verdade, os formatos &lt;code&gt;.jpg&lt;/code&gt;, &lt;code&gt;.jpeg&lt;/code&gt; e &lt;code&gt;.gif&lt;/code&gt; também são suportados, embora não recomendados) e apresente resolução mínima de 387x290, sendo que o recomendado é 880x660 (aspecto 4:3). Você pode utilizar &lt;a href=&quot;https://raw.githubusercontent.com/vinyanalista/wpbootstrap/22981ee4247c8a4656fab44a38e9da94b6b51913/screenshot.png&quot;&gt;esta imagem&lt;/a&gt; ou outra de sua preferência:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/wordpress-bootstrap-1.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-1.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Salve essa imagem com o nome de &lt;code&gt;screenshot.png&lt;/code&gt; na mesma pasta dos arquivos &lt;code&gt;index.php&lt;/code&gt; e &lt;code&gt;style.css&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Agora estamos prontos para entrar na área de administração do WordPress e &lt;a href=&quot;https://codex.wordpress.org/Using_Themes/Theme_List#Selecting_the_Active_Theme&quot;&gt;selecionar nosso tema&lt;/a&gt;. Entre na área administrativa e vá em &lt;strong&gt;Aparência&lt;/strong&gt; &amp;gt; &lt;strong&gt;Temas&lt;/strong&gt;. Você deve ver o nosso tema na lista de temas disponíveis:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/wordpress-bootstrap-2.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-2.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Clique no botão &lt;strong&gt;Ativar&lt;/strong&gt; no tema &lt;strong&gt;WP Bootstrap&lt;/strong&gt; (lembre-se de utilizar o &lt;a href=&quot;https://wordpress.org/plugins/theme-test-drive/&quot;&gt;&lt;em&gt;plugin&lt;/em&gt; Theme Test Drive&lt;/a&gt; se estiver desenvolvendo o tema usando um &lt;em&gt;site&lt;/em&gt; que já está no ar).&lt;/p&gt;
+
+&lt;p&gt;Uma vez com o tema ativado, visite seu &lt;em&gt;site&lt;/em&gt; no navegador e verá algo como isso:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/wordpress-bootstrap-3.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-3.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Agora vamos começar a transformar essa página estática em um verdadeiro tema do WordPress.&lt;/p&gt;
+
+&lt;h3&gt;Transformando o &lt;em&gt;template&lt;/em&gt; do Bootstrap em um tema do WordPress&lt;/h3&gt;
+
+&lt;p&gt;A maioria dos &lt;a href=&quot;https://wordpress.org/themes/&quot;&gt;temas do WordPress&lt;/a&gt; inclui os seguintes arquivos:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;index.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;style.css&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;header.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;footer.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sidebar.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Normalmente eles possuem &lt;a href=&quot;https://codex.wordpress.org/Theme_Development#Template_Files_List&quot;&gt;outros arquivos&lt;/a&gt; além desses, mas vamos começar com esses e depois então acrescentar outros.&lt;/p&gt;
+
+&lt;p&gt;Crie novos arquivos de texto chamados &lt;code&gt;header.php&lt;/code&gt;, &lt;code&gt;footer.php&lt;/code&gt; e &lt;code&gt;sidebar.php&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ touch header.php footer.php sidebar.php
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;O que vamos fazer agora é mover todo o código HTML que será incluído no topo de todas as páginas para o arquivo &lt;code&gt;header.php&lt;/code&gt;. Mova todo o código acima da &lt;code&gt;div.jumbotron&lt;/code&gt; (ou seja, até a &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;/nav&amp;gt;&lt;/code&gt;, linhas 1 a 56) para o arquivo &lt;code&gt;header.php&lt;/code&gt; (em breve mostrarei como ficará esse arquivo ao final, mas por hora ele deve estar &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/blob/e79bda907e7e5703ea4bb4d5c44810f3e855d655/header.php&quot;&gt;assim&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Depois, de maneira análoga, moveremos todo o código HTML que será incluído ao final de todas as páginas para o arquivo &lt;code&gt;footer.php&lt;/code&gt;. Mova todo o código a partir da &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; (incluindo esta, linhas 87 a 101) para o arquivo &lt;code&gt;footer.php&lt;/code&gt; (também mostrarei em breve esse arquivo, mas por hora ele deve estar &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/blob/e79bda907e7e5703ea4bb4d5c44810f3e855d655/footer.php&quot;&gt;assim&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Agora vamos utilizar nossas primeiras &lt;a href=&quot;https://developer.wordpress.org/reference/functions/&quot;&gt;&lt;em&gt;tags&lt;/em&gt; do WordPress&lt;/a&gt; para incluir os códigos HTML presentes nos arquivos &lt;code&gt;header.php&lt;/code&gt; e &lt;code&gt;footer.php&lt;/code&gt; no arquivo &lt;code&gt;index.php&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;As duas &lt;em&gt;tags&lt;/em&gt; que vamos utilizar são &lt;a href=&quot;https://developer.wordpress.org/reference/functions/get_header/&quot;&gt;get_header()&lt;/a&gt; e &lt;a href=&quot;https://developer.wordpress.org/reference/functions/get_footer/&quot;&gt;get_footer()&lt;/a&gt;. Essas são funções que já vêm com o WordPress e inserem os conteúdos dos arquivos &lt;code&gt;header.php&lt;/code&gt; e &lt;code&gt;footer.php&lt;/code&gt; onde são invocadas. O WordPress é capaz de fazer isso porque nomeamos nossos arquivos seguindo suas convenções (&lt;code&gt;header.php&lt;/code&gt; e &lt;code&gt;footer.php&lt;/code&gt;). Se eles tivessem nomes diferentes (por exemplo, &lt;code&gt;topo.php&lt;/code&gt; e &lt;code&gt;rodape.php&lt;/code&gt;), essas funções não funcionariam.&lt;/p&gt;
+
+&lt;p&gt;Insira &lt;code&gt;&amp;lt;?php get_header(); ?&amp;gt;&lt;/code&gt; no início do arquivo &lt;code&gt;index.php&lt;/code&gt; (antes de todo o código) e &lt;code&gt;&amp;lt;?php get_footer(); ?&amp;gt;&lt;/code&gt; no final do arquivo &lt;code&gt;index.php&lt;/code&gt; (após todo o código).&lt;/p&gt;
+
+&lt;p&gt;Seu arquivo &lt;code&gt;index.php&lt;/code&gt; deve estar &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/blob/e79bda907e7e5703ea4bb4d5c44810f3e855d655/index.php&quot;&gt;assim&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_header(); ?&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Main jumbotron for a primary marketing message or call to action --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;jumbotron&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Hello, world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-primary btn-lg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Learn more &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Example row of columns --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-default&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View details &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-default&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View details &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-default&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View details &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_footer(); ?&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Você deve estar se perguntando porque fizemos isso. O motivo é simples: depois vamos criar várias páginas nas quais desejamos incluir os códigos HTML do topo e do rodapé. Se nós deixássemos esses códigos em todas as páginas e no futuro desejássemos realizar alguma mudança, então teríamos que replicar essa mudança em todas as páginas. Da maneira como vamos fazer, podemos mudar o código do topo da página ou do rodapé em apenas um arquivo, e todas as demais páginas que utilizam esses arquivos receberão as mudanças. Isso é bastante semelhante ao benefício que se obtém ao referenciar um arquivo CSS em todas as páginas ao invés de incluir todas as regras CSS no cabeçalho.&lt;/p&gt;
+
+&lt;p&gt;Aliás, falando em CSS, vamos fazer exatamente isso. Localize a parte do arquivo &lt;code&gt;header.php&lt;/code&gt; que contém as regras e referências às folhas de estilos (linhas 13 a 22):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bootstrap core CSS --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Custom styles for this template --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;style &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;padding-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;padding-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Substitua essa parte por isso:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- CSS --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;?php bloginfo(&amp;#39;stylesheet_url&amp;#39;);?&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Então, adicione o seguinte ao final do arquivo &lt;code&gt;style.css&lt;/code&gt; (ele deve ficar &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/blob/62fcfaaf27bfaf96510cf53e4a0f8d92b420ac92/style.css&quot;&gt;assim&lt;/a&gt;):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;c&quot;&gt;/* Bootstrap core CSS */&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* Se preferir utilizar a própria cópia do Bootstrap, descomente a linha a seguir e comente a próxima */&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;/*@import url(&amp;#39;lib/bootstrap/3.3.5/css/bootstrap.min.css&amp;#39;);*/&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* Custom styles for this template */&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+    &lt;span class=&quot;k&quot;&gt;padding-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;60px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;k&quot;&gt;padding-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;O que fizemos aqui foi utilizar uma &lt;em&gt;tag&lt;/em&gt; do WordPress para automaticamente referenciar o estilo do nosso tema em todas as páginas (já adianto que você verá neste tutorial chamadas à função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/bloginfo/&quot;&gt;bloginfo()&lt;/a&gt; serem utilizadas das mais diversas formas). Depois, no arquivo &lt;code&gt;styles.css&lt;/code&gt;, utilizamos a &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;@import&lt;/code&gt; para referenciar o arquivo CSS do Bootstrap a partir do estilo do nosso tema.&lt;/p&gt;
+
+&lt;p&gt;Antes de passar para o arquivo &lt;code&gt;footer.php&lt;/code&gt;, vamos fazer mais uma mudança no arquivo &lt;code&gt;header.php&lt;/code&gt;: insira a &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;?php wp_head(); ?&amp;gt;&lt;/code&gt; imediatamente antes da &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;/head&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Seu arquivo &lt;code&gt;header.php&lt;/code&gt; deve ficar &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/blob/62fcfaaf27bfaf96510cf53e4a0f8d92b420ac92/header.php&quot;&gt;assim&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;en&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;X-UA-Compatible&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;IE=edge&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;viewport&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;width=device-width, initial-scale=1&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;author&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Jumbotron Template for Bootstrap&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- CSS --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;?php bloginfo(&amp;#39;stylesheet_url&amp;#39;);?&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!--[if lt IE 9]&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;            &amp;lt;script src=&amp;quot;https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;            &amp;lt;script src=&amp;quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;        &amp;lt;![endif]--&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php wp_head(); ?&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar navbar-inverse navbar-fixed-top&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-header&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-toggle collapsed&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-toggle=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;collapse&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#navbar&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-expanded=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;false&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-controls=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sr-only&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Toggle navigation&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon-bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon-bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon-bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-brand&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Project name&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-collapse collapse&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-form navbar-right&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;form-group&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                            &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;placeholder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Email&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;form-control&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;form-group&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                            &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;password&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;placeholder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Password&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;form-control&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;submit&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-success&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Sign in&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--/.navbar-collapse --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/wp_head/&quot;&gt;wp_head()&lt;/a&gt; permite que o WordPress insira mais elementos ao cabeçalho da página, como arquivos JavaScript ou CSS requisitados pelo tema ou pelos &lt;em&gt;plugins&lt;/em&gt;. Se não incluíssemos essa &lt;em&gt;tag&lt;/em&gt; no nosso tema, alguns &lt;em&gt;plugins&lt;/em&gt; poderiam não funcionar.&lt;/p&gt;
+
+&lt;p&gt;Agora vamos seguir em frente e fazer uma limpeza no arquivo &lt;code&gt;footer.php&lt;/code&gt;. O exemplo do Bootstrap utiliza alguns arquivos JavaScript. Vamos referenciá-los da &lt;a href=&quot;https://codex.wordpress.org/Using_Javascript#JavaScript_in_Template_Files&quot;&gt;maneira recomendada pelo WordPress&lt;/a&gt;, removendo-os desse arquivo e trazendo-os para o cabeçalho da página. Vamos fazer com que nosso tema os insira na página através da função &lt;code&gt;wp_head()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para fazer isso, vamos criar um novo arquivo chamado &lt;a href=&quot;https://codex.wordpress.org/Functions_File_Explained&quot;&gt;functions.php&lt;/a&gt; e carregar nosso JavaScript dele. Pode parecer trabalho extra para carregar um arquivo JavaScript, mas à medida em que seus temas se tornarem mais complexos esse hábito ajudará a mantê-los limpos e organizados.&lt;/p&gt;
+
+&lt;p&gt;Na mesma pasta do arquivo &lt;code&gt;footer.php&lt;/code&gt;, crie e abra um arquivo de texto chamado &lt;code&gt;functions.php&lt;/code&gt;. Copie para ele o seguinte &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/blob/1cb8d07c31a0c3d9303db30f0552e9e932eb7ca6/functions.php&quot;&gt;código-fonte&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;scripts_do_template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Bootstrap core JavaScript&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Se preferir utilizar a própria cópia do Bootstrap, descomente a linha a seguir e comente a próxima&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//wp_register_script(&amp;#39;bootstrap&amp;#39;, get_template_directory_uri().&amp;#39;/lib/bootstrap/3.3.5/js/bootstrap.min.js&amp;#39;, array(&amp;#39;jquery&amp;#39;));&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;wp_register_script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;bootstrap&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;jquery&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+    &lt;span class=&quot;nx&quot;&gt;wp_enqueue_script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;jquery&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;wp_enqueue_script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;bootstrap&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;add_action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;wp_enqueue_scripts&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;scripts_do_template&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Aqui utilizamos uma chamada à função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/wp_register_script/&quot;&gt;wp&lt;em&gt;register&lt;/em&gt;script()&lt;/a&gt; para apresentar ao WordPress um novo &lt;em&gt;script&lt;/em&gt;, que será incluído posteriormente na página com uma chamada à função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/wp_enqueue_script/&quot;&gt;wp&lt;em&gt;enqueue&lt;/em&gt;script()&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Observe que nos preocupamos em registrar apenas o Bootstrap. A biblioteca &lt;a href=&quot;https://jquery.com/&quot;&gt;jQuery&lt;/a&gt;, um &lt;a href=&quot;/blog/2015/07/05/bootstrap/&quot;&gt;requisito para o Bootstrap&lt;/a&gt;, &lt;a href=&quot;https://codex.wordpress.org/Function_Reference/wp_enqueue_script#Default_Scripts_Included_and_Registered_by_WordPress&quot;&gt;acompanha o WordPress&lt;/a&gt;, de modo que não precisamos registra-la, apenas inclui-la.&lt;/p&gt;
+
+&lt;p&gt;Por fim, com a chamada à função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/add_action/&quot;&gt;add_action()&lt;/a&gt;, determinamos que a nossa função &lt;code&gt;scripts_do_template()&lt;/code&gt; implementa a ação &lt;a href=&quot;https://developer.wordpress.org/reference/hooks/wp_enqueue_scripts/&quot;&gt;wp&lt;em&gt;enqueue&lt;/em&gt;scripts&lt;/a&gt;, invocada pelo WordPress no momento de enfileirar o &lt;em&gt;scripts&lt;/em&gt; para renderização.&lt;/p&gt;
+
+&lt;p&gt;Vamos agora adicionar ao rodapé a &lt;em&gt;tag&lt;/em&gt; &lt;a href=&quot;https://developer.wordpress.org/reference/functions/wp_footer/&quot;&gt;wp_footer()&lt;/a&gt;, que funciona de maneira análoga à &lt;code&gt;wp_head()&lt;/code&gt;. No arquivo &lt;code&gt;footer.php&lt;/code&gt;, remova as referências às bibliotecas JavaScript (linhas 9 a 13) e insira a &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;?php wp_head(); ?&amp;gt;&lt;/code&gt; imediatamente antes da &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Seu arquivo &lt;code&gt;footer.php&lt;/code&gt; deve ficar &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/blob/1cb8d07c31a0c3d9303db30f0552e9e932eb7ca6/footer.php&quot;&gt;assim&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;            &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&amp;gt;&lt;/span&gt;
+
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;footer&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;copy;&lt;/span&gt; Company 2014&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/footer&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /container --&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php wp_footer(); ?&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Por último, vamos rever nossos arquivos &lt;code&gt;header.php&lt;/code&gt;, &lt;code&gt;index.php&lt;/code&gt; e &lt;code&gt;footer.php&lt;/code&gt; de modo que tenhamos uma &lt;code&gt;div.container&lt;/code&gt; em volta do conteúdo, &lt;a href=&quot;/blog/2015/07/05/bootstrap/&quot;&gt;como manda o Bootstrap&lt;/a&gt;. Ao final, eles devem ficar assim (você pode ver as mudanças destacadas &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/commit/c5c456b119200ce82b6ce6d5b56b6be9ae05bb0b&quot;&gt;aqui&lt;/a&gt;):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;header.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;en&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;X-UA-Compatible&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;IE=edge&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;viewport&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;width=device-width, initial-scale=1&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;author&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Jumbotron Template for Bootstrap&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- CSS --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;?php bloginfo(&amp;#39;stylesheet_url&amp;#39;);?&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;&amp;lt;!--[if lt IE 9]&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;            &amp;lt;script src=&amp;quot;https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;            &amp;lt;script src=&amp;quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;        &amp;lt;![endif]--&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php wp_head(); ?&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar navbar-inverse navbar-fixed-top&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-header&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-toggle collapsed&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-toggle=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;collapse&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#navbar&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-expanded=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;false&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-controls=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sr-only&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Toggle navigation&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon-bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon-bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon-bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-brand&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Project name&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-collapse collapse&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-form navbar-right&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;form-group&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                            &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;placeholder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Email&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;form-control&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;form-group&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                            &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;password&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;placeholder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Password&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;form-control&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;submit&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-success&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Sign in&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--/.navbar-collapse --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;index.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_header(); ?&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Main jumbotron for a primary marketing message or call to action --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;jumbotron&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Hello, world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-primary btn-lg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Learn more &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+            &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Example row of columns --&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-default&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View details &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-default&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View details &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-default&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View details &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_footer(); ?&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;footer.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;            &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&amp;gt;&lt;/span&gt;
+
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;footer&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;copy;&lt;/span&gt; Company 2014&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/footer&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /container --&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php wp_footer(); ?&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Para testar se os arquivos CSS e JS estão sendo carregados adequadamente, abra seu &lt;em&gt;site&lt;/em&gt; no navegador e redimensione a tela de modo a parecer um &lt;em&gt;tablet&lt;/em&gt; ou &lt;em&gt;smartphone&lt;/em&gt;. Clique no menu &lt;em&gt;dropdown&lt;/em&gt; e ele deve aparecer assim:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/wordpress-bootstrap-4.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-4.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Se esse menu não estiver funcionando, significa que algo deu errado na hora de referenciar algum arquivo. Certifique-se de que os arquivos estão nos locais corretos e que seu código está correto. Afinal de contas, você não deseja que seu &lt;em&gt;site&lt;/em&gt; responsivo não funcione nos &lt;em&gt;smartphones&lt;/em&gt; e &lt;em&gt;tablets&lt;/em&gt;, não é mesmo?&lt;/p&gt;
+
+&lt;p&gt;Se desejar, pode conferir como estamos até agora, clicando &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/tree/c5c456b119200ce82b6ce6d5b56b6be9ae05bb0b&quot;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Criando a página inicial do &lt;em&gt;site&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Agora que nós temos nosso tema minimamente configurado, vamos torná-lo realmente dinâmico criando uma página inicial no WordPress e exibindo seu conteúdo no nosso &lt;em&gt;site&lt;/em&gt;, ao invés do conteúdo estático que temos agora, fixo no código (&lt;em&gt;hardcoded&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Para isso, acesse a área administrativa do WordPress e vá em &lt;strong&gt;Páginas&lt;/strong&gt; &amp;gt; &lt;strong&gt;Adicionar Nova&lt;/strong&gt;. Chame a página de &amp;quot;Início&amp;quot;. Clique na aba &lt;strong&gt;Texto&lt;/strong&gt; acima do editor e mova o código HTML do arquivo &lt;code&gt;index.php&lt;/code&gt; (isso não inclui as &lt;em&gt;tags&lt;/em&gt; PHP) para o editor.&lt;/p&gt;
+
+&lt;p&gt;O código da sua página deve parecer com este:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Main jumbotron for a primary marketing message or call to action --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;jumbotron&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Hello, world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-primary btn-lg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Learn more &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Example row of columns --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-default&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View details &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-default&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View details &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;btn btn-default&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View details &lt;span class=&quot;ni&quot;&gt;&amp;amp;raquo;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Agora, seu arquivo &lt;code&gt;index.php&lt;/code&gt; deve conter apenas as chamadas para o topo e o rodapé:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;get_header&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;get_footer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Finalmente, clique em &lt;strong&gt;Publicar&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para incluir o conteúdo da página que criamos agora no nosso tema dinamicamente, vamos usar a função provavelmente mais famosa do WordPress, chamada &lt;em&gt;loop&lt;/em&gt; (laço).&lt;/p&gt;
+
+&lt;p&gt;O &lt;em&gt;loop&lt;/em&gt; do WordPress faz exatamente o que parece. Ele itera pelas páginas ou &lt;em&gt;posts&lt;/em&gt; a serem exibidos e obtém seus títulos e conteúdos, assim como várias outras informações, como a data de publicação e o autor, e até mesmo os comentários, se houver.&lt;/p&gt;
+
+&lt;p&gt;Modifique seu arquivo &lt;code&gt;index.php&lt;/code&gt; para realizar o &lt;em&gt;loop&lt;/em&gt; entre as chamadas às funções &lt;code&gt;get_header()&lt;/code&gt; e &lt;code&gt;get_footer()&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_header(); ?&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php if (have_posts()) : while (have_posts()) : the_post(); ?&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php the_title(); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;entry-content&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php the_content(); ?&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php endwhile; else: ?&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php _e(&amp;#39;Desculpe, não há posts a exibir.&amp;#39;); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php endif; ?&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_footer(); ?&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Aqui basicamente verificamos se há &lt;em&gt;posts&lt;/em&gt; ou páginas a serem exibidos com a função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/have_posts/&quot;&gt;have_posts()&lt;/a&gt;. Se não há nada a exibir, mostramos para o visitante uma mensagem de erro (&lt;a href=&quot;https://developer.wordpress.org/reference/functions/_e/&quot;&gt;_e()&lt;/a&gt;). Porém, se há &lt;em&gt;posts&lt;/em&gt; ou páginas a exibir, e enquanto houver, obtemos um desses &lt;em&gt;posts&lt;/em&gt; ou páginas (&lt;a href=&quot;https://developer.wordpress.org/reference/functions/the_post/&quot;&gt;the_post()&lt;/a&gt;) e exibimos seu título (&lt;a href=&quot;https://developer.wordpress.org/reference/functions/the_title/&quot;&gt;the_title()&lt;/a&gt;) e conteúdo (&lt;a href=&quot;https://developer.wordpress.org/reference/functions/the_content/&quot;&gt;the_content()&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Antes de testarmos nossa página inicial no navegador, vamos modificar uma configuração no WordPress para exibir a página que criamos como página inicial, ao invés das postagens mais recentes. Para isso, acesse a área administrativa e vá em &lt;strong&gt;Configurações&lt;/strong&gt; &amp;gt; &lt;strong&gt;Leitura&lt;/strong&gt; e na opção &lt;strong&gt;A página inicial mostra&lt;/strong&gt; selecione &lt;strong&gt;Uma página estática&lt;/strong&gt;. Em seguida, em &lt;strong&gt;Página inicial&lt;/strong&gt;, selecione a página &amp;quot;Início&amp;quot;:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/wordpress-bootstrap-5.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-5.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Clique em &lt;strong&gt;Salvar alterações&lt;/strong&gt; e acesse o &lt;em&gt;site&lt;/em&gt;. Você deve ver o conteúdo da página que criamos na área administrativa.&lt;/p&gt;
+
+&lt;p&gt;O WordPress nos permite usar um arquivo dedicado a renderizar especificamente a página inicial do &lt;em&gt;site&lt;/em&gt;, chamado &lt;code&gt;front-page.php&lt;/code&gt;. Salve o arquivo &lt;code&gt;index.php&lt;/code&gt; como &lt;code&gt;front-page.php&lt;/code&gt; e remova a chamada à função &lt;code&gt;get_title()&lt;/code&gt;, uma vez que não desejamos a palavra &amp;quot;Início&amp;quot; aparecendo no topo da página.&lt;/p&gt;
+
+&lt;p&gt;Seu arquivo &lt;code&gt;front-page.php&lt;/code&gt; deve estar &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/blob/af163c63bcffdfe256e66c30f3bd18b2e03fba72/front-page.php&quot;&gt;assim&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_header(); ?&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php if (have_posts()) : while (have_posts()) : the_post(); ?&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;entry-content&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php the_content(); ?&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php endwhile; else: ?&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php _e(&amp;#39;Desculpe, não há posts a exibir.&amp;#39;); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php endif; ?&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_footer(); ?&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pode deixar o arquivo &lt;code&gt;index.php&lt;/code&gt; &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/blob/af163c63bcffdfe256e66c30f3bd18b2e03fba72/index.php&quot;&gt;como está&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para provar que tudo está realmente funcionando, vamos editar a página inicial pela área administrativa do WordPress e ver o conteúdo atualizado no navegador. Acesse a área administrativa e edite a página &amp;quot;Início&amp;quot;. Faça alguma alteração na página ou substitua o conteúdo por outro de sua preferência e salve as alterações.&lt;/p&gt;
+
+&lt;p&gt;Agora, visite o &lt;em&gt;site&lt;/em&gt;. Você perceberá as alterações que fez no editor.&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/wordpress-bootstrap-6.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-6.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;h3&gt;Continua...&lt;/h3&gt;
+
+&lt;p&gt;Gostou? Está começando a funcionar? Como esse tutorial é muito grande, decidi dividi-lo em partes. Não deixe de acompanhar o &lt;em&gt;blog&lt;/em&gt; para ver as próximas partes!&lt;/p&gt;
+
+&lt;p&gt;Se você teve problemas em seguir o tutorial, pode verificar o que fizemos até agora &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/tree/af163c63bcffdfe256e66c30f3bd18b2e03fba72&quot;&gt;aqui&lt;/a&gt;. Também pode deixar sua dúvida nos comentários.&lt;/p&gt;
+
+&lt;p&gt;Abraço e até a próxima!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Aug 2015 02:00:00 -0300</pubDate>
+        <link>https://vinyanalista.github.io/blog/2015/08/06/wordpress-bootstrap/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/08/06/wordpress-bootstrap/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Design multitelas com Bootstrap</title>
@@ -1834,217 +2457,6 @@ $ mvn package
         <pubDate>Wed, 18 Jul 2012 02:57:24 -0300</pubDate>
         <link>https://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Instalação do Java Development Kit (JDK)</title>
-        <description>&lt;p&gt;Para começar a programar em &lt;a href=&quot;http://www.oracle.com/technetwork/java/index.html&quot;&gt;Java&lt;/a&gt;, seja para &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/&quot;&gt;Desktop&lt;/a&gt;, &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/&quot;&gt;Web&lt;/a&gt; ou &lt;a href=&quot;http://developer.android.com/&quot;&gt;celular&lt;/a&gt;, devemos instalar no computador o Java Development Kit (abreviadamente, JDK), que nada mais é que um conjunto de ferramentas que nos auxilia a compilar, testar e documentar programas escritos na linguagem Java. Ele também traz embutido o Java Runtime Environment (JRE), assim não é necessário instalar os dois para desenvolver e executar programas Java.&lt;/p&gt;
-
-&lt;p&gt;A seguir, forneço instruções para instalar, configurar e executar a versão mais recente do JDK (atualmente, a &lt;strong&gt;1.7.0_05&lt;/strong&gt;) em sistemas Windows e Linux.&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/java.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/java.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h3&gt;Download e instalação do JDK&lt;/h3&gt;
-
-&lt;p&gt;O primeiro passo é baixar o JDK. Vá até a &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/&quot;&gt;página de downloads do Java SE&lt;/a&gt;, aceite o contrato de licença e escolha a versão do JDK apropriada para o seu sistema:&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jdk7_1.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jdk7_1.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;h4&gt;Download e instalação do JDK no Windows&lt;/h4&gt;
-
-&lt;p&gt;No Windows, o instalador do JDK facilita bastante o processo de instalação. Baixe do site do JDK a versão do instalador apropriada para o seu sistema (Windows de 32 ou de 64 bits) e execute-o em seguida.&lt;/p&gt;
-
-&lt;p&gt;Normalmente, aceitar as opções padrão, avançando em todas as telas, deve funcionar. Atente-se apenas à pasta na qual o JDK será instalado (no meu computador, o padrão oferecido foi “C:\Program Files (x86)\Java\jdk1.7.0_05″).&lt;/p&gt;
-
-&lt;h4&gt;Download e instalação do JDK no Linux (distribuições específicas)&lt;/h4&gt;
-
-&lt;p&gt;Se a distribuição Linux que você usa provê um método padrão de instalar o JDK, é recomendado você seguir as instruções fornecidas para instalar o JDK na sua distribuição. Se sua distribuição não provê o JDK, ou se você prefere se assegurar de instalar em seu computador a versão oficial mais recente, pode seguir as instruções de instalação genéricas, que devem servir para qualquer distribuição (veja mais adiante).&lt;/p&gt;
-
-&lt;p&gt;A versão estável do &lt;a href=&quot;http://wiki.debian.org/Java/&quot;&gt;Debian&lt;/a&gt; (atualmente o Debian Squeeze 6.0) não oferece a versão mais atual do JDK em seus repositórios oficiais. Se desenvolver para a versão mais recente da linguagem não for um requisito, o usuário pode instalar o OpenJDK 6 (equivalente aberto do JDK 6) através do pacote &lt;a href=&quot;http://packages.debian.org/openjdk-6-jdk&quot;&gt;openjdk-6-jdk&lt;/a&gt; usando o utilitário &lt;code&gt;apt-get&lt;/code&gt;, incluído na distribuição. Usuários mais experientes do Debian podem tentar instalar o OpenJDK 7 (a partir da versão 7, o JDK e o OpenJDK &lt;a href=&quot;http://jdk7.java.net/java-se-7-ri/&quot;&gt;são completamente equivalentes&lt;/a&gt;) através do pacote &lt;a href=&quot;http://packages.debian.org/openjdk-7-jdk&quot;&gt;openjdk-7-jdk&lt;/a&gt; dos repositórios da próxima versão do Debian, que ainda está em teste.&lt;/p&gt;
-
-&lt;p&gt;Desde a versão 11.10, o &lt;a href=&quot;https://help.ubuntu.com/community/Java&quot;&gt;Ubuntu&lt;/a&gt; já oferece em seus repositórios oficiais o OpenJDK 7, que pode ser instalado através do pacote &lt;a href=&quot;http://packages.ubuntu.com/openjdk-7-jdk&quot;&gt;openjdk-7-jdk&lt;/a&gt; usando o utilitário &lt;code&gt;apt-get&lt;/code&gt;, incluído na distribuição.&lt;/p&gt;
-
-&lt;p&gt;Usuários de distribuições que utilizam o sistema de empacotamento RPM (como RedHat, CentOS, Fedora, Mandriva, openSUSE, etc.) podem instalar a versão mais recente do JDK através do pacote RPM disponibilizado na &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/&quot;&gt;página de downloads do Java SE&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4&gt;Download e instalação do JDK no Linux (qualquer distribuição)&lt;/h4&gt;
-
-&lt;p&gt;Se sua distribuição não provê um meio padrão de instalar o JDK (ou se por qualquer motivo você não quer instalá-lo por esse meio), há na &lt;a href=&quot;http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/www.oracle.com/technetwork/java/javase/downloads/&quot;&gt;página de downloads do Java SE&lt;/a&gt; um arquivo &lt;strong&gt;.tar.gz&lt;/strong&gt; que contém o JDK compactado. Uma vez extraído o conteúdo desse arquivo, o JDK já pode ser executado, e esse procedimento de instalação deve funcionar em qualquer distribuição Linux.&lt;/p&gt;
-
-&lt;p&gt;Para instalar o JDK dessa maneira, baixe-o da &lt;a href=&quot;http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/www.oracle.com/technetwork/java/javase/downloads/&quot;&gt;página de downloads do Java SE&lt;/a&gt; utilizando o navegador de sua preferência ou o comando &lt;strong&gt;wget&lt;/strong&gt; no terminal (a seguir, forneço o link para download direto da versão do JDK usada nesse tutorial):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd /home/vinicius/
-$ wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;No Linux, é possível instalar o JDK em um local global, de forma que todos os usuários do sistema possam utilizá-lo (requer permissão de administrador), ou na sua pasta pessoal, de forma que apenas você possa utilizá-lo (não requer permissão, além de ser mais simples para iniciantes).&lt;/p&gt;
-
-&lt;p&gt;Para demonstrar como instalar o JDK numa localização global, vou utilizar a pasta “/opt”. Para fazer isso, mova o arquivo baixado (no nosso exemplo aqui, “jdk-7u5-linux-i586.tar.gz”) para essa pasta e lá extraia seu conteúdo. O caminho para o JDK será então “/opt/jdk1.7.0_05″ (se atente a esse caminho). Após a extração, o arquivo baixado pode ser excluído. Os comandos de terminal para realizar esses procedimentos são:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# mv /home/vinicius/jdk-7u5-linux-i586.tar.gz /opt
-# cd /opt
-# tar zxvf jdk-7u5-linux-i586.tar.gz
-# rm jdk-7u5-linux-i586.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Para instalar o JDK na sua pasta pessoal o procedimento é parecido. No meu caso, como já baixei o JDK nessa pasta, apenas precisei descompactá-lo. O comando que utilizei para isso foi:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ tar zxvf jdk-7u5-linux-i586.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Nesse caso, o caminho para o JDK será “/home/vinicius/jdk1.7.0_05″.&lt;/p&gt;
-
-&lt;h3&gt;Configuração da variável JAVA_HOME&lt;/h3&gt;
-
-&lt;p&gt;A variável de ambiente JAVA_HOME é utilizada por alguns programas (como o Maven, o Eclipse e o JBoss AS, por exemplo) para determinar a localização do JDK ou do JRE instalado no computador. Essa etapa é opcional a usuários comuns de programas Java que apenas desejam instalar o ambiente de execução (JRE). Mas já que se trata da instalação do JDK, é costume não apenas definir o valor dessa variável, como acrescentar o caminho do JDK na variável de ambiente PATH, para que possamos invocar as ferramentas do JDK de qualquer pasta. Do contrário, todas as vezes em que quisermos invocar essas ferramentas teremos que digitar o caminho completo para elas.&lt;/p&gt;
-
-&lt;p&gt;A seguir, instruções para configurar essas variáveis tanto no Windows quanto no Linux.&lt;/p&gt;
-
-&lt;h4&gt;Configuração da variável JAVA_HOME no Windows&lt;/h4&gt;
-
-&lt;p&gt;Caso sua Área de Trabalho apresente o ícone do Meu Computador, clique com o botão direito nesse ícone e clique em Propriedades. Caso contrário, abra o Menu Iniciar, clique em Painel de Controle e, na janela que se abre, procure a opção Sistema.&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jdk7_2.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jdk7_2.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Na janela Sistema, clique na opção Configurações avançadas do sistema, no painel esquerdo.&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jdk7_3.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jdk7_3.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Na caixa de diálogo Propriedades do Sistema, clique no botão Variáveis de Ambiente.&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jdk7_4.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jdk7_4.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Na caixa de diálogo Variáveis de Ambiente, na seção Variáveis do sistema, clique no botão Novo.&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jdk7_5.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jdk7_5.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Informe JAVA&lt;em&gt;HOME como nome da variável e no campo valor digite a localização do JDK (no meu caso, ele foi instalado em “C:\Program Files (x86)\Java\jdk1.7.0&lt;/em&gt;05″). Quando acabar de digitar esses valores, clique em OK.&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jdk7_6.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jdk7_6.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;De volta à caixa de diálogo Variáveis de Ambiente, também na seção Variáveis do sistema, procure na lista a variável Path, selecione-a e clique no botão Editar.&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jdk7_7.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jdk7_7.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Posicione o cursor no início do valor da variável, insira o texto “%JAVA_HOME\bin;” (não inclua as aspas e não esqueça do ponto-e-vírgula) e clique em OK.&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jdk7_8.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jdk7_8.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;De volta à caixa de diálogo Variáveis de Ambiente, clique em OK. Em seguida, você pode fechar a janela Sistema. A partir de agora, qualquer nova janela de terminal aberta ou comando invocado refletirá essas alterações.&lt;/p&gt;
-
-&lt;h4&gt;Configuração da variável JAVA_HOME no Linux&lt;/h4&gt;
-
-&lt;p&gt;Se você instalou o JDK utilizando o mecanismo preferido de sua distribuição, é importante verificar se &lt;a href=&quot;http://www.cyberciti.biz/faq/linux-unix-set-java_home-path-variable/&quot;&gt;a variável JAVA_HOME&lt;/a&gt; já foi definida e se já é possível invocar os utilitários do JDK da linha de comando. Para isso, passe ao próximo tópico, realize os testes, e apenas se encontrar erros, volte a ler este.&lt;/p&gt;
-
-&lt;p&gt;Se você instalou o JDK para todos os usuários, abra com o seu editor de preferência o arquivo “/etc/profile” e acrescente as seguintes linhas no final (você deve substituir, se necessário, a localização do JDK, que no nosso exemplo foi “/opt/jdk1.7.0_05″):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;JAVA_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/opt/jdk1.7.0_05&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;CLASSPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$JAVA_HOME/lib&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PATH:$JAVA_HOME/bin&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MANPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$MANPATH:$JAVA_HOME/man&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se você instalou o JDK apenas para o seu usuário, a alteração deve ocorrer no arquivo “~/.bashrc”. Abra esse arquivo com o seu editor de preferência e acrescente as seguintes linhas no final (você deve substituir, se necessário, a localização do JDK, que no nosso exemplo foi “/home/vinicius/jdk1.7.0_05″):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;JAVA_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/home/vinicius/jdk1.7.0_05&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;CLASSPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$JAVA_HOME/lib&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PATH:$JAVA_HOME/bin&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MANPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$MANPATH:$JAVA_HOME/man&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Em qualquer um dos dois casos, as alterações serão aplicadas a qualquer nova janela de terminal aberta.&lt;/p&gt;
-
-&lt;h3&gt;Teste do JDK&lt;/h3&gt;
-
-&lt;p&gt;As instruções a seguir servem para Windows e Linux. Para testar a instalação do JDK, abra uma janela de terminal e execute o comando a seguir, que deve informar a versão do JDK instalado no seu computador:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ javac -version
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Como teste, também podemos criar um pequeno programa Java, compilá-lo e executá-lo. Em alguma pasta à qual você tenha acesso (aqui utilizarei minha pasta pessoal no Linux, “/home/vinicius”), crie um arquivo de texto simples chamado “Teste.java”. Abra esse arquivo com um editor de texto e insira o seguinte conteúdo:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Teste&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Olá!&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Agora no terminal, entre nessa pasta e invoque o compilador do Java (&lt;strong&gt;javac&lt;/strong&gt;) passando o arquivo que você acabou de criar como parâmetro:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd /home/vinicius/
-$ javac Teste.java
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Perceba que um arquivo “Teste.class” é criado como resultado da compilação. Ainda no terminal, invoque a máquina virtual Java (&lt;strong&gt;java&lt;/strong&gt;) passando o nome da classe compilada como parâmetro:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ java Teste
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se a mensagem “Olá!” apareceu na tela, tudo está funcionando perfeitamente.&lt;/p&gt;
-
-&lt;h3&gt;Plugin do Java para o navegador Firefox&lt;/h3&gt;
-
-&lt;p&gt;Se você pretende utilizar o JDK para desenvolver Applets, é interessante verificar se o plugin do Java funciona adequadamente no seu navegador. Aqui, fornecerei instruções para o Firefox.&lt;/p&gt;
-
-&lt;p&gt;No Windows, o instalador do JDK já se encarrega de instalar e configurar o plugin do Java para o navegador Firefox.&lt;/p&gt;
-
-&lt;p&gt;No Linux, esse plugin acompanha o JDK, mas é necessário criar um link simbólico na pasta onde o Firefox está instalado para que o navegador consiga localizar o plugin. Para isso, supondo que o JDK encontra-se em “/opt/jdk1.7.0_5/” e o Firefox em “/usr/lib/mozilla”, basta executar o seguinte comando no terminal:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# ln -s /opt/jdk1.7.0_5/jre/lib/i386/libnpjp2.so /usr/lib/mozilla/plugins/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Para verificar que o navegador reconhece o plugin, digite na aba de endereços “about:plugins” e tecle Enter. O plugin do Java deve aparecer na lista de plugins instalados:&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jdk7_9.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jdk7_9.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;É possível também verificar na &lt;a href=&quot;http://www.java.com/pt_BR/download/testjava.jsp&quot;&gt;página de teste do Java&lt;/a&gt; se a versão do plugin instalada no seu sistema corresponde à mais atual:&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jdk7_10.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jdk7_10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Espero que esse post possa ser útil a programadores Java iniciantes de uma maneira em geral. Agradeço previamente opiniões e críticas construtivas. Ofereço o espaço para perguntas também. Abraço a todos e até a próxima!&lt;/p&gt;
-</description>
-        <pubDate>Tue, 10 Jul 2012 01:01:10 -0300</pubDate>
-        <link>https://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</link>
-        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</guid>
         
         
       </item>
