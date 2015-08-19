@@ -5,9 +5,72 @@
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>https://vinyanalista.github.io/</link>
     <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Aug 2015 20:44:17 -0300</pubDate>
-    <lastBuildDate>Thu, 06 Aug 2015 20:44:17 -0300</lastBuildDate>
+    <pubDate>Wed, 19 Aug 2015 09:51:08 -0300</pubDate>
+    <lastBuildDate>Wed, 19 Aug 2015 09:51:08 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Como realçar links externos e abri-los em uma nova janela</title>
+        <description>&lt;p&gt;Você já reparou que na &lt;a href=&quot;https://pt.wikipedia.org/&quot;&gt;Wikipédia&lt;/a&gt; todos os &lt;em&gt;links&lt;/em&gt; para outras páginas aparecem destacados? Em alguns &lt;em&gt;sites&lt;/em&gt;, a exemplo do &lt;a href=&quot;https://pt-br.facebook.com/&quot;&gt;Facebook&lt;/a&gt;, esses &lt;em&gt;links&lt;/em&gt; são abertos sempre em novas janelas. Nessa dica breve, você aprenderá como tratar os &lt;em&gt;links&lt;/em&gt; externos dessa maneira no seu &lt;em&gt;site&lt;/em&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/&quot;&gt;Milan Aryal em seu &lt;em&gt;blog&lt;/em&gt;&lt;/a&gt; mostra diversas maneiras de conseguir isso: HTML, JS, jQuery, CSS... aqui vou mostrar &lt;a href=&quot;https://github.com/vinyanalista/vinyanalista-website/commit/706b8b9ec3cf8089f66afbeff771bb6fa2892e3a&quot;&gt;como fiz&lt;/a&gt; neste &lt;em&gt;site&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Meu &lt;em&gt;site&lt;/em&gt; utiliza &lt;a href=&quot;https://jquery.com/&quot;&gt;jQuery&lt;/a&gt; e &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt; (veja o &lt;a href=&quot;/blog/2015/07/05/bootstrap/&quot;&gt;&lt;em&gt;post&lt;/em&gt; sobre Bootstrap&lt;/a&gt;). Eu simplesmente adicionei as seguintes linhas de código ao arquivo JavaScript que é carregado em todas as páginas do &lt;em&gt;site&lt;/em&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;div.blog-post a&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39; &amp;lt;span class=&amp;quot;glyphicon glyphicon-new-window&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;target&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;_blank&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;O que esse código basicamente faz é:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Usando jQuery, ele &lt;a href=&quot;https://api.jquery.com/category/selectors/&quot;&gt;seleciona&lt;/a&gt; todos os &lt;em&gt;links&lt;/em&gt; da postagem (eu não trato &lt;em&gt;links&lt;/em&gt; na barra lateral, por exemplo);&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://api.jquery.com/filter/&quot;&gt;Filtra&lt;/a&gt; os &lt;em&gt;links&lt;/em&gt; que apontam para &lt;em&gt;sites&lt;/em&gt; diferentes do meu;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://api.jquery.com/append/&quot;&gt;Adiciona ao final&lt;/a&gt; do &lt;em&gt;link&lt;/em&gt; (imediatamente antes da &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;/a&amp;gt;&lt;/code&gt;) esse ícone &lt;span class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/span&gt; do &lt;a href=&quot;http://getbootstrap.com/components/#glyphicons&quot;&gt;Glyphicons&lt;/a&gt;, que acompanha o Bootstrap; e&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://api.jquery.com/attr/&quot;&gt;Define o valor do atributo&lt;/a&gt; &lt;code&gt;target&lt;/code&gt; para &lt;code&gt;_blank&lt;/code&gt;, fazendo com que esses &lt;em&gt;links&lt;/em&gt; sejam abertos em novas janelas (ou abas, a depender do navegador).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Se você utiliza os ícones da &lt;a href=&quot;https://fortawesome.github.io/Font-Awesome/icons/&quot;&gt;Font Awesome&lt;/a&gt;, o código é bem parecido, só muda a classe da &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;div.blog-post a&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39; &amp;lt;span class=&amp;quot;fa fa-external-link&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;target&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;_blank&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Se você não utiliza Glyphicons nem Font Awesome, ainda assim pode usar jQuery, CSS e um pequeno ícone (uma imagem de 16 x 16, por exemplo, &lt;a href=&quot;https://www.google.com/search?q=external+link&amp;amp;tbm=isch&amp;amp;tbs=isz:ex,iszw:16,iszh:16&quot;&gt;no Google você encontra várias&lt;/a&gt;) para conseguir o mesmo efeito.&lt;/p&gt;
+
+&lt;p&gt;Adicione a seguinte regra ao estilo do seu &lt;em&gt;site&lt;/em&gt; (no exemplo, a imagem se chama &lt;code&gt;link_externo.png&lt;/code&gt;):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.externo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(&amp;quot;link_externo.png&amp;quot;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;no-repeat&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;scroll&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;center&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;padding-right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Via jQuery, &lt;a href=&quot;https://api.jquery.com/addclass/&quot;&gt;adicione a classe&lt;/a&gt; &lt;code&gt;externo&lt;/code&gt; aos &lt;em&gt;links&lt;/em&gt; externos:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;div.blog-post a&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;externo&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;target&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;_blank&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pronto! A partir de agora, a imagem &lt;code&gt;link_externo.png&lt;/code&gt; deve ser exibida à direita dos seus &lt;em&gt;links&lt;/em&gt; externos e esses devem ser abertos em uma nova janela (ou aba).&lt;/p&gt;
+
+&lt;p&gt;Não vou explorar aqui todas as possibilidades. Já expus o que eu fiz e mais duas alternativas. Se nenhuma delas atende às suas necessidades, você pode tentar alguma das várias apresentadas &lt;a href=&quot;http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/&quot;&gt;nesse &lt;em&gt;post&lt;/em&gt; muito interessante do Milan Aryal&lt;/a&gt; ou &lt;a href=&quot;https://css-tricks.com/snippets/jquery/open-external-links-in-new-window/&quot;&gt;nessa página do CSS-Tricks&lt;/a&gt;. Esse &lt;em&gt;site&lt;/em&gt; tem &lt;a href=&quot;https://css-tricks.com/snippets/jquery/target-only-external-links/&quot;&gt;outra página&lt;/a&gt; na qual ainda mais opções são apresentadas.&lt;/p&gt;
+
+&lt;h3&gt;Pra não dizer que só falei de flores&lt;/h3&gt;
+
+&lt;p&gt;Vale observar que, de acordo com a maioria dos especialistas em usabilidade, abrir &lt;em&gt;links&lt;/em&gt; em uma nova janela (ou aba) do navegador não é considerada uma boa prática.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Evite abrir várias janelas do navegador, se possível — impedir que os usuários utilizem o botão &amp;quot;Voltar&amp;quot; pode tornar suas experiências tão difíceis que normalmente não compensa qualquer benefício que você tente oferecer. Uma teoria comum a favor de abrir uma segunda janela é evitar que os usuários deixem seu &lt;em&gt;site&lt;/em&gt;, mas ironicamente isso pode ter justamente o efeito oposto impedindo-os de voltar quando eles querem.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;a href=&quot;http://www.snyderconsulting.net/article_7tricks.htm#7&quot;&gt;Second browser windows&lt;/a&gt;, Seven tricks that Web users don&amp;#39;t know&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Portanto, usemos com bom senso!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 19 Aug 2015 09:30:00 -0300</pubDate>
+        <link>https://vinyanalista.github.io/blog/2015/08/19/links-externos/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/08/19/links-externos/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Como criar um tema responsivo do WordPress com o Bootstrap</title>
@@ -1198,7 +1261,7 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
           &lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sizing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Considerações finais&lt;/h3&gt;
+Considerações finais&lt;/h3&gt;
 
 &lt;p&gt;Espero que este &lt;em&gt;post&lt;/em&gt; tenha apresentado uma boa visão geral do potencial que o Bootstrap tem para melhorar o seu &lt;em&gt;site&lt;/em&gt; ou aplicação &lt;em&gt;web&lt;/em&gt;. Não tenho a intenção de esgotar o assunto aqui, até porque há muito a falar do Bootstrap. Portanto, recomendo que continue lendo o &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;&lt;em&gt;site&lt;/em&gt; oficial do Bootstrap&lt;/a&gt;. Ele é realmente a melhor fonte de informações sobre o Bootstrap. Além dele, não há nada que uma busca no &lt;a href=&quot;https://www.google.com.br&quot;&gt;Google&lt;/a&gt; ou no &lt;a href=&quot;http://pt.stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt; não responda.&lt;/p&gt;
 
@@ -1639,7 +1702,7 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
 &lt;li&gt;&lt;a href=&quot;http://www.maketecheasier.com/shrink-your-virtualbox-vm&quot;&gt;How To Shrink Your Virtualbox VM And Free Up Space For Your Hard Disk – Make Tech Easier&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 20 Jan 2014 04:53:32 -0200</pubDate>
+        <pubDate>Mon, 20 Jan 2014 03:53:32 -0300</pubDate>
         <link>https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</guid>
         
@@ -2327,136 +2390,6 @@ INFO: JBoss Remoting version 3.2.3.GA
         <pubDate>Wed, 18 Jul 2012 22:18:38 -0300</pubDate>
         <link>https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Instalação do Apache Maven</title>
-        <description>&lt;p&gt;Olá, pessoal, nesse post vocês vão ver como instalar e executar pela primeira vez o &lt;a href=&quot;http://maven.apache.org/&quot;&gt;Apache Maven&lt;/a&gt; em seus computadores.&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/maven1.gif&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/maven1.gif&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;O Maven é uma ferramenta que facilita e automatiza bastante o gerenciamento de projetos em Java, auxiliando os desenvolvedores nas etapas de definição, codificação, compilação, testes, empacotamento, implantação, documentação e distribuição da aplicação.&lt;/p&gt;
-
-&lt;p&gt;Nesse post, demonstrarei como instalar o Maven e como criar um pequeno projeto, apenas para dar uma noção de como funciona a ferramenta.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Antes de começarmos, é necessário que o Java Development Kit (JDK) esteja instalado no computador onde se deseja executar o Maven. Em &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;outro post&lt;/a&gt; nesse blog expliquei como instalar o JDK e verificar que ele está funcionando perfeitamente. Se você ainda não possui o JDK, prossiga à leitura daquela página primeiro. Se você não tem certeza se o JDK está instalado em seu computador, execute os testes propostos naquela mesma página e, se for o caso, instale-o.&lt;/p&gt;
-
-&lt;p&gt;Só prossiga à leitura desta página quando tiver certeza de que o JDK está instalado e funcionando no seu computador. Também é importante que a variável de ambiente JAVA_HOME esteja configurada.&lt;/p&gt;
-
-&lt;h3&gt;Download do Maven&lt;/h3&gt;
-
-&lt;p&gt;Instalado o JDK, é hora de baixar o Maven. Na &lt;a href=&quot;http://maven.apache.org/download.html&quot;&gt;página de downloads do site oficial do Maven&lt;/a&gt; estão disponíveis algumas opções. Para os usuários de Windows, eu recomendo o download do arquivo &lt;strong&gt;.zip&lt;/strong&gt;, e para os usuários de Linux, eu recomendo o download do arquivo &lt;strong&gt;.tar.gz&lt;/strong&gt;, pois esses formatos são os mais comuns nesses dois sistemas.&lt;/p&gt;
-
-&lt;p&gt;Se a distribuição Linux que você usa provê um método padrão de instalar o Maven, você pode preferir baixá-lo e instalá-lo por esse método. No tópico seguinte eu forneço instruções para o Debian e o Ubuntu.&lt;/p&gt;
-
-&lt;p&gt;No momento da escrita deste post, a versão mais atual do Maven é a 3.0.4. Os links para download direto dos arquivos mencionados acima são esse e esse. No caso do Linux, é possível baixar este arquivo pelo terminal usando o comando wget:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Instalação do Maven&lt;/h3&gt;
-
-&lt;p&gt;Tanto no Windows quanto no Linux basta descompactar o arquivo baixado que o Maven já pode ser executado a partir daquele local. Assim como acontece com o &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;JDK&lt;/a&gt;, é possível instalar em uma localização visível a todos os usuários (como “C:\” no Windows ou “/opt/” no Linux) ou visível apenas ao seu usuário (no meu caso, “C:\Users\Vinicius\Documents” ou “/home/vinicius”). Em ambos os casos, o arquivo descompactado gera uma pasta chamada “apache-maven-3.0.4″ e pode ser excluído após a extração.&lt;/p&gt;
-
-&lt;p&gt;É necessário prestar atenção a esse local pois, assim como fizemos na &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;instalação do JDK&lt;/a&gt;, aqui vamos configurar uma variável de ambiente que aponte para a localização do Maven, chamada de M2_HOME.&lt;/p&gt;
-
-&lt;p&gt;No Windows, fiz a extração do arquivo na raiz do disco “C:\” e renomeei a pasta “apache-maven-3.0.4″ para apenas “maven”. O caminho para o Maven no meu sistema é, então, “C:\maven”.&lt;/p&gt;
-
-&lt;p&gt;No Linux é mais prático fazer a instalação na pasta home do usuário. No terminal, os comandos para download e extração seriam:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd /home/vinicius/
-$ wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
-$ tar zxvf apache-maven-3.0.4-bin.tar.gz
-$ rm apache-maven-3.0.4-bin.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;É possível instalar também em uma localização global, visível a todos os usuários. Nesse caso, o procedimento é parecido, mas é necessário ter permissões de administrador:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd /home/vinicius/
-$ wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.tar.gz
-# mv apache-maven-3.0.4-bin.tar.gz /opt
-# cd /opt
-# tar zxvf apache-maven-3.0.4-bin.tar.gz
-# rm apache-maven-3.0.4-bin.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;No primeiro caso, o caminho para o Maven passa a ser “/home/vinicius/apache-maven-3.0.4″ e, no segundo, “/opt/apache-maven-3.0.4″.&lt;/p&gt;
-
-&lt;p&gt;Se você utiliza a versão mais recente do Ubuntu (no momento da escrita deste post, a 12.04), pode preferir instalar o Maven através do pacote &lt;a href=&quot;http://packages.ubuntu.com/maven&quot;&gt;maven&lt;/a&gt; usando o utilitário &lt;strong&gt;apt-get&lt;/strong&gt;, incluído na distribuição.&lt;/p&gt;
-
-&lt;p&gt;Usuários do Debian podem obter nos repositórios oficiais da versão estável (atualmente o Debian Squeeze 6.0) uma versão anterior do Maven (não garanto que funcione da mesma maneira que a atual), através do pacote &lt;a href=&quot;http://packages.debian.org/maven2&quot;&gt;maven2&lt;/a&gt; usando o utilitário &lt;strong&gt;apt-get&lt;/strong&gt;, incluído na distribuição. Usuários mais experientes do Debian podem tentar instalar o Maven 3.0.4 (versão mais recente até o momento da escrita) através do pacote &lt;a href=&quot;http://packages.debian.org/maven&quot;&gt;maven&lt;/a&gt; dos repositórios da próxima versão do Debian, que ainda está em teste.&lt;/p&gt;
-
-&lt;h3&gt;Configuração da variável M2_HOME&lt;/h3&gt;
-
-&lt;p&gt;De maneira análoga à &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;instalação do JDK&lt;/a&gt;, aqui vamos criar uma variável de ambiente M2_HOME que informe para os demais aplicativos do sistema a localização do Maven. Depois vamos atualizar o valor da variável de ambiente PATH para que possamos invocar o Maven diretamente da linha de comando, sem precisar informar sua localização completa sempre que quisermos fazer isso.&lt;/p&gt;
-
-&lt;p&gt;No Windows, o procedimento é bem semelhante ao &lt;a href=&quot;/blog/2012/07/10/instalacao-do-java-development-kit-jdk/&quot;&gt;descrito no post anterior&lt;/a&gt;, só mudando os nomes das variáveis e os valores:&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/maven2.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/maven2.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/maven3.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/maven3.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;No Linux, se você instalou o Maven apenas para o seu usuário,  abra com o seu editor de preferência o arquivo “~/.bashrc” e acrescente as seguintes linhas no final do arquivo (você deve substituir, se necessário, a localização do Maven, que no nosso exemplo foi “/home/vinicius/apache-maven-3.0.4″):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;M2_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/home/vinicius/apache-maven-3.0.4&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PATH:$M2_HOME/bin&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se você instalou o Maven para todos os usuários, a alteração deve ocorrer no arquivo “/etc/profile”. Abra esse arquivo com o seu editor de preferência e acrescente as seguintes linhas no final do arquivo (você deve substituir, se necessário, a localização do Maven, que no nosso exemplo foi “/opt/apache-maven-3.0.4″):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;M2_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/opt/apache-maven-3.0.4&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$PATH:$M2_HOME/bin&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Teste do Maven&lt;/h3&gt;
-
-&lt;p&gt;As instruções a seguir servem para Windows e Linux. Para testar a instalação do Maven, abra uma nova janela de terminal e execute o comando a seguir, que deve exibir  informações sobre a instalação do Maven no seu computador:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mvn -v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;A saída deve ser algo parecido com isso:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Apache Maven 3.0.4 (r1232337; 2012-01-17 08:44:56+0000)
-Maven home: /home/vinicius/apache-maven-3.0.4
-Java version: 1.7.0_147-icedtea, vendor: Oracle Corporation
-Java home: /usr/lib/jvm/java-7-openjdk-i386/jre
-Default locale: en_US, platform encoding: UTF-8
-OS name: &amp;quot;linux&amp;quot;, version: &amp;quot;3.0.0-12-generic&amp;quot;, arch: &amp;quot;i386&amp;quot;, family: &amp;quot;unix&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Como teste, também vamos criar um pequeno projeto Java, compilá-lo, empacotá-lo e executá-lo. Em alguma pasta à qual você tenha acesso (aqui utilizarei minha pasta pessoal no Linux, “/home/vinicius”), execute o seguinte comando:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ mvn archetype:generate \
--DgroupId=br.com.vinyanalista.tutorial \
--DartifactId=projeto.exemplo \
--DarchetypeArtifactId=maven-archetype-quickstart \
--DinteractiveMode=false
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;A primeira execução do Maven demora um pouco. Isso porque ele vai baixar algumas bibliotecas e plugins necessárias ao projeto. No meu computador, esse processo demorou cerca de 6 minutos. Outros projetos reaproveitam as bibliotecas e plugins já baixados, por isso esse é um processo demorado que ocorre apenas uma vez.&lt;/p&gt;
-
-&lt;p&gt;Perceba que foi criada uma pasta “projeto.exemplo”. Essa pasta contém o nosso projeto. Vamos entrar nela e mandar o Maven compilar e empacotar o projeto:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ cd projeto.exemplo
-$ mvn package
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Na verdade, ordenamos apenas que o Maven empacotasse o projeto. No entanto, como a compilação deve ocorrer antes para que o projeto possa ser empacotado, o Maven executa a compilação automaticamente antes de realizar o empacotamento do projeto de fato. O comando acima deu origem a uma pasta target e, dentro dela, um arquivo .jar contendo o projeto compilado e empacotado.&lt;/p&gt;
-
-&lt;p&gt;Vamos executar a classe principal do projeto:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ java -cp target/projeto.exemplo-1.0-SNAPSHOT.jar br.com.vinyanalista.tutorial.App
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se uma mensagem do tipo “Hello, World!” apareceu na tela, então tudo funcionou conforme o esperado e o Maven está devidamente instalado e funcionando em seu computador.&lt;/p&gt;
-
-&lt;p&gt;Então, é isso, pessoal. Por hora, vou ficando por aqui. Em outro post, falarei mais sobre o Maven, como gerenciar seus projetos Java utilizando essa ferramenta,  explicando inclusive os arquivos gerados nesse exemplo e como alterá-los conforme suas necessidades. Deixo como referências o blog &lt;a href=&quot;http://maven3tutorial.blogspot.com.br/&quot;&gt;Maven 3 Tutorial&lt;/a&gt;, bastante completo e didático, com várias informações sobre o uso do Maven, e o blog da &lt;a href=&quot;http://www.caelum.com.br/&quot;&gt;Caelum&lt;/a&gt;, também bastante completo e didático, que contém &lt;a href=&quot;http://blog.caelum.com.br/processo-de-build-com-o-maven/&quot;&gt;um post dedicado a falar apenas sobre o Maven&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Abraço a todos, e até a próxima!&lt;/p&gt;
-</description>
-        <pubDate>Wed, 18 Jul 2012 02:57:24 -0300</pubDate>
-        <link>https://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/</link>
-        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/</guid>
         
         
       </item>
