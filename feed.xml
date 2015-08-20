@@ -5,8 +5,8 @@
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>https://vinyanalista.github.io/</link>
     <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 20 Aug 2015 08:39:49 -0300</pubDate>
-    <lastBuildDate>Thu, 20 Aug 2015 08:39:49 -0300</lastBuildDate>
+    <pubDate>Thu, 20 Aug 2015 14:00:40 -0300</pubDate>
+    <lastBuildDate>Thu, 20 Aug 2015 14:00:40 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -1038,6 +1038,10 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
 &lt;h3&gt;Continua...&lt;/h3&gt;
 
 &lt;p&gt;Gostou? Está começando a funcionar? Como esse tutorial é muito grande, decidi dividi-lo em partes. Não deixe de acompanhar o &lt;em&gt;blog&lt;/em&gt; para ver as próximas partes!&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-success atualizacao&quot; role=&quot;alert&quot;&gt;
+    &lt;span class=&quot;glyphicon glyphicon-refresh&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; &lt;strong&gt;Atualização (20/08/2015):&lt;/strong&gt; a segunda parte do tutorial já se encontra disponível &lt;a href=&quot;/blog/2015/08/20/wordpress-bootstrap-parte2/&quot;&gt;aqui&lt;/a&gt;.
+&lt;/div&gt;
 
 &lt;p&gt;Se você teve problemas em seguir o tutorial, pode verificar o que fizemos até agora &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/tree/af163c63bcffdfe256e66c30f3bd18b2e03fba72&quot;&gt;aqui&lt;/a&gt;. Também pode deixar sua dúvida nos comentários.&lt;/p&gt;
 
