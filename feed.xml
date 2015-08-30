@@ -5,9 +5,377 @@
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>https://vinyanalista.github.io/</link>
     <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 20 Aug 2015 14:00:40 -0300</pubDate>
-    <lastBuildDate>Thu, 20 Aug 2015 14:00:40 -0300</lastBuildDate>
+    <pubDate>Sat, 29 Aug 2015 22:53:34 -0300</pubDate>
+    <lastBuildDate>Sat, 29 Aug 2015 22:53:34 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Botões de compartilhar e seguir com o AddThis</title>
+        <description>&lt;p&gt;As redes sociais são ferramentas poderosas para promover um &lt;em&gt;site&lt;/em&gt; e manter contato com os visitantes. O interessante é que eles mesmos podem ajudar na divulgação, especialmente se os botões para compartilhar estiverem bem visíveis na página. Mas, com tantas redes sociais que existem hoje, implementar (e manter) os botões de cada uma pode ser uma tarefa trabalhosa. &lt;/p&gt;
+
+&lt;p&gt;E agora, quem poderá nos ajudar?&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/addthis-00.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-00.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Esperava o &lt;a href=&quot;https://www.youtube.com/watch?v=VDWZtPQp6fI&quot;&gt;Chapolin Colorado&lt;/a&gt;? Não, dessa vez não será ele, mas o AddThis!&lt;/p&gt;
+
+&lt;p&gt;O &lt;a href=&quot;http://www.addthis.com&quot;&gt;AddThis&lt;/a&gt; é um serviço que pode ser integrado a um &lt;em&gt;site&lt;/em&gt; com o uso de um &lt;em&gt;widget&lt;/em&gt;. Ele permite aos visitantes do &lt;em&gt;site&lt;/em&gt; compartilhar a página visitada em uma variedade de redes sociais listadas no &lt;em&gt;widget&lt;/em&gt;, como &lt;a href=&quot;https://www.facebook.com/&quot;&gt;Facebook&lt;/a&gt;, &lt;a href=&quot;https://plus.google.com/&quot;&gt;Google+&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/&quot;&gt;Twitter&lt;/a&gt; e &lt;a href=&quot;https://www.linkedin.com/&quot;&gt;LinkedIn&lt;/a&gt;, apenas para citar alguns exemplos.&lt;/p&gt;
+
+&lt;p&gt;Você pode perceber o AddThis em ação neste &lt;em&gt;site&lt;/em&gt; que visita agora. Experimente procurar os &lt;em&gt;links&lt;/em&gt; de compartilhar e seguir, eles estão visíveis, acho que não terá dificuldade em identificá-los:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/addthis-01.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;O AddThis também fornece estatísticas sobre o desempenho do seu &lt;em&gt;site&lt;/em&gt; nas redes sociais (por exemplo, quantos &lt;em&gt;links&lt;/em&gt; para o seu &lt;em&gt;site&lt;/em&gt; foram compartilhados no Facebook na última semana e quais páginas foram compartilhadas) e outras ferramentas para atrair e cativar os visitantes (como &lt;em&gt;popups&lt;/em&gt; que chamam a atenção de volta para o &lt;em&gt;site&lt;/em&gt; quando os visitantes estão prestes a deixá-lo).&lt;/p&gt;
+
+&lt;p&gt;Aqui veremos como criar uma conta no AddThis e adicionar ao &lt;em&gt;site&lt;/em&gt; os mesmos recursos que puderam ser percebidos na imagem acima:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.addthis.com/get/sharing-sidebar&quot;&gt;Barra lateral de compartilhamento&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.addthis.com/get/mobile-toolbar&quot;&gt;Barra móvel&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.addthis.com/get/sharing-buttons&quot;&gt;Botões de compartilhar&lt;/a&gt;; e&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.addthis.com/get/horizontal-follow-buttons&quot;&gt;Botões de seguir&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Criando uma conta no AddThis&lt;/h3&gt;
+
+&lt;p&gt;O AddThis oferece alguns serviços mediante pagamento, mas pode ser utilizado &lt;strong&gt;gratuitamente&lt;/strong&gt;. Para utilizar seus serviços, é necessário apenas se cadastrar. Acesse o site &lt;a href=&quot;http://www.addthis.com/&quot;&gt;www.addthis.com&lt;/a&gt; e clique em &lt;strong&gt;Sign In&lt;/strong&gt; (entrar), no canto superior direito da página:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/addthis-02.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Essa é a página de &lt;em&gt;login&lt;/em&gt;, onde você tem acesso ao &lt;em&gt;link&lt;/em&gt; para se cadastrar no final da página:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/addthis-03.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Você pode, se achar mais conveniente, entrar no AddThis com uma conta do &lt;a href=&quot;https://www.google.com.br/&quot;&gt;Google&lt;/a&gt;, Facebook ou Twitter. Clicando em um dos três botões, será iniciado o processo de &lt;em&gt;login&lt;/em&gt; na conta escolhida e vinculação da conta com o AddThis. Esse processo é muito fácil, não vou explicá-lo aqui. Caso tenha optado pela inscrição mais tradicional, continue lendo. Senão, avance para a próxima seção.&lt;/p&gt;
+
+&lt;p&gt;Clique em &lt;strong&gt;Create an Account&lt;/strong&gt; (criar uma conta). Você é então encaminhado para a página de registro:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/addthis-04.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Digite seu email em &lt;strong&gt;Email Address&lt;/strong&gt;, uma senha em &lt;strong&gt;Password&lt;/strong&gt;, digite novamente essa senha (uma confirmação, por segurança) em &lt;strong&gt;Retype Password&lt;/strong&gt;, deixe marcada a opção &lt;strong&gt;Email me a monthly newsletter&lt;/strong&gt; (envie-me mensalmente notícias por e-mail) caso deseje acompanhar as novidades do AddThis (ou desmarque, caso contrário) e clique em &lt;strong&gt;Registrer&lt;/strong&gt; (registrar).&lt;/p&gt;
+
+&lt;p&gt;Na tela seguinte, será solicitado a você escolher um plano. Se deseja começar com o plano gratuito, clique em &lt;strong&gt;Select plan&lt;/strong&gt; abaixo de &lt;strong&gt;Basic&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/addthis-05.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Pronto, agora você já tem uma conta no AddThis! Vamos adicionar ao &lt;em&gt;site&lt;/em&gt; nosso primeiro serviço! Clique em &lt;strong&gt;Tools&lt;/strong&gt; (ferramentas), na barra de navegação superior, para ver a lista de todos os serviços disponibilizados pelo AddThis.&lt;/p&gt;
+
+&lt;h3&gt;JavaScript básico&lt;/h3&gt;
+
+&lt;p&gt;Os &lt;em&gt;widgets&lt;/em&gt; do AddThis são adicionados ao &lt;em&gt;site&lt;/em&gt; por meio de uma biblioteca JavaScript, que devemos referenciar. Após ter clicado em &lt;strong&gt;Tools&lt;/strong&gt;, e estar na página que lista os serviços do AddThis, clique em &lt;strong&gt;Get the Code&lt;/strong&gt; (obter o código).&lt;/p&gt;
+
+&lt;p&gt;Você será apresentado a um código como esse:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Go to www.addthis.com/dashboard to customize your tools --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-exemplo123456789&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;async&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Você pode copiar esse código e colar em &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381220-default-code#external-js&quot;&gt;qualquer lugar&lt;/a&gt; do código-fonte da sua página. Uma das opções mais comuns é colar dentro da &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;pt&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- ... --&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Go to www.addthis.com/dashboard to customize your tools --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-exemplo123456789&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;async&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Outra opção comum é colar antes da &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;, ao final da página:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- ... --&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Go to www.addthis.com/dashboard to customize your tools --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-exemplo123456789&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;async&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pronto, agora sim podemos começar a utilizar o AddThis. Mesmo que você utilize mais de um serviço, esse código deve ser inserido na página apenas uma vez.&lt;/p&gt;
+
+&lt;p&gt;De volta à página, feche o diálogo com o código para voltar à lista de serviços.&lt;/p&gt;
+
+&lt;h3&gt;Adicionando a barra lateral de compartilhamento&lt;/h3&gt;
+
+&lt;p&gt;Vamos começar adicionando a barra lateral de compartilhamento. Ela aparece na lateral esquerda ou direita da página e permite ao visitante compartilhá-la nas redes sociais.&lt;/p&gt;
+
+&lt;p&gt;Se você acessar este &lt;em&gt;site&lt;/em&gt; de um computador &lt;em&gt;desktop&lt;/em&gt;, verá a barra de compartilhamento em ação:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/addthis-06.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Na lista de serviços do AddThis, abaixo de &lt;strong&gt;Sharing Sidebar&lt;/strong&gt; (barra lateral de compartilhamento), clique em &lt;strong&gt;Setup&lt;/strong&gt; (configurar):&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/addthis-07.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Aparecerá um diálogo com várias opções para você personalizar sua barra lateral de compartilhamento:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Chose a side&lt;/strong&gt; (escolha um lado): aqui você deve definir se a barra aparecerá à esquerda ou à direita;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt; (tema): escolha o tema preto, prata, branco ou transparente. Acredito que isso só se aplica a um botão da barra que permite escondê-la ou exibi-la novamente;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Title&lt;/strong&gt; (título): dê um nome à barra, pode ser o nome do seu &lt;em&gt;site&lt;/em&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Services&lt;/strong&gt; (serviços): escolha quais redes sociais serão apresentadas ao visitante na barra lateral. Você pode deixar o AddThis tomar essa decisão para cada visitante, opção &lt;strong&gt;Auto Personalization&lt;/strong&gt; (que eles recomendam), ou escolher você mesmo, opção &lt;strong&gt;Select Your Own&lt;/strong&gt;, caso em que você poderá escolher quais redes sociais aparecerão na barra e até mesmo alterar a ordem em que elas aparecem; e&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Number of Buttons&lt;/strong&gt; (número de botões): defina quantos botões devem aparecer na barra de compartilhamento, o padrão é 5, mas eu uso 7, uma quantidade que é confortável até mesmo para uma tela pequena, como a de um &lt;em&gt;netbook&lt;/em&gt; com resolução 1024x600.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Caso deseje visualizar mais opções, clique em &lt;strong&gt;Show more options&lt;/strong&gt;, mas vou me ater a explicar essas. Clique em &lt;strong&gt;Activate&lt;/strong&gt; (ativar) e depois em &lt;strong&gt;Ok&lt;/strong&gt; para finalizar.&lt;/p&gt;
+
+&lt;p&gt;Provavelmente, se você acessar seu &lt;em&gt;site&lt;/em&gt; agora, já verá o AddThis em ação. Caso ele não apareça, verifique se inseriu corretamente a referência à biblioteca JavaScript no código-fonte da página, atualize a página ou aguarde e faça um novo acesso. Pode ser que ele demore um pouco para começar a funcionar.&lt;/p&gt;
+
+&lt;p&gt;Vale lembrar que a barra lateral de compartilhamento é destinada aos computadores &lt;em&gt;desktop&lt;/em&gt;, ela não aparece em dispositivos móveis como &lt;em&gt;smartphones&lt;/em&gt; e &lt;em&gt;tablets&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vamos agora configurar uma barra própria para os visitantes que acessarem nosso &lt;em&gt;site&lt;/em&gt; por esses dispositivos.&lt;/p&gt;
+
+&lt;h3&gt;Adicionando a barra móvel&lt;/h3&gt;
+
+&lt;p&gt;A barra móvel apresenta ao visitante que acessa o &lt;em&gt;site&lt;/em&gt; por dispositivos móveis opções para segui-lo nas redes sociais ou compartilhar a página. Ela aparece flutuando acima ou abaixo do conteúdo.&lt;/p&gt;
+
+&lt;p&gt;Se você acessar este &lt;em&gt;site&lt;/em&gt; de um &lt;em&gt;smartphone&lt;/em&gt; ou &lt;em&gt;tablet&lt;/em&gt;, verá a barra móvel em ação:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/addthis-08.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Na lista de serviços do AddThis, abaixo de &lt;strong&gt;Mobile Toolbar&lt;/strong&gt; (barra móvel), clique em &lt;strong&gt;Setup&lt;/strong&gt; (configurar).&lt;/p&gt;
+
+&lt;p&gt;Aparecerá um diálogo com várias opções para você personalizar sua barra móvel:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Position&lt;/strong&gt; (posição): aqui você deve definir se a barra aparecerá embaixo (&lt;strong&gt;Bottom&lt;/strong&gt;) ou no topo (&lt;strong&gt;Top&lt;/strong&gt;) da tela;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt; (tema): escolha o tema preto, prata ou branco;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Share&lt;/strong&gt; (compartilhar): defina se a barra móvel deve exibir opções para compartilhar a página, opção &lt;strong&gt;On&lt;/strong&gt; (ativado), ou não, opção &lt;strong&gt;Off&lt;/strong&gt; (desativado);&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Follow&lt;/strong&gt; (seguir): defina se a barra móvel deve exibir opções para seguir o &lt;em&gt;site&lt;/em&gt; nas redes sociais, opção &lt;strong&gt;On&lt;/strong&gt; (ativado), ou não, opção &lt;strong&gt;Off&lt;/strong&gt; (desativado); e&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Follow Services&lt;/strong&gt; (serviços para seguir): nessa opção são apresentados vários campos nos quais você deve informar o endereço para os seus perfis em cada uma das redes sociais que serão apresentadas na barra móvel, não é necessário informar todos, apenas os que você possuir.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Caso deseje visualizar mais opções, clique em &lt;strong&gt;Show more options&lt;/strong&gt;, mas vou me ater a explicar essas. Clique em &lt;strong&gt;Activate&lt;/strong&gt; (ativar).&lt;/p&gt;
+
+&lt;p&gt;Se você acessar seu &lt;em&gt;site&lt;/em&gt; por um &lt;em&gt;smartphone&lt;/em&gt; ou &lt;em&gt;tablet&lt;/em&gt;, provavelmente já verá a barra móvel do AddThis em ação.&lt;/p&gt;
+
+&lt;h3&gt;Adicionando botões de compartilhar&lt;/h3&gt;
+
+&lt;p&gt;Os botões de compartilhar chamam a atenção dos visitantes e os estimula a compartilhar &lt;em&gt;links&lt;/em&gt; para o &lt;em&gt;site&lt;/em&gt; nas redes sociais.&lt;/p&gt;
+
+&lt;p&gt;Neste &lt;em&gt;site&lt;/em&gt;, você pode perceber os botões de compartilhar logo abaixo dos títulos das postagens, em tamanho pequeno, e também nas páginas das postagens após o conteúdo, antes dos comentários, em tamanho grande:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/addthis-09.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Os &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/815564-available-button-sizes&quot;&gt;tamanhos disponibilizados pelo AddThis&lt;/a&gt; são:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;pequeno (16x16),&lt;/li&gt;
+&lt;li&gt;médio (20x20) e&lt;/li&gt;
+&lt;li&gt;grande (32x32).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;O processo de configuração desses botões é bastante semelhante ao das barras que vimos anteriormente, com a principal diferença que, ao final, você deverá copiar e colar um código como esse no lugar em que deseja que os botões apareçam em sua página:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Go to www.addthis.com/dashboard to customize your tools --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_sharing_toolbox&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Aqui estou mais interessado em explicar &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/1365467-preferred-services-personalization&quot;&gt;como configurar os botões de compartilhar manualmente&lt;/a&gt;, para obter um maior controle sobre o AddThis.&lt;/p&gt;
+
+&lt;p&gt;Neste &lt;em&gt;site&lt;/em&gt;, eu utilizei o seguinte código abaixo dos títulos das postagens, para os botões pequenos:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Button BEGIN --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_toolbox addthis_default_style&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_facebook&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_twitter&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-via=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vinyanalista&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_google_plusone_share&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_favorites&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_compact&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_counter addthis_bubble_style&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Button END --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;E o seguinte código nas páginas das postagens, para os botões grandes:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Button BEGIN --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_toolbox addthis_default_style addthis_32x32_style gap&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_facebook&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_twitter&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_google_plusone_share&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_email&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_favorites&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis addthis_button_print&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_pdfonline&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_compact&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_counter addthis_bubble_style&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Button END --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;O AddThis permite integrar o seu &lt;em&gt;site&lt;/em&gt; a mais de 350 redes sociais. Uma lista de todas as redes suportadas pelo AddThis pode ser encontrada na página &lt;a href=&quot;https://www.addthis.com/services&quot;&gt;Service Directory&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/125611-available-services&quot;&gt;adicionar o botão de compartilhar de uma rede&lt;/a&gt;, procure essa rede na lista e verifique seu código. Por exemplo, no caso do &lt;a href=&quot;http://www.reddit.com/&quot;&gt;Reddit&lt;/a&gt;, é &lt;code&gt;reddit&lt;/code&gt;. Então, crie um &lt;em&gt;link&lt;/em&gt; (&lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;) com a classe igual a &lt;code&gt;addthis_button_&lt;/code&gt; mais o código da rede (nesse exemplo, &lt;code&gt;reddit&lt;/code&gt;), assim:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_reddit&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Podemos também configurar o que será compartilhado nas redes sociais a partir desses botões usando a variável global &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/1337996-the-addthis_share-variable&quot;&gt;addthis_share&lt;/a&gt;, reconhecida pela biblioteca JavaScript do AddThis, como no exemplo a seguir:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;addthis_share&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://vinyanalista.github.io/blog/2015/08/06/wordpress-bootstrap/&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Como criar um tema responsivo do WordPress com o Bootstrap - Antônio Vinícius&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Nesse tutorial, você aprenderá a criar um tema responsivo do WordPress usando o Bootstrap. Com um tema responsivo, seu blog ou site com WordPress aparecerá bem na grande variedade de dispositivos (computadores, smartphones e tablets) e navegadores existentes.&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Explicando cada uma dessas opções:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;url&lt;/code&gt;: permite definir manualmente o endereço a ser compartilhado. Por padrão, o AddThis utiliza o endereço encontrado na barra de endereços do navegador;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;title&lt;/code&gt;: permite definir manualmente o título a ser compartilhado. Por padrão, o AddThis utiliza o título encontrado na janela do navegador; e&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;description&lt;/code&gt;: permite definir manualmente a descrição a ser compartilhada. O AddThis não possui um padrão para essa configuração, de modo que, se ela não for definida manualmente, cada rede social apresentará à sua maneira uma descrição para a página compartilhada.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Também é possível fazer a &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/1365475-attribute-based-configuration&quot;&gt;configuração usando atributos HTML&lt;/a&gt;, como no exemplo:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Button BEGIN --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_toolbox addthis_default_style&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://vinyanalista.github.io/blog/2015/08/06/wordpress-bootstrap/&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Como criar um tema responsivo do WordPress com o Bootstrap - Antônio Vinícius&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:description=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Nesse tutorial, você aprenderá a criar um tema responsivo do WordPress usando o Bootstrap. Com um tema responsivo, seu blog ou site com WordPress aparecerá bem na grande variedade de dispositivos (computadores, smartphones e tablets) e navegadores existentes.&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_facebook&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_twitter&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-via=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vinyanalista&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_google_plusone_share&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_favorites&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_compact&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_counter addthis_bubble_style&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Button END --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Essa configuração local de cada &lt;em&gt;link&lt;/em&gt; por meio dos atributos &lt;code&gt;addthis:url&lt;/code&gt;, &lt;code&gt;addthis:title&lt;/code&gt; e &lt;code&gt;addthis:description&lt;/code&gt; é especialmente útil nos &lt;em&gt;blogs&lt;/em&gt;, em páginas onde há uma lista de &lt;em&gt;posts&lt;/em&gt; e os botões de compartilhar são exibidos para cada &lt;em&gt;post&lt;/em&gt; (veja a página inicial deste &lt;em&gt;site&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Se estiver preocupado com a validação do HTML do seu &lt;em&gt;site&lt;/em&gt;, declare o &lt;em&gt;namespace&lt;/em&gt; do AddThis na &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:addthis=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://www.addthis.com/help/api-spec&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;O AddThis também possibilita &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381237-third-party-buttons&quot;&gt;configurar os botões nativos das redes sociais mais populares&lt;/a&gt;, como Facebook, Twitter, Google+, LinkedIn, entre outras. Com esses botões, você pode, por exemplo, exibir os contadores de compartilhamentos em cada uma dessas redes.&lt;/p&gt;
+
+&lt;p&gt;Se quiser conhecer ainda mais opções para personalizar os botões de compartilhar, consulte a &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/1337989-overview&quot;&gt;documentação da API dos botões de compartilhamento do AddThis&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Adicionando os botões de seguir&lt;/h3&gt;
+
+&lt;p&gt;Os botões de seguir apresentam &lt;em&gt;links&lt;/em&gt; para perfis em redes sociais, por meio dos quais os visitantes podem acompanhar suas postagens. O AddThis disponibiliza três versões desses botões para uso: &lt;a href=&quot;https://www.addthis.com/get/horizontal-follow-buttons&quot;&gt;horizontal&lt;/a&gt;, &lt;a href=&quot;https://www.addthis.com/get/vertical-follow-buttons&quot;&gt;vertical&lt;/a&gt; e &lt;a href=&quot;https://www.addthis.com/get/follow-header&quot;&gt;flutuante&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vamos aqui nos ater à versão horizontal, a mesma utilizada neste &lt;em&gt;site&lt;/em&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/08/addthis-10.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;O recomendado é adicionar esses botões à barra lateral ou ao cabeçalho da página.&lt;/p&gt;
+
+&lt;p&gt;Os tamanhos disponibilizados pelo AddThis para os &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/1985837-follow-buttons&quot;&gt;botões de seguir&lt;/a&gt; são os mesmos disponibilizados para os botões de compartilhar:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;pequeno (16x16),&lt;/li&gt;
+&lt;li&gt;médio (20x20) e&lt;/li&gt;
+&lt;li&gt;grande (32x32).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;O processo de configuração dos botões de seguir é bastante semelhante ao das barras que vimos anteriormente, com a principal diferença que, ao final, você deverá copiar e colar um código como esse no lugar em que deseja que os botões apareçam em sua página:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Go to www.addthis.com/dashboard to customize your tools --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_horizontal_follow_toolbox&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Aqui estou mais interessado em explicar como configurar os botões de seguir manualmente, para obter um maior controle sobre o AddThis.&lt;/p&gt;
+
+&lt;p&gt;Neste &lt;em&gt;site&lt;/em&gt;, eu utilizei o seguinte código:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Follow BEGIN --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_toolbox addthis_32x32_style addthis_default_style&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_facebook_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;pages/vinyanalistacombr/1604841683119097&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_twitter_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vinyanalista&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_linkedin_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vinyanalista&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_google_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;112036205302761713933&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_youtube_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;viniciusifse&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_foursquare_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vinyanalista&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_github_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vinyanalista&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Follow END --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A lógica é bem semelhante à dos botões de compartilhar: para adicionar o botão de seguir de uma rede, crie um &lt;em&gt;link&lt;/em&gt; (&lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;) com a classe igual a &lt;code&gt;addthis_button_&lt;/code&gt; mais o código da rede mais &lt;code&gt;_follow&lt;/code&gt;. Além disso, use o atributo &lt;code&gt;addthis:userid&lt;/code&gt; para informar seu usuário na rede social desejada.&lt;/p&gt;
+
+&lt;p&gt;Então, um botão de seguir para a rede social &lt;a href=&quot;https://instagram.com/&quot;&gt;Instagram&lt;/a&gt;, por exemplo, seria assim:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_instagram_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;seu_usuario&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Se estiver preocupado com a validação do HTML do seu &lt;em&gt;site&lt;/em&gt;, certifique-se de declarar o &lt;em&gt;namespace&lt;/em&gt; do AddThis na &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:addthis=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://www.addthis.com/help/api-spec&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pronto! Agora já temos uma boa integração do AddThis com o nosso &lt;em&gt;site&lt;/em&gt;. Vamos apenas ver mais alguns detalhes.&lt;/p&gt;
+
+&lt;h3&gt;Mais alguns detalhes&lt;/h3&gt;
+
+&lt;p&gt;Com relação à &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381215-localization&quot;&gt;tradução&lt;/a&gt;, o AddThis suporta &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381240-languages&quot;&gt;mais de 50 idiomas&lt;/a&gt; e por padrão utiliza o mesmo idioma da interface do navegador (se você usa o &lt;a href=&quot;https://www.mozilla.org/pt-BR/firefox/&quot;&gt;Mozilla Firefox&lt;/a&gt; em português, por exemplo, verá &lt;em&gt;tooltips&lt;/em&gt; em português ao apontar o cursor para um botão do AddThis). No entanto, também é possível definir o idioma a ser utilizado manualmente.&lt;/p&gt;
+
+&lt;p&gt;Para fazer essa e outras configurações, usamos a variável global &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/1337994-the-addthis_config-variable&quot;&gt;addthis_config&lt;/a&gt;, reconhecida pela biblioteca JavaScript do AddThis.&lt;/p&gt;
+
+&lt;p&gt;Como exemplo, veja a configuração que eu utilizo neste &lt;em&gt;site&lt;/em&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;addthis_config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&amp;#39;data_track_addressbar&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&amp;#39;data_track_clickback&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&amp;#39;ui_language&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;pt&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Explicando cada uma dessas opções:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;data_track_addressbar&lt;/code&gt;: se ativada (&lt;code&gt;true&lt;/code&gt;, verdadeiro, é o padrão), faz com que o AddThis adicione um código ao final do endereço presente na barra de endereços do navegador. Esse código permite ao AddThis &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381254-address-bar-sharing-analytics&quot;&gt;monitorar os compartilhamentos pela barra de endereços&lt;/a&gt;, ou seja, quantas pessoas compartilham seu &lt;em&gt;site&lt;/em&gt; copiando e colando o &lt;em&gt;link&lt;/em&gt; em um e-mail, mensagem instantânea ou outros canais. Quando alguém clica em um &lt;em&gt;link&lt;/em&gt; compartilhado dessa maneira, outras ferramentas reportam incorretamente esse acesso como acesso direito ao &lt;em&gt;site&lt;/em&gt; (como se a pessoa que recebeu o &lt;em&gt;link&lt;/em&gt; tivesse digitado manualmente o endereço e acessado por iniciativa própria a página), ignorando que houve aí, na verdade, um compartilhamento;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;data_track_clickback&lt;/code&gt;: se ativada (&lt;code&gt;true&lt;/code&gt;, verdadeiro, é o padrão), faz com que o AddThis adicione uma variável ao final dos &lt;em&gt;links&lt;/em&gt; compartilhados. Essa variável permite ao AddThis &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381252-click-tracking&quot;&gt;monitorar cliques&lt;/a&gt;, ou seja, quantas pessoas visitaram seu &lt;em&gt;site&lt;/em&gt; clicando em um &lt;em&gt;link&lt;/em&gt; compartilhado usando um botão do AddThis. Altamente recomendada; e&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ui_language&lt;/code&gt;: permite definir manualmente o idioma a ser utilizado pela interface do AddThis. Por padrão, o AddThis utiliza o mesmo idioma da interface do navegador.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vale observar que por padrão o AddThis envia semanalmente para o e-mail cadastrado um relatório com o desempenho do &lt;em&gt;site&lt;/em&gt; nas redes sociais. Além disso, ele também envia um &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381256-alerts&quot;&gt;alerta&lt;/a&gt; sempre que seu &lt;em&gt;site&lt;/em&gt; recebe de repente um volume de acessos acima do normal.&lt;/p&gt;
+
+&lt;p&gt;O AddThis é tão inteligente, que você pode integrá-lo até mesmo a um &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381245-custom-services&quot;&gt;serviço personalizado&lt;/a&gt; (uma rede social que ele não conhece).&lt;/p&gt;
+
+&lt;h3&gt;Isso é tudo, pessoal&lt;/h3&gt;
+
+&lt;p&gt;É isso, espero que este &lt;em&gt;post&lt;/em&gt; possa ser útil para o seu &lt;em&gt;site&lt;/em&gt; e que o AddThis o auxilie na divulgação do seu &lt;em&gt;site&lt;/em&gt; da mesma forma que está me ajudando a divulgar o meu.&lt;/p&gt;
+
+&lt;p&gt;Em caso de dúvidas, não deixe de consultar a rica &lt;a href=&quot;http://support.addthis.com&quot;&gt;documentação do AddThis&lt;/a&gt;. Não se acanhe de fazer uma pergunta lá (ou aqui, nos comentários).&lt;/p&gt;
+
+&lt;p&gt;Se gostou do &lt;em&gt;post&lt;/em&gt;, que tal clicar nos botões do AddThis abaixo e compartilhar este &lt;em&gt;post&lt;/em&gt; em todas as redes sociais possíveis?&lt;/p&gt;
+</description>
+        <pubDate>Sat, 29 Aug 2015 23:00:00 -0300</pubDate>
+        <link>https://vinyanalista.github.io/blog/2015/08/29/addthis/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/08/29/addthis/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Como criar um tema responsivo do WordPress com o Bootstrap (parte 2)</title>
@@ -1620,7 +1988,7 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
           &lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sizing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-Considerações finais&lt;/h3&gt;
+&lt;h3&gt;Considerações finais&lt;/h3&gt;
 
 &lt;p&gt;Espero que este &lt;em&gt;post&lt;/em&gt; tenha apresentado uma boa visão geral do potencial que o Bootstrap tem para melhorar o seu &lt;em&gt;site&lt;/em&gt; ou aplicação &lt;em&gt;web&lt;/em&gt;. Não tenho a intenção de esgotar o assunto aqui, até porque há muito a falar do Bootstrap. Portanto, recomendo que continue lendo o &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;&lt;em&gt;site&lt;/em&gt; oficial do Bootstrap&lt;/a&gt;. Ele é realmente a melhor fonte de informações sobre o Bootstrap. Além dele, não há nada que uma busca no &lt;a href=&quot;https://www.google.com.br&quot;&gt;Google&lt;/a&gt; ou no &lt;a href=&quot;http://pt.stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt; não responda.&lt;/p&gt;
 
@@ -2061,7 +2429,7 @@ Considerações finais&lt;/h3&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.maketecheasier.com/shrink-your-virtualbox-vm&quot;&gt;How To Shrink Your Virtualbox VM And Free Up Space For Your Hard Disk – Make Tech Easier&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 20 Jan 2014 03:53:32 -0300</pubDate>
+        <pubDate>Mon, 20 Jan 2014 04:53:32 -0200</pubDate>
         <link>https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</guid>
         
@@ -2380,175 +2748,6 @@ Disk identifier: 0x1ba01b9f
         <pubDate>Thu, 19 Jul 2012 04:36:13 -0300</pubDate>
         <link>https://vinyanalista.github.io/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Apresentando o servidor de aplicação JBoss AS 7 (parte 2)</title>
-        <description>&lt;p&gt;O &lt;a href=&quot;http://www.jboss.org/jbossas/&quot;&gt;JBoss Application Server&lt;/a&gt; (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela &lt;a href=&quot;http://www.jboss.org/&quot;&gt;JBoss&lt;/a&gt; (atualmente, uma divisão da &lt;a href=&quot;http://www.redhat.com/&quot;&gt;Red Hat&lt;/a&gt;) para a plataforma &lt;a href=&quot;http://www.oracle.com/technetwork/java/javaee/&quot;&gt;Java EE&lt;/a&gt;. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações Java para a Web utilizando esse servidor.&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jboss_as_01.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jboss_as_01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Essa é a segunda parte de dois posts que visam apresentar o JBoss AS 7. Se você desejava acessar a primeira parte, &lt;a href=&quot;/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/&quot;&gt;clique aqui&lt;/a&gt;. Senão, continue lendo.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h3&gt;Console de administração Web do JBoss AS&lt;/h3&gt;
-
-&lt;p&gt;Podemos gerenciar o servidor de aplicação JBoss AS através de um console Web, que nos permite realizar, entre outras configurações, deploy e undeploy de aplicações, iniciar ou interromper a execução de aplicações, verificar o consumo de memória do servidor, configurar datasources, etc. Esse console, por padrão (se você não alterar as configurações de portas) é acessado através do endereço “&lt;a href=&quot;http://localhost:9990/&quot;&gt;http://localhost:9990/&lt;/a&gt;“.&lt;/p&gt;
-
-&lt;p&gt;Na primeira vez em que você tentar acessar esse console, no entanto, ele emitirá uma mensagem de erro (é bonita, eu sei, mas se você examinar seu conteúdo, verá que é uma mensagem de erro, rsrsrs):&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jboss_as_05.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jboss_as_05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Esse aviso nos diz que é necessário definir um usuário e uma senha para acessar o console de administração Web. Vamos fazer isso.&lt;/p&gt;
-
-&lt;p&gt;Execute o script “add-user” dentro da pasta “bin” do servidor (“C:\jboss-as\bin\add-user.bat” no Windows, e “/home/vinicius/jboss-as/bin/add-user.sh” no Linux):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ /home/vinicius/jboss-as/bin/add-user.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Após iniciar o script, você será guiado no processo de adicionar um novo usuário:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;What type of user do you wish to add?
-a) Management User (mgmt-users.properties)
-b) Application User (application-users.properties)
-(a):
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Nesse caso, como estamos criando um usuário com a finalidade de administrar o servidor, escolhemos a opção “a”. Ela já é a opção padrão, apenas tecle Enter.&lt;/p&gt;
-
-&lt;p&gt;Você será solicitado a fornecer informações sobre o novo usuário. Quando questionado sobre o domínio do usuário (Realm), aceite a opção padrão (ManagementRealm), para isso basta teclar Enter quando chegar nesse campo. No mais, digite nome de usuário, senha e confirme a senha.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Enter the details of the new user to add.
-Realm (ManagementRealm) :
-Username :
-Password :
-Re-enter Password :
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se não houver nada errado, uma mensagem de confirmação será exibida na tela.&lt;/p&gt;
-
-&lt;p&gt;Feito isso, nós já podemos acessar o console de administração Web, informando o usuário e senha criados quando solicitados (lembrando que o endereço é “&lt;a href=&quot;http://localhost:9990/&quot;&gt;http://localhost:9990/&lt;/a&gt;“):&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jboss_as_06.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jboss_as_06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Vamos fazer undeploy e deploy da aplicação usando o console de administração Web. Para isso, no menu do lado esquerdo, clique em “Manage Deployments”. É exibida uma lista das aplicações instaladas no servidor:&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jboss_as_07.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jboss_as_07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Clicando em “Disable”, interromperíamos a aplicação, fazendo com que ela não ficasse mais disponível ao usuário final, mas ainda permanecesse no servidor. Não é o que queremos aqui. Clique em “Remove” para de fato remover a aplicação do servidor. Aparece uma mensagem de confirmação na tela, clique em “Confirm”.&lt;/p&gt;
-
-&lt;p&gt;Feito isso a aplicação desaparece da lista, ela já não está mais no servidor (e muito menos acessível):&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jboss_as_08.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jboss_as_08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Se você tentar acessá-la pelo seu endereço (“&lt;a href=&quot;http://localhost:8080/jboss-as-helloworld-jsf/&quot;&gt;http://localhost:8080/jboss-as-helloworld-jsf/&lt;/a&gt;“), visualizará uma página de erro no navegador.&lt;/p&gt;
-
-&lt;p&gt;De volta ao console de administração Web, clique no botão “Add Content” para fazermos deploy da aplicação novamente.&lt;/p&gt;
-
-&lt;p&gt;O primeiro passo é selecionar o arquivo que você deseja fazer deploy. Na janela que aparece, clique em “Browse…”, navegue até a pasta do exemplo (aqui, “/home/vinicius/jboss-jdf-jboss-as-quickstart-8505020/helloworld-jsf/”) e, dentro da pasta “target”, escolha o arquivo “jboss-as-helloworld-jsf.war”, que representa a aplicação compilada e empacotada em um formato próprio de aplicação Web (arquivo &lt;strong&gt;.war&lt;/strong&gt;), análogo ao formato de aplicação Desktop (arquivo &lt;strong&gt;.jar&lt;/strong&gt;). Por último, clique em “Next”:&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jboss_as_09.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jboss_as_09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Ele pede para confirmar as informações. Simplesmente clique em “Save”:&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jboss_as_10.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jboss_as_10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;De volta à lista de aplicações, a aplicação foi instalada no servidor, mas não foi iniciada:&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jboss_as_11.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jboss_as_11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Clique em Enable para iniciá-la. Aparece uma mensagem de confirmação na tela, clique em “Confirm”. Feito isso a aplicação passa a aparecer na lista como habilitada:&lt;/p&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2012/07/jboss_as_12.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2012/07/jboss_as_12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Agora é possível acessá-la novamente pelo endereço “&lt;a href=&quot;http://localhost:8080/jboss-as-helloworld-jsf/&quot;&gt;http://localhost:8080/jboss-as-helloworld-jsf/&lt;/a&gt;“.&lt;/p&gt;
-
-&lt;h3&gt;Encerrando o JBoss AS&lt;/h3&gt;
-
-&lt;p&gt;Encerrar o servidor, tanto no Windows quanto no Linux, é um procedimento bastante simples: basta abortar a execução do comando na janela de terminal onde o servidor está sendo executado. Para isso, basta apertar Ctrl + C (vale para ambos os sistemas).&lt;/p&gt;
-
-&lt;p&gt;Aqui ele encerrou o servidor em pequeníssimos 143 milissegundos:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;15:09:21,996 INFO  [org.jboss.as.osgi] (MSC service thread 1-1) JBAS011942: Stopping OSGi Framework
-15:09:22,034 INFO  [org.jboss.as.logging] JBAS011503: Restored bootstrap log handlers
-15:09:22,044 INFO  [org.jboss.weld.deployer] JBAS016009: Stopping weld service for deployment jboss-as-helloworld-jsf.war
-15:09:22,053 INFO  [org.apache.coyote.http11.Http11Protocol] Pausing Coyote HTTP/1.1 on http--127.0.0.1-8080
-15:09:22,058 INFO  [org.apache.coyote.http11.Http11Protocol] Stopping Coyote HTTP/1.1 on http--127.0.0.1-8080
-15:09:22,083 INFO  [com.arjuna.ats.jbossatx] ARJUNA032018: Destroying TransactionManagerService
-15:09:22,111 INFO  [com.arjuna.ats.jbossatx] ARJUNA032014: Stopping transaction recovery manager
-15:09:22,111 INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment jboss-as-helloworld-jsf.war in 132ms
-15:09:22,114 INFO  [org.jboss.as.controller] JBAS014774: Service status report
-JBAS014776:    Newly corrected services:
-service jboss.server.controller.management.security_realm.ApplicationRealm.properties_authentication (new available)
-
-15:09:22,121 INFO  [org.jboss.as] JBAS015950: JBoss AS 7.1.1.Final &amp;quot;Brontes&amp;quot; stopped in 143ms
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;Mais informações sobre o JBoss AS&lt;/h3&gt;
-
-&lt;p&gt;Pois é, pessoal. Vou encerrando minha apresentação do JBoss AS por aqui. Gostaria apenas de fazer algumas considerações finais e deixar as páginas que usei como referência para escrever esse post.&lt;/p&gt;
-
-&lt;p&gt;Também é possível administrar o JBoss AS através do terminal (da linha de comando), mas não apresentei essa ferramenta aqui por considerar o console Web muito mais simples de usar. Mais informações sobre essas duas ferramentas (o console Web e o console via terminal) vocês encontram no &lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Admin+Guide&quot;&gt;guia de administração do JBoss AS&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Um bom ponto de partida para quem quiser conhecer mais o JBoss AS (assim como o Maven e a plataforma Java EE) é explorar as &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/&quot;&gt;aplicações de exemplo&lt;/a&gt; do servidor. Há um &lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Getting+Started+Developing+Applications+Guide&quot;&gt;guia passo-a-passo&lt;/a&gt; que fornece explicações sobre alguns desses exemplos.&lt;/p&gt;
-
-&lt;p&gt;Quem utiliza a IDE &lt;a href=&quot;http://www.eclipse.org/&quot;&gt;Eclipse&lt;/a&gt; pode se interessar em instalar o plugin &lt;a href=&quot;http://www.jboss.org/tools/&quot;&gt;JBoss Tools&lt;/a&gt;, que acrescenta funcionalidades no Eclipse próprias para a utilização do JBoss AS como servidor Java EE dentro da IDE (como adicionar o servidor na view Servers, executar aplicações Web desenvolvidas pela IDE no servidor, fazer deploy e undeploy de aplicações, iniciar ou interromper aplicações, realizar depuração remota) e para o desenvolvimento de aplicações Web (acrescenta assistentes para a criação de arquivos próprios dessas aplicações, melhora a compleção de código, entre outras).&lt;/p&gt;
-
-&lt;p&gt;Encerrando as considerações, há um vídeo na Internet que demonstra &lt;a href=&quot;http://vimeo.com/25831010&quot;&gt;5 maneiras de fazer deploy da sua aplicação no JBoss AS 7&lt;/a&gt;. Nesse vídeo, ele realiza deploy da aplicação de exemplo &lt;a href=&quot;http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld/&quot;&gt;helloworld&lt;/a&gt; de 5 maneiras diferentes.&lt;/p&gt;
-
-&lt;p&gt;As páginas da &lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Documentation&quot;&gt;documentação oficial do JBoss AS&lt;/a&gt; que utilizei como referência para escrever esse post foram:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Getting+Started+Guide&quot;&gt;Getting Started Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Getting+Started+Developing+Applications+Guide&quot;&gt;Getting Started Developing Applications Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.jboss.org/author/display/AS71/Admin+Guide&quot;&gt;Admin Guide&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Abraço a todos e até a próxima!&lt;/p&gt;
-</description>
-        <pubDate>Wed, 18 Jul 2012 23:16:17 -0300</pubDate>
-        <link>https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</link>
-        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</guid>
         
         
       </item>
