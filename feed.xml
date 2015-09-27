@@ -5,9 +5,386 @@
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>https://vinyanalista.github.io/</link>
     <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 16 Sep 2015 21:37:31 -0300</pubDate>
-    <lastBuildDate>Wed, 16 Sep 2015 21:37:31 -0300</lastBuildDate>
+    <pubDate>Sun, 27 Sep 2015 16:26:12 -0300</pubDate>
+    <lastBuildDate>Sun, 27 Sep 2015 16:26:12 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Dicas de Git</title>
+        <description>&lt;p&gt;Quem não já teve dúvidas ao usar o &lt;a href=&quot;https://git-scm.com/&quot;&gt;sistema de controle de versão Git&lt;/a&gt;? Aqui apresento uma compilação de algumas dúvidas que já tive e das soluções que eu encontrei.&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/09/git.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/09/git.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Quase sempre quando tenho uma dúvida, faço uma busca no &lt;a href=&quot;https://www.google.com.br/&quot;&gt;Google&lt;/a&gt; e encontro outras pessoas que já tiveram a mesma dúvida que eu no &lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt;. Lá, encontro outras pessoas que propoem soluções para a dúvida apresentada. Nem sempre a solução marcada como a correta é a que resolve meu problema. Aqui, mostrarei apenas as soluções que de fato me foram úteis.&lt;/p&gt;
+
+&lt;p&gt;Vale observar que as dicas que eu apresento aqui são para usos um tanto &amp;quot;exóticos&amp;quot; do Git, que fogem do uso diário, mais básico. Se deseja aprender a usar o Git, recomendo esses cursos (em inglês) da &lt;a href=&quot;https://www.codeschool.com/&quot;&gt;Code School&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://try.github.io/&quot;&gt;Try Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://gitreal.codeschool.com/&quot;&gt;Git Real&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Algumas dicas podem depender de qual versão do Git você usa. Para verificar qual versão do Git está instalada no seu computador, execute o comando:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git --version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;A linha de comando do Git no Windows está muito lenta&lt;/h3&gt;
+
+&lt;p&gt;Usar o Git pela linha de comando no &lt;a href=&quot;http://www.vivaolinux.com.br/linux/&quot;&gt;Linux&lt;/a&gt; é bastante natural. No &lt;a href=&quot;http://www.microsoft.com/pt-br/windows&quot;&gt;Windows&lt;/a&gt;, na minha opinião, a melhor opção é clicar com o botão direito na pasta e clicar em &lt;strong&gt;Git Bash&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;De uma hora pra outra, talvez você perceba que o Git no Windows se torna lento. A execução de qualquer comando que envolva o Git demora mais do que o normal.&lt;/p&gt;
+
+&lt;p&gt;Para alguns casos, a solução pode ser desinstalar o Git, reiniciar o Windows (a solução clássica para vários problemas do Windows) e instalar o Git de novo. De preferência, instalar &lt;a href=&quot;https://git-scm.com/download/win&quot;&gt;a versão mais nova&lt;/a&gt;, disponível no &lt;em&gt;site&lt;/em&gt; do Git, que pode conter correções para &lt;em&gt;bugs&lt;/em&gt; conhecidos.&lt;/p&gt;
+
+&lt;p&gt;No meu caso, o que tornou o Git um pouco mais ágil no Windows foi executar esses comandos:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git config --global core.preloadindex true
+git config --global core.fscache true
+git config --global gc.auto 256
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4485059/git-bash-is-extremely-slow-in-windows-7-x64&quot;&gt;Git/Bash is extremely slow in Windows 7 x64 - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Como alterar um &lt;em&gt;commit&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Se você quer alterar o último &lt;em&gt;commit&lt;/em&gt; (arquivos e/ou mensagem), esse é o caso mais simples:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Faça quaisquer alterações desejadas nos arquivos;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use &lt;code&gt;git add -A .&lt;/code&gt; para considerá-las; e&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Execute &lt;code&gt;git commit --amend&lt;/code&gt; para alterar o último &lt;em&gt;commit&lt;/em&gt; incluindo as alterações então feitas. Um editor de texto será apresentado e você terá a oportunidade de alterar a mensagem do &lt;em&gt;commit&lt;/em&gt;. Ao salvar e sair do editor de texto, o &lt;em&gt;commit&lt;/em&gt; terá sido alterado.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Se você deseja alterar um &lt;em&gt;commit&lt;/em&gt; anterior, terá que usar o comando &lt;code&gt;git rebase&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Antes de começar, verifique o ID SHA1 do &lt;em&gt;commit&lt;/em&gt; que deseja alterar usando &lt;code&gt;git log&lt;/code&gt; ou &lt;code&gt;gitk&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Se você quiser alterar, por exemplo, o &lt;em&gt;commit&lt;/em&gt; de ID &lt;code&gt;bbc643cd&lt;/code&gt;, execute:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git rebase --interactive bbc643cd^
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Um editor de texto será apresentado para que você indique as ações que deseja realizar. Procure a linha referente ao &lt;em&gt;commit&lt;/em&gt; que deseja alterar e substitua &lt;code&gt;pick&lt;/code&gt; por &lt;code&gt;edit&lt;/code&gt;. Ao salvar e sair do editor de texto, o Git deixará os arquivos do seu repositório como estavam após esse &lt;em&gt;commit&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Então, você pode prosseguir como se esse tivesse sido o último &lt;em&gt;commit&lt;/em&gt; (como expliquei acima, fazendo mudanças, adicionando via &lt;code&gt;git add&lt;/code&gt; e finalizando com &lt;code&gt;git commit --amend&lt;/code&gt;). Quando terminar, execute:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git rebase --continue
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Se você deseja alterar apenas a mensagem do &lt;em&gt;commit&lt;/em&gt;, e não os arquivos, simplifique o processo usando a ação &lt;code&gt;reword&lt;/code&gt; ao invés de &lt;code&gt;edit&lt;/code&gt;. Essa ação está disponível a partir do Git 1.6.6.&lt;/p&gt;
+
+&lt;p&gt;Observe que isso altera o histórico do seu repositório desse &lt;em&gt;commit&lt;/em&gt; em diante.&lt;/p&gt;
+
+&lt;p&gt;Se o(s) &lt;em&gt;commit(s)&lt;/em&gt; alterado(s) existe(m) apenas localmente (você ainda não executou &lt;code&gt;git push&lt;/code&gt;), não é necessário fazer mais nada. Caso contrário, para enviar a(s) alteração(ões) para o repositório remoto, você deve forçar o envio:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git push --force
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Outras pessoas que clonaram seu repositório antes da(s) alteração(ões) podem ter problemas com seus clones, portanto use esse recurso com cuidado.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1186535/how-to-modify-a-specified-commit-in-git&quot;&gt;How to modify a specified commit in git? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Como desfazer um &lt;em&gt;commit&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Para desfazer um &lt;em&gt;commit&lt;/em&gt; (tomemos como exemplo o último, cuja referência é &lt;code&gt;HEAD&lt;/code&gt;), há duas opções:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;desfazer o &lt;em&gt;commit&lt;/em&gt;, mas manter os arquivos alterados (&lt;em&gt;soft reset&lt;/em&gt;):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git reset --soft HEAD~
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;desfazer o &lt;em&gt;commit&lt;/em&gt; descartando também as alterações (&lt;em&gt;hard reset&lt;/em&gt;):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git reset --hard HEAD~
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Para desfazer o penúltimo &lt;em&gt;commit&lt;/em&gt;, você pode usar &lt;code&gt;HEAD~2&lt;/code&gt;, como em:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git reset --soft HEAD~2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Para desfazer o antepenúltimo &lt;em&gt;commit&lt;/em&gt;, você pode usar &lt;code&gt;HEAD~3&lt;/code&gt;, e assim sucessivamente.&lt;/p&gt;
+
+&lt;p&gt;Para desfazer todos os &lt;em&gt;commits&lt;/em&gt; até certo &lt;em&gt;commit&lt;/em&gt;, você pode informar seu ID SHA1, como em:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git reset --soft id_sha1_do_commit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Se os &lt;em&gt;commits&lt;/em&gt; desfeitos existem apenas localmente (você ainda não executou &lt;code&gt;git push&lt;/code&gt;), caso mais simples, não há mais nada a fazer.&lt;/p&gt;
+
+&lt;p&gt;Se os &lt;em&gt;commits&lt;/em&gt; desfeitos já foram enviados previamente para o repositório remoto, você deve forçar o envio das alterações:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git push --force
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Observe que, excluindo &lt;em&gt;commits&lt;/em&gt; dessa maneira, você altera o histórico do repositório definitivamente: os &lt;em&gt;commits&lt;/em&gt; excluídos de fato deixam de existir no histórico, é como se eles nunca tivessem sequer acontecido. Assim, outras pessoas que clonaram seu repositório antes dessa exclusão podem ter problemas com seus clones.&lt;/p&gt;
+
+&lt;p&gt;Uma maneira menos destrutiva de desfazer as alterações de um &lt;em&gt;commit&lt;/em&gt;, mantendo esse &lt;em&gt;commit&lt;/em&gt; no histórico, é usar o comando &lt;code&gt;git revert&lt;/code&gt;, como em:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git revert id_sha1_do_commit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Assim, tanto o &lt;em&gt;commit&lt;/em&gt; como a sua reversão aparecerão no histórico. A reversão pode ser enviada para o repositório remoto normalmente usando o comando &lt;code&gt;git push&lt;/code&gt;. Outras pessoas que clonaram seu repositório antes da reversão não terão problemas. Para recebê-la, podem usar normalmente o comando &lt;code&gt;git pull&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Referências:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit&quot;&gt;How do you undo the last commit? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git&quot;&gt;Delete commits from a branch in Git - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Como criar um &lt;em&gt;branch&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging&quot;&gt;Criar um &lt;em&gt;branch&lt;/em&gt;&lt;/a&gt; pode ser útil se você deseja trabalhar isoladamente em uma funcionalidade ou &lt;em&gt;bug&lt;/em&gt;, ou ainda se várias pessoas trabalham no mesmo repositório.&lt;/p&gt;
+
+&lt;p&gt;Primeiro, você deve criar o &lt;em&gt;branch&lt;/em&gt; localmente, em seu computador:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git checkout -b meu_novo_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Isso cria um novo &lt;em&gt;branch&lt;/em&gt; local chamado &lt;code&gt;meu_novo_branch&lt;/code&gt;, sincronizado com o &lt;em&gt;branch&lt;/em&gt; no qual você estava trabalhando antes (&lt;code&gt;master&lt;/code&gt;, por exemplo).&lt;/p&gt;
+
+&lt;p&gt;Esse &lt;em&gt;branch&lt;/em&gt; passa a existir remotamente quando você o envia:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git push -u origin meu_novo_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Nesse exemplo, &lt;code&gt;origin&lt;/code&gt; é o nome do repositório remoto, mas pode ser outro nome, como &lt;code&gt;upstream&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;O comando acima cria um &lt;em&gt;branch&lt;/em&gt; remoto com o mesmo nome do &lt;em&gt;branch&lt;/em&gt; local e já faz a associação entre ambos, de forma que o comando &lt;code&gt;git pull&lt;/code&gt; já saberá o que fazer quando for invocado no futuro para atualizar esse &lt;em&gt;branch&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch&quot;&gt;How do you create a remote Git branch? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Como criar um &lt;em&gt;branch&lt;/em&gt; a partir de um &lt;em&gt;commit&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Como eu disse na dica anterior, normalmente quando criamos um novo &lt;em&gt;branch&lt;/em&gt; ele é sincronizado com o &lt;em&gt;branch&lt;/em&gt; no qual você estava trabalhando antes. No entanto, também podemos criar um &lt;em&gt;branch&lt;/em&gt; sincronizado com um &lt;em&gt;commit&lt;/em&gt; qualquer.&lt;/p&gt;
+
+&lt;p&gt;Para isso, você pode informar o ID SHA1 do &lt;em&gt;commit&lt;/em&gt; ao criar o &lt;em&gt;branch&lt;/em&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git branch meu_novo_branch id_sha1_do_commit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ou usar uma referência simbólica (como o penúltimo &lt;em&gt;commit&lt;/em&gt;, &lt;code&gt;HEAD~2&lt;/code&gt;):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git branch meu_novo_branch HEAD~2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;O comando acima criará um &lt;em&gt;branch&lt;/em&gt; local sincronizado com o penúltimo &lt;em&gt;commit&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/2816715/branch-from-a-previous-commit-using-git&quot;&gt;Branch from a previous commit using git - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Como criar um &lt;em&gt;branch&lt;/em&gt; vazio&lt;/h3&gt;
+
+&lt;p&gt;A partir do Git 1.7.2, é possível também criar um &lt;em&gt;branch&lt;/em&gt; sem nenhuma relação com os demais, começando do zero, com uma linha do tempo nova e independente.&lt;/p&gt;
+
+&lt;p&gt;Para criar um &lt;em&gt;branch&lt;/em&gt; vazio chamado &lt;code&gt;meu_novo_branch&lt;/code&gt;, execute o comando:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git checkout --orphan meu_novo_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Perceba que os arquivos são deixados pelo Git. Se não quiser esses arquivos no seu novo &lt;em&gt;branch&lt;/em&gt; independente, remova-os:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git rm -rf .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Então, você pode adicionar novos arquivos e fazer o primeiro &lt;em&gt;commit&lt;/em&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git add -A .
+git commit -m &amp;#39;Primeiro commit&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1384325/in-git-is-there-a-simple-way-of-introducing-an-unrelated-branch-to-a-repository&quot;&gt;In git, is there a simple way of introducing an unrelated branch to a repository? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://bitflop.com/tutorials/how-to-create-a-new-and-empty-branch-in-git.html&quot;&gt;How to Create a New and Empty Branch in Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Como excluir um &lt;em&gt;branch&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Você pode excluir um &lt;em&gt;branch&lt;/em&gt; local e/ou remotamente.&lt;/p&gt;
+
+&lt;p&gt;Para excluir o &lt;em&gt;branch&lt;/em&gt; &lt;strong&gt;local&lt;/strong&gt; &lt;code&gt;meu_branch&lt;/code&gt;, por exemplo, execute:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git branch -D meu_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Para excluir o &lt;em&gt;branch&lt;/em&gt; &lt;strong&gt;remoto&lt;/strong&gt; &lt;code&gt;meu_branch&lt;/code&gt;, por exemplo, se você usa o Git 1.7.0 ou mais recente, execute:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git push origin --delete meu_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A exclusão de &lt;em&gt;branches&lt;/em&gt; remotos é possível a partir do Git 1.5.0. Se você utiliza uma versão anterior à 1.7.0, o comando é diferente:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git push origin :meu_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely&quot;&gt;Delete a Git branch both locally and remotely&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Como criar um &lt;em&gt;fork&lt;/em&gt; de um projeto meu no GitHub?&lt;/h3&gt;
+
+&lt;p&gt;O &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt; só permite criar &lt;em&gt;forks&lt;/em&gt; de projetos de outras pessoas. E se eu quiser criar um &lt;em&gt;fork&lt;/em&gt; de um projeto próprio, meu?&lt;/p&gt;
+
+&lt;p&gt;O melhor que podemos fazer é criar um novo repositório para o &lt;em&gt;fork&lt;/em&gt; e, localmente, adicionar o repositório do projeto original como um repositório remoto. &lt;a href=&quot;http://kroltech.com/2014/01/quick-tip-how-to-fork-your-own-repo-in-github/#.VLJLyIqG-Nt&quot;&gt;Esse tutorial&lt;/a&gt; (em inglês) explica como fazer isso.&lt;/p&gt;
+
+&lt;p&gt;Vejamos, por exemplo, como criar um &lt;em&gt;fork&lt;/em&gt; &lt;code&gt;meu_fork&lt;/code&gt; do projeto &lt;code&gt;projeto_original&lt;/code&gt;, ambos pertencentes ao usuário &lt;code&gt;meu_nome_de_usuario&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;No GitHub, crie um novo repositório para o &lt;em&gt;fork&lt;/em&gt; (no exemplo, chamaremos esse repositório de &lt;code&gt;meu_fork&lt;/code&gt;).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Obtenha um clone local desse repositório:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git clone https://github.com/meu_nome_de_usuario/meu_fork.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;Adicione o repositório do projeto original (no exemplo, &lt;code&gt;projeto_original&lt;/code&gt;) como um repositório remoto (vamos chamá-lo de &lt;code&gt;upstream&lt;/code&gt;) do repositório local recém clonado:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git remote add upstream https://github.com/meu_nome_de_usuario/repositorio_original.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;Baixe uma cópia do repositório do projeto original para o seu repositório local:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git pull upstream master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;Envie os arquivos do seu repositório local para o repositório &lt;code&gt;meu_fork&lt;/code&gt; no GitHub:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;O GitHub não reconhecerá o projeto &lt;code&gt;meu_fork&lt;/code&gt; como um &lt;em&gt;fork&lt;/em&gt; de fato do projeto &lt;code&gt;projeto_original&lt;/code&gt;, mas, na prática, fizemos ele ser exatamente isso.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/3772684/how-can-i-fork-my-own-github-repository&quot;&gt;How can I fork my own GitHub repository? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Como se livrar de mudanças do tipo &amp;quot;old mode 100755 new mode 100644&amp;quot;&lt;/h3&gt;
+
+&lt;p&gt;Pode acontecer (na verdade, é bastante comum se você usa Windows e Linux no mesmo computador) de, ao executar &lt;code&gt;git status&lt;/code&gt; ou &lt;code&gt;gitk&lt;/code&gt; para saber como está seu repositório local, você perceber vários arquivos listados como modificados, quando na verdade você não trabalhou neles. O Git descreve essas alterações como:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;old mode 100755
+new mode 100644
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Isso acontece quando o Git não consegue determinar com precisão o &lt;a href=&quot;http://www.vivaolinux.com.br/artigo/Entendendo-as-permissoes-de-arquivos-%28chmod%29&quot;&gt;modo do arquivo&lt;/a&gt; (um conceito mais conhecido dos usuários do Linux) e entende que houve uma mudança de modo.&lt;/p&gt;
+
+&lt;p&gt;Uma possível solução (a mais prática, na minha opinião) é configurar o Git para ignorar mudanças no modo do arquivo:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git config core.filemode false
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Após a execução desse comando, um novo &lt;code&gt;git status&lt;/code&gt; ou &lt;code&gt;gitk&lt;/code&gt; deve mostrar somente os arquivos que de fato foram alterados.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1257592/how-do-i-remove-files-saying-old-mode-100755-new-mode-100644-from-unstaged-cha&quot;&gt;How do I remove files saying “old mode 100755 new mode 100644” from unstaged changes in Git? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Como manter o fim de linha dos arquivos de texto&lt;/h3&gt;
+
+&lt;p&gt;Outro problema comum para quem usa diferentes sistemas operacionais (ou para projetos cujos desenvolvedores usam diferentes sistemas) é o &lt;a href=&quot;http://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/&quot;&gt;fim de linha&lt;/a&gt; dos arquivos de texto: no Windows, ele é representado pelos &lt;a href=&quot;https://pt.wikipedia.org/wiki/ASCII&quot;&gt;caracteres ASCII&lt;/a&gt; &lt;code&gt;CR&lt;/code&gt; (&lt;em&gt;Carriage Return&lt;/em&gt;) e &lt;code&gt;LF&lt;/code&gt; (&lt;em&gt;Line Feed&lt;/em&gt;); no &lt;a href=&quot;http://www.unix.org/what_is_unix.html&quot;&gt;Unix&lt;/a&gt;, no Linux e no &lt;a href=&quot;http://www.apple.com/br/osx/what-is/&quot;&gt;Mac OS X&lt;/a&gt;, ele é representando apenas pelo caractere &lt;code&gt;LF&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pode acontecer de, ao executar &lt;code&gt;git status&lt;/code&gt; ou &lt;code&gt;gitk&lt;/code&gt; para saber como está seu repositório local, você perceber vários arquivos listados como modificados, quando na verdade você não trabalhou neles. Até mesmo o conteúdo dos arquivos, visualmente falando, é idêntico.&lt;/p&gt;
+
+&lt;p&gt;O que aconteceu debaixo do pano que fez o Git mostrar esses arquivos como modificados foi uma mudança nos caracteres que representam o fim de linha (que comumente acontece após uma mudança de sistema operacional).&lt;/p&gt;
+
+&lt;p&gt;Escrever sobre isso renderia &lt;a href=&quot;http://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/&quot;&gt;outro &lt;em&gt;post&lt;/em&gt; inteiro&lt;/a&gt;, mas vou tentar focar aqui na solução.&lt;/p&gt;
+
+&lt;p&gt;Em primeiro lugar, você deve alterar a configuração global do Git em seu computador. Há o comando &lt;code&gt;git config --global core.autocrlf&lt;/code&gt;, que é usado para definir como o Git deve tratar os fins de linha:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;No Mac OS X e no Linux, você deve atribuir a essa configuração o valor &lt;code&gt;input&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git config --global core.autocrlf input
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;No Windows, você deve atribuir a essa configuração o valor &lt;code&gt;true&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git config --global core.autocrlf true
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Além disso, se você utiliza o Git 1.7.2 ou mais recente, pode configurar, para cada repositório, e para cada arquivo, como o Git trata os fins de linha. Para isso, você deve adicionar ao repositório um arquivo de texto chamado &lt;code&gt;.gitattributes&lt;/code&gt;, que faz lembrar uma tabela com duas colunas. Em cada linha:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;à esquerda, você deve inserir o nome de arquivo (ou padrão de nome de arquivo) que o Git deve identificar; e&lt;/li&gt;
+&lt;li&gt;à direita, você deve configurar como o Git deve tratar esse arquivo (ou padrão de arquivo).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Aqui está um arquivo &lt;code&gt;.gitattributes&lt;/code&gt; de exemplo, que você pode usar como um ponto de partida para seus repositórios (pode deixar os comentários, o Git os ignora):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# Configuração padrão
+* text=auto
+
+# Arquivos cujos fins de linha devem sempre ser convertidos para o padrão do
+# sistema em uso
+*.c text
+*.h text
+
+# Arquivos cujos fins de linha devem sempre ser CRLF (padrão do Windows)
+*.bat text eol=crlf
+
+# Arquivos cujos fins de linha devem sempre ser LF (padrão do Unix, Linux e Mac
+# OS X)
+*.sh text eol=lf
+
+# Arquivos binários que não devem ser modificados
+*.png binary
+*.jpg binary
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;É uma boa prática que esse arquivo seja sempre adicionado já no primeiro ou segundo &lt;em&gt;commit&lt;/em&gt;, de forma a prevenir problemas futuros. Uma vez no repositório, esse arquivo é compartilhado por todos os desenvolvedores, que não mais enfrentarão problemas com os fins de linha dos arquivos.&lt;/p&gt;
+
+&lt;p&gt;Se você tem um repositório com vários arquivos e &lt;em&gt;commits&lt;/em&gt; que ainda não tem um arquivo &lt;code&gt;.gitattributes&lt;/code&gt;, aqui está a melhor maneira de adicioná-lo (sugerida pela própria &lt;a href=&quot;https://help.github.com/articles/dealing-with-line-endings/&quot;&gt;ajuda do GitHub&lt;/a&gt;, com base em uma resposta no &lt;a href=&quot;http://stackoverflow.com/a/1511273/1657502&quot;&gt;Stack Overflow&lt;/a&gt;):&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Crie um arquivo &lt;code&gt;.gitattributes&lt;/code&gt;, como o do exemplo acima, e faça um &lt;em&gt;commit&lt;/em&gt; com ele:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git add .gitattributes
+git commit -m &amp;quot;Arquivo .gitattributes&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;Salve quaisquer outros arquivos alterados, para garantir que não perderá trabalho:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git add . -u
+git commit -m &amp;quot;Salvando os arquivos antes de atualizar os fins de linha&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;Remova cada arquivo do repositório:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git rm --cached -r .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;Reescreva os arquivos, dessa vez com os fins de linha desejados:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git reset --hard
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;Adicione todos os seus arquivos de volta (aproveite a oportunidade para verificar se houve arquivos que não tiveram seus fins de linha substituídos, quando deveriam):&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;Faça um &lt;em&gt;commit&lt;/em&gt; com as alterações:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git commit -m &amp;quot;Problemas com fins de linha nunca mais!&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Referências:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/19551037/git-how-to-keep-crlf-endings-for-specific-files-only&quot;&gt;Git - how to keep CRLF endings for specific files only? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/170961/whats-the-best-crlf-carriage-return-line-feed-handling-strategy-with-git&quot;&gt;What&amp;#39;s the best CRLF (Carriage Return Line Feed) handling strategy with git? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1510798/trying-to-fix-line-endings-with-git-filter-branch-but-having-no-luck&quot;&gt;Trying to fix line-endings with git filter-branch, but having no luck - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/dealing-with-line-endings/&quot;&gt;Dealing with line endings - User Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/&quot;&gt;Mind the End of Your Line ∙ Adaptive Patchwork&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Como visualizar o histórico de mudanças de um arquivo&lt;/h3&gt;
+
+&lt;p&gt;Para visualizar o histórico do repositório como um todo, os comandos mais básicos são, para linha de comando:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git log
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ou, para interface gráfica:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;gitk
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Para visualizar o histórico de um arquivo em particular (&lt;code&gt;nome_do_arquivo&lt;/code&gt;, por exemplo), para mim foi suficiente o comando:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;gitk nome_do_arquivo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Na referência, há outras sugestões de comandos mais elaborados.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/278192/view-the-change-history-of-a-file-using-git-versioning&quot;&gt;View the change history of a file using Git versioning - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 27 Sep 2015 16:00:00 -0300</pubDate>
+        <link>https://vinyanalista.github.io/blog/2015/09/27/dicas-de-git/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/09/27/dicas-de-git/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Como desativar a inicialização rápida do Windows</title>
@@ -2586,136 +2963,6 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
         <pubDate>Mon, 20 Jan 2014 04:53:32 -0200</pubDate>
         <link>https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Recuperando o boot do Windows após instalação do Linux</title>
-        <description>&lt;p&gt;É, pessoal, sei que é uma situação um tanto inusitada, mas aconteceu comigo hoje, quando tentei instalar o &lt;a href=&quot;http://www.opensuse.org/&quot;&gt;openSUSE&lt;/a&gt; 12.3 no meu computador, que até então só tinha o Windows 7. O problema mais comum é quando &lt;a href=&quot;http://www.vivaolinux.com.br/dica/Restaurando-o-GRUB-apos-a-instalacao-de-outro-sistema-operacional&quot;&gt;o Linux já está instalado e então instalamos o Windows&lt;/a&gt;, que a princípio impede que outros sistemas sejam inicializados, reservando o computador para si. Mas hoje comigo aconteceu isso: após instalar o openSUSE 12.3, o menu do &lt;a href=&quot;http://en.opensuse.org/GRUB&quot;&gt;GRUB2&lt;/a&gt; não oferecia a opção de inicializar o Windows. Venho aqui (tentar) descrever a solução.&lt;/p&gt;
-
-&lt;h3&gt;Instalação do openSUSE&lt;/h3&gt;
-
-&lt;p&gt;A configuração dos meus HDs é bastante semelhante àquela encontrada ano passado quando escrevi &lt;a href=&quot;/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;outro post&lt;/a&gt; sobre problemas com &lt;em&gt;dual boot&lt;/em&gt;. Naquela época, usava Debian e estava pensando em migrar pro openSUSE, o que de fato aconteceu e desde então é a distribuição que uso. Aliás, foi bom reler aquele post e perceber que &lt;a href=&quot;/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;essa não é a primeira vez que tenho problemas em relação ao &lt;em&gt;dual boot&lt;/em&gt; com openSUSE&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Executando o comando &lt;strong&gt;fdisk&lt;/strong&gt;, obtenho o seguinte:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Disk /dev/sda: 1000.2 GB, 1000204886016 bytes
-255 heads, 63 sectors/track, 121601 cylinders, total 1953525168 sectors
-Units = sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-Disk identifier: 0xa1a11ae7
-
-   Device Boot      Start         End      Blocks   Id  System
-/dev/sda1            2048   419432447   209715200    7  HPFS/NTFS/exFAT
-/dev/sda2       419432448  1468008447   524288000    7  HPFS/NTFS/exFAT
-/dev/sda3      1468010496  1887440895   209715200    7  HPFS/NTFS/exFAT
-/dev/sda4   *  1887442942  1953523711    33040385    5  Extended
-/dev/sda5      1887442944  1953523711    33040384   83  Linux
-
-Disk /dev/sdb: 250.1 GB, 250059350016 bytes
-255 heads, 63 sectors/track, 30401 cylinders, total 488397168 sectors
-Units = sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-Disk identifier: 0x1ba01b9f
-
-   Device Boot      Start         End      Blocks   Id  System
-/dev/sdb1            2048   488396799   244197376    7  HPFS/NTFS/exFAT
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Durante a instalação do openSUSE 12.3, não alterei as configurações do &lt;em&gt;bootloader&lt;/em&gt;. O instalador automaticamente selecionou a melhor configuração para o meu computador (que no caso de o Linux estar em uma partição estendida, é &lt;a href=&quot;http://en.opensuse.org/SDB:Prefered_bootloader_options&quot;&gt;instalar o &lt;em&gt;bootloader&lt;/em&gt; na partição estendida&lt;/a&gt;).&lt;/p&gt;
-
-&lt;h3&gt;Recuperação do bootloader do Windows&lt;/h3&gt;
-
-&lt;p&gt;Na busca por soluções, encontrei &lt;a href=&quot;http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/&quot;&gt;este site&lt;/a&gt; e tentei algumas alternativas nele apresentadas, que descrevo a seguir (só depois vim perceber que já havia as listado no &lt;a href=&quot;/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;post anterior&lt;/a&gt;, mas tudo bem, não custa repetir):&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Iniciei o computador pelo DVD de instalação do Windows 7. Na tela inicial, escolhi meu idioma (que não é inglês, quero reconhecer &lt;a href=&quot;http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/&quot;&gt;o crédito do autor das imagens&lt;/a&gt;) e cliquei em “Avançar”:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2013/07/windows-startup-recovery2.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2013/07/windows-startup-recovery2.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Em seguida, cliquei em “Reparar o computador”:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2013/07/windows-startup-recovery3.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2013/07/windows-startup-recovery3.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Nessa tela, escolhi a primeira opção, não selecionei nada na lista, e cliquei em “Avançar”:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2013/07/windows-startup-recovery4.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2013/07/windows-startup-recovery4.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Finalmente, nessa tela, diferentemente do autor, escolhi a primeira opção, “Startup Recovery”:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2013/07/windows-startup-recovery5.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2013/07/windows-startup-recovery5.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;A instalação executou seus procedimentos de manutenção, após os quais reiniciei o computador. Ainda nada de Windows, e agora ele não exibia mais nem o menu do GRUB2, acusando que havia múltiplas partições ativas.&lt;/p&gt;
-
-&lt;p&gt;Executei novamente os passos 1 a 3 acima, até chegar naquela tela em que cliquei em “Startup Recovery”, mas dessa vez escolhi “Command Prompt”. Executei o seguinte comando e reiniciei o computador:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; bootrec /rebuildbcd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Nada mudou: além de não conseguir acessar o Windows, não conseguia acessar o menu do GRUB2, e ainda havia a reclamação de duas partições ativas. Agora vejo no meu post anterior que &lt;a href=&quot;http://www.vinyanalista.com.br/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/&quot;&gt;eu poderia ter tentado outros comandos&lt;/a&gt;, mas enfim… hoje o que eu executei foi esse e consegui resolver. Não após ele, ainda falta alguns passos da minha solução...&lt;/p&gt;
-
-&lt;h3&gt;Definição da partição ativa&lt;/h3&gt;
-
-&lt;p&gt;Reiniciei o computador dessa vez usando o LiveDVD do openSUSE 12.3. Abri o &lt;a href=&quot;http://gparted.sourceforge.net/&quot;&gt;GParted&lt;/a&gt; e vi que tanto a partição do Windows (&lt;strong&gt;/dev/sda1&lt;/strong&gt;) quanto a partição estendida (&lt;strong&gt;/dev/sda4&lt;/strong&gt;) estavam definidas como ativas. Defini que apenas a partição estendida deveria ser ativa.&lt;/p&gt;
-
-&lt;p&gt;Reiniciei novamente o computador e dessa vez consegui o menu do GRUB2, ainda sem a opção do Windows. Só faltava isso para o problema estar resolvido.&lt;/p&gt;
-
-&lt;h3&gt;Reconfiguração do GRUB2&lt;/h3&gt;
-
-&lt;p&gt;Iniciei o computador pelo openSUSE instalado no HD. Após pesquisar e ler um bocadinho, descobri que o comando responsável pela reconfiguração do GRUB2 no openSUSE é o seguinte:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# grub2-mkconfig -o /boot/grub2/grub.cfg
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Reiniciei o computador, mas nada mudou... iniciei o openSUSE novamente. Agora não me perguntem por que cargas d’água, &lt;strong&gt;esse comando só funcionou depois que eu montei a partição do Windows&lt;/strong&gt; (isso pode ser feito pelo Dolphin, ao tentar abrir a partição do Windows, ou, para os mais experientes, usando o comando &lt;strong&gt;mount&lt;/strong&gt;). Montei a partição do Windows, executei a reconfiguração do GRUB2 novamente e, dessa vez, quando reiniciei o computador, tudo estava normal de novo…&lt;/p&gt;
-
-&lt;h3&gt;Configurando o GRUB2 para iniciar o Windows por padrão&lt;/h3&gt;
-
-&lt;p&gt;Aproveito a oportunidade para passar aqui uma dica preciosa para os usuários de Linux que, infelizmente, não são os únicos usuários do computador. Na minha casa, tanto meu irmão quanto minha mãe só usam Windows. Por isso, sempre deixo o Windows iniciando por padrão. No openSUSE, isso &lt;a href=&quot;http://doc.opensuse.org/documentation/html/openSUSE/opensuse-reference/grub2.html#grub2.yast2.config.default&quot;&gt;pode ser feito de maneira fácil através da interface gráfica do YaST&lt;/a&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Inicie o YaST pelo Kickoff. Forneça a senha de root para que ele possa abrir.&lt;/li&gt;
-&lt;li&gt;Clique em “Carregador de inicialização” (&lt;em&gt;Boot loader&lt;/em&gt;, no inglês).&lt;/li&gt;
-&lt;li&gt;Clique em “Opções do carregador de inicialização” (&lt;em&gt;Boot Loader Options&lt;/em&gt;).&lt;/li&gt;
-&lt;li&gt;Em “Seção de inicialização padrão” (&lt;em&gt;Default Boot Section&lt;/em&gt;), selecione qual sistema deseja que seja iniciado por padrão.&lt;/li&gt;
-&lt;li&gt;Clique em “OK” e depois em “OK” novamente para ativar as mudanças.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3&gt;Considerações finais&lt;/h3&gt;
-
-&lt;p&gt;Pois é, pessoal. Não sei explicar o que ocasionou esse problema no meu computador, mas sei que ele aconteceu, eu tive que buscar uma solução, encontrei e estou compartilhando aqui com vocês. Parece que nem sempre o instalador do openSUSE, apesar de muito inteligente, faz as coisas como deveria… o dual boot será algo que a equipe do openSUSE precisa rever em seu instalador?&lt;/p&gt;
-
-&lt;p&gt;Aliás, essa não é a única coisa estranha que percebo no openSUSE: meu netbook (que só eu uso, é um &lt;a href=&quot;http://www.asus.com/Notebooks_Ultrabooks/Eee_PC_1015PEM/&quot;&gt;ASUS EeePC 1015PEM&lt;/a&gt;) às vezes suspende quando volta da hibernação. Acontece o seguinte: eu paro de usar o netbook e o fecho. Ele inicia a hibernação. Quando o abro e volto a usar (ele volta da hibernação), alguns segundos depois o KDE avisa que a bateria está em nível crítico (0%, que loucura!) e que necessita suspender, e é isso que ele faz. Se conecto o carregador antes de abrir o netbook, consigo evitar a suspensão, mas não sei porque isso acontece, mesmo quando ele tá com a bateria cheia...&lt;/p&gt;
-
-&lt;p&gt;Abraço a todos e até a próxima!&lt;/p&gt;
-</description>
-        <pubDate>Tue, 30 Jul 2013 02:50:45 -0300</pubDate>
-        <link>https://vinyanalista.github.io/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</link>
-        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</guid>
         
         
       </item>
