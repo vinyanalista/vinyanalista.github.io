@@ -5,9 +5,123 @@
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>https://vinyanalista.github.io/</link>
     <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Oct 2015 09:05:40 -0300</pubDate>
-    <lastBuildDate>Tue, 06 Oct 2015 09:05:40 -0300</lastBuildDate>
+    <pubDate>Thu, 08 Oct 2015 15:32:28 -0300</pubDate>
+    <lastBuildDate>Thu, 08 Oct 2015 15:32:28 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Rufus: o canivete suíço do boot pelo pendrive (ou cartão de memória)</title>
+        <description>&lt;p&gt;O &lt;a href=&quot;https://rufus.akeo.ie&quot;&gt;Rufus&lt;/a&gt; é uma ferramenta bastante versátil quando o objetivo é iniciar o computador (&amp;quot;dar o &lt;em&gt;boot&lt;/em&gt;&amp;quot;, na gíria técnica) pelo &lt;em&gt;pendrive&lt;/em&gt;. Isso pode ser útil em diversas situações, como, por exemplo, testar ou instalar um sistema operacional (especialmente em computadores sem unidade de CD/DVD, como os &lt;em&gt;netbooks&lt;/em&gt;), restaurar &lt;em&gt;backups&lt;/em&gt;, remover vírus, dentre outras.&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/10/rufus-0.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/rufus-0.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Vantagens do Rufus em relação a outras ferramentas são seu tamanho reduzido (menos de 1MB), a quantidade de funcionalidades e a tradução para o Português, que é selecionada automaticamente de acordo com a configuração do &lt;a href=&quot;http://www.microsoft.com/pt-br/windows&quot;&gt;Windows&lt;/a&gt; (e olha como o mundo é pequeno: descobri que ela foi feita por um professor do &lt;a href=&quot;http://www.ifs.edu.br/&quot;&gt;IFSE&lt;/a&gt;, &lt;a href=&quot;http://lattes.cnpq.br/2313970638096032&quot;&gt;Chateaubriand Vieira Moura&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Também não é necessário instalar o Rufus: para usá-lo, basta baixar do &lt;a href=&quot;https://rufus.akeo.ie&quot;&gt;site oficial&lt;/a&gt; e executar.&lt;/p&gt;
+
+&lt;p&gt;Uma desvantagem do Rufus em relação a outras ferramentas é que ele &lt;a href=&quot;https://github.com/pbatard/rufus/wiki/FAQ#do-you-plan-to-add-multiboot-support&quot;&gt;não permite&lt;/a&gt; armazenar em um mesmo &lt;em&gt;pendrive&lt;/em&gt; vários sistemas operacionais (Windows, &lt;a href=&quot;http://ubuntu-br.org/&quot;&gt;Ubuntu&lt;/a&gt; e &lt;a href=&quot;https://www.opensuse.org/&quot;&gt;openSUSE&lt;/a&gt;, por exemplo). Nesse caso, talvez você possa utilizar o &lt;a href=&quot;http://www.hirensbootcd.org&quot;&gt;Hiren&amp;#39;s BootCD&lt;/a&gt; ou o &lt;a href=&quot;http://www.rmprepusb.com/&quot;&gt;RMPrepUSB&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Os passos aqui descritos, embora eu só use o termo &amp;quot;&lt;em&gt;pendrive&lt;/em&gt;&amp;quot;, também se aplicam a cartões de memória. Se você vai utilizar um cartão de memória, onde houver &amp;quot;&lt;em&gt;pendrive&lt;/em&gt;&amp;quot;, leia &amp;quot;cartão de memória&amp;quot;.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;
+&lt;strong&gt;Cuidado ao utilizar o Rufus&lt;/strong&gt;, pois ele &lt;a href=&quot;https://github.com/pbatard/rufus/wiki/FAQ#does-rufus-delete-all-partitionsvolumes-when-it-formats-a-drive&quot; target=&quot;_blank&quot;&gt;apaga o que estiver no &lt;em&gt;pendrive&lt;/em&gt;&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;Por segurança, recomendo que você remova todos os &lt;em&gt;pendrives&lt;/em&gt; que estão conectados ao computador e depois insira somente o que será utilizado.&lt;/p&gt;
+
+&lt;h3&gt;Breve explicação sobre imagens ISO&lt;/h3&gt;
+
+&lt;p&gt;Uma &lt;strong&gt;imagem ISO&lt;/strong&gt; é um arquivo que contém uma cópia de uma mídia ótica (um CD ou DVD) e pode ser utilizado para gravá-la.&lt;/p&gt;
+
+&lt;p&gt;Assim, usando um programa de gravação, como o &lt;a href=&quot;https://cdburnerxp.se/&quot;&gt;CDBurnerXP&lt;/a&gt;, é possível gravar um DVD com o openSUSE, por exemplo, usando a imagem ISO disponível para &lt;a href=&quot;http://software.opensuse.org/&quot;&gt;&lt;em&gt;download&lt;/em&gt;&lt;/a&gt; no &lt;em&gt;site&lt;/em&gt; do openSUSE. Com esse mesmo programa, você pode criar uma imagem ISO de um CD ou DVD que você possua, como o DVD de instalação do Windows.&lt;/p&gt;
+
+&lt;p&gt;Essa é apenas a utilização mais básica e comum das imagens ISO. É possível fazer muito mais com elas. Usando ferramentas como o &lt;a href=&quot;http://www.daemon-tools.cc/por/home&quot;&gt;DAEMON Tools&lt;/a&gt;, por exemplo, podemos acessar o conteúdo dessas imagens como se elas fossem CDs ou DVDs de verdade inseridos em uma unidade de CD/DVD do computador.&lt;/p&gt;
+
+&lt;p&gt;Usando o Rufus, podemos extrair o conteúdo de uma imagem ISO de um sistema operacional (o DVD de instalação do Windows ou o LiveDVD do Ubuntu, por exemplo) para um &lt;em&gt;pendrive&lt;/em&gt; e utilizá-lo para iniciar o computador.&lt;/p&gt;
+
+&lt;p&gt;Um CD (ou DVD) que pode ser usado para iniciar o computador é comumente chamado de &lt;a href=&quot;https://pt.wikipedia.org/wiki/Live_CD&quot;&gt;&lt;strong&gt;LiveCD&lt;/strong&gt;&lt;/a&gt; (ou &lt;strong&gt;LiveDVD&lt;/strong&gt;). Da mesma forma, é comum chamar um &lt;em&gt;pendrive&lt;/em&gt; que pode ser usado para iniciar o computador de &lt;strong&gt;LiveUSB&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Como criar um &lt;em&gt;pendrive&lt;/em&gt; inicializável a partir de qualquer imagem ISO&lt;/h3&gt;
+
+&lt;p&gt;Vejamos como é simples criar um &lt;em&gt;pendrive&lt;/em&gt; inicializável (&lt;em&gt;bootable&lt;/em&gt;) a partir de uma imagem ISO qualquer (uma que contenha o DVD de instalação do Windows ou o LiveDVD do Ubuntu, como no exemplo anteriormente citado):&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Conecte o pendrive que será utilizado ao computador e inicie o Rufus. Possivelmente, ele solicitará permissão de administrador, que você deve conceder.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/10/rufus-1.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/rufus-1.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Ele pergunta se deseja procurar atualizações para o Rufus na Internet, você pode clicar em &lt;strong&gt;Não&lt;/strong&gt; e prosseguir.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/10/rufus-2.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/rufus-2.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Em &lt;strong&gt;Dispositivo&lt;/strong&gt;, selecione o &lt;em&gt;pendrive&lt;/em&gt; que receberá o openSUSE (confira o rótulo e a capacidade para se certificar de que é esse &lt;em&gt;pendrive&lt;/em&gt; mesmo que será utilizado).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Certifique-se de que a opção &lt;strong&gt;Criar disco bootável com&lt;/strong&gt; está marcada, e selecione &lt;strong&gt;Imagem ISO&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Clique no ícone do disco ao lado das opções &lt;strong&gt;Criar disco bootável com&lt;/strong&gt; e &lt;strong&gt;Imagem ISO&lt;/strong&gt; e abra o arquivo ISO cujo conteúdo deve ser extraído para o &lt;em&gt;pendrive&lt;/em&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Clique em &lt;strong&gt;Iniciar&lt;/strong&gt;. O Rufus exibirá um aviso:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/10/rufus-3.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/rufus-3.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Leia-o atentamente e clique em &lt;strong&gt;OK&lt;/strong&gt; para continuar.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ao final do processo, seu &lt;em&gt;pendrive&lt;/em&gt; terá os mesmos arquivos que um CD ou DVD apresentaria caso você gravasse a imagem ISO neles. Inclusive, você ainda poderá utilizar o &lt;em&gt;pendrive&lt;/em&gt; para armazenar outros arquivos. Só tome o cuidado para não excluir ou renomear algum arquivo que veio da imagem ISO, o que pode prejudicar o bom funcionamento do sistema operacional que está no &lt;em&gt;pendrive&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Agora, você poderá fechar o Rufus e iniciar o computador usando o &lt;em&gt;pendrive&lt;/em&gt;, se quiser.&lt;/p&gt;
+
+&lt;h3&gt;Como gravar o openSUSE em um &lt;em&gt;pendrive&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;No caso específico do openSUSE, ao seguir as instruções acima e clicar em &lt;strong&gt;Iniciar&lt;/strong&gt;, você perceberá que o Rufus fará uma pergunta:&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39;&gt;
+    &lt;a href=&#39;/files/2015/10/rufus-4.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/rufus-4.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Isso acontece porque a imagem ISO do openSUSE é uma &lt;strong&gt;imagem ISO híbrida&lt;/strong&gt; (&lt;a href=&quot;http://www.syslinux.org/wiki/index.php/Isohybrid&quot;&gt;&lt;em&gt;hybrid ISO&lt;/em&gt;&lt;/a&gt;), o que permite a você tratá-la de duas formas:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;como uma &lt;strong&gt;imagem ISO&lt;/strong&gt; comum, caso em que o resultado é o mesmo produzido pelas instruções genéricas (os arquivos dentro da imagem ISO são copiados para o &lt;em&gt;pendrive&lt;/em&gt;, e você ainda pode utilizá-lo para armazenar outros arquivos); ou&lt;/li&gt;
+&lt;li&gt;como uma &lt;strong&gt;imagem DD&lt;/strong&gt; (imagem de disco, igual a uma produzida pelo comando &lt;code&gt;dd&lt;/code&gt; do Linux), o que permite que alterações feitas no sistema (por exemplo, um arquivo que você baixou enquanto usava o Linux a partir do &lt;em&gt;pendrive&lt;/em&gt;) sejam mantidas (então, no exemplo, você veria esse arquivo no mesmo lugar após reiniciar o computador pelo &lt;em&gt;pendrive&lt;/em&gt;). Nesse caso, o resultado é o mesmo produzido pela ferramenta oficial, o &lt;a href=&quot;https://en.opensuse.org/SDB:Live_USB_stick&quot;&gt;SUSE Studio ImageWriter&lt;/a&gt;, antes disponível também para Windows, mas agora &lt;a href=&quot;https://en.opensuse.org/SDB:Create_a_Live_USB_stick_using_Windows#Using_SUSE_Studio_ImageWriter&quot;&gt;feita apenas para o Linux&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Se sua intenção é usar o &lt;em&gt;pendrive&lt;/em&gt; de modo persistente (mantendo as alterações), marque a opção &lt;strong&gt;Gravar no modo Imagem DD&lt;/strong&gt;. Clique em &lt;strong&gt;OK&lt;/strong&gt; para iniciar o processo. Ao final, você terá um &lt;em&gt;pendrive&lt;/em&gt; que poderá ser utilizado para iniciar o computador usando o openSUSE.&lt;/p&gt;
+
+&lt;p&gt;Note que no caso da imagem DD só é possível utilizar o &lt;em&gt;pendrive&lt;/em&gt; com o sistema operacional nele contido. Então, seguindo nesse exemplo, em que o &lt;em&gt;pendrive&lt;/em&gt; contém o openSUSE, você não pode contectá-lo a um computador com Windows e copiar arquivos para ele ou acessar um arquivo que você baixou enquanto usava o openSUSE do &lt;em&gt;pendrive&lt;/em&gt;. Você pode, sim, iniciar qualquer computador usando esse &lt;em&gt;pendrive&lt;/em&gt; e acessar um arquivo que você criou em outra vez que você o utilizou.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 08 Oct 2015 15:30:00 -0300</pubDate>
+        <link>https://vinyanalista.github.io/blog/2015/10/08/rufus/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/10/08/rufus/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Dicas de Git</title>
@@ -2519,7 +2633,7 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
           &lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sizing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-Considerações finais&lt;/h3&gt;
+&lt;h3&gt;Considerações finais&lt;/h3&gt;
 
 &lt;p&gt;Espero que este &lt;em&gt;post&lt;/em&gt; tenha apresentado uma boa visão geral do potencial que o Bootstrap tem para melhorar o seu &lt;em&gt;site&lt;/em&gt; ou aplicação &lt;em&gt;web&lt;/em&gt;. Não tenho a intenção de esgotar o assunto aqui, até porque há muito a falar do Bootstrap. Portanto, recomendo que continue lendo o &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;&lt;em&gt;site&lt;/em&gt; oficial do Bootstrap&lt;/a&gt;. Ele é realmente a melhor fonte de informações sobre o Bootstrap. Além dele, não há nada que uma busca no &lt;a href=&quot;https://www.google.com.br&quot;&gt;Google&lt;/a&gt; ou no &lt;a href=&quot;http://pt.stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt; não responda.&lt;/p&gt;
 
@@ -2896,73 +3010,6 @@ Considerações finais&lt;/h3&gt;
         <pubDate>Tue, 23 Sep 2014 15:38:39 -0300</pubDate>
         <link>https://vinyanalista.github.io/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Reduzindo o tamanho de discos rígidos virtuais do VirtualBox</title>
-        <description>&lt;p&gt;É verdade que quando criamos um disco rígido virtual dinamicamente alocado no &lt;a href=&quot;http://www.virtualbox.org/&quot;&gt;VirtualBox&lt;/a&gt;, ele cresce à medida em que arquivos são gravados. No entanto, seu tamanho não diminui à medida em que excluímos arquivos. Veja agora como é possível reduzir discos rígidos desse tipo no VirtualBox.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p class=&#39;text-center&#39;&gt;
-    &lt;a href=&#39;/files/2014/01/virtualbox.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2014/01/virtualbox.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Primeiro, é necessário executar um utilitário na &lt;strong&gt;máquina virtual&lt;/strong&gt; (&lt;em&gt;guest&lt;/em&gt;), que vai transformar todo o espaço livre em &lt;em&gt;bits&lt;/em&gt; zero no disco rígido virtual. Se sua máquina virtual roda Linux, esse utilitário é o &lt;strong&gt;zerofree&lt;/strong&gt;, se roda Windows, há o &lt;strong&gt;SDelete&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;A &lt;a href=&quot;http://www.thelinuxdaily.com/2010/02/shrinking-a-dynamic-virtualbox-disk-image/&quot;&gt;página na qual descobri o zerofree&lt;/a&gt; recomenda reiniciar o Linux (da máquina virtual) no modo de recuperação (&lt;em&gt;safe mode&lt;/em&gt; ou &lt;em&gt;recovery mode&lt;/em&gt;) para executar o &lt;strong&gt;zerofree&lt;/strong&gt;. Pra simplificar a vida, eu prefiro inicializar a máquina virtual utilizando um LiveCD.&lt;/p&gt;
-
-&lt;p&gt;Se você tiver um LiveCD do Ubuntu, o &lt;strong&gt;zerofree&lt;/strong&gt; pode ser instalado nele via:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# apt-get install zerofree
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;O openSUSE também possui o &lt;strong&gt;zerofree&lt;/strong&gt; nos repositórios oficiais da distribuição:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# zypper in zerofree
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se for usar o LiveCD de outra distribuição, pesquise na Internet como obter o &lt;strong&gt;zerofree&lt;/strong&gt; para a sua distribuição.&lt;/p&gt;
-
-&lt;p&gt;Se você não souber identificar o disco rígido, o utilitário &lt;strong&gt;fdisk&lt;/strong&gt; pode dar uma pista:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# fdisk -l
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;No meu caso, vou compactar o &lt;strong&gt;/dev/sda1&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Montamos o disco rígido como somente leitura em uma pasta temporária e executamos o &lt;strong&gt;zerofree&lt;/strong&gt; nele:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# mkdir /mnt/tmp
-# mount -o ro /dev/sda1 /mnt/tmp
-# zerofree /dev/sda1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se sua máquina virtual roda Windows, você deve baixar o &lt;a href=&quot;http://technet.microsoft.com/en-us/sysinternals/bb897443.aspx&quot;&gt;SDelete&lt;/a&gt;, abrir o Prompt de Comando, ir até a pasta onde o &lt;strong&gt;SDelete&lt;/strong&gt; foi baixado e executar o comando:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; sdelete -c C:/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Onde &lt;strong&gt;C&lt;/strong&gt; é a letra da unidade cujo espaço livre deseja-se converter em &lt;strong&gt;bits&lt;/strong&gt; zero.&lt;/p&gt;
-
-&lt;p&gt;Após executar o &lt;strong&gt;zerofree&lt;/strong&gt; ou o &lt;strong&gt;SDelete&lt;/strong&gt;, devemos voltar à &lt;strong&gt;máquina real&lt;/strong&gt; (&lt;em&gt;host&lt;/em&gt;) e executar o utilitário do VirtualBox que vai de fato compactar o disco rígido virtual, reduzindo seu tamanho fisicamente.&lt;/p&gt;
-
-&lt;p&gt;Se sua máquina real roda Linux:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ VBoxManage modifyhd /caminho/para/o/hd/virtual.vdi --compact
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se sua máquina real roda Windows, provavelmente você terá que ir até a pasta do VirtualBox para executar o comando:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;gt; cd &amp;quot;C:\Program Files\Oracle\VirtualBox&amp;quot;
-&amp;gt; VBoxManage modifyhd &amp;quot;C:\caminho\para\o\hd\virtual.vdi&amp;quot; --compact
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Foi assim que hoje consegui reduzir um disco rígido virtual de 6,5GB para 5GB. Foi uma redução pequena, mas isso varia de um caso para outro. O autor &lt;a href=&quot;http://www.maketecheasier.com/shrink-your-virtualbox-vm&quot;&gt;desse post no Make Tech Easier&lt;/a&gt; conseguiu uma redução de 45% no espaço que o disco rígido virtual ocupava (de 10GB para 5,5GB).&lt;/p&gt;
-
-&lt;p&gt;Abraço a todos e até mais!&lt;/p&gt;
-
-&lt;h3&gt;Referências&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.thelinuxdaily.com/2010/02/shrinking-a-dynamic-virtualbox-disk-image/&quot;&gt;Shrinking a Dynamic VirtualBox Disk Image | The Linux Daily&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.maketecheasier.com/shrink-your-virtualbox-vm&quot;&gt;How To Shrink Your Virtualbox VM And Free Up Space For Your Hard Disk – Make Tech Easier&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 20 Jan 2014 03:53:32 -0300</pubDate>
-        <link>https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</link>
-        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</guid>
         
         
       </item>

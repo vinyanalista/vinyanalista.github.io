@@ -19,7 +19,15 @@ html {
 
 .adsbygoogle {
     display: block;
-    margin: 1em;
+}
+
+.adsbygoogle.anuncio-na-pagina, #ad_unit_1 {
+    margin-top: 1em;
+}
+
+.adsbygoogle.anuncio-no-post {
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .at4-icon.aticon-github {
