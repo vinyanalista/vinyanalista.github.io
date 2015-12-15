@@ -131,7 +131,7 @@
                 ui_language: 'pt'
             };
             var addthis_share = {
-                url: 'https://vinyanalista.github.io/search/index.html',
+                url: 'https://vinyanalista.github.io/search/',
                 title: document.title,
                 description: 'Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)'
             };
@@ -325,9 +325,18 @@
 
 
 
+    <meta itemprop="inLanguage" content="pt"/>
+
+
+
     <!-- Disqus -->
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES * * */
+        
+            var disqus_config = function () {
+                this.language = "pt";
+            };
+        
         var disqus_shortname = 'vinyanalista';
         
         /* * * DON'T EDIT BELOW THIS LINE * * */
