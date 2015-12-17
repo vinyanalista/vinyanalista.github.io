@@ -5,17 +5,17 @@
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>https://vinyanalista.github.io/</link>
     <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Dec 2015 08:42:13 -0300</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2015 08:42:13 -0300</lastBuildDate>
+    <pubDate>Thu, 17 Dec 2015 12:50:40 -0300</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2015 12:50:40 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Acesse sites e aplicativos censurados com o Psiphon</title>
         <description>&lt;p&gt;De uma hora para outra, &lt;a href=&quot;http://g1.globo.com/tecnologia/noticia/2015/12/operadoras-sao-intimadas-bloquear-whatsapp-no-brasil-por-48-horas.html&quot;&gt;o WhatsApp foi bloqueado no Brasil&lt;/a&gt;. Mas há artifícios que possibilitam a utilização do aplicativo, mesmo com o bloqueio das operadoras. Aqui veremos um deles: o aplicativo &lt;a href=&quot;https://psiphon3.com/pt_PT/index.html&quot;&gt;Psiphon&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/psiphon-00.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-00.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/psiphon-00.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -38,12 +38,12 @@
 
 &lt;p&gt;Em &lt;em&gt;smartphones&lt;/em&gt; e &lt;em&gt;tablets&lt;/em&gt; com &lt;a href=&quot;https://www.android.com/intl/pt-BR_br/&quot;&gt;Android&lt;/a&gt;, o Psiphon pode ser baixado e instalado pela &lt;a href=&quot;https://play.google.com/store/apps?hl=pt_BR&quot;&gt;Play Store&lt;/a&gt;, como a maioria dos aplicativos:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;https://play.google.com/store/apps/details?id=com.psiphon3&#39; title=&#39;Clique para obter o Psiphon na Play Store&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/google-play.png&#39; alt=&#39;Clique para obter o Psiphon na Play Store&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/google-play.png&#39; alt=&#39;Clique para obter o Psiphon na Play Store&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
-    &lt;em class=&#39;caption&#39;&gt;
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
         Clique para obter o Psiphon na Play Store
     &lt;/em&gt;
     
@@ -53,27 +53,27 @@
 
 &lt;p&gt;Para iniciá-lo, procure pelo ícone na tela inicial ou na lista de aplicativos:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/psiphon-01.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-01.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/psiphon-01.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Assim que o aplicativo é iniciado, ele já tenta criar o túnel. Diante disso, o Android exibe um alerta. Marque a opção &lt;strong&gt;Confio nesse aplicativo&lt;/strong&gt; e toque em &lt;strong&gt;OK&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/psiphon-02.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-02.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/psiphon-02.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Quando a conexão é estabelecida com sucesso, o aplicativo abre no navegador sua página oficial:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/psiphon-03.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-03.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/psiphon-03.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -82,9 +82,9 @@
 
 &lt;p&gt;Quando não quiser usar mais o túnel, volte ao aplicativo e clique em &lt;strong&gt;Stop&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/psiphon-04.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/psiphon-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -95,9 +95,9 @@
 
 &lt;p&gt;Acesse o &lt;a href=&quot;https://psiphon3.com/pt_PT/index.html&quot;&gt;site do Psiphon&lt;/a&gt; e clique em &lt;strong&gt;Download&lt;/strong&gt;, em seguida clique no &lt;em&gt;link&lt;/em&gt; do Psiphon para Windows:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/psiphon-05.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/psiphon-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -106,9 +106,9 @@
 
 &lt;p&gt;Quando acabar o &lt;em&gt;download&lt;/em&gt;, inicie o aplicativo, ele estabelecerá a conexão:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/psiphon-06.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/psiphon-06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -138,18 +138,18 @@
         <title>Como configurar as atualizações automáticas do Windows 10</title>
         <description>&lt;p&gt;Precisou reiniciar o computador, estava com pressa e se esbarrou nas atualizações do &lt;a href=&quot;http://www.microsoft.com/pt-br/windows&quot;&gt;Windows&lt;/a&gt; 10?&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-00.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-00.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-00.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Pior: ele passou um tempão tentando instalar as atualizações, depois falhou e passou mais outra eternidade desfazendo o trabalho?&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-01.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -166,9 +166,9 @@
 
 &lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; por mais que seja possível adiar ou ignorar as atualizações do Windows, elas continuam sendo necessárias. É importante que regularmente você reserve um tempo para verificar se há novas atualizações e deixar o computador instalá-las. Pode ser que o sistema solicite a obtenção de atualizações, como já aconteceu comigo:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-02.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-02.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-02.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -179,18 +179,18 @@
 
 &lt;p&gt;Para isso, clique no botão &lt;strong&gt;Iniciar&lt;/strong&gt;, no canto inferior esquerdo da tela, e depois clique em &lt;strong&gt;Configurações&lt;/strong&gt;. Na tela que aparece, clique em &lt;strong&gt;Rede e Internet&lt;/strong&gt; e depois em &lt;strong&gt;Wi-Fi&lt;/strong&gt;. Depois da lista de redes Wi-Fi disponíveis, clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Você chegará à seguinte tela, na qual pode ativar ou desativar a conexão limitada:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-03.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-03.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-03.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Depois de ativar a conexão limitada, se você acessar as configurações do Windows Update (menu &lt;strong&gt;Iniciar&lt;/strong&gt;, &lt;strong&gt;Configurações&lt;/strong&gt;, &lt;strong&gt;Atualização e segurança&lt;/strong&gt;, &lt;strong&gt;Windows Update&lt;/strong&gt;), perceberá que o Windows oferece a possibilidade de buscar atualizações apenas quando desejado, clicando no botão &lt;strong&gt;Verificar se há atualizações&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -209,25 +209,25 @@
 
 &lt;p&gt;Para isso, clique no botão &lt;strong&gt;Iniciar&lt;/strong&gt;, no canto inferior esquerdo da tela, e depois clique em &lt;strong&gt;Configurações&lt;/strong&gt;. Na tela que aparece, clique em &lt;strong&gt;Atualização e segurança&lt;/strong&gt; e depois em &lt;strong&gt;Windows Update&lt;/strong&gt;. Clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Você chegará à seguinte tela, na qual pode selecionar &lt;strong&gt;Avisar antes de agendar reinicialização&lt;/strong&gt; em vez de &lt;strong&gt;Automático (recomendado)&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Feito isso, quando o Windows começar a instalar atualizações, você será solicitado a informar um horário para que ele possa reiniciar o computador e continuar a atualização:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-06.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-06.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-06.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-07.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-07.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-07.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -236,16 +236,16 @@
 
 &lt;p&gt;Se seu problema é causado por apenas uma atualização, uma boa alternativa é impedir que o sistema instale apenas a atualização indesejada. Para isso, a &lt;a href=&quot;http://www.microsoft.com.br/&quot;&gt;Microsoft&lt;/a&gt; lançou o pacote de solução de problemas &lt;strong&gt;Mostrar ou ocultar atualizações&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-08.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-08.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-08.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-09.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-09.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-09.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -258,9 +258,9 @@
 
 &lt;p&gt;Para configurar o Windows Update para adiar atualizações, clique no botão &lt;strong&gt;Iniciar&lt;/strong&gt;, no canto inferior esquerdo da tela, e depois clique em &lt;strong&gt;Configurações&lt;/strong&gt;. Na tela que aparece, clique em &lt;strong&gt;Atualização e segurança&lt;/strong&gt; e depois em &lt;strong&gt;Windows Update&lt;/strong&gt;. Clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Você chegará à seguinte tela, na qual pode ativar a opção &lt;strong&gt;Adiar atualizações&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -271,27 +271,27 @@
 
 &lt;p&gt;Para acessar o editor de política de grupo, abra o menu &lt;strong&gt;Iniciar&lt;/strong&gt;, pesquise por &lt;strong&gt;gpedit.msc&lt;/strong&gt; e execute o editor de política de grupo como administrador:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-10.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-10.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-10.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Na estrutura de árvore da esquerda, navegue para &lt;strong&gt;Configuração do Computador&lt;/strong&gt;, &lt;strong&gt;Modelos Administrativos&lt;/strong&gt;, &lt;strong&gt;Componentes do Windows&lt;/strong&gt;, &lt;strong&gt;Windows Update&lt;/strong&gt;. À direita, localize o item &lt;strong&gt;Configurar Atualizações Automáticas&lt;/strong&gt; e clique duas vezes nele:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-11.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-11.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-11.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Na tela que aparece, selecione &lt;strong&gt;Habilitado&lt;/strong&gt; e em &lt;strong&gt;Opções&lt;/strong&gt; configure como desejar. Você pode selecionar, por exemplo, &lt;strong&gt;Avisar antes de baixar e de instalar qualquer atualização&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-12.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-12.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-12.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -300,18 +300,18 @@
 
 &lt;p&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; e feche o editor de política de grupo. Agora acesse as configurações do Windows Update (menu &lt;strong&gt;Iniciar&lt;/strong&gt;, &lt;strong&gt;Configurações&lt;/strong&gt;, &lt;strong&gt;Atualização e segurança&lt;/strong&gt;, &lt;strong&gt;Windows Update&lt;/strong&gt;) e clique em &lt;strong&gt;Verificar se há atualizações&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Logo em seguida, quando o Windows começar a buscar atualizações, clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Observe nessa tela a mensagem &lt;strong&gt;Algumas configurações são gerenciadas pela sua organização&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -326,9 +326,9 @@
 
 &lt;p&gt;Abra o &lt;strong&gt;menu Iniciar&lt;/strong&gt;, pesquise por &lt;strong&gt;regedit&lt;/strong&gt; e execute o editor de registro como administrador:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/09/inicializacao-rapida-5.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-5.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-5.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -345,27 +345,27 @@
 
 &lt;p&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; e feche o editor de registro:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-14.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-14.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-14.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Agora acesse as configurações do Windows Update (menu &lt;strong&gt;Iniciar&lt;/strong&gt;, &lt;strong&gt;Configurações&lt;/strong&gt;, &lt;strong&gt;Atualização e segurança&lt;/strong&gt;, &lt;strong&gt;Windows Update&lt;/strong&gt;) e clique em &lt;strong&gt;Verificar se há atualizações&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Logo em seguida, quando o Windows começar a buscar atualizações, clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Observe nessa tela a mensagem &lt;strong&gt;Algumas configurações são gerenciadas pela sua organização&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -380,27 +380,27 @@
 
 &lt;p&gt;Para desativar o serviço do Windows Update, abra o menu &lt;strong&gt;Iniciar&lt;/strong&gt;, pesquise por &lt;strong&gt;services.msc&lt;/strong&gt; e execute o gerenciador de serviços como administrador:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-15.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-15.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-15.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Na lista de serviços, procure pelo serviço &lt;strong&gt;Windows Update&lt;/strong&gt; (ele deve ser um dos últimos) e clique duas vezes nele:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-16.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-16.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-16.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Na tela que aparece, em &lt;strong&gt;Tipo de inicialização&lt;/strong&gt; selecione &lt;strong&gt;Desativado&lt;/strong&gt; e clique em &lt;strong&gt;OK&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/windows-atualizacoes-17.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-17.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-17.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -430,9 +430,9 @@
     
       <item>
         <title>Como escolher um bom computador para comprar?</title>
-        <description>&lt;p class=&#39;text-center&#39;&gt;
+        <description>&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/11/black-friday.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/black-friday.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/11/black-friday.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -451,12 +451,12 @@
 
 &lt;p&gt;A que me refiro quando falo em &amp;quot;algo complexo&amp;quot;? Para um computador doméstico, &lt;strong&gt;jogos&lt;/strong&gt;, por exemplo, são atividades complexas: exigem que o computador faça muitos cálculos e processe muitas regras ao mesmo tempo. Além disso, ele deve responder rapidamente (de preferência, em tempo real) aos comandos de quem joga. Se você deseja um computador para jogar, especialmente se está de olho nos últimos lançamentos em jogos (os jogos &amp;quot;pesados&amp;quot;), se prepare para desembolsar uma boa grana.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/11/jogos.jpg&#39; title=&#39;Jogos geralmente exigem do computador&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/jogos.jpg&#39; alt=&#39;Jogos geralmente exigem do computador&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/11/jogos.jpg&#39; alt=&#39;Jogos geralmente exigem do computador&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
-    &lt;em class=&#39;caption&#39;&gt;
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
         Jogos geralmente exigem do computador
     &lt;/em&gt;
     
@@ -486,12 +486,12 @@
 
 &lt;p&gt;Como &lt;a href=&quot;/blog/2012/04/09/componentes-de-um-computador-hardware-e-software/&quot;&gt;sabemos&lt;/a&gt;, o processador é o principal componente de um computador. Não apenas o principal, ele é também o mais rápido. Assim, ele é o maior (porém não o único) responsável pelo desempenho do computador. Não podemos esperar muito de um computador se seu processador é lento.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2012/04/processador.jpg&#39; title=&#39;Processador: o componente do computador que mais influencia no seu desempenho&#39;&gt;
-        &lt;img src=&#39;/files/2012/04/processador.jpg&#39; alt=&#39;Processador: o componente do computador que mais influencia no seu desempenho&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2012/04/processador.jpg&#39; alt=&#39;Processador: o componente do computador que mais influencia no seu desempenho&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
-    &lt;em class=&#39;caption&#39;&gt;
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
         Processador: o componente do computador que mais influencia no seu desempenho
     &lt;/em&gt;
     
@@ -529,12 +529,12 @@
 
 &lt;p&gt;Um computador apresenta, na verdade, vários tipos de memória, que diferem em termos de localização, capacidade e custo. Quando os anúncios usam apenas a palavra &lt;strong&gt;memória&lt;/strong&gt;, eles se referem especificamente à &lt;strong&gt;memória principal&lt;/strong&gt; ou &lt;strong&gt;memória RAM&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/11/memoria-ram.jpg&#39; title=&#39;Memória RAM&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/memoria-ram.jpg&#39; alt=&#39;Memória RAM&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/11/memoria-ram.jpg&#39; alt=&#39;Memória RAM&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
-    &lt;em class=&#39;caption&#39;&gt;
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
         Memória RAM
     &lt;/em&gt;
     
@@ -562,12 +562,12 @@
 
 &lt;p&gt;Se alto desempenho para você é uma prioridade, talvez seja mais interessante um computador com &lt;strong&gt;disco de estado sólido&lt;/strong&gt; (do inglês &lt;em&gt;solid state drive&lt;/em&gt;, SSD) do que um computador com disco rígido. Os SSDs são fabricados com tecnologia semelhante à dos &lt;em&gt;pendrives&lt;/em&gt; e cartões de memória e são muito mais rápidos do que os tradicionais HDs, no entanto apresentam menor capacidade e tendem a ser mais caros.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/11/hd-ssd.jpg&#39; title=&#39;Um disco rígido e um disco de estado sólido por dentro&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/hd-ssd.jpg&#39; alt=&#39;Um disco rígido e um disco de estado sólido por dentro&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/11/hd-ssd.jpg&#39; alt=&#39;Um disco rígido e um disco de estado sólido por dentro&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
-    &lt;em class=&#39;caption&#39;&gt;
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
         Um disco rígido e um disco de estado sólido por dentro
     &lt;/em&gt;
     
@@ -579,12 +579,12 @@
 
 &lt;p&gt;Um &lt;em&gt;notebook&lt;/em&gt; com duas &lt;strong&gt;portas USB&lt;/strong&gt; permite a você conectar ao mesmo tempo um &lt;em&gt;mouse&lt;/em&gt; e uma impressora ou um &lt;em&gt;pendrive&lt;/em&gt; e um celular, mas nunca os quatro ao mesmo tempo, o que seria possível em um &lt;em&gt;notebook&lt;/em&gt; com quatro portas USB. As &lt;strong&gt;extensões USB&lt;/strong&gt; (&lt;em&gt;hubs&lt;/em&gt;) podem ajudar se as portas USB do &lt;em&gt;notebook&lt;/em&gt; não são suficientes, mas nem todos os dispositivos USB funcionam bem quando conectados a extensões.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/11/hub-usb.jpg&#39; title=&#39;Não queira depender de uma extensão USB: nem todos os dispositivos funcionam bem com ela&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/hub-usb.jpg&#39; alt=&#39;Não queira depender de uma extensão USB: nem todos os dispositivos funcionam bem com ela&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/11/hub-usb.jpg&#39; alt=&#39;Não queira depender de uma extensão USB: nem todos os dispositivos funcionam bem com ela&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
-    &lt;em class=&#39;caption&#39;&gt;
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
         Não queira depender de uma extensão USB: nem todos os dispositivos funcionam bem com ela
     &lt;/em&gt;
     
@@ -596,12 +596,12 @@
 
 &lt;p&gt;O &lt;em&gt;notebook&lt;/em&gt; &lt;a href=&quot;http://br.acer.com/ac/pt/BR/content/model/NX.MQYAL.011&quot;&gt;Acer Aspire E5-571-52ZK&lt;/a&gt;, por exemplo, disponibiliza 1 porta USB 3.0, 2 portas USB 2.0, 1 saída de vídeo HDMI, 1 saída de vídeo VGA, 1 porta de rede padrão RJ45, leitor de cartão de memória, saída para fone de ouvido, entrada para microfone, conexão Wi-Fi e Bluetooth. É um &lt;em&gt;notebook&lt;/em&gt; bastante versátil.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/11/acer-aspire-e5.jpg&#39; title=&#39;Conexões na lateral do notebook Acer Aspire E5-571-52ZK&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/acer-aspire-e5.jpg&#39; alt=&#39;Conexões na lateral do notebook Acer Aspire E5-571-52ZK&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/11/acer-aspire-e5.jpg&#39; alt=&#39;Conexões na lateral do notebook Acer Aspire E5-571-52ZK&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
-    &lt;em class=&#39;caption&#39;&gt;
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
         Conexões na lateral do notebook Acer Aspire E5-571-52ZK
     &lt;/em&gt;
     
@@ -645,12 +645,12 @@
 
 &lt;p&gt;Você pode escolher os componentes que deseja e &lt;strong&gt;montar seu próprio computador&lt;/strong&gt;. Dessa forma, é possível que uma configuração melhor saia por um preço mais em conta. Além disso, você pode personalizar seu computador como quiser. Dê preferência a comprar componentes de fabricantes conhecidos e verifique se eles são compatíveis entre si. Caso não disponha de conhecimento técnico suficiente, procure um profisional competente para auxiliá-lo com a escolha das peças e na montagem do computador.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/11/gabinete-transparente.jpg&#39; title=&#39;Há quem prefira montar seu próprio computador personalizado!&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/gabinete-transparente.jpg&#39; alt=&#39;Há quem prefira montar seu próprio computador personalizado!&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/11/gabinete-transparente.jpg&#39; alt=&#39;Há quem prefira montar seu próprio computador personalizado!&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
-    &lt;em class=&#39;caption&#39;&gt;
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
         Há quem prefira montar seu próprio computador personalizado!
     &lt;/em&gt;
     
@@ -669,9 +669,9 @@
     
       <item>
         <title>Meu celular foi roubado: e agora, o que faço?</title>
-        <description>&lt;p class=&#39;text-center&#39;&gt;
+        <description>&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-00.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-00.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-00.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -708,9 +708,9 @@
 
 &lt;p&gt;Quando você entra no &lt;em&gt;site&lt;/em&gt; com a sua conta do Google, que deve ser a mesma configurada no celular, o Gerenciador de dispositivos Android começa a procurá-lo. Se ele estiver conectado à Internet, a posição aproximada dele será mostrada no mapa. A ferramenta também indica a última vez em que o celular foi visto conectado:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-01.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -723,9 +723,9 @@
 
 &lt;p&gt;Alguns fabricantes, a exemplo da &lt;a href=&quot;http://www.samsung.com/br/home/&quot;&gt;Samsung&lt;/a&gt;, vendem os celulares com sistemas de localização já instalados de fábrica, como o &lt;a href=&quot;https://findmymobile.samsung.com/&quot;&gt;Find My Mobile&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-02.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -736,9 +736,9 @@
 
 &lt;p&gt;Se seu celular possui instalado o &lt;a href=&quot;https://www.avast.com/pt-br/anti-theft&quot;&gt;Avast Anti-Theft&lt;/a&gt; (a solução antifurto gratuita mais completa que conheço, e que uso no meu celular), você pode localizá-lo e/ou controlá-lo remotamente acessando a sua &lt;a href=&quot;https://my.avast.com/pt-br/&quot;&gt;conta do Avast&lt;/a&gt; ou enviando mensagens SMS para ele.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-03.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -771,9 +771,9 @@
 &lt;li&gt;Abra o Avast Mobile Security e selecione &lt;strong&gt;mais ferramentas&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-04.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -782,9 +782,9 @@
 &lt;li&gt;Selecione &lt;strong&gt;Anti-Theft&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-05.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-05.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-05.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -793,9 +793,9 @@
 &lt;li&gt;Selecione &lt;strong&gt;Controle remoto via SMS&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-06.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-06.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-06.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -804,9 +804,9 @@
 &lt;li&gt;A lista de comandos possíveis aparece:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-07.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-07.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-07.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -815,9 +815,9 @@
 &lt;li&gt;Clicando em um deles (&lt;code&gt;LOST&lt;/code&gt;, por exemplo), o Avast te auxiliará a enviar a mensagem SMS com o comando:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-08.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-08.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-08.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -847,9 +847,9 @@
 &lt;li&gt;&lt;p&gt;Clique em &lt;strong&gt;Apagar Dispositivo&lt;/strong&gt;:&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-09.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -901,9 +901,9 @@
 &lt;li&gt;&lt;p&gt;Na lista, selecione o celular roubado e clique em &lt;strong&gt;Bloquear&lt;/strong&gt;:&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-10.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -916,12 +916,12 @@
 
 &lt;p&gt;Você pode começar alterando as senhas das contas utilizadas pelos aplicativos. Se seu celular é um Android, você pode ver a &lt;a href=&quot;https://play.google.com/apps&quot;&gt;lista dos seus aplicativos&lt;/a&gt; no &lt;a href=&quot;https://play.google.com/&quot;&gt;Google Play&lt;/a&gt; para se certificar de não esquecer de nenhum:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-11.jpg&#39; title=&#39;O Facebook e o Foursquare são dois exemplos de aplicativos cujas contas você deve mudar a senha&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-11.jpg&#39; alt=&#39;O Facebook e o Foursquare são dois exemplos de aplicativos cujas contas você deve mudar a senha&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-11.jpg&#39; alt=&#39;O Facebook e o Foursquare são dois exemplos de aplicativos cujas contas você deve mudar a senha&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
-    &lt;em class=&#39;caption&#39;&gt;
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
         O Facebook e o Foursquare são dois exemplos de aplicativos cujas contas você deve mudar a senha
     &lt;/em&gt;
     
@@ -931,9 +931,9 @@
 
 &lt;p&gt;Ao &lt;a href=&quot;https://pt-br.facebook.com/help/748385731848104&quot;&gt;mudar a senha do Facebook&lt;/a&gt;, ele oferece essa possibilidade:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-12.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -951,9 +951,9 @@
 &lt;li&gt;&lt;p&gt;Clique no botão &lt;strong&gt;Senhas memorizadas&lt;/strong&gt; para que o Gerenciador de Senhas seja aberto:&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-13.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -967,9 +967,9 @@
 &lt;li&gt;&lt;p&gt;Em &lt;strong&gt;Senhas e formulários&lt;/strong&gt;, clique em &lt;strong&gt;Gerenciar senhas&lt;/strong&gt;. Uma caixa de diálogo com uma lista de senhas salvas é exibida:&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-14.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-14.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-14.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1005,9 +1005,9 @@
 
 &lt;p&gt;Nem sempre é tão óbvio descobrir qual dos números impressos na caixa é o IMEI. Veja nessa caixa de um &lt;a href=&quot;http://www.samsung.com/latin_en/consumer/mobile-devices/smartphones/galaxy-s/GT-I9192ZWLTPA&quot;&gt;Samsung Galaxy S4 Mini Duos&lt;/a&gt; que o número IMEI aparece desacompanhado de um rótulo que o identifique:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-15.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-15.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-15.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1020,9 +1020,9 @@
 
 &lt;p&gt;Entre com a conta do Google associada ao seu celular Android e expanda a seção &lt;strong&gt;Android&lt;/strong&gt; para ver informações sobre o(s) seu(s) dispositivo(s) Android. No meio dessas informações, deve estar o número IMEI do seu celular:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-16.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-16.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-16.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1067,9 +1067,9 @@
 &lt;li&gt;&lt;p&gt;Marque a caixa ao lado de &lt;strong&gt;Restauração automática&lt;/strong&gt;:&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/celular-roubado-17.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-17.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/celular-roubado-17.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1091,9 +1091,9 @@
         <title>Rufus: o canivete suíço do boot pelo pendrive (ou cartão de memória)</title>
         <description>&lt;p&gt;O &lt;a href=&quot;https://rufus.akeo.ie&quot;&gt;Rufus&lt;/a&gt; é uma ferramenta bastante versátil quando o objetivo é iniciar o computador (&amp;quot;dar o &lt;em&gt;boot&lt;/em&gt;&amp;quot;, na gíria técnica) pelo &lt;em&gt;pendrive&lt;/em&gt;. Isso pode ser útil em diversas situações, como, por exemplo, testar ou instalar um sistema operacional (especialmente em computadores sem unidade de CD/DVD, como os &lt;em&gt;netbooks&lt;/em&gt;), restaurar &lt;em&gt;backups&lt;/em&gt;, remover vírus, dentre outras.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/rufus-0.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/rufus-0.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/rufus-0.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1132,9 +1132,9 @@
 &lt;li&gt;Conecte o pendrive que será utilizado ao computador e inicie o Rufus. Possivelmente, ele solicitará permissão de administrador, que você deve conceder.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/rufus-1.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/rufus-1.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/rufus-1.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1143,9 +1143,9 @@
 &lt;li&gt;Ele pergunta se deseja procurar atualizações para o Rufus na Internet, você pode clicar em &lt;strong&gt;Não&lt;/strong&gt; e prosseguir.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/rufus-2.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/rufus-2.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/rufus-2.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1157,9 +1157,9 @@
 &lt;li&gt;&lt;p&gt;Clique em &lt;strong&gt;Iniciar&lt;/strong&gt;. O Rufus exibirá um aviso:&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/rufus-3.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/rufus-3.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/rufus-3.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1176,9 +1176,9 @@
 
 &lt;p&gt;No caso específico do openSUSE, ao seguir as instruções acima e clicar em &lt;strong&gt;Iniciar&lt;/strong&gt;, você perceberá que o Rufus fará uma pergunta:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/10/rufus-4.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/rufus-4.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/10/rufus-4.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1205,9 +1205,9 @@
         <title>Dicas de Git</title>
         <description>&lt;p&gt;Quem não já teve dúvidas ao usar o &lt;a href=&quot;https://git-scm.com/&quot;&gt;sistema de controle de versão Git&lt;/a&gt;? Aqui apresento uma compilação de algumas dúvidas que já tive e das soluções que eu encontrei.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/09/git.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/09/git.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/09/git.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1584,9 +1584,9 @@ git commit -m &amp;quot;Salvando os arquivos antes de atualizar os fins de linha
 
 &lt;p&gt;A mensagem de erro que apareceu para mim quando eu tentei acessar a partição NTFS com meus arquivos pessoais foi a seguinte:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/09/inicializacao-rapida-0.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-0.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-0.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1611,9 +1611,9 @@ The NTFS partition is in an unsafe state. Please resume and shutdown Windows ful
 &lt;li&gt;&lt;p&gt;Clique em &lt;strong&gt;Opções de Energia&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/09/inicializacao-rapida-1.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-1.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-1.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1622,9 +1622,9 @@ The NTFS partition is in an unsafe state. Please resume and shutdown Windows ful
 &lt;li&gt;Clique em &lt;strong&gt;Escolher a função dos botões de energia&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/09/inicializacao-rapida-2.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-2.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-2.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1633,9 +1633,9 @@ The NTFS partition is in an unsafe state. Please resume and shutdown Windows ful
 &lt;li&gt;Clique em &lt;strong&gt;Alterar configurações não disponíveis no momento&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/09/inicializacao-rapida-3.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-3.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-3.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1645,9 +1645,9 @@ The NTFS partition is in an unsafe state. Please resume and shutdown Windows ful
 &lt;li&gt;&lt;p&gt;Desmarque a opção &lt;strong&gt;Ligar inicialização rápida (recomendado)&lt;/strong&gt; e clique em &lt;strong&gt;Salvar alterações&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/09/inicializacao-rapida-4.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-4.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-4.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1664,9 +1664,9 @@ The NTFS partition is in an unsafe state. Please resume and shutdown Windows ful
 &lt;li&gt;&lt;p&gt;Abra o menu Iniciar e digite &lt;strong&gt;regedit&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Clique com o botão direito em &lt;strong&gt;regedit&lt;/strong&gt; e clique em &lt;strong&gt;Executar como administrador&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;p class=&#39;text-center&#39;&gt;
+&lt;p&gt;&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
 &lt;a href=&#39;/files/2015/09/inicializacao-rapida-5.png&#39; title=&#39;&#39;&gt;
-    &lt;img src=&#39;/files/2015/09/inicializacao-rapida-5.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+    &lt;img src=&#39;/files/2015/09/inicializacao-rapida-5.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
 &lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -1696,9 +1696,9 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 
 &lt;p&gt;Você pode ter uma ideia do ganho de desempenho trazido pela inicialização rápida, em comparação à &amp;quot;inicialização fria&amp;quot; (&lt;em&gt;cold boot&lt;/em&gt;, como batizaram a inicialização tradicional), vendo essa imagem, encontrada em &lt;a href=&quot;http://blogs.msdn.com/b/b8/archive/2011/09/08/delivering-fast-boot-times-in-windows-8.aspx&quot;&gt;um &lt;em&gt;blog&lt;/em&gt; da MSDN&lt;/a&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/09/inicializacao-rapida-6.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-6.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-6.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1738,9 +1738,9 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 
 &lt;p&gt;E agora, quem poderá nos ajudar?&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/addthis-00.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-00.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-00.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1751,9 +1751,9 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 
 &lt;p&gt;Você pode perceber o AddThis em ação neste &lt;em&gt;site&lt;/em&gt; que visita agora. Experimente procurar os &lt;em&gt;links&lt;/em&gt; de compartilhar e seguir, eles estão visíveis, acho que não terá dificuldade em identificá-los:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/addthis-01.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1773,18 +1773,18 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 
 &lt;p&gt;O AddThis oferece alguns serviços mediante pagamento, mas pode ser utilizado &lt;strong&gt;gratuitamente&lt;/strong&gt;. Para utilizar seus serviços, é necessário apenas se cadastrar. Acesse o site &lt;a href=&quot;http://www.addthis.com/&quot;&gt;www.addthis.com&lt;/a&gt; e clique em &lt;strong&gt;Sign In&lt;/strong&gt; (entrar), no canto superior direito da página:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/addthis-02.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Essa é a página de &lt;em&gt;login&lt;/em&gt;, onde você tem acesso ao &lt;em&gt;link&lt;/em&gt; para se cadastrar no final da página:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/addthis-03.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1793,9 +1793,9 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 
 &lt;p&gt;Clique em &lt;strong&gt;Create an Account&lt;/strong&gt; (criar uma conta). Você é então encaminhado para a página de registro:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/addthis-04.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1804,9 +1804,9 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 
 &lt;p&gt;Na tela seguinte, será solicitado a você escolher um plano. Se deseja começar com o plano gratuito, clique em &lt;strong&gt;Select plan&lt;/strong&gt; abaixo de &lt;strong&gt;Basic&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/addthis-05.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1850,18 +1850,18 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 
 &lt;p&gt;Se você acessar este &lt;em&gt;site&lt;/em&gt; de um computador &lt;em&gt;desktop&lt;/em&gt;, verá a barra de compartilhamento em ação:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/addthis-06.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
 
 &lt;p&gt;Na lista de serviços do AddThis, abaixo de &lt;strong&gt;Sharing Sidebar&lt;/strong&gt; (barra lateral de compartilhamento), clique em &lt;strong&gt;Setup&lt;/strong&gt; (configurar):&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/addthis-07.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1890,9 +1890,9 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 
 &lt;p&gt;Se você acessar este &lt;em&gt;site&lt;/em&gt; de um &lt;em&gt;smartphone&lt;/em&gt; ou &lt;em&gt;tablet&lt;/em&gt;, verá a barra móvel em ação:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/addthis-08.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -1919,9 +1919,9 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 
 &lt;p&gt;Neste &lt;em&gt;site&lt;/em&gt;, você pode perceber os botões de compartilhar logo abaixo dos títulos das postagens, em tamanho pequeno, e também nas páginas das postagens após o conteúdo, antes dos comentários, em tamanho grande:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/addthis-09.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -2014,9 +2014,9 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 
 &lt;p&gt;Vamos aqui nos ater à versão horizontal, a mesma utilizada neste &lt;em&gt;site&lt;/em&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/addthis-10.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/addthis-10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -2136,9 +2136,9 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 
 &lt;p&gt;Depois, mude a ordem em que as páginas aparecem na navegação. Para isso, acesse a área administrativa e vá em &lt;strong&gt;Páginas&lt;/strong&gt;. Então, passe o &lt;em&gt;mouse&lt;/em&gt; sobre a página &amp;quot;Sobre&amp;quot; e clique em &amp;quot;Edição rápida&amp;quot;. Mude o valor do campo &lt;strong&gt;Ordem&lt;/strong&gt; para 1 e clique em &lt;strong&gt;Atualizar&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/wordpress-bootstrap-7.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-7.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-7.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -2166,9 +2166,9 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Agora sim nossa barra de navegação está completa:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/wordpress-bootstrap-8.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-8.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-8.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
@@ -2336,9 +2336,9 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
 
 &lt;p&gt;Agora que temos um &lt;em&gt;link&lt;/em&gt; para a página inicial em nossa barra de navegação, podemos remover o &lt;em&gt;link&lt;/em&gt; para a página &amp;quot;Início&amp;quot;. Podemos fazer isso adicionando mais uma opção na chamada à função &lt;code&gt;wp_list_pages()&lt;/code&gt;, a opção &lt;code&gt;exclude&lt;/code&gt;. Antes de utilizá-la, teremos que descobrir o ID da página &amp;quot;Início&amp;quot;. Para isso, acesse a página pela área administrativa, como se fosse editá-la, e observe o endereço na barra de endereços do navegador:&lt;/p&gt;
 
-&lt;p class=&#39;text-center&#39;&gt;
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/08/wordpress-bootstrap-9.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-9.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39;&gt;
+        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-9.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
     &lt;/a&gt;
     
 &lt;/p&gt;
