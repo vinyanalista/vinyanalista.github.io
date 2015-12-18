@@ -5,8 +5,8 @@
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>https://vinyanalista.github.io/</link>
     <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Dec 2015 12:50:40 -0300</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2015 12:50:40 -0300</lastBuildDate>
+    <pubDate>Fri, 18 Dec 2015 21:55:49 -0200</pubDate>
+    <lastBuildDate>Fri, 18 Dec 2015 21:55:49 -0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -33,6 +33,13 @@
 &lt;h2&gt;Como funciona o Psiphon?&lt;/h2&gt;
 
 &lt;p&gt;O Psiphon burla a censura ou bloqueio imposta ao seu computador ou dispositivo móvel (&lt;em&gt;smartphone&lt;/em&gt; ou &lt;em&gt;tablet&lt;/em&gt;) por meio de uma conexão em forma de &lt;a href=&quot;http://www.tecmundo.com.br/1427-o-que-e-vpn-.htm&quot;&gt;túnel&lt;/a&gt; que ele estabelece com algum outro computador anônimo em algum outro lugar do mundo. Ele atravessa os dados que chegam e saem de você por esse túnel. Dessa maneira, os dados evitam o caminho comum, que está bloqueado, e passam por outro caminho, que não está censurado.&lt;/p&gt;
+
+&lt;p class=&#39;text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2015/12/vpn.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/vpn.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
 
 &lt;h2&gt;Instalando e usando o Psiphon no Android&lt;/h2&gt;
 
@@ -127,7 +134,7 @@
 
 &lt;p&gt;Espero que possa ter ajudado! Dúvidas nos comentários!&lt;/p&gt;
 </description>
-        <pubDate>Thu, 17 Dec 2015 08:00:00 -0300</pubDate>
+        <pubDate>Thu, 17 Dec 2015 08:00:00 -0200</pubDate>
         <link>https://vinyanalista.github.io/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/</guid>
         
@@ -421,7 +428,7 @@
 
 &lt;p&gt;Espero que possa ter ajudado! Dúvidas nos comentários!&lt;/p&gt;
 </description>
-        <pubDate>Tue, 15 Dec 2015 12:30:00 -0300</pubDate>
+        <pubDate>Tue, 15 Dec 2015 12:30:00 -0200</pubDate>
         <link>https://vinyanalista.github.io/blog/2015/12/15/como-configurar-as-atualizacoes-automaticas-do-windows-10/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/12/15/como-configurar-as-atualizacoes-automaticas-do-windows-10/</guid>
         
@@ -660,7 +667,7 @@
 
 &lt;p&gt;Por hora é isso, pessoal. Se lembrar de mais alguma coisa, acrescento e aviso. Não deixem de comentar! Boas compras!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 27 Nov 2015 03:00:00 -0300</pubDate>
+        <pubDate>Fri, 27 Nov 2015 03:00:00 -0200</pubDate>
         <link>https://vinyanalista.github.io/blog/2015/11/27/como-escolher-um-bom-computador-para-comprar/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/11/27/como-escolher-um-bom-computador-para-comprar/</guid>
         
