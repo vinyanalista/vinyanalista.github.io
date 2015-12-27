@@ -78,7 +78,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css">-->
     <link rel="stylesheet" href="/libs/bootstrap-material-design/0.3.0/custom/blue-500.css">
@@ -239,7 +239,7 @@
 
         <div class="row" itemprop="articleBody mainEntity">
             <div class="col-xs-12">
-                <p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+                <p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/processador.jpg' title=''>
         <img src='/files/2012/04/processador.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -281,7 +281,7 @@
 
 <p>Os principais livros utilizados nessa pesquisa foram:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/introducao-a-organizacao-de-computadores.jpg' title=''>
         <img src='/files/2012/04/introducao-a-organizacao-de-computadores.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -290,7 +290,7 @@
 
 <p>MONTEIRO, Mário A. Introdução à Organização de Computadores. 4ªEdição. Rio de Janeiro: LTC Editora, 2001.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/hardware-manual-completo.gif' title=''>
         <img src='/files/2012/04/hardware-manual-completo.gif' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -299,7 +299,7 @@
 
 <p>MORIMOTO, Carlos E. Manual de Hardware Completo. 3ª Edição. Junho de 2002. Disponível na Internet em: <a href="http://www.hardware.com.br/livros/hardware-manual/">http://www.hardware.com.br/livros/hardware-manual/</a>. Acessado em: 08/04/2012.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/hardware-curso-completo.gif' title=''>
         <img src='/files/2012/04/hardware-curso-completo.gif' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -308,7 +308,7 @@
 
 <p>TORRES, Gabriel. HARDWARE Curso Completo. 4ª Edição. Editora AxcelBooks, 2001.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/hardware-total.jpg' title=''>
         <img src='/files/2012/04/hardware-total.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -530,14 +530,11 @@
         $(document).ready(function(){
             
                 var $ad = $('#content_ad_unit_2').closest('.row');
-                if (($('.blog-post').length > 1) || ($('.blog-archive-title').length > 0)) {
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
-                    var $posts = $('.blog-post');
-                    if ($posts.length < 2) {
-                        return;
-                    }
                     var post;
-                    if ($posts.length > 1) {
+                    if ($posts.length > 2) {
                         post = random_number(2, $posts.length);
                     } else {
                         post = 2;
@@ -545,17 +542,20 @@
                     $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
                 } else {
                     // Page or post
-                    var $paragraphs = $('.blog-post-content p');
-                    if ($paragraphs.length == 0) {
-                        return;
-                    }
-                    var paragraph;
-                    if ($paragraphs.length > 1) {
-                        paragraph = random_number(1, $paragraphs.length);
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
                     } else {
-                        paragraph = 1;
+                        $ad.remove();
                     }
-                    $paragraphs.eq(paragraph - 1).after($ad);
                 }
             
             $('.adsbygoogle').each(function(index, element){

@@ -78,7 +78,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css">-->
     <link rel="stylesheet" href="/libs/bootstrap-material-design/0.3.0/custom/blue-500.css">
@@ -241,7 +241,7 @@
             <div class="col-xs-12">
                 <p>Gente, a tarde de ontem foi um sufoco! Acidentalmente excluí a tabela de partições de um dos meus HDs, pensei que já tinha perdido todos os meus arquivos e passei várias horas tentando recuperá-la. Tentei ferramentas do Windows, do Linux, e acabei conseguindo. Venho compartilhar nesse post o que houve, como resolvi e algumas observações curiosas sobre o ocorrido.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/computador-maluco.jpg' title=''>
         <img src='/files/2012/04/computador-maluco.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -305,7 +305,7 @@ Device    Boot      Start         End      Blocks   Id  System
 <li>Eis que apareceu a seguinte tela com as opções de recuperação oferecidas pelo DVD de instalação do Windows 7 (volto a falar dela já já):</li>
 </ol>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/win7-system-recovery-options.jpg' title='Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7'>
         <img src='/files/2012/04/win7-system-recovery-options.jpg' alt='Ferramentas de recuperação disponibilizadas no DVD de instalação do Windows 7' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -343,7 +343,7 @@ Device    Boot      Start         End      Blocks   Id  System
 
 <p>Imaginava que agora eu conseguiria acessar o Windows, mas esbarrei em um novo problema. A tela exibida quando eu iniciava o computador e escolhia o Windows na lista do GRUB era a seguinte (clique na imagem para ampliar):</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/erro-0xc000000e.jpg' title='Erro 0xc000000e'>
         <img src='/files/2012/04/erro-0xc000000e.jpg' alt='Erro 0xc000000e' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -356,7 +356,7 @@ Device    Boot      Start         End      Blocks   Id  System
 
 <p>Mais uma rodada de tentativas executando aqueles comandos que eu mostrei acima, e dessa vez houve algum resultado: só que o sistema ainda não funcionou, o erro foi que mudou. Agora a tela exibia:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/erro-bootmgr.png' title='BOOTMGR is missing'>
         <img src='/files/2012/04/erro-bootmgr.png' alt='BOOTMGR is missing' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -382,7 +382,7 @@ Device    Boot      Start         End      Blocks   Id  System
 
 <p>Só que essa solução me trouxe dois problemas: o GRUB sumiu (imagina só: agora que eu consegui acessar o Windows, não consigo mais acessar o Linux!) e aquela imagem da bandeira do Windows brilhando não aparece mais na inicialização, ao invés disso, é a barra verde do Vista (isso não chega a ser um problema, mas não deveria acontecer, veja nas imagens a seguir o antes e o depois).</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/win7-boot.jpg' title='O que aparecia antes enquanto o Windows 7 era carregado'>
         <img src='/files/2012/04/win7-boot.jpg' alt='O que aparecia antes enquanto o Windows 7 era carregado' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -393,7 +393,7 @@ Device    Boot      Start         End      Blocks   Id  System
     
 </p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/winvista-boot.jpg' title='O que aparece agora'>
         <img src='/files/2012/04/winvista-boot.jpg' alt='O que aparece agora' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -636,14 +636,11 @@ Device    Boot      Start         End      Blocks   Id  System
         $(document).ready(function(){
             
                 var $ad = $('#content_ad_unit_2').closest('.row');
-                if (($('.blog-post').length > 1) || ($('.blog-archive-title').length > 0)) {
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
-                    var $posts = $('.blog-post');
-                    if ($posts.length < 2) {
-                        return;
-                    }
                     var post;
-                    if ($posts.length > 1) {
+                    if ($posts.length > 2) {
                         post = random_number(2, $posts.length);
                     } else {
                         post = 2;
@@ -651,17 +648,20 @@ Device    Boot      Start         End      Blocks   Id  System
                     $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
                 } else {
                     // Page or post
-                    var $paragraphs = $('.blog-post-content p');
-                    if ($paragraphs.length == 0) {
-                        return;
-                    }
-                    var paragraph;
-                    if ($paragraphs.length > 1) {
-                        paragraph = random_number(1, $paragraphs.length);
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
                     } else {
-                        paragraph = 1;
+                        $ad.remove();
                     }
-                    $paragraphs.eq(paragraph - 1).after($ad);
                 }
             
             $('.adsbygoogle').each(function(index, element){

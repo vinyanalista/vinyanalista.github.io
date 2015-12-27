@@ -78,7 +78,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css">-->
     <link rel="stylesheet" href="/libs/bootstrap-material-design/0.3.0/custom/blue-500.css">
@@ -241,7 +241,7 @@
             <div class="col-xs-12">
                 <p>O <a href="http://www.jboss.org/jbossas/">JBoss Application Server</a> (ou, abreviadamente, JBoss AS) é um servidor de aplicação de código aberto desenvolvido pela <a href="http://www.jboss.org/">JBoss</a> (atualmente, uma divisão da <a href="http://www.redhat.com/">Red Hat</a>) para a plataforma <a href="http://www.oracle.com/technetwork/java/javaee/">Java EE</a>. Ele oferece toda a infraestrutura necessária para executar aplicações Web desenvolvidas sobre essa plataforma. Nesse post, você saberá o necessário para começar a desenvolver aplicações Java para a Web utilizando esse servidor.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/07/jboss_as_01.jpg' title=''>
         <img src='/files/2012/07/jboss_as_01.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -348,7 +348,7 @@ JAVA_OPTS:  -server -XX:+TieredCompilation -Xms64m -Xmx512m -XX:MaxPermSize=256m
 </code></pre></div>
 <p>Tanto no Windows quanto no Linux, após iniciado o servidor, abra seu navegador de preferência e acesse o endereço “<a href="http://localhost:8080">http://localhost:8080</a>” (a porta 8080 é a utilizada pelo JBoss AS por padrão, mas essa porta pode ser alterada na configuração do servidor). Você deve ver a tela de boas vindas do JBoss AS:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/07/jboss_as_02.jpg' title=''>
         <img src='/files/2012/07/jboss_as_02.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -363,7 +363,7 @@ JAVA_OPTS:  -server -XX:+TieredCompilation -Xms64m -Xmx512m -XX:MaxPermSize=256m
 
 <p>Vá até a <a href="http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/">página das aplicações de exemplo do JBoss AS</a> e clique em “Get the source”. Depois, clique em “Source zip”:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/07/jboss_as_03.jpg' title=''>
         <img src='/files/2012/07/jboss_as_03.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -416,7 +416,7 @@ INFO: JBoss Remoting version 3.2.3.GA
 </code></pre></div>
 <p>Feito isso, podemos acessar a aplicação usando o navegador através do endereço “<a href="http://localhost:8080/jboss-as-helloworld-jsf/">http://localhost:8080/jboss-as-helloworld-jsf/</a>“:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/07/jboss_as_04.jpg' title=''>
         <img src='/files/2012/07/jboss_as_04.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -641,14 +641,11 @@ INFO: JBoss Remoting version 3.2.3.GA
         $(document).ready(function(){
             
                 var $ad = $('#content_ad_unit_2').closest('.row');
-                if (($('.blog-post').length > 1) || ($('.blog-archive-title').length > 0)) {
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
-                    var $posts = $('.blog-post');
-                    if ($posts.length < 2) {
-                        return;
-                    }
                     var post;
-                    if ($posts.length > 1) {
+                    if ($posts.length > 2) {
                         post = random_number(2, $posts.length);
                     } else {
                         post = 2;
@@ -656,17 +653,20 @@ INFO: JBoss Remoting version 3.2.3.GA
                     $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
                 } else {
                     // Page or post
-                    var $paragraphs = $('.blog-post-content p');
-                    if ($paragraphs.length == 0) {
-                        return;
-                    }
-                    var paragraph;
-                    if ($paragraphs.length > 1) {
-                        paragraph = random_number(1, $paragraphs.length);
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
                     } else {
-                        paragraph = 1;
+                        $ad.remove();
                     }
-                    $paragraphs.eq(paragraph - 1).after($ad);
                 }
             
             $('.adsbygoogle').each(function(index, element){

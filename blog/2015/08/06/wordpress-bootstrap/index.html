@@ -78,7 +78,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css">-->
     <link rel="stylesheet" href="/libs/bootstrap-material-design/0.3.0/custom/blue-500.css">
@@ -407,7 +407,7 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
 </code></pre></div>
 <p>A última coisa que precisamos fazer para que possamos selecionar e utilizar nosso tema é atribuir-lhe uma imagem. O WordPress <a href="https://codex.wordpress.org/Theme_Development#Screenshot">requer</a> que essa imagem seja chamada <code>screenshot.png</code> (na verdade, os formatos <code>.jpg</code>, <code>.jpeg</code> e <code>.gif</code> também são suportados, embora não recomendados) e apresente resolução mínima de 387x290, sendo que o recomendado é 880x660 (aspecto 4:3). Você pode utilizar <a href="https://raw.githubusercontent.com/vinyanalista/wpbootstrap/22981ee4247c8a4656fab44a38e9da94b6b51913/screenshot.png">esta imagem</a> ou outra de sua preferência:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/08/wordpress-bootstrap-1.png' title=''>
         <img src='/files/2015/08/wordpress-bootstrap-1.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -418,7 +418,7 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
 
 <p>Agora estamos prontos para entrar na área de administração do WordPress e <a href="https://codex.wordpress.org/Using_Themes/Theme_List#Selecting_the_Active_Theme">selecionar nosso tema</a>. Entre na área administrativa e vá em <strong>Aparência</strong> &gt; <strong>Temas</strong>. Você deve ver o nosso tema na lista de temas disponíveis:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/08/wordpress-bootstrap-2.png' title=''>
         <img src='/files/2015/08/wordpress-bootstrap-2.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -429,7 +429,7 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
 
 <p>Uma vez com o tema ativado, visite seu <em>site</em> no navegador e verá algo como isso:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/08/wordpress-bootstrap-3.png' title=''>
         <img src='/files/2015/08/wordpress-bootstrap-3.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -731,7 +731,7 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
 </code></pre></div>
 <p>Para testar se os arquivos CSS e JS estão sendo carregados adequadamente, abra seu <em>site</em> no navegador e redimensione a tela de modo a parecer um <em>tablet</em> ou <em>smartphone</em>. Clique no menu <em>dropdown</em> e ele deve aparecer assim:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/08/wordpress-bootstrap-4.png' title=''>
         <img src='/files/2015/08/wordpress-bootstrap-4.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -806,7 +806,7 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
 
 <p>Antes de testarmos nossa página inicial no navegador, vamos modificar uma configuração no WordPress para exibir a página que criamos como página inicial, ao invés das postagens mais recentes. Para isso, acesse a área administrativa e vá em <strong>Configurações</strong> &gt; <strong>Leitura</strong> e na opção <strong>A página inicial mostra</strong> selecione <strong>Uma página estática</strong>. Em seguida, em <strong>Página inicial</strong>, selecione a página &quot;Início&quot;:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/08/wordpress-bootstrap-5.png' title=''>
         <img src='/files/2015/08/wordpress-bootstrap-5.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -838,7 +838,7 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
 
 <p>Agora, visite o <em>site</em>. Você perceberá as alterações que fez no editor.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/08/wordpress-bootstrap-6.png' title=''>
         <img src='/files/2015/08/wordpress-bootstrap-6.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -1068,14 +1068,11 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
         $(document).ready(function(){
             
                 var $ad = $('#content_ad_unit_2').closest('.row');
-                if (($('.blog-post').length > 1) || ($('.blog-archive-title').length > 0)) {
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
-                    var $posts = $('.blog-post');
-                    if ($posts.length < 2) {
-                        return;
-                    }
                     var post;
-                    if ($posts.length > 1) {
+                    if ($posts.length > 2) {
                         post = random_number(2, $posts.length);
                     } else {
                         post = 2;
@@ -1083,17 +1080,20 @@ $ mv lib/bootstrap/bootstrap-3.3.5-dist lib/bootstrap/3.3.5
                     $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
                 } else {
                     // Page or post
-                    var $paragraphs = $('.blog-post-content p');
-                    if ($paragraphs.length == 0) {
-                        return;
-                    }
-                    var paragraph;
-                    if ($paragraphs.length > 1) {
-                        paragraph = random_number(1, $paragraphs.length);
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
                     } else {
-                        paragraph = 1;
+                        $ad.remove();
                     }
-                    $paragraphs.eq(paragraph - 1).after($ad);
                 }
             
             $('.adsbygoogle').each(function(index, element){

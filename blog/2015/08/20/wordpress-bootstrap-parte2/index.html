@@ -78,7 +78,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css">-->
     <link rel="stylesheet" href="/libs/bootstrap-material-design/0.3.0/custom/blue-500.css">
@@ -273,7 +273,7 @@
 
 <p>Depois, mude a ordem em que as páginas aparecem na navegação. Para isso, acesse a área administrativa e vá em <strong>Páginas</strong>. Então, passe o <em>mouse</em> sobre a página &quot;Sobre&quot; e clique em &quot;Edição rápida&quot;. Mude o valor do campo <strong>Ordem</strong> para 1 e clique em <strong>Atualizar</strong>.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/08/wordpress-bootstrap-7.png' title=''>
         <img src='/files/2015/08/wordpress-bootstrap-7.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -303,7 +303,7 @@
 </code></pre></div>
 <p>Agora sim nossa barra de navegação está completa:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/08/wordpress-bootstrap-8.png' title=''>
         <img src='/files/2015/08/wordpress-bootstrap-8.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -473,7 +473,7 @@
 
 <p>Agora que temos um <em>link</em> para a página inicial em nossa barra de navegação, podemos remover o <em>link</em> para a página &quot;Início&quot;. Podemos fazer isso adicionando mais uma opção na chamada à função <code>wp_list_pages()</code>, a opção <code>exclude</code>. Antes de utilizá-la, teremos que descobrir o ID da página &quot;Início&quot;. Para isso, acesse a página pela área administrativa, como se fosse editá-la, e observe o endereço na barra de endereços do navegador:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/08/wordpress-bootstrap-9.png' title=''>
         <img src='/files/2015/08/wordpress-bootstrap-9.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -796,14 +796,11 @@
         $(document).ready(function(){
             
                 var $ad = $('#content_ad_unit_2').closest('.row');
-                if (($('.blog-post').length > 1) || ($('.blog-archive-title').length > 0)) {
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
-                    var $posts = $('.blog-post');
-                    if ($posts.length < 2) {
-                        return;
-                    }
                     var post;
-                    if ($posts.length > 1) {
+                    if ($posts.length > 2) {
                         post = random_number(2, $posts.length);
                     } else {
                         post = 2;
@@ -811,17 +808,20 @@
                     $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
                 } else {
                     // Page or post
-                    var $paragraphs = $('.blog-post-content p');
-                    if ($paragraphs.length == 0) {
-                        return;
-                    }
-                    var paragraph;
-                    if ($paragraphs.length > 1) {
-                        paragraph = random_number(1, $paragraphs.length);
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
                     } else {
-                        paragraph = 1;
+                        $ad.remove();
                     }
-                    $paragraphs.eq(paragraph - 1).after($ad);
                 }
             
             $('.adsbygoogle').each(function(index, element){

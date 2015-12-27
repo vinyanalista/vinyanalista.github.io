@@ -78,7 +78,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css">-->
     <link rel="stylesheet" href="/libs/bootstrap-material-design/0.3.0/custom/blue-500.css">
@@ -280,7 +280,7 @@ Disk identifier: 0x1ba01b9f
 <li>Iniciei o computador pelo DVD de instalação do Windows 7. Na tela inicial, escolhi meu idioma (que não é inglês, quero reconhecer <a href="http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/">o crédito do autor das imagens</a>) e cliquei em “Avançar”:</li>
 </ol>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2013/07/windows-startup-recovery2.jpg' title=''>
         <img src='/files/2013/07/windows-startup-recovery2.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -291,7 +291,7 @@ Disk identifier: 0x1ba01b9f
 <li>Em seguida, cliquei em “Reparar o computador”:</li>
 </ol>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2013/07/windows-startup-recovery3.jpg' title=''>
         <img src='/files/2013/07/windows-startup-recovery3.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -302,7 +302,7 @@ Disk identifier: 0x1ba01b9f
 <li>Nessa tela, escolhi a primeira opção, não selecionei nada na lista, e cliquei em “Avançar”:</li>
 </ol>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2013/07/windows-startup-recovery4.png' title=''>
         <img src='/files/2013/07/windows-startup-recovery4.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -313,7 +313,7 @@ Disk identifier: 0x1ba01b9f
 <li>Finalmente, nessa tela, diferentemente do autor, escolhi a primeira opção, “Startup Recovery”:</li>
 </ol>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2013/07/windows-startup-recovery5.png' title=''>
         <img src='/files/2013/07/windows-startup-recovery5.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -571,14 +571,11 @@ Disk identifier: 0x1ba01b9f
         $(document).ready(function(){
             
                 var $ad = $('#content_ad_unit_2').closest('.row');
-                if (($('.blog-post').length > 1) || ($('.blog-archive-title').length > 0)) {
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
-                    var $posts = $('.blog-post');
-                    if ($posts.length < 2) {
-                        return;
-                    }
                     var post;
-                    if ($posts.length > 1) {
+                    if ($posts.length > 2) {
                         post = random_number(2, $posts.length);
                     } else {
                         post = 2;
@@ -586,17 +583,20 @@ Disk identifier: 0x1ba01b9f
                     $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
                 } else {
                     // Page or post
-                    var $paragraphs = $('.blog-post-content p');
-                    if ($paragraphs.length == 0) {
-                        return;
-                    }
-                    var paragraph;
-                    if ($paragraphs.length > 1) {
-                        paragraph = random_number(1, $paragraphs.length);
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
                     } else {
-                        paragraph = 1;
+                        $ad.remove();
                     }
-                    $paragraphs.eq(paragraph - 1).after($ad);
                 }
             
             $('.adsbygoogle').each(function(index, element){

@@ -78,7 +78,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css">-->
     <link rel="stylesheet" href="/libs/bootstrap-material-design/0.3.0/custom/blue-500.css">
@@ -243,7 +243,7 @@
 
 <p>A mensagem de erro que apareceu para mim quando eu tentei acessar a partição NTFS com meus arquivos pessoais foi a seguinte:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/09/inicializacao-rapida-0.png' title=''>
         <img src='/files/2015/09/inicializacao-rapida-0.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -270,7 +270,7 @@ The NTFS partition is in an unsafe state. Please resume and shutdown Windows ful
 <li><p>Clique em <strong>Opções de Energia</strong></p></li>
 </ol>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/09/inicializacao-rapida-1.png' title=''>
         <img src='/files/2015/09/inicializacao-rapida-1.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -281,7 +281,7 @@ The NTFS partition is in an unsafe state. Please resume and shutdown Windows ful
 <li>Clique em <strong>Escolher a função dos botões de energia</strong></li>
 </ol>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/09/inicializacao-rapida-2.png' title=''>
         <img src='/files/2015/09/inicializacao-rapida-2.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -292,7 +292,7 @@ The NTFS partition is in an unsafe state. Please resume and shutdown Windows ful
 <li>Clique em <strong>Alterar configurações não disponíveis no momento</strong></li>
 </ol>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/09/inicializacao-rapida-3.png' title=''>
         <img src='/files/2015/09/inicializacao-rapida-3.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -304,7 +304,7 @@ The NTFS partition is in an unsafe state. Please resume and shutdown Windows ful
 <li><p>Desmarque a opção <strong>Ligar inicialização rápida (recomendado)</strong> e clique em <strong>Salvar alterações</strong></p></li>
 </ol>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/09/inicializacao-rapida-4.png' title=''>
         <img src='/files/2015/09/inicializacao-rapida-4.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -323,7 +323,7 @@ The NTFS partition is in an unsafe state. Please resume and shutdown Windows ful
 <li><p>Abra o menu Iniciar e digite <strong>regedit</strong></p></li>
 <li><p>Clique com o botão direito em <strong>regedit</strong> e clique em <strong>Executar como administrador</strong></p>
 
-<p><p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p><p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
 <a href='/files/2015/09/inicializacao-rapida-5.png' title=''>
     <img src='/files/2015/09/inicializacao-rapida-5.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
 </a></p></li>
@@ -355,7 +355,7 @@ REG ADD <span class="s2">&quot;HKLM\SYSTEM\CurrentControlSet\Control\Session Man
 
 <p>Você pode ter uma ideia do ganho de desempenho trazido pela inicialização rápida, em comparação à &quot;inicialização fria&quot; (<em>cold boot</em>, como batizaram a inicialização tradicional), vendo essa imagem, encontrada em <a href="http://blogs.msdn.com/b/b8/archive/2011/09/08/delivering-fast-boot-times-in-windows-8.aspx">um <em>blog</em> da MSDN</a>:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/09/inicializacao-rapida-6.png' title=''>
         <img src='/files/2015/09/inicializacao-rapida-6.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -595,14 +595,11 @@ REG ADD <span class="s2">&quot;HKLM\SYSTEM\CurrentControlSet\Control\Session Man
         $(document).ready(function(){
             
                 var $ad = $('#content_ad_unit_2').closest('.row');
-                if (($('.blog-post').length > 1) || ($('.blog-archive-title').length > 0)) {
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
-                    var $posts = $('.blog-post');
-                    if ($posts.length < 2) {
-                        return;
-                    }
                     var post;
-                    if ($posts.length > 1) {
+                    if ($posts.length > 2) {
                         post = random_number(2, $posts.length);
                     } else {
                         post = 2;
@@ -610,17 +607,20 @@ REG ADD <span class="s2">&quot;HKLM\SYSTEM\CurrentControlSet\Control\Session Man
                     $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
                 } else {
                     // Page or post
-                    var $paragraphs = $('.blog-post-content p');
-                    if ($paragraphs.length == 0) {
-                        return;
-                    }
-                    var paragraph;
-                    if ($paragraphs.length > 1) {
-                        paragraph = random_number(1, $paragraphs.length);
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
                     } else {
-                        paragraph = 1;
+                        $ad.remove();
                     }
-                    $paragraphs.eq(paragraph - 1).after($ad);
                 }
             
             $('.adsbygoogle').each(function(index, element){

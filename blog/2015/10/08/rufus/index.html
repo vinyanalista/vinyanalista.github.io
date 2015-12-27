@@ -78,7 +78,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css">-->
     <link rel="stylesheet" href="/libs/bootstrap-material-design/0.3.0/custom/blue-500.css">
@@ -241,7 +241,7 @@
             <div class="col-xs-12">
                 <p>O <a href="https://rufus.akeo.ie">Rufus</a> é uma ferramenta bastante versátil quando o objetivo é iniciar o computador (&quot;dar o <em>boot</em>&quot;, na gíria técnica) pelo <em>pendrive</em>. Isso pode ser útil em diversas situações, como, por exemplo, testar ou instalar um sistema operacional (especialmente em computadores sem unidade de CD/DVD, como os <em>netbooks</em>), restaurar <em>backups</em>, remover vírus, dentre outras.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/10/rufus-0.png' title=''>
         <img src='/files/2015/10/rufus-0.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -282,7 +282,7 @@
 <li>Conecte o pendrive que será utilizado ao computador e inicie o Rufus. Possivelmente, ele solicitará permissão de administrador, que você deve conceder.</li>
 </ol>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/10/rufus-1.png' title=''>
         <img src='/files/2015/10/rufus-1.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -293,7 +293,7 @@
 <li>Ele pergunta se deseja procurar atualizações para o Rufus na Internet, você pode clicar em <strong>Não</strong> e prosseguir.</li>
 </ol>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/10/rufus-2.png' title=''>
         <img src='/files/2015/10/rufus-2.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -307,7 +307,7 @@
 <li><p>Clique em <strong>Iniciar</strong>. O Rufus exibirá um aviso:</p></li>
 </ol>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/10/rufus-3.png' title=''>
         <img src='/files/2015/10/rufus-3.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -326,7 +326,7 @@
 
 <p>No caso específico do openSUSE, ao seguir as instruções acima e clicar em <strong>Iniciar</strong>, você perceberá que o Rufus fará uma pergunta:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/10/rufus-4.png' title=''>
         <img src='/files/2015/10/rufus-4.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -555,14 +555,11 @@
         $(document).ready(function(){
             
                 var $ad = $('#content_ad_unit_2').closest('.row');
-                if (($('.blog-post').length > 1) || ($('.blog-archive-title').length > 0)) {
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
-                    var $posts = $('.blog-post');
-                    if ($posts.length < 2) {
-                        return;
-                    }
                     var post;
-                    if ($posts.length > 1) {
+                    if ($posts.length > 2) {
                         post = random_number(2, $posts.length);
                     } else {
                         post = 2;
@@ -570,17 +567,20 @@
                     $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
                 } else {
                     // Page or post
-                    var $paragraphs = $('.blog-post-content p');
-                    if ($paragraphs.length == 0) {
-                        return;
-                    }
-                    var paragraph;
-                    if ($paragraphs.length > 1) {
-                        paragraph = random_number(1, $paragraphs.length);
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
                     } else {
-                        paragraph = 1;
+                        $ad.remove();
                     }
-                    $paragraphs.eq(paragraph - 1).after($ad);
                 }
             
             $('.adsbygoogle').each(function(index, element){

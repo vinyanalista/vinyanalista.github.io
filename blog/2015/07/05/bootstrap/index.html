@@ -78,7 +78,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css">-->
     <link rel="stylesheet" href="/libs/bootstrap-material-design/0.3.0/custom/blue-500.css">
@@ -243,7 +243,7 @@
 
 <p>Pensando em facilitar e agilizar a solução desses problemas, os desenvolvedores do <a href="https://twitter.com">Twitter</a> lançaram o <a href="http://getbootstrap.com/">Bootstrap</a>, um <em>framework</em> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a>, <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a>, e <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JS</a> que auxilia o desenvolvimento de <em>sites</em> e aplicações <em>web</em> responsivos, voltados principalmente aos dispositivos móveis.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/07/bootstrap_0.jpg' title=''>
         <img src='/files/2015/07/bootstrap_0.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -258,14 +258,14 @@
 
 <p>Se você utiliza como navegador o <a href="https://www.mozilla.org/pt-BR/firefox/">Mozilla Firefox</a>, o <a href="http://www.google.com.br/chrome/">Google Chrome</a> ou o <a href="http://www.opera.com/pt-br">Opera</a>, outra maneira de verificar como um <em>site</em> aparece em diversos dispositivos é instalar a extensão <a href="http://chrispederick.com/work/web-developer/">Web Developer</a> e usar a opção <strong>Resize</strong>, <strong>View Responsive Layouts</strong>:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/07/bootstrap_1.jpg' title=''>
         <img src='/files/2015/07/bootstrap_1.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
     
 </p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/07/bootstrap_2.jpg' title=''>
         <img src='/files/2015/07/bootstrap_2.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -1059,14 +1059,11 @@
         $(document).ready(function(){
             
                 var $ad = $('#content_ad_unit_2').closest('.row');
-                if (($('.blog-post').length > 1) || ($('.blog-archive-title').length > 0)) {
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
-                    var $posts = $('.blog-post');
-                    if ($posts.length < 2) {
-                        return;
-                    }
                     var post;
-                    if ($posts.length > 1) {
+                    if ($posts.length > 2) {
                         post = random_number(2, $posts.length);
                     } else {
                         post = 2;
@@ -1074,17 +1071,20 @@
                     $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
                 } else {
                     // Page or post
-                    var $paragraphs = $('.blog-post-content p');
-                    if ($paragraphs.length == 0) {
-                        return;
-                    }
-                    var paragraph;
-                    if ($paragraphs.length > 1) {
-                        paragraph = random_number(1, $paragraphs.length);
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
                     } else {
-                        paragraph = 1;
+                        $ad.remove();
                     }
-                    $paragraphs.eq(paragraph - 1).after($ad);
                 }
             
             $('.adsbygoogle').each(function(index, element){

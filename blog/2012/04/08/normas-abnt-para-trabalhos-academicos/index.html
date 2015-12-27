@@ -78,7 +78,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css">-->
     <link rel="stylesheet" href="/libs/bootstrap-material-design/0.3.0/custom/blue-500.css">
@@ -241,7 +241,7 @@
             <div class="col-xs-12">
                 <p>Hoje venho ressucitar <a href="http://jornalnerds.blogspot.com.br/2010/12/normas-abnt-para-trabalhos-academicos.html">um post de um dos meus blogs</a> (quem me conhece há algum tempo sabe que já tive alguns, todos eles estão desatualizados hoje), que acho que merece ser relembrado (da série <em>old but gold</em>). <a href="http://argoslan.sourceforge.net/argos-1.0-especificacao.pdf">Esse trabalho</a> eu fiz seguindo quase todas essas normas (a Instituição de ensino pode definir suas próprias, e você deve seguir). Vale observar também que (ouvi dizer) as normas da ABNT foram atualizadas. Assim que eu tiver o link para as novas normas eu atualizo esse post. Segue o post antigo na íntegra.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/abnt1.jpg' title=''>
         <img src='/files/2012/04/abnt1.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -254,7 +254,7 @@
 
 <p>Os padrões para trabalhos acadêmicos produzidos no Brasil são regidos pelas seguintes normas da ABNT (se você clicar em um dos links abaixo, será aberta a respectiva norma em uma nova janela):</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2012/04/abnt2.jpg' title='ABNT – Associação Brasileira de Normas Técnicas'>
         <img src='/files/2012/04/abnt2.jpg' alt='ABNT – Associação Brasileira de Normas Técnicas' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -504,14 +504,11 @@
         $(document).ready(function(){
             
                 var $ad = $('#content_ad_unit_2').closest('.row');
-                if (($('.blog-post').length > 1) || ($('.blog-archive-title').length > 0)) {
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
-                    var $posts = $('.blog-post');
-                    if ($posts.length < 2) {
-                        return;
-                    }
                     var post;
-                    if ($posts.length > 1) {
+                    if ($posts.length > 2) {
                         post = random_number(2, $posts.length);
                     } else {
                         post = 2;
@@ -519,17 +516,20 @@
                     $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
                 } else {
                     // Page or post
-                    var $paragraphs = $('.blog-post-content p');
-                    if ($paragraphs.length == 0) {
-                        return;
-                    }
-                    var paragraph;
-                    if ($paragraphs.length > 1) {
-                        paragraph = random_number(1, $paragraphs.length);
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
                     } else {
-                        paragraph = 1;
+                        $ad.remove();
                     }
-                    $paragraphs.eq(paragraph - 1).after($ad);
                 }
             
             $('.adsbygoogle').each(function(index, element){

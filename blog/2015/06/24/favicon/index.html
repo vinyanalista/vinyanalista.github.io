@@ -78,7 +78,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css">-->
     <link rel="stylesheet" href="/libs/bootstrap-material-design/0.3.0/custom/blue-500.css">
@@ -270,7 +270,7 @@
 
 <p>O <a href="http://realfavicongenerator.net/">Real Favicon Generator</a> é uma ferramenta <em>online</em> gratuita capaz de gerar uma variedade de arquivos de ícones para seu <em>site</em> com base em uma imagem que você forneça. Não só as imagens, ele provê também as <em>tags</em> HTML que você deve inserir em suas páginas para que diferentes navegadores e dispositivos determinem e exibam corretamente o ícone do seu <em>site</em>.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/06/favicon_1.jpg' title=''>
         <img src='/files/2015/06/favicon_1.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -279,7 +279,7 @@
 
 <p>Para começar, acesse o <a href="http://realfavicongenerator.net/">Real Favicon Generator</a> e forneça uma imagem quadrada. A resolução mínima exigida é 70x70, mas ele recomenda que a resolução da imagem seja 260x260 ou maior para melhores resultados. Isso permitirá que a ferramenta gere ícones de alta definição para dispositivos que os suportam.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/06/favicon_2.jpg' title=''>
         <img src='/files/2015/06/favicon_2.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -288,7 +288,7 @@
 
 <p>Na página seguinte, várias opções são exibidas para que você possa personalizar a aparência do seu ícone em alguns casos específicos. É recomendado colocar os arquivos na raiz do <em>site</em>, pois alguns navegadores os buscam nesse local (por exemplo, <code>www.vinyanalista.com.br/favicon.ico</code>).</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/06/favicon_3.jpg' title=''>
         <img src='/files/2015/06/favicon_3.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -297,7 +297,7 @@
 
 <p>Por fim, a ferramenta fornecerá os arquivos que você deve baixar e salvar no seu e o código HTML que você deve inserir nas suas páginas.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/06/favicon_4.jpg' title=''>
         <img src='/files/2015/06/favicon_4.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -327,7 +327,7 @@
 </code></pre></div>
 <p>Depois de alterar as páginas e disponibilizá-las <em>online</em> juntamente com os ícones, a ferramenta também permite verificar se tudo está nos conformes. Para isso, acesse o <a href="http://realfavicongenerator.net/favicon_checker">verificador de <em>favicon</em></a> e forneça o endereço do seu <em>site</em>.</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/06/favicon_5.jpg' title=''>
         <img src='/files/2015/06/favicon_5.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -336,7 +336,7 @@
 
 <p>No meu caso, como gerei o ícone do meu <em>site</em> usando a própria ferramenta, obviamente ela não encontrou nenhum erro:</p>
 
-<p class='text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
     <a href='/files/2015/06/favicon_6.jpg' title=''>
         <img src='/files/2015/06/favicon_6.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
     </a>
@@ -556,14 +556,11 @@
         $(document).ready(function(){
             
                 var $ad = $('#content_ad_unit_2').closest('.row');
-                if (($('.blog-post').length > 1) || ($('.blog-archive-title').length > 0)) {
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
-                    var $posts = $('.blog-post');
-                    if ($posts.length < 2) {
-                        return;
-                    }
                     var post;
-                    if ($posts.length > 1) {
+                    if ($posts.length > 2) {
                         post = random_number(2, $posts.length);
                     } else {
                         post = 2;
@@ -571,17 +568,20 @@
                     $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
                 } else {
                     // Page or post
-                    var $paragraphs = $('.blog-post-content p');
-                    if ($paragraphs.length == 0) {
-                        return;
-                    }
-                    var paragraph;
-                    if ($paragraphs.length > 1) {
-                        paragraph = random_number(1, $paragraphs.length);
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
                     } else {
-                        paragraph = 1;
+                        $ad.remove();
                     }
-                    $paragraphs.eq(paragraph - 1).after($ad);
                 }
             
             $('.adsbygoogle').each(function(index, element){
