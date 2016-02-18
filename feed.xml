@@ -5,9 +5,342 @@
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>https://vinyanalista.github.io/</link>
     <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 26 Dec 2015 23:21:40 -0200</pubDate>
-    <lastBuildDate>Sat, 26 Dec 2015 23:21:40 -0200</lastBuildDate>
+    <pubDate>Thu, 18 Feb 2016 01:18:49 -0300</pubDate>
+    <lastBuildDate>Thu, 18 Feb 2016 01:18:49 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Dicas para bater bons prints</title>
+        <description>&lt;p&gt;As funcionalidades de captura de tela que acompanham o &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/s&quot;&gt;Windows&lt;/a&gt; são um tanto limitadas. Confira aqui dicas e aplicativos para bater melhores capturas de tela.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2&gt;Como capturar a tela com o próprio Windows&lt;/h2&gt;
+
+&lt;p&gt;É possível capturar a tela sem utilizar programa algum no Windows. Para isso, temos a tecla &lt;strong&gt;Print Screen&lt;/strong&gt;. Ela geralmente fica no canto superior direito do teclado. Pode ser que no seu teclado ela esteja abreviada, como, por exemplo, &lt;strong&gt;Prt Sc&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen01.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;A título de curiosidade, nos computadores mais antigos, que não dispunham de interface gráfica, mas apenas de interface textual, &lt;a href=&quot;http://www.howtogeek.com/211661/ask-htg-did-the-print-screen-button-ever-literally-print-the-screen-and-can-it-again/&quot;&gt;a tecla &lt;strong&gt;Print Screen&lt;/strong&gt; enviava o conteúdo da tela para a impressora&lt;/a&gt;. Hoje ela tem outra função, a de &amp;quot;bater uma foto&amp;quot; da tela (&lt;em&gt;screenshot&lt;/em&gt;), o que ficou conhecido, graças a essa tecla, como &amp;quot;bater um &lt;em&gt;print&lt;/em&gt;&amp;quot; ou &amp;quot;tirar um &lt;em&gt;print&lt;/em&gt;&amp;quot; da tela.&lt;/p&gt;
+
+&lt;p&gt;Ao pressionar a tecla &lt;strong&gt;Print Screen&lt;/strong&gt;,  toda a tela é capturada. Isso inclui a barra de tarefas, a Área de Trabalho e todos os programas visíveis. Se você usa dois ou mais monitores, a imagem de todos os monitores é condensada em uma única captura.&lt;/p&gt;
+
+&lt;p&gt;A captura da tela fica então disponível na área de transferência para ser colada em algum aplicativo, como o &lt;a href=&quot;https://pt.wikipedia.org/wiki/Microsoft_Paint&quot;&gt;Paint&lt;/a&gt; ou o &lt;a href=&quot;https://products.office.com/pt-br/word&quot;&gt;Word&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen02.jpg&#39; title=&#39;Usando apenas a tecla Print Screen, é necessário primeiro colar a captura de tela em um programa como o Paint para então poder salvá-la como um arquivo de imagem.&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen02.jpg&#39; alt=&#39;Usando apenas a tecla Print Screen, é necessário primeiro colar a captura de tela em um programa como o Paint para então poder salvá-la como um arquivo de imagem.&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+        Usando apenas a tecla Print Screen, é necessário primeiro colar a captura de tela em um programa como o Paint para então poder salvá-la como um arquivo de imagem.
+    &lt;/em&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;É possível capturar apenas a janela atual utilizando a combinação &lt;strong&gt;Alt + Print Screen&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen03.jpg&#39; title=&#39;A combinação Alt + Print Screen captura apenas a janela em uso.&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen03.jpg&#39; alt=&#39;A combinação Alt + Print Screen captura apenas a janela em uso.&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+        A combinação Alt + Print Screen captura apenas a janela em uso.
+    &lt;/em&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Observe que em ambos os casos o cursor do &lt;em&gt;mouse&lt;/em&gt; não aparece na captura de tela, o que pode parecer estranho em capturas de menus, por exemplo:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen04.jpg&#39; title=&#39;Sabe-se, pelo destaque, que o item de menu foi selecionado, mas o cursor do mouse não aparece.&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen04.jpg&#39; alt=&#39;Sabe-se, pelo destaque, que o item de menu foi selecionado, mas o cursor do mouse não aparece.&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+        Sabe-se, pelo destaque, que o item de menu foi selecionado, mas o cursor do mouse não aparece.
+    &lt;/em&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Observe também que capturar a tela dessa forma, apesar de eficaz, não é eficiente: você depende de outro aplicativo para editar e salvar a imagem.&lt;/p&gt;
+
+&lt;h2&gt;Paint como fundo branco&lt;/h2&gt;
+
+&lt;p&gt;Algo que costumo fazer antes de capturar uma tela é deixar uma janela maximizada do Paint por trás com um desenho em branco que preenche toda a tela, especialmente se pretendo mostrar um menu ou dica (&lt;em&gt;hint&lt;/em&gt;) que foge à janela do aplicativo.&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen05.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Assim, evito que conteúdo indesejado que está por trás do aplicativo apareça na captura.&lt;/p&gt;
+
+&lt;h2&gt;Dropbox para salvar as capturas&lt;/h2&gt;
+
+&lt;p&gt;Se você quiser que automaticamente as capturas sejam salvas como arquivos de imagem, uma boa pedida é habilitar essa função no &lt;a href=&quot;https://www.dropbox.com/&quot;&gt;Dropbox&lt;/a&gt;, que de quebra ainda envia as imagens para a &lt;a href=&quot;https://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_em_nuvem&quot;&gt;nuvem&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A qualquer momento você pode habilitar ou desabilitar esse recurso nas preferências do Dropbox:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Clique no &lt;strong&gt;ícone do Dropbox&lt;/strong&gt; na área de notificação;&lt;/li&gt;
+&lt;li&gt;Clique no &lt;strong&gt;ícone de engrenagem&lt;/strong&gt; e, no menu que aparece, clique em &lt;strong&gt;Preferências&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;Clique na guia &lt;strong&gt;Importar&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;Marque ou desmarque a opção &lt;strong&gt;Compartilhar capturas de tela usando o Dropbox&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; para aplicar sua configuração e sair das Preferências do Dropbox.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen06.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen07.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Agora sempre que você apertar &lt;strong&gt;Print Screen&lt;/strong&gt; ou &lt;strong&gt;Alt + Print Screen&lt;/strong&gt;, a captura de tela será automaticamente salva no seu Dropbox.&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen08.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;h2&gt;OneDrive para salvar as capturas&lt;/h2&gt;
+
+&lt;p&gt;Outra opção para salvar as capturas de tela e enviá-las para a nuvem automaticamente é o &lt;a href=&quot;https://onedrive.live.com/&quot;&gt;OneDrive&lt;/a&gt;, que também dispõe desse recurso.&lt;/p&gt;
+
+&lt;p&gt;Para habilitar ou desabilitar esse recurso do OneDrive:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Clique com o botão direito do &lt;em&gt;mouse&lt;/em&gt; no &lt;strong&gt;ícone do OneDrive&lt;/strong&gt; na área de notificação;&lt;/li&gt;
+&lt;li&gt;Clique no item de menu &lt;strong&gt;Configurações&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;Clique na guia &lt;strong&gt;Salvamento automático&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;Marque ou desmarque a opção &lt;strong&gt;Salvar automaticamente no OneDrive as telas que eu capturar&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; para aplicar sua configuração e sair das configurações do OneDrive.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen09.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen10.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Agora sempre que você apertar &lt;strong&gt;Print Screen&lt;/strong&gt; ou &lt;strong&gt;Alt + Print Screen&lt;/strong&gt;, a captura de tela será automaticamente salva no seu OneDrive.&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen11.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;h2&gt;Ferramenta de Captura do Windows&lt;/h2&gt;
+
+&lt;p&gt;As versões mais atuais do Windows (do Windows 7 em diante) vêm com a Ferramenta de Captura, que é bastante intuitiva e permite um controle um pouco maior sobre as capturas de tela.&lt;/p&gt;
+
+&lt;p&gt;Para iniciar a Ferramenta de Captura, abra o &lt;strong&gt;menu Iniciar&lt;/strong&gt;, digite &lt;strong&gt;captura&lt;/strong&gt; na caixa de pesquisa e depois clique em &lt;strong&gt;Ferramenta de Captura&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen12.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Para capturar a tela, clique em &lt;strong&gt;Novo&lt;/strong&gt; e, em seguida, selecione a parte da tela que você deseja capturar:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/printscreen13.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/printscreen13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;A captura da tela aparece na janela da ferramenta. Então, você pode desenhar sobre a captura usando a caneta, salvá-la, copiá-la ou enviá-la por &lt;em&gt;email&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Antes de capturar a tela, a ferramenta permite a você configurar como deseja fazer a captura. Para isso, verifique as opções que aparecem ao clicar nas setas ao lado de &lt;strong&gt;Atraso&lt;/strong&gt; e &lt;strong&gt;Novo&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Observe que essa ferramenta também não captura o cursor do &lt;em&gt;mouse&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Capturas com o IrfanView&lt;/h2&gt;
+
+&lt;p&gt;O &lt;a href=&quot;http://www.irfanview.com/&quot;&gt;IrfanView&lt;/a&gt; é um pequeno visualizador de imagens para Windows. Ele também oferece alguns recursos básicos de edição, como girar, recortar e borrar a imagem. O IrfanView é compatível com praticamente todas as versões do Windows (do Windows 95 em diante) e é simples, leve e gratuito.&lt;/p&gt;
+
+&lt;p&gt;Depois que descobri a funcionalidade de captura de tela do IrfanView, passei a utilizá-lo para capturar telas. Vejamos como ele pode nos ajudar com essa tarefa.&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/irfanview01.gif&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/irfanview01.gif&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Primeiro, baixe o IrfanView do seu &lt;a href=&quot;http://www.irfanview.com/&quot;&gt;&lt;em&gt;site&lt;/em&gt; oficial&lt;/a&gt;, na página &lt;em&gt;Download&lt;/em&gt;. Observe que há uma versão portátil que dispensa instalação. Ela pode ser obtida clicando no &lt;em&gt;link Other download sites (Mirrors)&lt;/em&gt;, no final da página de &lt;em&gt;download&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Também é possível baixar a tradução para o Português do Brasil e &lt;em&gt;plugins&lt;/em&gt; por meio das páginas &lt;em&gt;IrfanView languages&lt;/em&gt; e &lt;em&gt;PlugIns&lt;/em&gt;, respectivamente. Esses são &lt;em&gt;downloads&lt;/em&gt; opcionais, mas recomendo a instalação de pelo menos os &lt;em&gt;plugins&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Se você utiliza uma versão de 64 &lt;em&gt;bits&lt;/em&gt; do Windows, talvez prefira baixar a versão de 64 &lt;em&gt;bits&lt;/em&gt; do IrfanView na página &lt;em&gt;IrfanView 64-bit&lt;/em&gt;. Nessa página, estão disponíveis para &lt;em&gt;download&lt;/em&gt; o instalador, a versão portátil e os &lt;em&gt;plugins&lt;/em&gt; de 64 &lt;em&gt;bits&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para iniciar o IrfanView, abra o &lt;strong&gt;menu Iniciar&lt;/strong&gt;, digite &lt;strong&gt;irfanview&lt;/strong&gt; na caixa de pesquisa e depois clique em &lt;strong&gt;IrfanView&lt;/strong&gt; (no meu computador, utilizo a versão de 64 &lt;em&gt;bits&lt;/em&gt;):&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/irfanview02.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/irfanview02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Aqui está a tela inicial do IrfanView:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/irfanview03.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/irfanview03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Para começar a captura de tela, clique no menu &lt;strong&gt;Options&lt;/strong&gt; e depois no item &lt;strong&gt;Capture/Screenshot&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/irfanview04.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/irfanview04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Aparece uma caixa de diálogo na qual é possível configurar vários aspectos da captura de tela:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/irfanview05.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/irfanview05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Observe que a maioria dos comandos do IrfanView possui teclas de atalho (do inglês &lt;em&gt;shortcut keys&lt;/em&gt; ou &lt;em&gt;hot keys&lt;/em&gt;) associadas. A tecla de atalho para o comando &lt;strong&gt;Capture/Screenshot&lt;/strong&gt; é &lt;strong&gt;C&lt;/strong&gt;, ou seja, apertar a tecla &lt;strong&gt;C&lt;/strong&gt; na tela principal produziria o mesmo efeito que clicar naquele item de menu: a exibição da caixa de diálogo &lt;strong&gt;Capture Setup&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vejamos as opções dessa caixa de diálogo.&lt;/p&gt;
+
+&lt;p&gt;A seção &lt;strong&gt;Capture area&lt;/strong&gt; nos permite definir que parte da tela queremos capturar. As opções que eu mais utilizo são:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Full desktop area - all monitors&lt;/strong&gt;: captura a tela de todos os monitores, o mesmo comportamento da tecla &lt;strong&gt;Print Screen&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Foreground window&lt;/strong&gt;: captura apenas a janela em uso, o mesmo comportamento da combinação de teclas &lt;strong&gt;Alt + Print Screen&lt;/strong&gt;; e&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Desktop area - current monitor (mouse)&lt;/strong&gt;: captura apenas a tela do monitor em uso (o monitor no qual o cursor do &lt;em&gt;mouse&lt;/em&gt; se encontra), útil se você tem vários monitores e deseja capturar a tela de apenas um.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A seção &lt;strong&gt;Capture method&lt;/strong&gt; nos permite definir com base em que evento a captura será iniciada: após o uso de uma combinação de teclas (&lt;strong&gt;Hot key&lt;/strong&gt;) ou após um determinado período de tempo (&lt;strong&gt;Automatic - timer delay&lt;/strong&gt;). Eu costumo selecionar a primeira opção e alterar a combinação de teclas, que por padrão é &lt;strong&gt;Ctrl + F11&lt;/strong&gt;, para apenas &lt;strong&gt;F11&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sempre deixo a opção &lt;strong&gt;Include mouse cursor&lt;/strong&gt; marcada.&lt;/p&gt;
+
+&lt;p&gt;Por fim, a seção &lt;strong&gt;After the capture&lt;/strong&gt; nos permite definir o que acontecerá após a captura da tela. A opção selecionada por padrão, &lt;strong&gt;Show captured image in main window&lt;/strong&gt;, faz com que a captura de tela seja trazida para a janela do IrfanView, o que permite a você tratar a imagem usando as funcionalidades do IrfanView e salvar.&lt;/p&gt;
+
+&lt;p&gt;A opção &lt;strong&gt;Copy captured image to clipboard&lt;/strong&gt; equivale ao que acontece quando usamos a tecla &lt;strong&gt;Print Screen&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;A última opção, &lt;strong&gt;Save captured image as file&lt;/strong&gt;, permite salvar a captura de tela automaticamente. Uma boa ideia pode ser selecionar a última opção e configurar o IrfanView para automaticamente salvar a captura de tela na pasta do Dropbox ou do OneDrive.&lt;/p&gt;
+
+&lt;p&gt;Quando terminar de configurar a captura de tela, clique em &lt;strong&gt;Start&lt;/strong&gt; para começar.&lt;/p&gt;
+
+&lt;p&gt;Observe que o IrfanView some (na verdade, ele é minimizado) e permite que você prepare a tela para a captura. Para realizá-la, pressione a combinação de teclas configurada previamente.&lt;/p&gt;
+
+&lt;p&gt;O que acontece depois que a tela é capturada? Se você deixou marcada a opção &lt;strong&gt;Show captured image in main window&lt;/strong&gt;, o IrfanView aparece novamente com a imagem capturada e você pode então trabalhar nela usando o IrfanView:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/irfanview06.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/irfanview06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Para salvar a imagem, clique no ícone do disquete ou abra o menu &lt;strong&gt;File&lt;/strong&gt; e clique em &lt;strong&gt;Save as&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;S&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;Se você marcou qualquer uma das outras opções na sessão &lt;strong&gt;After the capture&lt;/strong&gt;, após a captura o IrfanView permanecerá minimizado. Nesse caso, você pode algum tempo depois bater uma nova captura de tela usando as mesmas configurações. Para fazer outra captura com configurações diferentes, volte à tela inicial do IrfanView e recomece o passo a passo.&lt;/p&gt;
+
+&lt;p&gt;Aqui vão algumas sugestões de ações que você pode realizar sobre a imagem no IrfanView:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Para selecionar uma área da imagem, arraste o cursor do &lt;em&gt;mouse&lt;/em&gt; ao redor da área da imagem que você deseja selecionar (da mesma forma como você faria em outro programa, como o Paint);&lt;/li&gt;
+&lt;li&gt;Para fazer um recorte da área selecionada (&lt;em&gt;crop&lt;/em&gt;), abra o menu &lt;strong&gt;Edit&lt;/strong&gt; e clique em &lt;strong&gt;Crop selection (Cut out)&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;Ctrl + Y&lt;/strong&gt;), a imagem então passa a ser apenas a área selecionada, a área que ficou de fora da seleção é descartada;&lt;/li&gt;
+&lt;li&gt;Para girar a imagem para a esquerda, no sentido anti-horário, abra o menu &lt;strong&gt;Image&lt;/strong&gt; e clique em &lt;strong&gt;Rotate Left (counter-clockwise)&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;L&lt;/strong&gt;);&lt;/li&gt;
+&lt;li&gt;Para girar a imagem para a direita, no sentido horário, abra o menu &lt;strong&gt;Image&lt;/strong&gt; e clique em &lt;strong&gt;Rotate Right (clockwise)&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;R&lt;/strong&gt;);&lt;/li&gt;
+&lt;li&gt;Para redimensionar a imagem, abra o menu &lt;strong&gt;Image&lt;/strong&gt; e clique em &lt;strong&gt;Resize/Resample&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;Ctrl + R&lt;/strong&gt;), aparecerá uma caixa de diálogo com várias opções para redimensionar a imagem;&lt;/li&gt;
+&lt;li&gt;Para desenhar, abra o menu &lt;strong&gt;Edit&lt;/strong&gt; e clique em &lt;strong&gt;Show Paint dialog&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;F12&lt;/strong&gt;), uma caixa de ferramentas bastante semelhante com a do Paint aparecerá:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/irfanview07.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/irfanview07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Para aplicar efeitos à imagem, abra o menu &lt;strong&gt;Image&lt;/strong&gt;, aponte para &lt;strong&gt;Effects&lt;/strong&gt; e clique em &lt;em&gt;Effects browser&lt;/em&gt;, aparecerá uma caixa de diálogo com várias opções de efeitos para aplicar à imagem.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Uma dica para a hora de salvar: se você instalou os &lt;em&gt;plugins&lt;/em&gt; do IrfanView, abra o menu &lt;strong&gt;File&lt;/strong&gt; e, ao invés de clicar em &lt;strong&gt;Save as&lt;/strong&gt;, clique em &lt;strong&gt;Save for Web... (PlugIn)&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/irfanview08.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/irfanview08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Aparecerá então uma caixa de diálogo que oferecerá várias opções para comprimir a imagem:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/02/irfanview09.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/02/irfanview09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Isso é bastante útil se o tamanho final do arquivo de imagem for importante (se ficou confuso, aqui estou falando de &lt;em&gt;bytes&lt;/em&gt; e não de &lt;em&gt;pixels&lt;/em&gt;). Exemplos desse caso incluem imagens que serão utilizadas em páginas da Internet, enviadas por &lt;em&gt;email&lt;/em&gt; ou utilizadas em apresentações de &lt;em&gt;slides&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Todas as imagens presentes nesse &lt;em&gt;post&lt;/em&gt; foram capturadas, tratadas e comprimidas usando o IrfanView. Espero que ele possa te ajudar como tem me ajudado.&lt;/p&gt;
+
+&lt;h2&gt;Referências&lt;/h2&gt;
+
+&lt;p&gt;A maior parte do que escrevi aqui veio do que aprendi me aventurando a usar os programas que mencionei. No entanto, é bem verdade que consultei algumas páginas para me certificar de que não escrevi besteira. Então, deixo aqui, para referência, a lista dessas páginas:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2013/10/como-salvar-automaticamente-suas-capturas-de-telas-no-dropbox.html&quot;&gt;Como salvar automaticamente suas capturas de telas no Dropbox | Dicas e Tutoriais | TechTudo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.dropbox.com/pt_BR/help/1964&quot;&gt;Como compartilhar e salvar capturas de tela com o Dropbox? (Central de ajuda do Dropbox)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://support.office.com/pt-br/article/Salvar-automaticamente-capturas-de-tela-no-OneDrive-d04df71c-1cb0-4ad6-9f9c-b08494d79d6a&quot;&gt;Salvar automaticamente capturas de tela no OneDrive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://windows.microsoft.com/pt-br/windows-10/open-snipping-tool-and-take-a-screenshot&quot;&gt;Abrir a Ferramenta de Captura e tirar uma captura de tela - Ajuda do Windows&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 18 Feb 2016 02:00:00 -0300</pubDate>
+        <link>https://vinyanalista.github.io/blog/2016/02/18/dicas-para-bater-bons-prints/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2016/02/18/dicas-para-bater-bons-prints/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Acesse sites e aplicativos censurados com o Psiphon</title>
@@ -100,7 +433,7 @@
 
 &lt;p&gt;No computador, não é necessário instalar o Psiphon: basta baixar e começar a usar.&lt;/p&gt;
 
-&lt;p&gt;Acesse o &lt;a href=&quot;https://psiphon3.com/pt_PT/index.html&quot;&gt;site do Psiphon&lt;/a&gt; e clique em &lt;strong&gt;Download&lt;/strong&gt;, em seguida clique no &lt;em&gt;link&lt;/em&gt; do Psiphon para Windows:&lt;/p&gt;
+&lt;p&gt;Acesse o &lt;a href=&quot;https://psiphon3.com/pt_PT/index.html&quot;&gt;site do Psiphon&lt;/a&gt; e clique em &lt;strong&gt;Download&lt;/strong&gt;, em seguida clique no &lt;em&gt;link&lt;/em&gt; do Psiphon para &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/&quot;&gt;Windows&lt;/a&gt;:&lt;/p&gt;
 
 &lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
     &lt;a href=&#39;/files/2015/12/psiphon-05.jpg&#39; title=&#39;&#39;&gt;
@@ -134,7 +467,7 @@
 
 &lt;p&gt;Espero que possa ter ajudado! Dúvidas nos comentários!&lt;/p&gt;
 </description>
-        <pubDate>Thu, 17 Dec 2015 08:00:00 -0200</pubDate>
+        <pubDate>Thu, 17 Dec 2015 08:00:00 -0300</pubDate>
         <link>https://vinyanalista.github.io/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/</guid>
         
@@ -428,7 +761,7 @@
 
 &lt;p&gt;Espero que possa ter ajudado! Dúvidas nos comentários!&lt;/p&gt;
 </description>
-        <pubDate>Tue, 15 Dec 2015 12:30:00 -0200</pubDate>
+        <pubDate>Tue, 15 Dec 2015 12:30:00 -0300</pubDate>
         <link>https://vinyanalista.github.io/blog/2015/12/15/como-configurar-as-atualizacoes-automaticas-do-windows-10/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/12/15/como-configurar-as-atualizacoes-automaticas-do-windows-10/</guid>
         
@@ -667,7 +1000,7 @@
 
 &lt;p&gt;Por hora é isso, pessoal. Se lembrar de mais alguma coisa, acrescento e aviso. Não deixem de comentar! Boas compras!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 27 Nov 2015 03:00:00 -0200</pubDate>
+        <pubDate>Fri, 27 Nov 2015 03:00:00 -0300</pubDate>
         <link>https://vinyanalista.github.io/blog/2015/11/27/como-escolher-um-bom-computador-para-comprar/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/11/27/como-escolher-um-bom-computador-para-comprar/</guid>
         
@@ -2458,69 +2791,6 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
         <pubDate>Thu, 20 Aug 2015 07:00:00 -0300</pubDate>
         <link>https://vinyanalista.github.io/blog/2015/08/20/wordpress-bootstrap-parte2/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/08/20/wordpress-bootstrap-parte2/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Como realçar links externos e abri-los em uma nova janela</title>
-        <description>&lt;p&gt;Você já reparou que na &lt;a href=&quot;https://pt.wikipedia.org/&quot;&gt;Wikipédia&lt;/a&gt; todos os &lt;em&gt;links&lt;/em&gt; para outras páginas aparecem destacados? Em alguns &lt;em&gt;sites&lt;/em&gt;, a exemplo do &lt;a href=&quot;https://pt-br.facebook.com/&quot;&gt;Facebook&lt;/a&gt;, esses &lt;em&gt;links&lt;/em&gt; são abertos sempre em novas janelas. Nessa dica breve, você aprenderá como tratar os &lt;em&gt;links&lt;/em&gt; externos dessa maneira no seu &lt;em&gt;site&lt;/em&gt;.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/&quot;&gt;Milan Aryal em seu &lt;em&gt;blog&lt;/em&gt;&lt;/a&gt; mostra diversas maneiras de conseguir isso: HTML, JS, jQuery, CSS... aqui vou mostrar &lt;a href=&quot;https://github.com/vinyanalista/vinyanalista-website/commit/706b8b9ec3cf8089f66afbeff771bb6fa2892e3a&quot;&gt;como fiz&lt;/a&gt; neste &lt;em&gt;site&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Meu &lt;em&gt;site&lt;/em&gt; utiliza &lt;a href=&quot;https://jquery.com/&quot;&gt;jQuery&lt;/a&gt; e &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt; (veja o &lt;a href=&quot;/blog/2015/07/05/bootstrap/&quot;&gt;&lt;em&gt;post&lt;/em&gt; sobre Bootstrap&lt;/a&gt;). Eu simplesmente adicionei as seguintes linhas de código ao arquivo JavaScript que é carregado em todas as páginas do &lt;em&gt;site&lt;/em&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;div.blog-post a&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39; &amp;lt;span class=&amp;quot;glyphicon glyphicon-new-window&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;target&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;_blank&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;O que esse código basicamente faz é:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Usando jQuery, ele &lt;a href=&quot;https://api.jquery.com/category/selectors/&quot;&gt;seleciona&lt;/a&gt; todos os &lt;em&gt;links&lt;/em&gt; da postagem (eu não trato &lt;em&gt;links&lt;/em&gt; na barra lateral, por exemplo);&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://api.jquery.com/filter/&quot;&gt;Filtra&lt;/a&gt; os &lt;em&gt;links&lt;/em&gt; que apontam para &lt;em&gt;sites&lt;/em&gt; diferentes do meu;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://api.jquery.com/append/&quot;&gt;Adiciona ao final&lt;/a&gt; do &lt;em&gt;link&lt;/em&gt; (imediatamente antes da &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;/a&amp;gt;&lt;/code&gt;) esse ícone &lt;span class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/span&gt; do &lt;a href=&quot;http://getbootstrap.com/components/#glyphicons&quot;&gt;Glyphicons&lt;/a&gt;, que acompanha o Bootstrap; e&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://api.jquery.com/attr/&quot;&gt;Define o valor do atributo&lt;/a&gt; &lt;code&gt;target&lt;/code&gt; para &lt;code&gt;_blank&lt;/code&gt;, fazendo com que esses &lt;em&gt;links&lt;/em&gt; sejam abertos em novas janelas (ou abas, a depender do navegador).&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Se você utiliza os ícones da &lt;a href=&quot;https://fortawesome.github.io/Font-Awesome/icons/&quot;&gt;Font Awesome&lt;/a&gt;, o código é bem parecido, só muda a classe da &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;div.blog-post a&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39; &amp;lt;span class=&amp;quot;fa fa-external-link&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;target&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;_blank&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se você não utiliza Glyphicons nem Font Awesome, ainda assim pode usar jQuery, CSS e um pequeno ícone (uma imagem de 16 x 16, por exemplo, &lt;a href=&quot;https://www.google.com/search?q=external+link&amp;amp;tbm=isch&amp;amp;tbs=isz:ex,iszw:16,iszh:16&quot;&gt;no Google você encontra várias&lt;/a&gt;) para conseguir o mesmo efeito.&lt;/p&gt;
-
-&lt;p&gt;Adicione a seguinte regra ao estilo do seu &lt;em&gt;site&lt;/em&gt; (no exemplo, a imagem se chama &lt;code&gt;link_externo.png&lt;/code&gt;):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.externo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(&amp;quot;link_externo.png&amp;quot;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;no-repeat&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;scroll&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;center&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;padding-right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Via jQuery, &lt;a href=&quot;https://api.jquery.com/addclass/&quot;&gt;adicione a classe&lt;/a&gt; &lt;code&gt;externo&lt;/code&gt; aos &lt;em&gt;links&lt;/em&gt; externos:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;div.blog-post a&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;externo&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;target&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;_blank&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pronto! A partir de agora, a imagem &lt;code&gt;link_externo.png&lt;/code&gt; deve ser exibida à direita dos seus &lt;em&gt;links&lt;/em&gt; externos e esses devem ser abertos em uma nova janela (ou aba).&lt;/p&gt;
-
-&lt;p&gt;Não vou explorar aqui todas as possibilidades. Já expus o que eu fiz e mais duas alternativas. Se nenhuma delas atende às suas necessidades, você pode tentar alguma das várias apresentadas &lt;a href=&quot;http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/&quot;&gt;nesse &lt;em&gt;post&lt;/em&gt; muito interessante do Milan Aryal&lt;/a&gt; ou &lt;a href=&quot;https://css-tricks.com/snippets/jquery/open-external-links-in-new-window/&quot;&gt;nessa página do CSS-Tricks&lt;/a&gt;. Esse &lt;em&gt;site&lt;/em&gt; tem &lt;a href=&quot;https://css-tricks.com/snippets/jquery/target-only-external-links/&quot;&gt;outra página&lt;/a&gt; na qual ainda mais opções são apresentadas.&lt;/p&gt;
-
-&lt;h3&gt;Pra não dizer que só falei de flores&lt;/h3&gt;
-
-&lt;p&gt;Vale observar que, de acordo com a maioria dos especialistas em usabilidade, abrir &lt;em&gt;links&lt;/em&gt; em uma nova janela (ou aba) do navegador não é considerada uma boa prática.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Evite abrir várias janelas do navegador, se possível — impedir que os usuários utilizem o botão &amp;quot;Voltar&amp;quot; pode tornar suas experiências tão difíceis que normalmente não compensa qualquer benefício que você tente oferecer. Uma teoria comum a favor de abrir uma segunda janela é evitar que os usuários deixem seu &lt;em&gt;site&lt;/em&gt;, mas ironicamente isso pode ter justamente o efeito oposto impedindo-os de voltar quando eles querem.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;a href=&quot;http://www.snyderconsulting.net/article_7tricks.htm#7&quot;&gt;Second browser windows&lt;/a&gt;, Seven tricks that Web users don&amp;#39;t know&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Portanto, usemos com bom senso!&lt;/p&gt;
-</description>
-        <pubDate>Wed, 19 Aug 2015 09:30:00 -0300</pubDate>
-        <link>https://vinyanalista.github.io/blog/2015/08/19/links-externos/</link>
-        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/08/19/links-externos/</guid>
         
         
       </item>
