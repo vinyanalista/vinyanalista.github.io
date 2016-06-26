@@ -5,9 +5,499 @@
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>https://vinyanalista.github.io/</link>
     <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 18 Feb 2016 01:18:49 -0300</pubDate>
-    <lastBuildDate>Thu, 18 Feb 2016 01:18:49 -0300</lastBuildDate>
+    <pubDate>Sun, 26 Jun 2016 00:57:24 -0300</pubDate>
+    <lastBuildDate>Sun, 26 Jun 2016 00:57:24 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Como criar uma VPN utilizando pfSense e OpenVPN</title>
+        <description>&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-01.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-01.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;O &lt;a href=&quot;https://www.pfsense.org/&quot;&gt;pfSense&lt;/a&gt; é uma solução de &lt;em&gt;firewall&lt;/em&gt; incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-lo. Ele permite criar VPNs utilizando, dentre outros protocolos, o &lt;a href=&quot;https://openvpn.net/&quot;&gt;OpenVPN&lt;/a&gt;, que é &lt;a href=&quot;http://softwarelivre.org/portal/o-que-e&quot;&gt;livre&lt;/a&gt;, versátil e seguro sem abrir mão da praticidade, motivos pelos quais é amplamente difundido.&lt;/p&gt;
+
+&lt;h2&gt;O que é uma VPN?&lt;/h2&gt;
+
+&lt;p&gt;Uma &lt;strong&gt;rede privada virtual&lt;/strong&gt; (do inglês &lt;em&gt;Virtual Private Network&lt;/em&gt;, ou VPN) estabelece uma conexão entre dois computadores distantes, que passam a se comunicar pela Internet como se estivessem conectados a um mesmo &lt;em&gt;switch&lt;/em&gt; ou roteador.&lt;/p&gt;
+
+&lt;p&gt;Ela funciona assim: os dois computadores pertencem, a princípio, a redes diferentes (eles podem estar em prédios, cidades ou até mesmo países diferentes, por exemplo). Mas eles precisam se comunicar e possuem conexão com a Internet. Então, eles estabelecem na rede mundial um circuito por onde trocam informações de forma privada. É como uma ligação telefônica que não pudesse ser grampeada.&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-02.jpg&#39; title=&#39;Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-02.jpg&#39; alt=&#39;Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+        Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada
+    &lt;/em&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Para quem utiliza esses computadores, é imperceptível que eles estão distantes. É como se eles estivessem conectados diretamente por um cabo, apesar de esse cabo não existir de verdade (por isso, essa rede é dita &lt;strong&gt;virtual&lt;/strong&gt;). E a comunicação, apesar de ocorrer pela Internet, não pode ser lida pelos computadores no meio do caminho entre um e outro, porque os dois computadores que estabelecem a VPN utilizam criptografia para se comunicar (por isso, essa rede é dita &lt;strong&gt;privada&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;Porque a informação trafega por um circuito cujo conteúdo não pode ser lido pelos computadores que ajudam a formar o circuito, nem pelos que estão fora dele, apenas pelos computadores nas pontas (o remetente e o destinatário), a VPN também é conhecida como &lt;strong&gt;túnel&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-03.png&#39; title=&#39;Um túnel é bem assim: só quem está dentro dele vê o que por ele passa&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-03.png&#39; alt=&#39;Um túnel é bem assim: só quem está dentro dele vê o que por ele passa&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+        Um túnel é bem assim: só quem está dentro dele vê o que por ele passa
+    &lt;/em&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Tentando explicar de forma simples, uma VPN é isso.&lt;/p&gt;
+
+&lt;p&gt;Com VPNs, podemos fazer algumas coisas interessantes, como por exemplo: em casa ou durante uma viagem a negócios utilizar um &lt;em&gt;notebook&lt;/em&gt; para acessar um computador do trabalho (como se estivesse dentro do trabalho); na rua, abrir, do celular, um arquivo que está no computador de casa (como se estivesse em casa); compartilhar arquivos e recursos (como impressoras ou servidores) entre sede e filial da empresa ou entre empresas diferentes.&lt;/p&gt;
+
+&lt;p&gt;O Psiphon, que apresentei em &lt;a href=&quot;/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/&quot;&gt;outro post&lt;/a&gt;, é um exemplo interessante de VPN: ele cria um túnel entre seu computador e algum computador anônimo situado em algum lugar bem distante no mundo e redireciona todo o seu tráfego de Internet por esse computador anônimo. Dessa forma, o Psiphon permite que você utilize a Internet de forma anônima.&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2015/12/vpn.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/vpn.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Um uso prático disso é burlar bloqueios e censuras. Recentemente, &lt;a href=&quot;http://g1.globo.com/tecnologia/noticia/2015/12/operadoras-sao-intimadas-bloquear-whatsapp-no-brasil-por-48-horas.html&quot;&gt;o WhatsApp foi bloqueado no Brasil&lt;/a&gt; e muitos internautas recorreram a VPNs como o Psiphon para conseguir usar o aplicativo nos seus celulares. VPNs como essas são muito utilizadas em países com governos autoritários, como a &lt;a href=&quot;http://tecnologia.terra.com.br/internet/pai-da-censura-na-china-e-surpreendido-burlando-a-mesma-em-publico,1d6ba1d9b58468d4df30fb84daf29ee6e3c193t0.html&quot;&gt;China&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;O que preciso para criar uma VPN?&lt;/h2&gt;
+
+&lt;p&gt;Os dois computadores que queremos conectar precisam estar conectados à Internet. Um deles vai atuar como servidor, disponibilizando a VPN. O outro, vai atuar como cliente, utilizando a VPN. Eles também precisam de um protocolo para que consigam se comunicar. Existem alguns protocolos que podem ser usados para estabelecer VPNs, exemplos incluem: &lt;a href=&quot;https://technet.microsoft.com/pt-br/library/cc771298(v=ws.10).aspx&quot;&gt;PPTP, L2TP, SSTP&lt;/a&gt; e &lt;a href=&quot;https://openvpn.net/&quot;&gt;OpenVPN&lt;/a&gt;. Cada protocolo serve a um tipo de VPN e pode ser mais adequado para uma ou outra finalidade.&lt;/p&gt;
+
+&lt;p&gt;Aqui, vou explicar como estabelecer uma VPN entre um &lt;em&gt;firewall&lt;/em&gt; pfSense (suponho que já esteja instalado e funcionando) e um computador com &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/&quot;&gt;Windows&lt;/a&gt; ou um celular com &lt;a href=&quot;https://www.android.com/intl/pt-BR_br/&quot;&gt;Android&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A ideia de escrever foi compartilhar a experiência vivida onde eu trabalho.&lt;/p&gt;
+
+&lt;p&gt;Quero citar o excelente tutorial passo a passo do &lt;a href=&quot;http://thiago.oxente.org/2011/11/09/pfsense-2-0-e-openvpn-e-autenticando-no-windows-2008/&quot;&gt;Thiago Melo&lt;/a&gt;, que aqui utilizo como base para escrever uma versão um pouco mais atual e acrescentando alguns comentários meus.&lt;/p&gt;
+
+&lt;p&gt;Para referência futura, a versão do pfSense utilizado aqui é a 2.3, lançada em &lt;a href=&quot;https://blog.pfsense.org/?p=2008&quot;&gt;abril de 2016&lt;/a&gt;, e a do OpenVPN é a 2.1.11, lançada em &lt;a href=&quot;http://swupdate.openvpn.org/community/releases/&quot;&gt;maio de 2016&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Criando a VPN no pfSense&lt;/h2&gt;
+
+&lt;p&gt;O pfSense vem com um assistente (&lt;em&gt;wizard&lt;/em&gt;) que pode ser utilizado para criar VPNs, mais ou menos no famoso estilo &lt;em&gt;next&lt;/em&gt;, &lt;em&gt;next&lt;/em&gt;, &lt;em&gt;next&lt;/em&gt; (avançar, avançar, avançar) do Windows. No entanto, eu o achei um tanto falho. Quando eu o utilizava, ele repetia algumas configurações entre as VPNs. Assim, passei a fazer a maior parte das etapas manualmente, deixando o assistente apenas para configurar a VPN propriamente dita e as regras do &lt;em&gt;firewall&lt;/em&gt;, que são as etapas finais.&lt;/p&gt;
+
+&lt;p&gt;Vamos configurar manualmente os pré-requisitos para a VPN.&lt;/p&gt;
+
+&lt;p&gt;Primeiro, precisamos de uma &lt;strong&gt;autoridade certificadora&lt;/strong&gt; (do inglês &lt;em&gt;Certificate Authority&lt;/em&gt;, CA) para emitir os certificados do servidor e do cliente. Vá em &lt;strong&gt;System&lt;/strong&gt;, &lt;strong&gt;Cert. Manager&lt;/strong&gt;, aba &lt;strong&gt;CAs&lt;/strong&gt; e clique no botão &lt;strong&gt;Add&lt;/strong&gt;. Preencha o cadastro com as informações a seguir (claro, lembre-se sempre de alterar de acordo com as suas necessidades):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Descriptive name:&lt;/strong&gt; MINHACASA_CA&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Method:&lt;/strong&gt; Create an internal Certificate Authority&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Country Code:&lt;/strong&gt; BR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;State or Province:&lt;/strong&gt; Rio Grande do Sul&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;City:&lt;/strong&gt; Pelotas&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Organization:&lt;/strong&gt; Minha Casa&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email Address:&lt;/strong&gt; vinyanalista@minhacasa.net&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Common Name:&lt;/strong&gt; minhacasa-ca&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-04.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Depois, precisamos de um certificado para o servidor. De volta à tela &lt;strong&gt;Certificate Manager&lt;/strong&gt;, clique na aba &lt;strong&gt;Certificates&lt;/strong&gt; e clique no botão &lt;strong&gt;Add&lt;/strong&gt;. Preencha o cadastro com as informações a seguir:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Method&lt;/strong&gt;: Create an internal Certificate&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Descriptive name:&lt;/strong&gt; VPN de teste&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Certificate authority:&lt;/strong&gt; MINHACASA_CA&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Certificate Type:&lt;/strong&gt; Server Certificate&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Country Code:&lt;/strong&gt; BR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;State or Province:&lt;/strong&gt; Rio Grande do Sul&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;City:&lt;/strong&gt; Pelotas&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Organization:&lt;/strong&gt; Minha Casa&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email Address:&lt;/strong&gt; vinyanalista@minhacasa.net&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Common Name:&lt;/strong&gt; vpn-de-teste&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-05.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Precisamos também cadastrar os usuários que utilizarão a VPN (&lt;em&gt;login&lt;/em&gt; e senha) e criar certificados para esses usuários. Vá em &lt;strong&gt;System&lt;/strong&gt;, &lt;strong&gt;User Manager&lt;/strong&gt; e clique no botão &lt;strong&gt;Add&lt;/strong&gt;. Preencha o cadastro com as informações a seguir:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Username&lt;/strong&gt;: vinyanalista&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password:&lt;/strong&gt; Alg0$3guro!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Full name:&lt;/strong&gt; Antônio Vinícius Menezes Medeiros&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Em &lt;strong&gt;Certificate&lt;/strong&gt;, marque &lt;strong&gt;Click to create a user certificate&lt;/strong&gt; para que ele gere um certificado para o usuário que estamos cadastrando. Acrescente as informações:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Descriptive name:&lt;/strong&gt; vinyanalista&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Certificate authority:&lt;/strong&gt; MINHACASA_CA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-06.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Agora vamos à configuração da VPN propriamente dita.&lt;/p&gt;
+
+&lt;p&gt;Vá em &lt;strong&gt;VPN&lt;/strong&gt;, &lt;strong&gt;OpenVPN&lt;/strong&gt; e clique na aba &lt;strong&gt;Wizards&lt;/strong&gt;. É iniciado então o &lt;strong&gt;OpenVPN Remote Access Server Setup&lt;/strong&gt;. Na primeira tela, &lt;strong&gt;Select an Authentication Backend Type&lt;/strong&gt;, escolha &lt;strong&gt;Local User Access&lt;/strong&gt;, e clique em &lt;strong&gt;Next&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-07.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Na segunda tela, &lt;strong&gt;Choose a Certificate Authority (CA)&lt;/strong&gt;, selecione a autoridade cerficadora que foi criada anteriormente (&lt;strong&gt;MINHACASA_CA&lt;/strong&gt;) e clique em &lt;strong&gt;Next&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-08.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Na terceira tela, &lt;strong&gt;Choose a Server Certificate&lt;/strong&gt;, selecione o certificado de servidor que foi criado anteriormente (&lt;strong&gt;VPN de teste&lt;/strong&gt;) e clique em &lt;strong&gt;Next&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-09.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Na tela seguinte, &lt;strong&gt;Server Setup&lt;/strong&gt;, vamos configurar o servidor da VPN. Aqui, você deve preencher de acordo com as configurações da rede do seu servidor (a rede da sua empresa, por exemplo). Vejamos algumas configurações:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Interface:&lt;/strong&gt; WAN (interface de rede na qual o servidor aguardará pela conexão do cliente, deve apresentar conexão com a Internet)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Local Port:&lt;/strong&gt; 1194 (porta na qual o servidor aguardará pela conexão do cliente, 1194 é a porta convencional para o protocolo OpenVPN, você pode utilizar essa porta para a primeira VPN, mas se for criar outras, deverá reservar portas diferentes para cada VPN, por exemplo 1195, 1196...)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; VPN de teste (descrição da VPN, deve ser um nome informativo, até porque aparecerá na tela do cliente identificando a conexão)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tunnel Network:&lt;/strong&gt; 192.168.26.0/24 (endereço e máscara da rede virtual privada, no formato de &lt;a href=&quot;https://pt.wikipedia.org/wiki/CIDR&quot;&gt;CIDR&lt;/a&gt;, observe que o pfSense tomará o primeiro endereço IP para ele, nesse caso 192.168.26.1, e os demais endereços IPs serão atribuídos aos clientes)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Local Network:&lt;/strong&gt; 192.168.25.0/24 (endereço e máscara da rede interna que o cliente conectado pela VPN poderá acessar, é possível especificar mais de uma rede separando as redes por vírgula e até mesmo restringir o acesso a apenas um computador na rede interna, por exemplo 192.168.25.2/32)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Com relação ao campo &lt;strong&gt;Tunnel Network&lt;/strong&gt;, devo observar que ele determina a quantidade de computadores que poderão se conectar pela VPN. Obrigatoriamente, o servidor consumirá 1 endereço IP da VPN. Além disso, o pfSense não deixa criarmos uma VPN cujo endereço de rede utilize 30, 31 ou 32 &lt;em&gt;bits&lt;/em&gt; do endereço IP. Então, a menor rede virtual privada que podemos criar utiliza 29 &lt;em&gt;bits&lt;/em&gt; do endereço IP para se identificar. Com os 3 &lt;em&gt;bits&lt;/em&gt; restantes, podemos endereçar 5 clientes.&lt;/p&gt;
+
+&lt;p&gt;Para esclarecer a explicação, se tivéssemos preenchido o campo &lt;strong&gt;Tunnel Network&lt;/strong&gt; com &lt;strong&gt;192.168.26.0/29&lt;/strong&gt;, os endereços da nossa VPN seriam assim:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;192.168.26.0:&lt;/strong&gt; endereço da rede&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;192.168.26.1:&lt;/strong&gt; endereço do pfSense&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;192.168.26.2:&lt;/strong&gt; endereço atribuído ao primeiro cliente que se conectar à VPN&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;192.168.26.3:&lt;/strong&gt; endereço atribuído ao segundo cliente&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;192.168.26.4:&lt;/strong&gt; endereço atribuído ao terceiro cliente&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;192.168.26.5:&lt;/strong&gt; endereço atribuído ao quarto cliente&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;192.168.26.6:&lt;/strong&gt; endereço atribuído ao quinto cliente&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;192.168.26.7:&lt;/strong&gt; endereço de &lt;em&gt;broadcast&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Provavelmente os campos &lt;strong&gt;Tunnel Network&lt;/strong&gt; e &lt;strong&gt;Local Network&lt;/strong&gt; são os que merecem mais cuidado nessa tela.&lt;/p&gt;
+
+&lt;p&gt;Há alguns campos que podem ser preenchidos caso você necessite configurar o cliente conectado à VPN usando DHCP. Desses, destaco:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DNS Default Domain&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DNS Server 1&lt;/strong&gt;, &lt;strong&gt;DNS Server 2&lt;/strong&gt;, &lt;strong&gt;DNS Server 3&lt;/strong&gt; e &lt;strong&gt;DNS Server 4&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NTP Server&lt;/strong&gt; e &lt;strong&gt;NTP Server 2&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WINS Server 1&lt;/strong&gt; e &lt;strong&gt;WINS Server 2&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Perceba que essa tela é extensa, mas nela estão quase todas as configurações da VPN:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-10.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Quando terminar de configurar a VPN, clique em &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Na penúltima tela do assistente, &lt;strong&gt;Firewall Rule Configuration&lt;/strong&gt;, certifique-se de que as duas opções &lt;strong&gt;Firewall Rule&lt;/strong&gt; e &lt;strong&gt;OpenVPN rule&lt;/strong&gt; estejam marcadas. Com isso, o pfSense criará automaticamente as regras de &lt;em&gt;firewall&lt;/em&gt; necessárias para que a VPN funcione. Clique em &lt;strong&gt;Next&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-11.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;A última tela apenas informa que a VPN foi criada. Clique em &lt;strong&gt;Finish&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-12.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;h2&gt;Exportando o &lt;em&gt;software&lt;/em&gt; cliente&lt;/h2&gt;
+
+&lt;p&gt;O pfSense é capaz de exportar o &lt;em&gt;software&lt;/em&gt; e os arquivos de configuração que devem ser instalados no computador cliente para que ele consiga se conectar à VPN. Para isso, usamos o &lt;strong&gt;OpenVPN Client Export Utility&lt;/strong&gt;. Esse utilitário não acompanha a instalação padrão do pfSense, sendo disponibilizado como um pacote.&lt;/p&gt;
+
+&lt;p&gt;Caso você ainda não o tenha instalado, vá em &lt;strong&gt;System&lt;/strong&gt;, &lt;strong&gt;Package Manager&lt;/strong&gt;, na aba &lt;strong&gt;Available Packages&lt;/strong&gt;, busque por esse pacote e o instale clicando no botão &lt;strong&gt;Install&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-13.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Com o utilitário instalado, vá em &lt;strong&gt;VPN&lt;/strong&gt;, &lt;strong&gt;OpenVPN&lt;/strong&gt;, aba &lt;strong&gt;Client Export&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Em &lt;strong&gt;Remote Access Server&lt;/strong&gt;, selecione a VPN (nesse exemplo, &lt;strong&gt;VPN de teste&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;Mais abaixo, no final da página, na linha correspondente ao usuário que deve acessar a VPN (nesse exemplo, &lt;strong&gt;vinyanalista&lt;/strong&gt;), clique no botão correspondente ao cliente que deseja exportar.&lt;/p&gt;
+
+&lt;p&gt;Vou demonstrar como conectar à VPN um computador cujo sistema operacional é o Windows 10 de 64 &lt;em&gt;bits&lt;/em&gt;. Nesse caso, clique no botão &lt;strong&gt;x64-win6&lt;/strong&gt; para exportar o cliente correspondente:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-14.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-14.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;O &lt;em&gt;download&lt;/em&gt; do instalador do cliente é iniciado. Esse arquivo (cujo nome deve ser algo parecido com &lt;strong&gt;firewall-udp-1194-vinyanalista-install.exe&lt;/strong&gt;) deve ser copiado ou movido para o computador cliente.&lt;/p&gt;
+
+&lt;p&gt;Também vou demonstrar como conectar à VPN um celular com sistema Android. Você pode aproveitar para já baixar também o arquivo de configuração que será necessário. Para isso, clique no botão &lt;strong&gt;Android&lt;/strong&gt;. Esse arquivo (cujo nome deve ser algo parecido com &lt;strong&gt;firewall-udp-1194-vinyanalista-android-config.ovpn&lt;/strong&gt;) deve ser copiado ou movido para o celular. No caso do Android, o &lt;em&gt;software&lt;/em&gt; cliente é instalado pela &lt;a href=&quot;https://play.google.com/store/&quot;&gt;Play Store&lt;/a&gt;, por isso o pfSense exporta apenas o arquivo de configuração.&lt;/p&gt;
+
+&lt;h2&gt;Conectando à VPN pelo Windows 10&lt;/h2&gt;
+
+&lt;p&gt;No computador cliente, execute o instalador do cliente OpenVPN, baixado do pfSense. A instalação é bem simples. Aqui, mais uma vez, é &lt;em&gt;next&lt;/em&gt;, &lt;em&gt;next&lt;/em&gt;, &lt;em&gt;next&lt;/em&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-15.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-15.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Terminada a instalação, para iniciar o cliente OpenVPN, abra o &lt;strong&gt;menu Iniciar&lt;/strong&gt;, clique em &lt;strong&gt;Todos os programas&lt;/strong&gt;, depois em &lt;strong&gt;OpenVPN&lt;/strong&gt; e, por fim, em &lt;strong&gt;OpenVPN GUI&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-16.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-16.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;O cliente OpenVPN é iniciado. Observe seu ícone na área de notificação:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-17.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-17.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Dê dois clique nesse ícone. O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense e clique em &lt;strong&gt;OK&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-18.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-18.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Se conseguir se conectar, o cliente OpenVPN mostra uma notificação com o endereço IP que foi atribuído ao computador dentro da rede privada virtual. Observe também que o ícone do cliente muda sua cor para verde, indicando que está conectado:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-19.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-19.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Como teste, você pode abrir o &lt;strong&gt;Prompt de comando&lt;/strong&gt; do Windows e verificar a conectividade com algum computador na rede da outra ponta da VPN:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Microsoft Windows [versão 10.0.10240]
+(c) 2015 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\Vinicius&amp;gt;ping 172.20.0.4
+
+Disparando 172.20.0.4 com 32 bytes de dados:
+Resposta de 172.20.0.4: bytes=32 tempo=127ms TTL=62
+Resposta de 172.20.0.4: bytes=32 tempo=78ms TTL=62
+Resposta de 172.20.0.4: bytes=32 tempo=104ms TTL=62
+Resposta de 172.20.0.4: bytes=32 tempo=97ms TTL=62
+
+Estatísticas do Ping para 172.20.0.4:
+    Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de
+             perda),
+Aproximar um número redondo de vezes em milissegundos:
+    Mínimo = 78ms, Máximo = 127ms, Média = 101ms
+
+C:\Users\Vinicius&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Quando não precisar usar mais a VPN, clique com o botão direito do &lt;em&gt;mouse&lt;/em&gt; no ícone do cliente OpenVPN e em seguida clique em &lt;strong&gt;Sair&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-20.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-20.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;h3&gt;Solução de problemas&lt;/h3&gt;
+
+&lt;p&gt;Caso você perceba que não conseguiu se conectar à VPN e o cliente exibe uma mensagem como esta:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Significa que o cliente e o servidor OpenVPN não estão conseguindo se comunicar, podendo a causa do problema estar em uma ponta ou outra da conexão. É provável que seu computador esteja sem conexão com a Internet ou algum &lt;em&gt;firewall&lt;/em&gt; esteja impedindo a conexão do seu computador com o servidor da VPN.&lt;/p&gt;
+
+&lt;p&gt;Algumas verificações que você pode fazer do lado do cliente:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Tentar executar o cliente OpenVPN como administrador;&lt;/li&gt;
+&lt;li&gt;Verificar a hora do computador (para que a conexão segura possa ser estabelecida é um pré-requisito que a hora esteja correta);&lt;/li&gt;
+&lt;li&gt;Verificar no Firewall do Windows se a porta número 1194 está liberada para receber conexões TCP e UDP (se não estiver liberada, adicionar exceção);&lt;/li&gt;
+&lt;li&gt;Verificar no Firewall do Windows se o aplicativo &lt;strong&gt;openvpn.exe&lt;/strong&gt; está sendo bloqueado (se estiver bloqueado, adicionar exceção);&lt;/li&gt;
+&lt;li&gt;Se houver algum &lt;em&gt;firewall&lt;/em&gt; entre o computador e o provedor de Internet, verificá-lo também; e&lt;/li&gt;
+&lt;li&gt;Se já havia um cliente OpenVPN instalado no computador e o instalador baixado do pfSense apenas acrescentou a configuração da VPN recém-criada, considere a possibilidade de desinstalar o cliente já instalado na máquina e instalar o fornecido, que pode ser mais novo e conter correções para &lt;em&gt;bugs&lt;/em&gt; e falhas de segurança.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Falando em &lt;em&gt;bug&lt;/em&gt;, pode acontecer de o cliente OpenVPN relatar que conseguiu se conectar, mas não conseguiu configurar rotas para a rede privada virtual:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Tue Jun 14 22:15:09 2016 ROUTE: route addition failed using CreateIpForwardEntry: Acesso negado.   [status=5 if_index=4]
+Tue Jun 14 22:15:09 2016 env_block: add PATH=C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem
+Tue Jun 14 22:15:09 2016 ERROR: Windows route add command failed [adaptive]: returned error code 1
+Tue Jun 14 22:15:09 2016 ROUTE: route addition failed using CreateIpForwardEntry: Acesso negado.   [status=5 if_index=4]
+Tue Jun 14 22:15:09 2016 env_block: add PATH=C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem
+Tue Jun 14 22:15:10 2016 ERROR: Windows route add command failed [adaptive]: returned error code 1
+Tue Jun 14 22:15:10 2016 Initialization Sequence Completed
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Isso é um &lt;a href=&quot;https://community.openvpn.net/openvpn/ticket/68&quot;&gt;&lt;em&gt;bug&lt;/em&gt;&lt;/a&gt; que afetava versões antigas do cliente OpenVPN, mas já foi corrigido. Você pode &lt;a href=&quot;https://openvpn.net/index.php/open-source/downloads.html&quot;&gt;baixar a versão mais recente do cliente OpenVPN&lt;/a&gt;, instalá-la em seu computador e repetir os passos acima para se conectar à VPN normalmente. Ou, se não quiser fazer isso, você pode tentar executar o cliente já instalado em seu computador com permissões de administrador.&lt;/p&gt;
+
+&lt;p&gt;Quando você conseguir se conectar sem problemas, o cliente OpenVPN deve exibir uma sequência de mensagens parecida com esta:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Tue Jun 14 22:18:06 2016 OpenVPN 2.3.11 x86_64-w64-mingw32 [SSL (OpenSSL)] [LZO] [PKCS11] [IPv6] built on May 10 2016
+Tue Jun 14 22:18:06 2016 Windows version 6.2 (Windows 8 or greater) 64bit
+Tue Jun 14 22:18:06 2016 library versions: OpenSSL 1.0.1t  3 May 2016, LZO 2.09
+Tue Jun 14 22:19:34 2016 Control Channel Authentication: using &amp;#39;firewall-udp-1194-antonio.medeiros-tls.key&amp;#39; as a OpenVPN static key file
+Tue Jun 14 22:19:34 2016 UDPv4 link local (bound): [undef]
+Tue Jun 14 22:19:34 2016 UDPv4 link remote: [AF_INET]187.86.133.121:1194
+Tue Jun 14 22:19:35 2016 WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+Tue Jun 14 22:19:35 2016 [VPN do HEUFPEL] Peer Connection Initiated with [AF_INET]187.86.133.121:1194
+Tue Jun 14 22:19:38 2016 do_ifconfig, tt-&amp;gt;ipv6=0, tt-&amp;gt;did_ifconfig_ipv6_setup=0
+Tue Jun 14 22:19:38 2016 open_tun, tt-&amp;gt;ipv6=0
+Tue Jun 14 22:19:38 2016 TAP-WIN32 device [Ethernet 3] opened: \\.\Global\{2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30}.tap
+Tue Jun 14 22:19:38 2016 Set TAP-Windows TUN subnet mode network/local/netmask = 10.100.201.0/10.100.201.2/255.255.255.0 [SUCCEEDED]
+Tue Jun 14 22:19:38 2016 Notified TAP-Windows driver to set a DHCP IP/netmask of 10.100.201.2/255.255.255.0 on interface {2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30} [DHCP-serv: 10.100.201.254, lease-time: 31536000]
+Tue Jun 14 22:19:38 2016 Successful ARP Flush on interface [4] {2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30}
+Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Conectando à VPN pelo Android&lt;/h2&gt;
+
+&lt;p&gt;Para conectar um celular com Android à VPN que acabamos de criar no nosso &lt;em&gt;firewall&lt;/em&gt; pfSense, precisamos instalar um aplicativo cliente no celular. Aqui, vou demonstrar como usar o cliente oficial do OpenVPN, o OpenVPN Connect.&lt;/p&gt;
+
+&lt;p&gt;Comece instalando o OpenVPN Connect pela Play Store:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;https://play.google.com/store/apps/details?id=net.openvpn.openvpn&#39; title=&#39;Clique para obter o OpenVPN Connect na Play Store&#39;&gt;
+        &lt;img src=&#39;/files/2015/12/google-play.png&#39; alt=&#39;Clique para obter o OpenVPN Connect na Play Store&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+        Clique para obter o OpenVPN Connect na Play Store
+    &lt;/em&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Se ainda não passou, passe agora para o celular o arquivo de configuração exportado pelo pfSense.&lt;/p&gt;
+
+&lt;p&gt;No celular, abra o &lt;strong&gt;menu de Aplicativos&lt;/strong&gt; e toque no &lt;strong&gt;OpenVPN Connect&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-21.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-21.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;O cliente OpenVPN para Android é iniciado:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-22.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-22.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Toque no &lt;strong&gt;botão de opções&lt;/strong&gt; (o com 3 pontos que aparece no canto superior direito da tela), em seguida em &lt;strong&gt;Import&lt;/strong&gt; e, por último, em &lt;strong&gt;Import Profile from SD card&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-23.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-23.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Localize o arquivo de configuração na memória interna ou no cartão de memória do seu celular, toque nele e depois em &lt;strong&gt;Select&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-24.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-24.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense. Opcionalmente, marque a opção &lt;strong&gt;Save&lt;/strong&gt; para que ele memorize o usuário e a senha. Por fim, toque em &lt;strong&gt;Connect&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-25.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-25.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Se conseguir se conectar, o cliente OpenVPN passa a exibir o &lt;em&gt;status&lt;/em&gt; da conexão. Observe que ele fixa um ícone na área de notificação, indicando que está conectado:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2016/06/pfsense-vpn-26.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2016/06/pfsense-vpn-26.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Quando não precisar usar mais a VPN, volte ao cliente OpenVPN e toque em &lt;strong&gt;Disconnect&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Conclusão&lt;/h2&gt;
+
+&lt;p&gt;É isso. Espero que esse texto possa te ajudar caso necessite. A seguir, listo algumas referências que utilizei além dos &lt;em&gt;links&lt;/em&gt; que já apareceram por todo o texto:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.tecmundo.com.br/1427-o-que-e-vpn-.htm&quot;&gt;O que é VPN? - TecMundo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://olhardigital.uol.com.br/noticia/o-que-e-e-para-que-serve-uma-vpn/37913&quot;&gt;O que é e para que serve uma VPN? - Olhar Digital&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://technet.microsoft.com/pt-br/library/cc731954(v=ws.10).aspx&quot;&gt;O que é VPN? - TechNet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.gta.ufrj.br/grad/13_1/vpn_ipsec/&quot;&gt;VPN e IPsec - UFRJ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://forum.pfsense.org/index.php?topic=81287.0&quot;&gt;OpenVPN Errors - TLS handshake failed - fórum do pfSense&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.vivaolinux.com.br/topico/servidores-VPN/OPENVPN-no-pfsense-conectando-cliente-windows&quot;&gt;OPENVPN no pfsense conectando cliente windows  [RESOLVIDO] [servidores VPN] - Viva o Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://openvpn.net/index.php/open-source/faq/79-client/253-tls-error-tls-key-negotiation-failed-to-occur-within-60-seconds-check-your-network-connectivity.html&quot;&gt;TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity) - FAQ do OpenVPN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 26 Jun 2016 01:00:00 -0300</pubDate>
+        <link>https://vinyanalista.github.io/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Dicas para bater bons prints</title>
@@ -335,7 +825,7 @@
 &lt;li&gt;&lt;a href=&quot;http://windows.microsoft.com/pt-br/windows-10/open-snipping-tool-and-take-a-screenshot&quot;&gt;Abrir a Ferramenta de Captura e tirar uma captura de tela - Ajuda do Windows&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Thu, 18 Feb 2016 02:00:00 -0300</pubDate>
+        <pubDate>Thu, 18 Feb 2016 02:00:00 -0200</pubDate>
         <link>https://vinyanalista.github.io/blog/2016/02/18/dicas-para-bater-bons-prints/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2016/02/18/dicas-para-bater-bons-prints/</guid>
         
@@ -467,7 +957,7 @@
 
 &lt;p&gt;Espero que possa ter ajudado! Dúvidas nos comentários!&lt;/p&gt;
 </description>
-        <pubDate>Thu, 17 Dec 2015 08:00:00 -0300</pubDate>
+        <pubDate>Thu, 17 Dec 2015 08:00:00 -0200</pubDate>
         <link>https://vinyanalista.github.io/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/</guid>
         
@@ -761,7 +1251,7 @@
 
 &lt;p&gt;Espero que possa ter ajudado! Dúvidas nos comentários!&lt;/p&gt;
 </description>
-        <pubDate>Tue, 15 Dec 2015 12:30:00 -0300</pubDate>
+        <pubDate>Tue, 15 Dec 2015 12:30:00 -0200</pubDate>
         <link>https://vinyanalista.github.io/blog/2015/12/15/como-configurar-as-atualizacoes-automaticas-do-windows-10/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/12/15/como-configurar-as-atualizacoes-automaticas-do-windows-10/</guid>
         
@@ -1000,7 +1490,7 @@
 
 &lt;p&gt;Por hora é isso, pessoal. Se lembrar de mais alguma coisa, acrescento e aviso. Não deixem de comentar! Boas compras!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 27 Nov 2015 03:00:00 -0300</pubDate>
+        <pubDate>Fri, 27 Nov 2015 03:00:00 -0200</pubDate>
         <link>https://vinyanalista.github.io/blog/2015/11/27/como-escolher-um-bom-computador-para-comprar/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/11/27/como-escolher-um-bom-computador-para-comprar/</guid>
         
@@ -2436,361 +2926,6 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
         <pubDate>Sat, 29 Aug 2015 23:00:00 -0300</pubDate>
         <link>https://vinyanalista.github.io/blog/2015/08/29/addthis/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/08/29/addthis/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Como criar um tema responsivo do WordPress com o Bootstrap (parte 2)</title>
-        <description>&lt;p&gt;Nesse tutorial, você aprenderá a criar um tema responsivo do &lt;a href=&quot;https://br.wordpress.org/&quot;&gt;WordPress&lt;/a&gt; usando o &lt;a href=&quot;/blog/2015/07/05/bootstrap/&quot;&gt;Bootstrap&lt;/a&gt;. Com um tema responsivo, seu &lt;em&gt;blog&lt;/em&gt; ou &lt;em&gt;site&lt;/em&gt; com WordPress aparecerá bem na grande variedade de dispositivos (computadores, &lt;em&gt;smartphones&lt;/em&gt; e &lt;em&gt;tablets&lt;/em&gt;) e navegadores existentes.&lt;/p&gt;
-
-&lt;p&gt;Essa é a segunda parte do tutorial. Se você deseja acessar a primeira parte, então &lt;a href=&quot;/blog/2015/08/06/wordpress-bootstrap/&quot;&gt;clique aqui&lt;/a&gt;. Senão, continue lendo.&lt;/p&gt;
-
-&lt;p&gt;Assumirei que seu código está &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/tree/af163c63bcffdfe256e66c30f3bd18b2e03fba72&quot;&gt;como o deixamos no &lt;em&gt;post&lt;/em&gt; anterior&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;Adicione conteúdo&lt;/h3&gt;
-
-&lt;p&gt;Vamos continuar adicionando outras páginas ao nosso &lt;em&gt;site&lt;/em&gt;. Acesse a &lt;a href=&quot;https://codex.wordpress.org/Administration_Panels&quot;&gt;área administrativa&lt;/a&gt; e &lt;a href=&quot;https://codex.wordpress.org/pt-br:Criando_P%C3%A1ginas&quot;&gt;crie páginas&lt;/a&gt; chamadas &amp;quot;Sobre&amp;quot;, &amp;quot;Notícias&amp;quot; e &amp;quot;Contato&amp;quot;. Por hora, você pode escrever qualquer coisa nessas páginas e depois alterá-las, se quiser. Aproveite para também &lt;a href=&quot;https://codex.wordpress.org/pt-br:Escrevendo_Posts&quot;&gt;adicionar posts&lt;/a&gt;, dois ou três são suficientes.&lt;/p&gt;
-
-&lt;h3&gt;Navegação&lt;/h3&gt;
-
-&lt;p&gt;Vamos substituir a barra de navegação estática no topo do &lt;em&gt;site&lt;/em&gt; por uma que mostre as páginas que acabamos de adicionar. Localize a &lt;code&gt;div#navbar&lt;/code&gt; no arquivo &lt;code&gt;header.php&lt;/code&gt; e insira o seguinte código dentro dela, antes da &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;nav navbar-nav&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php wp_list_pages(array(&amp;#39;title_li&amp;#39; =&amp;gt; &amp;#39;&amp;#39;)); ?&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Aqui, estamos utilizando a função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/wp_list_pages/&quot;&gt;wp&lt;em&gt;list&lt;/em&gt;pages()&lt;/a&gt; do WordPress para listar as páginas do nosso &lt;em&gt;site&lt;/em&gt;. Ela cria um item de lista (&lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt;) e um &lt;em&gt;link&lt;/em&gt; (&lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;) para cada página.&lt;/p&gt;
-
-&lt;p&gt;Aproveite para remover o formulário de &lt;em&gt;login&lt;/em&gt;, já que vamos fazer &lt;em&gt;login&lt;/em&gt; diretamente pela área administrativa do WordPress.&lt;/p&gt;
-
-&lt;p&gt;O código da &lt;code&gt;div#navbar&lt;/code&gt; deve estar assim:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-collapse collapse&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;nav navbar-nav&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php wp_list_pages(array(&amp;#39;title_li&amp;#39; =&amp;gt; &amp;#39;&amp;#39;)); ?&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--/.navbar-collapse --&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se você acessar seu &lt;em&gt;site&lt;/em&gt; agora, já deve visualizar &lt;em&gt;links&lt;/em&gt; para as páginas na barra de navegação do topo, mas ainda temos trabalho a fazer.&lt;/p&gt;
-
-&lt;p&gt;Comece &lt;a href=&quot;https://en.support.wordpress.com/pages/edit-pages-screen/#delete-pages&quot;&gt;excluindo a página&lt;/a&gt; &amp;quot;Página de Exemplo&amp;quot;.&lt;/p&gt;
-
-&lt;p&gt;Depois, mude a ordem em que as páginas aparecem na navegação. Para isso, acesse a área administrativa e vá em &lt;strong&gt;Páginas&lt;/strong&gt;. Então, passe o &lt;em&gt;mouse&lt;/em&gt; sobre a página &amp;quot;Sobre&amp;quot; e clique em &amp;quot;Edição rápida&amp;quot;. Mude o valor do campo &lt;strong&gt;Ordem&lt;/strong&gt; para 1 e clique em &lt;strong&gt;Atualizar&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/wordpress-bootstrap-7.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-7.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Mude a ordem da página &amp;quot;Notícias&amp;quot; para 2 e a da página &amp;quot;Contato&amp;quot; para 3. A ordem da página &amp;quot;Início&amp;quot; deve ser mantida como 0.&lt;/p&gt;
-
-&lt;p&gt;Se você visitar seu &lt;em&gt;site&lt;/em&gt; agora, as páginas devem ser apresentadas na ordem em que definimos.&lt;/p&gt;
-
-&lt;p&gt;Agora nossa navegação funciona. No entanto, ainda não com todo o estilo do Bootstrap. Se você clicar em um &lt;em&gt;link&lt;/em&gt; para uma página, por exemplo, verá que ela não aparece em destaque na barra de navegação. Isso ocorre porque as classes dos elementos HTML gerados pelo WordPress nem sempre correspondem às classes oferecidas pelo Bootstrap.&lt;/p&gt;
-
-&lt;p&gt;Vamos copiar as regras de uma classe do Bootstrap para estilizar uma classe do WordPress. Procure no arquivo &lt;code&gt;bootstrap.css&lt;/code&gt; as regras para o seletor &lt;code&gt;.navbar-inverse .navbar-nav &amp;gt; .active &amp;gt; a&lt;/code&gt; (na versão 3.3.5, essas regras estão na linha 4662) e as copie para o arquivo &lt;code&gt;style.css&lt;/code&gt;, aplicando-as aos seletores &lt;code&gt;.navbar-inverse .navbar-nav &amp;gt; .current_page_item &amp;gt; a&lt;/code&gt; e &lt;code&gt;.navbar-inverse .navbar-nav &amp;gt; .current_page_parent &amp;gt; a&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;c&quot;&gt;/* lib/bootstrap/3.3.5/css/bootstrap.css, linha 4662 */&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;/*.navbar-inverse .navbar-nav &amp;gt; .active &amp;gt; a,&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;.navbar-inverse .navbar-nav &amp;gt; .active &amp;gt; a:hover,&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;.navbar-inverse .navbar-nav &amp;gt; .active &amp;gt; a:focus*/&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.navbar-inverse&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.navbar-nav&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.current_page_item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.navbar-inverse&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.navbar-nav&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.current_page_item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.navbar-inverse&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.navbar-nav&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.current_page_item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:focus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.navbar-inverse&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.navbar-nav&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.current_page_parent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.navbar-inverse&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.navbar-nav&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.current_page_parent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.navbar-inverse&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.navbar-nav&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.current_page_parent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:focus&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#080808&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Agora sim nossa barra de navegação está completa:&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/wordpress-bootstrap-8.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-8.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Vamos seguir criando &lt;em&gt;templates&lt;/em&gt; diferenciados para páginas e &lt;em&gt;posts&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h3&gt;&lt;em&gt;Template&lt;/em&gt; das páginas&lt;/h3&gt;
-
-&lt;p&gt;Abra o arquivo &lt;code&gt;index.php&lt;/code&gt; e salve-o como &lt;code&gt;page.php&lt;/code&gt;. Assim, poupamos muita digitação.&lt;/p&gt;
-
-&lt;p&gt;Primeiro, vamos mudar o texto &amp;quot;Desculpe, não há &lt;em&gt;posts&lt;/em&gt; a exibir&amp;quot; para &amp;quot;Desculpe, essa página não existe&amp;quot;.&lt;/p&gt;
-
-&lt;p&gt;Em seguida, vamos criar um &lt;a href=&quot;/blog/2015/07/05/bootstrap/&quot;&gt;&lt;em&gt;layout&lt;/em&gt; de duas colunas com o Bootstrap&lt;/a&gt;. Modifique o arquivo &lt;code&gt;page.php&lt;/code&gt; para incluir uma &lt;code&gt;div.row&lt;/code&gt; com uma &lt;code&gt;div.col-md-8&lt;/code&gt; e uma &lt;code&gt;div.col-md-4&lt;/code&gt;. Vamos utilizar a &lt;code&gt;div.col-md-8&lt;/code&gt; para o conteúdo da página e a &lt;code&gt;div.col-md-4&lt;/code&gt; para a barra lateral:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_header(); ?&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php if (have_posts()) : while (have_posts()) : the_post(); ?&amp;gt;&lt;/span&gt;
-
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php the_title(); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;entry-content&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php the_content(); ?&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php endwhile; else: ?&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php _e(&amp;#39;Desculpe, essa página não existe.&amp;#39;); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php endif; ?&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Aqui virá a barra lateral --&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_footer(); ?&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;em&gt;Template&lt;/em&gt; da barra lateral&lt;/h3&gt;
-
-&lt;p&gt;Uma vez que vamos usar a barra lateral em alguns &lt;em&gt;templates&lt;/em&gt;, vamos aproveitar a função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/get_sidebar/&quot;&gt;get_sidebar()&lt;/a&gt; do WordPress, que funciona de maneira análoga às funções &lt;a href=&quot;https://developer.wordpress.org/reference/functions/get_header/&quot;&gt;get_header()&lt;/a&gt; e &lt;a href=&quot;https://developer.wordpress.org/reference/functions/get_footer/&quot;&gt;get_footer()&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Para isso, abra o arquivo &lt;code&gt;sidebar.php&lt;/code&gt; (que até então estava vazio) e salve-o com o seguinte código:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;Barra lateral&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Agora volte ao arquivo &lt;code&gt;index.php&lt;/code&gt; e acrescente uma chamada à função &lt;code&gt;get_sidebar()&lt;/code&gt; na &lt;code&gt;div.col-md-4&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_sidebar(); ?&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se agora você acessar uma das páginas do &lt;em&gt;site&lt;/em&gt;, verá que temos o título, o conteúdo e a barra lateral sendo exibidos.&lt;/p&gt;
-
-&lt;p&gt;Nosso &lt;em&gt;template&lt;/em&gt; de páginas está muito bom! Vamos seguir para a página de notícias.&lt;/p&gt;
-
-&lt;h3&gt;Lista de &lt;em&gt;posts&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;A página de notícias irá funcionar um pouco diferente das outras, porque ela listará as postagens, ao invés de exibir o conteúdo de uma página. Há diversas formas de listar os &lt;em&gt;posts&lt;/em&gt;, mas vamos fazer algo simples.&lt;/p&gt;
-
-&lt;p&gt;Para começar, salve o arquivo &lt;code&gt;page.php&lt;/code&gt; como &lt;code&gt;home.php&lt;/code&gt;. No WordPress, o &lt;em&gt;template&lt;/em&gt; &lt;code&gt;home.php&lt;/code&gt; é reservado para a página que lista as postagens. No nosso caso, esse é o &lt;em&gt;template&lt;/em&gt; que o WordPress utilizará para renderizar a página &amp;quot;Notícias&amp;quot;.&lt;/p&gt;
-
-&lt;p&gt;A primeira coisa que vamos fazer é fixar no código (&lt;em&gt;hardcode&lt;/em&gt;) uma &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; no topo do conteúdo com o dizer &amp;quot;Notícias&amp;quot;. Nossas postagens aparecerão listadas abaixo desse título:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Notícias&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Nesse &lt;em&gt;template&lt;/em&gt;, o &lt;a href=&quot;https://codex.wordpress.org/pt-br:O_Loop&quot;&gt;&lt;em&gt;loop&lt;/em&gt; do WordPress&lt;/a&gt; vai iterar por todas as postagens. Por isso, vamos utilizar uma &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt; para seus títulos, uma vez que já utilizamos uma &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; para o título da página, assim criamos um efeito visual de hierarquia.&lt;/p&gt;
-
-&lt;p&gt;Também vamos utilizar uma nova função, &lt;a href=&quot;https://developer.wordpress.org/reference/functions/the_permalink/&quot;&gt;the_permalink()&lt;/a&gt;, para criar &lt;em&gt;links&lt;/em&gt; da página de listagem de notícias para as páginas das notícias em si:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;?php the_permalink(); ?&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php the_title(); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Ao invés de exibir os conteúdos das notícias, vamos exibir a data em que elas foram publicadas usando a função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/get_the_time/&quot;&gt;get&lt;em&gt;the&lt;/em&gt;time()&lt;/a&gt;. Ela é baseada na função &lt;a href=&quot;http://php.net/manual/pt_BR/function.time.php&quot;&gt;time()&lt;/a&gt; do &lt;a href=&quot;http://www.php.net&quot;&gt;PHP&lt;/a&gt; e nos permite exibir a data e hora no formato que desejarmos.&lt;/p&gt;
-
-&lt;p&gt;Para exibir a data como em &amp;quot;Domingo, 16 de agosto de 2015&amp;quot;, vamos usar a função &lt;code&gt;get_the_time()&lt;/code&gt; da seguinte forma (em conjunto com a função &lt;a href=&quot;http://php.net/manual/pt_BR/function.ucfirst.php&quot;&gt;uc_first()&lt;/a&gt; do PHP para capitalizar a primeira letra do dia da semana):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php echo ucfirst(get_the_time(&amp;#39;l, j \d\e F \d\e Y&amp;#39;)); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Adicione uma &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; após a data para separar os &lt;em&gt;posts&lt;/em&gt; uns dos outros e, finalmente, altere o texto que é exibido quando não há &lt;em&gt;posts&lt;/em&gt; para &amp;quot;Desculpe, não há posts a serem exibidos&amp;quot;.&lt;/p&gt;
-
-&lt;p&gt;Seu &lt;em&gt;template&lt;/em&gt; &lt;code&gt;home.php&lt;/code&gt; deve ficar assim:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_header(); ?&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Notícias&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php if (have_posts()) : while (have_posts()) : the_post(); ?&amp;gt;&lt;/span&gt;
-
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;?php the_permalink(); ?&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php the_title(); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php echo ucfirst(get_the_time(&amp;#39;l, j \d\e F \d\e Y&amp;#39;)); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php endwhile; else: ?&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php _e(&amp;#39;Desculpe, não há posts a serem exibidos.&amp;#39;); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php endif; ?&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_sidebar(); ?&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_footer(); ?&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Para que a página de notícias seja exibida corretamente, volte à tela da área administrativa em que configuramos a página &amp;quot;Início&amp;quot; para ser exibida como página inicial (&lt;strong&gt;Configurações&lt;/strong&gt; &amp;gt; &lt;strong&gt;Leitura&lt;/strong&gt;). Na opção &lt;strong&gt;Página de posts&lt;/strong&gt;, selecione a página &amp;quot;Notícias&amp;quot; e clique em &lt;strong&gt;Salvar alterações&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Agora você pode acessar a página &amp;quot;Notícias&amp;quot; em seu navegador e ver a lista dos &lt;em&gt;posts&lt;/em&gt; que você criou.&lt;/p&gt;
-
-&lt;h3&gt;&lt;em&gt;Template&lt;/em&gt; das postagens&lt;/h3&gt;
-
-&lt;p&gt;Agora só nos resta fazer um &lt;em&gt;template&lt;/em&gt;: o que exibe uma postagem. Esse &lt;em&gt;template&lt;/em&gt; será bastante parecido com o utilizado para exibir páginas. Por isso, vamos começar abrindo o arquivo &lt;code&gt;page.php&lt;/code&gt; e salvando-o como &lt;code&gt;single.php&lt;/code&gt;. Por convenção, o WordPress utiliza o arquivo chamado &lt;code&gt;single.php&lt;/code&gt; para renderizar uma postagem.&lt;/p&gt;
-
-&lt;p&gt;Nossa primeira alteração será incluir a data do &lt;em&gt;post&lt;/em&gt; logo abaixo do título. Para isso, usaremos o mesmo código que utilizamos antes:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php echo ucfirst(get_the_time(&amp;#39;l, j \d\e F \d\e Y&amp;#39;)); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Para os visitantes do nosso &lt;em&gt;site&lt;/em&gt;, a maior diferença da postagem para a página será a possibilidade de comentar. Embora a implementação dos comentários por trás dos bastidores seja bastante complexa, na verdade é muito fácil adicioná-los ao &lt;em&gt;template&lt;/em&gt; graças à função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/comments_template/&quot;&gt;comments_template()&lt;/a&gt;. Basta adicioná-la após o conteúdo para permitir que nossos visitantes deixem comentários.&lt;/p&gt;
-
-&lt;p&gt;Por fim, adicione uma &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; acima dos comentários para separá-los do conteúdo da postagem.&lt;/p&gt;
-
-&lt;p&gt;Seu &lt;em&gt;template&lt;/em&gt; &lt;code&gt;single.php&lt;/code&gt; deve ficar assim:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_header(); ?&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php if (have_posts()) : while (have_posts()) : the_post(); ?&amp;gt;&lt;/span&gt;
-
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php the_title(); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php echo ucfirst(get_the_time(&amp;#39;l, j \d\e F \d\e Y&amp;#39;)); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;entry-content&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php the_content(); ?&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php comments_template(); ?&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php endwhile; else: ?&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php _e(&amp;#39;Desculpe, essa página não existe.&amp;#39;); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php endif; ?&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-4&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_sidebar(); ?&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php get_footer(); ?&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Agora que temos todos os &lt;em&gt;templates&lt;/em&gt; básicos, vamos fazer mais algumas alterações.&lt;/p&gt;
-
-&lt;h3&gt;Ajutes no arquivo &lt;code&gt;header.php&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;O primeiro ajuste que faremos será em relação ao título da página. O título é uma parte importante da página, especialmente em relação à otimização para mecanismos de busca (mais conhecida como SEO, do inglês &lt;a href=&quot;https://en.wikipedia.org/wiki/Search_engine_optimization&quot;&gt;&lt;em&gt;search engine optimization&lt;/em&gt;&lt;/a&gt;). O que se espera é que a &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; contenha não só o título da página ou postagem, mas também o nome do &lt;em&gt;site&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Podemos obter facilmente o título da página ou postagem utilizando a função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/wp_title/&quot;&gt;wp_title()&lt;/a&gt;, que imprime o título da página ou postagem da maneira que desejamos.&lt;/p&gt;
-
-&lt;p&gt;O nome do &lt;em&gt;site&lt;/em&gt; pode ser obtido pela função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/bloginfo/&quot;&gt;bloginfo()&lt;/a&gt;, passando como argumento a &lt;em&gt;string&lt;/em&gt; &lt;code&gt;name&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Combinando essas duas funções, podemos obter um título como &amp;quot;Notícias | Nome do site&amp;quot;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php wp_title(&amp;#39;|&amp;#39;, true, &amp;#39;right&amp;#39;); ?&amp;gt;&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php bloginfo(&amp;#39;name&amp;#39;); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Substitua a &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; no arquivo &lt;code&gt;header.php&lt;/code&gt; pela apresentada acima e você perceberá que os títulos das páginas agora serão exibidos conforme o esperado.&lt;/p&gt;
-
-&lt;p&gt;Vamos exibir o nome do &lt;em&gt;site&lt;/em&gt; também no início da barra de navegação ao topo, com um &lt;em&gt;link&lt;/em&gt; que aponte para a página inicial. Para isso, localize a &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;a.navbar-brand&lt;/code&gt; no arquivo &lt;code&gt;header.php&lt;/code&gt; (deve ser a linha 36):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-brand&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Project name&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;E modifique-a para ficar assim:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-brand&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;?php echo site_url(); ?&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php bloginfo(&amp;#39;name&amp;#39;); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;A função &lt;a href=&quot;https://developer.wordpress.org/reference/functions/site_url/&quot;&gt;site_url()&lt;/a&gt; é nova, mas ela faz exatamente o que você deve ter imaginado: retornar o &lt;em&gt;link&lt;/em&gt; para a página inicial do &lt;em&gt;site&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Agora que temos um &lt;em&gt;link&lt;/em&gt; para a página inicial em nossa barra de navegação, podemos remover o &lt;em&gt;link&lt;/em&gt; para a página &amp;quot;Início&amp;quot;. Podemos fazer isso adicionando mais uma opção na chamada à função &lt;code&gt;wp_list_pages()&lt;/code&gt;, a opção &lt;code&gt;exclude&lt;/code&gt;. Antes de utilizá-la, teremos que descobrir o ID da página &amp;quot;Início&amp;quot;. Para isso, acesse a página pela área administrativa, como se fosse editá-la, e observe o endereço na barra de endereços do navegador:&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/wordpress-bootstrap-9.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/wordpress-bootstrap-9.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Nesse exemplo, a página &amp;quot;Início&amp;quot; tem o ID igual a 4 (no seu &lt;em&gt;site&lt;/em&gt; pode ser diferente). De posse desse ID, atualize a chamada à função &lt;code&gt;wp_list_pages()&lt;/code&gt; para (substituindo 4 pelo ID da sua página inicial):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;wp_list_pages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;title_li&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;exclude&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; se você utilizar esse código em temas futuros, se lembre de verificar o ID da página inicial e alterar a chamada à função &lt;code&gt;wp_list_pages()&lt;/code&gt; conforme necessário.&lt;/p&gt;
-
-&lt;p&gt;Ainda no arquivo &lt;code&gt;header.php&lt;/code&gt;, vamos fazer mais uma alteração. Vamos chamar as funções do WordPress &lt;a href=&quot;https://developer.wordpress.org/reference/functions/language_attributes/&quot;&gt;language_attributes()&lt;/a&gt; e &lt;code&gt;bloginfo(&amp;#39;charset&amp;#39;)&lt;/code&gt; para que as páginas do &lt;em&gt;site&lt;/em&gt; sejam servidas com as configurações de &lt;a href=&quot;https://codex.wordpress.org/Installing_WordPress_in_Your_Language&quot;&gt;idioma&lt;/a&gt; e &lt;a href=&quot;https://codex.wordpress.org/Editing_wp-config.php#Database_character_set&quot;&gt;codificação&lt;/a&gt; do &lt;em&gt;site&lt;/em&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;lt;?&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;php&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;language_attributes&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&amp;gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;?php bloginfo(&amp;#39;charset&amp;#39;); ?&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;X-UA-Compatible&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;IE=edge&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se você acessar seu &lt;em&gt;site&lt;/em&gt; pelo navegador e verificar o código-fonte da página, perceberá algo assim:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;pt-BR&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;UTF-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;X-UA-Compatible&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;IE=edge&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Agora seu arquivo &lt;code&gt;header.php&lt;/code&gt; deve estar assim:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;lt;?&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;php&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;language_attributes&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&amp;gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;?php bloginfo(&amp;#39;charset&amp;#39;); ?&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;X-UA-Compatible&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;IE=edge&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;viewport&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;width=device-width, initial-scale=1&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;author&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php wp_title(&amp;#39;|&amp;#39;, true, &amp;#39;right&amp;#39;); ?&amp;gt;&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php bloginfo(&amp;#39;name&amp;#39;); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- CSS --&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;?php bloginfo(&amp;#39;stylesheet_url&amp;#39;);?&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;c&quot;&gt;&amp;lt;!--[if lt IE 9]&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;            &amp;lt;script src=&amp;quot;https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;            &amp;lt;script src=&amp;quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;        &amp;lt;![endif]--&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php wp_head(); ?&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar navbar-inverse navbar-fixed-top&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-header&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-toggle collapsed&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-toggle=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;collapse&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-target=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#navbar&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-expanded=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;false&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;aria-controls=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sr-only&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Toggle navigation&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
-                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon-bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
-                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon-bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
-                        &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;icon-bar&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
-                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
-                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-brand&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;lt;?php echo site_url(); ?&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php bloginfo(&amp;#39;name&amp;#39;); ?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;navbar-collapse collapse&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;nav navbar-nav&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-                        &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php wp_list_pages(array(&amp;#39;title_li&amp;#39; =&amp;gt; &amp;#39;&amp;#39;, &amp;#39;exclude&amp;#39; =&amp;gt; 4)); ?&amp;gt;&lt;/span&gt;
-                    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--/.navbar-collapse --&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;em&gt;Widgets&lt;/em&gt; na barra lateral&lt;/h3&gt;
-
-&lt;p&gt;A última alteração no tema que faremos por hora será &amp;quot;&lt;em&gt;widgetizar&lt;/em&gt;&amp;quot; nosso tema. Isso nos permitirá adicionar &lt;a href=&quot;http://codex.wordpress.org/WordPress_Widgets&quot;&gt;&lt;em&gt;widgets&lt;/em&gt; do WordPress&lt;/a&gt; na nossa barra lateral.&lt;/p&gt;
-
-&lt;p&gt;Para suportar a exibição de &lt;em&gt;widgets&lt;/em&gt; nas páginas, precisaremos adicionar um pouco mais de código ao arquivo &lt;code&gt;functions.php&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Abra o arquivo &lt;code&gt;functions.php&lt;/code&gt; e acrescente o seguinte código ao final do arquivo:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;x&quot;&gt;if (function_exists(&amp;#39;register_sidebar&amp;#39;)) {&lt;/span&gt;
-&lt;span class=&quot;x&quot;&gt;    register_sidebar(array(&lt;/span&gt;
-&lt;span class=&quot;x&quot;&gt;        &amp;#39;before_title&amp;#39; =&amp;gt; &amp;#39;&amp;lt;h3&amp;gt;&amp;#39;,&lt;/span&gt;
-&lt;span class=&quot;x&quot;&gt;        &amp;#39;after_title&amp;#39; =&amp;gt; &amp;#39;&amp;lt;/h3&amp;gt;&amp;#39;,&lt;/span&gt;
-&lt;span class=&quot;x&quot;&gt;        &amp;#39;before_widget&amp;#39; =&amp;gt; &amp;#39;&amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;col-md-12&amp;quot;&amp;gt;&amp;#39;,&lt;/span&gt;
-&lt;span class=&quot;x&quot;&gt;        &amp;#39;after_widget&amp;#39; =&amp;gt; &amp;#39;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;#39;,&lt;/span&gt;
-&lt;span class=&quot;x&quot;&gt;    ));&lt;/span&gt;
-&lt;span class=&quot;x&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Feito isso, volte ao arquivo &lt;code&gt;sidebar.php&lt;/code&gt; e substitua o conteúdo estático pelo código que nos permitirá gerenciar os &lt;em&gt;widgets&lt;/em&gt; da barra lateral pela área administrativa:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;function_exists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;dynamic_sidebar&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dynamic_sidebar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;em&gt;Download&lt;/em&gt; do tema&lt;/h3&gt;
-
-&lt;p&gt;Se você teve algum problema em seguir esse tutorial (ou é do tipo que gosta de pegar o código fácil, já pronto), você pode &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/tree/f6cbd9e57e8c9c9cf97f1b50edb770f4f1f0d97f&quot;&gt;conferir&lt;/a&gt; ou &lt;a href=&quot;https://github.com/vinyanalista/wpbootstrap/archive/f6cbd9e57e8c9c9cf97f1b50edb770f4f1f0d97f.zip&quot;&gt;baixar&lt;/a&gt; o que fizemos até agora.&lt;/p&gt;
-
-&lt;h3&gt;Acabou? Ou ainda tem mais?&lt;/h3&gt;
-
-&lt;p&gt;Parabéns! Nesse exato momento nós temos um tema simples, mas funcional, que você pode começar a personalizar adicionando seus próprios estilos e conteúdo (lembrando que os estilos são adicionados ao arquivo &lt;code&gt;styles.css&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;A partir de agora você também deve se sentir confortável em editar por conta própria os &lt;em&gt;templates&lt;/em&gt; básicos que criamos nesse tutorial. Se estiver interessado, visite a lista de todas as possíveis &lt;a href=&quot;https://codex.wordpress.org/Template_Tags&quot;&gt;&lt;em&gt;tags&lt;/em&gt; para &lt;em&gt;templates&lt;/em&gt; do WordPress&lt;/a&gt; que você pode usar no seu &lt;em&gt;site&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Se esse é o seu primeiro tema do WordPress, então você começou bem! À medida que vamos aprendendo a construir temas do WordPress, aprendemos como tornar mais e mais coisas dinâmicas e configuráveis a partir da área administrativa, ao invés de fixadas no código.&lt;/p&gt;
-
-&lt;p&gt;O tema que construímos até aqui é bastante semelhante ao desenvolvido a partir do tutorial original em inglês, apresentado no &lt;a href=&quot;http://blog.teamtreehouse.com/responsive-wordpress-bootstrap-theme-tutorial&quot;&gt;Treehouse Blog&lt;/a&gt; e que inspirou a escrita deste em português. Nosso tema difere principalmente por utilizar a versão mais recente do Bootstrap até o momento.&lt;/p&gt;
-
-&lt;p&gt;Farei ainda mais uma parte apresentando algumas dicas de como tornar seu tema ainda mais interessante com o Bootstrap!&lt;/p&gt;
-
-&lt;p&gt;Abraço a todos e até a próxima!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 20 Aug 2015 07:00:00 -0300</pubDate>
-        <link>https://vinyanalista.github.io/blog/2015/08/20/wordpress-bootstrap-parte2/</link>
-        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/08/20/wordpress-bootstrap-parte2/</guid>
         
         
       </item>
