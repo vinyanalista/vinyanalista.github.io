@@ -5,9 +5,321 @@
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>https://vinyanalista.github.io/</link>
     <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Jun 2016 22:27:16 -0300</pubDate>
-    <lastBuildDate>Mon, 27 Jun 2016 22:27:16 -0300</lastBuildDate>
+    <pubDate>Mon, 30 Jan 2017 08:02:56 -0200</pubDate>
+    <lastBuildDate>Mon, 30 Jan 2017 08:02:56 -0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>pfSense autenticando no Active Directory (AD)</title>
+        <description>&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-01.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-01.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Se possuímos em uma mesma rede &lt;a href=&quot;https://www.pfsense.org/&quot;&gt;pfSense&lt;/a&gt; e &lt;a href=&quot;https://technet.microsoft.com/pt-br/library/jj206711.aspx&quot;&gt;Active Directory&lt;/a&gt; (AD), algumas possibilidades interessantes surgem, como: permitir que os administradores da rede (e apenas eles) acessem o pfSense com seus &lt;em&gt;logins&lt;/em&gt; e senhas do AD; permitir acesso remoto via VPN utilizando os mesmos &lt;em&gt;logins&lt;/em&gt; e senhas do AD; e exigir &lt;em&gt;login&lt;/em&gt; e senha do AD para que se possa navegar na rede Wi-Fi (ou em qualquer outra rede).&lt;/p&gt;
+
+&lt;p&gt;Nesse &lt;em&gt;post&lt;/em&gt;, você verá como explorar essas possibilidades.&lt;/p&gt;
+
+&lt;h2&gt;webConfigurator autenticando no AD&lt;/h2&gt;
+
+&lt;p&gt;A interface &lt;em&gt;web&lt;/em&gt; utilizada para configurar o pfSense é chamada de &lt;strong&gt;webConfigurator&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para acessá-la, devemos fornecer nome de usuário (&lt;em&gt;username&lt;/em&gt;) e senha (&lt;em&gt;password&lt;/em&gt;):&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-02.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-02.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Podemos configurá-la para que esse acesso utilize as mesmas credenciais do AD.&lt;/p&gt;
+
+&lt;p&gt;Para isso, precisaremos criar uma conta de usuário no AD para o pfSense, para que ele possa se conectar ao AD e validar as credenciais fornecidas na tela de &lt;em&gt;login&lt;/em&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-03.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-03.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Observe que o pfSense precisa de uma conta só para ele porque &lt;a href=&quot;https://technet.microsoft.com/pt-br/library/cc816788(v=ws.10).aspx&quot;&gt;o AD, por padrão, não permite conexão anônima (&lt;em&gt;anonymous bind&lt;/em&gt;)&lt;/a&gt;. Essa conta pode ser uma conta de usuário simples, não precisa de privilégios elevados.&lt;/p&gt;
+
+&lt;p&gt;Recomendo que você utilize uma senha aleatória gerada pelo &lt;em&gt;site&lt;/em&gt; &lt;a href=&quot;https://www.random.org/passwords/?num=5&amp;amp;len=15&amp;amp;format=html&quot;&gt;RANDOM.ORG&lt;/a&gt;. Você pode verificar que ela é segura no &lt;em&gt;site&lt;/em&gt; &lt;a href=&quot;https://howsecureismypassword.net/&quot;&gt;How Secure Is My Password?&lt;/a&gt; Desative a alteração de senha no próximo &lt;em&gt;logon&lt;/em&gt; e também a expiração da senha:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-04.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Agora acesse a interface &lt;em&gt;web&lt;/em&gt; do pfSense com um usuário local (por &lt;a href=&quot;https://doc.pfsense.org/index.php/Installing_pfSense#pfSense_Default_Configuration&quot;&gt;padrão&lt;/a&gt;, caso você não tenha alterado após a instalação, nome de usuário &lt;strong&gt;admin&lt;/strong&gt; e senha &lt;strong&gt;pfsense&lt;/strong&gt;, se você não alterou essa senha, recomendo que altere).&lt;/p&gt;
+
+&lt;p&gt;Vá em &lt;strong&gt;System&lt;/strong&gt;, &lt;strong&gt;User Manager&lt;/strong&gt;, aba &lt;strong&gt;Authentication Servers&lt;/strong&gt; e clique no botão &lt;strong&gt;Add&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Preencha o formulário com as informações sobre o seu domínio (a seguir, apresento exemplos, mas você deve alterar de acordo com a sua realidade):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Descriptive name:&lt;/strong&gt; AD da MINHACASA&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Type:&lt;/strong&gt; selecione &lt;strong&gt;LDAP&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hostname or IP address:&lt;/strong&gt; 10.200.1.30 ou ad.minhacasa.net (endereço IP ou nome de máquina completo do controlador de domínio)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search scope&lt;/strong&gt;:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Level:&lt;/strong&gt; selecione &lt;strong&gt;Entire Subtree&lt;/strong&gt; (pesquisar em toda a árvore do AD)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Base DN:&lt;/strong&gt; DC=minhacasa,DC=net&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authentication containers:&lt;/strong&gt; CN=Users&lt;/li&gt;
+&lt;li&gt;Desmarcar a opção &lt;strong&gt;Use anonymous binds to resolve distinguished names&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bind credentials&lt;/strong&gt;:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;User DN:&lt;/strong&gt; CN=pfSense,CN=Users,DC=minhacasa,DC=net&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password:&lt;/strong&gt; a senha do usuário criado para o pfSense&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Initial Template:&lt;/strong&gt; selecione &lt;strong&gt;Microsoft AD&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Para as demais opções, o padrão deve ser suficiente. Talvez você precise alterá-las de acordo com a configuração do seu controlador de domínio.&lt;/p&gt;
+
+&lt;p&gt;Abaixo você pode ver o formulário completo, depois de preenchido:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-05.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Agora, vamos testar se o pfSense consegue autenticar um usuário do AD.&lt;/p&gt;
+
+&lt;p&gt;Para isso, vá em &lt;strong&gt;Diagnostics&lt;/strong&gt;, &lt;strong&gt;Authentication&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Em &lt;strong&gt;Authentication Server&lt;/strong&gt;, selecione o AD que você acabou de cadastrar. Informe um nome de usuário e senha e clique em &lt;strong&gt;Test&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-06.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-06.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Se você digitou corretamente o nome de usuário e a senha, o pfSense deve mostrar uma mensagem de sucesso e listar os grupos do usuário, como na imagem acima.&lt;/p&gt;
+
+&lt;p&gt;Para que possamos acessar o webConfigurator com nossa conta do AD, ainda faltam mais duas configurações.&lt;/p&gt;
+
+&lt;p&gt;Vamos dar permissão a um grupo do AD para acessar todas as configurações (o grupo que contém os administradores de rede, por exemplo, &lt;strong&gt;TI-REDES&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;Vá em &lt;strong&gt;System&lt;/strong&gt;, &lt;strong&gt;User Manager&lt;/strong&gt;, aba &lt;strong&gt;Groups&lt;/strong&gt; e clique no botão &lt;strong&gt;Add&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Preencha o formulário com as informações sobre o grupo:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Group name:&lt;/strong&gt; TI-REDES&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scope:&lt;/strong&gt; selecione &lt;strong&gt;Remote&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Administradores da rede (um texto apenas para informação)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-07.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-07.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;De volta à tela que lista os grupos, na linha do grupo que acabamos de criar, clique no ícone do lápis para editar o grupo.&lt;/p&gt;
+
+&lt;p&gt;Na sessão &lt;strong&gt;Assigned Privileges&lt;/strong&gt;, clique no botão &lt;strong&gt;Add&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Selecione o privilégio &lt;strong&gt;WebCfg - All pages&lt;/strong&gt; e clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-08.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;De volta à tela anterior, clique em &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finalmente, vamos dizer que o AD é onde o pfSense deve buscar os usuários.&lt;/p&gt;
+
+&lt;p&gt;Clique na aba &lt;strong&gt;Settings&lt;/strong&gt;. Em &lt;strong&gt;Authentication Server&lt;/strong&gt;, selecione o AD. Clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-09.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-09.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Faça &lt;em&gt;log out&lt;/em&gt; do webConfigurator e entre de novo, dessa vez utilizando sua conta do AD (deve ser uma conta pertencente ao grupo configurado). Deve funcionar.&lt;/p&gt;
+
+&lt;p&gt;Se você fizer um teste utilizando uma conta do AD sem permissões previamente concedidas, o pfSense informará que não há uma página configurada para o usuário e oferecerá somente a opção de fazer &lt;em&gt;log out&lt;/em&gt;:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-10.png&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-10.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Você pode conceder diferentes permissões a diferentes grupos de usuários, por exemplo:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Técnicos do Suporte (grupo &lt;strong&gt;TI-SUPORTE&lt;/strong&gt;) podem acessar a lista de concessões DHCP para verificar qual endereço IP determinado computador recebeu, além de poder enviar comandos &lt;a href=&quot;https://pt.wikipedia.org/wiki/Wake-on-LAN&quot;&gt;Wake-on-LAN&lt;/a&gt; para ligar computadores pela rede, para isso são necessárias as permissões:
+
+&lt;ul&gt;
+&lt;li&gt;WebCfg - Status: DHCP leases&lt;/li&gt;
+&lt;li&gt;WebCfg - Services: Wake-on-LAN&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-11.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Programadores (grupo &lt;strong&gt;TI-DESENV&lt;/strong&gt;, assim nomeado porque o pfSense não aceita um nome de grupo maior que 16 caracteres) podem acessar as configurações do portal de captura (&lt;em&gt;captive portal&lt;/em&gt;) para personalizar as páginas HTML do portal de captura, para isso são necessárias as permissões:
+
+&lt;ul&gt;
+&lt;li&gt;WebCfg - Services: Captive portal&lt;/li&gt;
+&lt;li&gt;WebCfg - Services: Captive portal: Edit Zones&lt;/li&gt;
+&lt;li&gt;WebCfg - Services: Captive portal: File Manager&lt;/li&gt;
+&lt;li&gt;WebCfg - Services: Captive portal Zones&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-12.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Observe que, depois de tudo isso, ainda é possível entrar no webConfigurator com o usuário local &lt;strong&gt;admin&lt;/strong&gt; do pfSense. Por isso, é importante mudar a senha dele.&lt;/p&gt;
+
+&lt;h2&gt;VPN autenticando no AD&lt;/h2&gt;
+
+&lt;p&gt;No &lt;em&gt;post&lt;/em&gt; anterior, vimos &lt;a href=&quot;/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/&quot;&gt;como configurar uma VPN utilizando pfSense e OpenVPN&lt;/a&gt;. Recomendo que você siga todo aquele passo a passo e faça o teste da VPN utilizando o usuário local criado no tutorial especificamente para testar a VPN.&lt;/p&gt;
+
+&lt;p&gt;Vejamos agora como ajustar aquela configuração para que seja possível conectar à VPN informando &lt;em&gt;login&lt;/em&gt; e senha do AD.&lt;/p&gt;
+
+&lt;p&gt;No pfSense, vá em &lt;strong&gt;VPN&lt;/strong&gt;, &lt;strong&gt;OpenVPN&lt;/strong&gt;, aba &lt;strong&gt;Servers&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Clique no ícone do lápis para editar o servidor OpenVPN.&lt;/p&gt;
+
+&lt;p&gt;No campo &lt;strong&gt;Backend for authentication&lt;/strong&gt;, em vez de &lt;strong&gt;Local Database&lt;/strong&gt;, selecione o AD:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-13.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Clique no botão &lt;strong&gt;Save&lt;/strong&gt;, ao final da página.&lt;/p&gt;
+
+&lt;p&gt;Agora vamos obter a configuração que deve ser usada com o cliente OpenVPN. Diferente do &lt;a href=&quot;/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/&quot;&gt;tutorial anterior&lt;/a&gt;, em que baixamos do pfSense o instalador com cliente e configuração já prontos, aqui vamos baixar do pfSense apenas a configuração.&lt;/p&gt;
+
+&lt;p&gt;Vá em &lt;strong&gt;VPN&lt;/strong&gt;, &lt;strong&gt;OpenVPN&lt;/strong&gt;, aba &lt;strong&gt;Client Export&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Na linha referente a um usuário local qualquer (seguindo o exemplo do &lt;a href=&quot;/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/&quot;&gt;&lt;em&gt;post&lt;/em&gt; anterior&lt;/a&gt;, &lt;strong&gt;vinyanalista&lt;/strong&gt;), clique no botão &lt;strong&gt;Others&lt;/strong&gt;, abaixo de &lt;strong&gt;Inline Configurations&lt;/strong&gt;, para baixar um arquivo contendo a configuração do cliente OpenVPN:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-14.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-14.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;Ele deve se chamar algo como &lt;strong&gt;firewall-udp-1194-vinyanalista-config.ovpn&lt;/strong&gt;. Você pode renomeá-lo para, por exemplo, &lt;strong&gt;vpn-da-minhacasa.ovpn&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;No computador cliente (veremos aqui instruções para &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/&quot;&gt;Windows&lt;/a&gt;), baixe e instale o &lt;em&gt;software&lt;/em&gt; cliente do &lt;a href=&quot;https://openvpn.net/index.php/download/community-downloads.html&quot;&gt;&lt;em&gt;site&lt;/em&gt; do OpenVPN&lt;/a&gt;. A instalação é bem simples: no famoso estilo &lt;em&gt;next&lt;/em&gt;, &lt;em&gt;next&lt;/em&gt;, &lt;em&gt;next&lt;/em&gt;. Recomendo, se possível, remover qualquer versão mais antiga, incluindo arquivos de configuração (para referência, no momento da escrita o cliente oficial do OpenVPN se encontra na versão 2.4.0, lançada em &lt;a href=&quot;https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn24&quot;&gt;dezembro de 2016&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Terminada a instalação, copie o arquivo de configuração para a pasta onde o cliente OpenVPN guarda suas configurações:&lt;/p&gt;
+
+&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+    &lt;a href=&#39;/files/2017/01/pfsense-ad-15.jpg&#39; title=&#39;&#39;&gt;
+        &lt;img src=&#39;/files/2017/01/pfsense-ad-15.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+    &lt;/a&gt;
+    
+&lt;/p&gt;
+
+&lt;p&gt;No computador que eu utilizei, o caminho para essa pasta foi &lt;strong&gt;C:\Arquivos de Programas\OpenVPN\config&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Depois disso, é só iniciar o cliente OpenVPN, como explicado no &lt;a href=&quot;/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/&quot;&gt;&lt;em&gt;post&lt;/em&gt; anterior&lt;/a&gt;, e informar o usuário e a senha do AD para se conectar à VPN.&lt;/p&gt;
+
+&lt;p&gt;Deve funcionar normalmente.&lt;/p&gt;
+
+&lt;p&gt;Para &lt;a href=&quot;https://www.android.com/intl/pt-BR_br/&quot;&gt;Android&lt;/a&gt;, as instruções são bem semelhantes: baixe e instale o &lt;em&gt;software&lt;/em&gt; cliente pela &lt;a href=&quot;https://play.google.com/store/apps/details?id=net.openvpn.openvpn&quot;&gt;Play Store&lt;/a&gt; e baixe pelo pfSense o arquivo de configuração clicando no botão &lt;strong&gt;Android&lt;/strong&gt;, abaixo de &lt;strong&gt;Inline Configurations&lt;/strong&gt;. Esse arquivo deve se chamar algo como &lt;strong&gt;firewall-udp-1194-vinyanalista-android-config.ovpn&lt;/strong&gt;. Você pode renomeá-lo para, por exemplo, &lt;strong&gt;vpn-da-minhacasa-android.ovpn&lt;/strong&gt; e utilizá-lo no cliente OpenVPN, como mostrado no &lt;a href=&quot;/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/&quot;&gt;&lt;em&gt;post&lt;/em&gt; anterior&lt;/a&gt;. Lembre-se de agora utilizar usuário e senha do AD.&lt;/p&gt;
+
+&lt;h3&gt;Restringindo o acesso à VPN a um grupo do AD&lt;/h3&gt;
+
+&lt;p&gt;Configurando a VPN como foi explicado acima, qualquer pessoa pode se conectar à VPN utilizando suas credenciais do AD. Que tal adicionar um certo controle permitindo que apenas usuários pertencentes a determinado grupo se conectem?&lt;/p&gt;
+
+&lt;p&gt;Para isso, crie no AD um grupo chamado &lt;strong&gt;PFSENSE-VPN&lt;/strong&gt;. Adicione a esse grupo os usuários que poderão se conectar à VPN.&lt;/p&gt;
+
+&lt;p&gt;No pfSense, vá em &lt;strong&gt;System&lt;/strong&gt;, &lt;strong&gt;User Manager&lt;/strong&gt;, aba &lt;strong&gt;Authentication Servers&lt;/strong&gt; e clique no botão &lt;strong&gt;Add&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Preencha esse formulário com as mesmas informações que você informou antes, como se fosse cadastrar o AD de novo (de certa forma, é o que estamos fazendo, mas aqui seremos mais específicos). Ainda não clique em &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mude o nome (&lt;strong&gt;Descriptive name&lt;/strong&gt;) para &lt;strong&gt;AD da MINHACASA - grupo PFSENSE-VPN&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ative a opção &lt;strong&gt;Enable extended query&lt;/strong&gt; e preencha o campo &lt;strong&gt;Query&lt;/strong&gt; com:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;amp;(objectCategory=user)(memberOf=CN=PFSENSE-VPN,CN=Users,DC=minhacasa,DC=net)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Agora sim clique em &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vá em &lt;strong&gt;VPN&lt;/strong&gt;, &lt;strong&gt;OpenVPN&lt;/strong&gt;, aba &lt;strong&gt;Servers&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Clique no ícone do lápis para editar o servidor OpenVPN.&lt;/p&gt;
+
+&lt;p&gt;No campo &lt;strong&gt;Backend for authentication&lt;/strong&gt;, selecione &lt;strong&gt;AD da MINHACASA - grupo PFSENSE-VPN&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Clique no botão &lt;strong&gt;Save&lt;/strong&gt;, ao final da página.&lt;/p&gt;
+
+&lt;p&gt;Teste essa configuração tentando se conectar à VPN com um usuário que pertence e outro que não pertence ao grupo &lt;strong&gt;PFSENSE-VPN&lt;/strong&gt;. Deve funcionar só no primeiro caso.&lt;/p&gt;
+
+&lt;p&gt;Você pode no AD tornar o grupo &lt;strong&gt;TI-REDES&lt;/strong&gt; membro do grupo &lt;strong&gt;PFSENSE-VPN&lt;/strong&gt;. Assim, por transitividade, todos os administradores da rede ganham permissão para usar a VPN, sem a necessidade de ter que adicioná-los um por um ao grupo &lt;strong&gt;PFSENSE-VPN&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Rede Wi-Fi autenticando no AD&lt;/h2&gt;
+
+&lt;p&gt;Que tal prover para os funcionários da empresa uma rede Wi-Fi, mas só liberar o acesso mediante o fornecimento de &lt;em&gt;login&lt;/em&gt; e senha do AD?&lt;/p&gt;
+
+&lt;p&gt;Como ainda não fiz um &lt;em&gt;post&lt;/em&gt; sobre como gerenciar uma rede Wi-Fi com o pfSense, decidi deixar esse tópico para o próximo &lt;em&gt;post&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#author&quot;&gt;Siga-me&lt;/a&gt; para ser notificado quando ele for publicado.&lt;/p&gt;
+
+&lt;p&gt;No final das contas, percebi que este &lt;em&gt;post&lt;/em&gt; acabou sendo uma atualização do &lt;a href=&quot;/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/&quot;&gt;anterior&lt;/a&gt;, acrescentando a integração com o Active Directory. No próximo &lt;em&gt;post&lt;/em&gt;, teremos como novidade a rede Wi-Fi, incluindo a autenticação dela no AD.&lt;/p&gt;
+
+&lt;h2&gt;Referências&lt;/h2&gt;
+
+&lt;p&gt;Muito do que escrevi aqui aprendi na tentativa e erro e evoluindo conforme as demandas que iam surgindo no trabalho. Mas claro que comecei lendo alguns textos:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://forum.pfsense.org/index.php?topic=44689.0&quot;&gt;Tutorial PFFense 2.0: Active Directory -&amp;gt; User Manager&lt;/a&gt; (sic)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://thiago.oxente.org/2011/11/09/pfsense-2-0-e-openvpn-e-autenticando-no-windows-2008/&quot;&gt;pfSense 2.0 e OpenVPN Autenticando no Windows 2008 : Thiago Melo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/PFSENSE/comments/3hkm3x/ldap_authentication_against_security_group/&quot;&gt;ldap authentication against security group: PFSENSE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 30 Jan 2017 08:00:00 -0200</pubDate>
+        <link>https://vinyanalista.github.io/blog/2017/01/30/pfsense-autenticando-no-active-directory-ad/</link>
+        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2017/01/30/pfsense-autenticando-no-active-directory-ad/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Como criar uma VPN utilizando pfSense e OpenVPN</title>
@@ -2558,374 +2870,6 @@ REG ADD &lt;span class=&quot;s2&quot;&gt;&amp;quot;HKLM\SYSTEM\CurrentControlSet
         <pubDate>Wed, 16 Sep 2015 21:30:00 -0300</pubDate>
         <link>https://vinyanalista.github.io/blog/2015/09/16/como-desativar-a-inicializacao-rapida-do-windows/</link>
         <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/09/16/como-desativar-a-inicializacao-rapida-do-windows/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Botões de compartilhar e seguir com o AddThis</title>
-        <description>&lt;p&gt;As redes sociais são ferramentas poderosas para promover um &lt;em&gt;site&lt;/em&gt; e manter contato com os visitantes. O interessante é que eles mesmos podem ajudar na divulgação, especialmente se os botões para compartilhar estiverem bem visíveis na página. Mas, com tantas redes sociais que existem hoje, implementar (e manter) os botões de cada uma pode ser uma tarefa trabalhosa. &lt;/p&gt;
-
-&lt;p&gt;E agora, quem poderá nos ajudar?&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/addthis-00.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-00.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Esperava o &lt;a href=&quot;https://www.youtube.com/watch?v=VDWZtPQp6fI&quot;&gt;Chapolin Colorado&lt;/a&gt;? Não, dessa vez não será ele, mas o AddThis!&lt;/p&gt;
-
-&lt;p&gt;O &lt;a href=&quot;http://www.addthis.com&quot;&gt;AddThis&lt;/a&gt; é um serviço que pode ser integrado a um &lt;em&gt;site&lt;/em&gt; com o uso de um &lt;em&gt;widget&lt;/em&gt;. Ele permite aos visitantes do &lt;em&gt;site&lt;/em&gt; compartilhar a página visitada em uma variedade de redes sociais listadas no &lt;em&gt;widget&lt;/em&gt;, como &lt;a href=&quot;https://www.facebook.com/&quot;&gt;Facebook&lt;/a&gt;, &lt;a href=&quot;https://plus.google.com/&quot;&gt;Google+&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/&quot;&gt;Twitter&lt;/a&gt; e &lt;a href=&quot;https://www.linkedin.com/&quot;&gt;LinkedIn&lt;/a&gt;, apenas para citar alguns exemplos.&lt;/p&gt;
-
-&lt;p&gt;Você pode perceber o AddThis em ação neste &lt;em&gt;site&lt;/em&gt; que visita agora. Experimente procurar os &lt;em&gt;links&lt;/em&gt; de compartilhar e seguir, eles estão visíveis, acho que não terá dificuldade em identificá-los:&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/addthis-01.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;O AddThis também fornece estatísticas sobre o desempenho do seu &lt;em&gt;site&lt;/em&gt; nas redes sociais (por exemplo, quantos &lt;em&gt;links&lt;/em&gt; para o seu &lt;em&gt;site&lt;/em&gt; foram compartilhados no Facebook na última semana e quais páginas foram compartilhadas) e outras ferramentas para atrair e cativar os visitantes (como &lt;em&gt;popups&lt;/em&gt; que chamam a atenção de volta para o &lt;em&gt;site&lt;/em&gt; quando os visitantes estão prestes a deixá-lo).&lt;/p&gt;
-
-&lt;p&gt;Aqui veremos como criar uma conta no AddThis e adicionar ao &lt;em&gt;site&lt;/em&gt; os mesmos recursos que puderam ser percebidos na imagem acima:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.addthis.com/get/sharing-sidebar&quot;&gt;Barra lateral de compartilhamento&lt;/a&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.addthis.com/get/mobile-toolbar&quot;&gt;Barra móvel&lt;/a&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.addthis.com/get/sharing-buttons&quot;&gt;Botões de compartilhar&lt;/a&gt;; e&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.addthis.com/get/horizontal-follow-buttons&quot;&gt;Botões de seguir&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Criando uma conta no AddThis&lt;/h3&gt;
-
-&lt;p&gt;O AddThis oferece alguns serviços mediante pagamento, mas pode ser utilizado &lt;strong&gt;gratuitamente&lt;/strong&gt;. Para utilizar seus serviços, é necessário apenas se cadastrar. Acesse o site &lt;a href=&quot;http://www.addthis.com/&quot;&gt;www.addthis.com&lt;/a&gt; e clique em &lt;strong&gt;Sign In&lt;/strong&gt; (entrar), no canto superior direito da página:&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/addthis-02.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Essa é a página de &lt;em&gt;login&lt;/em&gt;, onde você tem acesso ao &lt;em&gt;link&lt;/em&gt; para se cadastrar no final da página:&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/addthis-03.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Você pode, se achar mais conveniente, entrar no AddThis com uma conta do &lt;a href=&quot;https://www.google.com.br/&quot;&gt;Google&lt;/a&gt;, Facebook ou Twitter. Clicando em um dos três botões, será iniciado o processo de &lt;em&gt;login&lt;/em&gt; na conta escolhida e vinculação da conta com o AddThis. Esse processo é muito fácil, não vou explicá-lo aqui. Caso tenha optado pela inscrição mais tradicional, continue lendo. Senão, avance para a próxima seção.&lt;/p&gt;
-
-&lt;p&gt;Clique em &lt;strong&gt;Create an Account&lt;/strong&gt; (criar uma conta). Você é então encaminhado para a página de registro:&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/addthis-04.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Digite seu email em &lt;strong&gt;Email Address&lt;/strong&gt;, uma senha em &lt;strong&gt;Password&lt;/strong&gt;, digite novamente essa senha (uma confirmação, por segurança) em &lt;strong&gt;Retype Password&lt;/strong&gt;, deixe marcada a opção &lt;strong&gt;Email me a monthly newsletter&lt;/strong&gt; (envie-me mensalmente notícias por e-mail) caso deseje acompanhar as novidades do AddThis (ou desmarque, caso contrário) e clique em &lt;strong&gt;Registrer&lt;/strong&gt; (registrar).&lt;/p&gt;
-
-&lt;p&gt;Na tela seguinte, será solicitado a você escolher um plano. Se deseja começar com o plano gratuito, clique em &lt;strong&gt;Select plan&lt;/strong&gt; abaixo de &lt;strong&gt;Basic&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/addthis-05.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Pronto, agora você já tem uma conta no AddThis! Vamos adicionar ao &lt;em&gt;site&lt;/em&gt; nosso primeiro serviço! Clique em &lt;strong&gt;Tools&lt;/strong&gt; (ferramentas), na barra de navegação superior, para ver a lista de todos os serviços disponibilizados pelo AddThis.&lt;/p&gt;
-
-&lt;h3&gt;JavaScript básico&lt;/h3&gt;
-
-&lt;p&gt;Os &lt;em&gt;widgets&lt;/em&gt; do AddThis são adicionados ao &lt;em&gt;site&lt;/em&gt; por meio de uma biblioteca JavaScript, que devemos referenciar. Após ter clicado em &lt;strong&gt;Tools&lt;/strong&gt;, e estar na página que lista os serviços do AddThis, clique em &lt;strong&gt;Get the Code&lt;/strong&gt; (obter o código).&lt;/p&gt;
-
-&lt;p&gt;Você será apresentado a um código como esse:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Go to www.addthis.com/dashboard to customize your tools --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-exemplo123456789&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;async&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Você pode copiar esse código e colar em &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381220-default-code#external-js&quot;&gt;qualquer lugar&lt;/a&gt; do código-fonte da sua página. Uma das opções mais comuns é colar dentro da &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;pt&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- ... --&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Go to www.addthis.com/dashboard to customize your tools --&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-exemplo123456789&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;async&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Outra opção comum é colar antes da &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;, ao final da página:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- ... --&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Go to www.addthis.com/dashboard to customize your tools --&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-exemplo123456789&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;async&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pronto, agora sim podemos começar a utilizar o AddThis. Mesmo que você utilize mais de um serviço, esse código deve ser inserido na página apenas uma vez.&lt;/p&gt;
-
-&lt;p&gt;De volta à página, feche o diálogo com o código para voltar à lista de serviços.&lt;/p&gt;
-
-&lt;h3&gt;Adicionando a barra lateral de compartilhamento&lt;/h3&gt;
-
-&lt;p&gt;Vamos começar adicionando a barra lateral de compartilhamento. Ela aparece na lateral esquerda ou direita da página e permite ao visitante compartilhá-la nas redes sociais.&lt;/p&gt;
-
-&lt;p&gt;Se você acessar este &lt;em&gt;site&lt;/em&gt; de um computador &lt;em&gt;desktop&lt;/em&gt;, verá a barra de compartilhamento em ação:&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/addthis-06.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Na lista de serviços do AddThis, abaixo de &lt;strong&gt;Sharing Sidebar&lt;/strong&gt; (barra lateral de compartilhamento), clique em &lt;strong&gt;Setup&lt;/strong&gt; (configurar):&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/addthis-07.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Aparecerá um diálogo com várias opções para você personalizar sua barra lateral de compartilhamento:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Chose a side&lt;/strong&gt; (escolha um lado): aqui você deve definir se a barra aparecerá à esquerda ou à direita;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt; (tema): escolha o tema preto, prata, branco ou transparente. Acredito que isso só se aplica a um botão da barra que permite escondê-la ou exibi-la novamente;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Title&lt;/strong&gt; (título): dê um nome à barra, pode ser o nome do seu &lt;em&gt;site&lt;/em&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Services&lt;/strong&gt; (serviços): escolha quais redes sociais serão apresentadas ao visitante na barra lateral. Você pode deixar o AddThis tomar essa decisão para cada visitante, opção &lt;strong&gt;Auto Personalization&lt;/strong&gt; (que eles recomendam), ou escolher você mesmo, opção &lt;strong&gt;Select Your Own&lt;/strong&gt;, caso em que você poderá escolher quais redes sociais aparecerão na barra e até mesmo alterar a ordem em que elas aparecem; e&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Number of Buttons&lt;/strong&gt; (número de botões): defina quantos botões devem aparecer na barra de compartilhamento, o padrão é 5, mas eu uso 7, uma quantidade que é confortável até mesmo para uma tela pequena, como a de um &lt;em&gt;netbook&lt;/em&gt; com resolução 1024x600.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Caso deseje visualizar mais opções, clique em &lt;strong&gt;Show more options&lt;/strong&gt;, mas vou me ater a explicar essas. Clique em &lt;strong&gt;Activate&lt;/strong&gt; (ativar) e depois em &lt;strong&gt;Ok&lt;/strong&gt; para finalizar.&lt;/p&gt;
-
-&lt;p&gt;Provavelmente, se você acessar seu &lt;em&gt;site&lt;/em&gt; agora, já verá o AddThis em ação. Caso ele não apareça, verifique se inseriu corretamente a referência à biblioteca JavaScript no código-fonte da página, atualize a página ou aguarde e faça um novo acesso. Pode ser que ele demore um pouco para começar a funcionar.&lt;/p&gt;
-
-&lt;p&gt;Vale lembrar que a barra lateral de compartilhamento é destinada aos computadores &lt;em&gt;desktop&lt;/em&gt;, ela não aparece em dispositivos móveis como &lt;em&gt;smartphones&lt;/em&gt; e &lt;em&gt;tablets&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Vamos agora configurar uma barra própria para os visitantes que acessarem nosso &lt;em&gt;site&lt;/em&gt; por esses dispositivos.&lt;/p&gt;
-
-&lt;h3&gt;Adicionando a barra móvel&lt;/h3&gt;
-
-&lt;p&gt;A barra móvel apresenta ao visitante que acessa o &lt;em&gt;site&lt;/em&gt; por dispositivos móveis opções para segui-lo nas redes sociais ou compartilhar a página. Ela aparece flutuando acima ou abaixo do conteúdo.&lt;/p&gt;
-
-&lt;p&gt;Se você acessar este &lt;em&gt;site&lt;/em&gt; de um &lt;em&gt;smartphone&lt;/em&gt; ou &lt;em&gt;tablet&lt;/em&gt;, verá a barra móvel em ação:&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/addthis-08.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Na lista de serviços do AddThis, abaixo de &lt;strong&gt;Mobile Toolbar&lt;/strong&gt; (barra móvel), clique em &lt;strong&gt;Setup&lt;/strong&gt; (configurar).&lt;/p&gt;
-
-&lt;p&gt;Aparecerá um diálogo com várias opções para você personalizar sua barra móvel:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Position&lt;/strong&gt; (posição): aqui você deve definir se a barra aparecerá embaixo (&lt;strong&gt;Bottom&lt;/strong&gt;) ou no topo (&lt;strong&gt;Top&lt;/strong&gt;) da tela;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Theme&lt;/strong&gt; (tema): escolha o tema preto, prata ou branco;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Share&lt;/strong&gt; (compartilhar): defina se a barra móvel deve exibir opções para compartilhar a página, opção &lt;strong&gt;On&lt;/strong&gt; (ativado), ou não, opção &lt;strong&gt;Off&lt;/strong&gt; (desativado);&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Follow&lt;/strong&gt; (seguir): defina se a barra móvel deve exibir opções para seguir o &lt;em&gt;site&lt;/em&gt; nas redes sociais, opção &lt;strong&gt;On&lt;/strong&gt; (ativado), ou não, opção &lt;strong&gt;Off&lt;/strong&gt; (desativado); e&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Follow Services&lt;/strong&gt; (serviços para seguir): nessa opção são apresentados vários campos nos quais você deve informar o endereço para os seus perfis em cada uma das redes sociais que serão apresentadas na barra móvel, não é necessário informar todos, apenas os que você possuir.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Caso deseje visualizar mais opções, clique em &lt;strong&gt;Show more options&lt;/strong&gt;, mas vou me ater a explicar essas. Clique em &lt;strong&gt;Activate&lt;/strong&gt; (ativar).&lt;/p&gt;
-
-&lt;p&gt;Se você acessar seu &lt;em&gt;site&lt;/em&gt; por um &lt;em&gt;smartphone&lt;/em&gt; ou &lt;em&gt;tablet&lt;/em&gt;, provavelmente já verá a barra móvel do AddThis em ação.&lt;/p&gt;
-
-&lt;h3&gt;Adicionando botões de compartilhar&lt;/h3&gt;
-
-&lt;p&gt;Os botões de compartilhar chamam a atenção dos visitantes e os estimula a compartilhar &lt;em&gt;links&lt;/em&gt; para o &lt;em&gt;site&lt;/em&gt; nas redes sociais.&lt;/p&gt;
-
-&lt;p&gt;Neste &lt;em&gt;site&lt;/em&gt;, você pode perceber os botões de compartilhar logo abaixo dos títulos das postagens, em tamanho pequeno, e também nas páginas das postagens após o conteúdo, antes dos comentários, em tamanho grande:&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/addthis-09.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;Os &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/815564-available-button-sizes&quot;&gt;tamanhos disponibilizados pelo AddThis&lt;/a&gt; são:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;pequeno (16x16),&lt;/li&gt;
-&lt;li&gt;médio (20x20) e&lt;/li&gt;
-&lt;li&gt;grande (32x32).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;O processo de configuração desses botões é bastante semelhante ao das barras que vimos anteriormente, com a principal diferença que, ao final, você deverá copiar e colar um código como esse no lugar em que deseja que os botões apareçam em sua página:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Go to www.addthis.com/dashboard to customize your tools --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_sharing_toolbox&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Aqui estou mais interessado em explicar &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/1365467-preferred-services-personalization&quot;&gt;como configurar os botões de compartilhar manualmente&lt;/a&gt;, para obter um maior controle sobre o AddThis.&lt;/p&gt;
-
-&lt;p&gt;Neste &lt;em&gt;site&lt;/em&gt;, eu utilizei o seguinte código abaixo dos títulos das postagens, para os botões pequenos:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Button BEGIN --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_toolbox addthis_default_style&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_facebook&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_twitter&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-via=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vinyanalista&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_google_plusone_share&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_favorites&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_compact&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_counter addthis_bubble_style&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Button END --&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;E o seguinte código nas páginas das postagens, para os botões grandes:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Button BEGIN --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_toolbox addthis_default_style addthis_32x32_style gap&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_facebook&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_twitter&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_google_plusone_share&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_email&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_favorites&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis addthis_button_print&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_pdfonline&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_compact&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_counter addthis_bubble_style&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Button END --&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;O AddThis permite integrar o seu &lt;em&gt;site&lt;/em&gt; a mais de 350 redes sociais. Uma lista de todas as redes suportadas pelo AddThis pode ser encontrada na página &lt;a href=&quot;https://www.addthis.com/services&quot;&gt;Service Directory&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Para &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/125611-available-services&quot;&gt;adicionar o botão de compartilhar de uma rede&lt;/a&gt;, procure essa rede na lista e verifique seu código. Por exemplo, no caso do &lt;a href=&quot;http://www.reddit.com/&quot;&gt;Reddit&lt;/a&gt;, é &lt;code&gt;reddit&lt;/code&gt;. Então, crie um &lt;em&gt;link&lt;/em&gt; (&lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;) com a classe igual a &lt;code&gt;addthis_button_&lt;/code&gt; mais o código da rede (nesse exemplo, &lt;code&gt;reddit&lt;/code&gt;), assim:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_reddit&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Podemos também configurar o que será compartilhado nas redes sociais a partir desses botões usando a variável global &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/1337996-the-addthis_share-variable&quot;&gt;addthis_share&lt;/a&gt;, reconhecida pela biblioteca JavaScript do AddThis, como no exemplo a seguir:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;addthis_share&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://vinyanalista.github.io/blog/2015/08/06/wordpress-bootstrap/&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Como criar um tema responsivo do WordPress com o Bootstrap - Antônio Vinícius&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Nesse tutorial, você aprenderá a criar um tema responsivo do WordPress usando o Bootstrap. Com um tema responsivo, seu blog ou site com WordPress aparecerá bem na grande variedade de dispositivos (computadores, smartphones e tablets) e navegadores existentes.&amp;#39;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Explicando cada uma dessas opções:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;url&lt;/code&gt;: permite definir manualmente o endereço a ser compartilhado. Por padrão, o AddThis utiliza o endereço encontrado na barra de endereços do navegador;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;title&lt;/code&gt;: permite definir manualmente o título a ser compartilhado. Por padrão, o AddThis utiliza o título encontrado na janela do navegador; e&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;description&lt;/code&gt;: permite definir manualmente a descrição a ser compartilhada. O AddThis não possui um padrão para essa configuração, de modo que, se ela não for definida manualmente, cada rede social apresentará à sua maneira uma descrição para a página compartilhada.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Também é possível fazer a &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/1365475-attribute-based-configuration&quot;&gt;configuração usando atributos HTML&lt;/a&gt;, como no exemplo:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Button BEGIN --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_toolbox addthis_default_style&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://vinyanalista.github.io/blog/2015/08/06/wordpress-bootstrap/&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Como criar um tema responsivo do WordPress com o Bootstrap - Antônio Vinícius&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:description=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Nesse tutorial, você aprenderá a criar um tema responsivo do WordPress usando o Bootstrap. Com um tema responsivo, seu blog ou site com WordPress aparecerá bem na grande variedade de dispositivos (computadores, smartphones e tablets) e navegadores existentes.&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_facebook&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_twitter&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-via=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vinyanalista&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_google_plusone_share&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_favorites&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_compact&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_counter addthis_bubble_style&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Button END --&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Essa configuração local de cada &lt;em&gt;link&lt;/em&gt; por meio dos atributos &lt;code&gt;addthis:url&lt;/code&gt;, &lt;code&gt;addthis:title&lt;/code&gt; e &lt;code&gt;addthis:description&lt;/code&gt; é especialmente útil nos &lt;em&gt;blogs&lt;/em&gt;, em páginas onde há uma lista de &lt;em&gt;posts&lt;/em&gt; e os botões de compartilhar são exibidos para cada &lt;em&gt;post&lt;/em&gt; (veja a página inicial deste &lt;em&gt;site&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;Se estiver preocupado com a validação do HTML do seu &lt;em&gt;site&lt;/em&gt;, declare o &lt;em&gt;namespace&lt;/em&gt; do AddThis na &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:addthis=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://www.addthis.com/help/api-spec&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;O AddThis também possibilita &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381237-third-party-buttons&quot;&gt;configurar os botões nativos das redes sociais mais populares&lt;/a&gt;, como Facebook, Twitter, Google+, LinkedIn, entre outras. Com esses botões, você pode, por exemplo, exibir os contadores de compartilhamentos em cada uma dessas redes.&lt;/p&gt;
-
-&lt;p&gt;Se quiser conhecer ainda mais opções para personalizar os botões de compartilhar, consulte a &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/1337989-overview&quot;&gt;documentação da API dos botões de compartilhamento do AddThis&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;Adicionando os botões de seguir&lt;/h3&gt;
-
-&lt;p&gt;Os botões de seguir apresentam &lt;em&gt;links&lt;/em&gt; para perfis em redes sociais, por meio dos quais os visitantes podem acompanhar suas postagens. O AddThis disponibiliza três versões desses botões para uso: &lt;a href=&quot;https://www.addthis.com/get/horizontal-follow-buttons&quot;&gt;horizontal&lt;/a&gt;, &lt;a href=&quot;https://www.addthis.com/get/vertical-follow-buttons&quot;&gt;vertical&lt;/a&gt; e &lt;a href=&quot;https://www.addthis.com/get/follow-header&quot;&gt;flutuante&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Vamos aqui nos ater à versão horizontal, a mesma utilizada neste &lt;em&gt;site&lt;/em&gt;:&lt;/p&gt;
-
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/08/addthis-10.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/08/addthis-10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
-
-&lt;p&gt;O recomendado é adicionar esses botões à barra lateral ou ao cabeçalho da página.&lt;/p&gt;
-
-&lt;p&gt;Os tamanhos disponibilizados pelo AddThis para os &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/1985837-follow-buttons&quot;&gt;botões de seguir&lt;/a&gt; são os mesmos disponibilizados para os botões de compartilhar:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;pequeno (16x16),&lt;/li&gt;
-&lt;li&gt;médio (20x20) e&lt;/li&gt;
-&lt;li&gt;grande (32x32).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;O processo de configuração dos botões de seguir é bastante semelhante ao das barras que vimos anteriormente, com a principal diferença que, ao final, você deverá copiar e colar um código como esse no lugar em que deseja que os botões apareçam em sua página:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Go to www.addthis.com/dashboard to customize your tools --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_horizontal_follow_toolbox&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Aqui estou mais interessado em explicar como configurar os botões de seguir manualmente, para obter um maior controle sobre o AddThis.&lt;/p&gt;
-
-&lt;p&gt;Neste &lt;em&gt;site&lt;/em&gt;, eu utilizei o seguinte código:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Follow BEGIN --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_toolbox addthis_32x32_style addthis_default_style&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_facebook_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;pages/vinyanalistacombr/1604841683119097&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_twitter_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vinyanalista&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_linkedin_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vinyanalista&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_google_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;112036205302761713933&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_youtube_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;viniciusifse&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_foursquare_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vinyanalista&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_github_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vinyanalista&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- AddThis Follow END --&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;A lógica é bem semelhante à dos botões de compartilhar: para adicionar o botão de seguir de uma rede, crie um &lt;em&gt;link&lt;/em&gt; (&lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;) com a classe igual a &lt;code&gt;addthis_button_&lt;/code&gt; mais o código da rede mais &lt;code&gt;_follow&lt;/code&gt;. Além disso, use o atributo &lt;code&gt;addthis:userid&lt;/code&gt; para informar seu usuário na rede social desejada.&lt;/p&gt;
-
-&lt;p&gt;Então, um botão de seguir para a rede social &lt;a href=&quot;https://instagram.com/&quot;&gt;Instagram&lt;/a&gt;, por exemplo, seria assim:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;addthis_button_instagram_follow&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;addthis:userid=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;seu_usuario&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Se estiver preocupado com a validação do HTML do seu &lt;em&gt;site&lt;/em&gt;, certifique-se de declarar o &lt;em&gt;namespace&lt;/em&gt; do AddThis na &lt;em&gt;tag&lt;/em&gt; &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:addthis=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://www.addthis.com/help/api-spec&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Pronto! Agora já temos uma boa integração do AddThis com o nosso &lt;em&gt;site&lt;/em&gt;. Vamos apenas ver mais alguns detalhes.&lt;/p&gt;
-
-&lt;h3&gt;Mais alguns detalhes&lt;/h3&gt;
-
-&lt;p&gt;Com relação à &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381215-localization&quot;&gt;tradução&lt;/a&gt;, o AddThis suporta &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381240-languages&quot;&gt;mais de 50 idiomas&lt;/a&gt; e por padrão utiliza o mesmo idioma da interface do navegador (se você usa o &lt;a href=&quot;https://www.mozilla.org/pt-BR/firefox/&quot;&gt;Mozilla Firefox&lt;/a&gt; em português, por exemplo, verá &lt;em&gt;tooltips&lt;/em&gt; em português ao apontar o cursor para um botão do AddThis). No entanto, também é possível definir o idioma a ser utilizado manualmente.&lt;/p&gt;
-
-&lt;p&gt;Para fazer essa e outras configurações, usamos a variável global &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/1337994-the-addthis_config-variable&quot;&gt;addthis_config&lt;/a&gt;, reconhecida pela biblioteca JavaScript do AddThis.&lt;/p&gt;
-
-&lt;p&gt;Como exemplo, veja a configuração que eu utilizo neste &lt;em&gt;site&lt;/em&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;addthis_config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;s1&quot;&gt;&amp;#39;data_track_addressbar&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s1&quot;&gt;&amp;#39;data_track_clickback&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;s1&quot;&gt;&amp;#39;ui_language&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;pt&amp;#39;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Explicando cada uma dessas opções:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;data_track_addressbar&lt;/code&gt;: se ativada (&lt;code&gt;true&lt;/code&gt;, verdadeiro, é o padrão), faz com que o AddThis adicione um código ao final do endereço presente na barra de endereços do navegador. Esse código permite ao AddThis &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381254-address-bar-sharing-analytics&quot;&gt;monitorar os compartilhamentos pela barra de endereços&lt;/a&gt;, ou seja, quantas pessoas compartilham seu &lt;em&gt;site&lt;/em&gt; copiando e colando o &lt;em&gt;link&lt;/em&gt; em um e-mail, mensagem instantânea ou outros canais. Quando alguém clica em um &lt;em&gt;link&lt;/em&gt; compartilhado dessa maneira, outras ferramentas reportam incorretamente esse acesso como acesso direito ao &lt;em&gt;site&lt;/em&gt; (como se a pessoa que recebeu o &lt;em&gt;link&lt;/em&gt; tivesse digitado manualmente o endereço e acessado por iniciativa própria a página), ignorando que houve aí, na verdade, um compartilhamento;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;data_track_clickback&lt;/code&gt;: se ativada (&lt;code&gt;true&lt;/code&gt;, verdadeiro, é o padrão), faz com que o AddThis adicione uma variável ao final dos &lt;em&gt;links&lt;/em&gt; compartilhados. Essa variável permite ao AddThis &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381252-click-tracking&quot;&gt;monitorar cliques&lt;/a&gt;, ou seja, quantas pessoas visitaram seu &lt;em&gt;site&lt;/em&gt; clicando em um &lt;em&gt;link&lt;/em&gt; compartilhado usando um botão do AddThis. Altamente recomendada; e&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ui_language&lt;/code&gt;: permite definir manualmente o idioma a ser utilizado pela interface do AddThis. Por padrão, o AddThis utiliza o mesmo idioma da interface do navegador.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Vale observar que por padrão o AddThis envia semanalmente para o e-mail cadastrado um relatório com o desempenho do &lt;em&gt;site&lt;/em&gt; nas redes sociais. Além disso, ele também envia um &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381256-alerts&quot;&gt;alerta&lt;/a&gt; sempre que seu &lt;em&gt;site&lt;/em&gt; recebe de repente um volume de acessos acima do normal.&lt;/p&gt;
-
-&lt;p&gt;O AddThis é tão inteligente, que você pode integrá-lo até mesmo a um &lt;a href=&quot;http://support.addthis.com/customer/portal/articles/381245-custom-services&quot;&gt;serviço personalizado&lt;/a&gt; (uma rede social que ele não conhece).&lt;/p&gt;
-
-&lt;h3&gt;Isso é tudo, pessoal&lt;/h3&gt;
-
-&lt;p&gt;É isso, espero que este &lt;em&gt;post&lt;/em&gt; possa ser útil para o seu &lt;em&gt;site&lt;/em&gt; e que o AddThis o auxilie na divulgação do seu &lt;em&gt;site&lt;/em&gt; da mesma forma que está me ajudando a divulgar o meu.&lt;/p&gt;
-
-&lt;p&gt;Em caso de dúvidas, não deixe de consultar a rica &lt;a href=&quot;http://support.addthis.com&quot;&gt;documentação do AddThis&lt;/a&gt;. Não se acanhe de fazer uma pergunta lá (ou aqui, nos comentários).&lt;/p&gt;
-
-&lt;p&gt;Se gostou do &lt;em&gt;post&lt;/em&gt;, que tal clicar nos botões do AddThis abaixo e compartilhar este &lt;em&gt;post&lt;/em&gt; em todas as redes sociais possíveis?&lt;/p&gt;
-</description>
-        <pubDate>Sat, 29 Aug 2015 23:00:00 -0300</pubDate>
-        <link>https://vinyanalista.github.io/blog/2015/08/29/addthis/</link>
-        <guid isPermaLink="true">https://vinyanalista.github.io/blog/2015/08/29/addthis/</guid>
         
         
       </item>
