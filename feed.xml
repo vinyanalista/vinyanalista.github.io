@@ -5,8 +5,8 @@
     <description>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</description>
     <link>https://vinyanalista.github.io/</link>
     <atom:link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 Jul 2017 01:27:11 -0300</pubDate>
-    <lastBuildDate>Mon, 03 Jul 2017 01:27:11 -0300</lastBuildDate>
+    <pubDate>Sun, 13 Aug 2017 15:14:13 -0300</pubDate>
+    <lastBuildDate>Sun, 13 Aug 2017 15:14:13 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -17,12 +17,12 @@
 
 &lt;p&gt;Felizmente, o XenServer nos permite configurá-lo para iniciar máquinas virtuais logo após a inicialização do virtualizador. Como fazer isso é o que você verá nesse &lt;em&gt;post&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/07/xenserver.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/07/xenserver.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/07/xenserver.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/07/xenserver.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Se você está acostumado com a interface gráfica de gerenciamento do XenServer para &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/&quot;&gt;Windows&lt;/a&gt;, o &lt;a href=&quot;https://xenserver.org/partners/developing-products-for-xenserver/21-xencenter-development/88-xc-dev-home.html&quot;&gt;XenCenter&lt;/a&gt;, saiba que não contará com sua conveniência dessa vez. A &lt;a href=&quot;https://support.citrix.com/article/CTX133910&quot;&gt;documentação do XenServer&lt;/a&gt; informa que essa configuração foi removida do XenCenter na versão 6.0 por interferir de forma imprevisível em funcionalidades de &lt;a href=&quot;https://pt.wikipedia.org/wiki/Sistema_de_alta_disponibilidade&quot;&gt;alta disponibilidade (&lt;em&gt;high availability&lt;/em&gt;)&lt;/a&gt;. Mas você verá como é fácil fazer essa configuração pela linha de comando.&lt;/p&gt;
 
@@ -104,12 +104,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
     
       <item>
         <title>pfSense autenticando no Active Directory (AD)</title>
-        <description>&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-01.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-01.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+        <description>&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-01.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-01.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Se possuímos em uma mesma rede &lt;a href=&quot;https://www.pfsense.org/&quot;&gt;pfSense&lt;/a&gt; e &lt;a href=&quot;https://technet.microsoft.com/pt-br/library/jj206711.aspx&quot;&gt;Active Directory&lt;/a&gt; (AD), algumas possibilidades interessantes surgem, como: permitir que os administradores da rede (e apenas eles) acessem o pfSense com seus &lt;em&gt;logins&lt;/em&gt; e senhas do AD; permitir acesso remoto via VPN utilizando os mesmos &lt;em&gt;logins&lt;/em&gt; e senhas do AD; e exigir &lt;em&gt;login&lt;/em&gt; e senha do AD para que se possa navegar na rede Wi-Fi (ou em qualquer outra rede).&lt;/p&gt;
 
@@ -121,34 +121,34 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Para acessá-la, devemos fornecer nome de usuário (&lt;em&gt;username&lt;/em&gt;) e senha (&lt;em&gt;password&lt;/em&gt;):&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-02.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-02.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-02.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-02.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Podemos configurá-la para que esse acesso utilize as mesmas credenciais do AD.&lt;/p&gt;
 
 &lt;p&gt;Para isso, precisaremos criar uma conta de usuário no AD para o pfSense, para que ele possa se conectar ao AD e validar as credenciais fornecidas na tela de &lt;em&gt;login&lt;/em&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-03.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-03.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-03.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-03.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Observe que o pfSense precisa de uma conta só para ele porque &lt;a href=&quot;https://technet.microsoft.com/pt-br/library/cc816788(v=ws.10).aspx&quot;&gt;o AD, por padrão, não permite conexão anônima (&lt;em&gt;anonymous bind&lt;/em&gt;)&lt;/a&gt;. Essa conta pode ser uma conta de usuário simples, não precisa de privilégios elevados.&lt;/p&gt;
 
 &lt;p&gt;Recomendo que você utilize uma senha aleatória gerada pelo &lt;em&gt;site&lt;/em&gt; &lt;a href=&quot;https://www.random.org/passwords/?num=5&amp;amp;len=15&amp;amp;format=html&quot;&gt;RANDOM.ORG&lt;/a&gt;. Você pode verificar que ela é segura no &lt;em&gt;site&lt;/em&gt; &lt;a href=&quot;https://howsecureismypassword.net/&quot;&gt;How Secure Is My Password?&lt;/a&gt; Desative a alteração de senha no próximo &lt;em&gt;logon&lt;/em&gt; e também a expiração da senha:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-04.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-04.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Agora acesse a interface &lt;em&gt;web&lt;/em&gt; do pfSense com um usuário local (por &lt;a href=&quot;https://doc.pfsense.org/index.php/Installing_pfSense#pfSense_Default_Configuration&quot;&gt;padrão&lt;/a&gt;, caso você não tenha alterado após a instalação, nome de usuário &lt;strong&gt;admin&lt;/strong&gt; e senha &lt;strong&gt;pfsense&lt;/strong&gt;, se você não alterou essa senha, recomendo que altere).&lt;/p&gt;
 
@@ -181,12 +181,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Abaixo você pode ver o formulário completo, depois de preenchido:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-05.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-05.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
 
@@ -196,12 +196,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Em &lt;strong&gt;Authentication Server&lt;/strong&gt;, selecione o AD que você acabou de cadastrar. Informe um nome de usuário e senha e clique em &lt;strong&gt;Test&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-06.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-06.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-06.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-06.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Se você digitou corretamente o nome de usuário e a senha, o pfSense deve mostrar uma mensagem de sucesso e listar os grupos do usuário, como na imagem acima.&lt;/p&gt;
 
@@ -219,12 +219,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 &lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Administradores da rede (um texto apenas para informação)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-07.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-07.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-07.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-07.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
 
@@ -234,12 +234,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Selecione o privilégio &lt;strong&gt;WebCfg - All pages&lt;/strong&gt; e clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-08.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-08.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;De volta à tela anterior, clique em &lt;strong&gt;Save&lt;/strong&gt;.&lt;/p&gt;
 
@@ -247,23 +247,23 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Clique na aba &lt;strong&gt;Settings&lt;/strong&gt;. Em &lt;strong&gt;Authentication Server&lt;/strong&gt;, selecione o AD. Clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-09.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-09.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-09.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-09.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Faça &lt;em&gt;log out&lt;/em&gt; do webConfigurator e entre de novo, dessa vez utilizando sua conta do AD (deve ser uma conta pertencente ao grupo configurado). Deve funcionar.&lt;/p&gt;
 
 &lt;p&gt;Se você fizer um teste utilizando uma conta do AD sem permissões previamente concedidas, o pfSense informará que não há uma página configurada para o usuário e oferecerá somente a opção de fazer &lt;em&gt;log out&lt;/em&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-10.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-10.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-10.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-10.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Você pode conceder diferentes permissões a diferentes grupos de usuários, por exemplo:&lt;/p&gt;
 
@@ -276,12 +276,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-11.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-11.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Programadores (grupo &lt;strong&gt;TI-DESENV&lt;/strong&gt;, assim nomeado porque o pfSense não aceita um nome de grupo maior que 16 caracteres) podem acessar as configurações do portal de captura (&lt;em&gt;captive portal&lt;/em&gt;) para personalizar as páginas HTML do portal de captura, para isso são necessárias as permissões:
@@ -294,12 +294,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-12.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-12.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Observe que, depois de tudo isso, ainda é possível entrar no webConfigurator com o usuário local &lt;strong&gt;admin&lt;/strong&gt; do pfSense. Por isso, é importante mudar a senha dele.&lt;/p&gt;
 
@@ -315,12 +315,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;No campo &lt;strong&gt;Backend for authentication&lt;/strong&gt;, em vez de &lt;strong&gt;Local Database&lt;/strong&gt;, selecione o AD:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-13.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-13.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Clique no botão &lt;strong&gt;Save&lt;/strong&gt;, ao final da página.&lt;/p&gt;
 
@@ -330,12 +330,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Na linha referente a um usuário local qualquer (seguindo o exemplo do &lt;a href=&quot;/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/&quot;&gt;&lt;em&gt;post&lt;/em&gt; anterior&lt;/a&gt;, &lt;strong&gt;vinyanalista&lt;/strong&gt;), clique no botão &lt;strong&gt;Others&lt;/strong&gt;, abaixo de &lt;strong&gt;Inline Configurations&lt;/strong&gt;, para baixar um arquivo contendo a configuração do cliente OpenVPN:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-14.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-14.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-14.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-14.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Ele deve se chamar algo como &lt;strong&gt;firewall-udp-1194-vinyanalista-config.ovpn&lt;/strong&gt;. Você pode renomeá-lo para, por exemplo, &lt;strong&gt;vpn-da-minhacasa.ovpn&lt;/strong&gt;.&lt;/p&gt;
 
@@ -343,12 +343,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Terminada a instalação, copie o arquivo de configuração para a pasta onde o cliente OpenVPN guarda suas configurações:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2017/01/pfsense-ad-15.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2017/01/pfsense-ad-15.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2017/01/pfsense-ad-15.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2017/01/pfsense-ad-15.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;No computador que eu utilizei, o caminho para essa pasta foi &lt;strong&gt;C:\Arquivos de Programas\OpenVPN\config&lt;/strong&gt;.&lt;/p&gt;
 
@@ -416,12 +416,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
     
       <item>
         <title>Como criar uma VPN utilizando pfSense e OpenVPN</title>
-        <description>&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-01.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-01.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+        <description>&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-01.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-01.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;O &lt;a href=&quot;https://www.pfsense.org/&quot;&gt;pfSense&lt;/a&gt; é uma solução de &lt;em&gt;firewall&lt;/em&gt; incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-lo. Ele permite criar VPNs utilizando, dentre outros protocolos, o &lt;a href=&quot;https://openvpn.net/&quot;&gt;OpenVPN&lt;/a&gt;, que é &lt;a href=&quot;http://softwarelivre.org/portal/o-que-e&quot;&gt;livre&lt;/a&gt;, versátil e seguro sem abrir mão da praticidade, motivos pelos quais é amplamente difundido.&lt;/p&gt;
 
@@ -431,31 +431,33 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Ela funciona assim: os dois computadores pertencem, a princípio, a redes diferentes (eles podem estar em prédios, cidades ou até mesmo países diferentes, por exemplo). Mas eles precisam se comunicar e possuem conexão com a Internet. Então, eles estabelecem na rede mundial um circuito por onde trocam informações de forma privada. É como uma ligação telefônica que não pudesse ser grampeada.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-02.jpg&#39; title=&#39;Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-02.jpg&#39; alt=&#39;Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-02.jpg&#39; title=&#39;Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-02.jpg&#39; alt=&#39;Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Para quem utiliza esses computadores, é imperceptível que eles estão distantes. É como se eles estivessem conectados diretamente por um cabo, apesar de esse cabo não existir de verdade (por isso, essa rede é dita &lt;strong&gt;virtual&lt;/strong&gt;). E a comunicação, apesar de ocorrer pela Internet, não pode ser lida pelos computadores no meio do caminho entre um e outro, porque os dois computadores que estabelecem a VPN utilizam criptografia para se comunicar (por isso, essa rede é dita &lt;strong&gt;privada&lt;/strong&gt;).&lt;/p&gt;
 
 &lt;p&gt;Porque a informação trafega por um circuito cujo conteúdo não pode ser lido pelos computadores que ajudam a formar o circuito, nem pelos que estão fora dele, apenas pelos computadores nas pontas (o remetente e o destinatário), a VPN também é conhecida como &lt;strong&gt;túnel&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-03.png&#39; title=&#39;Um túnel é bem assim: só quem está dentro dele vê o que por ele passa&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-03.png&#39; alt=&#39;Um túnel é bem assim: só quem está dentro dele vê o que por ele passa&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Um túnel é bem assim: só quem está dentro dele vê o que por ele passa
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-03.png&#39; title=&#39;Um túnel é bem assim: só quem está dentro dele vê o que por ele passa&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-03.png&#39; alt=&#39;Um túnel é bem assim: só quem está dentro dele vê o que por ele passa&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Um túnel é bem assim: só quem está dentro dele vê o que por ele passa&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Tentando explicar de forma simples, uma VPN é isso.&lt;/p&gt;
 
@@ -463,12 +465,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;O Psiphon, que apresentei em &lt;a href=&quot;/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/&quot;&gt;outro post&lt;/a&gt;, é um exemplo interessante de VPN: ele cria um túnel entre seu computador e algum computador anônimo situado em algum lugar bem distante no mundo e redireciona todo o seu tráfego de Internet por esse computador anônimo. Dessa forma, o Psiphon permite que você utilize a Internet de forma anônima.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/vpn.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/vpn.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/vpn.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/vpn.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Um uso prático disso é burlar bloqueios e censuras. Recentemente, &lt;a href=&quot;http://g1.globo.com/tecnologia/noticia/2015/12/operadoras-sao-intimadas-bloquear-whatsapp-no-brasil-por-48-horas.html&quot;&gt;o WhatsApp foi bloqueado no Brasil&lt;/a&gt; e muitos internautas recorreram a VPNs como o Psiphon para conseguir usar o aplicativo nos seus celulares. VPNs como essas são muito utilizadas em países com governos autoritários, como a &lt;a href=&quot;http://tecnologia.terra.com.br/internet/pai-da-censura-na-china-e-surpreendido-burlando-a-mesma-em-publico,1d6ba1d9b58468d4df30fb84daf29ee6e3c193t0.html&quot;&gt;China&lt;/a&gt;.&lt;/p&gt;
 
@@ -505,12 +507,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-04.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-04.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Depois, precisamos de um certificado para o servidor. De volta à tela &lt;strong&gt;Certificate Manager&lt;/strong&gt;, clique na aba &lt;strong&gt;Certificates&lt;/strong&gt; e clique no botão &lt;strong&gt;Add&lt;/strong&gt;. Preencha o cadastro com as informações a seguir:&lt;/p&gt;
 
@@ -529,12 +531,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-05.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-05.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Precisamos também cadastrar os usuários que utilizarão a VPN (&lt;em&gt;login&lt;/em&gt; e senha) e criar certificados para esses usuários. Vá em &lt;strong&gt;System&lt;/strong&gt;, &lt;strong&gt;User Manager&lt;/strong&gt; e clique no botão &lt;strong&gt;Add&lt;/strong&gt;. Preencha o cadastro com as informações a seguir:&lt;/p&gt;
 
@@ -553,41 +555,41 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-06.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-06.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Agora vamos à configuração da VPN propriamente dita.&lt;/p&gt;
 
 &lt;p&gt;Vá em &lt;strong&gt;VPN&lt;/strong&gt;, &lt;strong&gt;OpenVPN&lt;/strong&gt; e clique na aba &lt;strong&gt;Wizards&lt;/strong&gt;. É iniciado então o &lt;strong&gt;OpenVPN Remote Access Server Setup&lt;/strong&gt;. Na primeira tela, &lt;strong&gt;Select an Authentication Backend Type&lt;/strong&gt;, escolha &lt;strong&gt;Local User Access&lt;/strong&gt;, e clique em &lt;strong&gt;Next&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-07.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-07.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Na segunda tela, &lt;strong&gt;Choose a Certificate Authority (CA)&lt;/strong&gt;, selecione a autoridade cerficadora que foi criada anteriormente (&lt;strong&gt;MINHACASA_CA&lt;/strong&gt;) e clique em &lt;strong&gt;Next&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-08.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-08.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Na terceira tela, &lt;strong&gt;Choose a Server Certificate&lt;/strong&gt;, selecione o certificado de servidor que foi criado anteriormente (&lt;strong&gt;VPN de teste&lt;/strong&gt;) e clique em &lt;strong&gt;Next&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-09.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-09.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Na tela seguinte, &lt;strong&gt;Server Setup&lt;/strong&gt;, vamos configurar o servidor da VPN. Aqui, você deve preencher de acordo com as configurações da rede do seu servidor (a rede da sua empresa, por exemplo). Vejamos algumas configurações:&lt;/p&gt;
 
@@ -627,32 +629,32 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Perceba que essa tela é extensa, mas nela estão quase todas as configurações da VPN:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-10.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-10.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Quando terminar de configurar a VPN, clique em &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Na penúltima tela do assistente, &lt;strong&gt;Firewall Rule Configuration&lt;/strong&gt;, certifique-se de que as duas opções &lt;strong&gt;Firewall Rule&lt;/strong&gt; e &lt;strong&gt;OpenVPN rule&lt;/strong&gt; estejam marcadas. Com isso, o pfSense criará automaticamente as regras de &lt;em&gt;firewall&lt;/em&gt; necessárias para que a VPN funcione. Clique em &lt;strong&gt;Next&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-11.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-11.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;A última tela apenas informa que a VPN foi criada. Clique em &lt;strong&gt;Finish&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-12.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-12.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;h2&gt;Exportando o &lt;em&gt;software&lt;/em&gt; cliente&lt;/h2&gt;
 
@@ -660,12 +662,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Caso você ainda não o tenha instalado, vá em &lt;strong&gt;System&lt;/strong&gt;, &lt;strong&gt;Package Manager&lt;/strong&gt;, na aba &lt;strong&gt;Available Packages&lt;/strong&gt;, busque por esse pacote e o instale clicando no botão &lt;strong&gt;Install&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-13.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-13.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Com o utilitário instalado, vá em &lt;strong&gt;VPN&lt;/strong&gt;, &lt;strong&gt;OpenVPN&lt;/strong&gt;, aba &lt;strong&gt;Client Export&lt;/strong&gt;.&lt;/p&gt;
 
@@ -675,12 +677,12 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;Vou demonstrar como conectar à VPN um computador cujo sistema operacional é o Windows 10 de 64 &lt;em&gt;bits&lt;/em&gt;. Nesse caso, clique no botão &lt;strong&gt;x64-win6&lt;/strong&gt; para exportar o cliente correspondente:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-14.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-14.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-14.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-14.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;O &lt;em&gt;download&lt;/em&gt; do instalador do cliente é iniciado. Esse arquivo (cujo nome deve ser algo parecido com &lt;strong&gt;firewall-udp-1194-vinyanalista-install.exe&lt;/strong&gt;) deve ser copiado ou movido para o computador cliente.&lt;/p&gt;
 
@@ -690,48 +692,48 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
 
 &lt;p&gt;No computador cliente, execute o instalador do cliente OpenVPN, baixado do pfSense. A instalação é bem simples. Aqui, mais uma vez, é &lt;em&gt;next&lt;/em&gt;, &lt;em&gt;next&lt;/em&gt;, &lt;em&gt;next&lt;/em&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-15.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-15.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-15.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-15.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Terminada a instalação, para iniciar o cliente OpenVPN, abra o &lt;strong&gt;menu Iniciar&lt;/strong&gt;, clique em &lt;strong&gt;Todos os programas&lt;/strong&gt;, depois em &lt;strong&gt;OpenVPN&lt;/strong&gt; e, por fim, em &lt;strong&gt;OpenVPN GUI&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-16.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-16.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-16.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-16.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;O cliente OpenVPN é iniciado. Observe seu ícone na área de notificação:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-17.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-17.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-17.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-17.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Dê dois clique nesse ícone. O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense e clique em &lt;strong&gt;OK&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-18.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-18.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-18.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-18.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Se conseguir se conectar, o cliente OpenVPN mostra uma notificação com o endereço IP que foi atribuído ao computador dentro da rede privada virtual. Observe também que o ícone do cliente muda sua cor para verde, indicando que está conectado:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-19.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-19.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-19.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-19.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Como teste, você pode abrir o &lt;strong&gt;Prompt de comando&lt;/strong&gt; do Windows e verificar a conectividade com algum computador na rede da outra ponta da VPN:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Microsoft Windows [versão 10.0.10240]
@@ -755,12 +757,12 @@ C:\Users\Vinicius&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Quando não precisar usar mais a VPN, clique com o botão direito do &lt;em&gt;mouse&lt;/em&gt; no ícone do cliente OpenVPN e em seguida clique em &lt;strong&gt;Sair&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-20.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-20.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-20.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-20.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;h3&gt;Solução de problemas&lt;/h3&gt;
 
@@ -814,72 +816,73 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Comece instalando o OpenVPN Connect pela Play Store:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;https://play.google.com/store/apps/details?id=net.openvpn.openvpn&#39; title=&#39;Clique para obter o OpenVPN Connect na Play Store&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/google-play.png&#39; alt=&#39;Clique para obter o OpenVPN Connect na Play Store&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Clique para obter o OpenVPN Connect na Play Store
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;https://play.google.com/store/apps/details?id=net.openvpn.openvpn&#39; title=&#39;Clique para obter o OpenVPN Connect na Play Store&#39;&gt;
+&lt;img src=&#39;/files/2015/12/google-play.png&#39; alt=&#39;Clique para obter o OpenVPN Connect na Play Store&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Clique para obter o OpenVPN Connect na Play Store&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Se ainda não passou, passe agora para o celular o arquivo de configuração exportado pelo pfSense.&lt;/p&gt;
 
 &lt;p&gt;No celular, abra o &lt;strong&gt;menu de Aplicativos&lt;/strong&gt; e toque no &lt;strong&gt;OpenVPN Connect&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-21.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-21.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-21.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-21.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;O cliente OpenVPN para Android é iniciado:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-22.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-22.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-22.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-22.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Toque no &lt;strong&gt;botão de opções&lt;/strong&gt; (o com 3 pontos que aparece no canto superior direito da tela), em seguida em &lt;strong&gt;Import&lt;/strong&gt; e, por último, em &lt;strong&gt;Import Profile from SD card&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-23.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-23.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-23.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-23.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Localize o arquivo de configuração na memória interna ou no cartão de memória do seu celular, toque nele e depois em &lt;strong&gt;Select&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-24.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-24.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-24.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-24.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense. Opcionalmente, marque a opção &lt;strong&gt;Save&lt;/strong&gt; para que ele memorize o usuário e a senha. Por fim, toque em &lt;strong&gt;Connect&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-25.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-25.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-25.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-25.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Se conseguir se conectar, o cliente OpenVPN passa a exibir o &lt;em&gt;status&lt;/em&gt; da conexão. Observe que ele fixa um ícone na área de notificação, indicando que está conectado:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/06/pfsense-vpn-26.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/06/pfsense-vpn-26.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/06/pfsense-vpn-26.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/06/pfsense-vpn-26.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Quando não precisar usar mais a VPN, volte ao cliente OpenVPN e toque em &lt;strong&gt;Disconnect&lt;/strong&gt;.&lt;/p&gt;
 
@@ -914,12 +917,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;É possível capturar a tela sem utilizar programa algum no Windows. Para isso, temos a tecla &lt;strong&gt;Print Screen&lt;/strong&gt;. Ela geralmente fica no canto superior direito do teclado. Pode ser que no seu teclado ela esteja abreviada, como, por exemplo, &lt;strong&gt;Prt Sc&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen01.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen01.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;A título de curiosidade, nos computadores mais antigos, que não dispunham de interface gráfica, mas apenas de interface textual, &lt;a href=&quot;http://www.howtogeek.com/211661/ask-htg-did-the-print-screen-button-ever-literally-print-the-screen-and-can-it-again/&quot;&gt;a tecla &lt;strong&gt;Print Screen&lt;/strong&gt; enviava o conteúdo da tela para a impressora&lt;/a&gt;. Hoje ela tem outra função, a de &amp;quot;bater uma foto&amp;quot; da tela (&lt;em&gt;screenshot&lt;/em&gt;), o que ficou conhecido, graças a essa tecla, como &amp;quot;bater um &lt;em&gt;print&lt;/em&gt;&amp;quot; ou &amp;quot;tirar um &lt;em&gt;print&lt;/em&gt;&amp;quot; da tela.&lt;/p&gt;
 
@@ -927,42 +930,45 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;A captura da tela fica então disponível na área de transferência para ser colada em algum aplicativo, como o &lt;a href=&quot;https://pt.wikipedia.org/wiki/Microsoft_Paint&quot;&gt;Paint&lt;/a&gt; ou o &lt;a href=&quot;https://products.office.com/pt-br/word&quot;&gt;Word&lt;/a&gt;. &lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen02.jpg&#39; title=&#39;Usando apenas a tecla Print Screen, é necessário primeiro colar a captura de tela em um programa como o Paint para então poder salvá-la como um arquivo de imagem.&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen02.jpg&#39; alt=&#39;Usando apenas a tecla Print Screen, é necessário primeiro colar a captura de tela em um programa como o Paint para então poder salvá-la como um arquivo de imagem.&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Usando apenas a tecla Print Screen, é necessário primeiro colar a captura de tela em um programa como o Paint para então poder salvá-la como um arquivo de imagem.
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen02.jpg&#39; title=&#39;Usando apenas a tecla Print Screen, é necessário primeiro colar a captura de tela em um programa como o Paint para então poder salvá-la como um arquivo de imagem.&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen02.jpg&#39; alt=&#39;Usando apenas a tecla Print Screen, é necessário primeiro colar a captura de tela em um programa como o Paint para então poder salvá-la como um arquivo de imagem.&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Usando apenas a tecla Print Screen, é necessário primeiro colar a captura de tela em um programa como o Paint para então poder salvá-la como um arquivo de imagem.&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;É possível capturar apenas a janela atual utilizando a combinação &lt;strong&gt;Alt + Print Screen&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen03.jpg&#39; title=&#39;A combinação Alt + Print Screen captura apenas a janela em uso.&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen03.jpg&#39; alt=&#39;A combinação Alt + Print Screen captura apenas a janela em uso.&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        A combinação Alt + Print Screen captura apenas a janela em uso.
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen03.jpg&#39; title=&#39;A combinação Alt + Print Screen captura apenas a janela em uso.&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen03.jpg&#39; alt=&#39;A combinação Alt + Print Screen captura apenas a janela em uso.&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;A combinação Alt + Print Screen captura apenas a janela em uso.&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Observe que em ambos os casos o cursor do &lt;em&gt;mouse&lt;/em&gt; não aparece na captura de tela, o que pode parecer estranho em capturas de menus, por exemplo:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen04.jpg&#39; title=&#39;Sabe-se, pelo destaque, que o item de menu foi selecionado, mas o cursor do mouse não aparece.&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen04.jpg&#39; alt=&#39;Sabe-se, pelo destaque, que o item de menu foi selecionado, mas o cursor do mouse não aparece.&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Sabe-se, pelo destaque, que o item de menu foi selecionado, mas o cursor do mouse não aparece.
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen04.jpg&#39; title=&#39;Sabe-se, pelo destaque, que o item de menu foi selecionado, mas o cursor do mouse não aparece.&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen04.jpg&#39; alt=&#39;Sabe-se, pelo destaque, que o item de menu foi selecionado, mas o cursor do mouse não aparece.&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Sabe-se, pelo destaque, que o item de menu foi selecionado, mas o cursor do mouse não aparece.&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Observe também que capturar a tela dessa forma, apesar de eficaz, não é eficiente: você depende de outro aplicativo para editar e salvar a imagem.&lt;/p&gt;
 
@@ -970,12 +976,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Algo que costumo fazer antes de capturar uma tela é deixar uma janela maximizada do Paint por trás com um desenho em branco que preenche toda a tela, especialmente se pretendo mostrar um menu ou dica (&lt;em&gt;hint&lt;/em&gt;) que foge à janela do aplicativo.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen05.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen05.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Assim, evito que conteúdo indesejado que está por trás do aplicativo apareça na captura.&lt;/p&gt;
 
@@ -993,28 +999,28 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 &lt;li&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; para aplicar sua configuração e sair das Preferências do Dropbox.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen06.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen06.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen07.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen07.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Agora sempre que você apertar &lt;strong&gt;Print Screen&lt;/strong&gt; ou &lt;strong&gt;Alt + Print Screen&lt;/strong&gt;, a captura de tela será automaticamente salva no seu Dropbox.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen08.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen08.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;h2&gt;OneDrive para salvar as capturas&lt;/h2&gt;
 
@@ -1030,28 +1036,28 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 &lt;li&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; para aplicar sua configuração e sair das configurações do OneDrive.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen09.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen09.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen10.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen10.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Agora sempre que você apertar &lt;strong&gt;Print Screen&lt;/strong&gt; ou &lt;strong&gt;Alt + Print Screen&lt;/strong&gt;, a captura de tela será automaticamente salva no seu OneDrive.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen11.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen11.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen11.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;h2&gt;Ferramenta de Captura do Windows&lt;/h2&gt;
 
@@ -1059,21 +1065,21 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Para iniciar a Ferramenta de Captura, abra o &lt;strong&gt;menu Iniciar&lt;/strong&gt;, digite &lt;strong&gt;captura&lt;/strong&gt; na caixa de pesquisa e depois clique em &lt;strong&gt;Ferramenta de Captura&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen12.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen12.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Para capturar a tela, clique em &lt;strong&gt;Novo&lt;/strong&gt; e, em seguida, selecione a parte da tela que você deseja capturar:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/printscreen13.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/printscreen13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/printscreen13.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/printscreen13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;A captura da tela aparece na janela da ferramenta. Então, você pode desenhar sobre a captura usando a caneta, salvá-la, copiá-la ou enviá-la por &lt;em&gt;email&lt;/em&gt;.&lt;/p&gt;
 
@@ -1087,12 +1093,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Depois que descobri a funcionalidade de captura de tela do IrfanView, passei a utilizá-lo para capturar telas. Vejamos como ele pode nos ajudar com essa tarefa.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/irfanview01.gif&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/irfanview01.gif&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/irfanview01.gif&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/irfanview01.gif&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Primeiro, baixe o IrfanView do seu &lt;a href=&quot;http://www.irfanview.com/&quot;&gt;&lt;em&gt;site&lt;/em&gt; oficial&lt;/a&gt;, na página &lt;em&gt;Download&lt;/em&gt;. Observe que há uma versão portátil que dispensa instalação. Ela pode ser obtida clicando no &lt;em&gt;link Other download sites (Mirrors)&lt;/em&gt;, no final da página de &lt;em&gt;download&lt;/em&gt;.&lt;/p&gt;
 
@@ -1102,39 +1108,39 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Para iniciar o IrfanView, abra o &lt;strong&gt;menu Iniciar&lt;/strong&gt;, digite &lt;strong&gt;irfanview&lt;/strong&gt; na caixa de pesquisa e depois clique em &lt;strong&gt;IrfanView&lt;/strong&gt; (no meu computador, utilizo a versão de 64 &lt;em&gt;bits&lt;/em&gt;):&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/irfanview02.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/irfanview02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/irfanview02.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/irfanview02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Aqui está a tela inicial do IrfanView:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/irfanview03.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/irfanview03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/irfanview03.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/irfanview03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Para começar a captura de tela, clique no menu &lt;strong&gt;Options&lt;/strong&gt; e depois no item &lt;strong&gt;Capture/Screenshot&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/irfanview04.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/irfanview04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/irfanview04.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/irfanview04.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Aparece uma caixa de diálogo na qual é possível configurar vários aspectos da captura de tela:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/irfanview05.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/irfanview05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/irfanview05.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/irfanview05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Observe que a maioria dos comandos do IrfanView possui teclas de atalho (do inglês &lt;em&gt;shortcut keys&lt;/em&gt; ou &lt;em&gt;hot keys&lt;/em&gt;) associadas. A tecla de atalho para o comando &lt;strong&gt;Capture/Screenshot&lt;/strong&gt; é &lt;strong&gt;C&lt;/strong&gt;, ou seja, apertar a tecla &lt;strong&gt;C&lt;/strong&gt; na tela principal produziria o mesmo efeito que clicar naquele item de menu: a exibição da caixa de diálogo &lt;strong&gt;Capture Setup&lt;/strong&gt;.&lt;/p&gt;
 
@@ -1164,12 +1170,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;O que acontece depois que a tela é capturada? Se você deixou marcada a opção &lt;strong&gt;Show captured image in main window&lt;/strong&gt;, o IrfanView aparece novamente com a imagem capturada e você pode então trabalhar nela usando o IrfanView:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/irfanview06.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/irfanview06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/irfanview06.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/irfanview06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Para salvar a imagem, clique no ícone do disquete ou abra o menu &lt;strong&gt;File&lt;/strong&gt; e clique em &lt;strong&gt;Save as&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;S&lt;/strong&gt;).&lt;/p&gt;
 
@@ -1186,12 +1192,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 &lt;li&gt;Para desenhar, abra o menu &lt;strong&gt;Edit&lt;/strong&gt; e clique em &lt;strong&gt;Show Paint dialog&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;F12&lt;/strong&gt;), uma caixa de ferramentas bastante semelhante com a do Paint aparecerá:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/irfanview07.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/irfanview07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/irfanview07.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/irfanview07.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Para aplicar efeitos à imagem, abra o menu &lt;strong&gt;Image&lt;/strong&gt;, aponte para &lt;strong&gt;Effects&lt;/strong&gt; e clique em &lt;em&gt;Effects browser&lt;/em&gt;, aparecerá uma caixa de diálogo com várias opções de efeitos para aplicar à imagem.&lt;/li&gt;
@@ -1199,21 +1205,21 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Uma dica para a hora de salvar: se você instalou os &lt;em&gt;plugins&lt;/em&gt; do IrfanView, abra o menu &lt;strong&gt;File&lt;/strong&gt; e, ao invés de clicar em &lt;strong&gt;Save as&lt;/strong&gt;, clique em &lt;strong&gt;Save for Web... (PlugIn)&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/irfanview08.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/irfanview08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/irfanview08.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/irfanview08.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Aparecerá então uma caixa de diálogo que oferecerá várias opções para comprimir a imagem:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2016/02/irfanview09.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2016/02/irfanview09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2016/02/irfanview09.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2016/02/irfanview09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Isso é bastante útil se o tamanho final do arquivo de imagem for importante (se ficou confuso, aqui estou falando de &lt;em&gt;bytes&lt;/em&gt; e não de &lt;em&gt;pixels&lt;/em&gt;). Exemplos desse caso incluem imagens que serão utilizadas em páginas da Internet, enviadas por &lt;em&gt;email&lt;/em&gt; ou utilizadas em apresentações de &lt;em&gt;slides&lt;/em&gt;.&lt;/p&gt;
 
@@ -1241,12 +1247,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
         <title>Acesse sites e aplicativos censurados com o Psiphon</title>
         <description>&lt;p&gt;De uma hora para outra, &lt;a href=&quot;http://g1.globo.com/tecnologia/noticia/2015/12/operadoras-sao-intimadas-bloquear-whatsapp-no-brasil-por-48-horas.html&quot;&gt;o WhatsApp foi bloqueado no Brasil&lt;/a&gt;. Mas há artifícios que possibilitam a utilização do aplicativo, mesmo com o bloqueio das operadoras. Aqui veremos um deles: o aplicativo &lt;a href=&quot;https://psiphon3.com/pt_PT/index.html&quot;&gt;Psiphon&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/psiphon-00.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-00.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/psiphon-00.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/psiphon-00.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Vale observar que o Psiphon também permite o uso de quaisquer &lt;em&gt;sites&lt;/em&gt; e aplicativos bloqueados ou censurados pelo responsável pela rede (seja a empresa, organização, universidade, operadora, etc).&lt;/p&gt;
 
@@ -1262,67 +1268,68 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;O Psiphon burla a censura ou bloqueio imposta ao seu computador ou dispositivo móvel (&lt;em&gt;smartphone&lt;/em&gt; ou &lt;em&gt;tablet&lt;/em&gt;) por meio de uma conexão em forma de &lt;a href=&quot;http://www.tecmundo.com.br/1427-o-que-e-vpn-.htm&quot;&gt;túnel&lt;/a&gt; que ele estabelece com algum outro computador anônimo em algum outro lugar do mundo. Ele atravessa os dados que chegam e saem de você por esse túnel. Dessa maneira, os dados evitam o caminho comum, que está bloqueado, e passam por outro caminho, que não está censurado.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/vpn.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/vpn.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/vpn.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/vpn.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;h2&gt;Instalando e usando o Psiphon no Android&lt;/h2&gt;
 
 &lt;p&gt;Em &lt;em&gt;smartphones&lt;/em&gt; e &lt;em&gt;tablets&lt;/em&gt; com &lt;a href=&quot;https://www.android.com/intl/pt-BR_br/&quot;&gt;Android&lt;/a&gt;, o Psiphon pode ser baixado e instalado pela &lt;a href=&quot;https://play.google.com/store/apps?hl=pt_BR&quot;&gt;Play Store&lt;/a&gt;, como a maioria dos aplicativos:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;https://play.google.com/store/apps/details?id=com.psiphon3&#39; title=&#39;Clique para obter o Psiphon na Play Store&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/google-play.png&#39; alt=&#39;Clique para obter o Psiphon na Play Store&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Clique para obter o Psiphon na Play Store
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;https://play.google.com/store/apps/details?id=com.psiphon3&#39; title=&#39;Clique para obter o Psiphon na Play Store&#39;&gt;
+&lt;img src=&#39;/files/2015/12/google-play.png&#39; alt=&#39;Clique para obter o Psiphon na Play Store&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Clique para obter o Psiphon na Play Store&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; o ideal é que você instale o Psiphon em seu aparelho antes mesmo de precisar, porque pode ser que a rede que você estiver usando no momento em que realmente precisar não permita essa instalação.&lt;/p&gt;
 
 &lt;p&gt;Para iniciá-lo, procure pelo ícone na tela inicial ou na lista de aplicativos:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/psiphon-01.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-01.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/psiphon-01.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/psiphon-01.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Assim que o aplicativo é iniciado, ele já tenta criar o túnel. Diante disso, o Android exibe um alerta. Marque a opção &lt;strong&gt;Confio nesse aplicativo&lt;/strong&gt; e toque em &lt;strong&gt;OK&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/psiphon-02.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-02.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/psiphon-02.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/psiphon-02.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Quando a conexão é estabelecida com sucesso, o aplicativo abre no navegador sua página oficial:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/psiphon-03.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-03.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/psiphon-03.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/psiphon-03.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;A partir de agora, você já pode acessar &lt;em&gt;sites&lt;/em&gt; e usar aplicativos censurados.&lt;/p&gt;
 
 &lt;p&gt;Quando não quiser usar mais o túnel, volte ao aplicativo e clique em &lt;strong&gt;Stop&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/psiphon-04.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/psiphon-04.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/psiphon-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;h2&gt;Usando o Psiphon no Windows&lt;/h2&gt;
 
@@ -1330,23 +1337,23 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Acesse o &lt;a href=&quot;https://psiphon3.com/pt_PT/index.html&quot;&gt;site do Psiphon&lt;/a&gt; e clique em &lt;strong&gt;Download&lt;/strong&gt;, em seguida clique no &lt;em&gt;link&lt;/em&gt; do Psiphon para &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/&quot;&gt;Windows&lt;/a&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/psiphon-05.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/psiphon-05.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/psiphon-05.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; o ideal é que você baixe o Psiphon antes mesmo de precisar, porque pode ser que a rede que você estiver usando no momento em que realmente precisar não permita o acesso ao &lt;em&gt;site&lt;/em&gt; do Psiphon. Você pode baixá-lo em um computador não censurado e carregá-lo consigo em um &lt;em&gt;pendrive&lt;/em&gt;, por exemplo.&lt;/p&gt;
 
 &lt;p&gt;Quando acabar o &lt;em&gt;download&lt;/em&gt;, inicie o aplicativo, ele estabelecerá a conexão:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/psiphon-06.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/psiphon-06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/psiphon-06.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/psiphon-06.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Quando a conexão é estabelecida com sucesso, o aplicativo abre no navegador sua página oficial. A partir de agora, você já pode acessar &lt;em&gt;sites&lt;/em&gt; e usar aplicativos censurados.&lt;/p&gt;
 
@@ -1373,21 +1380,21 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
         <title>Como configurar as atualizações automáticas do Windows 10</title>
         <description>&lt;p&gt;Precisou reiniciar o computador, estava com pressa e se esbarrou nas atualizações do &lt;a href=&quot;http://www.microsoft.com/pt-br/windows&quot;&gt;Windows&lt;/a&gt; 10?&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-00.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-00.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-00.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-00.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Pior: ele passou um tempão tentando instalar as atualizações, depois falhou e passou mais outra eternidade desfazendo o trabalho?&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-01.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-01.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Veja aqui como ter um pouco mais de controle sobre as atualizações do Windows.&lt;/p&gt;
 
@@ -1401,12 +1408,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; por mais que seja possível adiar ou ignorar as atualizações do Windows, elas continuam sendo necessárias. É importante que regularmente você reserve um tempo para verificar se há novas atualizações e deixar o computador instalá-las. Pode ser que o sistema solicite a obtenção de atualizações, como já aconteceu comigo:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-02.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-02.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-02.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-02.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;h2&gt;Configurar a conexão como limitada&lt;/h2&gt;
 
@@ -1414,21 +1421,21 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Para isso, clique no botão &lt;strong&gt;Iniciar&lt;/strong&gt;, no canto inferior esquerdo da tela, e depois clique em &lt;strong&gt;Configurações&lt;/strong&gt;. Na tela que aparece, clique em &lt;strong&gt;Rede e Internet&lt;/strong&gt; e depois em &lt;strong&gt;Wi-Fi&lt;/strong&gt;. Depois da lista de redes Wi-Fi disponíveis, clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Você chegará à seguinte tela, na qual pode ativar ou desativar a conexão limitada:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-03.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-03.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-03.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-03.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Depois de ativar a conexão limitada, se você acessar as configurações do Windows Update (menu &lt;strong&gt;Iniciar&lt;/strong&gt;, &lt;strong&gt;Configurações&lt;/strong&gt;, &lt;strong&gt;Atualização e segurança&lt;/strong&gt;, &lt;strong&gt;Windows Update&lt;/strong&gt;), perceberá que o Windows oferece a possibilidade de buscar atualizações apenas quando desejado, clicando no botão &lt;strong&gt;Verificar se há atualizações&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Para baixar e instalar atualizações com essa configuração ativada, você pode:&lt;/p&gt;
 
@@ -1444,46 +1451,46 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Para isso, clique no botão &lt;strong&gt;Iniciar&lt;/strong&gt;, no canto inferior esquerdo da tela, e depois clique em &lt;strong&gt;Configurações&lt;/strong&gt;. Na tela que aparece, clique em &lt;strong&gt;Atualização e segurança&lt;/strong&gt; e depois em &lt;strong&gt;Windows Update&lt;/strong&gt;. Clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Você chegará à seguinte tela, na qual pode selecionar &lt;strong&gt;Avisar antes de agendar reinicialização&lt;/strong&gt; em vez de &lt;strong&gt;Automático (recomendado)&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Feito isso, quando o Windows começar a instalar atualizações, você será solicitado a informar um horário para que ele possa reiniciar o computador e continuar a atualização:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-06.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-06.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-06.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-06.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-07.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-07.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-07.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-07.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;h2&gt;Bloquear atualizações específicas&lt;/h2&gt;
 
 &lt;p&gt;Se seu problema é causado por apenas uma atualização, uma boa alternativa é impedir que o sistema instale apenas a atualização indesejada. Para isso, a &lt;a href=&quot;http://www.microsoft.com.br/&quot;&gt;Microsoft&lt;/a&gt; lançou o pacote de solução de problemas &lt;strong&gt;Mostrar ou ocultar atualizações&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-08.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-08.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-08.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-08.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-09.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-09.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-09.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-09.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Para mais informações, consulte a &lt;a href=&quot;https://support.microsoft.com/pt-br/kb/3073930&quot;&gt;base de dados de conhecimento da Microsoft&lt;/a&gt;.&lt;/p&gt;
 
@@ -1493,12 +1500,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Para configurar o Windows Update para adiar atualizações, clique no botão &lt;strong&gt;Iniciar&lt;/strong&gt;, no canto inferior esquerdo da tela, e depois clique em &lt;strong&gt;Configurações&lt;/strong&gt;. Na tela que aparece, clique em &lt;strong&gt;Atualização e segurança&lt;/strong&gt; e depois em &lt;strong&gt;Windows Update&lt;/strong&gt;. Clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Você chegará à seguinte tela, na qual pode ativar a opção &lt;strong&gt;Adiar atualizações&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-05.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;h2&gt;Configurar atualizações pela política de grupo&lt;/h2&gt;
 
@@ -1506,50 +1513,50 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Para acessar o editor de política de grupo, abra o menu &lt;strong&gt;Iniciar&lt;/strong&gt;, pesquise por &lt;strong&gt;gpedit.msc&lt;/strong&gt; e execute o editor de política de grupo como administrador:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-10.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-10.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-10.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-10.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Na estrutura de árvore da esquerda, navegue para &lt;strong&gt;Configuração do Computador&lt;/strong&gt;, &lt;strong&gt;Modelos Administrativos&lt;/strong&gt;, &lt;strong&gt;Componentes do Windows&lt;/strong&gt;, &lt;strong&gt;Windows Update&lt;/strong&gt;. À direita, localize o item &lt;strong&gt;Configurar Atualizações Automáticas&lt;/strong&gt; e clique duas vezes nele:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-11.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-11.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-11.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-11.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Na tela que aparece, selecione &lt;strong&gt;Habilitado&lt;/strong&gt; e em &lt;strong&gt;Opções&lt;/strong&gt; configure como desejar. Você pode selecionar, por exemplo, &lt;strong&gt;Avisar antes de baixar e de instalar qualquer atualização&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-12.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-12.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-12.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-12.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; nessa mesma tela, se você selecionar &lt;strong&gt;Desabilitado&lt;/strong&gt;, em vez de &lt;strong&gt;Habilitado&lt;/strong&gt;, desativará as atualizações do Windows por completo.&lt;/p&gt;
 
 &lt;p&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; e feche o editor de política de grupo. Agora acesse as configurações do Windows Update (menu &lt;strong&gt;Iniciar&lt;/strong&gt;, &lt;strong&gt;Configurações&lt;/strong&gt;, &lt;strong&gt;Atualização e segurança&lt;/strong&gt;, &lt;strong&gt;Windows Update&lt;/strong&gt;) e clique em &lt;strong&gt;Verificar se há atualizações&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Logo em seguida, quando o Windows começar a buscar atualizações, clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Observe nessa tela a mensagem &lt;strong&gt;Algumas configurações são gerenciadas pela sua organização&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Observe também que não é possível escolher como as atualizações são instaladas: essa opção está desabilitada, mostrando a configuração escolhida no editor de política de grupo.&lt;/p&gt;
 
@@ -1561,12 +1568,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Abra o &lt;strong&gt;menu Iniciar&lt;/strong&gt;, pesquise por &lt;strong&gt;regedit&lt;/strong&gt; e execute o editor de registro como administrador:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/09/inicializacao-rapida-5.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/09/inicializacao-rapida-5.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/09/inicializacao-rapida-5.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/09/inicializacao-rapida-5.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Navegue até a chave de registro &lt;strong&gt;HKEY&lt;em&gt;LOCAL&lt;/em&gt;MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU&lt;/strong&gt;. Caso essas duas últimas chaves não existam, você terá que criá-las: navegue até a chave &lt;strong&gt;HKEY&lt;em&gt;LOCAL&lt;/em&gt;MACHINE\SOFTWARE\Policies\Microsoft\Windows&lt;/strong&gt;, dentro dela crie uma chave &lt;strong&gt;WindowsUpdate&lt;/strong&gt; e, dentro desta, uma chave &lt;strong&gt;AU&lt;/strong&gt;.&lt;/p&gt;
 
@@ -1580,30 +1587,30 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; e feche o editor de registro:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-14.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-14.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-14.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-14.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Agora acesse as configurações do Windows Update (menu &lt;strong&gt;Iniciar&lt;/strong&gt;, &lt;strong&gt;Configurações&lt;/strong&gt;, &lt;strong&gt;Atualização e segurança&lt;/strong&gt;, &lt;strong&gt;Windows Update&lt;/strong&gt;) e clique em &lt;strong&gt;Verificar se há atualizações&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Logo em seguida, quando o Windows começar a buscar atualizações, clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Observe nessa tela a mensagem &lt;strong&gt;Algumas configurações são gerenciadas pela sua organização&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-13.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Observe também que não é possível escolher como as atualizações são instaladas: essa opção está desabilitada, mostrando a configuração correspondente ao valor existente na chave de registro.&lt;/p&gt;
 
@@ -1615,30 +1622,30 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Para desativar o serviço do Windows Update, abra o menu &lt;strong&gt;Iniciar&lt;/strong&gt;, pesquise por &lt;strong&gt;services.msc&lt;/strong&gt; e execute o gerenciador de serviços como administrador:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-15.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-15.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-15.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-15.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Na lista de serviços, procure pelo serviço &lt;strong&gt;Windows Update&lt;/strong&gt; (ele deve ser um dos últimos) e clique duas vezes nele:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-16.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-16.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-16.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-16.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Na tela que aparece, em &lt;strong&gt;Tipo de inicialização&lt;/strong&gt; selecione &lt;strong&gt;Desativado&lt;/strong&gt; e clique em &lt;strong&gt;OK&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/12/windows-atualizacoes-17.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/12/windows-atualizacoes-17.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/12/windows-atualizacoes-17.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/12/windows-atualizacoes-17.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Pronto, pode fechar o gerenciador de serviços.&lt;/p&gt;
 
@@ -1665,12 +1672,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
     
       <item>
         <title>Como escolher um bom computador para comprar?</title>
-        <description>&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/11/black-friday.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/black-friday.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+        <description>&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/11/black-friday.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/11/black-friday.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Começou a &lt;a href=&quot;https://pt.wikipedia.org/wiki/Black_Friday&quot;&gt;Black Friday&lt;/a&gt;! Muitos consumidores anseiam pela oportunidade de fazer um bom negócio e adquirir um bom computador com excelente custo benefício. No entanto, como escolher o melhor dentre tantos anúncios aparentemente interessantes? Será que o barato de hoje pode custar caro amanhã?&lt;/p&gt;
 
@@ -1686,16 +1693,17 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;A que me refiro quando falo em &amp;quot;algo complexo&amp;quot;? Para um computador doméstico, &lt;strong&gt;jogos&lt;/strong&gt;, por exemplo, são atividades complexas: exigem que o computador faça muitos cálculos e processe muitas regras ao mesmo tempo. Além disso, ele deve responder rapidamente (de preferência, em tempo real) aos comandos de quem joga. Se você deseja um computador para jogar, especialmente se está de olho nos últimos lançamentos em jogos (os jogos &amp;quot;pesados&amp;quot;), se prepare para desembolsar uma boa grana.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/11/jogos.jpg&#39; title=&#39;Jogos geralmente exigem do computador&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/jogos.jpg&#39; alt=&#39;Jogos geralmente exigem do computador&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Jogos geralmente exigem do computador
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/11/jogos.jpg&#39; title=&#39;Jogos geralmente exigem do computador&#39;&gt;
+&lt;img src=&#39;/files/2015/11/jogos.jpg&#39; alt=&#39;Jogos geralmente exigem do computador&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Jogos geralmente exigem do computador&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Também poderia citar como exemplos de atividades complexas, que exigem muito do computador: &lt;strong&gt;produção de conteúdo multimídia&lt;/strong&gt; (edição de sons, fotos e vídeos) e &lt;strong&gt;programação&lt;/strong&gt; (desenvolvimento de aplicativos e &lt;em&gt;sites&lt;/em&gt;).&lt;/p&gt;
 
@@ -1721,16 +1729,17 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Como &lt;a href=&quot;/blog/2012/04/09/componentes-de-um-computador-hardware-e-software/&quot;&gt;sabemos&lt;/a&gt;, o processador é o principal componente de um computador. Não apenas o principal, ele é também o mais rápido. Assim, ele é o maior (porém não o único) responsável pelo desempenho do computador. Não podemos esperar muito de um computador se seu processador é lento.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2012/04/processador.jpg&#39; title=&#39;Processador: o componente do computador que mais influencia no seu desempenho&#39;&gt;
-        &lt;img src=&#39;/files/2012/04/processador.jpg&#39; alt=&#39;Processador: o componente do computador que mais influencia no seu desempenho&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Processador: o componente do computador que mais influencia no seu desempenho
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2012/04/processador.jpg&#39; title=&#39;Processador: o componente do computador que mais influencia no seu desempenho&#39;&gt;
+&lt;img src=&#39;/files/2012/04/processador.jpg&#39; alt=&#39;Processador: o componente do computador que mais influencia no seu desempenho&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Processador: o componente do computador que mais influencia no seu desempenho&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Há várias características que influenciam o desempenho de um processador, mas, para simplificar, vamos nos ater às que mais aparecem nos anúncios: frequência de operação, memória cache e quantidade de núcleos.&lt;/p&gt;
 
@@ -1764,16 +1773,17 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Um computador apresenta, na verdade, vários tipos de memória, que diferem em termos de localização, capacidade e custo. Quando os anúncios usam apenas a palavra &lt;strong&gt;memória&lt;/strong&gt;, eles se referem especificamente à &lt;strong&gt;memória principal&lt;/strong&gt; ou &lt;strong&gt;memória RAM&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/11/memoria-ram.jpg&#39; title=&#39;Memória RAM&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/memoria-ram.jpg&#39; alt=&#39;Memória RAM&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Memória RAM
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/11/memoria-ram.jpg&#39; title=&#39;Memória RAM&#39;&gt;
+&lt;img src=&#39;/files/2015/11/memoria-ram.jpg&#39; alt=&#39;Memória RAM&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Memória RAM&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;A característica da memória RAM que mais contribui para o desempenho do computador é a sua capacidade. Nos computadores atuais, as memórias RAM geralmente são capazes de armazenar alguns &lt;strong&gt;gigabytes (GB)&lt;/strong&gt;, que equivalem a bilhões de &lt;em&gt;bytes&lt;/em&gt; (1GB = 1000MB). Uma memória de 4GB armazena mais informações que outra de 2GB, por exemplo.&lt;/p&gt;
 
@@ -1797,16 +1807,17 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Se alto desempenho para você é uma prioridade, talvez seja mais interessante um computador com &lt;strong&gt;disco de estado sólido&lt;/strong&gt; (do inglês &lt;em&gt;solid state drive&lt;/em&gt;, SSD) do que um computador com disco rígido. Os SSDs são fabricados com tecnologia semelhante à dos &lt;em&gt;pendrives&lt;/em&gt; e cartões de memória e são muito mais rápidos do que os tradicionais HDs, no entanto apresentam menor capacidade e tendem a ser mais caros.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/11/hd-ssd.jpg&#39; title=&#39;Um disco rígido e um disco de estado sólido por dentro&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/hd-ssd.jpg&#39; alt=&#39;Um disco rígido e um disco de estado sólido por dentro&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Um disco rígido e um disco de estado sólido por dentro
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/11/hd-ssd.jpg&#39; title=&#39;Um disco rígido e um disco de estado sólido por dentro&#39;&gt;
+&lt;img src=&#39;/files/2015/11/hd-ssd.jpg&#39; alt=&#39;Um disco rígido e um disco de estado sólido por dentro&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Um disco rígido e um disco de estado sólido por dentro&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;h2&gt;5. Conexões disponíveis&lt;/h2&gt;
 
@@ -1814,16 +1825,17 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Um &lt;em&gt;notebook&lt;/em&gt; com duas &lt;strong&gt;portas USB&lt;/strong&gt; permite a você conectar ao mesmo tempo um &lt;em&gt;mouse&lt;/em&gt; e uma impressora ou um &lt;em&gt;pendrive&lt;/em&gt; e um celular, mas nunca os quatro ao mesmo tempo, o que seria possível em um &lt;em&gt;notebook&lt;/em&gt; com quatro portas USB. As &lt;strong&gt;extensões USB&lt;/strong&gt; (&lt;em&gt;hubs&lt;/em&gt;) podem ajudar se as portas USB do &lt;em&gt;notebook&lt;/em&gt; não são suficientes, mas nem todos os dispositivos USB funcionam bem quando conectados a extensões.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/11/hub-usb.jpg&#39; title=&#39;Não queira depender de uma extensão USB: nem todos os dispositivos funcionam bem com ela&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/hub-usb.jpg&#39; alt=&#39;Não queira depender de uma extensão USB: nem todos os dispositivos funcionam bem com ela&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Não queira depender de uma extensão USB: nem todos os dispositivos funcionam bem com ela
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/11/hub-usb.jpg&#39; title=&#39;Não queira depender de uma extensão USB: nem todos os dispositivos funcionam bem com ela&#39;&gt;
+&lt;img src=&#39;/files/2015/11/hub-usb.jpg&#39; alt=&#39;Não queira depender de uma extensão USB: nem todos os dispositivos funcionam bem com ela&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Não queira depender de uma extensão USB: nem todos os dispositivos funcionam bem com ela&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Geralmente, os &lt;em&gt;notebooks&lt;/em&gt; disponibilizam &lt;strong&gt;saídas de vídeo&lt;/strong&gt; para conexão com projetores (&lt;em&gt;datashows&lt;/em&gt;). O padrão mais recente é o HDMI, o mesmo usado nas TVs digitais e reprodutores de Blu-ray, mas há também o padrão VGA, que existe há mais tempo. Há &lt;em&gt;notebooks&lt;/em&gt; que disponibilizam esses dois tipos de saída de vídeo, permitindo a conexão com uma variedade maior de projetores.&lt;/p&gt;
 
@@ -1831,16 +1843,17 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;O &lt;em&gt;notebook&lt;/em&gt; &lt;a href=&quot;http://br.acer.com/ac/pt/BR/content/model/NX.MQYAL.011&quot;&gt;Acer Aspire E5-571-52ZK&lt;/a&gt;, por exemplo, disponibiliza 1 porta USB 3.0, 2 portas USB 2.0, 1 saída de vídeo HDMI, 1 saída de vídeo VGA, 1 porta de rede padrão RJ45, leitor de cartão de memória, saída para fone de ouvido, entrada para microfone, conexão Wi-Fi e Bluetooth. É um &lt;em&gt;notebook&lt;/em&gt; bastante versátil.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/11/acer-aspire-e5.jpg&#39; title=&#39;Conexões na lateral do notebook Acer Aspire E5-571-52ZK&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/acer-aspire-e5.jpg&#39; alt=&#39;Conexões na lateral do notebook Acer Aspire E5-571-52ZK&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Conexões na lateral do notebook Acer Aspire E5-571-52ZK
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/11/acer-aspire-e5.jpg&#39; title=&#39;Conexões na lateral do notebook Acer Aspire E5-571-52ZK&#39;&gt;
+&lt;img src=&#39;/files/2015/11/acer-aspire-e5.jpg&#39; alt=&#39;Conexões na lateral do notebook Acer Aspire E5-571-52ZK&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Conexões na lateral do notebook Acer Aspire E5-571-52ZK&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;h2&gt;6. &lt;em&gt;Software&lt;/em&gt;: sistema operacional e aplicativos&lt;/h2&gt;
 
@@ -1880,16 +1893,17 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Você pode escolher os componentes que deseja e &lt;strong&gt;montar seu próprio computador&lt;/strong&gt;. Dessa forma, é possível que uma configuração melhor saia por um preço mais em conta. Além disso, você pode personalizar seu computador como quiser. Dê preferência a comprar componentes de fabricantes conhecidos e verifique se eles são compatíveis entre si. Caso não disponha de conhecimento técnico suficiente, procure um profisional competente para auxiliá-lo com a escolha das peças e na montagem do computador.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/11/gabinete-transparente.jpg&#39; title=&#39;Há quem prefira montar seu próprio computador personalizado!&#39;&gt;
-        &lt;img src=&#39;/files/2015/11/gabinete-transparente.jpg&#39; alt=&#39;Há quem prefira montar seu próprio computador personalizado!&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        Há quem prefira montar seu próprio computador personalizado!
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/11/gabinete-transparente.jpg&#39; title=&#39;Há quem prefira montar seu próprio computador personalizado!&#39;&gt;
+&lt;img src=&#39;/files/2015/11/gabinete-transparente.jpg&#39; alt=&#39;Há quem prefira montar seu próprio computador personalizado!&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;Há quem prefira montar seu próprio computador personalizado!&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Você pode achar computadores usados a venda em &lt;em&gt;sites&lt;/em&gt; como &lt;a href=&quot;http://www.mercadolivre.com.br/&quot;&gt;Mercado Livre&lt;/a&gt; ou &lt;a href=&quot;http://www.olx.com.br/&quot;&gt;OLX&lt;/a&gt;. Antes de comprar um computador usado, verifique a reputação do vendedor para não ser vítima de fraude.&lt;/p&gt;
 
@@ -1904,12 +1918,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
     
       <item>
         <title>Meu celular foi roubado: e agora, o que faço?</title>
-        <description>&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-00.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-00.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+        <description>&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-00.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-00.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Em primeiro lugar, não se culpe e &lt;strong&gt;procure manter a calma&lt;/strong&gt;. Feito isso, siga as dicas que apresento aqui para tentar restringir ao máximo a ação do bandido, se possível até mesmo recuperar o celular. Você também pode seguir essas dicas se perdeu seu celular. Algumas dicas podem funcionar também com &lt;em&gt;tablets&lt;/em&gt;.&lt;/p&gt;
 
@@ -1943,12 +1957,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Quando você entra no &lt;em&gt;site&lt;/em&gt; com a sua conta do Google, que deve ser a mesma configurada no celular, o Gerenciador de dispositivos Android começa a procurá-lo. Se ele estiver conectado à Internet, a posição aproximada dele será mostrada no mapa. A ferramenta também indica a última vez em que o celular foi visto conectado:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-01.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-01.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-01.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Se o seu celular foi localizado com sucesso, é possível fazê-lo &lt;a href=&quot;https://support.google.com/accounts/answer/6160500?hl=pt-BR&quot;&gt;tocar, bloquear ou apagar a memória&lt;/a&gt; clicando em um dos botões disponíveis na tela.&lt;/p&gt;
 
@@ -1958,12 +1972,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Alguns fabricantes, a exemplo da &lt;a href=&quot;http://www.samsung.com/br/home/&quot;&gt;Samsung&lt;/a&gt;, vendem os celulares com sistemas de localização já instalados de fábrica, como o &lt;a href=&quot;https://findmymobile.samsung.com/&quot;&gt;Find My Mobile&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-02.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-02.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-02.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Se seu celular possui um sistema como esse, pode ser que ele ofereça mais opções que o Gerenciador de dispositivos Android. Nesse caso, consulte o manual do seu celular para ver o que pode ser feito.&lt;/p&gt;
 
@@ -1971,12 +1985,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Se seu celular possui instalado o &lt;a href=&quot;https://www.avast.com/pt-br/anti-theft&quot;&gt;Avast Anti-Theft&lt;/a&gt; (a solução antifurto gratuita mais completa que conheço, e que uso no meu celular), você pode localizá-lo e/ou controlá-lo remotamente acessando a sua &lt;a href=&quot;https://my.avast.com/pt-br/&quot;&gt;conta do Avast&lt;/a&gt; ou enviando mensagens SMS para ele.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-03.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-03.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-03.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Para indicar ao Avast que seu celular foi perdido (ou roubado), você pode usar outro celular para enviar para o seu celular (para o seu próprio número) um SMS com o seguinte conteúdo:&lt;/p&gt;
 
@@ -2006,56 +2020,56 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 &lt;li&gt;Abra o Avast Mobile Security e selecione &lt;strong&gt;mais ferramentas&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-04.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-04.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-04.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Selecione &lt;strong&gt;Anti-Theft&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-05.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-05.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-05.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-05.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Selecione &lt;strong&gt;Controle remoto via SMS&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-06.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-06.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-06.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-06.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;ol&gt;
 &lt;li&gt;A lista de comandos possíveis aparece:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-07.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-07.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-07.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-07.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Clicando em um deles (&lt;code&gt;LOST&lt;/code&gt;, por exemplo), o Avast te auxiliará a enviar a mensagem SMS com o comando:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-08.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-08.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-08.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-08.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Ao utilizar o Avast Anti-Theft para controlar seu celular perdido, você deve estar atento a alguns detalhes:&lt;/p&gt;
 
@@ -2082,12 +2096,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 &lt;li&gt;&lt;p&gt;Clique em &lt;strong&gt;Apagar Dispositivo&lt;/strong&gt;:&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-09.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-09.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-09.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;h3&gt;Outras opções&lt;/h3&gt;
 
@@ -2136,12 +2150,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 &lt;li&gt;&lt;p&gt;Na lista, selecione o celular roubado e clique em &lt;strong&gt;Bloquear&lt;/strong&gt;:&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-10.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-10.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-10.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;h2&gt;5) Mudar as senhas das contas e encerrar as sessões abertas&lt;/h2&gt;
 
@@ -2151,27 +2165,28 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Você pode começar alterando as senhas das contas utilizadas pelos aplicativos. Se seu celular é um Android, você pode ver a &lt;a href=&quot;https://play.google.com/apps&quot;&gt;lista dos seus aplicativos&lt;/a&gt; no &lt;a href=&quot;https://play.google.com/&quot;&gt;Google Play&lt;/a&gt; para se certificar de não esquecer de nenhum:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-11.jpg&#39; title=&#39;O Facebook e o Foursquare são dois exemplos de aplicativos cujas contas você deve mudar a senha&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-11.jpg&#39; alt=&#39;O Facebook e o Foursquare são dois exemplos de aplicativos cujas contas você deve mudar a senha&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-    &lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
-        O Facebook e o Foursquare são dois exemplos de aplicativos cujas contas você deve mudar a senha
-    &lt;/em&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-11.jpg&#39; title=&#39;O Facebook e o Foursquare são dois exemplos de aplicativos cujas contas você deve mudar a senha&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-11.jpg&#39; alt=&#39;O Facebook e o Foursquare são dois exemplos de aplicativos cujas contas você deve mudar a senha&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;em class=&#39;caption&#39; itemprop=&#39;description&#39;&gt;
+&lt;p&gt;O Facebook e o Foursquare são dois exemplos de aplicativos cujas contas você deve mudar a senha&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Alguns serviços, a exemplo do &lt;a href=&quot;https://www.facebook.com/&quot;&gt;Facebook&lt;/a&gt; e do &lt;a href=&quot;https://www.google.com.br/&quot;&gt;Google&lt;/a&gt;, permitem que você encerre as sessões abertas em todos os dispositivos, para assegurar que ninguém utiliza sua conta.&lt;/p&gt;
 
 &lt;p&gt;Ao &lt;a href=&quot;https://pt-br.facebook.com/help/748385731848104&quot;&gt;mudar a senha do Facebook&lt;/a&gt;, ele oferece essa possibilidade:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-12.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-12.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-12.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Ao &lt;a href=&quot;https://support.google.com/mail/answer/41078?hl=pt-BR&quot;&gt;mudar a senha do Google&lt;/a&gt;, automaticamente todas as sessões abertas são desconectadas.&lt;/p&gt;
 
@@ -2186,12 +2201,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 &lt;li&gt;&lt;p&gt;Clique no botão &lt;strong&gt;Senhas memorizadas&lt;/strong&gt; para que o Gerenciador de Senhas seja aberto:&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-13.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-13.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-13.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Para &lt;a href=&quot;https://support.google.com/chrome/answer/95606?hl=pt-BR&quot;&gt;verificar os usuários e senhas salvas no Google Chrome&lt;/a&gt;:&lt;/p&gt;
 
@@ -2202,12 +2217,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 &lt;li&gt;&lt;p&gt;Em &lt;strong&gt;Senhas e formulários&lt;/strong&gt;, clique em &lt;strong&gt;Gerenciar senhas&lt;/strong&gt;. Uma caixa de diálogo com uma lista de senhas salvas é exibida:&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-14.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-14.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-14.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-14.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Essa página apresenta instruções para os navegadores &lt;a href=&quot;http://windows.microsoft.com/pt-br/internet-explorer/&quot;&gt;Internet Explorer&lt;/a&gt;, &lt;a href=&quot;http://www.opera.com/pt-br&quot;&gt;Opera&lt;/a&gt; e &lt;a href=&quot;http://www.apple.com/br/safari/&quot;&gt;Safari&lt;/a&gt;:&lt;/p&gt;
 
@@ -2240,12 +2255,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Nem sempre é tão óbvio descobrir qual dos números impressos na caixa é o IMEI. Veja nessa caixa de um &lt;a href=&quot;http://www.samsung.com/latin_en/consumer/mobile-devices/smartphones/galaxy-s/GT-I9192ZWLTPA&quot;&gt;Samsung Galaxy S4 Mini Duos&lt;/a&gt; que o número IMEI aparece desacompanhado de um rótulo que o identifique:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-15.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-15.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-15.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-15.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Além disso, já que esse celular suporta o uso de até dois &lt;em&gt;chips&lt;/em&gt;, esse adesivo deveria apresentar dois números IMEI.&lt;/p&gt;
 
@@ -2255,12 +2270,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Entre com a conta do Google associada ao seu celular Android e expanda a seção &lt;strong&gt;Android&lt;/strong&gt; para ver informações sobre o(s) seu(s) dispositivo(s) Android. No meio dessas informações, deve estar o número IMEI do seu celular:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-16.jpg&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-16.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-16.jpg&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-16.jpg&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;h3&gt;Outros lugares&lt;/h3&gt;
 
@@ -2302,12 +2317,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 &lt;li&gt;&lt;p&gt;Marque a caixa ao lado de &lt;strong&gt;Restauração automática&lt;/strong&gt;:&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/celular-roubado-17.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/celular-roubado-17.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/celular-roubado-17.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/celular-roubado-17.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Uma vez que tudo esteja em ordem, não custa lembrar de &lt;strong&gt;reforçar os cuidados&lt;/strong&gt;. Afinal de contas, moramos no Brasil...&lt;/p&gt;
 
@@ -2326,12 +2341,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
         <title>Rufus: o canivete suíço do boot pelo pendrive (ou cartão de memória)</title>
         <description>&lt;p&gt;O &lt;a href=&quot;https://rufus.akeo.ie&quot;&gt;Rufus&lt;/a&gt; é uma ferramenta bastante versátil quando o objetivo é iniciar o computador (&amp;quot;dar o &lt;em&gt;boot&lt;/em&gt;&amp;quot;, na gíria técnica) pelo &lt;em&gt;pendrive&lt;/em&gt;. Isso pode ser útil em diversas situações, como, por exemplo, testar ou instalar um sistema operacional (especialmente em computadores sem unidade de CD/DVD, como os &lt;em&gt;netbooks&lt;/em&gt;), restaurar &lt;em&gt;backups&lt;/em&gt;, remover vírus, dentre outras.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/rufus-0.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/rufus-0.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/rufus-0.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/rufus-0.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Vantagens do Rufus em relação a outras ferramentas são seu tamanho reduzido (menos de 1MB), a quantidade de funcionalidades e a tradução para o Português, que é selecionada automaticamente de acordo com a configuração do &lt;a href=&quot;http://www.microsoft.com/pt-br/windows&quot;&gt;Windows&lt;/a&gt; (e olha como o mundo é pequeno: descobri que ela foi feita por um professor do &lt;a href=&quot;http://www.ifs.edu.br/&quot;&gt;IFSE&lt;/a&gt;, &lt;a href=&quot;http://lattes.cnpq.br/2313970638096032&quot;&gt;Chateaubriand Vieira Moura&lt;/a&gt;).&lt;/p&gt;
 
@@ -2367,23 +2382,23 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 &lt;li&gt;Conecte o pendrive que será utilizado ao computador e inicie o Rufus. Possivelmente, ele solicitará permissão de administrador, que você deve conceder.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/rufus-1.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/rufus-1.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/rufus-1.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/rufus-1.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Ele pergunta se deseja procurar atualizações para o Rufus na Internet, você pode clicar em &lt;strong&gt;Não&lt;/strong&gt; e prosseguir.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/rufus-2.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/rufus-2.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/rufus-2.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/rufus-2.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Em &lt;strong&gt;Dispositivo&lt;/strong&gt;, selecione o &lt;em&gt;pendrive&lt;/em&gt; que receberá o openSUSE (confira o rótulo e a capacidade para se certificar de que é esse &lt;em&gt;pendrive&lt;/em&gt; mesmo que será utilizado).&lt;/p&gt;&lt;/li&gt;
@@ -2392,12 +2407,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 &lt;li&gt;&lt;p&gt;Clique em &lt;strong&gt;Iniciar&lt;/strong&gt;. O Rufus exibirá um aviso:&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/rufus-3.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/rufus-3.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/rufus-3.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/rufus-3.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Leia-o atentamente e clique em &lt;strong&gt;OK&lt;/strong&gt; para continuar.&lt;/li&gt;
@@ -2411,12 +2426,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;No caso específico do openSUSE, ao seguir as instruções acima e clicar em &lt;strong&gt;Iniciar&lt;/strong&gt;, você perceberá que o Rufus fará uma pergunta:&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/10/rufus-4.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/10/rufus-4.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/10/rufus-4.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/10/rufus-4.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Isso acontece porque a imagem ISO do openSUSE é uma &lt;strong&gt;imagem ISO híbrida&lt;/strong&gt; (&lt;a href=&quot;http://www.syslinux.org/wiki/index.php/Isohybrid&quot;&gt;&lt;em&gt;hybrid ISO&lt;/em&gt;&lt;/a&gt;), o que permite a você tratá-la de duas formas:&lt;/p&gt;
 
@@ -2440,12 +2455,12 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
         <title>Dicas de Git</title>
         <description>&lt;p&gt;Quem não já teve dúvidas ao usar o &lt;a href=&quot;https://git-scm.com/&quot;&gt;sistema de controle de versão Git&lt;/a&gt;? Aqui apresento uma compilação de algumas dúvidas que já tive e das soluções que eu encontrei.&lt;/p&gt;
 
-&lt;p class=&#39;no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
-    &lt;a href=&#39;/files/2015/09/git.png&#39; title=&#39;&#39;&gt;
-        &lt;img src=&#39;/files/2015/09/git.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
-    &lt;/a&gt;
-    
-&lt;/p&gt;
+&lt;div class=&#39;image no-ads-here text-center&#39; itemscope itemtype=&#39;http://schema.org/ImageObject&#39;&gt;
+&lt;a href=&#39;/files/2015/09/git.png&#39; title=&#39;&#39;&gt;
+&lt;img src=&#39;/files/2015/09/git.png&#39; alt=&#39;&#39; class=&#39;img-responsive img-thumbnail&#39; itemprop=&#39;contentUrl&#39;&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;Quase sempre quando tenho uma dúvida, faço uma busca no &lt;a href=&quot;https://www.google.com.br/&quot;&gt;Google&lt;/a&gt; e encontro outras pessoas que já tiveram a mesma dúvida que eu no &lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt;. Lá, encontro outras pessoas que propoem soluções para a dúvida apresentada. Nem sempre a solução marcada como a correta é a que resolve meu problema. Aqui, mostrarei apenas as soluções que de fato me foram úteis.&lt;/p&gt;
 

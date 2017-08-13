@@ -21,7 +21,7 @@
 
     <title>Como criar uma VPN utilizando pfSense e OpenVPN - Antônio Vinícius</title>
     <meta name="author" content="Antônio Vinícius">
-    <meta name="description" content="                    O pfSense é uma solução de firewall incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-...">
+    <meta name="description" content="O pfSense é uma solução de firewall incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-lo. Ele permite cria...">
     <link rel="canonical" href="https://vinyanalista.github.io/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/">
     <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="https://vinyanalista.github.io/feed.xml" />
 
@@ -39,7 +39,7 @@
     
         <meta property="og:author" content="Antônio Vinícius" />
     
-    <meta property="og:description" content="                    O pfSense é uma solução de firewall incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-..." />
+    <meta property="og:description" content="O pfSense é uma solução de firewall incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-lo. Ele permite cria..." />
     
         <meta property="og:image" content="https://vinyanalista.github.io/files/2016/06/pfsense-vpn-01.png" />
     
@@ -55,34 +55,22 @@
     
 
     <!-- Favicons (made with RealFaviconGenerator.net) -->
-    <link rel="apple-touch-icon" sizes="57x57" href="https://vinyanalista.github.io/apple-touch-icon-57x57.png?v=2">
-    <link rel="apple-touch-icon" sizes="60x60" href="https://vinyanalista.github.io/apple-touch-icon-60x60.png?v=2">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://vinyanalista.github.io/apple-touch-icon-72x72.png?v=2">
-    <link rel="apple-touch-icon" sizes="76x76" href="https://vinyanalista.github.io/apple-touch-icon-76x76.png?v=2">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://vinyanalista.github.io/apple-touch-icon-114x114.png?v=2">
-    <link rel="apple-touch-icon" sizes="120x120" href="https://vinyanalista.github.io/apple-touch-icon-120x120.png?v=2">
-    <link rel="apple-touch-icon" sizes="144x144" href="https://vinyanalista.github.io/apple-touch-icon-144x144.png?v=2">
-    <link rel="apple-touch-icon" sizes="152x152" href="https://vinyanalista.github.io/apple-touch-icon-152x152.png?v=2">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://vinyanalista.github.io/apple-touch-icon-180x180.png?v=2">
-    <link rel="icon" type="image/png" href="https://vinyanalista.github.io/favicon-32x32.png?v=2" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://vinyanalista.github.io/favicon-194x194.png?v=2" sizes="194x194">
-    <link rel="icon" type="image/png" href="https://vinyanalista.github.io/favicon-96x96.png?v=2" sizes="96x96">
-    <link rel="icon" type="image/png" href="https://vinyanalista.github.io/android-chrome-192x192.png?v=2" sizes="192x192">
-    <link rel="icon" type="image/png" href="https://vinyanalista.github.io/favicon-16x16.png?v=2" sizes="16x16">
-    <link rel="manifest" href="https://vinyanalista.github.io/manifest.json?v=2">
-    <link rel="shortcut icon" href="https://vinyanalista.github.io/favicon.ico?v=2">
-    <meta name="msapplication-TileColor" content="#2d89ef">
-    <meta name="msapplication-TileImage" content="https://vinyanalista.github.io/mstile-144x144.png?v=2">
-    <meta name="msapplication-config" content="https://vinyanalista.github.io/browserconfig.xml?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://vinyanalista.github.io/apple-touch-icon.png?v=3">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://vinyanalista.github.io/favicon-32x32.png?v=3">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://vinyanalista.github.io/favicon-16x16.png?v=3">
+    <link rel="manifest" href="https://vinyanalista.github.io/manifest.json?v=3">
+    <link rel="mask-icon" href="https://vinyanalista.github.io/safari-pinned-tab.svg?v=3" color="#2196f3">
+    <link rel="shortcut icon" href="https://vinyanalista.github.io/favicon.ico?v=3">
     <meta name="theme-color" content="#2196f3">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css">-->
-    <link rel="stylesheet" href="/libs/bootstrap-material-design/0.3.0/custom/blue-500.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/bootstrap-material-design.min.css">-->
+    <link rel="stylesheet" href="/libs/bootstrap-material-design/0.5.10/custom/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/ripples.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/syntax.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 
@@ -95,9 +83,9 @@
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/ripples.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/ripples.min.js"></script>
     <script src="/assets/js/main.js"></script>
 
     
@@ -146,8 +134,8 @@
 <body itemscope itemtype="http://schema.org/BlogPosting">
 
     <!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top navbar-with-search" role="navigation">
+    <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Exibir/esconder navegação</span>
@@ -156,8 +144,13 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">Antônio Vinícius</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        </div><!--.navbar-header-->
+
+        <a class="pull-right" id="search-button" title="Pesquisar">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="/">Blog</a>
@@ -169,14 +162,24 @@
                     <a href="http://lattes.cnpq.br/2162371468280338">Currículo</a>
                 </li>
             </ul>
-        </div><!-- #navbar -->
-        <form action="/search/" class="navbar-form" id="search-form" method="get" role="search">
-            
-            
-            <input type="text" class="form-control" id="search-input" name="q" placeholder="Pesquisar" />
-            <a class="mdi-action-search" id="search-button"></a>
-        </form>
-    </div><!-- .container-fluid -->
+        </div><!--#navbar-->
+    </div><!--.container-->
+
+    <div id="search-bar">
+        <div class="container">
+            <form action="/search/" id="search-form" method="get" role="search">
+                
+                
+                <div class="input-group">
+                    <input  class="form-control" id="search-input" type="text"name="q" placeholder="Pesquisar" />
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary" id="submit-search-button"><span class="glyphicon glyphicon-search"></span></button>
+                        <button type="reset" class="btn btn-danger" id="reset-search-button"><span class="glyphicon glyphicon-remove"></span></button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div><!--#search-bar-->
 </nav>
 
 
@@ -239,12 +242,12 @@
 
         <div class="row" itemprop="articleBody mainEntity">
             <div class="col-xs-12">
-                <p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-01.png' title=''>
-        <img src='/files/2016/06/pfsense-vpn-01.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+                <div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-01.png' title=''>
+<img src='/files/2016/06/pfsense-vpn-01.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>O <a href="https://www.pfsense.org/">pfSense</a> é uma solução de <em>firewall</em> incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-lo. Ele permite criar VPNs utilizando, dentre outros protocolos, o <a href="https://openvpn.net/">OpenVPN</a>, que é <a href="http://softwarelivre.org/portal/o-que-e">livre</a>, versátil e seguro sem abrir mão da praticidade, motivos pelos quais é amplamente difundido.</p>
 
@@ -254,31 +257,33 @@
 
 <p>Ela funciona assim: os dois computadores pertencem, a princípio, a redes diferentes (eles podem estar em prédios, cidades ou até mesmo países diferentes, por exemplo). Mas eles precisam se comunicar e possuem conexão com a Internet. Então, eles estabelecem na rede mundial um circuito por onde trocam informações de forma privada. É como uma ligação telefônica que não pudesse ser grampeada.</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-02.jpg' title='Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada'>
-        <img src='/files/2016/06/pfsense-vpn-02.jpg' alt='Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-    <em class='caption' itemprop='description'>
-        Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada
-    </em>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-02.jpg' title='Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada'>
+<img src='/files/2016/06/pfsense-vpn-02.jpg' alt='Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+<em class='caption' itemprop='description'>
+<p>Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada</p>
+
+</em>
+
+</div>
 
 <p>Para quem utiliza esses computadores, é imperceptível que eles estão distantes. É como se eles estivessem conectados diretamente por um cabo, apesar de esse cabo não existir de verdade (por isso, essa rede é dita <strong>virtual</strong>). E a comunicação, apesar de ocorrer pela Internet, não pode ser lida pelos computadores no meio do caminho entre um e outro, porque os dois computadores que estabelecem a VPN utilizam criptografia para se comunicar (por isso, essa rede é dita <strong>privada</strong>).</p>
 
 <p>Porque a informação trafega por um circuito cujo conteúdo não pode ser lido pelos computadores que ajudam a formar o circuito, nem pelos que estão fora dele, apenas pelos computadores nas pontas (o remetente e o destinatário), a VPN também é conhecida como <strong>túnel</strong>.</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-03.png' title='Um túnel é bem assim: só quem está dentro dele vê o que por ele passa'>
-        <img src='/files/2016/06/pfsense-vpn-03.png' alt='Um túnel é bem assim: só quem está dentro dele vê o que por ele passa' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-    <em class='caption' itemprop='description'>
-        Um túnel é bem assim: só quem está dentro dele vê o que por ele passa
-    </em>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-03.png' title='Um túnel é bem assim: só quem está dentro dele vê o que por ele passa'>
+<img src='/files/2016/06/pfsense-vpn-03.png' alt='Um túnel é bem assim: só quem está dentro dele vê o que por ele passa' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+<em class='caption' itemprop='description'>
+<p>Um túnel é bem assim: só quem está dentro dele vê o que por ele passa</p>
+
+</em>
+
+</div>
 
 <p>Tentando explicar de forma simples, uma VPN é isso.</p>
 
@@ -286,12 +291,12 @@
 
 <p>O Psiphon, que apresentei em <a href="/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/">outro post</a>, é um exemplo interessante de VPN: ele cria um túnel entre seu computador e algum computador anônimo situado em algum lugar bem distante no mundo e redireciona todo o seu tráfego de Internet por esse computador anônimo. Dessa forma, o Psiphon permite que você utilize a Internet de forma anônima.</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2015/12/vpn.png' title=''>
-        <img src='/files/2015/12/vpn.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2015/12/vpn.png' title=''>
+<img src='/files/2015/12/vpn.png' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Um uso prático disso é burlar bloqueios e censuras. Recentemente, <a href="http://g1.globo.com/tecnologia/noticia/2015/12/operadoras-sao-intimadas-bloquear-whatsapp-no-brasil-por-48-horas.html">o WhatsApp foi bloqueado no Brasil</a> e muitos internautas recorreram a VPNs como o Psiphon para conseguir usar o aplicativo nos seus celulares. VPNs como essas são muito utilizadas em países com governos autoritários, como a <a href="http://tecnologia.terra.com.br/internet/pai-da-censura-na-china-e-surpreendido-burlando-a-mesma-em-publico,1d6ba1d9b58468d4df30fb84daf29ee6e3c193t0.html">China</a>.</p>
 
@@ -328,12 +333,12 @@
 
 <p>Clique em <strong>Save</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-04.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-04.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-04.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-04.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Depois, precisamos de um certificado para o servidor. De volta à tela <strong>Certificate Manager</strong>, clique na aba <strong>Certificates</strong> e clique no botão <strong>Add</strong>. Preencha o cadastro com as informações a seguir:</p>
 
@@ -352,12 +357,12 @@
 
 <p>Clique em <strong>Save</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-05.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-05.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-05.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-05.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Precisamos também cadastrar os usuários que utilizarão a VPN (<em>login</em> e senha) e criar certificados para esses usuários. Vá em <strong>System</strong>, <strong>User Manager</strong> e clique no botão <strong>Add</strong>. Preencha o cadastro com as informações a seguir:</p>
 
@@ -376,41 +381,41 @@
 
 <p>Clique em <strong>Save</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-06.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-06.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-06.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-06.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Agora vamos à configuração da VPN propriamente dita.</p>
 
 <p>Vá em <strong>VPN</strong>, <strong>OpenVPN</strong> e clique na aba <strong>Wizards</strong>. É iniciado então o <strong>OpenVPN Remote Access Server Setup</strong>. Na primeira tela, <strong>Select an Authentication Backend Type</strong>, escolha <strong>Local User Access</strong>, e clique em <strong>Next</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-07.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-07.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-07.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-07.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Na segunda tela, <strong>Choose a Certificate Authority (CA)</strong>, selecione a autoridade cerficadora que foi criada anteriormente (<strong>MINHACASA_CA</strong>) e clique em <strong>Next</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-08.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-08.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-08.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-08.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Na terceira tela, <strong>Choose a Server Certificate</strong>, selecione o certificado de servidor que foi criado anteriormente (<strong>VPN de teste</strong>) e clique em <strong>Next</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-09.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-09.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-09.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-09.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Na tela seguinte, <strong>Server Setup</strong>, vamos configurar o servidor da VPN. Aqui, você deve preencher de acordo com as configurações da rede do seu servidor (a rede da sua empresa, por exemplo). Vejamos algumas configurações:</p>
 
@@ -450,32 +455,32 @@
 
 <p>Perceba que essa tela é extensa, mas nela estão quase todas as configurações da VPN:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-10.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-10.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-10.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-10.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Quando terminar de configurar a VPN, clique em <strong>Next</strong>.</p>
 
 <p>Na penúltima tela do assistente, <strong>Firewall Rule Configuration</strong>, certifique-se de que as duas opções <strong>Firewall Rule</strong> e <strong>OpenVPN rule</strong> estejam marcadas. Com isso, o pfSense criará automaticamente as regras de <em>firewall</em> necessárias para que a VPN funcione. Clique em <strong>Next</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-11.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-11.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-11.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-11.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>A última tela apenas informa que a VPN foi criada. Clique em <strong>Finish</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-12.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-12.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-12.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-12.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <h2>Exportando o <em>software</em> cliente</h2>
 
@@ -483,12 +488,12 @@
 
 <p>Caso você ainda não o tenha instalado, vá em <strong>System</strong>, <strong>Package Manager</strong>, na aba <strong>Available Packages</strong>, busque por esse pacote e o instale clicando no botão <strong>Install</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-13.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-13.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-13.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-13.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Com o utilitário instalado, vá em <strong>VPN</strong>, <strong>OpenVPN</strong>, aba <strong>Client Export</strong>.</p>
 
@@ -498,12 +503,12 @@
 
 <p>Vou demonstrar como conectar à VPN um computador cujo sistema operacional é o Windows 10 de 64 <em>bits</em>. Nesse caso, clique no botão <strong>x64-win6</strong> para exportar o cliente correspondente:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-14.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-14.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-14.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-14.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>O <em>download</em> do instalador do cliente é iniciado. Esse arquivo (cujo nome deve ser algo parecido com <strong>firewall-udp-1194-vinyanalista-install.exe</strong>) deve ser copiado ou movido para o computador cliente.</p>
 
@@ -513,48 +518,48 @@
 
 <p>No computador cliente, execute o instalador do cliente OpenVPN, baixado do pfSense. A instalação é bem simples. Aqui, mais uma vez, é <em>next</em>, <em>next</em>, <em>next</em>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-15.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-15.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-15.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-15.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Terminada a instalação, para iniciar o cliente OpenVPN, abra o <strong>menu Iniciar</strong>, clique em <strong>Todos os programas</strong>, depois em <strong>OpenVPN</strong> e, por fim, em <strong>OpenVPN GUI</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-16.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-16.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-16.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-16.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>O cliente OpenVPN é iniciado. Observe seu ícone na área de notificação:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-17.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-17.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-17.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-17.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Dê dois clique nesse ícone. O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense e clique em <strong>OK</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-18.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-18.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-18.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-18.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Se conseguir se conectar, o cliente OpenVPN mostra uma notificação com o endereço IP que foi atribuído ao computador dentro da rede privada virtual. Observe também que o ícone do cliente muda sua cor para verde, indicando que está conectado:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-19.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-19.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-19.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-19.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Como teste, você pode abrir o <strong>Prompt de comando</strong> do Windows e verificar a conectividade com algum computador na rede da outra ponta da VPN:</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">Microsoft Windows [versão 10.0.10240]
@@ -578,12 +583,12 @@ C:\Users\Vinicius&gt;
 </code></pre></div>
 <p>Quando não precisar usar mais a VPN, clique com o botão direito do <em>mouse</em> no ícone do cliente OpenVPN e em seguida clique em <strong>Sair</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-20.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-20.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-20.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-20.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <h3>Solução de problemas</h3>
 
@@ -637,72 +642,73 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 <p>Comece instalando o OpenVPN Connect pela Play Store:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='https://play.google.com/store/apps/details?id=net.openvpn.openvpn' title='Clique para obter o OpenVPN Connect na Play Store'>
-        <img src='/files/2015/12/google-play.png' alt='Clique para obter o OpenVPN Connect na Play Store' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-    <em class='caption' itemprop='description'>
-        Clique para obter o OpenVPN Connect na Play Store
-    </em>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='https://play.google.com/store/apps/details?id=net.openvpn.openvpn' title='Clique para obter o OpenVPN Connect na Play Store'>
+<img src='/files/2015/12/google-play.png' alt='Clique para obter o OpenVPN Connect na Play Store' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+<em class='caption' itemprop='description'>
+<p>Clique para obter o OpenVPN Connect na Play Store</p>
+
+</em>
+
+</div>
 
 <p>Se ainda não passou, passe agora para o celular o arquivo de configuração exportado pelo pfSense.</p>
 
 <p>No celular, abra o <strong>menu de Aplicativos</strong> e toque no <strong>OpenVPN Connect</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-21.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-21.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-21.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-21.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>O cliente OpenVPN para Android é iniciado:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-22.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-22.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-22.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-22.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Toque no <strong>botão de opções</strong> (o com 3 pontos que aparece no canto superior direito da tela), em seguida em <strong>Import</strong> e, por último, em <strong>Import Profile from SD card</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-23.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-23.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-23.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-23.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Localize o arquivo de configuração na memória interna ou no cartão de memória do seu celular, toque nele e depois em <strong>Select</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-24.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-24.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-24.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-24.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense. Opcionalmente, marque a opção <strong>Save</strong> para que ele memorize o usuário e a senha. Por fim, toque em <strong>Connect</strong>:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-25.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-25.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-25.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-25.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Se conseguir se conectar, o cliente OpenVPN passa a exibir o <em>status</em> da conexão. Observe que ele fixa um ícone na área de notificação, indicando que está conectado:</p>
 
-<p class='no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
-    <a href='/files/2016/06/pfsense-vpn-26.jpg' title=''>
-        <img src='/files/2016/06/pfsense-vpn-26.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
-    </a>
-    
-</p>
+<div class='image no-ads-here text-center' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='/files/2016/06/pfsense-vpn-26.jpg' title=''>
+<img src='/files/2016/06/pfsense-vpn-26.jpg' alt='' class='img-responsive img-thumbnail' itemprop='contentUrl'>
+</a>
+
+</div>
 
 <p>Quando não precisar usar mais a VPN, volte ao cliente OpenVPN e toque em <strong>Disconnect</strong>.</p>
 
