@@ -1,135 +1,300 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2017/07/03/xenserver-iniciando-maquinas-virtuais-automaticamente-ao-ligar/</loc>
-    <lastmod>2017-07-03T01:27:07-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2017/01/30/pfsense-autenticando-no-active-directory-ad/</loc>
-    <lastmod>2017-01-30T08:02:39-02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/</loc>
-    <lastmod>2016-06-26T00:55:45-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2016/02/18/dicas-para-bater-bons-prints/</loc>
-    <lastmod>2016-02-18T02:17:37-02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/</loc>
-    <lastmod>2016-02-18T02:17:37-02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/12/15/como-configurar-as-atualizacoes-automaticas-do-windows-10/</loc>
-    <lastmod>2015-12-15T13:33:43-02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/11/27/como-escolher-um-bom-computador-para-comprar/</loc>
-    <lastmod>2015-11-27T03:34:04-02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/10/17/celular-roubado/</loc>
-    <lastmod>2015-10-18T02:56:29-02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/10/08/rufus/</loc>
-    <lastmod>2017-08-13T15:09:26-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/09/27/dicas-de-git/</loc>
-    <lastmod>2015-09-27T16:25:27-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/09/16/como-desativar-a-inicializacao-rapida-do-windows/</loc>
-    <lastmod>2017-08-13T15:01:56-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/08/29/addthis/</loc>
-    <lastmod>2015-08-29T22:51:19-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/08/20/wordpress-bootstrap-parte2/</loc>
-    <lastmod>2015-08-20T01:41:02-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/08/19/links-externos/</loc>
-    <lastmod>2015-08-19T09:49:47-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/08/06/wordpress-bootstrap/</loc>
-    <lastmod>2017-08-13T15:12:39-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/07/05/bootstrap/</loc>
-    <lastmod>2017-08-13T15:09:26-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2015/06/24/favicon/</loc>
-    <lastmod>2015-06-24T00:54:36-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</loc>
-    <lastmod>2015-06-03T18:30:27-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</loc>
-    <lastmod>2015-06-04T12:49:03-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</loc>
-    <lastmod>2015-07-06T22:04:14-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</loc>
-    <lastmod>2015-07-06T22:04:14-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</loc>
-    <lastmod>2015-07-06T22:04:14-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</loc>
-    <lastmod>2015-07-06T22:04:14-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/</loc>
-    <lastmod>2015-08-06T08:47:04-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</loc>
-    <lastmod>2015-07-06T22:04:14-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/</loc>
-    <lastmod>2015-07-06T22:04:14-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2012/04/15/onde-reciclar-cartuchos-de-tinta-em-aracaju/</loc>
-    <lastmod>2015-06-03T18:30:27-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2012/04/15/onde-reciclar-pilhas-baterias-e-celulares-em-aracaju/</loc>
-    <lastmod>2015-06-03T18:30:27-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2012/04/09/componentes-de-um-computador-hardware-e-software/</loc>
-    <lastmod>2017-08-13T15:01:56-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2012/04/08/minha-pesquisa-cientifica-sobre-processadores/</loc>
-    <lastmod>2015-06-03T18:30:27-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2012/04/08/normas-abnt-para-trabalhos-academicos/</loc>
-    <lastmod>2015-06-03T18:30:27-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/blog/2012/04/01/primeiros-de-abril-interessantes/</loc>
-    <lastmod>2015-06-03T18:30:27-03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://vinyanalista.github.io/</loc>
-    <lastmod>2015-12-17T13:48:14-02:00</lastmod>
-  </url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/01/primeiros-de-abril-interessantes/</loc>
+<lastmod>2015-06-03T18:30:27-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/08/normas-abnt-para-trabalhos-academicos/</loc>
+<lastmod>2015-06-03T18:30:27-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/08/minha-pesquisa-cientifica-sobre-processadores/</loc>
+<lastmod>2015-06-03T18:30:27-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/09/componentes-de-um-computador-hardware-e-software/</loc>
+<lastmod>2017-08-13T15:01:56-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/15/onde-reciclar-pilhas-baterias-e-celulares-em-aracaju/</loc>
+<lastmod>2015-06-03T18:30:27-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/15/onde-reciclar-cartuchos-de-tinta-em-aracaju/</loc>
+<lastmod>2015-06-03T18:30:27-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/</loc>
+<lastmod>2015-07-06T22:04:14-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/</loc>
+<lastmod>2015-07-06T22:04:14-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/07/18/instalacao-do-apache-maven/</loc>
+<lastmod>2015-08-06T08:47:04-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7/</loc>
+<lastmod>2015-07-06T22:04:14-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/07/18/apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2/</loc>
+<lastmod>2015-07-06T22:04:14-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/07/19/configurando-um-datasource-do-mysql-no-jboss-as/</loc>
+<lastmod>2015-07-06T22:04:14-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2013/07/30/recuperando-o-boot-do-windows-apos-instalacao-do-linux/</loc>
+<lastmod>2015-07-06T22:04:14-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2014/01/20/reduzindo-o-tamanho-de-discos-rigidos-virtuais-do-virtualbox/</loc>
+<lastmod>2015-06-04T12:49:03-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2014/09/23/controlando-o-vlc-a-partir-do-navegador-ou-do-celular/</loc>
+<lastmod>2015-06-03T18:30:27-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/06/24/favicon/</loc>
+<lastmod>2015-06-24T00:54:36-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/07/05/bootstrap/</loc>
+<lastmod>2017-08-13T15:09:26-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/08/06/wordpress-bootstrap/</loc>
+<lastmod>2017-08-13T15:12:39-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/08/19/links-externos/</loc>
+<lastmod>2015-08-19T09:49:47-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/08/20/wordpress-bootstrap-parte2/</loc>
+<lastmod>2015-08-20T01:41:02-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/08/29/addthis/</loc>
+<lastmod>2015-08-29T22:51:19-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/09/16/como-desativar-a-inicializacao-rapida-do-windows/</loc>
+<lastmod>2017-08-13T15:01:56-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/09/27/dicas-de-git/</loc>
+<lastmod>2015-09-27T16:25:27-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/10/08/rufus/</loc>
+<lastmod>2017-08-13T15:09:26-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/10/17/celular-roubado/</loc>
+<lastmod>2015-10-18T02:56:29-02:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/11/27/como-escolher-um-bom-computador-para-comprar/</loc>
+<lastmod>2015-11-27T03:34:04-02:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/12/15/como-configurar-as-atualizacoes-automaticas-do-windows-10/</loc>
+<lastmod>2015-12-15T13:33:43-02:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/</loc>
+<lastmod>2016-02-18T02:17:37-02:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2016/02/18/dicas-para-bater-bons-prints/</loc>
+<lastmod>2016-02-18T02:17:37-02:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/</loc>
+<lastmod>2016-06-26T00:55:45-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2017/01/30/pfsense-autenticando-no-active-directory-ad/</loc>
+<lastmod>2017-01-30T08:02:39-02:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2017/07/03/xenserver-iniciando-maquinas-virtuais-automaticamente-ao-ligar/</loc>
+<lastmod>2017-07-03T01:27:07-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/</loc>
+<lastmod>2018-09-09T18:43:24-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/category/trabalhos/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/07/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/07/19/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/07/18/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/07/10/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/21/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/15/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/09/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/08/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2012/04/01/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2013/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2013/07/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2013/07/30/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2014/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2014/09/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2014/09/23/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2014/01/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2014/01/20/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/12/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/12/17/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/12/15/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/11/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/11/27/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/10/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/10/17/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/10/08/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/09/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/09/27/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/09/16/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/08/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/08/29/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/08/20/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/08/19/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/08/06/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/07/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/07/05/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/06/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2015/06/24/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2016/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2016/06/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2016/06/26/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2016/02/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2016/02/18/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2017/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2017/07/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2017/07/03/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2017/01/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/2017/01/30/</loc>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/page/2/</loc>
+<lastmod>2018-09-09T18:43:24-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/page/3/</loc>
+<lastmod>2018-09-09T18:43:24-03:00</lastmod>
+</url>
+<url>
+<loc>https://vinyanalista.github.io/blog/page/4/</loc>
+<lastmod>2018-09-09T18:43:24-03:00</lastmod>
+</url>
 </urlset>
