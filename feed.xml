@@ -1,4 +1,400 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinyanalista.github.io/" rel="alternate" type="text/html" hreflang="pt" /><updated>2018-09-10T23:52:36-03:00</updated><id>https://vinyanalista.github.io/</id><title type="html">Antônio Vinícius</title><subtitle>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</subtitle><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><entry><title type="html">XenServer iniciando máquinas virtuais automaticamente ao ligar</title><link href="https://vinyanalista.github.io/blog/2017/07/03/xenserver-iniciando-maquinas-virtuais-automaticamente-ao-ligar/" rel="alternate" type="text/html" title="XenServer iniciando máquinas virtuais automaticamente ao ligar" /><published>2017-07-03T01:25:00-03:00</published><updated>2017-07-03T01:27:07-03:00</updated><id>https://vinyanalista.github.io/blog/2017/07/03/xenserver-iniciando-maquinas-virtuais-automaticamente-ao-ligar</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2017/07/03/xenserver-iniciando-maquinas-virtuais-automaticamente-ao-ligar/">&lt;p&gt;Servidores são diferentes de &lt;em&gt;desktops&lt;/em&gt; em muitos sentidos. Um deles é que eles podem ser configurados para ligar automaticamente assim que percebem a presença de energia: após uma queda, quando a rede elétrica é restabelecida, automaticamente o servidor liga e começa a carregar o sistema operacional. Isso reduz o tempo para restabelecer os serviços, ainda mais em casos onde o servidor está distante e se dirigir até ele para apertar um botão de ligar pode ser inviável.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinyanalista.github.io/" rel="alternate" type="text/html" hreflang="pt" /><updated>2018-10-05T18:42:45-03:00</updated><id>https://vinyanalista.github.io/</id><title type="html">Antônio Vinícius</title><subtitle>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</subtitle><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><entry><title type="html">Verificação de integridade e autenticidade com o Gpg4win</title><link href="https://vinyanalista.github.io/blog/2018/10/05/verificacao-de-integridade-e-autenticidade-com-o-gpg4win/" rel="alternate" type="text/html" title="Verificação de integridade e autenticidade com o Gpg4win" /><published>2018-10-05T18:30:00-03:00</published><updated>2018-10-05T18:42:41-03:00</updated><id>https://vinyanalista.github.io/blog/2018/10/05/verificacao-de-integridade-e-autenticidade-com-o-gpg4win</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2018/10/05/verificacao-de-integridade-e-autenticidade-com-o-gpg4win/">&lt;p&gt;Por vezes pode ser importante verificar um arquivo obtido da Internet, por exemplo, a &lt;a href=&quot;https://pt.wikipedia.org/wiki/Imagem_ISO&quot;&gt;imagem ISO&lt;/a&gt; de uma &lt;a href=&quot;https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_Linux&quot;&gt;distribuição Linux&lt;/a&gt; - ela contém o sistema operacional que você vai utilizar ou instalar em seu computador, já pensou se o arquivo se corrompeu durante o &lt;em&gt;download&lt;/em&gt; ou foi adulterado por um &lt;a href=&quot;https://pt.wikipedia.org/wiki/Ataque_man-in-the-middle&quot;&gt;ataque de homem no meio&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;Duas verificações comuns que reduzem a quase zero as chances de usar um arquivo corrompido ou adulterado são a &lt;a href=&quot;https://pt.wikipedia.org/wiki/Soma_de_verifica%C3%A7%C3%A3o&quot;&gt;soma de verificação&lt;/a&gt; e a &lt;a href=&quot;https://www.gnupg.org/gph/en/manual.html&quot;&gt;assinatura digital&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;a &lt;strong&gt;soma de verificação&lt;/strong&gt; (&lt;em&gt;checksum&lt;/em&gt;) é uma soma feita antes do envio por quem cria o arquivo e verificada depois por quem baixa o arquivo, há alguns algoritmos para fazer essa soma, mas a ideia geral é somar os &lt;em&gt;bytes&lt;/em&gt; do arquivo - ao verificar a soma de um arquivo, se houve modificação do arquivo ou da soma em si, a verificação falha, indicando que não é seguro usar o arquivo; e&lt;/li&gt;
+  &lt;li&gt;a &lt;strong&gt;assinatura digital&lt;/strong&gt; certifica um arquivo, tal qual uma assinatura à mão, mas por utilizar mecanismos de criptografia tem a vantagem de ser resistente a fraudes - ao verificar a assinatura de um arquivo, se houve modificação do arquivo ou da assinatura em si, ou se a assinatura foi feita com a chave de outra pessoa, a verificação falha, indicando que não é seguro usar o arquivo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Elas verificam, respectivamente, &lt;strong&gt;integridade&lt;/strong&gt; e &lt;strong&gt;autenticidade&lt;/strong&gt;, duas propriedades básicas da &lt;a href=&quot;https://pt.wikipedia.org/wiki/Seguran%C3%A7a_da_informa%C3%A7%C3%A3o&quot;&gt;segurança da informação&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Comumente as distribuições Linux disponibilizam somas de verificação &lt;a href=&quot;https://pt.wikipedia.org/wiki/SHA-2&quot;&gt;SHA-256&lt;/a&gt; e assinaturas digitais &lt;a href=&quot;https://gnupg.org/&quot;&gt;GPG&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nesse &lt;em&gt;post&lt;/em&gt;, você verá como fazer essas verificações com o &lt;a href=&quot;https://www.gpg4win.org/&quot;&gt;&lt;strong&gt;Gpg4win&lt;/strong&gt;&lt;/a&gt;, um &lt;em&gt;software&lt;/em&gt; livre gratuito para &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/&quot;&gt;Windows&lt;/a&gt;. Como referência, aqui uso a versão 3.1.3, &lt;a href=&quot;http://lists.wald.intevation.org/pipermail/gpg4win-announce/2018-August/000080.html&quot;&gt;lançada em 31/08/2018&lt;/a&gt;. Como exemplo, verificaremos uma imagem ISO da distribuição &lt;a href=&quot;https://www.opensuse.org/&quot;&gt;openSUSE Leap&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Embora usemos aqui o exemplo da imagem ISO, qualquer arquivo pode ser verificado, contanto que a soma de verificação e a assinatura digital estejam disponíveis. É o caso, por exemplo, do instalador do programa &lt;a href=&quot;https://www.veracrypt.fr/&quot;&gt;VeraCrypt&lt;/a&gt;. Curiosamente, &lt;a href=&quot;https://wiki.gnupg.org/Gpg4win/CheckIntegrity&quot;&gt;é possível usar o Gpg4win para verificar o instalador do próprio Gpg4win&lt;/a&gt; (no caso de uma atualização).&lt;/p&gt;
+
+&lt;h2 id=&quot;visão-geral&quot;&gt;Visão geral&lt;/h2&gt;
+
+&lt;p&gt;Como a verificação de uma imagem ISO não é um processo tão simples, primeiro tenhamos uma visão geral do processo. Antes de começar, teremos uma etapa inicial de configuração do computador, com a instalação do Gpg4win. Depois, a “receita de bolo” se resume a:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Baixar a imagem ISO do &lt;em&gt;site&lt;/em&gt; da distribuição (como de costume, nenhuma novidade);&lt;/li&gt;
+  &lt;li&gt;Baixar a soma de verificação e a assinatura digital do &lt;em&gt;site&lt;/em&gt; da distribuição, a depender da distribuição elas podem ser dois arquivos ou pode ser apenas um arquivo de texto contendo ambas (o openSUSE é o segundo caso);&lt;/li&gt;
+  &lt;li&gt;Importar a chave pública da distribuição, seja do &lt;em&gt;site&lt;/em&gt; da distribuição, seja de um servidor de chaves públicas confiável (obteremos a chave do &lt;em&gt;site&lt;/em&gt; do openSUSE, mas &lt;a href=&quot;https://pt.opensuse.org/SDB:Ajuda_de_download&quot;&gt;o openSUSE também tem um servidor de chaves&lt;/a&gt;);&lt;/li&gt;
+  &lt;li&gt;Fazer a soma de verificação da imagem ISO baixada e conferir com a soma de verificação esperada; e&lt;/li&gt;
+  &lt;li&gt;Verificar a assinatura digital, que pode ter sido feita em relação à imagem ISO, ou em relação à soma de verificação, o que estende a proteção à soma de verificação (o openSUSE é o segundo caso).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;O processo pode variar de acordo com a distribuição, mas geralmente segue essa linha. Por exemplo, há vários algoritmos de somas de verificação. O algoritmo &lt;a href=&quot;https://pt.wikipedia.org/wiki/MD5&quot;&gt;MD5&lt;/a&gt; era mais popular, mas tem sido substituído pelo &lt;a href=&quot;https://pt.wikipedia.org/wiki/SHA-2&quot;&gt;SHA-256&lt;/a&gt;, que em tese é menos vulnerável. Também há distribuições que não fazem assinatura digital, nesses casos não é possível verificar a autenticidade da imagem ISO.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-download-e-instalação-do-gpg4win&quot;&gt;1) Download e instalação do Gpg4win&lt;/h2&gt;
+
+&lt;p&gt;Baixe o Gpg4win do seu &lt;em&gt;site&lt;/em&gt; oficial: &lt;a href=&quot;https://www.gpg4win.org/&quot;&gt;https://www.gpg4win.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-01.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-01.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Em se tratando de segurança da informação, sempre obtenha os arquivos dos seus respectivos &lt;em&gt;sites&lt;/em&gt; oficiais. Nesse &lt;em&gt;post&lt;/em&gt;, não vou fornecer nenhum &lt;em&gt;link&lt;/em&gt; para &lt;em&gt;download&lt;/em&gt; direto.&lt;/p&gt;
+
+&lt;p&gt;Também pensando na segurança, nos deparamos agora com um dilema: estamos baixando o Gpg4win para verificar arquivos baixados, mas como verificamos o próprio Gpg4win?&lt;/p&gt;
+
+&lt;p&gt;Pensando nisso, os desenvolvedores do Gpg4win possibilitaram verificar a integridade e a autenticidade do instalador usando recursos do próprio Windows.&lt;/p&gt;
+
+&lt;p&gt;Na página de &lt;em&gt;download&lt;/em&gt; do Gpg4win, clique no &lt;em&gt;link&lt;/em&gt; &lt;strong&gt;Check integrity&lt;/strong&gt; (traduzindo: Verificar integridade). Vamos precisar das informações que constam nessa página.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-verificando-a-integridade-do-gpg4win&quot;&gt;1.1) Verificando a integridade do Gpg4win&lt;/h3&gt;
+
+&lt;p&gt;No Windows, é possível fazer somas de verificação usando o utilitário de linha de comando &lt;strong&gt;CertUtil&lt;/strong&gt;. Inicie o aplicativo &lt;a href=&quot;https://pt.wikipedia.org/wiki/Prompt_de_comando&quot;&gt;&lt;strong&gt;Prompt de Comando&lt;/strong&gt;&lt;/a&gt; pelo &lt;strong&gt;menu Iniciar&lt;/strong&gt;, digite o comando a seguir e tecle &lt;strong&gt;Enter&lt;/strong&gt; (substitua &lt;code class=&quot;highlighter-rouge&quot;&gt;gpg4win-3.1.3.exe&lt;/code&gt; pelo nome do arquivo, se for diferente):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;CertUtil -hashfile Downloads\gpg4win-3.1.3.exe SHA256
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;12-verificando-a-autenticidade-do-gpg4win&quot;&gt;1.2) Verificando a autenticidade do Gpg4win&lt;/h3&gt;
+
+&lt;p&gt;Para verificar a assinatura do instalador do Gpg4win, clique com o botão direito do &lt;em&gt;mouse&lt;/em&gt; no instalador baixado e clique em &lt;strong&gt;Propriedades&lt;/strong&gt;. Na caixa de diálogo que abre, selecione a aba &lt;strong&gt;Assinaturas Digitais&lt;/strong&gt; e clique no botão &lt;strong&gt;Detalhes&lt;/strong&gt;. Na nova caixa de diálogo, selecione a aba &lt;strong&gt;Avançado&lt;/strong&gt; e depois a opção &lt;strong&gt;Número de série&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Compare os valores informados pelo Windows com os presentes no &lt;em&gt;site&lt;/em&gt; do Gpg4win:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-02.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-02.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Se os valores conferem, você baixou o instalador corretamente. Execute-o como administrador e faça a instalação, no estivo Avançar, Avançar, Concluir…&lt;/p&gt;
+
+&lt;h2 id=&quot;2-baixando-a-imagem-iso-do-opensuse&quot;&gt;2) Baixando a imagem ISO do openSUSE&lt;/h2&gt;
+
+&lt;p&gt;Baixe a imagem de instalação via rede do openSUSE Leap, assim como o arquivo da soma de verificação, em:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://software.opensuse.org/distributions/leap&quot;&gt;https://software.opensuse.org/distributions/leap&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-03.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-03.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Escolhi a imagem de instalação via rede por ser o menor arquivo, apenas para exemplo.&lt;/p&gt;
+
+&lt;p&gt;Quando acabar, você deve ver dois arquivos na pasta &lt;code class=&quot;highlighter-rouge&quot;&gt;Downloads&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;a imagem ISO (&lt;code class=&quot;highlighter-rouge&quot;&gt;openSUSE-Leap-15.0-NET-x86_64.iso.sha256&lt;/code&gt;) e&lt;/li&gt;
+  &lt;li&gt;a soma de verificação (&lt;code class=&quot;highlighter-rouge&quot;&gt;openSUSE-Leap-15.0-NET-x86_64.iso.sha256&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3-importando-a-chave-pública-do-opensuse&quot;&gt;3) Importando a chave pública do openSUSE&lt;/h2&gt;
+
+&lt;p&gt;Mais abaixo na página &lt;strong&gt;Baixe o openSUSE&lt;/strong&gt;, na seção &lt;strong&gt;Verifique seu download antes de usar&lt;/strong&gt;, clique no grande número em &lt;a href=&quot;https://pt.wikipedia.org/wiki/Sistema_de_numera%C3%A7%C3%A3o_hexadecimal&quot;&gt;hexadecimal&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-04.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-04.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Na página seguinte, clique no outro número, menor, também em hexadecimal (curiosamente, não é outro número, são os 8 últimos dígitos do anterior, como se fosse um resumo):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-05.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-05.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;A página seguinte mostra a chave pública do Projeto openSUSE em formato de texto.&lt;/p&gt;
+
+&lt;p&gt;Selecione tudo entre &lt;code class=&quot;highlighter-rouge&quot;&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;-----END PGP PUBLIC KEY BLOCK-----&lt;/code&gt; e copie:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-06.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-06.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Inicie o aplicativo &lt;a href=&quot;https://www.openpgp.org/software/kleopatra/&quot;&gt;&lt;strong&gt;Kleopatra&lt;/strong&gt;&lt;/a&gt;, incluso no Gpg4win, vá no menu &lt;strong&gt;Ferramentas&lt;/strong&gt;, aponte para &lt;strong&gt;Área de transferência&lt;/strong&gt;, e clique em &lt;strong&gt;Importação do certificado&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-07.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-07.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Você agora deve ver a chave pública do openSUSE importada no Kleopatra, que oferece para assinar a chave, marcando-a como confiável, vamos por enquanto clicar em &lt;strong&gt;Não&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-08.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-08.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Isso na verdade é opcional, volto a explicar no final.&lt;/p&gt;
+
+&lt;p&gt;Faça um duplo clique na chave e confira a impressão digital (&lt;em&gt;fingerprint&lt;/em&gt;) com a presente no &lt;em&gt;site&lt;/em&gt; do openSUSE. Se os números conferem, você importou com sucesso a chave pública do openSUSE para o Kleopatra:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-09.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-09.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;4-verificando-a-integridade-da-imagem-iso&quot;&gt;4) Verificando a integridade da imagem ISO&lt;/h2&gt;
+
+&lt;p&gt;Na tela principal do Kleopatra, vá no menu &lt;strong&gt;Arquivo&lt;/strong&gt; e clique em &lt;strong&gt;Verificar arquivos de soma de verificação&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-10.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-10.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Informe a localização do arquivo que contém a soma de verificação (&lt;code class=&quot;highlighter-rouge&quot;&gt;openSUSE-Leap-15.0-NET-x86_64.iso.sha256&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Na tela seguinte, se a soma de verificação confere, o arquivo da imagem ISO (&lt;code class=&quot;highlighter-rouge&quot;&gt;openSUSE-Leap-15.0-NET-x86_64.iso&lt;/code&gt;) é destacado na cor verde:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-11.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-11.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Na parte inferior da janela, aparece &lt;strong&gt;Ocorreu um erro&lt;/strong&gt;. Essa mensagem é exibida provavelmente porque o Kleopatra não interpreta nesse momento as linhas referentes à assinatura GPG. Se tiver curiosidade, você pode ver essas linhas abrindo o arquivo da soma de verificação usando um programa como o &lt;a href=&quot;https://notepad-plus-plus.org/&quot;&gt;Notepad++&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-12.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-12.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Se a soma de verificação não confere, o arquivo da imagem ISO é destacado na cor vermelha. Clicando em &lt;strong&gt;Mostrar&lt;/strong&gt;, é possível ver na última linha &lt;em&gt;checksums did NOT match&lt;/em&gt; (somas de verificação NÃO conferem):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-13.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-13.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Se isso acontecer, você deve tentar baixar a imagem ISO novamente.&lt;/p&gt;
+
+&lt;h2 id=&quot;5-verificando-a-autentiticade-da-imagem-iso&quot;&gt;5) Verificando a autentiticade da imagem ISO&lt;/h2&gt;
+
+&lt;p&gt;Na tela principal do Kleopatra, vá no menu &lt;strong&gt;Arquivo&lt;/strong&gt; e clique em &lt;strong&gt;Descriptografar/verificar&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-14.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-14.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Informe a localização do arquivo que contém a soma de verificação.&lt;/p&gt;
+
+&lt;p&gt;Se a chave não foi assinada (etapa que o Kleopatra nos ofereceu, mas pulamos antes) e a verificação da assinatura confere, o Kleopatra mostra uma mensagem neutra, que não parece uma mensagem nem de sucesso nem de erro:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-15.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-15.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;O ideal seria assinar a chave, como explicarei a seguir, mas realmente penso que é um passo a mais e opcional. Se você é do tipo tranquilo, pode ficar satisfeito com a mensagem acima e usar a imagem ISO tranquilamente. Veja como uma assinatura inválida parece.&lt;/p&gt;
+
+&lt;p&gt;Independente de a chave ter sido assinada ou não, se a verificação da assinatura falha, o Kleopatra mostra &lt;strong&gt;Assinatura inválida&lt;/strong&gt;, em vermelho:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-16.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-16.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Se isso acontecer, você deve tentar baixar a imagem ISO novamente.&lt;/p&gt;
+
+&lt;h2 id=&quot;6-opcionalidades&quot;&gt;6) Opcionalidades&lt;/h2&gt;
+
+&lt;p&gt;Até aqui, você fez todos os passos que elencamos na visão geral, no início.&lt;/p&gt;
+
+&lt;p&gt;Você pode ir um passo além assinando a chave pública do openSUSE com uma chave privada sua, sinalizando para o Kleopatra que você confia que a chave pública do openSUSE pertence de fato ao openSUSE.&lt;/p&gt;
+
+&lt;p&gt;Pode parecer burocrático, mas da forma como o GPG foi projetado, idealmente as pessoas trocariam chaves apenas pessoalmente, para formar uma rede de confiança. Na prática, não é assim que funciona. Obter a chave pública do &lt;em&gt;site&lt;/em&gt; da distribuição é o máximo que você pode fazer enquanto usuário final que deseja verificar uma imagem ISO. De qualquer forma, já é mais seguro do que baixar a imagem ISO e confiar nela sem fazer nenhuma verificação.&lt;/p&gt;
+
+&lt;p&gt;Para assinar a chave pública do openSUSE, você precisa antes criar um par de chaves seu.&lt;/p&gt;
+
+&lt;h2 id=&quot;61-criando-um-par-de-chaves-pessoal&quot;&gt;6.1) Criando um par de chaves pessoal&lt;/h2&gt;
+
+&lt;p&gt;Na tela principal do Kleopatra, vá no menu &lt;strong&gt;Arquivo&lt;/strong&gt; e clique em &lt;strong&gt;Novo Par de Chaves&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-17.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-17.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Na primeira tela do &lt;strong&gt;Assistente de Criação de Pares de Chaves&lt;/strong&gt;, clique em &lt;strong&gt;Criar um par de chaves OpenGPG pessoal&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-18.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-18.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Na tela seguinte, preencha os campos &lt;strong&gt;Nome&lt;/strong&gt; e &lt;strong&gt;E-mail&lt;/strong&gt; e clique em &lt;strong&gt;Next&lt;/strong&gt; (Avançar, esqueceram de traduzir esse botão):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-19.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-19.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Confirme seus dados e clique em &lt;strong&gt;Criar&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-20.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-20.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Crie uma senha (&lt;em&gt;passphrase&lt;/em&gt;) para a nova chave, digite de novo no campo abaixo para se certificar que não digitou errado, e clique em &lt;strong&gt;OK&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-21.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-21.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Kleopatra informa que &lt;strong&gt;O par de chaves foi criado com sucesso&lt;/strong&gt;. Clique em &lt;strong&gt;Terminar&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-22.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-22.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Sua chave pessoal agora aparece na tela principal do Kleopatra. Agora você pode utilizá-la para assinar a chave pública do openSUSE.&lt;/p&gt;
+
+&lt;h2 id=&quot;62-assinando-a-chave-pública-do-opensuse&quot;&gt;6.2) Assinando a chave pública do openSUSE&lt;/h2&gt;
+
+&lt;p&gt;Na tela principal do Kleopatra, selecione a chave pública do openSUSE e clique em &lt;strong&gt;Certificar&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-23.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-23.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Na tela seguinte, selecione a opção &lt;strong&gt;Foram verificadas as impressões digitais&lt;/strong&gt; (de fato, já fizemos isso lá atrás) e clique em &lt;strong&gt;Next&lt;/strong&gt; (Avançar):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-24.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-24.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Na tela seguinte, você pode manter a opção padrão marcada (&lt;strong&gt;Certificar somente para mim mesmo&lt;/strong&gt;) e clicar em &lt;strong&gt;Certificar&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-25.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-25.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Digite a senha da sua chave e clique em &lt;strong&gt;OK&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-26.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-26.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;A última tela do assistente confirma que você certificou a chave pública do Projeto openSUSE. Clique em &lt;strong&gt;Terminar&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-27.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-27.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;63-verificando-novamente-a-autentiticade-da-imagem-iso&quot;&gt;6.3) Verificando novamente a autentiticade da imagem ISO&lt;/h2&gt;
+
+&lt;p&gt;Repita a verificação de autentiticade da imagem ISO (seção 5). Veja que agora a mensagem apresentada pelo Kleopatra é bem mais assertiva, transmite bem mais segurança:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/gpg4win-28.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/gpg4win-28.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Repare na última frase: &lt;strong&gt;A assinatura é válida e a validade do certificado é completamente confiável&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;finalizando&quot;&gt;Finalizando&lt;/h2&gt;
+
+&lt;p&gt;Uma vez instalado, o Gpg4win pode ser usado para verificar as imagens ISO de futuras versões do openSUSE, assim como imagens ISO de outras distribuições, ou quaisquer arquivos que se precise verificar. Como expliquei na visão geral, o processo é semelhante.&lt;/p&gt;
+
+&lt;p&gt;Possivelmente, boa parte do que fizemos aqui você não precisará fazer de novo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;você só precisa baixar e instar de novo o Gpg4win (seção 1) se houver uma atualização do Gpg4win;&lt;/li&gt;
+  &lt;li&gt;você só precisa importar de novo a chave pública do openSUSE (seção 3) se no futuro o openSUSE criar uma nova chave;&lt;/li&gt;
+  &lt;li&gt;você só precisa assinar de novo a chave pública do openSUSE (seção 6.2) se no futuro importar uma nova chave; e&lt;/li&gt;
+  &lt;li&gt;se você só utiliza sua chave GPG pessoal para verificar arquivos baixados, não precisará criar um novo par de chaves (seção 6.1).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Caso baixe outra imagem ISO do openSUSE (por exemplo, quando houver uma nova versão da distribuição), você repetirá as seções 2, 4 e 5.&lt;/p&gt;
+
+&lt;p&gt;Caso baixe uma imagem ISO de outra distribuição, aí sim você vai passar novamente por boa parte do processo: seções 2, 3 (e, opcionalmente, a 6.2), 4 e 5.&lt;/p&gt;
+
+&lt;p&gt;Espero que tenha ajudado. Deixo as referências para o caso de você querer ler mais sobre essa ferramenta bem completa que é o Gpg4win.&lt;/p&gt;
+
+&lt;h2 id=&quot;referências&quot;&gt;Referências&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.deepdotweb.com/jolly-rogers-security-guide-for-beginners/how-to-verify-your-downloaded-files-are-authentic/&quot;&gt;HOW TO VERIFY YOUR DOWNLOADED FILES ARE AUTHENTIC - Deep Dot Web&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.deepdotweb.com/2015/02/21/pgp-tutorial-for-windows-kleopatra-gpg4win/&quot;&gt;PGP Tutorial For Windows (Kleopatra - Gpg4Win) - Deep Dot Web&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.howtogeek.com/246332/how-to-verify-a-downloaded-linux-iso-file-wasnt-tampered-with/&quot;&gt;How to Verify a Linux ISO’s Checksum and Confirm It Hasn’t Been Tampered With&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bitzuma.com/posts/how-to-verify-an-electrum-download-on-windows/&quot;&gt;How to Verify an Electrum Download on Windows - Bitzuma&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gnupg.org/gph/en/manual.html&quot;&gt;The GNU Privacy Handbook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wiki.gnupg.org/Gpg4win/CheckIntegrity&quot;&gt;Gpg4win/CheckIntegrity - GnuPG wiki&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pt.opensuse.org/SDB:Ajuda_de_download&quot;&gt;SDB:Ajuda de download - openSUSE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">Por vezes pode ser importante verificar um arquivo obtido da Internet. Duas verificações comuns que reduzem a quase zero as chances de usar um arquivo corrompido ou adulterado são a soma de verificação e a assinatura digital. Nesse post, você verá como fazê-las com o Gpg4win, um software livre gratuito para Windows. Como exemplo, verificaremos uma imagem ISO da distribuição openSUSE Leap.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2018/10/gpg4win.png" /></entry><entry><title type="html">XenServer iniciando máquinas virtuais automaticamente ao ligar</title><link href="https://vinyanalista.github.io/blog/2017/07/03/xenserver-iniciando-maquinas-virtuais-automaticamente-ao-ligar/" rel="alternate" type="text/html" title="XenServer iniciando máquinas virtuais automaticamente ao ligar" /><published>2017-07-03T01:25:00-03:00</published><updated>2017-07-03T01:27:07-03:00</updated><id>https://vinyanalista.github.io/blog/2017/07/03/xenserver-iniciando-maquinas-virtuais-automaticamente-ao-ligar</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2017/07/03/xenserver-iniciando-maquinas-virtuais-automaticamente-ao-ligar/">&lt;p&gt;Servidores são diferentes de &lt;em&gt;desktops&lt;/em&gt; em muitos sentidos. Um deles é que eles podem ser configurados para ligar automaticamente assim que percebem a presença de energia: após uma queda, quando a rede elétrica é restabelecida, automaticamente o servidor liga e começa a carregar o sistema operacional. Isso reduz o tempo para restabelecer os serviços, ainda mais em casos onde o servidor está distante e se dirigir até ele para apertar um botão de ligar pode ser inviável.&lt;/p&gt;
 
 &lt;p&gt;Esse recurso, apesar de ajudar bastante, pode se mostrar insuficiente quando o servidor é na verdade um &lt;a href=&quot;https://pt.wikipedia.org/wiki/Hipervisor&quot;&gt;virtualizador&lt;/a&gt;, como o &lt;a href=&quot;https://xenserver.org/&quot;&gt;XenServer&lt;/a&gt;: nesse caso, também é necessário iniciar as máquinas virtuais.&lt;/p&gt;
 
@@ -2492,520 +2888,4 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Se sua intenção é usar o &lt;em&gt;pendrive&lt;/em&gt; de modo persistente (mantendo as alterações), marque a opção &lt;strong&gt;Gravar no modo Imagem DD&lt;/strong&gt;. Clique em &lt;strong&gt;OK&lt;/strong&gt; para iniciar o processo. Ao final, você terá um &lt;em&gt;pendrive&lt;/em&gt; que poderá ser utilizado para iniciar o computador usando o openSUSE.&lt;/p&gt;
 
-&lt;p&gt;Note que no caso da imagem DD só é possível utilizar o &lt;em&gt;pendrive&lt;/em&gt; com o sistema operacional nele contido. Então, seguindo nesse exemplo, em que o &lt;em&gt;pendrive&lt;/em&gt; contém o openSUSE, você não pode contectá-lo a um computador com Windows e copiar arquivos para ele ou acessar um arquivo que você baixou enquanto usava o openSUSE do &lt;em&gt;pendrive&lt;/em&gt;. Você pode, sim, iniciar qualquer computador usando esse &lt;em&gt;pendrive&lt;/em&gt; e acessar um arquivo que você criou em outra vez que você o utilizou.&lt;/p&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">O Rufus é uma ferramenta bastante versátil quando o objetivo é iniciar o computador (“dar o boot”, na gíria técnica) pelo pendrive. Isso pode ser útil em diversas situações, como, por exemplo, testar ou instalar um sistema operacional (especialmente em computadores sem unidade de CD/DVD, como os netbooks), restaurar backups, remover vírus, dentre outras. Vantagens do Rufus em relação a outras ferramentas são seu tamanho reduzido (menos de 1MB), a quantidade de funcionalidades e a tradução para o Português, que é selecionada automaticamente de acordo com a configuração do Windows (e olha como o mundo é pequeno: descobri que ela foi feita por um professor do IFSE, Chateaubriand Vieira Moura). Também não é necessário instalar o Rufus: para usá-lo, basta baixar do site oficial e executar. Uma desvantagem do Rufus em relação a outras ferramentas é que ele não permite armazenar em um mesmo pendrive vários sistemas operacionais (Windows, Ubuntu e openSUSE, por exemplo). Nesse caso, talvez você possa utilizar o Hiren’s BootCD ou o RMPrepUSB. Os passos aqui descritos, embora eu só use o termo “pendrive”, também se aplicam a cartões de memória. Se você vai utilizar um cartão de memória, onde houver “pendrive”, leia “cartão de memória”. Cuidado ao utilizar o Rufus, pois ele apaga o que estiver no pendrive. Por segurança, recomendo que você remova todos os pendrives que estão conectados ao computador e depois insira somente o que será utilizado. Breve explicação sobre imagens ISO Uma imagem ISO é um arquivo que contém uma cópia de uma mídia ótica (um CD ou DVD) e pode ser utilizado para gravá-la. Assim, usando um programa de gravação, como o CDBurnerXP, é possível gravar um DVD com o openSUSE, por exemplo, usando a imagem ISO disponível para download no site do openSUSE. Com esse mesmo programa, você pode criar uma imagem ISO de um CD ou DVD que você possua, como o DVD de instalação do Windows. Essa é apenas a utilização mais básica e comum das imagens ISO. É possível fazer muito mais com elas. Usando ferramentas como o DAEMON Tools, por exemplo, podemos acessar o conteúdo dessas imagens como se elas fossem CDs ou DVDs de verdade inseridos em uma unidade de CD/DVD do computador. Usando o Rufus, podemos extrair o conteúdo de uma imagem ISO de um sistema operacional (o DVD de instalação do Windows ou o LiveDVD do Ubuntu, por exemplo) para um pendrive e utilizá-lo para iniciar o computador. Um CD (ou DVD) que pode ser usado para iniciar o computador é comumente chamado de LiveCD (ou LiveDVD). Da mesma forma, é comum chamar um pendrive que pode ser usado para iniciar o computador de LiveUSB. Como criar um pendrive inicializável a partir de qualquer imagem ISO Vejamos como é simples criar um pendrive inicializável (bootable) a partir de uma imagem ISO qualquer (uma que contenha o DVD de instalação do Windows ou o LiveDVD do Ubuntu, como no exemplo anteriormente citado): Conecte o pendrive que será utilizado ao computador e inicie o Rufus. Possivelmente, ele solicitará permissão de administrador, que você deve conceder. Ele pergunta se deseja procurar atualizações para o Rufus na Internet, você pode clicar em Não e prosseguir. Em Dispositivo, selecione o pendrive que receberá o openSUSE (confira o rótulo e a capacidade para se certificar de que é esse pendrive mesmo que será utilizado). Certifique-se de que a opção Criar disco bootável com está marcada, e selecione Imagem ISO. Clique no ícone do disco ao lado das opções Criar disco bootável com e Imagem ISO e abra o arquivo ISO cujo conteúdo deve ser extraído para o pendrive. Clique em Iniciar. O Rufus exibirá um aviso: Leia-o atentamente e clique em OK para continuar. Ao final do processo, seu pendrive terá os mesmos arquivos que um CD ou DVD apresentaria caso você gravasse a imagem ISO neles. Inclusive, você ainda poderá utilizar o pendrive para armazenar outros arquivos. Só tome o cuidado para não excluir ou renomear algum arquivo que veio da imagem ISO, o que pode prejudicar o bom funcionamento do sistema operacional que está no pendrive. Agora, você poderá fechar o Rufus e iniciar o computador usando o pendrive, se quiser. Como gravar o openSUSE em um pendrive No caso específico do openSUSE, ao seguir as instruções acima e clicar em Iniciar, você perceberá que o Rufus fará uma pergunta: Isso acontece porque a imagem ISO do openSUSE é uma imagem ISO híbrida (hybrid ISO), o que permite a você tratá-la de duas formas: como uma imagem ISO comum, caso em que o resultado é o mesmo produzido pelas instruções genéricas (os arquivos dentro da imagem ISO são copiados para o pendrive, e você ainda pode utilizá-lo para armazenar outros arquivos); ou como uma imagem DD (imagem de disco, igual a uma produzida pelo comando dd do Linux), o que permite que alterações feitas no sistema (por exemplo, um arquivo que você baixou enquanto usava o Linux a partir do pendrive) sejam mantidas (então, no exemplo, você veria esse arquivo no mesmo lugar após reiniciar o computador pelo pendrive). Nesse caso, o resultado é o mesmo produzido pela ferramenta oficial, o SUSE Studio ImageWriter, antes disponível também para Windows, mas agora feita apenas para o Linux. Se sua intenção é usar o pendrive de modo persistente (mantendo as alterações), marque a opção Gravar no modo Imagem DD. Clique em OK para iniciar o processo. Ao final, você terá um pendrive que poderá ser utilizado para iniciar o computador usando o openSUSE. Note que no caso da imagem DD só é possível utilizar o pendrive com o sistema operacional nele contido. Então, seguindo nesse exemplo, em que o pendrive contém o openSUSE, você não pode contectá-lo a um computador com Windows e copiar arquivos para ele ou acessar um arquivo que você baixou enquanto usava o openSUSE do pendrive. Você pode, sim, iniciar qualquer computador usando esse pendrive e acessar um arquivo que você criou em outra vez que você o utilizou.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2015/10/rufus-0.png" /></entry><entry><title type="html">Dicas de Git</title><link href="https://vinyanalista.github.io/blog/2015/09/27/dicas-de-git/" rel="alternate" type="text/html" title="Dicas de Git" /><published>2015-09-27T16:00:00-03:00</published><updated>2015-09-27T16:25:27-03:00</updated><id>https://vinyanalista.github.io/blog/2015/09/27/dicas-de-git</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2015/09/27/dicas-de-git/">&lt;p&gt;Quem não já teve dúvidas ao usar o &lt;a href=&quot;https://git-scm.com/&quot;&gt;sistema de controle de versão Git&lt;/a&gt;? Aqui apresento uma compilação de algumas dúvidas que já tive e das soluções que eu encontrei.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/09/git.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/09/git.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Quase sempre quando tenho uma dúvida, faço uma busca no &lt;a href=&quot;https://www.google.com.br/&quot;&gt;Google&lt;/a&gt; e encontro outras pessoas que já tiveram a mesma dúvida que eu no &lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt;. Lá, encontro outras pessoas que propoem soluções para a dúvida apresentada. Nem sempre a solução marcada como a correta é a que resolve meu problema. Aqui, mostrarei apenas as soluções que de fato me foram úteis.&lt;/p&gt;
-
-&lt;p&gt;Vale observar que as dicas que eu apresento aqui são para usos um tanto “exóticos” do Git, que fogem do uso diário, mais básico. Se deseja aprender a usar o Git, recomendo esses cursos (em inglês) da &lt;a href=&quot;https://www.codeschool.com/&quot;&gt;Code School&lt;/a&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://try.github.io/&quot;&gt;Try Git&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://gitreal.codeschool.com/&quot;&gt;Git Real&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Algumas dicas podem depender de qual versão do Git você usa. Para verificar qual versão do Git está instalada no seu computador, execute o comando:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git --version
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;a-linha-de-comando-do-git-no-windows-está-muito-lenta&quot;&gt;A linha de comando do Git no Windows está muito lenta&lt;/h3&gt;
-
-&lt;p&gt;Usar o Git pela linha de comando no &lt;a href=&quot;http://www.vivaolinux.com.br/linux/&quot;&gt;Linux&lt;/a&gt; é bastante natural. No &lt;a href=&quot;http://www.microsoft.com/pt-br/windows&quot;&gt;Windows&lt;/a&gt;, na minha opinião, a melhor opção é clicar com o botão direito na pasta e clicar em &lt;strong&gt;Git Bash&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;De uma hora pra outra, talvez você perceba que o Git no Windows se torna lento. A execução de qualquer comando que envolva o Git demora mais do que o normal.&lt;/p&gt;
-
-&lt;p&gt;Para alguns casos, a solução pode ser desinstalar o Git, reiniciar o Windows (a solução clássica para vários problemas do Windows) e instalar o Git de novo. De preferência, instalar &lt;a href=&quot;https://git-scm.com/download/win&quot;&gt;a versão mais nova&lt;/a&gt;, disponível no &lt;em&gt;site&lt;/em&gt; do Git, que pode conter correções para &lt;em&gt;bugs&lt;/em&gt; conhecidos.&lt;/p&gt;
-
-&lt;p&gt;No meu caso, o que tornou o Git um pouco mais ágil no Windows foi executar esses comandos:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git config --global core.preloadindex true
-git config --global core.fscache true
-git config --global gc.auto 256
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4485059/git-bash-is-extremely-slow-in-windows-7-x64&quot;&gt;Git/Bash is extremely slow in Windows 7 x64 - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;como-alterar-um-commit&quot;&gt;Como alterar um &lt;em&gt;commit&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Se você quer alterar o último &lt;em&gt;commit&lt;/em&gt; (arquivos e/ou mensagem), esse é o caso mais simples:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Faça quaisquer alterações desejadas nos arquivos;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;git add -A .&lt;/code&gt; para considerá-las; e&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Execute &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit --amend&lt;/code&gt; para alterar o último &lt;em&gt;commit&lt;/em&gt; incluindo as alterações então feitas. Um editor de texto será apresentado e você terá a oportunidade de alterar a mensagem do &lt;em&gt;commit&lt;/em&gt;. Ao salvar e sair do editor de texto, o &lt;em&gt;commit&lt;/em&gt; terá sido alterado.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Se você deseja alterar um &lt;em&gt;commit&lt;/em&gt; anterior, terá que usar o comando &lt;code class=&quot;highlighter-rouge&quot;&gt;git rebase&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Antes de começar, verifique o ID SHA1 do &lt;em&gt;commit&lt;/em&gt; que deseja alterar usando &lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt; ou &lt;code class=&quot;highlighter-rouge&quot;&gt;gitk&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Se você quiser alterar, por exemplo, o &lt;em&gt;commit&lt;/em&gt; de ID &lt;code class=&quot;highlighter-rouge&quot;&gt;bbc643cd&lt;/code&gt;, execute:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git rebase --interactive bbc643cd^
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Um editor de texto será apresentado para que você indique as ações que deseja realizar. Procure a linha referente ao &lt;em&gt;commit&lt;/em&gt; que deseja alterar e substitua &lt;code class=&quot;highlighter-rouge&quot;&gt;pick&lt;/code&gt; por &lt;code class=&quot;highlighter-rouge&quot;&gt;edit&lt;/code&gt;. Ao salvar e sair do editor de texto, o Git deixará os arquivos do seu repositório como estavam após esse &lt;em&gt;commit&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Então, você pode prosseguir como se esse tivesse sido o último &lt;em&gt;commit&lt;/em&gt; (como expliquei acima, fazendo mudanças, adicionando via &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; e finalizando com &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit --amend&lt;/code&gt;). Quando terminar, execute:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git rebase --continue
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Se você deseja alterar apenas a mensagem do &lt;em&gt;commit&lt;/em&gt;, e não os arquivos, simplifique o processo usando a ação &lt;code class=&quot;highlighter-rouge&quot;&gt;reword&lt;/code&gt; ao invés de &lt;code class=&quot;highlighter-rouge&quot;&gt;edit&lt;/code&gt;. Essa ação está disponível a partir do Git 1.6.6.&lt;/p&gt;
-
-&lt;p&gt;Observe que isso altera o histórico do seu repositório desse &lt;em&gt;commit&lt;/em&gt; em diante.&lt;/p&gt;
-
-&lt;p&gt;Se o(s) &lt;em&gt;commit(s)&lt;/em&gt; alterado(s) existe(m) apenas localmente (você ainda não executou &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;), não é necessário fazer mais nada. Caso contrário, para enviar a(s) alteração(ões) para o repositório remoto, você deve forçar o envio:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git push --force
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Outras pessoas que clonaram seu repositório antes da(s) alteração(ões) podem ter problemas com seus clones, portanto use esse recurso com cuidado.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1186535/how-to-modify-a-specified-commit-in-git&quot;&gt;How to modify a specified commit in git? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;como-desfazer-um-commit&quot;&gt;Como desfazer um &lt;em&gt;commit&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Para desfazer um &lt;em&gt;commit&lt;/em&gt; (tomemos como exemplo o último, cuja referência é &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt;), há duas opções:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;desfazer o &lt;em&gt;commit&lt;/em&gt;, mas manter os arquivos alterados (&lt;em&gt;soft reset&lt;/em&gt;):&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git reset --soft HEAD~
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;desfazer o &lt;em&gt;commit&lt;/em&gt; descartando também as alterações (&lt;em&gt;hard reset&lt;/em&gt;):&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git reset --hard HEAD~
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Para desfazer o penúltimo &lt;em&gt;commit&lt;/em&gt;, você pode usar &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD~2&lt;/code&gt;, como em:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git reset --soft HEAD~2
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Para desfazer o antepenúltimo &lt;em&gt;commit&lt;/em&gt;, você pode usar &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD~3&lt;/code&gt;, e assim sucessivamente.&lt;/p&gt;
-
-&lt;p&gt;Para desfazer todos os &lt;em&gt;commits&lt;/em&gt; até certo &lt;em&gt;commit&lt;/em&gt;, você pode informar seu ID SHA1, como em:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git reset --soft id_sha1_do_commit
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Se os &lt;em&gt;commits&lt;/em&gt; desfeitos existem apenas localmente (você ainda não executou &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;), caso mais simples, não há mais nada a fazer.&lt;/p&gt;
-
-&lt;p&gt;Se os &lt;em&gt;commits&lt;/em&gt; desfeitos já foram enviados previamente para o repositório remoto, você deve forçar o envio das alterações:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git push --force
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Observe que, excluindo &lt;em&gt;commits&lt;/em&gt; dessa maneira, você altera o histórico do repositório definitivamente: os &lt;em&gt;commits&lt;/em&gt; excluídos de fato deixam de existir no histórico, é como se eles nunca tivessem sequer acontecido. Assim, outras pessoas que clonaram seu repositório antes dessa exclusão podem ter problemas com seus clones.&lt;/p&gt;
-
-&lt;p&gt;Uma maneira menos destrutiva de desfazer as alterações de um &lt;em&gt;commit&lt;/em&gt;, mantendo esse &lt;em&gt;commit&lt;/em&gt; no histórico, é usar o comando &lt;code class=&quot;highlighter-rouge&quot;&gt;git revert&lt;/code&gt;, como em:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git revert id_sha1_do_commit
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Assim, tanto o &lt;em&gt;commit&lt;/em&gt; como a sua reversão aparecerão no histórico. A reversão pode ser enviada para o repositório remoto normalmente usando o comando &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;. Outras pessoas que clonaram seu repositório antes da reversão não terão problemas. Para recebê-la, podem usar normalmente o comando &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Referências:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit&quot;&gt;How do you undo the last commit? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git&quot;&gt;Delete commits from a branch in Git - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;como-criar-um-branch&quot;&gt;Como criar um &lt;em&gt;branch&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging&quot;&gt;Criar um &lt;em&gt;branch&lt;/em&gt;&lt;/a&gt; pode ser útil se você deseja trabalhar isoladamente em uma funcionalidade ou &lt;em&gt;bug&lt;/em&gt;, ou ainda se várias pessoas trabalham no mesmo repositório.&lt;/p&gt;
-
-&lt;p&gt;Primeiro, você deve criar o &lt;em&gt;branch&lt;/em&gt; localmente, em seu computador:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git checkout -b meu_novo_branch
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Isso cria um novo &lt;em&gt;branch&lt;/em&gt; local chamado &lt;code class=&quot;highlighter-rouge&quot;&gt;meu_novo_branch&lt;/code&gt;, sincronizado com o &lt;em&gt;branch&lt;/em&gt; no qual você estava trabalhando antes (&lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;, por exemplo).&lt;/p&gt;
-
-&lt;p&gt;Esse &lt;em&gt;branch&lt;/em&gt; passa a existir remotamente quando você o envia:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git push -u origin meu_novo_branch
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Nesse exemplo, &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt; é o nome do repositório remoto, mas pode ser outro nome, como &lt;code class=&quot;highlighter-rouge&quot;&gt;upstream&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;O comando acima cria um &lt;em&gt;branch&lt;/em&gt; remoto com o mesmo nome do &lt;em&gt;branch&lt;/em&gt; local e já faz a associação entre ambos, de forma que o comando &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt; já saberá o que fazer quando for invocado no futuro para atualizar esse &lt;em&gt;branch&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch&quot;&gt;How do you create a remote Git branch? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;como-criar-um-branch-a-partir-de-um-commit&quot;&gt;Como criar um &lt;em&gt;branch&lt;/em&gt; a partir de um &lt;em&gt;commit&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Como eu disse na dica anterior, normalmente quando criamos um novo &lt;em&gt;branch&lt;/em&gt; ele é sincronizado com o &lt;em&gt;branch&lt;/em&gt; no qual você estava trabalhando antes. No entanto, também podemos criar um &lt;em&gt;branch&lt;/em&gt; sincronizado com um &lt;em&gt;commit&lt;/em&gt; qualquer.&lt;/p&gt;
-
-&lt;p&gt;Para isso, você pode informar o ID SHA1 do &lt;em&gt;commit&lt;/em&gt; ao criar o &lt;em&gt;branch&lt;/em&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git branch meu_novo_branch id_sha1_do_commit
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Ou usar uma referência simbólica (como o penúltimo &lt;em&gt;commit&lt;/em&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD~2&lt;/code&gt;):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git branch meu_novo_branch HEAD~2
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;O comando acima criará um &lt;em&gt;branch&lt;/em&gt; local sincronizado com o penúltimo &lt;em&gt;commit&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/2816715/branch-from-a-previous-commit-using-git&quot;&gt;Branch from a previous commit using git - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;como-criar-um-branch-vazio&quot;&gt;Como criar um &lt;em&gt;branch&lt;/em&gt; vazio&lt;/h3&gt;
-
-&lt;p&gt;A partir do Git 1.7.2, é possível também criar um &lt;em&gt;branch&lt;/em&gt; sem nenhuma relação com os demais, começando do zero, com uma linha do tempo nova e independente.&lt;/p&gt;
-
-&lt;p&gt;Para criar um &lt;em&gt;branch&lt;/em&gt; vazio chamado &lt;code class=&quot;highlighter-rouge&quot;&gt;meu_novo_branch&lt;/code&gt;, execute o comando:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git checkout --orphan meu_novo_branch
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Perceba que os arquivos são deixados pelo Git. Se não quiser esses arquivos no seu novo &lt;em&gt;branch&lt;/em&gt; independente, remova-os:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git rm -rf .
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Então, você pode adicionar novos arquivos e fazer o primeiro &lt;em&gt;commit&lt;/em&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git add -A .
-git commit -m 'Primeiro commit'
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1384325/in-git-is-there-a-simple-way-of-introducing-an-unrelated-branch-to-a-repository&quot;&gt;In git, is there a simple way of introducing an unrelated branch to a repository? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bitflop.com/tutorials/how-to-create-a-new-and-empty-branch-in-git.html&quot;&gt;How to Create a New and Empty Branch in Git&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;como-excluir-um-branch&quot;&gt;Como excluir um &lt;em&gt;branch&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;Você pode excluir um &lt;em&gt;branch&lt;/em&gt; local e/ou remotamente.&lt;/p&gt;
-
-&lt;p&gt;Para excluir o &lt;em&gt;branch&lt;/em&gt; &lt;strong&gt;local&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;meu_branch&lt;/code&gt;, por exemplo, execute:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git branch -D meu_branch
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Para excluir o &lt;em&gt;branch&lt;/em&gt; &lt;strong&gt;remoto&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;meu_branch&lt;/code&gt;, por exemplo, se você usa o Git 1.7.0 ou mais recente, execute:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git push origin --delete meu_branch
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;A exclusão de &lt;em&gt;branches&lt;/em&gt; remotos é possível a partir do Git 1.5.0. Se você utiliza uma versão anterior à 1.7.0, o comando é diferente:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git push origin :meu_branch
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely&quot;&gt;Delete a Git branch both locally and remotely&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;como-criar-um-fork-de-um-projeto-meu-no-github&quot;&gt;Como criar um &lt;em&gt;fork&lt;/em&gt; de um projeto meu no GitHub?&lt;/h3&gt;
-
-&lt;p&gt;O &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt; só permite criar &lt;em&gt;forks&lt;/em&gt; de projetos de outras pessoas. E se eu quiser criar um &lt;em&gt;fork&lt;/em&gt; de um projeto próprio, meu?&lt;/p&gt;
-
-&lt;p&gt;O melhor que podemos fazer é criar um novo repositório para o &lt;em&gt;fork&lt;/em&gt; e, localmente, adicionar o repositório do projeto original como um repositório remoto. &lt;a href=&quot;http://kroltech.com/2014/01/quick-tip-how-to-fork-your-own-repo-in-github/#.VLJLyIqG-Nt&quot;&gt;Esse tutorial&lt;/a&gt; (em inglês) explica como fazer isso.&lt;/p&gt;
-
-&lt;p&gt;Vejamos, por exemplo, como criar um &lt;em&gt;fork&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;meu_fork&lt;/code&gt; do projeto &lt;code class=&quot;highlighter-rouge&quot;&gt;projeto_original&lt;/code&gt;, ambos pertencentes ao usuário &lt;code class=&quot;highlighter-rouge&quot;&gt;meu_nome_de_usuario&lt;/code&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;No GitHub, crie um novo repositório para o &lt;em&gt;fork&lt;/em&gt; (no exemplo, chamaremos esse repositório de &lt;code class=&quot;highlighter-rouge&quot;&gt;meu_fork&lt;/code&gt;).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Obtenha um clone local desse repositório:&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git clone https://github.com/meu_nome_de_usuario/meu_fork.git
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Adicione o repositório do projeto original (no exemplo, &lt;code class=&quot;highlighter-rouge&quot;&gt;projeto_original&lt;/code&gt;) como um repositório remoto (vamos chamá-lo de &lt;code class=&quot;highlighter-rouge&quot;&gt;upstream&lt;/code&gt;) do repositório local recém clonado:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git remote add upstream https://github.com/meu_nome_de_usuario/repositorio_original.git
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Baixe uma cópia do repositório do projeto original para o seu repositório local:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git pull upstream master
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Envie os arquivos do seu repositório local para o repositório &lt;code class=&quot;highlighter-rouge&quot;&gt;meu_fork&lt;/code&gt; no GitHub:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git push origin master
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;O GitHub não reconhecerá o projeto &lt;code class=&quot;highlighter-rouge&quot;&gt;meu_fork&lt;/code&gt; como um &lt;em&gt;fork&lt;/em&gt; de fato do projeto &lt;code class=&quot;highlighter-rouge&quot;&gt;projeto_original&lt;/code&gt;, mas, na prática, fizemos ele ser exatamente isso.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/3772684/how-can-i-fork-my-own-github-repository&quot;&gt;How can I fork my own GitHub repository? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;como-se-livrar-de-mudanças-do-tipo-old-mode-100755-new-mode-100644&quot;&gt;Como se livrar de mudanças do tipo “old mode 100755 new mode 100644”&lt;/h3&gt;
-
-&lt;p&gt;Pode acontecer (na verdade, é bastante comum se você usa Windows e Linux no mesmo computador) de, ao executar &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; ou &lt;code class=&quot;highlighter-rouge&quot;&gt;gitk&lt;/code&gt; para saber como está seu repositório local, você perceber vários arquivos listados como modificados, quando na verdade você não trabalhou neles. O Git descreve essas alterações como:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;old mode 100755
-new mode 100644
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Isso acontece quando o Git não consegue determinar com precisão o &lt;a href=&quot;http://www.vivaolinux.com.br/artigo/Entendendo-as-permissoes-de-arquivos-%28chmod%29&quot;&gt;modo do arquivo&lt;/a&gt; (um conceito mais conhecido dos usuários do Linux) e entende que houve uma mudança de modo.&lt;/p&gt;
-
-&lt;p&gt;Uma possível solução (a mais prática, na minha opinião) é configurar o Git para ignorar mudanças no modo do arquivo:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git config core.filemode false
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Após a execução desse comando, um novo &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; ou &lt;code class=&quot;highlighter-rouge&quot;&gt;gitk&lt;/code&gt; deve mostrar somente os arquivos que de fato foram alterados.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1257592/how-do-i-remove-files-saying-old-mode-100755-new-mode-100644-from-unstaged-cha&quot;&gt;How do I remove files saying “old mode 100755 new mode 100644” from unstaged changes in Git? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;como-manter-o-fim-de-linha-dos-arquivos-de-texto&quot;&gt;Como manter o fim de linha dos arquivos de texto&lt;/h3&gt;
-
-&lt;p&gt;Outro problema comum para quem usa diferentes sistemas operacionais (ou para projetos cujos desenvolvedores usam diferentes sistemas) é o &lt;a href=&quot;http://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/&quot;&gt;fim de linha&lt;/a&gt; dos arquivos de texto: no Windows, ele é representado pelos &lt;a href=&quot;https://pt.wikipedia.org/wiki/ASCII&quot;&gt;caracteres ASCII&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;CR&lt;/code&gt; (&lt;em&gt;Carriage Return&lt;/em&gt;) e &lt;code class=&quot;highlighter-rouge&quot;&gt;LF&lt;/code&gt; (&lt;em&gt;Line Feed&lt;/em&gt;); no &lt;a href=&quot;http://www.unix.org/what_is_unix.html&quot;&gt;Unix&lt;/a&gt;, no Linux e no &lt;a href=&quot;http://www.apple.com/br/osx/what-is/&quot;&gt;Mac OS X&lt;/a&gt;, ele é representando apenas pelo caractere &lt;code class=&quot;highlighter-rouge&quot;&gt;LF&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Pode acontecer de, ao executar &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; ou &lt;code class=&quot;highlighter-rouge&quot;&gt;gitk&lt;/code&gt; para saber como está seu repositório local, você perceber vários arquivos listados como modificados, quando na verdade você não trabalhou neles. Até mesmo o conteúdo dos arquivos, visualmente falando, é idêntico.&lt;/p&gt;
-
-&lt;p&gt;O que aconteceu debaixo do pano que fez o Git mostrar esses arquivos como modificados foi uma mudança nos caracteres que representam o fim de linha (que comumente acontece após uma mudança de sistema operacional).&lt;/p&gt;
-
-&lt;p&gt;Escrever sobre isso renderia &lt;a href=&quot;http://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/&quot;&gt;outro &lt;em&gt;post&lt;/em&gt; inteiro&lt;/a&gt;, mas vou tentar focar aqui na solução.&lt;/p&gt;
-
-&lt;p&gt;Em primeiro lugar, você deve alterar a configuração global do Git em seu computador. Há o comando &lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.autocrlf&lt;/code&gt;, que é usado para definir como o Git deve tratar os fins de linha:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;No Mac OS X e no Linux, você deve atribuir a essa configuração o valor &lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git config --global core.autocrlf input
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;No Windows, você deve atribuir a essa configuração o valor &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git config --global core.autocrlf true
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Além disso, se você utiliza o Git 1.7.2 ou mais recente, pode configurar, para cada repositório, e para cada arquivo, como o Git trata os fins de linha. Para isso, você deve adicionar ao repositório um arquivo de texto chamado &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt;, que faz lembrar uma tabela com duas colunas. Em cada linha:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;à esquerda, você deve inserir o nome de arquivo (ou padrão de nome de arquivo) que o Git deve identificar; e&lt;/li&gt;
-  &lt;li&gt;à direita, você deve configurar como o Git deve tratar esse arquivo (ou padrão de arquivo).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Aqui está um arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; de exemplo, que você pode usar como um ponto de partida para seus repositórios (pode deixar os comentários, o Git os ignora):&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;# Configuração padrão
-* text=auto
-
-# Arquivos cujos fins de linha devem sempre ser convertidos para o padrão do
-# sistema em uso
-*.c text
-*.h text
-
-# Arquivos cujos fins de linha devem sempre ser CRLF (padrão do Windows)
-*.bat text eol=crlf
-
-# Arquivos cujos fins de linha devem sempre ser LF (padrão do Unix, Linux e Mac
-# OS X)
-*.sh text eol=lf
-
-# Arquivos binários que não devem ser modificados
-*.png binary
-*.jpg binary
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;É uma boa prática que esse arquivo seja sempre adicionado já no primeiro ou segundo &lt;em&gt;commit&lt;/em&gt;, de forma a prevenir problemas futuros. Uma vez no repositório, esse arquivo é compartilhado por todos os desenvolvedores, que não mais enfrentarão problemas com os fins de linha dos arquivos.&lt;/p&gt;
-
-&lt;p&gt;Se você tem um repositório com vários arquivos e &lt;em&gt;commits&lt;/em&gt; que ainda não tem um arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt;, aqui está a melhor maneira de adicioná-lo (sugerida pela própria &lt;a href=&quot;https://help.github.com/articles/dealing-with-line-endings/&quot;&gt;ajuda do GitHub&lt;/a&gt;, com base em uma resposta no &lt;a href=&quot;http://stackoverflow.com/a/1511273/1657502&quot;&gt;Stack Overflow&lt;/a&gt;):&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Crie um arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt;, como o do exemplo acima, e faça um &lt;em&gt;commit&lt;/em&gt; com ele:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git add .gitattributes
-git commit -m &quot;Arquivo .gitattributes&quot;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Salve quaisquer outros arquivos alterados, para garantir que não perderá trabalho:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git add . -u
-git commit -m &quot;Salvando os arquivos antes de atualizar os fins de linha&quot;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Remova cada arquivo do repositório:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git rm --cached -r .
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Reescreva os arquivos, dessa vez com os fins de linha desejados:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git reset --hard
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Adicione todos os seus arquivos de volta (aproveite a oportunidade para verificar se houve arquivos que não tiveram seus fins de linha substituídos, quando deveriam):&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git add .
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Faça um &lt;em&gt;commit&lt;/em&gt; com as alterações:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git commit -m &quot;Problemas com fins de linha nunca mais!&quot;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Referências:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/19551037/git-how-to-keep-crlf-endings-for-specific-files-only&quot;&gt;Git - how to keep CRLF endings for specific files only? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/170961/whats-the-best-crlf-carriage-return-line-feed-handling-strategy-with-git&quot;&gt;What’s the best CRLF (Carriage Return Line Feed) handling strategy with git? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1510798/trying-to-fix-line-endings-with-git-filter-branch-but-having-no-luck&quot;&gt;Trying to fix line-endings with git filter-branch, but having no luck - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/dealing-with-line-endings/&quot;&gt;Dealing with line endings - User Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/&quot;&gt;Mind the End of Your Line ∙ Adaptive Patchwork&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;como-visualizar-o-histórico-de-mudanças-de-um-arquivo&quot;&gt;Como visualizar o histórico de mudanças de um arquivo&lt;/h3&gt;
-
-&lt;p&gt;Para visualizar o histórico do repositório como um todo, os comandos mais básicos são, para linha de comando:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git log
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Ou, para interface gráfica:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;gitk
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Para visualizar o histórico de um arquivo em particular (&lt;code class=&quot;highlighter-rouge&quot;&gt;nome_do_arquivo&lt;/code&gt;, por exemplo), para mim foi suficiente o comando:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;gitk nome_do_arquivo
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Na referência, há outras sugestões de comandos mais elaborados.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Referência:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/278192/view-the-change-history-of-a-file-using-git-versioning&quot;&gt;View the change history of a file using Git versioning - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">Quem não já teve dúvidas ao usar o sistema de controle de versão Git? Aqui apresento uma compilação de algumas dúvidas que já tive e das soluções que eu encontrei. Quase sempre quando tenho uma dúvida, faço uma busca no Google e encontro outras pessoas que já tiveram a mesma dúvida que eu no Stack Overflow. Lá, encontro outras pessoas que propoem soluções para a dúvida apresentada. Nem sempre a solução marcada como a correta é a que resolve meu problema. Aqui, mostrarei apenas as soluções que de fato me foram úteis. Vale observar que as dicas que eu apresento aqui são para usos um tanto “exóticos” do Git, que fogem do uso diário, mais básico. Se deseja aprender a usar o Git, recomendo esses cursos (em inglês) da Code School: Try Git Git Real Algumas dicas podem depender de qual versão do Git você usa. Para verificar qual versão do Git está instalada no seu computador, execute o comando: 1 git --version A linha de comando do Git no Windows está muito lenta Usar o Git pela linha de comando no Linux é bastante natural. No Windows, na minha opinião, a melhor opção é clicar com o botão direito na pasta e clicar em Git Bash. De uma hora pra outra, talvez você perceba que o Git no Windows se torna lento. A execução de qualquer comando que envolva o Git demora mais do que o normal. Para alguns casos, a solução pode ser desinstalar o Git, reiniciar o Windows (a solução clássica para vários problemas do Windows) e instalar o Git de novo. De preferência, instalar a versão mais nova, disponível no site do Git, que pode conter correções para bugs conhecidos. No meu caso, o que tornou o Git um pouco mais ágil no Windows foi executar esses comandos: 1 2 3 git config --global core.preloadindex true git config --global core.fscache true git config --global gc.auto 256 Referência: Git/Bash is extremely slow in Windows 7 x64 - Stack Overflow Como alterar um commit Se você quer alterar o último commit (arquivos e/ou mensagem), esse é o caso mais simples: Faça quaisquer alterações desejadas nos arquivos; Use git add -A . para considerá-las; e Execute git commit --amend para alterar o último commit incluindo as alterações então feitas. Um editor de texto será apresentado e você terá a oportunidade de alterar a mensagem do commit. Ao salvar e sair do editor de texto, o commit terá sido alterado. Se você deseja alterar um commit anterior, terá que usar o comando git rebase. Antes de começar, verifique o ID SHA1 do commit que deseja alterar usando git log ou gitk. Se você quiser alterar, por exemplo, o commit de ID bbc643cd, execute: 1 git rebase --interactive bbc643cd^ Um editor de texto será apresentado para que você indique as ações que deseja realizar. Procure a linha referente ao commit que deseja alterar e substitua pick por edit. Ao salvar e sair do editor de texto, o Git deixará os arquivos do seu repositório como estavam após esse commit. Então, você pode prosseguir como se esse tivesse sido o último commit (como expliquei acima, fazendo mudanças, adicionando via git add e finalizando com git commit --amend). Quando terminar, execute: 1 git rebase --continue Se você deseja alterar apenas a mensagem do commit, e não os arquivos, simplifique o processo usando a ação reword ao invés de edit. Essa ação está disponível a partir do Git 1.6.6. Observe que isso altera o histórico do seu repositório desse commit em diante. Se o(s) commit(s) alterado(s) existe(m) apenas localmente (você ainda não executou git push), não é necessário fazer mais nada. Caso contrário, para enviar a(s) alteração(ões) para o repositório remoto, você deve forçar o envio: 1 git push --force Outras pessoas que clonaram seu repositório antes da(s) alteração(ões) podem ter problemas com seus clones, portanto use esse recurso com cuidado. Referência: How to modify a specified commit in git? - Stack Overflow Como desfazer um commit Para desfazer um commit (tomemos como exemplo o último, cuja referência é HEAD), há duas opções: desfazer o commit, mas manter os arquivos alterados (soft reset): 1 git reset --soft HEAD~ desfazer o commit descartando também as alterações (hard reset): 1 git reset --hard HEAD~ Para desfazer o penúltimo commit, você pode usar HEAD~2, como em: 1 git reset --soft HEAD~2 Para desfazer o antepenúltimo commit, você pode usar HEAD~3, e assim sucessivamente. Para desfazer todos os commits até certo commit, você pode informar seu ID SHA1, como em: 1 git reset --soft id_sha1_do_commit Se os commits desfeitos existem apenas localmente (você ainda não executou git push), caso mais simples, não há mais nada a fazer. Se os commits desfeitos já foram enviados previamente para o repositório remoto, você deve forçar o envio das alterações: 1 git push --force Observe que, excluindo commits dessa maneira, você altera o histórico do repositório definitivamente: os commits excluídos de fato deixam de existir no histórico, é como se eles nunca tivessem sequer acontecido. Assim, outras pessoas que clonaram seu repositório antes dessa exclusão podem ter problemas com seus clones. Uma maneira menos destrutiva de desfazer as alterações de um commit, mantendo esse commit no histórico, é usar o comando git revert, como em: 1 git revert id_sha1_do_commit Assim, tanto o commit como a sua reversão aparecerão no histórico. A reversão pode ser enviada para o repositório remoto normalmente usando o comando git push. Outras pessoas que clonaram seu repositório antes da reversão não terão problemas. Para recebê-la, podem usar normalmente o comando git pull. Referências: How do you undo the last commit? - Stack Overflow Delete commits from a branch in Git - Stack Overflow Como criar um branch Criar um branch pode ser útil se você deseja trabalhar isoladamente em uma funcionalidade ou bug, ou ainda se várias pessoas trabalham no mesmo repositório. Primeiro, você deve criar o branch localmente, em seu computador: 1 git checkout -b meu_novo_branch Isso cria um novo branch local chamado meu_novo_branch, sincronizado com o branch no qual você estava trabalhando antes (master, por exemplo). Esse branch passa a existir remotamente quando você o envia: 1 git push -u origin meu_novo_branch Nesse exemplo, origin é o nome do repositório remoto, mas pode ser outro nome, como upstream. O comando acima cria um branch remoto com o mesmo nome do branch local e já faz a associação entre ambos, de forma que o comando git pull já saberá o que fazer quando for invocado no futuro para atualizar esse branch. Referência: How do you create a remote Git branch? - Stack Overflow Como criar um branch a partir de um commit Como eu disse na dica anterior, normalmente quando criamos um novo branch ele é sincronizado com o branch no qual você estava trabalhando antes. No entanto, também podemos criar um branch sincronizado com um commit qualquer. Para isso, você pode informar o ID SHA1 do commit ao criar o branch: 1 git branch meu_novo_branch id_sha1_do_commit Ou usar uma referência simbólica (como o penúltimo commit, HEAD~2): 1 git branch meu_novo_branch HEAD~2 O comando acima criará um branch local sincronizado com o penúltimo commit. Referência: Branch from a previous commit using git - Stack Overflow Como criar um branch vazio A partir do Git 1.7.2, é possível também criar um branch sem nenhuma relação com os demais, começando do zero, com uma linha do tempo nova e independente. Para criar um branch vazio chamado meu_novo_branch, execute o comando: 1 git checkout --orphan meu_novo_branch Perceba que os arquivos são deixados pelo Git. Se não quiser esses arquivos no seu novo branch independente, remova-os: 1 git rm -rf . Então, você pode adicionar novos arquivos e fazer o primeiro commit: 1 2 git add -A . git commit -m 'Primeiro commit' Referência: In git, is there a simple way of introducing an unrelated branch to a repository? - Stack Overflow How to Create a New and Empty Branch in Git Como excluir um branch Você pode excluir um branch local e/ou remotamente. Para excluir o branch local meu_branch, por exemplo, execute: 1 git branch -D meu_branch Para excluir o branch remoto meu_branch, por exemplo, se você usa o Git 1.7.0 ou mais recente, execute: 1 git push origin --delete meu_branch A exclusão de branches remotos é possível a partir do Git 1.5.0. Se você utiliza uma versão anterior à 1.7.0, o comando é diferente: 1 git push origin :meu_branch Referência: Delete a Git branch both locally and remotely Como criar um fork de um projeto meu no GitHub? O GitHub só permite criar forks de projetos de outras pessoas. E se eu quiser criar um fork de um projeto próprio, meu? O melhor que podemos fazer é criar um novo repositório para o fork e, localmente, adicionar o repositório do projeto original como um repositório remoto. Esse tutorial (em inglês) explica como fazer isso. Vejamos, por exemplo, como criar um fork meu_fork do projeto projeto_original, ambos pertencentes ao usuário meu_nome_de_usuario: No GitHub, crie um novo repositório para o fork (no exemplo, chamaremos esse repositório de meu_fork). Obtenha um clone local desse repositório: 1 git clone https://github.com/meu_nome_de_usuario/meu_fork.git Adicione o repositório do projeto original (no exemplo, projeto_original) como um repositório remoto (vamos chamá-lo de upstream) do repositório local recém clonado: 1 git remote add upstream https://github.com/meu_nome_de_usuario/repositorio_original.git Baixe uma cópia do repositório do projeto original para o seu repositório local: 1 git pull upstream master Envie os arquivos do seu repositório local para o repositório meu_fork no GitHub: 1 git push origin master O GitHub não reconhecerá o projeto meu_fork como um fork de fato do projeto projeto_original, mas, na prática, fizemos ele ser exatamente isso. Referência: How can I fork my own GitHub repository? - Stack Overflow Como se livrar de mudanças do tipo “old mode 100755 new mode 100644” Pode acontecer (na verdade, é bastante comum se você usa Windows e Linux no mesmo computador) de, ao executar git status ou gitk para saber como está seu repositório local, você perceber vários arquivos listados como modificados, quando na verdade você não trabalhou neles. O Git descreve essas alterações como: 1 2 old mode 100755 new mode 100644 Isso acontece quando o Git não consegue determinar com precisão o modo do arquivo (um conceito mais conhecido dos usuários do Linux) e entende que houve uma mudança de modo. Uma possível solução (a mais prática, na minha opinião) é configurar o Git para ignorar mudanças no modo do arquivo: 1 git config core.filemode false Após a execução desse comando, um novo git status ou gitk deve mostrar somente os arquivos que de fato foram alterados. Referência: How do I remove files saying “old mode 100755 new mode 100644” from unstaged changes in Git? - Stack Overflow Como manter o fim de linha dos arquivos de texto Outro problema comum para quem usa diferentes sistemas operacionais (ou para projetos cujos desenvolvedores usam diferentes sistemas) é o fim de linha dos arquivos de texto: no Windows, ele é representado pelos caracteres ASCII CR (Carriage Return) e LF (Line Feed); no Unix, no Linux e no Mac OS X, ele é representando apenas pelo caractere LF. Pode acontecer de, ao executar git status ou gitk para saber como está seu repositório local, você perceber vários arquivos listados como modificados, quando na verdade você não trabalhou neles. Até mesmo o conteúdo dos arquivos, visualmente falando, é idêntico. O que aconteceu debaixo do pano que fez o Git mostrar esses arquivos como modificados foi uma mudança nos caracteres que representam o fim de linha (que comumente acontece após uma mudança de sistema operacional). Escrever sobre isso renderia outro post inteiro, mas vou tentar focar aqui na solução. Em primeiro lugar, você deve alterar a configuração global do Git em seu computador. Há o comando git config --global core.autocrlf, que é usado para definir como o Git deve tratar os fins de linha: No Mac OS X e no Linux, você deve atribuir a essa configuração o valor input: 1 git config --global core.autocrlf input No Windows, você deve atribuir a essa configuração o valor true: 1 git config --global core.autocrlf true Além disso, se você utiliza o Git 1.7.2 ou mais recente, pode configurar, para cada repositório, e para cada arquivo, como o Git trata os fins de linha. Para isso, você deve adicionar ao repositório um arquivo de texto chamado .gitattributes, que faz lembrar uma tabela com duas colunas. Em cada linha: à esquerda, você deve inserir o nome de arquivo (ou padrão de nome de arquivo) que o Git deve identificar; e à direita, você deve configurar como o Git deve tratar esse arquivo (ou padrão de arquivo). Aqui está um arquivo .gitattributes de exemplo, que você pode usar como um ponto de partida para seus repositórios (pode deixar os comentários, o Git os ignora): 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 # Configuração padrão * text=auto # Arquivos cujos fins de linha devem sempre ser convertidos para o padrão do # sistema em uso *.c text *.h text # Arquivos cujos fins de linha devem sempre ser CRLF (padrão do Windows) *.bat text eol=crlf # Arquivos cujos fins de linha devem sempre ser LF (padrão do Unix, Linux e Mac # OS X) *.sh text eol=lf # Arquivos binários que não devem ser modificados *.png binary *.jpg binary É uma boa prática que esse arquivo seja sempre adicionado já no primeiro ou segundo commit, de forma a prevenir problemas futuros. Uma vez no repositório, esse arquivo é compartilhado por todos os desenvolvedores, que não mais enfrentarão problemas com os fins de linha dos arquivos. Se você tem um repositório com vários arquivos e commits que ainda não tem um arquivo .gitattributes, aqui está a melhor maneira de adicioná-lo (sugerida pela própria ajuda do GitHub, com base em uma resposta no Stack Overflow): Crie um arquivo .gitattributes, como o do exemplo acima, e faça um commit com ele: 1 2 git add .gitattributes git commit -m &quot;Arquivo .gitattributes&quot; Salve quaisquer outros arquivos alterados, para garantir que não perderá trabalho: 1 2 git add . -u git commit -m &quot;Salvando os arquivos antes de atualizar os fins de linha&quot; Remova cada arquivo do repositório: 1 git rm --cached -r . Reescreva os arquivos, dessa vez com os fins de linha desejados: 1 git reset --hard Adicione todos os seus arquivos de volta (aproveite a oportunidade para verificar se houve arquivos que não tiveram seus fins de linha substituídos, quando deveriam): 1 git add . Faça um commit com as alterações: 1 git commit -m &quot;Problemas com fins de linha nunca mais!&quot; Referências: Git - how to keep CRLF endings for specific files only? - Stack Overflow What’s the best CRLF (Carriage Return Line Feed) handling strategy with git? - Stack Overflow Trying to fix line-endings with git filter-branch, but having no luck - Stack Overflow Dealing with line endings - User Documentation Mind the End of Your Line ∙ Adaptive Patchwork Como visualizar o histórico de mudanças de um arquivo Para visualizar o histórico do repositório como um todo, os comandos mais básicos são, para linha de comando: 1 git log Ou, para interface gráfica: 1 gitk Para visualizar o histórico de um arquivo em particular (nome_do_arquivo, por exemplo), para mim foi suficiente o comando: 1 gitk nome_do_arquivo Na referência, há outras sugestões de comandos mais elaborados. Referência: View the change history of a file using Git versioning - Stack Overflow</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2015/09/git.png" /></entry></feed>
+&lt;p&gt;Note que no caso da imagem DD só é possível utilizar o &lt;em&gt;pendrive&lt;/em&gt; com o sistema operacional nele contido. Então, seguindo nesse exemplo, em que o &lt;em&gt;pendrive&lt;/em&gt; contém o openSUSE, você não pode contectá-lo a um computador com Windows e copiar arquivos para ele ou acessar um arquivo que você baixou enquanto usava o openSUSE do &lt;em&gt;pendrive&lt;/em&gt;. Você pode, sim, iniciar qualquer computador usando esse &lt;em&gt;pendrive&lt;/em&gt; e acessar um arquivo que você criou em outra vez que você o utilizou.&lt;/p&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">O Rufus é uma ferramenta bastante versátil quando o objetivo é iniciar o computador (“dar o boot”, na gíria técnica) pelo pendrive. Isso pode ser útil em diversas situações, como, por exemplo, testar ou instalar um sistema operacional (especialmente em computadores sem unidade de CD/DVD, como os netbooks), restaurar backups, remover vírus, dentre outras. Vantagens do Rufus em relação a outras ferramentas são seu tamanho reduzido (menos de 1MB), a quantidade de funcionalidades e a tradução para o Português, que é selecionada automaticamente de acordo com a configuração do Windows (e olha como o mundo é pequeno: descobri que ela foi feita por um professor do IFSE, Chateaubriand Vieira Moura). Também não é necessário instalar o Rufus: para usá-lo, basta baixar do site oficial e executar. Uma desvantagem do Rufus em relação a outras ferramentas é que ele não permite armazenar em um mesmo pendrive vários sistemas operacionais (Windows, Ubuntu e openSUSE, por exemplo). Nesse caso, talvez você possa utilizar o Hiren’s BootCD ou o RMPrepUSB. Os passos aqui descritos, embora eu só use o termo “pendrive”, também se aplicam a cartões de memória. Se você vai utilizar um cartão de memória, onde houver “pendrive”, leia “cartão de memória”. Cuidado ao utilizar o Rufus, pois ele apaga o que estiver no pendrive. Por segurança, recomendo que você remova todos os pendrives que estão conectados ao computador e depois insira somente o que será utilizado. Breve explicação sobre imagens ISO Uma imagem ISO é um arquivo que contém uma cópia de uma mídia ótica (um CD ou DVD) e pode ser utilizado para gravá-la. Assim, usando um programa de gravação, como o CDBurnerXP, é possível gravar um DVD com o openSUSE, por exemplo, usando a imagem ISO disponível para download no site do openSUSE. Com esse mesmo programa, você pode criar uma imagem ISO de um CD ou DVD que você possua, como o DVD de instalação do Windows. Essa é apenas a utilização mais básica e comum das imagens ISO. É possível fazer muito mais com elas. Usando ferramentas como o DAEMON Tools, por exemplo, podemos acessar o conteúdo dessas imagens como se elas fossem CDs ou DVDs de verdade inseridos em uma unidade de CD/DVD do computador. Usando o Rufus, podemos extrair o conteúdo de uma imagem ISO de um sistema operacional (o DVD de instalação do Windows ou o LiveDVD do Ubuntu, por exemplo) para um pendrive e utilizá-lo para iniciar o computador. Um CD (ou DVD) que pode ser usado para iniciar o computador é comumente chamado de LiveCD (ou LiveDVD). Da mesma forma, é comum chamar um pendrive que pode ser usado para iniciar o computador de LiveUSB. Como criar um pendrive inicializável a partir de qualquer imagem ISO Vejamos como é simples criar um pendrive inicializável (bootable) a partir de uma imagem ISO qualquer (uma que contenha o DVD de instalação do Windows ou o LiveDVD do Ubuntu, como no exemplo anteriormente citado): Conecte o pendrive que será utilizado ao computador e inicie o Rufus. Possivelmente, ele solicitará permissão de administrador, que você deve conceder. Ele pergunta se deseja procurar atualizações para o Rufus na Internet, você pode clicar em Não e prosseguir. Em Dispositivo, selecione o pendrive que receberá o openSUSE (confira o rótulo e a capacidade para se certificar de que é esse pendrive mesmo que será utilizado). Certifique-se de que a opção Criar disco bootável com está marcada, e selecione Imagem ISO. Clique no ícone do disco ao lado das opções Criar disco bootável com e Imagem ISO e abra o arquivo ISO cujo conteúdo deve ser extraído para o pendrive. Clique em Iniciar. O Rufus exibirá um aviso: Leia-o atentamente e clique em OK para continuar. Ao final do processo, seu pendrive terá os mesmos arquivos que um CD ou DVD apresentaria caso você gravasse a imagem ISO neles. Inclusive, você ainda poderá utilizar o pendrive para armazenar outros arquivos. Só tome o cuidado para não excluir ou renomear algum arquivo que veio da imagem ISO, o que pode prejudicar o bom funcionamento do sistema operacional que está no pendrive. Agora, você poderá fechar o Rufus e iniciar o computador usando o pendrive, se quiser. Como gravar o openSUSE em um pendrive No caso específico do openSUSE, ao seguir as instruções acima e clicar em Iniciar, você perceberá que o Rufus fará uma pergunta: Isso acontece porque a imagem ISO do openSUSE é uma imagem ISO híbrida (hybrid ISO), o que permite a você tratá-la de duas formas: como uma imagem ISO comum, caso em que o resultado é o mesmo produzido pelas instruções genéricas (os arquivos dentro da imagem ISO são copiados para o pendrive, e você ainda pode utilizá-lo para armazenar outros arquivos); ou como uma imagem DD (imagem de disco, igual a uma produzida pelo comando dd do Linux), o que permite que alterações feitas no sistema (por exemplo, um arquivo que você baixou enquanto usava o Linux a partir do pendrive) sejam mantidas (então, no exemplo, você veria esse arquivo no mesmo lugar após reiniciar o computador pelo pendrive). Nesse caso, o resultado é o mesmo produzido pela ferramenta oficial, o SUSE Studio ImageWriter, antes disponível também para Windows, mas agora feita apenas para o Linux. Se sua intenção é usar o pendrive de modo persistente (mantendo as alterações), marque a opção Gravar no modo Imagem DD. Clique em OK para iniciar o processo. Ao final, você terá um pendrive que poderá ser utilizado para iniciar o computador usando o openSUSE. Note que no caso da imagem DD só é possível utilizar o pendrive com o sistema operacional nele contido. Então, seguindo nesse exemplo, em que o pendrive contém o openSUSE, você não pode contectá-lo a um computador com Windows e copiar arquivos para ele ou acessar um arquivo que você baixou enquanto usava o openSUSE do pendrive. Você pode, sim, iniciar qualquer computador usando esse pendrive e acessar um arquivo que você criou em outra vez que você o utilizou.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2015/10/rufus-0.png" /></entry></feed>
