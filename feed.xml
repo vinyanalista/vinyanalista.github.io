@@ -1,4 +1,291 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinyanalista.github.io/" rel="alternate" type="text/html" hreflang="pt" /><updated>2018-10-05T18:42:45-03:00</updated><id>https://vinyanalista.github.io/</id><title type="html">Antônio Vinícius</title><subtitle>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</subtitle><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><entry><title type="html">Verificação de integridade e autenticidade com o Gpg4win</title><link href="https://vinyanalista.github.io/blog/2018/10/05/verificacao-de-integridade-e-autenticidade-com-o-gpg4win/" rel="alternate" type="text/html" title="Verificação de integridade e autenticidade com o Gpg4win" /><published>2018-10-05T18:30:00-03:00</published><updated>2018-10-05T18:42:41-03:00</updated><id>https://vinyanalista.github.io/blog/2018/10/05/verificacao-de-integridade-e-autenticidade-com-o-gpg4win</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2018/10/05/verificacao-de-integridade-e-autenticidade-com-o-gpg4win/">&lt;p&gt;Por vezes pode ser importante verificar um arquivo obtido da Internet, por exemplo, a &lt;a href=&quot;https://pt.wikipedia.org/wiki/Imagem_ISO&quot;&gt;imagem ISO&lt;/a&gt; de uma &lt;a href=&quot;https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_Linux&quot;&gt;distribuição Linux&lt;/a&gt; - ela contém o sistema operacional que você vai utilizar ou instalar em seu computador, já pensou se o arquivo se corrompeu durante o &lt;em&gt;download&lt;/em&gt; ou foi adulterado por um &lt;a href=&quot;https://pt.wikipedia.org/wiki/Ataque_man-in-the-middle&quot;&gt;ataque de homem no meio&lt;/a&gt;?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinyanalista.github.io/" rel="alternate" type="text/html" hreflang="pt" /><updated>2018-10-22T19:50:29-03:00</updated><id>https://vinyanalista.github.io/</id><title type="html">Antônio Vinícius</title><subtitle>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</subtitle><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><entry><title type="html">Com horário de verão confuso, hora de computadores e celulares foi adiantada antes, veja como configurá-los</title><link href="https://vinyanalista.github.io/blog/2018/10/22/com-horario-de-verao-confuso-hora-de-computadores-e-celulares-foi-adiantada-antes-veja-como-configura-los/" rel="alternate" type="text/html" title="Com horário de verão confuso, hora de computadores e celulares foi adiantada antes, veja como configurá-los" /><published>2018-10-22T19:45:00-03:00</published><updated>2018-10-22T19:50:20-03:00</updated><id>https://vinyanalista.github.io/blog/2018/10/22/com-horario-de-verao-confuso-hora-de-computadores-e-celulares-foi-adiantada-antes-veja-como-configura-los</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2018/10/22/com-horario-de-verao-confuso-hora-de-computadores-e-celulares-foi-adiantada-antes-veja-como-configura-los/">&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Do sábado para o domingo muita gente viu &lt;a href=&quot;https://www.correiobraziliense.com.br/app/noticia/brasil/2018/10/21/interna-brasil,714001/relogio-de-celulares-adianta-uma-hora-de-novo-e-a-segunda-vez-na-sema.shtml&quot;&gt;os relógios do computador e do celular se adiantarem em 1 hora sozinhos&lt;/a&gt;, com o suposto início do horário de verão. Ocorre que desde o ano passado já &lt;a href=&quot;https://g1.globo.com/politica/noticia/2018/10/15/planalto-informa-que-nao-havera-adiamento-e-que-horario-de-verao-comecara-no-proximo-dia-4.ghtml&quot;&gt;é a terceira vez que o governo brasileiro altera a data de início do horário de verão em 2018&lt;/a&gt;. Quem estava com seus dispositivos devidamente configurados e atualizados não teve problemas. Nesse &lt;em&gt;post&lt;/em&gt; você vai entender o que aconteceu e como se prevenir.&lt;/p&gt;
+
+&lt;p&gt;Aqui vou tratar de &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/&quot;&gt;Windows&lt;/a&gt; e &lt;a href=&quot;https://www.apple.com/br/ios/&quot;&gt;iOS&lt;/a&gt; (&lt;a href=&quot;https://www.apple.com/br/iphone/&quot;&gt;iPhone&lt;/a&gt;, &lt;a href=&quot;https://www.apple.com/br/ipad/&quot;&gt;iPad&lt;/a&gt; e &lt;a href=&quot;https://www.apple.com/br/ipod-touch/&quot;&gt;iPod touch&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Para &lt;a href=&quot;https://www.vivaolinux.com.br/linux/&quot;&gt;Linux&lt;/a&gt; e &lt;a href=&quot;https://www.android.com/&quot;&gt;Android&lt;/a&gt;, consulte os excelentes tutoriais do &lt;em&gt;blog&lt;/em&gt; &lt;a href=&quot;https://kamarada.github.io/&quot;&gt;Linux Kamarada&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://kamarada.github.io/pt/2018/10/21/acordou-com-a-hora-do-computador-errada-entenda-o-que-aconteceu/&quot;&gt;Acordou com a hora do computador errada? Entenda o que aconteceu&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://kamarada.github.io/pt/2018/10/22/mantenha-a-hora-do-android-sempre-certa/&quot;&gt;Mantenha a hora do Android sempre certa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; se você utiliza Windows e Linux em &lt;em&gt;dual boot&lt;/em&gt;, consulte o tutorial acima para Linux para ver como configurar os dois.&lt;/p&gt;
+
+&lt;h2 id=&quot;o-que-aconteceu-esse-final-de-semana&quot;&gt;O que aconteceu esse final de semana&lt;/h2&gt;
+
+&lt;p&gt;O &lt;a href=&quot;https://pt.wikipedia.org/wiki/Hor%C3%A1rio_de_ver%C3%A3o&quot;&gt;&lt;strong&gt;horário de verão&lt;/strong&gt;&lt;/a&gt; é a prática de adiantar os relógios em 1 hora durante o verão. Quando foi criado, a ideia era aproveitar a maior duração do dia no verão e economizar energia.&lt;/p&gt;
+
+&lt;p&gt;No entanto, com o passar dos anos, a mudança na rotina dos brasileiros e o aquecimento do planeta fizeram com que a economia com o horário de verão se tornasse cada vez menor: as pessoas mudaram seus horários de trabalho e passaram a chegar em casa já à noite, além disso o uso de equipamentos que mais consomem energia como ares-condicionados e ventiladores se intensificou justamente durante o dia.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://noticias.r7.com/sao-paulo/senado-propoe-acabar-com-o-horario-de-verao-no-brasil-20092018&quot;&gt;Há proposta do Senado para extinguir o horário de verão&lt;/a&gt; e &lt;a href=&quot;https://oglobo.globo.com/economia/governo-voltara-discutir-se-acaba-com-horario-de-verao-22397585&quot;&gt;o governo a estuda&lt;/a&gt;. Quem é contra o horário de verão, também alega que o horário de verão pode implicar problemas de saúde. Quem é a favor, alega que o horário de verão incentiva o comércio, o turismo e a prática de esportes nas cidades.&lt;/p&gt;
+
+&lt;p&gt;Por ora, o governo decidiu reduzir a duração do horário de verão.&lt;/p&gt;
+
+&lt;p&gt;Em dezembro de 2017, o presidente Michel Temer assinou o &lt;a href=&quot;http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Decreto/D9242.htm&quot;&gt;Decreto nº 9.242&lt;/a&gt; que alterou o início do horário de verão do terceiro domingo de outubro (21/10/2018) para o primeiro domingo de novembro (04/11/2018), um fim de semana após o segundo turno das eleições, que está marcado para 28/10/2018.&lt;/p&gt;
+
+&lt;p&gt;Essa alteração foi feita a pedido do Tribunal Superior Eleitoral (TSE). O horário de verão em ano de eleição dificulta a apuração dos votos. Em 2014, por exemplo, a Justiça Eleitoral teve que adiar a divulgação do resultado para esperar a votação acabar no Acre.&lt;/p&gt;
+
+&lt;p&gt;O final do horário de verão foi mantido no terceiro domingo de fevereiro (17/02/2019).&lt;/p&gt;
+
+&lt;p&gt;Acontece que o Ministério da Educação (MEC) pediu que o início do horário de verão fosse adiado para 18 de novembro, a fim de evitar prejuízos aos estudantes que farão o Exame Nacional do Ensino Médio (Enem), cuja primeira prova está marcada para 04 de novembro. A necessidade de adiantar os relógios em uma 1 poderia confundir os candidatos.&lt;/p&gt;
+
+&lt;p&gt;O governo chegou a preparar o decreto e anunciar que faria essa nova alteração, porém depois não a oficializou por meio do Diário Oficial da União (DOU), decidindo finalmente por manter o horário de verão iniciando no dia 04 de novembro.&lt;/p&gt;
+
+&lt;p&gt;A razão para essa última decisão foi um protesto da Associação Brasileira das Empresas Aéreas (Abear), que alertou que a mudança poderia levar passageiros que compraram passagens com antecedência a perderem seus voos. Cerca de 42 mil voos poderiam ser afetados e pelo menos 3 milhões de passageiros poderiam ser prejudicados.&lt;/p&gt;
+
+&lt;p&gt;Portanto, desde o ano passado, o início do horário de verão no Brasil em 2018 já teve 3 mudanças: passou de 21/10 para 04/11, depois para 18/11, e por fim foi mantido em 04/11.&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/mapa-horario-de-verao-2018-2019.jpg&quot; title=&quot;Estados que adotam horário de verão no Brasil (referências: [G1](http://g1.globo.com/economia/noticia/2016/10/horario-de-verao-comeca-em-16-de-outubro-e-vai-ate-19-de-fevereiro.html) e [Decreto nº 8.112](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/Decreto/D8112.htm), mapa emprestado do *blog* [Linux Kamarada](https://kamarada.github.io/pt/2018/10/22/mantenha-a-hora-do-android-sempre-certa/) e derivado do [mapa do Brasil em branco disponível na WikiMedia](https://commons.wikimedia.org/wiki/File:Brazil_Blank_Map_light.svg))&quot;&gt;
+&lt;img src=&quot;/files/2018/10/mapa-horario-de-verao-2018-2019.jpg&quot; alt=&quot;Estados que adotam horário de verão no Brasil (referências: [G1](http://g1.globo.com/economia/noticia/2016/10/horario-de-verao-comeca-em-16-de-outubro-e-vai-ate-19-de-fevereiro.html) e [Decreto nº 8.112](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/Decreto/D8112.htm), mapa emprestado do *blog* [Linux Kamarada](https://kamarada.github.io/pt/2018/10/22/mantenha-a-hora-do-android-sempre-certa/) e derivado do [mapa do Brasil em branco disponível na WikiMedia](https://commons.wikimedia.org/wiki/File:Brazil_Blank_Map_light.svg))&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;em class=&quot;caption&quot; itemprop=&quot;description&quot;&gt;
+&lt;p&gt;Estados que adotam horário de verão no Brasil (referências: &lt;a href=&quot;http://g1.globo.com/economia/noticia/2016/10/horario-de-verao-comeca-em-16-de-outubro-e-vai-ate-19-de-fevereiro.html&quot;&gt;G1&lt;/a&gt; e &lt;a href=&quot;http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/Decreto/D8112.htm&quot;&gt;Decreto nº 8.112&lt;/a&gt;, mapa emprestado do &lt;em&gt;blog&lt;/em&gt; &lt;a href=&quot;https://kamarada.github.io/pt/2018/10/22/mantenha-a-hora-do-android-sempre-certa/&quot;&gt;Linux Kamarada&lt;/a&gt; e derivado do &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Brazil_Blank_Map_light.svg&quot;&gt;mapa do Brasil em branco disponível na WikiMedia&lt;/a&gt;)&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;como-saber-a-hora-certa&quot;&gt;Como saber a hora certa&lt;/h2&gt;
+
+&lt;p&gt;Você pode verificar se a data e a hora do seu computador ou celular estão corretas acessando o &lt;em&gt;site&lt;/em&gt; do projeto &lt;a href=&quot;http://ntp.br/&quot;&gt;NTP.br&lt;/a&gt;, que mantém servidores de hora que os computadores podem consultar para sincronizar seus relógios:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/ntpbr-hora-certa.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/ntpbr-hora-certa.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Agora que você já está a par do que aconteceu e conferiu a hora do seu computador e celular, vamos ver como configurá-los.&lt;/p&gt;
+
+&lt;h2 id=&quot;windows-em-casa&quot;&gt;Windows em casa&lt;/h2&gt;
+
+&lt;p&gt;Para configurar a data e hora do seu computador Windows em casa, clique no &lt;strong&gt;menu Iniciar&lt;/strong&gt;, depois em &lt;strong&gt;Configurações&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora-windows-1.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora-windows-1.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Na tela &lt;strong&gt;Configurações do Windows&lt;/strong&gt;, clique em &lt;strong&gt;Hora e Idioma&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora-windows-2.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora-windows-2.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Em &lt;strong&gt;Fuso horário&lt;/strong&gt;, selecione &lt;strong&gt;(UTC-03:00) Brasília&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora-windows-3.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora-windows-3.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Se você mora na região Sul, Sudeste ou Centro-Oeste, regiões que adotam o horário de verão, ative a opção &lt;strong&gt;Ajustar automaticamente para o horário de verão&lt;/strong&gt;. Se você mora no Nordeste ou no Norte, desative essa opção.&lt;/p&gt;
+
+&lt;p&gt;Depois, clique em &lt;strong&gt;Configurações adicionais de data, hora e região&lt;/strong&gt; à direita.&lt;/p&gt;
+
+&lt;p&gt;Na janela que aparece, clique em &lt;strong&gt;Data e Hora&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora-windows-4.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora-windows-4.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Na caixa de diálogo &lt;strong&gt;Data e Hora&lt;/strong&gt;, selecione a aba &lt;strong&gt;Horário na Internet&lt;/strong&gt; e clique em &lt;strong&gt;Alterar configurações&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora-windows-5.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora-windows-5.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Pode ser que o sistema peça a senha do usuário administrador. Você deve fornecê-la para continuar.&lt;/p&gt;
+
+&lt;p&gt;Certifique-se de que a opção &lt;strong&gt;Sincronizar com um servidor de horário na Internet&lt;/strong&gt; esteja marcada:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora-windows-6.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora-windows-6.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;No campo &lt;strong&gt;Servidor&lt;/strong&gt;, informe o endereço &lt;code class=&quot;highlighter-rouge&quot;&gt;pool.ntp.br&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Clique em &lt;strong&gt;Atualizar agora&lt;/strong&gt; para já acertar a data e hora do seu computador.&lt;/p&gt;
+
+&lt;p&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; para sair da caixa de diálogo &lt;strong&gt;Configurações de Horário na Internet&lt;/strong&gt;. Depois, clique em &lt;strong&gt;OK&lt;/strong&gt; para sair da caixa de diálogo &lt;strong&gt;Data e Hora&lt;/strong&gt;. Pode fechar as janelas restantes.&lt;/p&gt;
+
+&lt;p&gt;Pronto! Seu computador já está com data e hora corretas e configurado para sincronizá-las com a Internet. Com isso, nunca mais você terá que se preocupar em ajustar manualmente a data e a hora no início e no fim do horário de verão.&lt;/p&gt;
+
+&lt;p&gt;Além disso, há outro detalhe que você precisa se atentar: &lt;strong&gt;atualizações&lt;/strong&gt;. Como vimos, as datas de início e fim do horário de verão podem mudar. Embora a data e hora possam ser obtidas da Internet, o início e o fim do horário de verão são programados no sistema operacional. Por isso, é importante regularmente verificar atualizações para o Windows.&lt;/p&gt;
+
+&lt;p&gt;Normalmente, o Windows já instala quaisquer atualizações disponíveis em um horário que você não costuma utilizar o computador, se ele estiver ligado.&lt;/p&gt;
+
+&lt;p&gt;Para verificar se há atualizações disponíveis, clique no &lt;strong&gt;menu Iniciar&lt;/strong&gt;, depois em &lt;strong&gt;Configurações&lt;/strong&gt;. Na tela &lt;strong&gt;Configurações do Windows&lt;/strong&gt;, clique em &lt;strong&gt;Atualização e Segurança&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;windows-na-empresa&quot;&gt;Windows na empresa&lt;/h2&gt;
+
+&lt;p&gt;No caso de computadores Windows em empresas, se esses computadores estão ingressados em um domínio do &lt;a href=&quot;https://technet.microsoft.com/pt-br/library/jj206711.aspx&quot;&gt;Active Directory (AD)&lt;/a&gt;, por padrão eles sincronizam a data e a hora com o servidor controlador do domínio, então não há o que configurar.&lt;/p&gt;
+
+&lt;p&gt;Se a data e hora de um &lt;em&gt;desktop&lt;/em&gt; da empresa estiverem erradas, experimente forçar a sincronização com o controlador do domínio executando o seguinte comando no &lt;strong&gt;Prompt de Comando&lt;/strong&gt; (esse comando não precisa de permissão de administrador):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&amp;gt; net time %LOGONSERVER% /set /y
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A saída desse comando deve ser parecida com:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;A hora atual em \\MEU-AD é 22/10/2018 17:35:11
+
+Comando concluído com êxito.
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Caso depois de executar esse comando a data e hora continuem erradas, provavelmente a data e hora do controlador do domínio estão erradas e é necessário verificá-lo.&lt;/p&gt;
+
+&lt;p&gt;Vejamos então como configurar data, hora, fuso horário e sincronização em um servidor com &lt;a href=&quot;https://www.microsoft.com/pt-br/cloud-platform/windows-server&quot;&gt;Windows Server&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;windows-server&quot;&gt;Windows Server&lt;/h3&gt;
+
+&lt;p&gt;O fuso horário do controlador do domínio é configurado da mesma forma que o fuso de qualquer computador Windows (ver instruções acima).&lt;/p&gt;
+
+&lt;p&gt;Quanto à data e hora, o servidor deve ser configurado para sincronizar com algum servidor de hora externo. Você pode fazer isso via &lt;a href=&quot;https://technet.microsoft.com/pt-br/library/cc668545.aspx&quot;&gt;diretiva de grupo (GPO)&lt;/a&gt;, para mais informações consulte &lt;a href=&quot;http://www.sysadminlab.net/windows/configuring-ntp-on-windows-using-gpo&quot;&gt;esse &lt;em&gt;link&lt;/em&gt; (em inglês)&lt;/a&gt;, ou via &lt;a href=&quot;https://pt.wikipedia.org/wiki/PowerShell&quot;&gt;Windows PowerShell&lt;/a&gt;, que é mais rápido, especialmente se seu domínio possui apenas um controlador:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&amp;gt; w32tm /config /manualpeerlist:'''pool.ntp.br''' /syncfromflags:MANUAL
+&amp;gt; Stop-Service w32time
+&amp;gt; Start-Service w32time
+&amp;gt; w32tm /query /status
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Se sua rede possuir um servidor de hora dedicado, substitua &lt;code class=&quot;highlighter-rouge&quot;&gt;pool.ntp.br&lt;/code&gt; por esse servidor.&lt;/p&gt;
+
+&lt;h2 id=&quot;ios&quot;&gt;iOS&lt;/h2&gt;
+
+&lt;p&gt;Antes de ajustar a configuração de data e hora propriamente dita, &lt;a href=&quot;https://support.apple.com/pt-br/HT203483&quot;&gt;a Apple recomenda&lt;/a&gt; que o seu dispositivo tenha a versão mais recente do iOS.&lt;/p&gt;
+
+&lt;p&gt;Para verificar se esse é o caso, toque em &lt;strong&gt;Ajustes&lt;/strong&gt; &amp;gt; &lt;strong&gt;Geral&lt;/strong&gt; &amp;gt; &lt;strong&gt;Atualização de Software&lt;/strong&gt;. Deve aparecer na tela &lt;strong&gt;Seu software está atualizado&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora-ios-1.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora-ios-1.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Se, diferente disso, for informado que há uma atualização disponível, você deve instalá-la.&lt;/p&gt;
+
+&lt;p&gt;Não vou entrar em detalhes de como atualizar seu iOS. Se precisar de ajuda, consulte as instruções no &lt;em&gt;site&lt;/em&gt; da &lt;a href=&quot;https://www.apple.com/br/&quot;&gt;Apple&lt;/a&gt; em:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.apple.com/pt-br/HT204204&quot;&gt;Atualizar o iPhone, iPad ou iPod touch - Suporte da Apple&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Usando a versão mais recente do iOS, é recomendado que você obtenha as configurações de data e hora automaticamente da sua operadora.&lt;/p&gt;
+
+&lt;p&gt;Para determinar o fuso horário, o iOS utiliza a localização do dispositivo. Vá em &lt;strong&gt;Ajustes&lt;/strong&gt; &amp;gt; &lt;strong&gt;Privacidade&lt;/strong&gt; &amp;gt; &lt;strong&gt;Serviços de Localização&lt;/strong&gt; e ative os &lt;strong&gt;Serviços de Localização&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora-ios-2.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora-ios-2.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Na mesma tela, deslize a lista de aplicativos até o final e toque em &lt;strong&gt;Serviços do Sistema&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Na tela seguinte, habilite o &lt;strong&gt;Ajuste de Fuso Horário&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora-ios-3.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora-ios-3.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Por fim, toque em &lt;strong&gt;Ajustes&lt;/strong&gt; &amp;gt; &lt;strong&gt;Geral&lt;/strong&gt; &amp;gt; &lt;strong&gt;Data e Hora&lt;/strong&gt; e ative a opção &lt;strong&gt;Automaticamente&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora-ios-4.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora-ios-4.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Se você vir um alerta indicando que informações atualizadas de fuso horário estão disponíveis, reinicie o dispositivo para obter as novas informações. Como no meu celular não apareceu essa mensagem, vou tomar a captura de tela emprestada do &lt;a href=&quot;https://support.apple.com/pt-br/HT206986&quot;&gt;&lt;em&gt;site&lt;/em&gt; da Apple&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora-ios-5.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora-ios-5.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Verifique se o dispositivo mostra o fuso horário correto em &lt;strong&gt;Fuso Horário&lt;/strong&gt;. No meu caso, ele mostra &lt;strong&gt;Sâo Paulo&lt;/strong&gt; porque estou no sul do Brasil, uma região que adota o horário de verão.&lt;/p&gt;
+
+&lt;p&gt;Verifique também se agora sua data e hora estão corretas.&lt;/p&gt;
+
+&lt;p&gt;Se depois de todas essas configurações sua data, hora ou fuso horário ainda estiverem incorretos, você deverá configurá-los manualmente.&lt;/p&gt;
+
+&lt;p&gt;Para isso, desative a opção &lt;strong&gt;Automaticamente&lt;/strong&gt; e configure o fuso horário, a data e a hora conforme sua necessidade:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/data-hora-ios-6.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/data-hora-ios-6.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Provavelmente você desejará mudar o fuso horário se mora em uma região que não adota o horário de verão. Nesse caso, selecione um fuso horário que também não adote o horário de verão (por exemplo, &lt;strong&gt;Fortaleza&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;dica-mapa-de-fusos-horários&quot;&gt;Dica: mapa de fusos horários&lt;/h2&gt;
+
+&lt;p&gt;Você pode usar o mapa de fusos horários disponível em &lt;a href=&quot;http://www.timeanddate.com/time/map/&quot;&gt;timeanddate.com&lt;/a&gt; para encontrar uma cidade com um fuso horário que atenda a suas necessidades. Passe o &lt;em&gt;mouse&lt;/em&gt; em uma cidade para ver sua data e hora atuais:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2018/10/timeanddate.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2018/10/timeanddate.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;referências&quot;&gt;Referências&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.correiobraziliense.com.br/app/noticia/brasil/2018/10/21/interna-brasil,714001/relogio-de-celulares-adianta-uma-hora-de-novo-e-a-segunda-vez-na-sema.shtml&quot;&gt;Relógios de computador e celulares se adiantam antes do horário de verão - Correio Braziliense&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://g1.globo.com/politica/noticia/2018/10/15/planalto-informa-que-nao-havera-adiamento-e-que-horario-de-verao-comecara-no-proximo-dia-4.ghtml&quot;&gt;Planalto informa que não haverá adiamento e que horário de verão começará no próximo dia 4 - Política - G1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://oglobo.globo.com/economia/governo-voltara-discutir-se-acaba-com-horario-de-verao-22397585&quot;&gt;Governo voltará a discutir se acaba com horário de verão - Jornal O Globo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://noticias.r7.com/sao-paulo/senado-propoe-acabar-com-o-horario-de-verao-no-brasil-20092018&quot;&gt;Senado propõe acabar com o horário de verão no Brasil - Notícias - R7 São Paulo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ntp.br/guia-win-comum.php&quot;&gt;Guia Windows - NTP.br&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.apple.com/pt-br/HT203483&quot;&gt;Receber ajuda com a data e a hora no iPhone, iPad e iPod touch - Suporte da Apple&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.apple.com/pt-br/HT204204&quot;&gt;Atualizar o iPhone, iPad ou iPod touch - Suporte da Apple&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.apple.com/pt-br/HT206986&quot;&gt;Como obter informações atualizadas de fuso horário no dispositivo Apple - Suporte da Apple&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">Do sábado para o domingo muita gente viu os relógios do computador e do celular se adiantarem em 1 hora sozinhos, com o suposto início do horário de verão. Ocorre que desde o ano passado já é a terceira vez que o governo brasileiro altera a data de início do horário de verão em 2018. Quem estava com seus dispositivos devidamente configurados e atualizados não teve problemas. Nesse post você vai entender o que aconteceu e como se prevenir.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2018/10/data-hora.jpg" /></entry><entry><title type="html">Verificação de integridade e autenticidade com o Gpg4win</title><link href="https://vinyanalista.github.io/blog/2018/10/05/verificacao-de-integridade-e-autenticidade-com-o-gpg4win/" rel="alternate" type="text/html" title="Verificação de integridade e autenticidade com o Gpg4win" /><published>2018-10-05T18:30:00-03:00</published><updated>2018-10-22T19:50:20-03:00</updated><id>https://vinyanalista.github.io/blog/2018/10/05/verificacao-de-integridade-e-autenticidade-com-o-gpg4win</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2018/10/05/verificacao-de-integridade-e-autenticidade-com-o-gpg4win/">&lt;p&gt;Por vezes pode ser importante verificar um arquivo obtido da Internet, por exemplo, a &lt;a href=&quot;https://pt.wikipedia.org/wiki/Imagem_ISO&quot;&gt;imagem ISO&lt;/a&gt; de uma &lt;a href=&quot;https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_Linux&quot;&gt;distribuição Linux&lt;/a&gt; - ela contém o sistema operacional que você vai utilizar ou instalar em seu computador, já pensou se o arquivo se corrompeu durante o &lt;em&gt;download&lt;/em&gt; ou foi adulterado por um &lt;a href=&quot;https://pt.wikipedia.org/wiki/Ataque_man-in-the-middle&quot;&gt;ataque de homem no meio&lt;/a&gt;?&lt;/p&gt;
 
 &lt;p&gt;Duas verificações comuns que reduzem a quase zero as chances de usar um arquivo corrompido ou adulterado são a &lt;a href=&quot;https://pt.wikipedia.org/wiki/Soma_de_verifica%C3%A7%C3%A3o&quot;&gt;soma de verificação&lt;/a&gt; e a &lt;a href=&quot;https://www.gnupg.org/gph/en/manual.html&quot;&gt;assinatura digital&lt;/a&gt;:&lt;/p&gt;
 
@@ -2777,115 +3064,4 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;Também não se esqueça de se precaver e reforçar a segurança do seu celular novo: dicas no próximo &lt;em&gt;post&lt;/em&gt;!&lt;/p&gt;
 
-&lt;p&gt;Abraço a todos e boa sorte!&lt;/p&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">Em primeiro lugar, não se culpe e procure manter a calma. Feito isso, siga as dicas que apresento aqui para tentar restringir ao máximo a ação do bandido, se possível até mesmo recuperar o celular. Você também pode seguir essas dicas se perdeu seu celular. Algumas dicas podem funcionar também com tablets.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2015/10/celular-roubado-00.jpg" /></entry><entry><title type="html">Rufus: o canivete suíço do boot pelo pendrive (ou cartão de memória)</title><link href="https://vinyanalista.github.io/blog/2015/10/08/rufus/" rel="alternate" type="text/html" title="Rufus: o canivete suíço do boot pelo pendrive (ou cartão de memória)" /><published>2015-10-08T15:30:00-03:00</published><updated>2017-08-13T15:09:26-03:00</updated><id>https://vinyanalista.github.io/blog/2015/10/08/rufus</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2015/10/08/rufus/">&lt;p&gt;O &lt;a href=&quot;https://rufus.akeo.ie&quot;&gt;Rufus&lt;/a&gt; é uma ferramenta bastante versátil quando o objetivo é iniciar o computador (“dar o &lt;em&gt;boot&lt;/em&gt;”, na gíria técnica) pelo &lt;em&gt;pendrive&lt;/em&gt;. Isso pode ser útil em diversas situações, como, por exemplo, testar ou instalar um sistema operacional (especialmente em computadores sem unidade de CD/DVD, como os &lt;em&gt;netbooks&lt;/em&gt;), restaurar &lt;em&gt;backups&lt;/em&gt;, remover vírus, dentre outras.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/10/rufus-0.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/10/rufus-0.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Vantagens do Rufus em relação a outras ferramentas são seu tamanho reduzido (menos de 1MB), a quantidade de funcionalidades e a tradução para o Português, que é selecionada automaticamente de acordo com a configuração do &lt;a href=&quot;http://www.microsoft.com/pt-br/windows&quot;&gt;Windows&lt;/a&gt; (e olha como o mundo é pequeno: descobri que ela foi feita por um professor do &lt;a href=&quot;http://www.ifs.edu.br/&quot;&gt;IFSE&lt;/a&gt;, &lt;a href=&quot;http://lattes.cnpq.br/2313970638096032&quot;&gt;Chateaubriand Vieira Moura&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Também não é necessário instalar o Rufus: para usá-lo, basta baixar do &lt;a href=&quot;https://rufus.akeo.ie&quot;&gt;site oficial&lt;/a&gt; e executar.&lt;/p&gt;
-
-&lt;p&gt;Uma desvantagem do Rufus em relação a outras ferramentas é que ele &lt;a href=&quot;https://github.com/pbatard/rufus/wiki/FAQ#do-you-plan-to-add-multiboot-support&quot;&gt;não permite&lt;/a&gt; armazenar em um mesmo &lt;em&gt;pendrive&lt;/em&gt; vários sistemas operacionais (Windows, &lt;a href=&quot;http://ubuntu-br.org/&quot;&gt;Ubuntu&lt;/a&gt; e &lt;a href=&quot;https://www.opensuse.org/&quot;&gt;openSUSE&lt;/a&gt;, por exemplo). Nesse caso, talvez você possa utilizar o &lt;a href=&quot;http://www.hirensbootcd.org&quot;&gt;Hiren’s BootCD&lt;/a&gt; ou o &lt;a href=&quot;http://www.rmprepusb.com/&quot;&gt;RMPrepUSB&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Os passos aqui descritos, embora eu só use o termo “&lt;em&gt;pendrive&lt;/em&gt;”, também se aplicam a cartões de memória. Se você vai utilizar um cartão de memória, onde houver “&lt;em&gt;pendrive&lt;/em&gt;”, leia “cartão de memória”.&lt;/p&gt;
-
-&lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;
-&lt;strong&gt;Cuidado ao utilizar o Rufus&lt;/strong&gt;, pois ele &lt;a href=&quot;https://github.com/pbatard/rufus/wiki/FAQ#does-rufus-delete-all-partitionsvolumes-when-it-formats-a-drive&quot; target=&quot;_blank&quot;&gt;apaga o que estiver no &lt;em&gt;pendrive&lt;/em&gt;&lt;/a&gt;.
-&lt;/div&gt;
-
-&lt;p&gt;Por segurança, recomendo que você remova todos os &lt;em&gt;pendrives&lt;/em&gt; que estão conectados ao computador e depois insira somente o que será utilizado.&lt;/p&gt;
-
-&lt;h3 id=&quot;breve-explicação-sobre-imagens-iso&quot;&gt;Breve explicação sobre imagens ISO&lt;/h3&gt;
-
-&lt;p&gt;Uma &lt;strong&gt;imagem ISO&lt;/strong&gt; é um arquivo que contém uma cópia de uma mídia ótica (um CD ou DVD) e pode ser utilizado para gravá-la.&lt;/p&gt;
-
-&lt;p&gt;Assim, usando um programa de gravação, como o &lt;a href=&quot;https://cdburnerxp.se/&quot;&gt;CDBurnerXP&lt;/a&gt;, é possível gravar um DVD com o openSUSE, por exemplo, usando a imagem ISO disponível para &lt;a href=&quot;http://software.opensuse.org/&quot;&gt;&lt;em&gt;download&lt;/em&gt;&lt;/a&gt; no &lt;em&gt;site&lt;/em&gt; do openSUSE. Com esse mesmo programa, você pode criar uma imagem ISO de um CD ou DVD que você possua, como o DVD de instalação do Windows.&lt;/p&gt;
-
-&lt;p&gt;Essa é apenas a utilização mais básica e comum das imagens ISO. É possível fazer muito mais com elas. Usando ferramentas como o &lt;a href=&quot;http://www.daemon-tools.cc/por/home&quot;&gt;DAEMON Tools&lt;/a&gt;, por exemplo, podemos acessar o conteúdo dessas imagens como se elas fossem CDs ou DVDs de verdade inseridos em uma unidade de CD/DVD do computador.&lt;/p&gt;
-
-&lt;p&gt;Usando o Rufus, podemos extrair o conteúdo de uma imagem ISO de um sistema operacional (o DVD de instalação do Windows ou o LiveDVD do Ubuntu, por exemplo) para um &lt;em&gt;pendrive&lt;/em&gt; e utilizá-lo para iniciar o computador.&lt;/p&gt;
-
-&lt;p&gt;Um CD (ou DVD) que pode ser usado para iniciar o computador é comumente chamado de &lt;a href=&quot;https://pt.wikipedia.org/wiki/Live_CD&quot;&gt;&lt;strong&gt;LiveCD&lt;/strong&gt;&lt;/a&gt; (ou &lt;strong&gt;LiveDVD&lt;/strong&gt;). Da mesma forma, é comum chamar um &lt;em&gt;pendrive&lt;/em&gt; que pode ser usado para iniciar o computador de &lt;strong&gt;LiveUSB&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;como-criar-um-pendrive-inicializável-a-partir-de-qualquer-imagem-iso&quot;&gt;Como criar um &lt;em&gt;pendrive&lt;/em&gt; inicializável a partir de qualquer imagem ISO&lt;/h3&gt;
-
-&lt;p&gt;Vejamos como é simples criar um &lt;em&gt;pendrive&lt;/em&gt; inicializável (&lt;em&gt;bootable&lt;/em&gt;) a partir de uma imagem ISO qualquer (uma que contenha o DVD de instalação do Windows ou o LiveDVD do Ubuntu, como no exemplo anteriormente citado):&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Conecte o pendrive que será utilizado ao computador e inicie o Rufus. Possivelmente, ele solicitará permissão de administrador, que você deve conceder.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/10/rufus-1.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/10/rufus-1.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Ele pergunta se deseja procurar atualizações para o Rufus na Internet, você pode clicar em &lt;strong&gt;Não&lt;/strong&gt; e prosseguir.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/10/rufus-2.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/10/rufus-2.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Em &lt;strong&gt;Dispositivo&lt;/strong&gt;, selecione o &lt;em&gt;pendrive&lt;/em&gt; que receberá o openSUSE (confira o rótulo e a capacidade para se certificar de que é esse &lt;em&gt;pendrive&lt;/em&gt; mesmo que será utilizado).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Certifique-se de que a opção &lt;strong&gt;Criar disco bootável com&lt;/strong&gt; está marcada, e selecione &lt;strong&gt;Imagem ISO&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Clique no ícone do disco ao lado das opções &lt;strong&gt;Criar disco bootável com&lt;/strong&gt; e &lt;strong&gt;Imagem ISO&lt;/strong&gt; e abra o arquivo ISO cujo conteúdo deve ser extraído para o &lt;em&gt;pendrive&lt;/em&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Clique em &lt;strong&gt;Iniciar&lt;/strong&gt;. O Rufus exibirá um aviso:&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/10/rufus-3.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/10/rufus-3.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Leia-o atentamente e clique em &lt;strong&gt;OK&lt;/strong&gt; para continuar.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Ao final do processo, seu &lt;em&gt;pendrive&lt;/em&gt; terá os mesmos arquivos que um CD ou DVD apresentaria caso você gravasse a imagem ISO neles. Inclusive, você ainda poderá utilizar o &lt;em&gt;pendrive&lt;/em&gt; para armazenar outros arquivos. Só tome o cuidado para não excluir ou renomear algum arquivo que veio da imagem ISO, o que pode prejudicar o bom funcionamento do sistema operacional que está no &lt;em&gt;pendrive&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Agora, você poderá fechar o Rufus e iniciar o computador usando o &lt;em&gt;pendrive&lt;/em&gt;, se quiser.&lt;/p&gt;
-
-&lt;h3 id=&quot;como-gravar-o-opensuse-em-um-pendrive&quot;&gt;Como gravar o openSUSE em um &lt;em&gt;pendrive&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;No caso específico do openSUSE, ao seguir as instruções acima e clicar em &lt;strong&gt;Iniciar&lt;/strong&gt;, você perceberá que o Rufus fará uma pergunta:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/10/rufus-4.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/10/rufus-4.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Isso acontece porque a imagem ISO do openSUSE é uma &lt;strong&gt;imagem ISO híbrida&lt;/strong&gt; (&lt;a href=&quot;http://www.syslinux.org/wiki/index.php/Isohybrid&quot;&gt;&lt;em&gt;hybrid ISO&lt;/em&gt;&lt;/a&gt;), o que permite a você tratá-la de duas formas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;como uma &lt;strong&gt;imagem ISO&lt;/strong&gt; comum, caso em que o resultado é o mesmo produzido pelas instruções genéricas (os arquivos dentro da imagem ISO são copiados para o &lt;em&gt;pendrive&lt;/em&gt;, e você ainda pode utilizá-lo para armazenar outros arquivos); ou&lt;/li&gt;
-  &lt;li&gt;como uma &lt;strong&gt;imagem DD&lt;/strong&gt; (imagem de disco, igual a uma produzida pelo comando &lt;code class=&quot;highlighter-rouge&quot;&gt;dd&lt;/code&gt; do Linux), o que permite que alterações feitas no sistema (por exemplo, um arquivo que você baixou enquanto usava o Linux a partir do &lt;em&gt;pendrive&lt;/em&gt;) sejam mantidas (então, no exemplo, você veria esse arquivo no mesmo lugar após reiniciar o computador pelo &lt;em&gt;pendrive&lt;/em&gt;). Nesse caso, o resultado é o mesmo produzido pela ferramenta oficial, o &lt;a href=&quot;https://en.opensuse.org/SDB:Live_USB_stick&quot;&gt;SUSE Studio ImageWriter&lt;/a&gt;, antes disponível também para Windows, mas agora &lt;a href=&quot;https://en.opensuse.org/SDB:Create_a_Live_USB_stick_using_Windows#Using_SUSE_Studio_ImageWriter&quot;&gt;feita apenas para o Linux&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Se sua intenção é usar o &lt;em&gt;pendrive&lt;/em&gt; de modo persistente (mantendo as alterações), marque a opção &lt;strong&gt;Gravar no modo Imagem DD&lt;/strong&gt;. Clique em &lt;strong&gt;OK&lt;/strong&gt; para iniciar o processo. Ao final, você terá um &lt;em&gt;pendrive&lt;/em&gt; que poderá ser utilizado para iniciar o computador usando o openSUSE.&lt;/p&gt;
-
-&lt;p&gt;Note que no caso da imagem DD só é possível utilizar o &lt;em&gt;pendrive&lt;/em&gt; com o sistema operacional nele contido. Então, seguindo nesse exemplo, em que o &lt;em&gt;pendrive&lt;/em&gt; contém o openSUSE, você não pode contectá-lo a um computador com Windows e copiar arquivos para ele ou acessar um arquivo que você baixou enquanto usava o openSUSE do &lt;em&gt;pendrive&lt;/em&gt;. Você pode, sim, iniciar qualquer computador usando esse &lt;em&gt;pendrive&lt;/em&gt; e acessar um arquivo que você criou em outra vez que você o utilizou.&lt;/p&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">O Rufus é uma ferramenta bastante versátil quando o objetivo é iniciar o computador (“dar o boot”, na gíria técnica) pelo pendrive. Isso pode ser útil em diversas situações, como, por exemplo, testar ou instalar um sistema operacional (especialmente em computadores sem unidade de CD/DVD, como os netbooks), restaurar backups, remover vírus, dentre outras. Vantagens do Rufus em relação a outras ferramentas são seu tamanho reduzido (menos de 1MB), a quantidade de funcionalidades e a tradução para o Português, que é selecionada automaticamente de acordo com a configuração do Windows (e olha como o mundo é pequeno: descobri que ela foi feita por um professor do IFSE, Chateaubriand Vieira Moura). Também não é necessário instalar o Rufus: para usá-lo, basta baixar do site oficial e executar. Uma desvantagem do Rufus em relação a outras ferramentas é que ele não permite armazenar em um mesmo pendrive vários sistemas operacionais (Windows, Ubuntu e openSUSE, por exemplo). Nesse caso, talvez você possa utilizar o Hiren’s BootCD ou o RMPrepUSB. Os passos aqui descritos, embora eu só use o termo “pendrive”, também se aplicam a cartões de memória. Se você vai utilizar um cartão de memória, onde houver “pendrive”, leia “cartão de memória”. Cuidado ao utilizar o Rufus, pois ele apaga o que estiver no pendrive. Por segurança, recomendo que você remova todos os pendrives que estão conectados ao computador e depois insira somente o que será utilizado. Breve explicação sobre imagens ISO Uma imagem ISO é um arquivo que contém uma cópia de uma mídia ótica (um CD ou DVD) e pode ser utilizado para gravá-la. Assim, usando um programa de gravação, como o CDBurnerXP, é possível gravar um DVD com o openSUSE, por exemplo, usando a imagem ISO disponível para download no site do openSUSE. Com esse mesmo programa, você pode criar uma imagem ISO de um CD ou DVD que você possua, como o DVD de instalação do Windows. Essa é apenas a utilização mais básica e comum das imagens ISO. É possível fazer muito mais com elas. Usando ferramentas como o DAEMON Tools, por exemplo, podemos acessar o conteúdo dessas imagens como se elas fossem CDs ou DVDs de verdade inseridos em uma unidade de CD/DVD do computador. Usando o Rufus, podemos extrair o conteúdo de uma imagem ISO de um sistema operacional (o DVD de instalação do Windows ou o LiveDVD do Ubuntu, por exemplo) para um pendrive e utilizá-lo para iniciar o computador. Um CD (ou DVD) que pode ser usado para iniciar o computador é comumente chamado de LiveCD (ou LiveDVD). Da mesma forma, é comum chamar um pendrive que pode ser usado para iniciar o computador de LiveUSB. Como criar um pendrive inicializável a partir de qualquer imagem ISO Vejamos como é simples criar um pendrive inicializável (bootable) a partir de uma imagem ISO qualquer (uma que contenha o DVD de instalação do Windows ou o LiveDVD do Ubuntu, como no exemplo anteriormente citado): Conecte o pendrive que será utilizado ao computador e inicie o Rufus. Possivelmente, ele solicitará permissão de administrador, que você deve conceder. Ele pergunta se deseja procurar atualizações para o Rufus na Internet, você pode clicar em Não e prosseguir. Em Dispositivo, selecione o pendrive que receberá o openSUSE (confira o rótulo e a capacidade para se certificar de que é esse pendrive mesmo que será utilizado). Certifique-se de que a opção Criar disco bootável com está marcada, e selecione Imagem ISO. Clique no ícone do disco ao lado das opções Criar disco bootável com e Imagem ISO e abra o arquivo ISO cujo conteúdo deve ser extraído para o pendrive. Clique em Iniciar. O Rufus exibirá um aviso: Leia-o atentamente e clique em OK para continuar. Ao final do processo, seu pendrive terá os mesmos arquivos que um CD ou DVD apresentaria caso você gravasse a imagem ISO neles. Inclusive, você ainda poderá utilizar o pendrive para armazenar outros arquivos. Só tome o cuidado para não excluir ou renomear algum arquivo que veio da imagem ISO, o que pode prejudicar o bom funcionamento do sistema operacional que está no pendrive. Agora, você poderá fechar o Rufus e iniciar o computador usando o pendrive, se quiser. Como gravar o openSUSE em um pendrive No caso específico do openSUSE, ao seguir as instruções acima e clicar em Iniciar, você perceberá que o Rufus fará uma pergunta: Isso acontece porque a imagem ISO do openSUSE é uma imagem ISO híbrida (hybrid ISO), o que permite a você tratá-la de duas formas: como uma imagem ISO comum, caso em que o resultado é o mesmo produzido pelas instruções genéricas (os arquivos dentro da imagem ISO são copiados para o pendrive, e você ainda pode utilizá-lo para armazenar outros arquivos); ou como uma imagem DD (imagem de disco, igual a uma produzida pelo comando dd do Linux), o que permite que alterações feitas no sistema (por exemplo, um arquivo que você baixou enquanto usava o Linux a partir do pendrive) sejam mantidas (então, no exemplo, você veria esse arquivo no mesmo lugar após reiniciar o computador pelo pendrive). Nesse caso, o resultado é o mesmo produzido pela ferramenta oficial, o SUSE Studio ImageWriter, antes disponível também para Windows, mas agora feita apenas para o Linux. Se sua intenção é usar o pendrive de modo persistente (mantendo as alterações), marque a opção Gravar no modo Imagem DD. Clique em OK para iniciar o processo. Ao final, você terá um pendrive que poderá ser utilizado para iniciar o computador usando o openSUSE. Note que no caso da imagem DD só é possível utilizar o pendrive com o sistema operacional nele contido. Então, seguindo nesse exemplo, em que o pendrive contém o openSUSE, você não pode contectá-lo a um computador com Windows e copiar arquivos para ele ou acessar um arquivo que você baixou enquanto usava o openSUSE do pendrive. Você pode, sim, iniciar qualquer computador usando esse pendrive e acessar um arquivo que você criou em outra vez que você o utilizou.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2015/10/rufus-0.png" /></entry></feed>
+&lt;p&gt;Abraço a todos e boa sorte!&lt;/p&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">Em primeiro lugar, não se culpe e procure manter a calma. Feito isso, siga as dicas que apresento aqui para tentar restringir ao máximo a ação do bandido, se possível até mesmo recuperar o celular. Você também pode seguir essas dicas se perdeu seu celular. Algumas dicas podem funcionar também com tablets.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2015/10/celular-roubado-00.jpg" /></entry></feed>
