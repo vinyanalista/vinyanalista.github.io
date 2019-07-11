@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt" prefix="
+    addthis: http://www.addthis.com/help/api-spec
+    og: http://ogp.me/ns#
+    fb: http://ogp.me/ns/fb#
+    article: http://ogp.me/ns/article#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+        <script type="text/javascript">
+            if (("vinyanalista.github.io" == window.location.host) && (window.location.protocol != "https:")) {
+                window.location = window.location.toString().replace(/^http:/, "https:");
+            }
+        </script>
+    
+
+    <title>Instalação do Java Development Kit (JDK) - Antônio Vinícius</title>
+    <meta name="author" content="Antônio Vinícius">
+    <meta name="description" content="Para começar a programar em Java, seja para Desktop, Web ou celular, devemos instalar no computador o Java Development Kit (abreviadamente, JDK), que nada ma...">
+    <link rel="canonical" href="https://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/">
+    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="https://vinyanalista.github.io/feed.xml" />
+
+    <!-- OpenSearch -->
+    <link rel="search" type="application/opensearchdescription+xml" title="Pesquisar em Antônio Vinícius" href="https://vinyanalista.github.io/opensearch.xml" />
+
+    <!-- Open Graph -->
+    
+        <meta property="article:published_time" content="2012-07-10 01:01:10 -0300"/>
+        
+            <meta property="article:publisher" content="https://facebook.com/pages/vinyanalistacombr/1604841683119097" />
+        
+    
+    
+    
+        <meta property="fb:page_id" content="1604841683119097" />
+    
+    <meta property="og:description" content="Para começar a programar em Java, seja para Desktop, Web ou celular, devemos instalar no computador o Java Development Kit (abreviadamente, JDK), que nada ma..." />
+    
+        <meta property="og:image" content="https://vinyanalista.github.io/files/2012/07/java.jpg" />
+    
+    <meta property="og:site_name" content="Antônio Vinícius" />
+    <meta property="og:title" content="Instalação do Java Development Kit (JDK)" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@vinyanalista" />
+    
+
+    <!-- Favicons (made with RealFaviconGenerator.net) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://vinyanalista.github.io/apple-touch-icon.png?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://vinyanalista.github.io/favicon-32x32.png?v=4">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://vinyanalista.github.io/favicon-16x16.png?v=4">
+    <link rel="manifest" href="https://vinyanalista.github.io/site.webmanifest?v=4">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=4" color="#2196f3">
+    <link rel="shortcut icon" href="https://vinyanalista.github.io/favicon.ico?v=4">
+    <meta name="msapplication-TileColor" content="#2196f3">
+    <meta name="theme-color" content="#2196f3">
+
+    <!-- CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href="/libs/bootstrap/4.3.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <!--<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.2/dist/css/bootstrap-material-design.min.css" integrity="sha384-dI6l3oYG+wVvjfdlixt6+FMddrb9+uejLU/wMhQFKklk7RDtSDBfe/XuF1dkcgVV" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="/libs/bootstrap-material-design/4.1.2/custom/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="/libs/font-awesome/5.8.2/css/all.min.css">-->
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <!--<script src="/libs/jquery/3.4.1/jquery.slim.min.js"></script>-->
+    <script src="https://unpkg.com/popper.js@1.15.0/dist/umd/popper.min.js" integrity="sha384-L2pyEeut/H3mtgCBaUNw7KWzp5n9+4pDQiExs933/5QfaTh8YStYFFkOzSoXjlTb" crossorigin="anonymous"></script>
+    <!--<script src="/libs/popper.js/1.15.0/umd/popper.min.js"></script>-->
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+    <!--<script src="/libs/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.2/dist/js/bootstrap-material-design.min.js" integrity="sha384-aWO+CcMRDQLEvnT8RdnCxWbs4C76Ryoo4pzYpGNW2vlHTHiPA7gpBzIB5nYwYfLg" crossorigin="anonymous"></script>
+    <!--<script src="/libs/bootstrap-material-design/4.1.2/js/bootstrap-material-design.min.js"></script>-->
+    <script src="/assets/js/main.js"></script>
+
+    
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65333685-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-65333685-1');
+        </script>
+        <!-- End Google Analytics -->
+    
+
+    
+        <!-- Google AdSense -->
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+    
+        <!-- AddThis -->
+        <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f"></script>
+        <script type="text/javascript">
+            var addthis_config = {
+                data_track_clickback: true,
+                data_track_addressbar: true,
+                ui_language: 'pt'
+            };
+            var addthis_share = {
+                url: 'https://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/',
+                title: document.title,
+                description: 'Para começar a programar em Java, seja para Desktop, Web ou celular, devemos instalar no computador o Java Development Kit (abreviadamente, JDK), que nada mais é que um conjunto de ferramentas que nos auxilia a compilar, testar e documentar programas escritos na linguagem Java. Ele também traz embutido o Java Runtime Environment (JRE), assim não...'
+            };
+        </script>
+        <!-- End AddThis -->
+    
+</head>
+
+
+<body itemscope itemtype="http://schema.org/BlogPosting">
+
+    <!-- Fixed navbar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="/">Antônio Vinícius</a>
+
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Exibir/esconder navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog/category/trabalhos/">Trabalhos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://lattes.cnpq.br/2162371468280338">Currículo</a>
+                </li>
+            </ul>
+            <form action="/search/" class="form-inline" id="search-form" method="get" role="search">
+                
+                
+                <div class="input-group">
+                    <input class="form-control" id="search-field" name="q" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary btn-number" id="search-button" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div><!--#navbar-->
+    </div><!--.container-->
+</nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class='col-sm-8'>
+                <div class="blog-post card mb-3">
+    <header class="card-header">
+        <h1 class="blog-post-title" itemprop="headline name">
+            <a class="blog-post-link" href="/blog/2012/07/10/instalacao-do-java-development-kit-jdk/" itemprop="mainEntityOfPage url">
+                Instalação do Java Development Kit (JDK)
+            </a>
+        </h1>
+        <div class="blog-post-meta row">
+            <div class='col-sm-6'>
+                <p class="blog-post-date" itemprop="datePublished" content="2012-07-10">
+                    <a href="/blog/2012/07/10/">
+                        10 de
+                        
+                        Julho
+                        
+                        de 2012
+                    </a>
+                </p>
+                <meta itemprop="dateModified" content="2015-07-06" />
+            </div>
+            <div class='col-sm-6'>
+                
+                    <div class='blog-post-share'>
+                        <!-- AddThis Sharing Buttons -->
+                        <div class="addthis_toolbox addthis_default_style">
+                            <a class="addthis_button_facebook"></a>
+                            <a class="addthis_button_twitter" data-via="vinyanalista"></a>
+                            <a class="addthis_button_google_plusone_share"></a>
+                            <a class="addthis_button_favorites"></a>
+                            <a class="addthis_button_compact"></a>
+                            <a class="addthis_counter addthis_bubble_style"></a>
+                        </div>
+                        <!-- AddThis Sharing Buttons End -->
+                    </div><!-- .blog-post-share -->
+                
+            </div><!-- .col-sm-6 -->
+        </div><!-- .blog-post-meta -->
+    </header>
+
+    <article class="blog-post-content card-body">
+        
+            <!-- Google AdSense -->
+<ins class="adsbygoogle" id="content_ad_unit_1"
+    style="display:block"
+    data-ad-client="ca-pub-5193467168351289"
+    data-ad-slot="5988452654"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<!-- End Google AdSense -->
+
+        
+
+        <div itemprop="articleBody mainEntity">
+            <p>Para começar a programar em <a href="http://www.oracle.com/technetwork/java/index.html">Java</a>, seja para <a href="http://www.oracle.com/technetwork/java/javase/">Desktop</a>, <a href="http://www.oracle.com/technetwork/java/javaee/">Web</a> ou <a href="http://developer.android.com/">celular</a>, devemos instalar no computador o Java Development Kit (abreviadamente, JDK), que nada mais é que um conjunto de ferramentas que nos auxilia a compilar, testar e documentar programas escritos na linguagem Java. Ele também traz embutido o Java Runtime Environment (JRE), assim não é necessário instalar os dois para desenvolver e executar programas Java.</p>
+
+<p>A seguir, forneço instruções para instalar, configurar e executar a versão mais recente do JDK (atualmente, a <strong>1.7.0_05</strong>) em sistemas Windows e Linux.</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2012/07/java.jpg" title="">
+<img src="/files/2012/07/java.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<!--more-->
+
+<h3 id="download-e-instalação-do-jdk">Download e instalação do JDK</h3>
+
+<p>O primeiro passo é baixar o JDK. Vá até a <a href="http://www.oracle.com/technetwork/java/javase/downloads/">página de downloads do Java SE</a>, aceite o contrato de licença e escolha a versão do JDK apropriada para o seu sistema:</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2012/07/jdk7_1.jpg" title="">
+<img src="/files/2012/07/jdk7_1.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<h4 id="download-e-instalação-do-jdk-no-windows">Download e instalação do JDK no Windows</h4>
+
+<p>No Windows, o instalador do JDK facilita bastante o processo de instalação. Baixe do site do JDK a versão do instalador apropriada para o seu sistema (Windows de 32 ou de 64 bits) e execute-o em seguida.</p>
+
+<p>Normalmente, aceitar as opções padrão, avançando em todas as telas, deve funcionar. Atente-se apenas à pasta na qual o JDK será instalado (no meu computador, o padrão oferecido foi “C:\Program Files (x86)\Java\jdk1.7.0_05″).</p>
+
+<h4 id="download-e-instalação-do-jdk-no-linux-distribuições-específicas">Download e instalação do JDK no Linux (distribuições específicas)</h4>
+
+<p>Se a distribuição Linux que você usa provê um método padrão de instalar o JDK, é recomendado você seguir as instruções fornecidas para instalar o JDK na sua distribuição. Se sua distribuição não provê o JDK, ou se você prefere se assegurar de instalar em seu computador a versão oficial mais recente, pode seguir as instruções de instalação genéricas, que devem servir para qualquer distribuição (veja mais adiante).</p>
+
+<p>A versão estável do <a href="http://wiki.debian.org/Java/">Debian</a> (atualmente o Debian Squeeze 6.0) não oferece a versão mais atual do JDK em seus repositórios oficiais. Se desenvolver para a versão mais recente da linguagem não for um requisito, o usuário pode instalar o OpenJDK 6 (equivalente aberto do JDK 6) através do pacote <a href="http://packages.debian.org/openjdk-6-jdk">openjdk-6-jdk</a> usando o utilitário <code class="highlighter-rouge">apt-get</code>, incluído na distribuição. Usuários mais experientes do Debian podem tentar instalar o OpenJDK 7 (a partir da versão 7, o JDK e o OpenJDK <a href="http://jdk7.java.net/java-se-7-ri/">são completamente equivalentes</a>) através do pacote <a href="http://packages.debian.org/openjdk-7-jdk">openjdk-7-jdk</a> dos repositórios da próxima versão do Debian, que ainda está em teste.</p>
+
+<p>Desde a versão 11.10, o <a href="https://help.ubuntu.com/community/Java">Ubuntu</a> já oferece em seus repositórios oficiais o OpenJDK 7, que pode ser instalado através do pacote <a href="http://packages.ubuntu.com/openjdk-7-jdk">openjdk-7-jdk</a> usando o utilitário <code class="highlighter-rouge">apt-get</code>, incluído na distribuição.</p>
+
+<p>Usuários de distribuições que utilizam o sistema de empacotamento RPM (como RedHat, CentOS, Fedora, Mandriva, openSUSE, etc.) podem instalar a versão mais recente do JDK através do pacote RPM disponibilizado na <a href="http://www.oracle.com/technetwork/java/javase/downloads/">página de downloads do Java SE</a>.</p>
+
+<h4 id="download-e-instalação-do-jdk-no-linux-qualquer-distribuição">Download e instalação do JDK no Linux (qualquer distribuição)</h4>
+
+<p>Se sua distribuição não provê um meio padrão de instalar o JDK (ou se por qualquer motivo você não quer instalá-lo por esse meio), há na <a href="http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/www.oracle.com/technetwork/java/javase/downloads/">página de downloads do Java SE</a> um arquivo <strong>.tar.gz</strong> que contém o JDK compactado. Uma vez extraído o conteúdo desse arquivo, o JDK já pode ser executado, e esse procedimento de instalação deve funcionar em qualquer distribuição Linux.</p>
+
+<p>Para instalar o JDK dessa maneira, baixe-o da <a href="http://www.vinyanalista.com.br/blog/2012/07/10/instalacao-do-java-development-kit-jdk/www.oracle.com/technetwork/java/javase/downloads/">página de downloads do Java SE</a> utilizando o navegador de sua preferência ou o comando <strong>wget</strong> no terminal (a seguir, forneço o link para download direto da versão do JDK usada nesse tutorial):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>$ cd /home/vinicius/
+$ wget http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-i586.tar.gz
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>No Linux, é possível instalar o JDK em um local global, de forma que todos os usuários do sistema possam utilizá-lo (requer permissão de administrador), ou na sua pasta pessoal, de forma que apenas você possa utilizá-lo (não requer permissão, além de ser mais simples para iniciantes).</p>
+
+<p>Para demonstrar como instalar o JDK numa localização global, vou utilizar a pasta “/opt”. Para fazer isso, mova o arquivo baixado (no nosso exemplo aqui, “jdk-7u5-linux-i586.tar.gz”) para essa pasta e lá extraia seu conteúdo. O caminho para o JDK será então “/opt/jdk1.7.0_05″ (se atente a esse caminho). Após a extração, o arquivo baixado pode ser excluído. Os comandos de terminal para realizar esses procedimentos são:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre># mv /home/vinicius/jdk-7u5-linux-i586.tar.gz /opt
+# cd /opt
+# tar zxvf jdk-7u5-linux-i586.tar.gz
+# rm jdk-7u5-linux-i586.tar.gz
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Para instalar o JDK na sua pasta pessoal o procedimento é parecido. No meu caso, como já baixei o JDK nessa pasta, apenas precisei descompactá-lo. O comando que utilizei para isso foi:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>$ tar zxvf jdk-7u5-linux-i586.tar.gz
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Nesse caso, o caminho para o JDK será “/home/vinicius/jdk1.7.0_05″.</p>
+
+<h3 id="configuração-da-variável-java_home">Configuração da variável JAVA_HOME</h3>
+
+<p>A variável de ambiente JAVA_HOME é utilizada por alguns programas (como o Maven, o Eclipse e o JBoss AS, por exemplo) para determinar a localização do JDK ou do JRE instalado no computador. Essa etapa é opcional a usuários comuns de programas Java que apenas desejam instalar o ambiente de execução (JRE). Mas já que se trata da instalação do JDK, é costume não apenas definir o valor dessa variável, como acrescentar o caminho do JDK na variável de ambiente PATH, para que possamos invocar as ferramentas do JDK de qualquer pasta. Do contrário, todas as vezes em que quisermos invocar essas ferramentas teremos que digitar o caminho completo para elas.</p>
+
+<p>A seguir, instruções para configurar essas variáveis tanto no Windows quanto no Linux.</p>
+
+<h4 id="configuração-da-variável-java_home-no-windows">Configuração da variável JAVA_HOME no Windows</h4>
+
+<p>Caso sua Área de Trabalho apresente o ícone do Meu Computador, clique com o botão direito nesse ícone e clique em Propriedades. Caso contrário, abra o Menu Iniciar, clique em Painel de Controle e, na janela que se abre, procure a opção Sistema.</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2012/07/jdk7_2.jpg" title="">
+<img src="/files/2012/07/jdk7_2.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Na janela Sistema, clique na opção Configurações avançadas do sistema, no painel esquerdo.</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2012/07/jdk7_3.jpg" title="">
+<img src="/files/2012/07/jdk7_3.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Na caixa de diálogo Propriedades do Sistema, clique no botão Variáveis de Ambiente.</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2012/07/jdk7_4.jpg" title="">
+<img src="/files/2012/07/jdk7_4.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Na caixa de diálogo Variáveis de Ambiente, na seção Variáveis do sistema, clique no botão Novo.</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2012/07/jdk7_5.jpg" title="">
+<img src="/files/2012/07/jdk7_5.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Informe JAVA_HOME como nome da variável e no campo valor digite a localização do JDK (no meu caso, ele foi instalado em “C:\Program Files (x86)\Java\jdk1.7.0_05″). Quando acabar de digitar esses valores, clique em OK.</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2012/07/jdk7_6.jpg" title="">
+<img src="/files/2012/07/jdk7_6.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>De volta à caixa de diálogo Variáveis de Ambiente, também na seção Variáveis do sistema, procure na lista a variável Path, selecione-a e clique no botão Editar.</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2012/07/jdk7_7.jpg" title="">
+<img src="/files/2012/07/jdk7_7.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Posicione o cursor no início do valor da variável, insira o texto “%JAVA_HOME\bin;” (não inclua as aspas e não esqueça do ponto-e-vírgula) e clique em OK.</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2012/07/jdk7_8.jpg" title="">
+<img src="/files/2012/07/jdk7_8.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>De volta à caixa de diálogo Variáveis de Ambiente, clique em OK. Em seguida, você pode fechar a janela Sistema. A partir de agora, qualquer nova janela de terminal aberta ou comando invocado refletirá essas alterações.</p>
+
+<h4 id="configuração-da-variável-java_home-no-linux">Configuração da variável JAVA_HOME no Linux</h4>
+
+<p>Se você instalou o JDK utilizando o mecanismo preferido de sua distribuição, é importante verificar se <a href="http://www.cyberciti.biz/faq/linux-unix-set-java_home-path-variable/">a variável JAVA_HOME</a> já foi definida e se já é possível invocar os utilitários do JDK da linha de comando. Para isso, passe ao próximo tópico, realize os testes, e apenas se encontrar erros, volte a ler este.</p>
+
+<p>Se você instalou o JDK para todos os usuários, abra com o seu editor de preferência o arquivo “/etc/profile” e acrescente as seguintes linhas no final (você deve substituir, se necessário, a localização do JDK, que no nosso exemplo foi “/opt/jdk1.7.0_05″):</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nb">export </span><span class="nv">JAVA_HOME</span><span class="o">=</span><span class="s2">"/opt/jdk1.7.0_05"</span>
+<span class="nb">export </span><span class="nv">CLASSPATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$JAVA_HOME</span><span class="s2">/lib"</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PATH</span><span class="s2">:</span><span class="nv">$JAVA_HOME</span><span class="s2">/bin"</span>
+<span class="nb">export </span><span class="nv">MANPATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$MANPATH</span><span class="s2">:</span><span class="nv">$JAVA_HOME</span><span class="s2">/man"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Se você instalou o JDK apenas para o seu usuário, a alteração deve ocorrer no arquivo “~/.bashrc”. Abra esse arquivo com o seu editor de preferência e acrescente as seguintes linhas no final (você deve substituir, se necessário, a localização do JDK, que no nosso exemplo foi “/home/vinicius/jdk1.7.0_05″):</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="nb">export </span><span class="nv">JAVA_HOME</span><span class="o">=</span><span class="s2">"/home/vinicius/jdk1.7.0_05"</span>
+<span class="nb">export </span><span class="nv">CLASSPATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$JAVA_HOME</span><span class="s2">/lib"</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PATH</span><span class="s2">:</span><span class="nv">$JAVA_HOME</span><span class="s2">/bin"</span>
+<span class="nb">export </span><span class="nv">MANPATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$MANPATH</span><span class="s2">:</span><span class="nv">$JAVA_HOME</span><span class="s2">/man"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Em qualquer um dos dois casos, as alterações serão aplicadas a qualquer nova janela de terminal aberta.</p>
+
+<h3 id="teste-do-jdk">Teste do JDK</h3>
+
+<p>As instruções a seguir servem para Windows e Linux. Para testar a instalação do JDK, abra uma janela de terminal e execute o comando a seguir, que deve informar a versão do JDK instalado no seu computador:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>$ javac -version
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Como teste, também podemos criar um pequeno programa Java, compilá-lo e executá-lo. Em alguma pasta à qual você tenha acesso (aqui utilizarei minha pasta pessoal no Linux, “/home/vinicius”), crie um arquivo de texto simples chamado “Teste.java”. Abra esse arquivo com um editor de texto e insira o seguinte conteúdo:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Teste</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Olá!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Agora no terminal, entre nessa pasta e invoque o compilador do Java (<strong>javac</strong>) passando o arquivo que você acabou de criar como parâmetro:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>$ cd /home/vinicius/
+$ javac Teste.java
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Perceba que um arquivo “Teste.class” é criado como resultado da compilação. Ainda no terminal, invoque a máquina virtual Java (<strong>java</strong>) passando o nome da classe compilada como parâmetro:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>$ java Teste
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Se a mensagem “Olá!” apareceu na tela, tudo está funcionando perfeitamente.</p>
+
+<h3 id="plugin-do-java-para-o-navegador-firefox">Plugin do Java para o navegador Firefox</h3>
+
+<p>Se você pretende utilizar o JDK para desenvolver Applets, é interessante verificar se o plugin do Java funciona adequadamente no seu navegador. Aqui, fornecerei instruções para o Firefox.</p>
+
+<p>No Windows, o instalador do JDK já se encarrega de instalar e configurar o plugin do Java para o navegador Firefox.</p>
+
+<p>No Linux, esse plugin acompanha o JDK, mas é necessário criar um link simbólico na pasta onde o Firefox está instalado para que o navegador consiga localizar o plugin. Para isso, supondo que o JDK encontra-se em “/opt/jdk1.7.0_5/” e o Firefox em “/usr/lib/mozilla”, basta executar o seguinte comando no terminal:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre># ln -s /opt/jdk1.7.0_5/jre/lib/i386/libnpjp2.so /usr/lib/mozilla/plugins/
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Para verificar que o navegador reconhece o plugin, digite na aba de endereços “about:plugins” e tecle Enter. O plugin do Java deve aparecer na lista de plugins instalados:</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2012/07/jdk7_9.jpg" title="">
+<img src="/files/2012/07/jdk7_9.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>É possível também verificar na <a href="http://www.java.com/pt_BR/download/testjava.jsp">página de teste do Java</a> se a versão do plugin instalada no seu sistema corresponde à mais atual:</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2012/07/jdk7_10.jpg" title="">
+<img src="/files/2012/07/jdk7_10.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Espero que esse post possa ser útil a programadores Java iniciantes de uma maneira em geral. Agradeço previamente opiniões e críticas construtivas. Ofereço o espaço para perguntas também. Abraço a todos e até a próxima!</p>
+
+        </div>
+
+        
+            <!-- AddThis Sharing Buttons -->
+            <div class="gap"></div>
+            <h2>Gostou? Então compartilha!</h2>
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                <a class="addthis_button_facebook"></a>
+                <a class="addthis_button_twitter" data-via="vinyanalista"></a>
+                <a class="addthis_button_google_plusone_share"></a>
+                <a class="addthis_button_email"></a>
+                <a class="addthis_button_favorites"></a>
+                <a class="addthis addthis_button_print"></a>
+                <a class="addthis_button_pdfonline"></a>
+                <a class="addthis_button_compact"></a>
+                <a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+            <!-- AddThis Sharing Buttons End -->
+        
+
+        
+            <!-- Disqus -->
+            <div class="gap"></div>
+            <h2>Comentários</h2>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = 'https://vinyanalista.github.io/blog/2012/07/10/instalacao-do-java-development-kit-jdk/';
+                };
+
+                (function() {
+                    var d = document, s = d.createElement('script');
+
+                    s.src = '//vinyanalista.disqus.com/embed.js';
+
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>
+                <p><a href="http://www.enable-javascript.com/pt/" target="_blank">Habilite o JavaScript</a> para ver os <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentários providos pelo Disqus</a>.</p>
+            </noscript>
+            <!-- Disqus End -->
+        
+    </article>
+</div><!-- .blog-post -->
+
+            </div>
+            <div class="col-sm-4">
+                <div class="card mb-3">
+    <div class="card-header">
+        <h3><a name="about"></a><a name="author"></a>Sobre mim</h3>
+    </div>
+    <div class="card-body" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        
+            <p class="text-center">
+                <a href='https://secure.gravatar.com/avatar/5415f4267b44aa9f51b6f89ac4d1656b' title='Antônio Vinícius'>
+                    <img src='https://secure.gravatar.com/avatar/5415f4267b44aa9f51b6f89ac4d1656b' alt='Antônio Vinícius' class='img-fluid img-thumbnail rounded-circle'>
+                </a>
+            </p>
+        
+        
+            <p class="lead text-center" itemprop="name">
+                Antônio Vinícius
+            </p>
+        
+        <link itemprop="url" href="https://vinyanalista.github.io">
+        <p>
+            Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)
+        </p>
+        <p class='text-center'>
+            <a href='http://lattes.cnpq.br/2162371468280338' title='Currículo Lattes' itemprop='sameAs'>
+                <img src='/assets/img/curriculo_lattes.png' alt='Currículo Lattes' class='img-fluid lattes'>
+            </a>
+        </p>
+        
+            <!-- AddThis Follow Buttons -->
+            <div class="addthis_toolbox addthis_32x32_style addthis_default_style addthis_follow_buttons text-center">
+                
+                    <a href="https://facebook.com/pages/vinyanalistacombr/1604841683119097" class="addthis_button_facebook_follow" addthis:userid="pages/vinyanalistacombr/1604841683119097" itemprop="sameAs"></a>
+                
+                
+                    <a href="https://twitter.com/vinyanalista" class="addthis_button_twitter_follow" addthis:userid="vinyanalista" itemprop="sameAs"></a>
+                
+                
+                    <a href="https://www.linkedin.com/in/vinyanalista" class="addthis_button_linkedin_follow" addthis:userid="vinyanalista" itemprop="sameAs"></a>
+                
+                
+                    <a href="https://plus.google.com/112036205302761713933" class="addthis_button_google_follow" addthis:userid="112036205302761713933" itemprop="sameAs"></a>
+                
+                
+                    <a href="https://youtube.com/user/viniciusifse" class="addthis_button_youtube_follow" addthis:userid="viniciusifse" itemprop="sameAs"></a>
+                
+                
+                
+                    <a href="https://github.com/vinyanalista" class="addthis_button_github_follow" addthis:userid="vinyanalista" itemprop="sameAs"></a>
+                
+                <a href="/feed.xml" class="addthis_button_rss_follow"></a>
+            </div>
+            <!-- AddThis Follow Buttons End -->
+        
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <!-- Google AdSense -->
+<ins class="adsbygoogle" id="sidebar_ad_unit"
+    style="display:block"
+    data-ad-client="ca-pub-5193467168351289"
+    data-ad-slot="4511719452"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<!-- End Google AdSense -->
+
+        </div><!-- .col-xs-12 -->
+    </div><!-- .row -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+        Copyright &copy; 2019 <a href='#author'>Antônio Vinícius</a>. Todos os direitos reservados. Baseado no <a href='https://github.com/vinyanalista/material-jekyll-plus'>Material site template for Jekyll PLUS</a>.
+    </div>
+</footer>
+
+<meta itemprop="description" content="Para começar a programar em Java, seja para Desktop, Web ou celular, devemos instalar no computador o Java Development Kit (abreviadamente, JDK), que nada mais é que um conjunto de ferramentas que nos auxilia a compilar, testar e documentar programas escritos na linguagem Java. Ele também traz embutido o Java Runtime Environment (JRE), assim não...">
+
+
+    <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+        <meta itemprop="url" content="https://vinyanalista.github.io/files/2012/07/java.jpg"/>
+        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+    </div>
+
+
+
+    <meta itemprop="inLanguage" content="pt"/>
+
+
+
+    <!-- Disqus -->
+    <script id="dsq-count-scr" src="//vinyanalista.disqus.com/count.js" async></script>
+    <!-- Disqus End -->
+
+
+
+    <!-- Google AdSense -->
+    
+        <!-- Google AdSense -->
+<ins class="adsbygoogle" id="content_ad_unit_2"
+    style="display:block"
+    data-ad-client="ca-pub-5193467168351289"
+    data-ad-slot="7465185857"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<!-- End Google AdSense -->
+
+    
+
+    <script type="text/javascript">
+        adsbygoogle = window.adsbygoogle || [];
+
+        $(document).ready(function(){
+            
+                var $ad = $('#content_ad_unit_2');
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
+                    // Post listing
+                    var post;
+                    if ($posts.length > 2) {
+                        post = random_number(2, $posts.length);
+                    } else {
+                        post = 2;
+                    }
+                    $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
+                } else {
+                    // Page or post
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
+                    } else {
+                        $ad.remove();
+                    }
+                }
+            
+            $('.adsbygoogle').each(function(index, element){
+                adsbygoogle.push({});
+            });
+        });
+    </script>
+    <!-- Google AdSense End -->
+
+
+
+</body>
+</html>
