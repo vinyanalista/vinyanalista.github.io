@@ -894,18 +894,18 @@
 14
 15
 </pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-    <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#meu_dialogo</span><span class="dl">'</span><span class="p">).</span><span class="nx">modal</span><span class="p">({</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#meu_dialogo'</span><span class="p">).</span><span class="nx">modal</span><span class="p">({</span>
         <span class="na">show</span><span class="p">:</span> <span class="kc">false</span>
     <span class="p">});</span>
 
-    <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#meu_botao</span><span class="dl">'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#meu_botao'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
         <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-        <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#meu_dialogo</span><span class="dl">'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="dl">'</span><span class="s1">show</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'#meu_dialogo'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">'show'</span><span class="p">);</span>
     <span class="p">});</span>
     
-    <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#botao_ok</span><span class="dl">'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#botao_ok'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
         <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-        <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#meu_dialogo</span><span class="dl">'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="dl">'</span><span class="s1">hide</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'#meu_dialogo'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">'hide'</span><span class="p">);</span>
     <span class="p">});</span>
 <span class="p">});</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
@@ -952,7 +952,7 @@
 5
 6
 </pre></td><td class="rouge-code"><pre><span class="c">&lt;!--</span> <span class="nx">HTML5</span> <span class="nx">shim</span> <span class="nx">and</span> <span class="nx">Respond</span><span class="p">.</span><span class="nx">js</span> <span class="k">for</span> <span class="nx">IE8</span> <span class="nx">support</span> <span class="k">of</span> <span class="nx">HTML5</span> <span class="nx">elements</span> <span class="nx">and</span> <span class="nx">media</span> <span class="nx">queries</span> <span class="o">--&gt;</span>
-<span class="c">&lt;!--</span> <span class="nx">WARNING</span><span class="p">:</span> <span class="nx">Respond</span><span class="p">.</span><span class="nx">js</span> <span class="nx">doesn</span><span class="dl">'</span><span class="s1">t work if you view the page via file:// --&gt;
+<span class="c">&lt;!--</span> <span class="nx">WARNING</span><span class="p">:</span> <span class="nx">Respond</span><span class="p">.</span><span class="nx">js</span> <span class="nx">doesn</span><span class="s1">'t work if you view the page via file:// --&gt;
 &lt;!--[if lt IE 9]&gt;
     &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"&gt;&lt;/script&gt;
     &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"&gt;&lt;/script&gt;
@@ -1006,15 +1006,15 @@
 <span class="c1">// http://getbootstrap.com/getting-started/#support-ie10-width</span>
 
 <span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="dl">'</span><span class="s1">use strict</span><span class="dl">'</span><span class="p">;</span>
+  <span class="s1">'use strict'</span><span class="p">;</span>
   <span class="k">if</span> <span class="p">(</span><span class="nb">navigator</span><span class="p">.</span><span class="nx">userAgent</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/IEMobile</span><span class="se">\/</span><span class="sr">10</span><span class="se">\.</span><span class="sr">0/</span><span class="p">))</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">msViewportStyle</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">style</span><span class="dl">'</span><span class="p">)</span>
+    <span class="kd">var</span> <span class="nx">msViewportStyle</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'style'</span><span class="p">)</span>
     <span class="nx">msViewportStyle</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span>
       <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span>
-        <span class="dl">'</span><span class="s1">@-ms-viewport{width:auto!important}</span><span class="dl">'</span>
+        <span class="s1">'@-ms-viewport{width:auto!important}'</span>
       <span class="p">)</span>
     <span class="p">)</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">head</span><span class="dl">'</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">msViewportStyle</span><span class="p">)</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'head'</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">msViewportStyle</span><span class="p">)</span>
   <span class="p">}</span>
 <span class="p">})();</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
@@ -1175,9 +1175,6 @@
                 
                 
                     <a href="https://www.linkedin.com/in/vinyanalista" class="addthis_button_linkedin_follow" addthis:userid="vinyanalista" itemprop="sameAs"></a>
-                
-                
-                    <a href="https://plus.google.com/112036205302761713933" class="addthis_button_google_follow" addthis:userid="112036205302761713933" itemprop="sameAs"></a>
                 
                 
                     <a href="https://youtube.com/user/viniciusifse" class="addthis_button_youtube_follow" addthis:userid="viniciusifse" itemprop="sameAs"></a>
