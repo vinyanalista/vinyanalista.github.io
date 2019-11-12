@@ -58,25 +58,23 @@
     <meta name="theme-color" content="#2196f3">
 
     <!-- CSS -->
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-    <!--<link rel="stylesheet" href="/libs/bootstrap/4.3.1/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-    <!--<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.2/dist/css/bootstrap-material-design.min.css" integrity="sha384-dI6l3oYG+wVvjfdlixt6+FMddrb9+uejLU/wMhQFKklk7RDtSDBfe/XuF1dkcgVV" crossorigin="anonymous">-->
+    
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+        <!--<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.2/dist/css/bootstrap-material-design.min.css" integrity="sha384-dI6l3oYG+wVvjfdlixt6+FMddrb9+uejLU/wMhQFKklk7RDtSDBfe/XuF1dkcgVV" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="/libs/bootstrap-material-design/4.1.2/custom/bootstrap-material-design.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="/libs/font-awesome/5.8.2/css/all.min.css">-->
     <link rel="stylesheet" href="/assets/css/syntax.css">
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <!--<script src="/libs/jquery/3.4.1/jquery.slim.min.js"></script>-->
-    <script src="https://unpkg.com/popper.js@1.15.0/dist/umd/popper.min.js" integrity="sha384-L2pyEeut/H3mtgCBaUNw7KWzp5n9+4pDQiExs933/5QfaTh8YStYFFkOzSoXjlTb" crossorigin="anonymous"></script>
-    <!--<script src="/libs/popper.js/1.15.0/umd/popper.min.js"></script>-->
-    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
-    <!--<script src="/libs/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
-    <script src="https://unpkg.com/bootstrap-material-design@4.1.2/dist/js/bootstrap-material-design.min.js" integrity="sha384-aWO+CcMRDQLEvnT8RdnCxWbs4C76Ryoo4pzYpGNW2vlHTHiPA7gpBzIB5nYwYfLg" crossorigin="anonymous"></script>
-    <!--<script src="/libs/bootstrap-material-design/4.1.2/js/bootstrap-material-design.min.js"></script>-->
+    
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha256-x3YZWtRjM8bJqf48dFAv/qmgL68SI4jqNWeSLMZaMGA=" crossorigin="anonymous"></script>
+        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+        <script src="https://unpkg.com/bootstrap-material-design@4.1.2/dist/js/bootstrap-material-design.min.js" integrity="sha384-aWO+CcMRDQLEvnT8RdnCxWbs4C76Ryoo4pzYpGNW2vlHTHiPA7gpBzIB5nYwYfLg" crossorigin="anonymous"></script>
+    
     <script src="/assets/js/main.js"></script>
 
     
@@ -118,15 +116,16 @@
 
 
 <body itemscope itemtype="http://schema.org/WebPage">
-
-    <!-- Fixed navbar -->
+    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+        <!-- Fixed navbar -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
     <div class="container">
-        <a class="navbar-brand" href="/">Antônio Vinícius</a>
-
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Exibir/esconder navegação">
-            <span class="navbar-toggler-icon"></span>
+        <button type="button" class="navbar-toggler" data-toggle="drawer" data-target="#drawer">
+            <span class="sr-only">Toggle drawer</span>
+            <i class="material-icons">menu</i>
         </button>
+
+        <a class="navbar-brand" href="/">Antônio Vinícius</a>
 
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav m-auto">
@@ -140,13 +139,13 @@
                     <a class="nav-link" href="http://lattes.cnpq.br/2162371468280338">Currículo</a>
                 </li>
             </ul>
-            <form action="/search/" class="form-inline" id="search-form" method="get" role="search">
+            <form action="/search/" class="form-inline" id="navbar-search-form" method="get" role="search">
                 
                 
                 <div class="input-group">
-                    <input class="form-control" id="search-field" name="q" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                    <input class="form-control search-field" id="navbar-search-field" name="q" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
                     <div class="input-group-append">
-                        <button class="btn btn-secondary btn-number" id="search-button" type="submit">
+                        <button class="btn btn-secondary btn-number search-button" id="navbar-search-button" type="submit">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -156,11 +155,44 @@
     </div><!--.container-->
 </nav>
 
+        <!-- Navigation drawer -->
+<div id="drawer" class="bmd-layout-drawer bg-faded">
+    <header>
+        <a class="navbar-brand" href="/">Antônio Vinícius</a>
+    </header>
+    <form action="/search/" class="form-inline border-top" id="drawer-search-form" method="get" role="search">
+        
+        
+        <div class="bmd-form-group-sm">
+            <div class="input-group">
+                <input class="form-control search-field" id="drawer-search-field" name="q" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary btn-number search-button" id="drawer-search-button" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div><!-- .input-group -->
+        </div><!-- .bmd-form-group-sm -->
+    </form>
+    <ul class="list-group list-group-flush border-top" id="drawer-links">
+        <li class="list-group-item">
+            <a class="nav-link" href="/">Blog</a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="/blog/category/trabalhos/">Trabalhos</a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="http://lattes.cnpq.br/2162371468280338">Currículo</a>
+        </li>
+    </ul>
+</div>
 
-    <div class="container">
-        <div class="row">
-            <div class='col-sm-8'>
-                <div class="card mb-3">
+
+        <main class="bmd-layout-content">
+            <div class="container" id="main-container">
+                <div class="row">
+                    <div class='col-sm-8'>
+                        <div class="card mb-3">
     <div class="card-header bg-primary">
         <h2 class="blog-archive-title" itemprop="headline name">
             <a href="/blog/2018/12/" itemprop="url">
@@ -264,14 +296,16 @@
             </div><!-- .row -->
 
             
-                <!-- Google AdSense -->
-<ins class="adsbygoogle" id="content_ad_unit_1"
-    style="display:block"
-    data-ad-client="ca-pub-5193467168351289"
-    data-ad-slot="5988452654"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<!-- End Google AdSense -->
+                
+    <!-- Google AdSense -->
+    <ins class="adsbygoogle" id="content_ad_unit_1"
+        style="display:block"
+        data-ad-client="ca-pub-5193467168351289"
+        data-ad-slot="5988452654"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <!-- End Google AdSense -->
+
 
             
 
@@ -279,9 +313,9 @@
     </div><!-- .blog-post -->
 
 
-            </div>
-            <div class="col-sm-4">
-                <div class="card mb-3">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card mb-3">
     <div class="card-header">
         <h3><a name="about"></a><a name="author"></a>Sobre mim</h3>
     </div>
@@ -317,6 +351,7 @@
                     <a href="https://twitter.com/vinyanalista" class="addthis_button_twitter_follow" addthis:userid="vinyanalista" itemprop="sameAs"></a>
                 
                 
+                
                     <a href="https://www.linkedin.com/in/vinyanalista" class="addthis_button_linkedin_follow" addthis:userid="vinyanalista" itemprop="sameAs"></a>
                 
                 
@@ -336,24 +371,26 @@
 
     <div class="card mb-3">
         <div class="card-body">
-            <!-- Google AdSense -->
-<ins class="adsbygoogle" id="sidebar_ad_unit"
-    style="display:block"
-    data-ad-client="ca-pub-5193467168351289"
-    data-ad-slot="4511719452"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<!-- End Google AdSense -->
+            
+    <!-- Google AdSense -->
+    <ins class="adsbygoogle" id="sidebar_ad_unit"
+        style="display:block"
+        data-ad-client="ca-pub-5193467168351289"
+        data-ad-slot="4511719452"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <!-- End Google AdSense -->
+
 
         </div><!-- .col-xs-12 -->
     </div><!-- .row -->
 
 
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <footer class="footer">
+            <footer class="footer">
     <div class="container">
         Copyright &copy; 2019 <a href='#author'>Antônio Vinícius</a>. Todos os direitos reservados. Baseado no <a href='https://github.com/vinyanalista/material-jekyll-plus'>Material site template for Jekyll PLUS</a>.
     </div>
@@ -382,14 +419,16 @@
 
     <!-- Google AdSense -->
     
-        <!-- Google AdSense -->
-<ins class="adsbygoogle" id="content_ad_unit_2"
-    style="display:block"
-    data-ad-client="ca-pub-5193467168351289"
-    data-ad-slot="7465185857"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<!-- End Google AdSense -->
+        
+    <!-- Google AdSense -->
+    <ins class="adsbygoogle" id="content_ad_unit_2"
+        style="display:block"
+        data-ad-client="ca-pub-5193467168351289"
+        data-ad-slot="7465185857"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <!-- End Google AdSense -->
+
 
     
 
@@ -436,5 +475,8 @@
 
 
 
+            
+        </main>
+    </div><!-- .bmd-layout-container -->
 </body>
 </html>
