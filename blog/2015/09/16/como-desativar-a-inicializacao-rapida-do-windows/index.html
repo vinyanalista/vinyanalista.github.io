@@ -384,9 +384,11 @@ The NTFS partition is in an unsafe state. Please resume and shutdown Windows ful
 
 <p>Abra seu editor de texto preferido (pode ser até mesmo o Bloco de Notas) e crie um novo arquivo com o seguinte conteúdo:</p>
 
-<pre><code class="language-bat">@echo off
-REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /V HiberbootEnabled /T REG_dWORD /D 0 /F
-</code></pre>
+<div class="language-bat highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>@echo <span class="na">off</span>
+<span class="kd">REG</span> <span class="kd">ADD</span> <span class="s2">"HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power"</span> <span class="na">/V </span><span class="kd">HiberbootEnabled</span> <span class="na">/T </span><span class="kd">REG_dWORD</span> <span class="na">/D </span><span class="m">0</span> <span class="na">/F
+</span></pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>Salve-o com um nome de arquivo que termine com a extensão <strong>.bat</strong> (por exemplo, <strong>DesativarInicializacaoRapida.bat</strong>).</p>
 
@@ -553,7 +555,7 @@ REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /V Hiberbo
 
             <footer class="footer">
     <div class="container">
-        Copyright &copy; 2019 <a href='#author'>Antônio Vinícius</a>. Todos os direitos reservados. Baseado no <a href='https://github.com/vinyanalista/material-jekyll-plus'>Material site template for Jekyll PLUS</a>.
+        Copyright &copy; 2020 <a href='#author'>Antônio Vinícius</a>. Todos os direitos reservados. Baseado no <a href='https://github.com/vinyanalista/material-jekyll-plus'>Material site template for Jekyll PLUS</a>.
     </div>
 </footer>
 

@@ -1,4 +1,325 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinyanalista.github.io/" rel="alternate" type="text/html" hreflang="pt" /><updated>2019-11-13T09:46:48-03:00</updated><id>https://vinyanalista.github.io/feed.xml</id><title type="html">Antônio Vinícius</title><subtitle>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</subtitle><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><entry><title type="html">Bom senso na web: tratando imagens para publicação em sites</title><link href="https://vinyanalista.github.io/blog/2019/09/27/bom-senso-na-web-tratando-imagens-para-publicacao-em-sites/" rel="alternate" type="text/html" title="Bom senso na web: tratando imagens para publicação em sites" /><published>2019-09-27T22:00:00-03:00</published><updated>2019-09-27T22:14:15-03:00</updated><id>https://vinyanalista.github.io/blog/2019/09/27/bom-senso-na-web-tratando-imagens-para-publicacao-em-sites</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2019/09/27/bom-senso-na-web-tratando-imagens-para-publicacao-em-sites/">&lt;p&gt;Eu fico indignado com páginas que demoram pra carregar devido ao tamanho das imagens. Não o tamanho que elas aparentam ter na página, mas o tamanho que elas realmente tem: muitas vezes na página a imagem ocupa um espaço pequeno, mas como é inserida grande do jeito que veio da câmera ou do profissional que fez a arte digital, acaba sendo um arquivo pesado que soma no tempo de carregamento da página.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinyanalista.github.io/" rel="alternate" type="text/html" hreflang="pt" /><updated>2020-07-20T00:43:42-03:00</updated><id>https://vinyanalista.github.io/feed.xml</id><title type="html">Antônio Vinícius</title><subtitle>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</subtitle><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><entry><title type="html">Primeiros passos com o MikroTik hAP ac: roteador profissional para a rede de casa</title><link href="https://vinyanalista.github.io/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/" rel="alternate" type="text/html" title="Primeiros passos com o MikroTik hAP ac: roteador profissional para a rede de casa" /><published>2020-07-20T00:30:00-03:00</published><updated>2020-07-20T00:42:36-03:00</updated><id>https://vinyanalista.github.io/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/">&lt;p&gt;Entre 2016 e 2017 trabalhei como analista de redes e tive a oportunidade de conhecer os equipamentos da &lt;a href=&quot;https://mikrotik.com/&quot;&gt;MikroTik&lt;/a&gt;, uma fabricante de dispositivos de redes, tais como &lt;em&gt;switches&lt;/em&gt;, antenas, roteadores, etc. Provavelmente a MikroTik é mais conhecida pela sua linha de roteadores &lt;a href=&quot;https://mikrotik.com/product/RB2011UiAS-RM&quot;&gt;RouterBOARD&lt;/a&gt;. Mas eu fiquei empolgado quando descobri que eles tinham também uma linha doméstica e logo comprei um roteador MikroTik pra mim.&lt;/p&gt;
+
+&lt;p&gt;Como me mudei recentemente, decidi aproveitar a oportunidade para reconfigurá-lo e escrever alguns tutoriais mostrando suas funcionalidades.&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-hap.jpg&quot; title=&quot;MikroTik hAP ac lite TC&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-hap.jpg&quot; alt=&quot;MikroTik hAP ac lite TC&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;em class=&quot;caption&quot; itemprop=&quot;description&quot;&gt;
+&lt;p&gt;MikroTik hAP ac lite TC&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;O &lt;a href=&quot;https://mikrotik.com/product/RB952Ui-5ac2nD-TC&quot;&gt;MikroTik hAP ac lite TC&lt;/a&gt; é um roteador e ponto de acesso sem fio (&lt;em&gt;access point&lt;/em&gt;) doméstico. Ele fornece 5 portas Ethernet de 10/100Mbps, rede sem fio Wi-Fi 802.11 a/b/g/n/ac em duas frequências (&lt;em&gt;dual band&lt;/em&gt;) de 2,4GHz e 5GHz ao mesmo tempo e ainda tem uma porta USB que pode ser usada para conectar um modem 3G/4G. Ele pode ser ligado por PoE (Power over Ethernet) na porta 1, assim como fornece uma porta PoE, a porta 5, que pode ser usada para ligar um dispositivo PoE, como uma câmera IP.&lt;/p&gt;
+
+&lt;p&gt;O padrão de Wi-Fi 802.11ac visa ao desempenho. Além de maior velocidade, a frequência maior de 5GHz também garante que haja menos interferência, seja pela menor quantidade de aparelhos que a utilizam (hoje, por exemplo, telefones sem fio, microondas e dispositivos Bluetooth competem com a Wi-Fi pela frequência de 2,4GHz), seja pelo menor alcance das redes a 5GHz (o comprimento da onda reduz quando aumenta a frequência, na prática isso quer dizer que se a sua Wi-Fi e a do vizinho transmitem a 5GHz, é mais difícil que elas invadam a casa um do outro).&lt;/p&gt;
+
+&lt;p&gt;O MikroTik já vem configurado de fábrica, de modo que você pode simplesmente conectar os cabos e já começar a usar a rede Wi-Fi. Claro, é recomendado pelo menos definir uma senha para a rede Wi-Fi e uma senha para o gerenciamento do próprio MikroTik.&lt;/p&gt;
+
+&lt;p&gt;Esse é o roteador perfeito para o &lt;em&gt;nerd&lt;/em&gt; que quer configurar e monitorar cada pequeno detalhe da sua rede doméstica!&lt;/p&gt;
+
+&lt;p&gt;Para os tutoriais, vou usar o &lt;a href=&quot;https://kamarada.github.io/pt/2020/02/24/kamarada-15.1-vem-com-tudo-que-voce-precisa-para-usar-o-linux-no-dia-a-dia/&quot;&gt;Linux Kamarada 15.1&lt;/a&gt;, mas note que é possível configurar o MikroTik usando &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/&quot;&gt;Windows&lt;/a&gt; ou outros sistemas operacionais, até mesmo um &lt;em&gt;tablet&lt;/em&gt; ou &lt;em&gt;smartphone&lt;/em&gt;, porque ele tem uma interface &lt;em&gt;web&lt;/em&gt; e pode ser configurado pelo navegador.&lt;/p&gt;
+
+&lt;h2 id=&quot;ligando-o-mikrotik-pela-primeira-vez&quot;&gt;Ligando o MikroTik pela primeira vez&lt;/h2&gt;
+
+&lt;p&gt;São poucas as conexões do MikroTik: usando um cabo de rede Ethernet, conecte a porta 1 do MikroTik ao modem da operadora. Também conecte a fonte de alimentação ao MikroTik e a uma fonte de energia (como uma tomada na parede, um filtro de linha ou um &lt;em&gt;nobreak&lt;/em&gt;).&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-conexoes.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-conexoes.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Note que o MikroTik não tem botão de liga/desliga. Então, ao plugar a fonte de alimentação, ele já liga. Se um dia você precisar desligá-lo, basta desconectar a fonte de alimentação.&lt;/p&gt;
+
+&lt;h2 id=&quot;configurações-básicas&quot;&gt;Configurações básicas&lt;/h2&gt;
+
+&lt;p&gt;Após alguns segundos ligando, o MikroTik já fornece uma rede Wi-Fi.&lt;/p&gt;
+
+&lt;p&gt;Abra as configurações de Wi-Fi do sistema e conecte-o à rede do MikroTik (note que ela vem aberta de fábrica, sem senha):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-01.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-01.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;No meu caso, ele fornece duas redes: MikroTik-86349A (2,4GHz) e MikroTik-86349B (5GHz).&lt;/p&gt;
+
+&lt;p&gt;Uma vez conectado à rede Wi-Fi, note que você já consegue até mesmo acessar a Internet. Pela configuração de fábrica, o MikroTik fornece ao seu computador um endereço IP na rede &lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.88.0/24&lt;/code&gt; e o endereço IP padrão do próprio MikroTik é &lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.88.1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mas não queremos deixar a rede aberta assim. Vamos ajustar algumas configurações básicas do MikroTik. Para isso, vamos usar sua interface &lt;em&gt;web&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Abra o navegador e acesse &lt;a href=&quot;http://192.168.88.1/&quot;&gt;192.168.88.1&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;No primeiro acesso, a tela &lt;strong&gt;Quick Set&lt;/strong&gt; (configuração rápida) já vem selecionada:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-02.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-02.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;O mais importante nessa tela é a seção &lt;strong&gt;Wireless&lt;/strong&gt; (rede sem fio). Forneça um nome para as redes (&lt;strong&gt;Network Name&lt;/strong&gt;) e também uma senha (&lt;strong&gt;WiFi Password&lt;/strong&gt;). A senha deve conter pelo menos 8 caracteres.&lt;/p&gt;
+
+&lt;p&gt;Caso deseje mudar os endereços da rede local, ajuste os campos na seção &lt;strong&gt;Local Network&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;IP Address&lt;/strong&gt;: esse será o endereço do próprio MikroTik (defini como &lt;code class=&quot;highlighter-rouge&quot;&gt;10.0.0.1&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;DHCP Server Range&lt;/strong&gt;: a faixa de endereços IP que o MikroTik deve fornecer via DHCP. Como eu gosto de cadastrar meus dispositivos manualmente e ter maior controle sobre os endereços deles, deixei apenas os últimos endereços para atribuir a dispositivos desconhecidos (&lt;code class=&quot;highlighter-rouge&quot;&gt;10.0.0.200-10.0.0.254&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Por convenção, as faixas de endereços IP disponíveis para uso em &lt;a href=&quot;https://pt.wikipedia.org/wiki/Rede_privada&quot;&gt;redes privadas&lt;/a&gt; são:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Rede privada&lt;/th&gt;
+      &lt;th&gt;Faixa de endereços IP&lt;/th&gt;
+      &lt;th&gt;Número de IPs&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10.0.0.0/8&lt;/td&gt;
+      &lt;td&gt;10.0.0.0 a 10.255.255.255&lt;/td&gt;
+      &lt;td&gt;16.777.216&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;172.16.0.0/12&lt;/td&gt;
+      &lt;td&gt;172.16.0.0 a 172.31.255.255&lt;/td&gt;
+      &lt;td&gt;1.048.576&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;192.168.0.0/16&lt;/td&gt;
+      &lt;td&gt;192.168.0.0 a 192.168.255.255&lt;/td&gt;
+      &lt;td&gt;65.536&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;169.254.0.0/16&lt;/td&gt;
+      &lt;td&gt;169.254.0.0 a 169.254.255.255&lt;/td&gt;
+      &lt;td&gt;65.536&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;No meu caso, decidi usar a rede &lt;code class=&quot;highlighter-rouge&quot;&gt;10.0.0.0/24&lt;/code&gt; simplesmente para economizar digitação (são os endereços mais curtos e, portanto, mais fáceis de digitar).&lt;/p&gt;
+
+&lt;p&gt;Na seção &lt;strong&gt;System&lt;/strong&gt;, defina uma senha para acessar a configuração do MikroTik (&lt;strong&gt;Password&lt;/strong&gt;) e digite essa senha mais uma vez para confirmar que digitou certo (&lt;strong&gt;Confirm Password&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;Por fim, clique no botão &lt;strong&gt;Apply Configuration&lt;/strong&gt; (aplicar configuração).&lt;/p&gt;
+
+&lt;p&gt;Feito isso, você já é desconectado da rede padrão e a nova rede passa a estar disponível.&lt;/p&gt;
+
+&lt;p&gt;Agora sim você já pode se conectar à nova rede e usá-la com um mínimo de segurança.&lt;/p&gt;
+
+&lt;h2 id=&quot;acessando-o-mikrotik-pela-interface-web&quot;&gt;Acessando o MikroTik pela interface web&lt;/h2&gt;
+
+&lt;p&gt;Já é possível acessar o MikroTik pelo seu novo endereço (&lt;code class=&quot;highlighter-rouge&quot;&gt;10.0.0.1&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Abra o navegador e acesse &lt;a href=&quot;http://10.0.0.1/&quot;&gt;10.0.0.1&lt;/a&gt;. Perceba que agora a interface &lt;em&gt;web&lt;/em&gt; exige senha:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-03.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-03.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Digite a senha que você definiu para a configuração do MikroTik e clique em &lt;strong&gt;Login&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Dentro da interface &lt;em&gt;web&lt;/em&gt;, selecione &lt;strong&gt;WebFig&lt;/strong&gt; para ter acesso à interface mais completa:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-04.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-04.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-05.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-05.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;download-do-programa-winbox&quot;&gt;Download do programa WinBox&lt;/h2&gt;
+
+&lt;p&gt;Por meio da interface &lt;em&gt;web&lt;/em&gt; do MikroTik, é possível acessar praticamente todas as suas configurações. Mas o mais comum é manusear o MikroTik por meio do programa WinBox. Esse sim disponibiliza todas as configurações do MikroTik, além de mais alguns recursos interessantes, como o modo de segurança, que veremos em outro tutorial.&lt;/p&gt;
+
+&lt;p&gt;O WinBox é um programa para Windows, mas pode ser executado no &lt;a href=&quot;https://www.vivaolinux.com.br/linux/&quot;&gt;Linux&lt;/a&gt; por meio do &lt;a href=&quot;https://www.winehq.org/&quot;&gt;Wine&lt;/a&gt;. No Linux Kamarada, o Wine já vem instalado por padrão. Se você usa outra distribuição Linux, consulte a documentação dela para saber como instalar o Wine.&lt;/p&gt;
+
+&lt;p&gt;Para baixar o WinBox, na interface &lt;em&gt;web&lt;/em&gt; do MikroTik, no menu à esquerda, clique em &lt;strong&gt;WinBox&lt;/strong&gt; (é uma das últimas opções):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-06.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-06.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Com isso, seu navegador baixará o executável &lt;code class=&quot;highlighter-rouge&quot;&gt;winbox.exe&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Salve-o em um local fácil de lembrar (por exemplo, &lt;code class=&quot;highlighter-rouge&quot;&gt;Documentos&lt;/code&gt; ou &lt;code class=&quot;highlighter-rouge&quot;&gt;Área de Trabalho&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;No meu caso, vou criar uma pasta &lt;code class=&quot;highlighter-rouge&quot;&gt;programas&lt;/code&gt; dentro da minha pasta pessoal (&lt;code class=&quot;highlighter-rouge&quot;&gt;/home/vinicius/programas&lt;/code&gt;) e vou salvar o &lt;code class=&quot;highlighter-rouge&quot;&gt;winbox.exe&lt;/code&gt; nela.&lt;/p&gt;
+
+&lt;h2 id=&quot;iniciando-o-winbox&quot;&gt;Iniciando o WinBox&lt;/h2&gt;
+
+&lt;p&gt;Para abrir o WinBox, tanto no Linux Kamarada quanto no Windows, é só dar duplo clique no &lt;code class=&quot;highlighter-rouge&quot;&gt;winbox.exe&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-07.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-07.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-08.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-08.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;No Linux Kamarada, para facilitar iniciar o WinBox pelo menu &lt;strong&gt;Atividades&lt;/strong&gt;, vamos criar um arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.desktop&lt;/code&gt; para o WinBox.&lt;/p&gt;
+
+&lt;p&gt;Salve a imagem a seguir na mesma pasta onde está o &lt;code class=&quot;highlighter-rouge&quot;&gt;winbox.exe&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/winbox.svg&quot; title=&quot;Você pode clicar com o botão direito do mouse [nesse link](/files/2020/07/winbox.svg) e usar a opção **Salvar link como...** Fonte da imagem: [Free SVG](https://freesvg.org/winbox-app-icon)&quot;&gt;
+&lt;img src=&quot;/files/2020/07/winbox.svg&quot; alt=&quot;Você pode clicar com o botão direito do mouse [nesse link](/files/2020/07/winbox.svg) e usar a opção **Salvar link como...** Fonte da imagem: [Free SVG](https://freesvg.org/winbox-app-icon)&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; style=&quot;max-width: 256px;&quot; /&gt;
+&lt;/a&gt;
+
+&lt;em class=&quot;caption&quot; itemprop=&quot;description&quot;&gt;
+&lt;p&gt;Você pode clicar com o botão direito do mouse &lt;a href=&quot;/files/2020/07/winbox.svg&quot;&gt;nesse link&lt;/a&gt; e usar a opção &lt;strong&gt;Salvar link como…&lt;/strong&gt; Fonte da imagem: &lt;a href=&quot;https://freesvg.org/winbox-app-icon&quot;&gt;Free SVG&lt;/a&gt;&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Abra o aplicativo &lt;strong&gt;Editor de texto&lt;/strong&gt; (&lt;a href=&quot;https://wiki.gnome.org/Apps/Gedit&quot;&gt;gedit&lt;/a&gt;), copie e cole o seguinte conteúdo:&lt;/p&gt;
+
+&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nn&quot;&gt;[Desktop Entry]&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;WinBox&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;Exec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;wine /home/vinicius/programas/winbox.exe&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;Icon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/home/vinicius/programas/winbox.svg&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Application&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;(substitua &lt;code class=&quot;highlighter-rouge&quot;&gt;/home/vinicius/programas&lt;/code&gt; pela pasta onde estão os arquivos)&lt;/p&gt;
+
+&lt;p&gt;Salve esse arquivo em &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.local/share/applications&lt;/code&gt; com o nome de &lt;code class=&quot;highlighter-rouge&quot;&gt;winbox.desktop&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Com isso, você já deve ser capaz de abrir o menu &lt;strong&gt;Atividades&lt;/strong&gt; e iniciar o WinBox por ele:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-09.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-09.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;acessando-o-mikrotik-pelo-winbox&quot;&gt;Acessando o MikroTik pelo WinBox&lt;/h2&gt;
+
+&lt;p&gt;Ao ser iniciado, o WinBox busca dispositivos MikroTik no mesmo &lt;a href=&quot;https://pt.wikipedia.org/wiki/Domínio_de_broadcast&quot;&gt;domínio de &lt;em&gt;broadcast&lt;/em&gt;&lt;/a&gt; da camada 2 (enlace) e os lista na aba &lt;strong&gt;Neighbors&lt;/strong&gt; (vizinhos):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-10.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-10.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Se seu dispositivo MikroTik aparece nessa lista, dê um duplo clique nele.&lt;/p&gt;
+
+&lt;p&gt;Se seu MikroTik não aparece, você pode tentar clicar no botão &lt;strong&gt;Refresh&lt;/strong&gt; (atualizar).&lt;/p&gt;
+
+&lt;p&gt;A depender da configuração do &lt;em&gt;firewall&lt;/em&gt; do seu computador, pode ser que o WinBox não consiga encontrar o MikroTik.&lt;/p&gt;
+
+&lt;p&gt;Mas essa detecção automática é apenas uma conveniência, não é de fato necessária para que você acesse seu MikroTik. Em último caso, digite no campo &lt;strong&gt;Connect To&lt;/strong&gt; (conectar a) o endereço MAC ou o endereço IP do seu MikroTik.&lt;/p&gt;
+
+&lt;p&gt;Digite a senha (&lt;strong&gt;Password&lt;/strong&gt;) que você definiu para a configuração do MikroTik, opcionalmente marque a opção para lembrar essa senha (&lt;strong&gt;Keep Password&lt;/strong&gt;) e clique em &lt;strong&gt;Connect&lt;/strong&gt; (conectar).&lt;/p&gt;
+
+&lt;h2 id=&quot;interfaces-de-rede&quot;&gt;Interfaces de rede&lt;/h2&gt;
+
+&lt;p&gt;Note como o WinBox é bem semelhante à interface &lt;em&gt;web&lt;/em&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-11.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-11.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;A janela mostrada na imagem acima é a lista de interfaces de rede do MikroTik. Para abri-la, clique no item &lt;strong&gt;Interfaces&lt;/strong&gt; no menu à esquerda.&lt;/p&gt;
+
+&lt;p&gt;Na lista de interfaces, é possível ver o tráfego transmitido (&lt;strong&gt;Tx&lt;/strong&gt;) e recebido (&lt;strong&gt;Rx&lt;/strong&gt;) em cada interface.&lt;/p&gt;
+
+&lt;h2 id=&quot;verificando-a-conexão-com-a-internet&quot;&gt;Verificando a conexão com a Internet&lt;/h2&gt;
+
+&lt;p&gt;Na interface do WinBox, geralmente essas listas fornecem mais informações e opções quando você dá duplo clique em um item.&lt;/p&gt;
+
+&lt;p&gt;Como exemplo, vejamos como o MikroTik pode nos mostrar informações sobre a velocidade da nossa conexão com a Internet.&lt;/p&gt;
+
+&lt;p&gt;Dê um duplo clique na interface &lt;strong&gt;ether1&lt;/strong&gt; (a interface onde está conectado o modem da operadora) e, na janela que aparece, mude para a aba &lt;strong&gt;Traffic&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-12.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-12.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Para gerar tráfego de rede, abra um vídeo no &lt;a href=&quot;https://br.youtube.com/&quot;&gt;YouTube&lt;/a&gt; ou &lt;a href=&quot;https://www.netflix.com/br/&quot;&gt;Netflix&lt;/a&gt;, ou use serviços de teste de velocidade como o &lt;a href=&quot;https://www.minhaconexao.com.br/&quot;&gt;Minha Conexão&lt;/a&gt; ou o &lt;a href=&quot;https://www.speedtest.net/pt&quot;&gt;Speedtest&lt;/a&gt;. Observe no gráfico o tráfego aumentando.&lt;/p&gt;
+
+&lt;p&gt;Uma vez, eu já usei uma captura dessa tela para reclamar de conexão lenta à operadora:&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;pt&quot;&gt;&lt;p lang=&quot;pt&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://twitter.com/Vivoemrede?ref_src=twsrc%5Etfw&quot;&gt;@Vivoemrede&lt;/a&gt; cadê a Internet de 15Mbps que eu pago? A média aqui não chega a 1! &lt;a href=&quot;https://twitter.com/NetflixBrasil?ref_src=twsrc%5Etfw&quot;&gt;@NetflixBrasil&lt;/a&gt; tá ruim parecendo visão de míope! &lt;a href=&quot;https://t.co/Z9xXEZcFQj&quot;&gt;pic.twitter.com/Z9xXEZcFQj&lt;/a&gt;&lt;/p&gt;&amp;mdash; Antônio Vinícius (@vinyanalista) &lt;a href=&quot;https://twitter.com/vinyanalista/status/898726026787700736?ref_src=twsrc%5Etfw&quot;&gt;19 de agosto de 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;dispositivos-conectados-à-rede-wi-fi&quot;&gt;Dispositivos conectados à rede Wi-Fi&lt;/h2&gt;
+
+&lt;p&gt;O MikroTik mostra informações detalhadas sobre os dispositivos conectados às redes Wi-Fi. Para vê-las, no menu à esquerda, clique em &lt;strong&gt;Wireless&lt;/strong&gt; (sem fio), depois selecione a aba &lt;strong&gt;Registration&lt;/strong&gt; (registro):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-13.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-13.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Se você não consegue identificar um dispositivo, o &lt;em&gt;site&lt;/em&gt; &lt;a href=&quot;https://macvendors.com/&quot;&gt;MAC Vendors&lt;/a&gt; pode ajudar:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-14.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-14.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;O &lt;a href=&quot;https://pt.wikipedia.org/wiki/Endereço_MAC&quot;&gt;endereço MAC&lt;/a&gt; de cada dispositivo é único, gravado em seu &lt;em&gt;hardware&lt;/em&gt; e atribuído pelo fabricante da interface de rede. É formado por um conjunto de 6 &lt;em&gt;bytes&lt;/em&gt;. Na representação legível para nós, seres humanos, cada &lt;em&gt;byte&lt;/em&gt; é representado por dois algarismos em &lt;a href=&quot;https://pt.wikipedia.org/wiki/Hexadecimal&quot;&gt;hexadecimal&lt;/a&gt; e separado dos demais por dois pontos (&lt;code class=&quot;highlighter-rouge&quot;&gt;:&lt;/code&gt;). Os três primeiros &lt;em&gt;bytes&lt;/em&gt; identificam o fabricante e os três últimos, o dispositivo em si.&lt;/p&gt;
+
+&lt;p&gt;No exemplo da imagem acima, o &lt;em&gt;site&lt;/em&gt; MAC Vendors mostra que o endereço MAC &lt;code class=&quot;highlighter-rouge&quot;&gt;A0:56:F3:94:7C:52&lt;/code&gt; pertence a um dispositivo fabricado pela &lt;a href=&quot;https://www.apple.com/br/&quot;&gt;Apple&lt;/a&gt; (identificada pelos três primeiros &lt;em&gt;bytes&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;A0:56:F3&lt;/code&gt;). Já sei que é o meu &lt;a href=&quot;https://www.apple.com/br/iphone/&quot;&gt;iPhone&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;continua&quot;&gt;Continua…&lt;/h2&gt;
+
+&lt;p&gt;Com o que fizemos até aqui, o MikroTik não faz muito mais coisas que qualquer outro roteador comum. Mas você já pode perceber o poder dele reparando na quantidade de opções presentes nas interfaces de configuração (&lt;em&gt;web&lt;/em&gt; e WinBox).&lt;/p&gt;
+
+&lt;p&gt;Nos próximos dias, compartilharei outros tutoriais que mostram outras funcionalidades desse pequeno mas ousado roteador.&lt;/p&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">Entre 2016 e 2017 trabalhei como analista de redes e tive a oportunidade de conhecer os equipamentos da MikroTik, uma fabricante de dispositivos de redes, tais como switches, antenas, roteadores, etc. Provavelmente a MikroTik é mais conhecida pela sua linha de roteadores RouterBOARD. Mas eu fiquei empolgado quando descobri que eles tinham também uma linha doméstica e logo comprei um roteador MikroTik pra mim. Como me mudei recentemente, decidi aproveitar a oportunidade para reconfigurá-lo e escrever alguns tutoriais mostrando suas funcionalidades. MikroTik hAP ac lite TC O MikroTik hAP ac lite TC é um roteador e ponto de acesso sem fio (access point) doméstico. Ele fornece 5 portas Ethernet de 10/100Mbps, rede sem fio Wi-Fi 802.11 a/b/g/n/ac em duas frequências (dual band) de 2,4GHz e 5GHz ao mesmo tempo e ainda tem uma porta USB que pode ser usada para conectar um modem 3G/4G. Ele pode ser ligado por PoE (Power over Ethernet) na porta 1, assim como fornece uma porta PoE, a porta 5, que pode ser usada para ligar um dispositivo PoE, como uma câmera IP. O padrão de Wi-Fi 802.11ac visa ao desempenho. Além de maior velocidade, a frequência maior de 5GHz também garante que haja menos interferência, seja pela menor quantidade de aparelhos que a utilizam (hoje, por exemplo, telefones sem fio, microondas e dispositivos Bluetooth competem com a Wi-Fi pela frequência de 2,4GHz), seja pelo menor alcance das redes a 5GHz (o comprimento da onda reduz quando aumenta a frequência, na prática isso quer dizer que se a sua Wi-Fi e a do vizinho transmitem a 5GHz, é mais difícil que elas invadam a casa um do outro). O MikroTik já vem configurado de fábrica, de modo que você pode simplesmente conectar os cabos e já começar a usar a rede Wi-Fi. Claro, é recomendado pelo menos definir uma senha para a rede Wi-Fi e uma senha para o gerenciamento do próprio MikroTik. Esse é o roteador perfeito para o nerd que quer configurar e monitorar cada pequeno detalhe da sua rede doméstica! Para os tutoriais, vou usar o Linux Kamarada 15.1, mas note que é possível configurar o MikroTik usando Windows ou outros sistemas operacionais, até mesmo um tablet ou smartphone, porque ele tem uma interface web e pode ser configurado pelo navegador. Ligando o MikroTik pela primeira vez São poucas as conexões do MikroTik: usando um cabo de rede Ethernet, conecte a porta 1 do MikroTik ao modem da operadora. Também conecte a fonte de alimentação ao MikroTik e a uma fonte de energia (como uma tomada na parede, um filtro de linha ou um nobreak). Note que o MikroTik não tem botão de liga/desliga. Então, ao plugar a fonte de alimentação, ele já liga. Se um dia você precisar desligá-lo, basta desconectar a fonte de alimentação. Configurações básicas Após alguns segundos ligando, o MikroTik já fornece uma rede Wi-Fi. Abra as configurações de Wi-Fi do sistema e conecte-o à rede do MikroTik (note que ela vem aberta de fábrica, sem senha): No meu caso, ele fornece duas redes: MikroTik-86349A (2,4GHz) e MikroTik-86349B (5GHz). Uma vez conectado à rede Wi-Fi, note que você já consegue até mesmo acessar a Internet. Pela configuração de fábrica, o MikroTik fornece ao seu computador um endereço IP na rede 192.168.88.0/24 e o endereço IP padrão do próprio MikroTik é 192.168.88.1. Mas não queremos deixar a rede aberta assim. Vamos ajustar algumas configurações básicas do MikroTik. Para isso, vamos usar sua interface web. Abra o navegador e acesse 192.168.88.1. No primeiro acesso, a tela Quick Set (configuração rápida) já vem selecionada: O mais importante nessa tela é a seção Wireless (rede sem fio). Forneça um nome para as redes (Network Name) e também uma senha (WiFi Password). A senha deve conter pelo menos 8 caracteres. Caso deseje mudar os endereços da rede local, ajuste os campos na seção Local Network: IP Address: esse será o endereço do próprio MikroTik (defini como 10.0.0.1) DHCP Server Range: a faixa de endereços IP que o MikroTik deve fornecer via DHCP. Como eu gosto de cadastrar meus dispositivos manualmente e ter maior controle sobre os endereços deles, deixei apenas os últimos endereços para atribuir a dispositivos desconhecidos (10.0.0.200-10.0.0.254) Por convenção, as faixas de endereços IP disponíveis para uso em redes privadas são: Rede privada Faixa de endereços IP Número de IPs 10.0.0.0/8 10.0.0.0 a 10.255.255.255 16.777.216 172.16.0.0/12 172.16.0.0 a 172.31.255.255 1.048.576 192.168.0.0/16 192.168.0.0 a 192.168.255.255 65.536 169.254.0.0/16 169.254.0.0 a 169.254.255.255 65.536 No meu caso, decidi usar a rede 10.0.0.0/24 simplesmente para economizar digitação (são os endereços mais curtos e, portanto, mais fáceis de digitar). Na seção System, defina uma senha para acessar a configuração do MikroTik (Password) e digite essa senha mais uma vez para confirmar que digitou certo (Confirm Password). Por fim, clique no botão Apply Configuration (aplicar configuração). Feito isso, você já é desconectado da rede padrão e a nova rede passa a estar disponível. Agora sim você já pode se conectar à nova rede e usá-la com um mínimo de segurança. Acessando o MikroTik pela interface web Já é possível acessar o MikroTik pelo seu novo endereço (10.0.0.1). Abra o navegador e acesse 10.0.0.1. Perceba que agora a interface web exige senha: Digite a senha que você definiu para a configuração do MikroTik e clique em Login. Dentro da interface web, selecione WebFig para ter acesso à interface mais completa: Download do programa WinBox Por meio da interface web do MikroTik, é possível acessar praticamente todas as suas configurações. Mas o mais comum é manusear o MikroTik por meio do programa WinBox. Esse sim disponibiliza todas as configurações do MikroTik, além de mais alguns recursos interessantes, como o modo de segurança, que veremos em outro tutorial. O WinBox é um programa para Windows, mas pode ser executado no Linux por meio do Wine. No Linux Kamarada, o Wine já vem instalado por padrão. Se você usa outra distribuição Linux, consulte a documentação dela para saber como instalar o Wine. Para baixar o WinBox, na interface web do MikroTik, no menu à esquerda, clique em WinBox (é uma das últimas opções): Com isso, seu navegador baixará o executável winbox.exe. Salve-o em um local fácil de lembrar (por exemplo, Documentos ou Área de Trabalho). No meu caso, vou criar uma pasta programas dentro da minha pasta pessoal (/home/vinicius/programas) e vou salvar o winbox.exe nela. Iniciando o WinBox Para abrir o WinBox, tanto no Linux Kamarada quanto no Windows, é só dar duplo clique no winbox.exe: No Linux Kamarada, para facilitar iniciar o WinBox pelo menu Atividades, vamos criar um arquivo .desktop para o WinBox. Salve a imagem a seguir na mesma pasta onde está o winbox.exe: Você pode clicar com o botão direito do mouse nesse link e usar a opção Salvar link como… Fonte da imagem: Free SVG Abra o aplicativo Editor de texto (gedit), copie e cole o seguinte conteúdo: 1 2 3 4 5 [Desktop Entry] Name=WinBox Exec=wine /home/vinicius/programas/winbox.exe Icon=/home/vinicius/programas/winbox.svg Type=Application (substitua /home/vinicius/programas pela pasta onde estão os arquivos) Salve esse arquivo em ~/.local/share/applications com o nome de winbox.desktop. Com isso, você já deve ser capaz de abrir o menu Atividades e iniciar o WinBox por ele: Acessando o MikroTik pelo WinBox Ao ser iniciado, o WinBox busca dispositivos MikroTik no mesmo domínio de broadcast da camada 2 (enlace) e os lista na aba Neighbors (vizinhos): Se seu dispositivo MikroTik aparece nessa lista, dê um duplo clique nele. Se seu MikroTik não aparece, você pode tentar clicar no botão Refresh (atualizar). A depender da configuração do firewall do seu computador, pode ser que o WinBox não consiga encontrar o MikroTik. Mas essa detecção automática é apenas uma conveniência, não é de fato necessária para que você acesse seu MikroTik. Em último caso, digite no campo Connect To (conectar a) o endereço MAC ou o endereço IP do seu MikroTik. Digite a senha (Password) que você definiu para a configuração do MikroTik, opcionalmente marque a opção para lembrar essa senha (Keep Password) e clique em Connect (conectar). Interfaces de rede Note como o WinBox é bem semelhante à interface web: A janela mostrada na imagem acima é a lista de interfaces de rede do MikroTik. Para abri-la, clique no item Interfaces no menu à esquerda. Na lista de interfaces, é possível ver o tráfego transmitido (Tx) e recebido (Rx) em cada interface. Verificando a conexão com a Internet Na interface do WinBox, geralmente essas listas fornecem mais informações e opções quando você dá duplo clique em um item. Como exemplo, vejamos como o MikroTik pode nos mostrar informações sobre a velocidade da nossa conexão com a Internet. Dê um duplo clique na interface ether1 (a interface onde está conectado o modem da operadora) e, na janela que aparece, mude para a aba Traffic: Para gerar tráfego de rede, abra um vídeo no YouTube ou Netflix, ou use serviços de teste de velocidade como o Minha Conexão ou o Speedtest. Observe no gráfico o tráfego aumentando. Uma vez, eu já usei uma captura dessa tela para reclamar de conexão lenta à operadora: @Vivoemrede cadê a Internet de 15Mbps que eu pago? A média aqui não chega a 1! @NetflixBrasil tá ruim parecendo visão de míope! pic.twitter.com/Z9xXEZcFQj&amp;mdash; Antônio Vinícius (@vinyanalista) 19 de agosto de 2017 Dispositivos conectados à rede Wi-Fi O MikroTik mostra informações detalhadas sobre os dispositivos conectados às redes Wi-Fi. Para vê-las, no menu à esquerda, clique em Wireless (sem fio), depois selecione a aba Registration (registro): Se você não consegue identificar um dispositivo, o site MAC Vendors pode ajudar: O endereço MAC de cada dispositivo é único, gravado em seu hardware e atribuído pelo fabricante da interface de rede. É formado por um conjunto de 6 bytes. Na representação legível para nós, seres humanos, cada byte é representado por dois algarismos em hexadecimal e separado dos demais por dois pontos (:). Os três primeiros bytes identificam o fabricante e os três últimos, o dispositivo em si. No exemplo da imagem acima, o site MAC Vendors mostra que o endereço MAC A0:56:F3:94:7C:52 pertence a um dispositivo fabricado pela Apple (identificada pelos três primeiros bytes A0:56:F3). Já sei que é o meu iPhone. Continua… Com o que fizemos até aqui, o MikroTik não faz muito mais coisas que qualquer outro roteador comum. Mas você já pode perceber o poder dele reparando na quantidade de opções presentes nas interfaces de configuração (web e WinBox). Nos próximos dias, compartilharei outros tutoriais que mostram outras funcionalidades desse pequeno mas ousado roteador.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2020/07/mikrotik-hap.jpg" /></entry><entry><title type="html">Bom senso na web: tratando imagens para publicação em sites</title><link href="https://vinyanalista.github.io/blog/2019/09/27/bom-senso-na-web-tratando-imagens-para-publicacao-em-sites/" rel="alternate" type="text/html" title="Bom senso na web: tratando imagens para publicação em sites" /><published>2019-09-27T22:00:00-03:00</published><updated>2019-09-27T22:14:15-03:00</updated><id>https://vinyanalista.github.io/blog/2019/09/27/bom-senso-na-web-tratando-imagens-para-publicacao-em-sites</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2019/09/27/bom-senso-na-web-tratando-imagens-para-publicacao-em-sites/">&lt;p&gt;Eu fico indignado com páginas que demoram pra carregar devido ao tamanho das imagens. Não o tamanho que elas aparentam ter na página, mas o tamanho que elas realmente tem: muitas vezes na página a imagem ocupa um espaço pequeno, mas como é inserida grande do jeito que veio da câmera ou do profissional que fez a arte digital, acaba sendo um arquivo pesado que soma no tempo de carregamento da página.&lt;/p&gt;
 
 &lt;p&gt;Além de ficar mais tempo que o necessário esperando pelo carregamento da página, o visitante pode ter sua franquia de dados desperdiçada. Imagine você visitando uma página usando o celular consumir 1MB da sua franquia de dados apenas com uma imagem miudinha numa página!&lt;/p&gt;
 
@@ -2598,287 +2919,4 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
 
 &lt;p&gt;No &lt;a href=&quot;https://psiphon3.com/pt_PT/index.html&quot;&gt;site do Psiphon&lt;/a&gt; não há uma opção de &lt;em&gt;download&lt;/em&gt; para o Linux. Há &lt;a href=&quot;http://askubuntu.com/a/637573&quot;&gt;evidências&lt;/a&gt; de que é possível utilizar a versão para Windows no Linux com o &lt;a href=&quot;https://www.winehq.org/&quot;&gt;Wine&lt;/a&gt;, mas é mais prático utilizar o &lt;a href=&quot;https://www.torproject.org/download/download.html&quot;&gt;Tor&lt;/a&gt;, que dispõe de uma versão própria para Linux.&lt;/p&gt;
 
-&lt;p&gt;Espero que possa ter ajudado! Dúvidas nos comentários!&lt;/p&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">De uma hora para outra, o WhatsApp foi bloqueado no Brasil. Mas há artifícios que possibilitam a utilização do aplicativo, mesmo com o bloqueio das operadoras. Aqui veremos um deles: o aplicativo Psiphon. Vale observar que o Psiphon também permite o uso de quaisquer sites e aplicativos bloqueados ou censurados pelo responsável pela rede (seja a empresa, organização, universidade, operadora, etc). Porque o WhatsApp deixou de funcionar? A Justiça ordenou que as operadoras de telefonia bloqueassem o uso do aplicativo WhatsApp em todo o Brasil por 48 horas, começando à meia noite (0h) dessa quinta-feira 17 de dezembro de 2015. Esse bloqueio aconteceu porque a empresa responsável pelo WhatsApp descumpriu uma determinação judicial. Como o processo corre em segredo de justiça, quase nenhuma informação é revelada. O fato é que, mesmo sem saber ao certo porque, muita gente ficou na mão sem poder usar o WhatsApp de ontem pra hoje. As pessoas já começaram a migrar para outros aplicativos semelhantes. Uma solução para quem não deseja ficar sem usar o serviço de mensagens é utilizar aplicativos que visam burlar a censura na Internet, a exemplo do Psiphon. Como funciona o Psiphon? O Psiphon burla a censura ou bloqueio imposta ao seu computador ou dispositivo móvel (smartphone ou tablet) por meio de uma conexão em forma de túnel que ele estabelece com algum outro computador anônimo em algum outro lugar do mundo. Ele atravessa os dados que chegam e saem de você por esse túnel. Dessa maneira, os dados evitam o caminho comum, que está bloqueado, e passam por outro caminho, que não está censurado. Instalando e usando o Psiphon no Android Em smartphones e tablets com Android, o Psiphon pode ser baixado e instalado pela Play Store, como a maioria dos aplicativos: Clique para obter o Psiphon na Play Store Observação: o ideal é que você instale o Psiphon em seu aparelho antes mesmo de precisar, porque pode ser que a rede que você estiver usando no momento em que realmente precisar não permita essa instalação. Para iniciá-lo, procure pelo ícone na tela inicial ou na lista de aplicativos: Assim que o aplicativo é iniciado, ele já tenta criar o túnel. Diante disso, o Android exibe um alerta. Marque a opção Confio nesse aplicativo e toque em OK: Quando a conexão é estabelecida com sucesso, o aplicativo abre no navegador sua página oficial: A partir de agora, você já pode acessar sites e usar aplicativos censurados. Quando não quiser usar mais o túnel, volte ao aplicativo e clique em Stop: Usando o Psiphon no Windows No computador, não é necessário instalar o Psiphon: basta baixar e começar a usar. Acesse o site do Psiphon e clique em Download, em seguida clique no link do Psiphon para Windows: Observação: o ideal é que você baixe o Psiphon antes mesmo de precisar, porque pode ser que a rede que você estiver usando no momento em que realmente precisar não permita o acesso ao site do Psiphon. Você pode baixá-lo em um computador não censurado e carregá-lo consigo em um pendrive, por exemplo. Quando acabar o download, inicie o aplicativo, ele estabelecerá a conexão: Quando a conexão é estabelecida com sucesso, o aplicativo abre no navegador sua página oficial. A partir de agora, você já pode acessar sites e usar aplicativos censurados. Quando não quiser mais usar o túnel, volte ao aplicativo e clique em Disconnect. E se bloquearem o Psiphon também? Nesse caso, não será possível burlar a censura ou bloqueio imposto pela rede usando o Psiphon, mas você pode tentar usar outros aplicativos semelhantes, a exemplo do Tor ou do Hola. Uma pesquisa na Internet pode mostrar mais alternativas. Há Psiphon para Linux? No site do Psiphon não há uma opção de download para o Linux. Há evidências de que é possível utilizar a versão para Windows no Linux com o Wine, mas é mais prático utilizar o Tor, que dispõe de uma versão própria para Linux. Espero que possa ter ajudado! Dúvidas nos comentários!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2015/12/vpn.png" /></entry><entry><title type="html">Como configurar as atualizações automáticas do Windows 10</title><link href="https://vinyanalista.github.io/blog/2015/12/15/como-configurar-as-atualizacoes-automaticas-do-windows-10/" rel="alternate" type="text/html" title="Como configurar as atualizações automáticas do Windows 10" /><published>2015-12-15T12:30:00-02:00</published><updated>2015-12-15T13:33:43-02:00</updated><id>https://vinyanalista.github.io/blog/2015/12/15/como-configurar-as-atualizacoes-automaticas-do-windows-10</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2015/12/15/como-configurar-as-atualizacoes-automaticas-do-windows-10/">&lt;p&gt;Precisou reiniciar o computador, estava com pressa e se esbarrou nas atualizações do &lt;a href=&quot;http://www.microsoft.com/pt-br/windows&quot;&gt;Windows&lt;/a&gt; 10?&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-00.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-00.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Pior: ele passou um tempão tentando instalar as atualizações, depois falhou e passou mais outra eternidade desfazendo o trabalho?&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-01.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-01.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Veja aqui como ter um pouco mais de controle sobre as atualizações do Windows.&lt;/p&gt;
-
-&lt;h2 id=&quot;por-que-elas-são-tão-frequentes&quot;&gt;Por que elas são tão frequentes?&lt;/h2&gt;
-
-&lt;p&gt;Desde que &lt;a href=&quot;http://blogs.windows.com/windowsexperience/2015/01/21/the-next-generation-of-windows-windows-10/&quot;&gt;a Microsoft decidiu oferecer o Windows como um serviço&lt;/a&gt;, e não mais como um programa tradicional com número de versão, as atualizações são continua e automaticamente baixadas e instaladas pelo sistema operacional, que não consulta o usuário sobre como ou quando fazer isso. O Windows Update se esforça para que os usuários do Windows tenham sempre a versão mais recente dos componentes do sistema.&lt;/p&gt;
-
-&lt;p&gt;Isso, no entanto, gera um inconveniente para alguns usuários, que podem enfrentar lentidão na conexão com a Internet ou até do computador como um todo. Sem contar com o inconveniente bem conhecido de não poder contar com o computador em um momento de necessidade (como quando o Windows não reinicia imediatamente para instalar atualizações).&lt;/p&gt;
-
-&lt;p&gt;As versões anteriores do Windows ofereciam maior controle sobre o processo de atualização e suas configurações estavam mais acessíveis. O Windows 10 oferece algum controle sobre as atualizações, mas as configurações não estão tão visíveis, vejamos onde encontrá-las. Note que algumas delas não estão disponíveis em todas as &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/windows-10-editions&quot;&gt;edições do Windows&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; por mais que seja possível adiar ou ignorar as atualizações do Windows, elas continuam sendo necessárias. É importante que regularmente você reserve um tempo para verificar se há novas atualizações e deixar o computador instalá-las. Pode ser que o sistema solicite a obtenção de atualizações, como já aconteceu comigo:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-02.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-02.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&quot;configurar-a-conexão-como-limitada&quot;&gt;Configurar a conexão como limitada&lt;/h2&gt;
-
-&lt;p&gt;Quando você informa ao Windows que a conexão que você está usando é limitada (Wi-Fi ou rede móvel, por exemplo), ele não baixa atualizações automaticamente usando essa conexão.&lt;/p&gt;
-
-&lt;p&gt;Para isso, clique no botão &lt;strong&gt;Iniciar&lt;/strong&gt;, no canto inferior esquerdo da tela, e depois clique em &lt;strong&gt;Configurações&lt;/strong&gt;. Na tela que aparece, clique em &lt;strong&gt;Rede e Internet&lt;/strong&gt; e depois em &lt;strong&gt;Wi-Fi&lt;/strong&gt;. Depois da lista de redes Wi-Fi disponíveis, clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Você chegará à seguinte tela, na qual pode ativar ou desativar a conexão limitada:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-03.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-03.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Depois de ativar a conexão limitada, se você acessar as configurações do Windows Update (menu &lt;strong&gt;Iniciar&lt;/strong&gt;, &lt;strong&gt;Configurações&lt;/strong&gt;, &lt;strong&gt;Atualização e segurança&lt;/strong&gt;, &lt;strong&gt;Windows Update&lt;/strong&gt;), perceberá que o Windows oferece a possibilidade de buscar atualizações apenas quando desejado, clicando no botão &lt;strong&gt;Verificar se há atualizações&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-04.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-04.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Para baixar e instalar atualizações com essa configuração ativada, você pode:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Ordenar o &lt;em&gt;download&lt;/em&gt; manualmente, como explicado acima;&lt;/li&gt;
-  &lt;li&gt;Desativar a conexão limitada (depois que terminar a atualização, você pode ativá-la de novo); ou&lt;/li&gt;
-  &lt;li&gt;Conectar a uma rede que não está configurada como limitada.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;agendar-a-reinicialização&quot;&gt;Agendar a reinicialização&lt;/h2&gt;
-
-&lt;p&gt;Com frequência, após a instalação de atualizações, é preciso reiniciar o computador. Normalmente, o Windows tenta perceber um horário em que você não usa o computador (de madrugada, por exemplo) e reinicia nesse horário. Se preferir, você pode agendar um horário para ele reiniciar.&lt;/p&gt;
-
-&lt;p&gt;Para isso, clique no botão &lt;strong&gt;Iniciar&lt;/strong&gt;, no canto inferior esquerdo da tela, e depois clique em &lt;strong&gt;Configurações&lt;/strong&gt;. Na tela que aparece, clique em &lt;strong&gt;Atualização e segurança&lt;/strong&gt; e depois em &lt;strong&gt;Windows Update&lt;/strong&gt;. Clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Você chegará à seguinte tela, na qual pode selecionar &lt;strong&gt;Avisar antes de agendar reinicialização&lt;/strong&gt; em vez de &lt;strong&gt;Automático (recomendado)&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-05.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-05.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Feito isso, quando o Windows começar a instalar atualizações, você será solicitado a informar um horário para que ele possa reiniciar o computador e continuar a atualização:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-06.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-06.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-07.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-07.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&quot;bloquear-atualizações-específicas&quot;&gt;Bloquear atualizações específicas&lt;/h2&gt;
-
-&lt;p&gt;Se seu problema é causado por apenas uma atualização, uma boa alternativa é impedir que o sistema instale apenas a atualização indesejada. Para isso, a &lt;a href=&quot;http://www.microsoft.com.br/&quot;&gt;Microsoft&lt;/a&gt; lançou o pacote de solução de problemas &lt;strong&gt;Mostrar ou ocultar atualizações&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-08.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-08.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-09.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-09.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Para mais informações, consulte a &lt;a href=&quot;https://support.microsoft.com/pt-br/kb/3073930&quot;&gt;base de dados de conhecimento da Microsoft&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;adiar-atualizações&quot;&gt;Adiar atualizações&lt;/h2&gt;
-
-&lt;p&gt;Se você utiliza uma edição profissional do Windows, pode &lt;a href=&quot;http://windows.microsoft.com/pt-br/windows-10/defer-upgrades-in-windows-10&quot;&gt;adiar atualizações&lt;/a&gt;. Esse recurso é especialmente útil para quem utiliza o Windows na empresa e precisa de estabilidade: atualizações de segurança são sempre instaladas assim que lançadas, mas recursos novos podem ter sua instalação adiada até que tenham sido bastante testados e a Microsoft possa assegurar o seu correto funcionamento.&lt;/p&gt;
-
-&lt;p&gt;Para configurar o Windows Update para adiar atualizações, clique no botão &lt;strong&gt;Iniciar&lt;/strong&gt;, no canto inferior esquerdo da tela, e depois clique em &lt;strong&gt;Configurações&lt;/strong&gt;. Na tela que aparece, clique em &lt;strong&gt;Atualização e segurança&lt;/strong&gt; e depois em &lt;strong&gt;Windows Update&lt;/strong&gt;. Clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Você chegará à seguinte tela, na qual pode ativar a opção &lt;strong&gt;Adiar atualizações&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-05.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-05.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&quot;configurar-atualizações-pela-política-de-grupo&quot;&gt;Configurar atualizações pela política de grupo&lt;/h2&gt;
-
-&lt;p&gt;Se você utiliza uma edição profissional do Windows, pode configurar as atualizações automáticas por meio da política de grupo da mesma maneira como era possível em versões anteriores do Windows.&lt;/p&gt;
-
-&lt;p&gt;Para acessar o editor de política de grupo, abra o menu &lt;strong&gt;Iniciar&lt;/strong&gt;, pesquise por &lt;strong&gt;gpedit.msc&lt;/strong&gt; e execute o editor de política de grupo como administrador:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-10.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-10.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Na estrutura de árvore da esquerda, navegue para &lt;strong&gt;Configuração do Computador&lt;/strong&gt;, &lt;strong&gt;Modelos Administrativos&lt;/strong&gt;, &lt;strong&gt;Componentes do Windows&lt;/strong&gt;, &lt;strong&gt;Windows Update&lt;/strong&gt;. À direita, localize o item &lt;strong&gt;Configurar Atualizações Automáticas&lt;/strong&gt; e clique duas vezes nele:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-11.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-11.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Na tela que aparece, selecione &lt;strong&gt;Habilitado&lt;/strong&gt; e em &lt;strong&gt;Opções&lt;/strong&gt; configure como desejar. Você pode selecionar, por exemplo, &lt;strong&gt;Avisar antes de baixar e de instalar qualquer atualização&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-12.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-12.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; nessa mesma tela, se você selecionar &lt;strong&gt;Desabilitado&lt;/strong&gt;, em vez de &lt;strong&gt;Habilitado&lt;/strong&gt;, desativará as atualizações do Windows por completo.&lt;/p&gt;
-
-&lt;p&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; e feche o editor de política de grupo. Agora acesse as configurações do Windows Update (menu &lt;strong&gt;Iniciar&lt;/strong&gt;, &lt;strong&gt;Configurações&lt;/strong&gt;, &lt;strong&gt;Atualização e segurança&lt;/strong&gt;, &lt;strong&gt;Windows Update&lt;/strong&gt;) e clique em &lt;strong&gt;Verificar se há atualizações&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-04.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-04.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Logo em seguida, quando o Windows começar a buscar atualizações, clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Observe nessa tela a mensagem &lt;strong&gt;Algumas configurações são gerenciadas pela sua organização&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-13.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-13.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Observe também que não é possível escolher como as atualizações são instaladas: essa opção está desabilitada, mostrando a configuração escolhida no editor de política de grupo.&lt;/p&gt;
-
-&lt;p&gt;Nesse caso, só é possível configurar o Windows Update pelo editor de política de grupo. Caso deseje voltar a configurar o Windows Update por essa tela, volte à tela &lt;strong&gt;Configurar Atualizações Automáticas&lt;/strong&gt; no editor de política de grupo, selecione &lt;strong&gt;Não Configurado&lt;/strong&gt; e clique em &lt;strong&gt;OK&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;configurar-atualizações-pelo-registro&quot;&gt;Configurar atualizações pelo registro&lt;/h2&gt;
-
-&lt;p&gt;Nas edições profissionais do Windows, também é possível fazer a configuração descrita acima pelo registro. Na verdade, a tela &lt;strong&gt;Configurar Atualizações Automáticas&lt;/strong&gt; é apenas uma interface gráfica para essa configuração.&lt;/p&gt;
-
-&lt;p&gt;Abra o &lt;strong&gt;menu Iniciar&lt;/strong&gt;, pesquise por &lt;strong&gt;regedit&lt;/strong&gt; e execute o editor de registro como administrador:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/09/inicializacao-rapida-5.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/09/inicializacao-rapida-5.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Navegue até a chave de registro &lt;strong&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU&lt;/strong&gt;. Caso essas duas últimas chaves não existam, você terá que criá-las: navegue até a chave &lt;strong&gt;HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows&lt;/strong&gt;, dentro dela crie uma chave &lt;strong&gt;WindowsUpdate&lt;/strong&gt; e, dentro desta, uma chave &lt;strong&gt;AU&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Modifique (se necessário, antes, crie) o valor &lt;strong&gt;AUOptions&lt;/strong&gt;, do tipo &lt;strong&gt;REG_DWORD&lt;/strong&gt; para um dos valores a seguir:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;2 - Avisar antes de baixar e de instalar qualquer atualização;&lt;/li&gt;
-  &lt;li&gt;3 - Baixar automaticamente as atualizações e avisar quando elas estiverem prontas para serem instaladas; ou&lt;/li&gt;
-  &lt;li&gt;4 - Baixar automaticamente e agendar a instalação.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; e feche o editor de registro:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-14.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-14.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Agora acesse as configurações do Windows Update (menu &lt;strong&gt;Iniciar&lt;/strong&gt;, &lt;strong&gt;Configurações&lt;/strong&gt;, &lt;strong&gt;Atualização e segurança&lt;/strong&gt;, &lt;strong&gt;Windows Update&lt;/strong&gt;) e clique em &lt;strong&gt;Verificar se há atualizações&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-04.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-04.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Logo em seguida, quando o Windows começar a buscar atualizações, clique em &lt;strong&gt;Opções avançadas&lt;/strong&gt;. Observe nessa tela a mensagem &lt;strong&gt;Algumas configurações são gerenciadas pela sua organização&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-13.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-13.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Observe também que não é possível escolher como as atualizações são instaladas: essa opção está desabilitada, mostrando a configuração correspondente ao valor existente na chave de registro.&lt;/p&gt;
-
-&lt;h2 id=&quot;desativar-o-serviço-do-windows-update&quot;&gt;Desativar o serviço do Windows Update&lt;/h2&gt;
-
-&lt;p&gt;Uma solução extrema é desativar o serviço do Windows Update, de modo que o Windows não busca nem baixa atualizações. É possível ativar esse serviço novamente em um momento oportuno para que o sistema possa se atualizar.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; essa não é a melhor opção para contornar problemas com as atualizações do Windows. Fazendo isso, seu sistema não receberá atualização alguma, nem mesmo as relativas a segurança. Considere utilizar uma das alternativas anteriores.&lt;/p&gt;
-
-&lt;p&gt;Para desativar o serviço do Windows Update, abra o menu &lt;strong&gt;Iniciar&lt;/strong&gt;, pesquise por &lt;strong&gt;services.msc&lt;/strong&gt; e execute o gerenciador de serviços como administrador:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-15.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-15.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Na lista de serviços, procure pelo serviço &lt;strong&gt;Windows Update&lt;/strong&gt; (ele deve ser um dos últimos) e clique duas vezes nele:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-16.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-16.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Na tela que aparece, em &lt;strong&gt;Tipo de inicialização&lt;/strong&gt; selecione &lt;strong&gt;Desativado&lt;/strong&gt; e clique em &lt;strong&gt;OK&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/windows-atualizacoes-17.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/windows-atualizacoes-17.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Pronto, pode fechar o gerenciador de serviços.&lt;/p&gt;
-
-&lt;h2 id=&quot;referências&quot;&gt;Referências&lt;/h2&gt;
-
-&lt;p&gt;As páginas nas quais encontrei as informações necessárias para redigir esse tutorial foram:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.howtogeek.com/223068/what-you-need-to-know-about-windows-update-on-windows-10/&quot;&gt;What You Need to Know About Windows Update on Windows 10&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.howtogeek.com/224471/how-to-prevent-windows-10-from-automatically-downloading-updates/&quot;&gt;How to Prevent Windows 10 From Automatically Downloading Updates&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.thewindowsclub.com/turn-off-windows-update-in-windows-10&quot;&gt;How to turn off Windows Update in Windows 10&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.howtogeek.com/223083/what-does-&amp;quot;defer-upgrades&amp;quot;-in-windows-10-mean/&quot;&gt;What Does “Defer Upgrades” in Windows 10 Mean?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.thewindowsclub.com/block-unwanted-windows-updates-in-windows-10&quot;&gt;How to block unwanted Windows Updates in Windows 10&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Espero que possa ter ajudado! Dúvidas nos comentários!&lt;/p&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">Precisou reiniciar o computador, estava com pressa e se esbarrou nas atualizações do Windows 10? Pior: ele passou um tempão tentando instalar as atualizações, depois falhou e passou mais outra eternidade desfazendo o trabalho? Veja aqui como ter um pouco mais de controle sobre as atualizações do Windows.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2015/12/windows-atualizacoes-00.jpg" /></entry></feed>
+&lt;p&gt;Espero que possa ter ajudado! Dúvidas nos comentários!&lt;/p&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">De uma hora para outra, o WhatsApp foi bloqueado no Brasil. Mas há artifícios que possibilitam a utilização do aplicativo, mesmo com o bloqueio das operadoras. Aqui veremos um deles: o aplicativo Psiphon. Vale observar que o Psiphon também permite o uso de quaisquer sites e aplicativos bloqueados ou censurados pelo responsável pela rede (seja a empresa, organização, universidade, operadora, etc). Porque o WhatsApp deixou de funcionar? A Justiça ordenou que as operadoras de telefonia bloqueassem o uso do aplicativo WhatsApp em todo o Brasil por 48 horas, começando à meia noite (0h) dessa quinta-feira 17 de dezembro de 2015. Esse bloqueio aconteceu porque a empresa responsável pelo WhatsApp descumpriu uma determinação judicial. Como o processo corre em segredo de justiça, quase nenhuma informação é revelada. O fato é que, mesmo sem saber ao certo porque, muita gente ficou na mão sem poder usar o WhatsApp de ontem pra hoje. As pessoas já começaram a migrar para outros aplicativos semelhantes. Uma solução para quem não deseja ficar sem usar o serviço de mensagens é utilizar aplicativos que visam burlar a censura na Internet, a exemplo do Psiphon. Como funciona o Psiphon? O Psiphon burla a censura ou bloqueio imposta ao seu computador ou dispositivo móvel (smartphone ou tablet) por meio de uma conexão em forma de túnel que ele estabelece com algum outro computador anônimo em algum outro lugar do mundo. Ele atravessa os dados que chegam e saem de você por esse túnel. Dessa maneira, os dados evitam o caminho comum, que está bloqueado, e passam por outro caminho, que não está censurado. Instalando e usando o Psiphon no Android Em smartphones e tablets com Android, o Psiphon pode ser baixado e instalado pela Play Store, como a maioria dos aplicativos: Clique para obter o Psiphon na Play Store Observação: o ideal é que você instale o Psiphon em seu aparelho antes mesmo de precisar, porque pode ser que a rede que você estiver usando no momento em que realmente precisar não permita essa instalação. Para iniciá-lo, procure pelo ícone na tela inicial ou na lista de aplicativos: Assim que o aplicativo é iniciado, ele já tenta criar o túnel. Diante disso, o Android exibe um alerta. Marque a opção Confio nesse aplicativo e toque em OK: Quando a conexão é estabelecida com sucesso, o aplicativo abre no navegador sua página oficial: A partir de agora, você já pode acessar sites e usar aplicativos censurados. Quando não quiser usar mais o túnel, volte ao aplicativo e clique em Stop: Usando o Psiphon no Windows No computador, não é necessário instalar o Psiphon: basta baixar e começar a usar. Acesse o site do Psiphon e clique em Download, em seguida clique no link do Psiphon para Windows: Observação: o ideal é que você baixe o Psiphon antes mesmo de precisar, porque pode ser que a rede que você estiver usando no momento em que realmente precisar não permita o acesso ao site do Psiphon. Você pode baixá-lo em um computador não censurado e carregá-lo consigo em um pendrive, por exemplo. Quando acabar o download, inicie o aplicativo, ele estabelecerá a conexão: Quando a conexão é estabelecida com sucesso, o aplicativo abre no navegador sua página oficial. A partir de agora, você já pode acessar sites e usar aplicativos censurados. Quando não quiser mais usar o túnel, volte ao aplicativo e clique em Disconnect. E se bloquearem o Psiphon também? Nesse caso, não será possível burlar a censura ou bloqueio imposto pela rede usando o Psiphon, mas você pode tentar usar outros aplicativos semelhantes, a exemplo do Tor ou do Hola. Uma pesquisa na Internet pode mostrar mais alternativas. Há Psiphon para Linux? No site do Psiphon não há uma opção de download para o Linux. Há evidências de que é possível utilizar a versão para Windows no Linux com o Wine, mas é mais prático utilizar o Tor, que dispõe de uma versão própria para Linux. Espero que possa ter ajudado! Dúvidas nos comentários!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2015/12/vpn.png" /></entry></feed>
