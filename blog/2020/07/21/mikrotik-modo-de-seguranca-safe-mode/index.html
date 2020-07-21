@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="pt" prefix="
+    addthis: http://www.addthis.com/help/api-spec
+    og: http://ogp.me/ns#
+    fb: http://ogp.me/ns/fb#
+    article: http://ogp.me/ns/article#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+        <script type="text/javascript">
+            if (("vinyanalista.github.io" == window.location.host) && (window.location.protocol != "https:")) {
+                window.location = window.location.toString().replace(/^http:/, "https:");
+            }
+        </script>
+    
+
+    <title>MikroTik: modo de segurança (Safe Mode) - Antônio Vinícius</title>
+    <meta name="author" content="Antônio Vinícius">
+    <meta name="description" content="No post anterior, apresentei o roteador e ponto de acesso sem fio doméstico MikroTik hAP ac lite TC. Hoje, vamos falar sobre um de seus vários recursos: o mo...">
+    <link rel="canonical" href="https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode/">
+    <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="https://vinyanalista.github.io/feed.xml" />
+
+    <!-- OpenSearch -->
+    <link rel="search" type="application/opensearchdescription+xml" title="Pesquisar em Antônio Vinícius" href="https://vinyanalista.github.io/opensearch.xml" />
+
+    <!-- Open Graph -->
+    
+        <meta property="article:published_time" content="2020-07-21 09:00:00 -0300"/>
+        
+            <meta property="article:publisher" content="https://facebook.com/pages/vinyanalistacombr/1604841683119097" />
+        
+    
+    
+    
+        <meta property="fb:page_id" content="1604841683119097" />
+    
+    <meta property="og:description" content="No post anterior, apresentei o roteador e ponto de acesso sem fio doméstico MikroTik hAP ac lite TC. Hoje, vamos falar sobre um de seus vários recursos: o mo..." />
+    
+        <meta property="og:image" content="https://vinyanalista.github.io/files/2020/07/RB952Ui-5ac2nD-TC.png" />
+    
+    <meta property="og:site_name" content="Antônio Vinícius" />
+    <meta property="og:title" content="MikroTik: modo de segurança (Safe Mode)" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode/" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@vinyanalista" />
+    
+
+    <!-- Favicons (made with RealFaviconGenerator.net) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://vinyanalista.github.io/apple-touch-icon.png?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://vinyanalista.github.io/favicon-32x32.png?v=4">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://vinyanalista.github.io/favicon-16x16.png?v=4">
+    <link rel="manifest" href="https://vinyanalista.github.io/site.webmanifest?v=4">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=4" color="#2196f3">
+    <link rel="shortcut icon" href="https://vinyanalista.github.io/favicon.ico?v=4">
+    <meta name="msapplication-TileColor" content="#2196f3">
+    <meta name="theme-color" content="#2196f3">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+        <!--<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.2/dist/css/bootstrap-material-design.min.css" integrity="sha384-dI6l3oYG+wVvjfdlixt6+FMddrb9+uejLU/wMhQFKklk7RDtSDBfe/XuF1dkcgVV" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="/libs/bootstrap-material-design/4.1.2/custom/bootstrap-material-design.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- JS -->
+    
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha256-x3YZWtRjM8bJqf48dFAv/qmgL68SI4jqNWeSLMZaMGA=" crossorigin="anonymous"></script>
+        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+        <script src="https://unpkg.com/bootstrap-material-design@4.1.2/dist/js/bootstrap-material-design.min.js" integrity="sha384-aWO+CcMRDQLEvnT8RdnCxWbs4C76Ryoo4pzYpGNW2vlHTHiPA7gpBzIB5nYwYfLg" crossorigin="anonymous"></script>
+    
+    <script src="/assets/js/main.js"></script>
+
+    
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65333685-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-65333685-1');
+        </script>
+        <!-- End Google Analytics -->
+    
+
+    
+        <!-- Google AdSense -->
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+    
+        <!-- AddThis -->
+        <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7774466af48b4f"></script>
+        <script type="text/javascript">
+            var addthis_config = {
+                data_track_clickback: true,
+                data_track_addressbar: true,
+                ui_language: 'pt'
+            };
+            var addthis_share = {
+                url: 'https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode/',
+                title: document.title,
+                description: 'No post anterior, apresentei o roteador e ponto de acesso sem fio doméstico MikroTik hAP ac lite TC. Hoje, vamos falar sobre um de seus vários recursos: o modo de segurança.Enquanto manuseia o MikroTik, pode ocorrer de você alterar alguma configuração e fazer com que ele se torne inacessível. Geralmente, isso ocorre por acidente, mas...'
+            };
+        </script>
+        <!-- End AddThis -->
+    
+</head>
+
+
+<body itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+        <!-- Fixed navbar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+    <div class="container">
+        <button type="button" class="navbar-toggler" data-toggle="drawer" data-target="#drawer">
+            <span class="sr-only">Exibir/esconder navegação</span>
+            <i class="material-icons">menu</i>
+        </button>
+
+        <a class="navbar-brand" href="/">Antônio Vinícius</a>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog/category/trabalhos/">Trabalhos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://lattes.cnpq.br/2162371468280338">Currículo</a>
+                </li>
+            </ul>
+            <form action="/search/" class="form-inline" id="navbar-search-form" method="get" role="search">
+                
+                
+                <div class="input-group">
+                    <input class="form-control search-field" id="navbar-search-field" name="q" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary btn-number search-button" id="navbar-search-button" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div><!--#navbar-->
+    </div><!--.container-->
+</nav>
+
+        <!-- Navigation drawer -->
+<div id="drawer" class="bmd-layout-drawer bg-faded">
+    <header>
+        <a class="navbar-brand" href="/">Antônio Vinícius</a>
+    </header>
+    <form action="/search/" class="form-inline border-top" id="drawer-search-form" method="get" role="search">
+        
+        
+        <div class="bmd-form-group-sm">
+            <div class="input-group">
+                <input class="form-control search-field" id="drawer-search-field" name="q" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary btn-number search-button" id="drawer-search-button" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div><!-- .input-group -->
+        </div><!-- .bmd-form-group-sm -->
+    </form>
+    <ul class="list-group list-group-flush border-top" id="drawer-links">
+        <li class="list-group-item">
+            <a class="nav-link" href="/">Blog</a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="/blog/category/trabalhos/">Trabalhos</a>
+        </li>
+        <li class="list-group-item">
+            <a class="nav-link" href="http://lattes.cnpq.br/2162371468280338">Currículo</a>
+        </li>
+    </ul>
+</div>
+
+
+        <main class="bmd-layout-content">
+            <div class="container" id="main-container">
+                <div class="row">
+                    <div class='col-sm-8'>
+                        <div class="blog-post card mb-3">
+    <header class="card-header">
+        <h1 class="blog-post-title" itemprop="headline name">
+            <a class="blog-post-link" href="/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode/" itemprop="mainEntityOfPage url">
+                MikroTik: modo de segurança (Safe Mode)
+            </a>
+        </h1>
+        <div class="blog-post-meta row">
+            <div class='col-sm-6'>
+                <p class="blog-post-date" itemprop="datePublished" content="2020-07-21">
+                    <a href="/blog/2020/07/21/">
+                        21 de
+                        
+                        Julho
+                        
+                        de 2020
+                    </a>
+                </p>
+                <meta itemprop="dateModified" content="2020-07-21" />
+            </div>
+            <div class='col-sm-6'>
+                
+                    <div class='blog-post-share'>
+                        <!-- AddThis Sharing Buttons -->
+                        <div class="addthis_toolbox addthis_default_style">
+                            <a class="addthis_button_facebook"></a>
+                            <a class="addthis_button_twitter" data-via="vinyanalista"></a>
+                            <a class="addthis_button_google_plusone_share"></a>
+                            <a class="addthis_button_favorites"></a>
+                            <a class="addthis_button_compact"></a>
+                            <a class="addthis_counter addthis_bubble_style"></a>
+                        </div>
+                        <!-- AddThis Sharing Buttons End -->
+                    </div><!-- .blog-post-share -->
+                
+            </div><!-- .col-sm-6 -->
+        </div><!-- .blog-post-meta -->
+    </header>
+
+    <article class="blog-post-content card-body">
+        
+            
+    <!-- Google AdSense -->
+    <ins class="adsbygoogle" id="content_ad_unit_1"
+        style="display:block"
+        data-ad-client="ca-pub-5193467168351289"
+        data-ad-slot="5988452654"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <!-- End Google AdSense -->
+
+
+        
+
+        <div itemprop="articleBody mainEntity">
+            <div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/07/RB952Ui-5ac2nD-TC.png" title="">
+<img src="/files/2020/07/RB952Ui-5ac2nD-TC.png" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" style="max-width: 256px;" />
+</a>
+
+</div>
+
+<p>No <a href="/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/"><em>post</em> anterior</a>, apresentei o roteador e ponto de acesso sem fio doméstico <a href="/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/">MikroTik hAP ac lite TC</a>. Hoje, vamos falar sobre um de seus vários recursos: o modo de segurança.</p>
+
+<p>Enquanto manuseia o MikroTik, pode ocorrer de você alterar alguma configuração e fazer com que ele se torne inacessível. Geralmente, isso ocorre por acidente, mas não há como desfazer a última alteração depois que o acesso é perdido. Por exemplo, você está alterando as configurações do <em>firewall</em> e insere uma nova regra que acaba por impedir seu acesso.</p>
+
+<p>O MikroTik traz um recurso chamado <strong>modo de segurança</strong> (<em>safe mode</em>) que pode ser usado para prevenir situações assim. Com o modo de segurança ativado, se o roteador percebe que o acesso ao computador foi perdido, ele automaticamente descarta as alterações feitas após a ativação do modo de segurança e se reinicia.</p>
+
+<p>O modo de segurança pode ser ativado e desativado pelo botão <strong>Safe Mode</strong> que fica na barra superior do WinBox:</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/07/mikrotik-safe-mode-01.jpg" title="">
+<img src="/files/2020/07/mikrotik-safe-mode-01.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Quando o modo de segurança está <strong>desativado</strong>, o botão tem a aparência normal de um botão, como na figura acima.</p>
+
+<p>Antes de fazer uma configuração que você desconfia que pode fazer você perder o acesso, ative o modo de segurança clicando no botão <strong>Safe Mode</strong>.</p>
+
+<p>Quando o modo de segurança está <strong>ativado</strong>, o botão aparece pressionado (escuro, fundo):</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/07/mikrotik-safe-mode-02.jpg" title="">
+<img src="/files/2020/07/mikrotik-safe-mode-02.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Após fazer as configurações que você precisa fazer, se tudo estiver funcionando, lembre-se de desativar o modo de segurança. Para isso, clique de novo no botão <strong>Safe Mode</strong>, que volta à aparência normal de um botão, indicando que o modo de segurança foi desativado.</p>
+
+<h2 id="testando-o-modo-de-segurança">Testando o modo de segurança</h2>
+
+<p>Para ver na prática como o modo de segurança funciona, vamos ativá-lo e inserir uma regra no <em>firewall</em> do MikroTik para nos bloquear, o que deve fazer com que o roteador se reinicie.</p>
+
+<p>Verifique qual é o seu endereço IP. No Linux, isso pode ser feito com o comando:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>$ ip -c a
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/07/mikrotik-safe-mode-03.jpg" title="">
+<img src="/files/2020/07/mikrotik-safe-mode-03.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>No meu caso, o MikroTik forneceu ao meu computador via <a href="https://pt.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol">DHCP</a> o endereço <code class="highlighter-rouge">10.0.0.254</code>.</p>
+
+<p>Abra uma janela do terminal e deixe um <strong><a href="https://man7.org/linux/man-pages/man8/ping.8.html">ping</a></strong> rodando para o MikroTik:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>$ ping 10.0.0.1
+PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.
+64 bytes from 10.0.0.1: icmp_seq=1 ttl=64 time=2.21 ms
+64 bytes from 10.0.0.1: icmp_seq=2 ttl=64 time=2.36 ms
+64 bytes from 10.0.0.1: icmp_seq=3 ttl=64 time=2.25 ms
+64 bytes from 10.0.0.1: icmp_seq=4 ttl=64 time=2.77 ms
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Abra o WinBox e ative o modo de segurança como explicado acima.</p>
+
+<p>Agora é seguro ajustar as configurações do MikroTik.</p>
+
+<p>No menu à esquerda, abra o submenu <strong>IP</strong> e clique em <strong>Firewall</strong>:</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/07/mikrotik-safe-mode-04.jpg" title="">
+<img src="/files/2020/07/mikrotik-safe-mode-04.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Na janela <strong>Firewall</strong>, que se abre no WinBox, na aba <strong>Filter Rules</strong> (regras do filtro), clique no botão <strong>Add</strong> (adicionar):</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/07/mikrotik-safe-mode-05.jpg" title="">
+<img src="/files/2020/07/mikrotik-safe-mode-05.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Na caixa de diálogo <strong>New Firewall Rule</strong> (nova regra de <em>firewall</em>), na aba <strong>General</strong> (geral), no campo <strong>Chain</strong> selecione <strong>input</strong> (entrada) e em <strong>Src. Address</strong> (endereço de origem), informe o endereço IP do seu computador (no meu caso, <code class="highlighter-rouge">10.0.0.254</code>):</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/07/mikrotik-safe-mode-06.jpg" title="">
+<img src="/files/2020/07/mikrotik-safe-mode-06.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Mude para a aba <strong>Action</strong> (ação). No campo <strong>Action</strong>, selecione <strong>reject</strong> (rejeitar) e clique em <strong>OK</strong>:</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/07/mikrotik-safe-mode-07.jpg" title="">
+<img src="/files/2020/07/mikrotik-safe-mode-07.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>A regra é adicionada ao final da lista. Mova-a para o início da lista:</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/07/mikrotik-safe-mode-08.png" title="">
+<img src="/files/2020/07/mikrotik-safe-mode-08.png" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Feito isso, o <em>firewall</em> do MikroTik começa a bloquear a comunicação com seu computador, fazendo com que o roteador fique inacessível.</p>
+
+<p>Pelo comando <strong>ping</strong>, é possível ver a perda de acesso:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>64 bytes from 10.0.0.1: icmp_seq=250 ttl=64 time=19.1 ms
+64 bytes from 10.0.0.1: icmp_seq=251 ttl=64 time=6.87 ms
+From 10.0.0.1 icmp_seq=252 Destination Net Unreachable
+From 10.0.0.1 icmp_seq=253 Destination Net Unreachable
+From 10.0.0.1 icmp_seq=254 Destination Net Unreachable
+From 10.0.0.1 icmp_seq=255 Destination Net Unreachable
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>O WinBox também fechará sua janela e voltará para a tela de <em>login</em>:</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/07/mikrotik-safe-mode-09.png" title="">
+<img src="/files/2020/07/mikrotik-safe-mode-09.png" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>Mas nesse caso, como o modo de segurança estava ativado, basta você esperar alguns segundos enquanto o MikroTik se reinicia e logo poderá acessá-lo novamente. Observando o comando <strong>ping</strong> é possível saber quando o MikroTik voltou:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>From 10.0.0.1 icmp_seq=280 Destination Net Unreachable
+From 10.0.0.1 icmp_seq=281 Destination Net Unreachable
+64 bytes from 10.0.0.1: icmp_seq=282 ttl=64 time=9.52 ms
+64 bytes from 10.0.0.1: icmp_seq=283 ttl=64 time=16.2 ms
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Tome cuidado para não fechar a janela do WinBox com o modo de segurança ativado. Nesse caso, o MikroTik perguntará se deseja sair <strong>aplicando</strong> as alterações:</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2020/07/mikrotik-safe-mode-10.jpg" title="">
+<img src="/files/2020/07/mikrotik-safe-mode-10.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+
+        </div>
+
+        
+            <!-- AddThis Sharing Buttons -->
+            <div class="gap"></div>
+            <h2>Gostou? Então compartilha!</h2>
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                <a class="addthis_button_facebook"></a>
+                <a class="addthis_button_twitter" data-via="vinyanalista"></a>
+                <a class="addthis_button_google_plusone_share"></a>
+                <a class="addthis_button_email"></a>
+                <a class="addthis_button_favorites"></a>
+                <a class="addthis addthis_button_print"></a>
+                <a class="addthis_button_pdfonline"></a>
+                <a class="addthis_button_compact"></a>
+                <a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+            <!-- AddThis Sharing Buttons End -->
+        
+
+        
+            <!-- Disqus -->
+            <div class="gap"></div>
+            <h2>Comentários</h2>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = 'https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode/';
+                };
+
+                (function() {
+                    var d = document, s = d.createElement('script');
+
+                    s.src = '//vinyanalista.disqus.com/embed.js';
+
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>
+                <p><a href="http://www.enable-javascript.com/pt/" target="_blank">Habilite o JavaScript</a> para ver os <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentários providos pelo Disqus</a>.</p>
+            </noscript>
+            <!-- Disqus End -->
+        
+    </article>
+</div><!-- .blog-post -->
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card mb-3">
+    <div class="card-header">
+        <h3><a name="about"></a><a name="author"></a>Sobre mim</h3>
+    </div>
+    <div class="card-body" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        
+            <p class="text-center">
+                <a href='https://secure.gravatar.com/avatar/5415f4267b44aa9f51b6f89ac4d1656b' title='Antônio Vinícius'>
+                    <img src='https://secure.gravatar.com/avatar/5415f4267b44aa9f51b6f89ac4d1656b' alt='Antônio Vinícius' class='img-fluid img-thumbnail rounded-circle'>
+                </a>
+            </p>
+        
+        
+            <p class="lead text-center" itemprop="name">
+                Antônio Vinícius
+            </p>
+        
+        <link itemprop="url" href="https://vinyanalista.github.io">
+        <p>
+            Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)
+        </p>
+        <p class='text-center'>
+            <a href='http://lattes.cnpq.br/2162371468280338' title='Currículo Lattes' itemprop='sameAs'>
+                <img src='/assets/img/curriculo_lattes.png' alt='Currículo Lattes' class='img-fluid lattes'>
+            </a>
+        </p>
+        
+            <!-- AddThis Follow Buttons -->
+            <div class="addthis_toolbox addthis_32x32_style addthis_default_style addthis_follow_buttons text-center">
+                
+                    <a href="https://facebook.com/pages/vinyanalistacombr/1604841683119097" class="addthis_button_facebook_follow" addthis:userid="pages/vinyanalistacombr/1604841683119097" itemprop="sameAs"></a>
+                
+                
+                    <a href="https://twitter.com/vinyanalista" class="addthis_button_twitter_follow" addthis:userid="vinyanalista" itemprop="sameAs"></a>
+                
+                
+                
+                    <a href="https://www.linkedin.com/in/vinyanalista" class="addthis_button_linkedin_follow" addthis:userid="vinyanalista" itemprop="sameAs"></a>
+                
+                
+                    <a href="https://youtube.com/user/viniciusifse" class="addthis_button_youtube_follow" addthis:userid="viniciusifse" itemprop="sameAs"></a>
+                
+                
+                
+                    <a href="https://github.com/vinyanalista" class="addthis_button_github_follow" addthis:userid="vinyanalista" itemprop="sameAs"></a>
+                
+                <a href="/feed.xml" class="addthis_button_rss_follow"></a>
+            </div>
+            <!-- AddThis Follow Buttons End -->
+        
+    </div><!-- .card-body -->
+</div><!-- .card -->
+
+
+    <div class="card mb-3">
+        <div class="card-body">
+            
+    <!-- Google AdSense -->
+    <ins class="adsbygoogle" id="sidebar_ad_unit"
+        style="display:block"
+        data-ad-client="ca-pub-5193467168351289"
+        data-ad-slot="4511719452"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <!-- End Google AdSense -->
+
+
+        </div><!-- .col-xs-12 -->
+    </div><!-- .row -->
+
+
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+    <div class="container">
+        Copyright &copy; 2020 <a href='#author'>Antônio Vinícius</a>. Todos os direitos reservados. Baseado no <a href='https://github.com/vinyanalista/material-jekyll-plus'>Material site template for Jekyll PLUS</a>.
+    </div>
+</footer>
+
+<meta itemprop="description" content="No post anterior, apresentei o roteador e ponto de acesso sem fio doméstico MikroTik hAP ac lite TC. Hoje, vamos falar sobre um de seus vários recursos: o modo de segurança.Enquanto manuseia o MikroTik, pode ocorrer de você alterar alguma configuração e fazer com que ele se torne inacessível. Geralmente, isso ocorre por acidente, mas...">
+
+
+    <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+        <meta itemprop="url" content="https://vinyanalista.github.io/files/2020/07/RB952Ui-5ac2nD-TC.png"/>
+        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+    </div>
+
+
+
+    <meta itemprop="inLanguage" content="pt"/>
+
+
+
+    <!-- Disqus -->
+    <script id="dsq-count-scr" src="//vinyanalista.disqus.com/count.js" async></script>
+    <!-- Disqus End -->
+
+
+
+    <!-- Google AdSense -->
+    
+        
+    <!-- Google AdSense -->
+    <ins class="adsbygoogle" id="content_ad_unit_2"
+        style="display:block"
+        data-ad-client="ca-pub-5193467168351289"
+        data-ad-slot="7465185857"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <!-- End Google AdSense -->
+
+
+    
+
+    <script type="text/javascript">
+        adsbygoogle = window.adsbygoogle || [];
+
+        $(document).ready(function(){
+            
+                var $ad = $('#content_ad_unit_2');
+                var $posts = $('.blog-post');
+                if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
+                    // Post listing
+                    var post;
+                    if ($posts.length > 2) {
+                        post = random_number(2, $posts.length);
+                    } else {
+                        post = 2;
+                    }
+                    $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
+                } else {
+                    // Page or post
+                    var $paragraphs = $('.blog-post-content p').filter(function() {
+                        return ($(this).closest('.no-ads-here').length == 0);
+                    });
+                    if ($paragraphs.length > 0) {
+                        var paragraph;
+                        if ($paragraphs.length > 1) {
+                            paragraph = random_number(1, $paragraphs.length);
+                        } else {
+                            paragraph = 1;
+                        }
+                        $paragraphs.eq(paragraph - 1).after($ad);
+                    } else {
+                        $ad.remove();
+                    }
+                }
+            
+            $('.adsbygoogle').each(function(index, element){
+                adsbygoogle.push({});
+            });
+        });
+    </script>
+    <!-- Google AdSense End -->
+
+
+
+            
+        </main>
+    </div><!-- .bmd-layout-container -->
+</body>
+</html>

@@ -1,4 +1,171 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinyanalista.github.io/" rel="alternate" type="text/html" hreflang="pt" /><updated>2020-07-20T00:43:42-03:00</updated><id>https://vinyanalista.github.io/feed.xml</id><title type="html">Antônio Vinícius</title><subtitle>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</subtitle><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><entry><title type="html">Primeiros passos com o MikroTik hAP ac: roteador profissional para a rede de casa</title><link href="https://vinyanalista.github.io/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/" rel="alternate" type="text/html" title="Primeiros passos com o MikroTik hAP ac: roteador profissional para a rede de casa" /><published>2020-07-20T00:30:00-03:00</published><updated>2020-07-20T00:42:36-03:00</updated><id>https://vinyanalista.github.io/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/">&lt;p&gt;Entre 2016 e 2017 trabalhei como analista de redes e tive a oportunidade de conhecer os equipamentos da &lt;a href=&quot;https://mikrotik.com/&quot;&gt;MikroTik&lt;/a&gt;, uma fabricante de dispositivos de redes, tais como &lt;em&gt;switches&lt;/em&gt;, antenas, roteadores, etc. Provavelmente a MikroTik é mais conhecida pela sua linha de roteadores &lt;a href=&quot;https://mikrotik.com/product/RB2011UiAS-RM&quot;&gt;RouterBOARD&lt;/a&gt;. Mas eu fiquei empolgado quando descobri que eles tinham também uma linha doméstica e logo comprei um roteador MikroTik pra mim.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinyanalista.github.io/" rel="alternate" type="text/html" hreflang="pt" /><updated>2020-07-21T09:06:52-03:00</updated><id>https://vinyanalista.github.io/feed.xml</id><title type="html">Antônio Vinícius</title><subtitle>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</subtitle><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><entry><title type="html">MikroTik: modo de segurança (Safe Mode)</title><link href="https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode/" rel="alternate" type="text/html" title="MikroTik: modo de segurança (Safe Mode)" /><published>2020-07-21T09:00:00-03:00</published><updated>2020-07-21T09:05:26-03:00</updated><id>https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode/">&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/RB952Ui-5ac2nD-TC.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/RB952Ui-5ac2nD-TC.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; style=&quot;max-width: 256px;&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;No &lt;a href=&quot;/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/&quot;&gt;&lt;em&gt;post&lt;/em&gt; anterior&lt;/a&gt;, apresentei o roteador e ponto de acesso sem fio doméstico &lt;a href=&quot;/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/&quot;&gt;MikroTik hAP ac lite TC&lt;/a&gt;. Hoje, vamos falar sobre um de seus vários recursos: o modo de segurança.&lt;/p&gt;
+
+&lt;p&gt;Enquanto manuseia o MikroTik, pode ocorrer de você alterar alguma configuração e fazer com que ele se torne inacessível. Geralmente, isso ocorre por acidente, mas não há como desfazer a última alteração depois que o acesso é perdido. Por exemplo, você está alterando as configurações do &lt;em&gt;firewall&lt;/em&gt; e insere uma nova regra que acaba por impedir seu acesso.&lt;/p&gt;
+
+&lt;p&gt;O MikroTik traz um recurso chamado &lt;strong&gt;modo de segurança&lt;/strong&gt; (&lt;em&gt;safe mode&lt;/em&gt;) que pode ser usado para prevenir situações assim. Com o modo de segurança ativado, se o roteador percebe que o acesso ao computador foi perdido, ele automaticamente descarta as alterações feitas após a ativação do modo de segurança e se reinicia.&lt;/p&gt;
+
+&lt;p&gt;O modo de segurança pode ser ativado e desativado pelo botão &lt;strong&gt;Safe Mode&lt;/strong&gt; que fica na barra superior do WinBox:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-safe-mode-01.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-safe-mode-01.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Quando o modo de segurança está &lt;strong&gt;desativado&lt;/strong&gt;, o botão tem a aparência normal de um botão, como na figura acima.&lt;/p&gt;
+
+&lt;p&gt;Antes de fazer uma configuração que você desconfia que pode fazer você perder o acesso, ative o modo de segurança clicando no botão &lt;strong&gt;Safe Mode&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Quando o modo de segurança está &lt;strong&gt;ativado&lt;/strong&gt;, o botão aparece pressionado (escuro, fundo):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-safe-mode-02.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-safe-mode-02.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Após fazer as configurações que você precisa fazer, se tudo estiver funcionando, lembre-se de desativar o modo de segurança. Para isso, clique de novo no botão &lt;strong&gt;Safe Mode&lt;/strong&gt;, que volta à aparência normal de um botão, indicando que o modo de segurança foi desativado.&lt;/p&gt;
+
+&lt;h2 id=&quot;testando-o-modo-de-segurança&quot;&gt;Testando o modo de segurança&lt;/h2&gt;
+
+&lt;p&gt;Para ver na prática como o modo de segurança funciona, vamos ativá-lo e inserir uma regra no &lt;em&gt;firewall&lt;/em&gt; do MikroTik para nos bloquear, o que deve fazer com que o roteador se reinicie.&lt;/p&gt;
+
+&lt;p&gt;Verifique qual é o seu endereço IP. No Linux, isso pode ser feito com o comando:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;$ ip -c a
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-safe-mode-03.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-safe-mode-03.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;No meu caso, o MikroTik forneceu ao meu computador via &lt;a href=&quot;https://pt.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol&quot;&gt;DHCP&lt;/a&gt; o endereço &lt;code class=&quot;highlighter-rouge&quot;&gt;10.0.0.254&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Abra uma janela do terminal e deixe um &lt;strong&gt;&lt;a href=&quot;https://man7.org/linux/man-pages/man8/ping.8.html&quot;&gt;ping&lt;/a&gt;&lt;/strong&gt; rodando para o MikroTik:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;$ ping 10.0.0.1
+PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.
+64 bytes from 10.0.0.1: icmp_seq=1 ttl=64 time=2.21 ms
+64 bytes from 10.0.0.1: icmp_seq=2 ttl=64 time=2.36 ms
+64 bytes from 10.0.0.1: icmp_seq=3 ttl=64 time=2.25 ms
+64 bytes from 10.0.0.1: icmp_seq=4 ttl=64 time=2.77 ms
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Abra o WinBox e ative o modo de segurança como explicado acima.&lt;/p&gt;
+
+&lt;p&gt;Agora é seguro ajustar as configurações do MikroTik.&lt;/p&gt;
+
+&lt;p&gt;No menu à esquerda, abra o submenu &lt;strong&gt;IP&lt;/strong&gt; e clique em &lt;strong&gt;Firewall&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-safe-mode-04.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-safe-mode-04.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Na janela &lt;strong&gt;Firewall&lt;/strong&gt;, que se abre no WinBox, na aba &lt;strong&gt;Filter Rules&lt;/strong&gt; (regras do filtro), clique no botão &lt;strong&gt;Add&lt;/strong&gt; (adicionar):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-safe-mode-05.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-safe-mode-05.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Na caixa de diálogo &lt;strong&gt;New Firewall Rule&lt;/strong&gt; (nova regra de &lt;em&gt;firewall&lt;/em&gt;), na aba &lt;strong&gt;General&lt;/strong&gt; (geral), no campo &lt;strong&gt;Chain&lt;/strong&gt; selecione &lt;strong&gt;input&lt;/strong&gt; (entrada) e em &lt;strong&gt;Src. Address&lt;/strong&gt; (endereço de origem), informe o endereço IP do seu computador (no meu caso, &lt;code class=&quot;highlighter-rouge&quot;&gt;10.0.0.254&lt;/code&gt;):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-safe-mode-06.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-safe-mode-06.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Mude para a aba &lt;strong&gt;Action&lt;/strong&gt; (ação). No campo &lt;strong&gt;Action&lt;/strong&gt;, selecione &lt;strong&gt;reject&lt;/strong&gt; (rejeitar) e clique em &lt;strong&gt;OK&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-safe-mode-07.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-safe-mode-07.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;A regra é adicionada ao final da lista. Mova-a para o início da lista:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-safe-mode-08.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-safe-mode-08.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Feito isso, o &lt;em&gt;firewall&lt;/em&gt; do MikroTik começa a bloquear a comunicação com seu computador, fazendo com que o roteador fique inacessível.&lt;/p&gt;
+
+&lt;p&gt;Pelo comando &lt;strong&gt;ping&lt;/strong&gt;, é possível ver a perda de acesso:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;64 bytes from 10.0.0.1: icmp_seq=250 ttl=64 time=19.1 ms
+64 bytes from 10.0.0.1: icmp_seq=251 ttl=64 time=6.87 ms
+From 10.0.0.1 icmp_seq=252 Destination Net Unreachable
+From 10.0.0.1 icmp_seq=253 Destination Net Unreachable
+From 10.0.0.1 icmp_seq=254 Destination Net Unreachable
+From 10.0.0.1 icmp_seq=255 Destination Net Unreachable
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;O WinBox também fechará sua janela e voltará para a tela de &lt;em&gt;login&lt;/em&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-safe-mode-09.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-safe-mode-09.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Mas nesse caso, como o modo de segurança estava ativado, basta você esperar alguns segundos enquanto o MikroTik se reinicia e logo poderá acessá-lo novamente. Observando o comando &lt;strong&gt;ping&lt;/strong&gt; é possível saber quando o MikroTik voltou:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;From 10.0.0.1 icmp_seq=280 Destination Net Unreachable
+From 10.0.0.1 icmp_seq=281 Destination Net Unreachable
+64 bytes from 10.0.0.1: icmp_seq=282 ttl=64 time=9.52 ms
+64 bytes from 10.0.0.1: icmp_seq=283 ttl=64 time=16.2 ms
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Tome cuidado para não fechar a janela do WinBox com o modo de segurança ativado. Nesse caso, o MikroTik perguntará se deseja sair &lt;strong&gt;aplicando&lt;/strong&gt; as alterações:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/mikrotik-safe-mode-10.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/mikrotik-safe-mode-10.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">No post anterior, apresentei o roteador e ponto de acesso sem fio doméstico MikroTik hAP ac lite TC. Hoje, vamos falar sobre um de seus vários recursos: o modo de segurança. Enquanto manuseia o MikroTik, pode ocorrer de você alterar alguma configuração e fazer com que ele se torne inacessível. Geralmente, isso ocorre por acidente, mas não há como desfazer a última alteração depois que o acesso é perdido. Por exemplo, você está alterando as configurações do firewall e insere uma nova regra que acaba por impedir seu acesso. O MikroTik traz um recurso chamado modo de segurança (safe mode) que pode ser usado para prevenir situações assim. Com o modo de segurança ativado, se o roteador percebe que o acesso ao computador foi perdido, ele automaticamente descarta as alterações feitas após a ativação do modo de segurança e se reinicia. O modo de segurança pode ser ativado e desativado pelo botão Safe Mode que fica na barra superior do WinBox: Quando o modo de segurança está desativado, o botão tem a aparência normal de um botão, como na figura acima. Antes de fazer uma configuração que você desconfia que pode fazer você perder o acesso, ative o modo de segurança clicando no botão Safe Mode. Quando o modo de segurança está ativado, o botão aparece pressionado (escuro, fundo): Após fazer as configurações que você precisa fazer, se tudo estiver funcionando, lembre-se de desativar o modo de segurança. Para isso, clique de novo no botão Safe Mode, que volta à aparência normal de um botão, indicando que o modo de segurança foi desativado. Testando o modo de segurança Para ver na prática como o modo de segurança funciona, vamos ativá-lo e inserir uma regra no firewall do MikroTik para nos bloquear, o que deve fazer com que o roteador se reinicie. Verifique qual é o seu endereço IP. No Linux, isso pode ser feito com o comando: 1 $ ip -c a No meu caso, o MikroTik forneceu ao meu computador via DHCP o endereço 10.0.0.254. Abra uma janela do terminal e deixe um ping rodando para o MikroTik: 1 2 3 4 5 6 $ ping 10.0.0.1 PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data. 64 bytes from 10.0.0.1: icmp_seq=1 ttl=64 time=2.21 ms 64 bytes from 10.0.0.1: icmp_seq=2 ttl=64 time=2.36 ms 64 bytes from 10.0.0.1: icmp_seq=3 ttl=64 time=2.25 ms 64 bytes from 10.0.0.1: icmp_seq=4 ttl=64 time=2.77 ms Abra o WinBox e ative o modo de segurança como explicado acima. Agora é seguro ajustar as configurações do MikroTik. No menu à esquerda, abra o submenu IP e clique em Firewall: Na janela Firewall, que se abre no WinBox, na aba Filter Rules (regras do filtro), clique no botão Add (adicionar): Na caixa de diálogo New Firewall Rule (nova regra de firewall), na aba General (geral), no campo Chain selecione input (entrada) e em Src. Address (endereço de origem), informe o endereço IP do seu computador (no meu caso, 10.0.0.254): Mude para a aba Action (ação). No campo Action, selecione reject (rejeitar) e clique em OK: A regra é adicionada ao final da lista. Mova-a para o início da lista: Feito isso, o firewall do MikroTik começa a bloquear a comunicação com seu computador, fazendo com que o roteador fique inacessível. Pelo comando ping, é possível ver a perda de acesso: 1 2 3 4 5 6 64 bytes from 10.0.0.1: icmp_seq=250 ttl=64 time=19.1 ms 64 bytes from 10.0.0.1: icmp_seq=251 ttl=64 time=6.87 ms From 10.0.0.1 icmp_seq=252 Destination Net Unreachable From 10.0.0.1 icmp_seq=253 Destination Net Unreachable From 10.0.0.1 icmp_seq=254 Destination Net Unreachable From 10.0.0.1 icmp_seq=255 Destination Net Unreachable O WinBox também fechará sua janela e voltará para a tela de login: Mas nesse caso, como o modo de segurança estava ativado, basta você esperar alguns segundos enquanto o MikroTik se reinicia e logo poderá acessá-lo novamente. Observando o comando ping é possível saber quando o MikroTik voltou: 1 2 3 4 From 10.0.0.1 icmp_seq=280 Destination Net Unreachable From 10.0.0.1 icmp_seq=281 Destination Net Unreachable 64 bytes from 10.0.0.1: icmp_seq=282 ttl=64 time=9.52 ms 64 bytes from 10.0.0.1: icmp_seq=283 ttl=64 time=16.2 ms Tome cuidado para não fechar a janela do WinBox com o modo de segurança ativado. Nesse caso, o MikroTik perguntará se deseja sair aplicando as alterações:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2020/07/RB952Ui-5ac2nD-TC.png" /></entry><entry><title type="html">Primeiros passos com o MikroTik hAP ac: roteador profissional para a rede de casa</title><link href="https://vinyanalista.github.io/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/" rel="alternate" type="text/html" title="Primeiros passos com o MikroTik hAP ac: roteador profissional para a rede de casa" /><published>2020-07-20T00:30:00-03:00</published><updated>2020-07-20T00:42:36-03:00</updated><id>https://vinyanalista.github.io/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/">&lt;p&gt;Entre 2016 e 2017 trabalhei como analista de redes e tive a oportunidade de conhecer os equipamentos da &lt;a href=&quot;https://mikrotik.com/&quot;&gt;MikroTik&lt;/a&gt;, uma fabricante de dispositivos de redes, tais como &lt;em&gt;switches&lt;/em&gt;, antenas, roteadores, etc. Provavelmente a MikroTik é mais conhecida pela sua linha de roteadores &lt;a href=&quot;https://mikrotik.com/product/RB2011UiAS-RM&quot;&gt;RouterBOARD&lt;/a&gt;. Mas eu fiquei empolgado quando descobri que eles tinham também uma linha doméstica e logo comprei um roteador MikroTik pra mim.&lt;/p&gt;
 
 &lt;p&gt;Como me mudei recentemente, decidi aproveitar a oportunidade para reconfigurá-lo e escrever alguns tutoriais mostrando suas funcionalidades.&lt;/p&gt;
 
@@ -2797,126 +2964,4 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
   &lt;li&gt;&lt;a href=&quot;https://www.dropbox.com/pt_BR/help/1964&quot;&gt;Como compartilhar e salvar capturas de tela com o Dropbox? (Central de ajuda do Dropbox)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://support.office.com/pt-br/article/Salvar-automaticamente-capturas-de-tela-no-OneDrive-d04df71c-1cb0-4ad6-9f9c-b08494d79d6a&quot;&gt;Salvar automaticamente capturas de tela no OneDrive&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://windows.microsoft.com/pt-br/windows-10/open-snipping-tool-and-take-a-screenshot&quot;&gt;Abrir a Ferramenta de Captura e tirar uma captura de tela - Ajuda do Windows&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">As funcionalidades de captura de tela que acompanham o Windows são um tanto limitadas. Confira aqui dicas e aplicativos para bater melhores capturas de tela.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2016/02/printscreen01.jpg" /></entry><entry><title type="html">Acesse sites e aplicativos censurados com o Psiphon</title><link href="https://vinyanalista.github.io/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/" rel="alternate" type="text/html" title="Acesse sites e aplicativos censurados com o Psiphon" /><published>2015-12-17T08:00:00-02:00</published><updated>2016-02-18T02:17:37-02:00</updated><id>https://vinyanalista.github.io/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/">&lt;p&gt;De uma hora para outra, &lt;a href=&quot;http://g1.globo.com/tecnologia/noticia/2015/12/operadoras-sao-intimadas-bloquear-whatsapp-no-brasil-por-48-horas.html&quot;&gt;o WhatsApp foi bloqueado no Brasil&lt;/a&gt;. Mas há artifícios que possibilitam a utilização do aplicativo, mesmo com o bloqueio das operadoras. Aqui veremos um deles: o aplicativo &lt;a href=&quot;https://psiphon3.com/pt_PT/index.html&quot;&gt;Psiphon&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/psiphon-00.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/psiphon-00.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Vale observar que o Psiphon também permite o uso de quaisquer &lt;em&gt;sites&lt;/em&gt; e aplicativos bloqueados ou censurados pelo responsável pela rede (seja a empresa, organização, universidade, operadora, etc).&lt;/p&gt;
-
-&lt;h2 id=&quot;porque-o-whatsapp-deixou-de-funcionar&quot;&gt;Porque o WhatsApp deixou de funcionar?&lt;/h2&gt;
-
-&lt;p&gt;A Justiça &lt;a href=&quot;http://g1.globo.com/tecnologia/noticia/2015/12/operadoras-sao-intimadas-bloquear-whatsapp-no-brasil-por-48-horas.html&quot;&gt;ordenou&lt;/a&gt; que as operadoras de telefonia bloqueassem o uso do aplicativo &lt;a href=&quot;https://www.whatsapp.com/?l=pt_br&quot;&gt;WhatsApp&lt;/a&gt; em todo o Brasil por 48 horas, começando à meia noite (0h) dessa quinta-feira 17 de dezembro de 2015. Esse bloqueio aconteceu porque a empresa responsável pelo WhatsApp descumpriu uma determinação judicial. Como o processo corre em segredo de justiça, quase nenhuma informação é revelada.&lt;/p&gt;
-
-&lt;p&gt;O fato é que, mesmo sem saber ao certo porque, muita gente ficou na mão sem poder usar o WhatsApp de ontem pra hoje. &lt;a href=&quot;http://g1.globo.com/tecnologia/noticia/2015/12/telegram-whatsapp-bloqueado-faz-app-ter-500-mil-novos-brasileiros-em-3-h.html&quot;&gt;As pessoas já começaram a migrar&lt;/a&gt; para outros &lt;a href=&quot;http://www.tecmundo.com.br/bate-papo/51611-10-alternativas-para-substituir-o-whatsapp.htm&quot;&gt;aplicativos semelhantes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Uma solução para quem não deseja ficar sem usar o serviço de mensagens é utilizar aplicativos que visam burlar a censura na Internet, a exemplo do Psiphon.&lt;/p&gt;
-
-&lt;h2 id=&quot;como-funciona-o-psiphon&quot;&gt;Como funciona o Psiphon?&lt;/h2&gt;
-
-&lt;p&gt;O Psiphon burla a censura ou bloqueio imposta ao seu computador ou dispositivo móvel (&lt;em&gt;smartphone&lt;/em&gt; ou &lt;em&gt;tablet&lt;/em&gt;) por meio de uma conexão em forma de &lt;a href=&quot;http://www.tecmundo.com.br/1427-o-que-e-vpn-.htm&quot;&gt;túnel&lt;/a&gt; que ele estabelece com algum outro computador anônimo em algum outro lugar do mundo. Ele atravessa os dados que chegam e saem de você por esse túnel. Dessa maneira, os dados evitam o caminho comum, que está bloqueado, e passam por outro caminho, que não está censurado.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/vpn.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/vpn.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&quot;instalando-e-usando-o-psiphon-no-android&quot;&gt;Instalando e usando o Psiphon no Android&lt;/h2&gt;
-
-&lt;p&gt;Em &lt;em&gt;smartphones&lt;/em&gt; e &lt;em&gt;tablets&lt;/em&gt; com &lt;a href=&quot;https://www.android.com/intl/pt-BR_br/&quot;&gt;Android&lt;/a&gt;, o Psiphon pode ser baixado e instalado pela &lt;a href=&quot;https://play.google.com/store/apps?hl=pt_BR&quot;&gt;Play Store&lt;/a&gt;, como a maioria dos aplicativos:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.psiphon3&quot; title=&quot;Clique para obter o Psiphon na Play Store&quot;&gt;
-&lt;img src=&quot;/files/2015/12/google-play.png&quot; alt=&quot;Clique para obter o Psiphon na Play Store&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;em class=&quot;caption&quot; itemprop=&quot;description&quot;&gt;
-&lt;p&gt;Clique para obter o Psiphon na Play Store&lt;/p&gt;
-
-&lt;/em&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; o ideal é que você instale o Psiphon em seu aparelho antes mesmo de precisar, porque pode ser que a rede que você estiver usando no momento em que realmente precisar não permita essa instalação.&lt;/p&gt;
-
-&lt;p&gt;Para iniciá-lo, procure pelo ícone na tela inicial ou na lista de aplicativos:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/psiphon-01.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/psiphon-01.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Assim que o aplicativo é iniciado, ele já tenta criar o túnel. Diante disso, o Android exibe um alerta. Marque a opção &lt;strong&gt;Confio nesse aplicativo&lt;/strong&gt; e toque em &lt;strong&gt;OK&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/psiphon-02.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/psiphon-02.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Quando a conexão é estabelecida com sucesso, o aplicativo abre no navegador sua página oficial:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/psiphon-03.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/psiphon-03.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;A partir de agora, você já pode acessar &lt;em&gt;sites&lt;/em&gt; e usar aplicativos censurados.&lt;/p&gt;
-
-&lt;p&gt;Quando não quiser usar mais o túnel, volte ao aplicativo e clique em &lt;strong&gt;Stop&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/psiphon-04.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/psiphon-04.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&quot;usando-o-psiphon-no-windows&quot;&gt;Usando o Psiphon no Windows&lt;/h2&gt;
-
-&lt;p&gt;No computador, não é necessário instalar o Psiphon: basta baixar e começar a usar.&lt;/p&gt;
-
-&lt;p&gt;Acesse o &lt;a href=&quot;https://psiphon3.com/pt_PT/index.html&quot;&gt;site do Psiphon&lt;/a&gt; e clique em &lt;strong&gt;Download&lt;/strong&gt;, em seguida clique no &lt;em&gt;link&lt;/em&gt; do Psiphon para &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/&quot;&gt;Windows&lt;/a&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/psiphon-05.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/psiphon-05.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Observação:&lt;/strong&gt; o ideal é que você baixe o Psiphon antes mesmo de precisar, porque pode ser que a rede que você estiver usando no momento em que realmente precisar não permita o acesso ao &lt;em&gt;site&lt;/em&gt; do Psiphon. Você pode baixá-lo em um computador não censurado e carregá-lo consigo em um &lt;em&gt;pendrive&lt;/em&gt;, por exemplo.&lt;/p&gt;
-
-&lt;p&gt;Quando acabar o &lt;em&gt;download&lt;/em&gt;, inicie o aplicativo, ele estabelecerá a conexão:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/psiphon-06.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/psiphon-06.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Quando a conexão é estabelecida com sucesso, o aplicativo abre no navegador sua página oficial. A partir de agora, você já pode acessar &lt;em&gt;sites&lt;/em&gt; e usar aplicativos censurados.&lt;/p&gt;
-
-&lt;p&gt;Quando não quiser mais usar o túnel, volte ao aplicativo e clique em &lt;strong&gt;Disconnect&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;e-se-bloquearem-o-psiphon-também&quot;&gt;E se bloquearem o Psiphon também?&lt;/h2&gt;
-
-&lt;p&gt;Nesse caso, não será possível burlar a censura ou bloqueio imposto pela rede usando o Psiphon, mas você pode tentar usar outros aplicativos semelhantes, a exemplo do &lt;a href=&quot;https://www.torproject.org/download/download.html&quot;&gt;Tor&lt;/a&gt; ou do &lt;a href=&quot;https://hola.org/&quot;&gt;Hola&lt;/a&gt;. Uma pesquisa na Internet pode mostrar mais alternativas.&lt;/p&gt;
-
-&lt;h2 id=&quot;há-psiphon-para-linux&quot;&gt;Há Psiphon para Linux?&lt;/h2&gt;
-
-&lt;p&gt;No &lt;a href=&quot;https://psiphon3.com/pt_PT/index.html&quot;&gt;site do Psiphon&lt;/a&gt; não há uma opção de &lt;em&gt;download&lt;/em&gt; para o Linux. Há &lt;a href=&quot;http://askubuntu.com/a/637573&quot;&gt;evidências&lt;/a&gt; de que é possível utilizar a versão para Windows no Linux com o &lt;a href=&quot;https://www.winehq.org/&quot;&gt;Wine&lt;/a&gt;, mas é mais prático utilizar o &lt;a href=&quot;https://www.torproject.org/download/download.html&quot;&gt;Tor&lt;/a&gt;, que dispõe de uma versão própria para Linux.&lt;/p&gt;
-
-&lt;p&gt;Espero que possa ter ajudado! Dúvidas nos comentários!&lt;/p&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">De uma hora para outra, o WhatsApp foi bloqueado no Brasil. Mas há artifícios que possibilitam a utilização do aplicativo, mesmo com o bloqueio das operadoras. Aqui veremos um deles: o aplicativo Psiphon. Vale observar que o Psiphon também permite o uso de quaisquer sites e aplicativos bloqueados ou censurados pelo responsável pela rede (seja a empresa, organização, universidade, operadora, etc). Porque o WhatsApp deixou de funcionar? A Justiça ordenou que as operadoras de telefonia bloqueassem o uso do aplicativo WhatsApp em todo o Brasil por 48 horas, começando à meia noite (0h) dessa quinta-feira 17 de dezembro de 2015. Esse bloqueio aconteceu porque a empresa responsável pelo WhatsApp descumpriu uma determinação judicial. Como o processo corre em segredo de justiça, quase nenhuma informação é revelada. O fato é que, mesmo sem saber ao certo porque, muita gente ficou na mão sem poder usar o WhatsApp de ontem pra hoje. As pessoas já começaram a migrar para outros aplicativos semelhantes. Uma solução para quem não deseja ficar sem usar o serviço de mensagens é utilizar aplicativos que visam burlar a censura na Internet, a exemplo do Psiphon. Como funciona o Psiphon? O Psiphon burla a censura ou bloqueio imposta ao seu computador ou dispositivo móvel (smartphone ou tablet) por meio de uma conexão em forma de túnel que ele estabelece com algum outro computador anônimo em algum outro lugar do mundo. Ele atravessa os dados que chegam e saem de você por esse túnel. Dessa maneira, os dados evitam o caminho comum, que está bloqueado, e passam por outro caminho, que não está censurado. Instalando e usando o Psiphon no Android Em smartphones e tablets com Android, o Psiphon pode ser baixado e instalado pela Play Store, como a maioria dos aplicativos: Clique para obter o Psiphon na Play Store Observação: o ideal é que você instale o Psiphon em seu aparelho antes mesmo de precisar, porque pode ser que a rede que você estiver usando no momento em que realmente precisar não permita essa instalação. Para iniciá-lo, procure pelo ícone na tela inicial ou na lista de aplicativos: Assim que o aplicativo é iniciado, ele já tenta criar o túnel. Diante disso, o Android exibe um alerta. Marque a opção Confio nesse aplicativo e toque em OK: Quando a conexão é estabelecida com sucesso, o aplicativo abre no navegador sua página oficial: A partir de agora, você já pode acessar sites e usar aplicativos censurados. Quando não quiser usar mais o túnel, volte ao aplicativo e clique em Stop: Usando o Psiphon no Windows No computador, não é necessário instalar o Psiphon: basta baixar e começar a usar. Acesse o site do Psiphon e clique em Download, em seguida clique no link do Psiphon para Windows: Observação: o ideal é que você baixe o Psiphon antes mesmo de precisar, porque pode ser que a rede que você estiver usando no momento em que realmente precisar não permita o acesso ao site do Psiphon. Você pode baixá-lo em um computador não censurado e carregá-lo consigo em um pendrive, por exemplo. Quando acabar o download, inicie o aplicativo, ele estabelecerá a conexão: Quando a conexão é estabelecida com sucesso, o aplicativo abre no navegador sua página oficial. A partir de agora, você já pode acessar sites e usar aplicativos censurados. Quando não quiser mais usar o túnel, volte ao aplicativo e clique em Disconnect. E se bloquearem o Psiphon também? Nesse caso, não será possível burlar a censura ou bloqueio imposto pela rede usando o Psiphon, mas você pode tentar usar outros aplicativos semelhantes, a exemplo do Tor ou do Hola. Uma pesquisa na Internet pode mostrar mais alternativas. Há Psiphon para Linux? No site do Psiphon não há uma opção de download para o Linux. Há evidências de que é possível utilizar a versão para Windows no Linux com o Wine, mas é mais prático utilizar o Tor, que dispõe de uma versão própria para Linux. Espero que possa ter ajudado! Dúvidas nos comentários!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2015/12/vpn.png" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">As funcionalidades de captura de tela que acompanham o Windows são um tanto limitadas. Confira aqui dicas e aplicativos para bater melhores capturas de tela.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2016/02/printscreen01.jpg" /></entry></feed>
