@@ -1,4 +1,196 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinyanalista.github.io/" rel="alternate" type="text/html" hreflang="pt" /><updated>2020-07-21T09:06:52-03:00</updated><id>https://vinyanalista.github.io/feed.xml</id><title type="html">Antônio Vinícius</title><subtitle>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</subtitle><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><entry><title type="html">MikroTik: modo de segurança (Safe Mode)</title><link href="https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode/" rel="alternate" type="text/html" title="MikroTik: modo de segurança (Safe Mode)" /><published>2020-07-21T09:00:00-03:00</published><updated>2020-07-21T09:05:26-03:00</updated><id>https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode/">&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinyanalista.github.io/" rel="alternate" type="text/html" hreflang="pt" /><updated>2020-07-24T02:10:21-03:00</updated><id>https://vinyanalista.github.io/feed.xml</id><title type="html">Antônio Vinícius</title><subtitle>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</subtitle><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><entry><title type="html">Como resolver o problema do SATAFIRM S11 do SSD Kingston A400 (e outros modelos)</title><link href="https://vinyanalista.github.io/blog/2020/07/24/como-resolver-o-problema-do-satafirm-s11-do-ssd-kingston-a400-e-outros-modelos/" rel="alternate" type="text/html" title="Como resolver o problema do SATAFIRM S11 do SSD Kingston A400 (e outros modelos)" /><published>2020-07-24T02:00:00-03:00</published><updated>2020-07-24T02:07:52-03:00</updated><id>https://vinyanalista.github.io/blog/2020/07/24/como-resolver-o-problema-do-satafirm-s11-do-ssd-kingston-a400-e-outros-modelos</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2020/07/24/como-resolver-o-problema-do-satafirm-s11-do-ssd-kingston-a400-e-outros-modelos/">&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/kingston-a400-480gb.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/kingston-a400-480gb.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Mês passado eu estava usando meu &lt;em&gt;notebook&lt;/em&gt; quando de repente os programas começaram a apresentar diversas mensagens de erro. Reiniciei o computador e, para minha surpresa, o sistema operacional não iniciou, apresentando mensagem de erro relacionada ao meu &lt;a href=&quot;https://www.kingston.com/br/ssd/a400-solid-state-drive?partnum=SA400S37%2F480G&quot;&gt;SSD Kingston A400 de 480GB&lt;/a&gt;, que agora era reconhecido como &lt;strong&gt;SATAFIRM S11&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/satafirm-s11-erro.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/satafirm-s11-erro.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Nesse &lt;em&gt;post&lt;/em&gt;, vou mostrar como resolvi esse problema e informações que podem te ajudar, caso você também possua um SSD desse modelo e tenha se deparado com o mesmo erro.&lt;/p&gt;
+
+&lt;h2 id=&quot;como-diagnosticar-esse-problema&quot;&gt;Como diagnosticar esse problema?&lt;/h2&gt;
+
+&lt;p&gt;Você pode verificar de algumas formas que seu SSD é reconhecido como &lt;strong&gt;SATAFIRM S11&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Você pode ver essa informação acessando o &lt;em&gt;setup&lt;/em&gt; da &lt;a href=&quot;https://pt.wikipedia.org/wiki/BIOS&quot;&gt;BIOS&lt;/a&gt; do computador. Como fazer isso varia de modelo para modelo, você pode consultar o manual do seu computador. No caso do meu &lt;em&gt;notebook&lt;/em&gt;, um &lt;a href=&quot;https://www.acer.com/ac/pt/BR/content/support-product/5977&quot;&gt;Acer Aspire E 15&lt;/a&gt;, eu fico apertando &lt;strong&gt;F2&lt;/strong&gt; assim que ele liga:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/satafirm-s11-bios.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/satafirm-s11-bios.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;No &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/&quot;&gt;Windows&lt;/a&gt;, você pode ver essa informação abrindo o &lt;strong&gt;Gerenciador de Dispositivos&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/satafirm-s11-windows.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/satafirm-s11-windows.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Como eu não conseguia iniciar o sistema operacional, usei um &lt;em&gt;&lt;a href=&quot;https://www.kabum.com.br/produto/74806/case-c3-tech-p-hd-2-5-usb-3-0-preto-ch-300bk&quot;&gt;case&lt;/a&gt;&lt;/em&gt; para conectar o SSD a uma porta USB de outro computador com Windows. Se isso não é uma opção para você, pode manter o SSD no computador e usar o &lt;a href=&quot;https://www.hirensbootcd.org/&quot;&gt;Hiren’s BootCD&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;No outro computador com Windows, eu tentei usar o programa &lt;a href=&quot;https://www.kingston.com/br/support/technical/ssdmanager&quot;&gt;Kingston SSD Manager&lt;/a&gt; da própria fabricante, mas ele não reconhecia o SSD como sendo da Kingston, uma vez que era reportado como &lt;strong&gt;SATAFIRM S11&lt;/strong&gt;. No Hiren’s BootCD, eu não consegui instalar esse programa.&lt;/p&gt;
+
+&lt;p&gt;Se você usa uma distribuição &lt;a href=&quot;https://www.vivaolinux.com.br/linux/&quot;&gt;Linux&lt;/a&gt; com a área de trabalho &lt;a href=&quot;https://br.gnome.org/&quot;&gt;GNOME&lt;/a&gt;, como é o caso do &lt;a href=&quot;https://kamarada.github.io/pt/2020/02/24/kamarada-15.1-vem-com-tudo-que-voce-precisa-para-usar-o-linux-no-dia-a-dia/&quot;&gt;Linux Kamarada&lt;/a&gt;, que eu uso, e também do &lt;a href=&quot;https://ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt;, que é uma das distribuições mais populares, pode ver essa informação abrindo o aplicativo &lt;strong&gt;Discos&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/satafirm-s11-linux.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/satafirm-s11-linux.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;No caso do Linux, você não precisa remover o SSD do computador para diagnosticar o problema, você pode iniciar o Linux a partir de um &lt;a href=&quot;https://kamarada.github.io/pt/2016/02/21/como-preparar-um-liveusb/&quot;&gt;LiveUSB&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Outros comandos do Linux que podem ser usados para detectar o problema são apresentados a seguir (mostro apenas a parte relevante das saídas dos comandos):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;comando &lt;strong&gt;&lt;a href=&quot;https://man7.org/linux/man-pages/man8/fdisk.8.html&quot;&gt;fdisk&lt;/a&gt;&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;# fdisk -l
+Disco /dev/sda: 447,1 GiB, 480103981056 bytes, 937703088 setores
+Modelo de disco: SATAFIRM   S11  
+[...]
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;comando &lt;strong&gt;&lt;a href=&quot;https://man7.org/linux/man-pages/man8/hdparm.8.html&quot;&gt;hdparm&lt;/a&gt;&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;# hdparm -I /dev/sda
+
+/dev/sda:
+
+ATA device, with non-removable media
+	Model Number:       SATAFIRM   S11                          
+	Serial Number:      50026B7782026D18    
+	Firmware Revision:  SBFK71W1
+	Transport:          Serial, ATA8-AST, SATA 1.0a, SATA II Extensions, SATA Rev 2.5, SATA Rev 2.6, SATA Rev 3.0
+Standards:
+[...]
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;comando &lt;strong&gt;&lt;a href=&quot;https://linux.die.net/man/8/smartctl&quot;&gt;smartctl&lt;/a&gt;&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;# smartctl -a /dev/sda
+smartctl 6.6 2017-11-05 r4594 [x86_64-linux-4.12.14-lp151.28.36-default] (SUSE RPM)
+Copyright (C) 2002-17, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Device Model:     SATAFIRM   S11
+Serial Number:    50026B7782026D18
+LU WWN Device Id: 5 0026b7 782026d18
+Firmware Version: SBFK71W1
+User Capacity:    480.103.981.056 bytes [480 GB]
+[...]
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;o-que-ocasiona-esse-problema&quot;&gt;O que ocasiona esse problema?&lt;/h2&gt;
+
+&lt;p&gt;Pesquisando na Internet, o que se tem de informação é que esse problema é comum a modelos de SSD (inclusive de outras marcas, não só da Kingston) que são fabricados com a controladora &lt;strong&gt;Phison S11&lt;/strong&gt;. Dependendo da versão do &lt;em&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Firmware&quot;&gt;firmware&lt;/a&gt;&lt;/em&gt; instalado no SSD (o &lt;em&gt;software&lt;/em&gt; que controla o SSD), em algum momento, não se sabe quando ou porque, ele pode se desprogramar e perder a configuração específica do fabricante, passando a se identificar de forma genérica pro computador como sendo do “modelo” &lt;strong&gt;SATAFIRM S11&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;No caso da série Kingston A400, sabe-se que esse problema pode acontecer em SSDs cujo &lt;em&gt;firmware&lt;/em&gt; está na versão &lt;strong&gt;SBFK71W1&lt;/strong&gt;, que foi justamente a que veio de fábrica no meu SSD.&lt;/p&gt;
+
+&lt;p&gt;Nos exemplos acima, o aplicativo Discos do Linux, assim como os comandos &lt;strong&gt;hdparm&lt;/strong&gt; e &lt;strong&gt;smartctl&lt;/strong&gt; do Linux mostram a versão do &lt;em&gt;firmware&lt;/em&gt; instalada no SSD.&lt;/p&gt;
+
+&lt;p&gt;Você também pode ver a versão do &lt;em&gt;firmware&lt;/em&gt; que veio de fábrica na etiqueta no seu SSD:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/kingston-ssd.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/kingston-ssd.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Nessa etiqueta, você também pode ver o código do produto: no meu caso, &lt;strong&gt;SA400S37/480G&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;é-possível-prevenir-esse-problema&quot;&gt;É possível prevenir esse problema?&lt;/h2&gt;
+
+&lt;p&gt;Talvez sim. Se você possui um SSD Kingston A400 instalado no computador e funcionando, experimente usar o programa &lt;a href=&quot;https://www.kingston.com/br/support/technical/ssdmanager&quot;&gt;Kingston SSD Manager&lt;/a&gt; da própria fabricante (disponível apenas para Windows) para verificar se é possível atualizar o &lt;em&gt;firmware&lt;/em&gt; do SSD.&lt;/p&gt;
+
+&lt;p&gt;Além disso, serve para qualquer modelo de SSD de qualquer fabricante e com qualquer versão de &lt;em&gt;firmware&lt;/em&gt;: &lt;strong&gt;mantenha um &lt;em&gt;backup&lt;/em&gt; de seus dados pessoais sempre em dia e armazenado em mídia e local seguros&lt;/strong&gt;. Em caso de problemas como esse, um &lt;em&gt;backup&lt;/em&gt; pode te livrar de perder muitos dos seus dados.&lt;/p&gt;
+
+&lt;h2 id=&quot;como-eu-resolvi-esse-problema&quot;&gt;Como eu resolvi esse problema&lt;/h2&gt;
+
+&lt;p&gt;A Kingston oferece &lt;a href=&quot;https://www.kingston.com/br/company/warranty&quot;&gt;garantia condicional de 3 anos&lt;/a&gt; para o modelo de SSD A400.&lt;/p&gt;
+
+&lt;p&gt;Felizmente, eu comprei meu SSD em junho de 2018 na &lt;a href=&quot;https://www.kabum.com.br/produto/85198/ssd-kingston-a400-480gb-sata-leitura-500mb-s-grava-o-450mb-s-sa400s37-480g&quot;&gt;Kabum&lt;/a&gt; e, portanto, em junho de 2020, 2 anos depois, ainda estava na garantia da Kingston.&lt;/p&gt;
+
+&lt;p&gt;Meu &lt;em&gt;backup&lt;/em&gt; não estava em dia, mas os arquivos mais importantes estavam armazenados em serviços na nuvem, como o &lt;a href=&quot;https://db.tt/4VzN0K26&quot;&gt;Dropbox&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Usando um LiveUSB do Linux Kamarada, consegui montar as partições do SSD como somente leitura e fazer &lt;em&gt;backup&lt;/em&gt; de quase todos os arquivos para um HD externo. Não consegui copiar todos os arquivos, alguns apresentaram erro de entrada e saída.&lt;/p&gt;
+
+&lt;p&gt;Acionei a garantia, enviei meu SSD pelos &lt;a href=&quot;http://www.correios.com.br/&quot;&gt;Correios&lt;/a&gt; e a Kingston me enviou um SSD novo do mesmo modelo, também pelos Correios. Eu arquei com os custos do envio do SSD defeituoso, enquanto a Kingston arcou com os custos do envio do SSD novo.&lt;/p&gt;
+
+&lt;p&gt;Esse vídeo, da própria Kingston, mostra como acionar a garantia:&lt;/p&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+    &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://www.youtube.com/embed/xUNBfa9GpmM&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A seguir, uma captura de tela do Kingston SSD Manager mostrando o SSD novo:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/07/kingston-ssd-manager.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/07/kingston-ssd-manager.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;soluções-alternativas&quot;&gt;Soluções alternativas&lt;/h2&gt;
+
+&lt;p&gt;Caso seu SSD não esteja mais na garantia, ainda assim eu recomendo que você entre em contato com a assistência da fabricante para verificar se eles recomendam alguma solução oficial.&lt;/p&gt;
+
+&lt;p&gt;Se você já deu seu SSD como perdido, não tem nada a perder e se sente a fim de tentar uma solução extraoficial, você pode fazer uma &lt;a href=&quot;https://www.google.com/search?q=como+resolver+satafirm+s11&quot;&gt;pesquisa no Google&lt;/a&gt; e tentar uma das soluções sugeridas por outras pessoas que se depararam com o mesmo problema. Note que eu não testei nenhuma dessas soluções, portanto não me arrisco a indicar uma em específico. Vi que todas sugerem a execução de algum programa no Windows. Alguns desses programas não são nem específicos para o SSD da Kingston. Eu tentaria uma solução dessas só realmente em último caso. Se você possui mais de um HD ou SSD instalado no mesmo computador, tome cuidado para não selecionar o dispositivo errado na hora de executar o procedimento, o que pode levar a perda irreversível de dados. Como precaução, remova do computador qualquer dispositivo que não for necessário à realização do procedimento.&lt;/p&gt;
+
+&lt;h2 id=&quot;referências&quot;&gt;Referências&lt;/h2&gt;
+
+&lt;p&gt;Eu soube dos comandos para Linux mostrados acima nessas páginas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cyberciti.biz/faq/linux-getting-scsi-ide-harddisk-information/&quot;&gt;Linux: Find out serial / model number and vendor information for SATA and IDE hard disk  - nixCraft&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://unix.stackexchange.com/q/5085&quot;&gt;How to see disk details like manufacturer in Linux - Unix &amp;amp; Linux Stack Exchange&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">Mês passado eu estava usando meu notebook quando de repente os programas começaram a apresentar diversas mensagens de erro. Reiniciei o computador e, para minha surpresa, o sistema operacional não iniciou, apresentando mensagem de erro relacionada ao meu SSD Kingston A400 de 480GB, que agora era reconhecido como SATAFIRM S11. Nesse post, vou mostrar como resolvi esse problema e informações que podem te ajudar, caso você também possua um SSD desse modelo e tenha se deparado com o mesmo erro. Como diagnosticar esse problema? Você pode verificar de algumas formas que seu SSD é reconhecido como SATAFIRM S11. Você pode ver essa informação acessando o setup da BIOS do computador. Como fazer isso varia de modelo para modelo, você pode consultar o manual do seu computador. No caso do meu notebook, um Acer Aspire E 15, eu fico apertando F2 assim que ele liga: No Windows, você pode ver essa informação abrindo o Gerenciador de Dispositivos: Como eu não conseguia iniciar o sistema operacional, usei um case para conectar o SSD a uma porta USB de outro computador com Windows. Se isso não é uma opção para você, pode manter o SSD no computador e usar o Hiren’s BootCD. No outro computador com Windows, eu tentei usar o programa Kingston SSD Manager da própria fabricante, mas ele não reconhecia o SSD como sendo da Kingston, uma vez que era reportado como SATAFIRM S11. No Hiren’s BootCD, eu não consegui instalar esse programa. Se você usa uma distribuição Linux com a área de trabalho GNOME, como é o caso do Linux Kamarada, que eu uso, e também do Ubuntu, que é uma das distribuições mais populares, pode ver essa informação abrindo o aplicativo Discos: No caso do Linux, você não precisa remover o SSD do computador para diagnosticar o problema, você pode iniciar o Linux a partir de um LiveUSB. Outros comandos do Linux que podem ser usados para detectar o problema são apresentados a seguir (mostro apenas a parte relevante das saídas dos comandos): comando fdisk: 1 2 3 4 # fdisk -l Disco /dev/sda: 447,1 GiB, 480103981056 bytes, 937703088 setores Modelo de disco: SATAFIRM S11 [...] comando hdparm: 1 2 3 4 5 6 7 8 9 10 11 # hdparm -I /dev/sda /dev/sda: ATA device, with non-removable media Model Number: SATAFIRM S11 Serial Number: 50026B7782026D18 Firmware Revision: SBFK71W1 Transport: Serial, ATA8-AST, SATA 1.0a, SATA II Extensions, SATA Rev 2.5, SATA Rev 2.6, SATA Rev 3.0 Standards: [...] comando smartctl: 1 2 3 4 5 6 7 8 9 10 11 # smartctl -a /dev/sda smartctl 6.6 2017-11-05 r4594 [x86_64-linux-4.12.14-lp151.28.36-default] (SUSE RPM) Copyright (C) 2002-17, Bruce Allen, Christian Franke, www.smartmontools.org === START OF INFORMATION SECTION === Device Model: SATAFIRM S11 Serial Number: 50026B7782026D18 LU WWN Device Id: 5 0026b7 782026d18 Firmware Version: SBFK71W1 User Capacity: 480.103.981.056 bytes [480 GB] [...] O que ocasiona esse problema? Pesquisando na Internet, o que se tem de informação é que esse problema é comum a modelos de SSD (inclusive de outras marcas, não só da Kingston) que são fabricados com a controladora Phison S11. Dependendo da versão do firmware instalado no SSD (o software que controla o SSD), em algum momento, não se sabe quando ou porque, ele pode se desprogramar e perder a configuração específica do fabricante, passando a se identificar de forma genérica pro computador como sendo do “modelo” SATAFIRM S11. No caso da série Kingston A400, sabe-se que esse problema pode acontecer em SSDs cujo firmware está na versão SBFK71W1, que foi justamente a que veio de fábrica no meu SSD. Nos exemplos acima, o aplicativo Discos do Linux, assim como os comandos hdparm e smartctl do Linux mostram a versão do firmware instalada no SSD. Você também pode ver a versão do firmware que veio de fábrica na etiqueta no seu SSD: Nessa etiqueta, você também pode ver o código do produto: no meu caso, SA400S37/480G. É possível prevenir esse problema? Talvez sim. Se você possui um SSD Kingston A400 instalado no computador e funcionando, experimente usar o programa Kingston SSD Manager da própria fabricante (disponível apenas para Windows) para verificar se é possível atualizar o firmware do SSD. Além disso, serve para qualquer modelo de SSD de qualquer fabricante e com qualquer versão de firmware: mantenha um backup de seus dados pessoais sempre em dia e armazenado em mídia e local seguros. Em caso de problemas como esse, um backup pode te livrar de perder muitos dos seus dados. Como eu resolvi esse problema A Kingston oferece garantia condicional de 3 anos para o modelo de SSD A400. Felizmente, eu comprei meu SSD em junho de 2018 na Kabum e, portanto, em junho de 2020, 2 anos depois, ainda estava na garantia da Kingston. Meu backup não estava em dia, mas os arquivos mais importantes estavam armazenados em serviços na nuvem, como o Dropbox. Usando um LiveUSB do Linux Kamarada, consegui montar as partições do SSD como somente leitura e fazer backup de quase todos os arquivos para um HD externo. Não consegui copiar todos os arquivos, alguns apresentaram erro de entrada e saída. Acionei a garantia, enviei meu SSD pelos Correios e a Kingston me enviou um SSD novo do mesmo modelo, também pelos Correios. Eu arquei com os custos do envio do SSD defeituoso, enquanto a Kingston arcou com os custos do envio do SSD novo. Esse vídeo, da própria Kingston, mostra como acionar a garantia: A seguir, uma captura de tela do Kingston SSD Manager mostrando o SSD novo: Soluções alternativas Caso seu SSD não esteja mais na garantia, ainda assim eu recomendo que você entre em contato com a assistência da fabricante para verificar se eles recomendam alguma solução oficial. Se você já deu seu SSD como perdido, não tem nada a perder e se sente a fim de tentar uma solução extraoficial, você pode fazer uma pesquisa no Google e tentar uma das soluções sugeridas por outras pessoas que se depararam com o mesmo problema. Note que eu não testei nenhuma dessas soluções, portanto não me arrisco a indicar uma em específico. Vi que todas sugerem a execução de algum programa no Windows. Alguns desses programas não são nem específicos para o SSD da Kingston. Eu tentaria uma solução dessas só realmente em último caso. Se você possui mais de um HD ou SSD instalado no mesmo computador, tome cuidado para não selecionar o dispositivo errado na hora de executar o procedimento, o que pode levar a perda irreversível de dados. Como precaução, remova do computador qualquer dispositivo que não for necessário à realização do procedimento. Referências Eu soube dos comandos para Linux mostrados acima nessas páginas: Linux: Find out serial / model number and vendor information for SATA and IDE hard disk - nixCraft How to see disk details like manufacturer in Linux - Unix &amp;amp; Linux Stack Exchange</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2020/07/kingston-a400-480gb.jpg" /></entry><entry><title type="html">MikroTik: modo de segurança (Safe Mode)</title><link href="https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode/" rel="alternate" type="text/html" title="MikroTik: modo de segurança (Safe Mode)" /><published>2020-07-21T09:00:00-03:00</published><updated>2020-07-21T09:05:26-03:00</updated><id>https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2020/07/21/mikrotik-modo-de-seguranca-safe-mode/">&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
 &lt;a href=&quot;/files/2020/07/RB952Ui-5ac2nD-TC.png&quot; title=&quot;&quot;&gt;
 &lt;img src=&quot;/files/2020/07/RB952Ui-5ac2nD-TC.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; style=&quot;max-width: 256px;&quot; /&gt;
 &lt;/a&gt;
@@ -2629,339 +2821,4 @@ Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
   &lt;li&gt;&lt;a href=&quot;https://forum.pfsense.org/index.php?topic=81287.0&quot;&gt;OpenVPN Errors - TLS handshake failed - fórum do pfSense&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.vivaolinux.com.br/topico/servidores-VPN/OPENVPN-no-pfsense-conectando-cliente-windows&quot;&gt;OPENVPN no pfsense conectando cliente windows  [RESOLVIDO] [servidores VPN] - Viva o Linux&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://openvpn.net/index.php/open-source/faq/79-client/253-tls-error-tls-key-negotiation-failed-to-occur-within-60-seconds-check-your-network-connectivity.html&quot;&gt;TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity) - FAQ do OpenVPN&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">O pfSense é uma solução de firewall incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-lo. Ele permite criar VPNs utilizando, dentre outros protocolos, o OpenVPN, que é livre, versátil e seguro sem abrir mão da praticidade, motivos pelos quais é amplamente difundido. O que é uma VPN? Uma rede privada virtual (do inglês Virtual Private Network, ou VPN) estabelece uma conexão entre dois computadores distantes, que passam a se comunicar pela Internet como se estivessem conectados a um mesmo switch ou roteador. Ela funciona assim: os dois computadores pertencem, a princípio, a redes diferentes (eles podem estar em prédios, cidades ou até mesmo países diferentes, por exemplo). Mas eles precisam se comunicar e possuem conexão com a Internet. Então, eles estabelecem na rede mundial um circuito por onde trocam informações de forma privada. É como uma ligação telefônica que não pudesse ser grampeada. Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada Para quem utiliza esses computadores, é imperceptível que eles estão distantes. É como se eles estivessem conectados diretamente por um cabo, apesar de esse cabo não existir de verdade (por isso, essa rede é dita virtual). E a comunicação, apesar de ocorrer pela Internet, não pode ser lida pelos computadores no meio do caminho entre um e outro, porque os dois computadores que estabelecem a VPN utilizam criptografia para se comunicar (por isso, essa rede é dita privada). Porque a informação trafega por um circuito cujo conteúdo não pode ser lido pelos computadores que ajudam a formar o circuito, nem pelos que estão fora dele, apenas pelos computadores nas pontas (o remetente e o destinatário), a VPN também é conhecida como túnel. Um túnel é bem assim: só quem está dentro dele vê o que por ele passa Tentando explicar de forma simples, uma VPN é isso. Com VPNs, podemos fazer algumas coisas interessantes, como por exemplo: em casa ou durante uma viagem a negócios utilizar um notebook para acessar um computador do trabalho (como se estivesse dentro do trabalho); na rua, abrir, do celular, um arquivo que está no computador de casa (como se estivesse em casa); compartilhar arquivos e recursos (como impressoras ou servidores) entre sede e filial da empresa ou entre empresas diferentes. O Psiphon, que apresentei em outro post, é um exemplo interessante de VPN: ele cria um túnel entre seu computador e algum computador anônimo situado em algum lugar bem distante no mundo e redireciona todo o seu tráfego de Internet por esse computador anônimo. Dessa forma, o Psiphon permite que você utilize a Internet de forma anônima. Um uso prático disso é burlar bloqueios e censuras. Recentemente, o WhatsApp foi bloqueado no Brasil e muitos internautas recorreram a VPNs como o Psiphon para conseguir usar o aplicativo nos seus celulares. VPNs como essas são muito utilizadas em países com governos autoritários, como a China. O que preciso para criar uma VPN? Os dois computadores que queremos conectar precisam estar conectados à Internet. Um deles vai atuar como servidor, disponibilizando a VPN. O outro, vai atuar como cliente, utilizando a VPN. Eles também precisam de um protocolo para que consigam se comunicar. Existem alguns protocolos que podem ser usados para estabelecer VPNs, exemplos incluem: PPTP, L2TP, SSTP e OpenVPN. Cada protocolo serve a um tipo de VPN e pode ser mais adequado para uma ou outra finalidade. Aqui, vou explicar como estabelecer uma VPN entre um firewall pfSense (suponho que já esteja instalado e funcionando) e um computador com Windows ou um celular com Android. A ideia de escrever foi compartilhar a experiência vivida onde eu trabalho. Quero citar o excelente tutorial passo a passo do Thiago Melo, que aqui utilizo como base para escrever uma versão um pouco mais atual e acrescentando alguns comentários meus. Para referência futura, a versão do pfSense utilizado aqui é a 2.3, lançada em abril de 2016, e a do OpenVPN é a 2.1.11, lançada em maio de 2016. Criando a VPN no pfSense O pfSense vem com um assistente (wizard) que pode ser utilizado para criar VPNs, mais ou menos no famoso estilo next, next, next (avançar, avançar, avançar) do Windows. No entanto, eu o achei um tanto falho. Quando eu o utilizava, ele repetia algumas configurações entre as VPNs. Assim, passei a fazer a maior parte das etapas manualmente, deixando o assistente apenas para configurar a VPN propriamente dita e as regras do firewall, que são as etapas finais. Vamos configurar manualmente os pré-requisitos para a VPN. Primeiro, precisamos de uma autoridade certificadora (do inglês Certificate Authority, CA) para emitir os certificados do servidor e do cliente. Vá em System, Cert. Manager, aba CAs e clique no botão Add. Preencha o cadastro com as informações a seguir (claro, lembre-se sempre de alterar de acordo com as suas necessidades): Descriptive name: MINHACASA_CA Method: Create an internal Certificate Authority Country Code: BR State or Province: Rio Grande do Sul City: Pelotas Organization: Minha Casa Email Address: vinyanalista@minhacasa.net Common Name: minhacasa-ca Clique em Save: Depois, precisamos de um certificado para o servidor. De volta à tela Certificate Manager, clique na aba Certificates e clique no botão Add. Preencha o cadastro com as informações a seguir: Method: Create an internal Certificate Descriptive name: VPN de teste Certificate authority: MINHACASA_CA Certificate Type: Server Certificate Country Code: BR State or Province: Rio Grande do Sul City: Pelotas Organization: Minha Casa Email Address: vinyanalista@minhacasa.net Common Name: vpn-de-teste Clique em Save: Precisamos também cadastrar os usuários que utilizarão a VPN (login e senha) e criar certificados para esses usuários. Vá em System, User Manager e clique no botão Add. Preencha o cadastro com as informações a seguir: Username: vinyanalista Password: Alg0$3guro! Full name: Antônio Vinícius Menezes Medeiros Em Certificate, marque Click to create a user certificate para que ele gere um certificado para o usuário que estamos cadastrando. Acrescente as informações: Descriptive name: vinyanalista Certificate authority: MINHACASA_CA Clique em Save: Agora vamos à configuração da VPN propriamente dita. Vá em VPN, OpenVPN e clique na aba Wizards. É iniciado então o OpenVPN Remote Access Server Setup. Na primeira tela, Select an Authentication Backend Type, escolha Local User Access, e clique em Next: Na segunda tela, Choose a Certificate Authority (CA), selecione a autoridade cerficadora que foi criada anteriormente (MINHACASA_CA) e clique em Next: Na terceira tela, Choose a Server Certificate, selecione o certificado de servidor que foi criado anteriormente (VPN de teste) e clique em Next: Na tela seguinte, Server Setup, vamos configurar o servidor da VPN. Aqui, você deve preencher de acordo com as configurações da rede do seu servidor (a rede da sua empresa, por exemplo). Vejamos algumas configurações: Interface: WAN (interface de rede na qual o servidor aguardará pela conexão do cliente, deve apresentar conexão com a Internet) Local Port: 1194 (porta na qual o servidor aguardará pela conexão do cliente, 1194 é a porta convencional para o protocolo OpenVPN, você pode utilizar essa porta para a primeira VPN, mas se for criar outras, deverá reservar portas diferentes para cada VPN, por exemplo 1195, 1196…) Description: VPN de teste (descrição da VPN, deve ser um nome informativo, até porque aparecerá na tela do cliente identificando a conexão) Tunnel Network: 192.168.26.0/24 (endereço e máscara da rede virtual privada, no formato de CIDR, observe que o pfSense tomará o primeiro endereço IP para ele, nesse caso 192.168.26.1, e os demais endereços IPs serão atribuídos aos clientes) Local Network: 192.168.25.0/24 (endereço e máscara da rede interna que o cliente conectado pela VPN poderá acessar, é possível especificar mais de uma rede separando as redes por vírgula e até mesmo restringir o acesso a apenas um computador na rede interna, por exemplo 192.168.25.2/32) Com relação ao campo Tunnel Network, devo observar que ele determina a quantidade de computadores que poderão se conectar pela VPN. Obrigatoriamente, o servidor consumirá 1 endereço IP da VPN. Além disso, o pfSense não deixa criarmos uma VPN cujo endereço de rede utilize 30, 31 ou 32 bits do endereço IP. Então, a menor rede virtual privada que podemos criar utiliza 29 bits do endereço IP para se identificar. Com os 3 bits restantes, podemos endereçar 5 clientes. Para esclarecer a explicação, se tivéssemos preenchido o campo Tunnel Network com 192.168.26.0/29, os endereços da nossa VPN seriam assim: 192.168.26.0: endereço da rede 192.168.26.1: endereço do pfSense 192.168.26.2: endereço atribuído ao primeiro cliente que se conectar à VPN 192.168.26.3: endereço atribuído ao segundo cliente 192.168.26.4: endereço atribuído ao terceiro cliente 192.168.26.5: endereço atribuído ao quarto cliente 192.168.26.6: endereço atribuído ao quinto cliente 192.168.26.7: endereço de broadcast Provavelmente os campos Tunnel Network e Local Network são os que merecem mais cuidado nessa tela. Há alguns campos que podem ser preenchidos caso você necessite configurar o cliente conectado à VPN usando DHCP. Desses, destaco: DNS Default Domain DNS Server 1, DNS Server 2, DNS Server 3 e DNS Server 4 NTP Server e NTP Server 2 WINS Server 1 e WINS Server 2 Perceba que essa tela é extensa, mas nela estão quase todas as configurações da VPN: Quando terminar de configurar a VPN, clique em Next. Na penúltima tela do assistente, Firewall Rule Configuration, certifique-se de que as duas opções Firewall Rule e OpenVPN rule estejam marcadas. Com isso, o pfSense criará automaticamente as regras de firewall necessárias para que a VPN funcione. Clique em Next: A última tela apenas informa que a VPN foi criada. Clique em Finish: Exportando o software cliente O pfSense é capaz de exportar o software e os arquivos de configuração que devem ser instalados no computador cliente para que ele consiga se conectar à VPN. Para isso, usamos o OpenVPN Client Export Utility. Esse utilitário não acompanha a instalação padrão do pfSense, sendo disponibilizado como um pacote. Caso você ainda não o tenha instalado, vá em System, Package Manager, na aba Available Packages, busque por esse pacote e o instale clicando no botão Install: Com o utilitário instalado, vá em VPN, OpenVPN, aba Client Export. Em Remote Access Server, selecione a VPN (nesse exemplo, VPN de teste). Mais abaixo, no final da página, na linha correspondente ao usuário que deve acessar a VPN (nesse exemplo, vinyanalista), clique no botão correspondente ao cliente que deseja exportar. Vou demonstrar como conectar à VPN um computador cujo sistema operacional é o Windows 10 de 64 bits. Nesse caso, clique no botão x64-win6 para exportar o cliente correspondente: O download do instalador do cliente é iniciado. Esse arquivo (cujo nome deve ser algo parecido com firewall-udp-1194-vinyanalista-install.exe) deve ser copiado ou movido para o computador cliente. Também vou demonstrar como conectar à VPN um celular com sistema Android. Você pode aproveitar para já baixar também o arquivo de configuração que será necessário. Para isso, clique no botão Android. Esse arquivo (cujo nome deve ser algo parecido com firewall-udp-1194-vinyanalista-android-config.ovpn) deve ser copiado ou movido para o celular. No caso do Android, o software cliente é instalado pela Play Store, por isso o pfSense exporta apenas o arquivo de configuração. Conectando à VPN pelo Windows 10 No computador cliente, execute o instalador do cliente OpenVPN, baixado do pfSense. A instalação é bem simples. Aqui, mais uma vez, é next, next, next: Terminada a instalação, para iniciar o cliente OpenVPN, abra o menu Iniciar, clique em Todos os programas, depois em OpenVPN e, por fim, em OpenVPN GUI: O cliente OpenVPN é iniciado. Observe seu ícone na área de notificação: Dê dois clique nesse ícone. O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense e clique em OK: Se conseguir se conectar, o cliente OpenVPN mostra uma notificação com o endereço IP que foi atribuído ao computador dentro da rede privada virtual. Observe também que o ícone do cliente muda sua cor para verde, indicando que está conectado: Como teste, você pode abrir o Prompt de comando do Windows e verificar a conectividade com algum computador na rede da outra ponta da VPN: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 Microsoft Windows [versão 10.0.10240] (c) 2015 Microsoft Corporation. Todos os direitos reservados. C:\Users\Vinicius&amp;gt;ping 172.20.0.4 Disparando 172.20.0.4 com 32 bytes de dados: Resposta de 172.20.0.4: bytes=32 tempo=127ms TTL=62 Resposta de 172.20.0.4: bytes=32 tempo=78ms TTL=62 Resposta de 172.20.0.4: bytes=32 tempo=104ms TTL=62 Resposta de 172.20.0.4: bytes=32 tempo=97ms TTL=62 Estatísticas do Ping para 172.20.0.4: Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de perda), Aproximar um número redondo de vezes em milissegundos: Mínimo = 78ms, Máximo = 127ms, Média = 101ms C:\Users\Vinicius&amp;gt; Quando não precisar usar mais a VPN, clique com o botão direito do mouse no ícone do cliente OpenVPN e em seguida clique em Sair: Solução de problemas Caso você perceba que não conseguiu se conectar à VPN e o cliente exibe uma mensagem como esta: 1 TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity) Significa que o cliente e o servidor OpenVPN não estão conseguindo se comunicar, podendo a causa do problema estar em uma ponta ou outra da conexão. É provável que seu computador esteja sem conexão com a Internet ou algum firewall esteja impedindo a conexão do seu computador com o servidor da VPN. Algumas verificações que você pode fazer do lado do cliente: Tentar executar o cliente OpenVPN como administrador; Verificar a hora do computador (para que a conexão segura possa ser estabelecida é um pré-requisito que a hora esteja correta); Verificar no Firewall do Windows se a porta número 1194 está liberada para receber conexões TCP e UDP (se não estiver liberada, adicionar exceção); Verificar no Firewall do Windows se o aplicativo openvpn.exe está sendo bloqueado (se estiver bloqueado, adicionar exceção); Se houver algum firewall entre o computador e o provedor de Internet, verificá-lo também; e Se já havia um cliente OpenVPN instalado no computador e o instalador baixado do pfSense apenas acrescentou a configuração da VPN recém-criada, considere a possibilidade de desinstalar o cliente já instalado na máquina e instalar o fornecido, que pode ser mais novo e conter correções para bugs e falhas de segurança. Falando em bug, pode acontecer de o cliente OpenVPN relatar que conseguiu se conectar, mas não conseguiu configurar rotas para a rede privada virtual: 1 2 3 4 5 6 7 Tue Jun 14 22:15:09 2016 ROUTE: route addition failed using CreateIpForwardEntry: Acesso negado. [status=5 if_index=4] Tue Jun 14 22:15:09 2016 env_block: add PATH=C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem Tue Jun 14 22:15:09 2016 ERROR: Windows route add command failed [adaptive]: returned error code 1 Tue Jun 14 22:15:09 2016 ROUTE: route addition failed using CreateIpForwardEntry: Acesso negado. [status=5 if_index=4] Tue Jun 14 22:15:09 2016 env_block: add PATH=C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem Tue Jun 14 22:15:10 2016 ERROR: Windows route add command failed [adaptive]: returned error code 1 Tue Jun 14 22:15:10 2016 Initialization Sequence Completed Isso é um bug que afetava versões antigas do cliente OpenVPN, mas já foi corrigido. Você pode baixar a versão mais recente do cliente OpenVPN, instalá-la em seu computador e repetir os passos acima para se conectar à VPN normalmente. Ou, se não quiser fazer isso, você pode tentar executar o cliente já instalado em seu computador com permissões de administrador. Quando você conseguir se conectar sem problemas, o cliente OpenVPN deve exibir uma sequência de mensagens parecida com esta: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Tue Jun 14 22:18:06 2016 OpenVPN 2.3.11 x86_64-w64-mingw32 [SSL (OpenSSL)] [LZO] [PKCS11] [IPv6] built on May 10 2016 Tue Jun 14 22:18:06 2016 Windows version 6.2 (Windows 8 or greater) 64bit Tue Jun 14 22:18:06 2016 library versions: OpenSSL 1.0.1t 3 May 2016, LZO 2.09 Tue Jun 14 22:19:34 2016 Control Channel Authentication: using 'firewall-udp-1194-antonio.medeiros-tls.key' as a OpenVPN static key file Tue Jun 14 22:19:34 2016 UDPv4 link local (bound): [undef] Tue Jun 14 22:19:34 2016 UDPv4 link remote: [AF_INET]187.86.133.121:1194 Tue Jun 14 22:19:35 2016 WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this Tue Jun 14 22:19:35 2016 [VPN do HEUFPEL] Peer Connection Initiated with [AF_INET]187.86.133.121:1194 Tue Jun 14 22:19:38 2016 do_ifconfig, tt-&amp;gt;ipv6=0, tt-&amp;gt;did_ifconfig_ipv6_setup=0 Tue Jun 14 22:19:38 2016 open_tun, tt-&amp;gt;ipv6=0 Tue Jun 14 22:19:38 2016 TAP-WIN32 device [Ethernet 3] opened: \\.\Global\{2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30}.tap Tue Jun 14 22:19:38 2016 Set TAP-Windows TUN subnet mode network/local/netmask = 10.100.201.0/10.100.201.2/255.255.255.0 [SUCCEEDED] Tue Jun 14 22:19:38 2016 Notified TAP-Windows driver to set a DHCP IP/netmask of 10.100.201.2/255.255.255.0 on interface {2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30} [DHCP-serv: 10.100.201.254, lease-time: 31536000] Tue Jun 14 22:19:38 2016 Successful ARP Flush on interface [4] {2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30} Tue Jun 14 22:19:44 2016 Initialization Sequence Completed Conectando à VPN pelo Android Para conectar um celular com Android à VPN que acabamos de criar no nosso firewall pfSense, precisamos instalar um aplicativo cliente no celular. Aqui, vou demonstrar como usar o cliente oficial do OpenVPN, o OpenVPN Connect. Comece instalando o OpenVPN Connect pela Play Store: Clique para obter o OpenVPN Connect na Play Store Se ainda não passou, passe agora para o celular o arquivo de configuração exportado pelo pfSense. No celular, abra o menu de Aplicativos e toque no OpenVPN Connect: O cliente OpenVPN para Android é iniciado: Toque no botão de opções (o com 3 pontos que aparece no canto superior direito da tela), em seguida em Import e, por último, em Import Profile from SD card: Localize o arquivo de configuração na memória interna ou no cartão de memória do seu celular, toque nele e depois em Select: O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense. Opcionalmente, marque a opção Save para que ele memorize o usuário e a senha. Por fim, toque em Connect: Se conseguir se conectar, o cliente OpenVPN passa a exibir o status da conexão. Observe que ele fixa um ícone na área de notificação, indicando que está conectado: Quando não precisar usar mais a VPN, volte ao cliente OpenVPN e toque em Disconnect. Conclusão É isso. Espero que esse texto possa te ajudar caso necessite. A seguir, listo algumas referências que utilizei além dos links que já apareceram por todo o texto: O que é VPN? - TecMundo O que é e para que serve uma VPN? - Olhar Digital O que é VPN? - TechNet VPN e IPsec - UFRJ OpenVPN Errors - TLS handshake failed - fórum do pfSense OPENVPN no pfsense conectando cliente windows [RESOLVIDO] [servidores VPN] - Viva o Linux TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity) - FAQ do OpenVPN</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2016/06/pfsense-vpn-01.png" /></entry><entry><title type="html">Dicas para bater bons prints</title><link href="https://vinyanalista.github.io/blog/2016/02/18/dicas-para-bater-bons-prints/" rel="alternate" type="text/html" title="Dicas para bater bons prints" /><published>2016-02-18T02:00:00-02:00</published><updated>2016-02-18T02:17:37-02:00</updated><id>https://vinyanalista.github.io/blog/2016/02/18/dicas-para-bater-bons-prints</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2016/02/18/dicas-para-bater-bons-prints/">&lt;p&gt;As funcionalidades de captura de tela que acompanham o &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/s&quot;&gt;Windows&lt;/a&gt; são um tanto limitadas. Confira aqui dicas e aplicativos para bater melhores capturas de tela.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h2 id=&quot;como-capturar-a-tela-com-o-próprio-windows&quot;&gt;Como capturar a tela com o próprio Windows&lt;/h2&gt;
-
-&lt;p&gt;É possível capturar a tela sem utilizar programa algum no Windows. Para isso, temos a tecla &lt;strong&gt;Print Screen&lt;/strong&gt;. Ela geralmente fica no canto superior direito do teclado. Pode ser que no seu teclado ela esteja abreviada, como, por exemplo, &lt;strong&gt;Prt Sc&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen01.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen01.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;A título de curiosidade, nos computadores mais antigos, que não dispunham de interface gráfica, mas apenas de interface textual, &lt;a href=&quot;http://www.howtogeek.com/211661/ask-htg-did-the-print-screen-button-ever-literally-print-the-screen-and-can-it-again/&quot;&gt;a tecla &lt;strong&gt;Print Screen&lt;/strong&gt; enviava o conteúdo da tela para a impressora&lt;/a&gt;. Hoje ela tem outra função, a de “bater uma foto” da tela (&lt;em&gt;screenshot&lt;/em&gt;), o que ficou conhecido, graças a essa tecla, como “bater um &lt;em&gt;print&lt;/em&gt;” ou “tirar um &lt;em&gt;print&lt;/em&gt;” da tela.&lt;/p&gt;
-
-&lt;p&gt;Ao pressionar a tecla &lt;strong&gt;Print Screen&lt;/strong&gt;,  toda a tela é capturada. Isso inclui a barra de tarefas, a Área de Trabalho e todos os programas visíveis. Se você usa dois ou mais monitores, a imagem de todos os monitores é condensada em uma única captura.&lt;/p&gt;
-
-&lt;p&gt;A captura da tela fica então disponível na área de transferência para ser colada em algum aplicativo, como o &lt;a href=&quot;https://pt.wikipedia.org/wiki/Microsoft_Paint&quot;&gt;Paint&lt;/a&gt; ou o &lt;a href=&quot;https://products.office.com/pt-br/word&quot;&gt;Word&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen02.jpg&quot; title=&quot;Usando apenas a tecla Print Screen, é necessário primeiro colar a captura de tela em um programa como o Paint para então poder salvá-la como um arquivo de imagem.&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen02.jpg&quot; alt=&quot;Usando apenas a tecla Print Screen, é necessário primeiro colar a captura de tela em um programa como o Paint para então poder salvá-la como um arquivo de imagem.&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;em class=&quot;caption&quot; itemprop=&quot;description&quot;&gt;
-&lt;p&gt;Usando apenas a tecla Print Screen, é necessário primeiro colar a captura de tela em um programa como o Paint para então poder salvá-la como um arquivo de imagem.&lt;/p&gt;
-
-&lt;/em&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;É possível capturar apenas a janela atual utilizando a combinação &lt;strong&gt;Alt + Print Screen&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen03.jpg&quot; title=&quot;A combinação Alt + Print Screen captura apenas a janela em uso.&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen03.jpg&quot; alt=&quot;A combinação Alt + Print Screen captura apenas a janela em uso.&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;em class=&quot;caption&quot; itemprop=&quot;description&quot;&gt;
-&lt;p&gt;A combinação Alt + Print Screen captura apenas a janela em uso.&lt;/p&gt;
-
-&lt;/em&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Observe que em ambos os casos o cursor do &lt;em&gt;mouse&lt;/em&gt; não aparece na captura de tela, o que pode parecer estranho em capturas de menus, por exemplo:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen04.jpg&quot; title=&quot;Sabe-se, pelo destaque, que o item de menu foi selecionado, mas o cursor do mouse não aparece.&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen04.jpg&quot; alt=&quot;Sabe-se, pelo destaque, que o item de menu foi selecionado, mas o cursor do mouse não aparece.&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;em class=&quot;caption&quot; itemprop=&quot;description&quot;&gt;
-&lt;p&gt;Sabe-se, pelo destaque, que o item de menu foi selecionado, mas o cursor do mouse não aparece.&lt;/p&gt;
-
-&lt;/em&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Observe também que capturar a tela dessa forma, apesar de eficaz, não é eficiente: você depende de outro aplicativo para editar e salvar a imagem.&lt;/p&gt;
-
-&lt;h2 id=&quot;paint-como-fundo-branco&quot;&gt;Paint como fundo branco&lt;/h2&gt;
-
-&lt;p&gt;Algo que costumo fazer antes de capturar uma tela é deixar uma janela maximizada do Paint por trás com um desenho em branco que preenche toda a tela, especialmente se pretendo mostrar um menu ou dica (&lt;em&gt;hint&lt;/em&gt;) que foge à janela do aplicativo.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen05.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen05.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Assim, evito que conteúdo indesejado que está por trás do aplicativo apareça na captura.&lt;/p&gt;
-
-&lt;h2 id=&quot;dropbox-para-salvar-as-capturas&quot;&gt;Dropbox para salvar as capturas&lt;/h2&gt;
-
-&lt;p&gt;Se você quiser que automaticamente as capturas sejam salvas como arquivos de imagem, uma boa pedida é habilitar essa função no &lt;a href=&quot;https://www.dropbox.com/&quot;&gt;Dropbox&lt;/a&gt;, que de quebra ainda envia as imagens para a &lt;a href=&quot;https://pt.wikipedia.org/wiki/Computação_em_nuvem&quot;&gt;nuvem&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;A qualquer momento você pode habilitar ou desabilitar esse recurso nas preferências do Dropbox:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Clique no &lt;strong&gt;ícone do Dropbox&lt;/strong&gt; na área de notificação;&lt;/li&gt;
-  &lt;li&gt;Clique no &lt;strong&gt;ícone de engrenagem&lt;/strong&gt; e, no menu que aparece, clique em &lt;strong&gt;Preferências&lt;/strong&gt;;&lt;/li&gt;
-  &lt;li&gt;Clique na guia &lt;strong&gt;Importar&lt;/strong&gt;;&lt;/li&gt;
-  &lt;li&gt;Marque ou desmarque a opção &lt;strong&gt;Compartilhar capturas de tela usando o Dropbox&lt;/strong&gt;;&lt;/li&gt;
-  &lt;li&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; para aplicar sua configuração e sair das Preferências do Dropbox.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen06.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen06.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen07.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen07.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Agora sempre que você apertar &lt;strong&gt;Print Screen&lt;/strong&gt; ou &lt;strong&gt;Alt + Print Screen&lt;/strong&gt;, a captura de tela será automaticamente salva no seu Dropbox.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen08.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen08.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&quot;onedrive-para-salvar-as-capturas&quot;&gt;OneDrive para salvar as capturas&lt;/h2&gt;
-
-&lt;p&gt;Outra opção para salvar as capturas de tela e enviá-las para a nuvem automaticamente é o &lt;a href=&quot;https://onedrive.live.com/&quot;&gt;OneDrive&lt;/a&gt;, que também dispõe desse recurso.&lt;/p&gt;
-
-&lt;p&gt;Para habilitar ou desabilitar esse recurso do OneDrive:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Clique com o botão direito do &lt;em&gt;mouse&lt;/em&gt; no &lt;strong&gt;ícone do OneDrive&lt;/strong&gt; na área de notificação;&lt;/li&gt;
-  &lt;li&gt;Clique no item de menu &lt;strong&gt;Configurações&lt;/strong&gt;;&lt;/li&gt;
-  &lt;li&gt;Clique na guia &lt;strong&gt;Salvamento automático&lt;/strong&gt;;&lt;/li&gt;
-  &lt;li&gt;Marque ou desmarque a opção &lt;strong&gt;Salvar automaticamente no OneDrive as telas que eu capturar&lt;/strong&gt;;&lt;/li&gt;
-  &lt;li&gt;Clique em &lt;strong&gt;OK&lt;/strong&gt; para aplicar sua configuração e sair das configurações do OneDrive.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen09.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen09.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen10.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen10.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Agora sempre que você apertar &lt;strong&gt;Print Screen&lt;/strong&gt; ou &lt;strong&gt;Alt + Print Screen&lt;/strong&gt;, a captura de tela será automaticamente salva no seu OneDrive.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen11.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen11.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&quot;ferramenta-de-captura-do-windows&quot;&gt;Ferramenta de Captura do Windows&lt;/h2&gt;
-
-&lt;p&gt;As versões mais atuais do Windows (do Windows 7 em diante) vêm com a Ferramenta de Captura, que é bastante intuitiva e permite um controle um pouco maior sobre as capturas de tela.&lt;/p&gt;
-
-&lt;p&gt;Para iniciar a Ferramenta de Captura, abra o &lt;strong&gt;menu Iniciar&lt;/strong&gt;, digite &lt;strong&gt;captura&lt;/strong&gt; na caixa de pesquisa e depois clique em &lt;strong&gt;Ferramenta de Captura&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen12.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen12.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Para capturar a tela, clique em &lt;strong&gt;Novo&lt;/strong&gt; e, em seguida, selecione a parte da tela que você deseja capturar:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/printscreen13.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/printscreen13.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;A captura da tela aparece na janela da ferramenta. Então, você pode desenhar sobre a captura usando a caneta, salvá-la, copiá-la ou enviá-la por &lt;em&gt;email&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Antes de capturar a tela, a ferramenta permite a você configurar como deseja fazer a captura. Para isso, verifique as opções que aparecem ao clicar nas setas ao lado de &lt;strong&gt;Atraso&lt;/strong&gt; e &lt;strong&gt;Novo&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Observe que essa ferramenta também não captura o cursor do &lt;em&gt;mouse&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;capturas-com-o-irfanview&quot;&gt;Capturas com o IrfanView&lt;/h2&gt;
-
-&lt;p&gt;O &lt;a href=&quot;http://www.irfanview.com/&quot;&gt;IrfanView&lt;/a&gt; é um pequeno visualizador de imagens para Windows. Ele também oferece alguns recursos básicos de edição, como girar, recortar e borrar a imagem. O IrfanView é compatível com praticamente todas as versões do Windows (do Windows 95 em diante) e é simples, leve e gratuito.&lt;/p&gt;
-
-&lt;p&gt;Depois que descobri a funcionalidade de captura de tela do IrfanView, passei a utilizá-lo para capturar telas. Vejamos como ele pode nos ajudar com essa tarefa.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/irfanview01.gif&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/irfanview01.gif&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Primeiro, baixe o IrfanView do seu &lt;a href=&quot;http://www.irfanview.com/&quot;&gt;&lt;em&gt;site&lt;/em&gt; oficial&lt;/a&gt;, na página &lt;em&gt;Download&lt;/em&gt;. Observe que há uma versão portátil que dispensa instalação. Ela pode ser obtida clicando no &lt;em&gt;link Other download sites (Mirrors)&lt;/em&gt;, no final da página de &lt;em&gt;download&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Também é possível baixar a tradução para o Português do Brasil e &lt;em&gt;plugins&lt;/em&gt; por meio das páginas &lt;em&gt;IrfanView languages&lt;/em&gt; e &lt;em&gt;PlugIns&lt;/em&gt;, respectivamente. Esses são &lt;em&gt;downloads&lt;/em&gt; opcionais, mas recomendo a instalação de pelo menos os &lt;em&gt;plugins&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Se você utiliza uma versão de 64 &lt;em&gt;bits&lt;/em&gt; do Windows, talvez prefira baixar a versão de 64 &lt;em&gt;bits&lt;/em&gt; do IrfanView na página &lt;em&gt;IrfanView 64-bit&lt;/em&gt;. Nessa página, estão disponíveis para &lt;em&gt;download&lt;/em&gt; o instalador, a versão portátil e os &lt;em&gt;plugins&lt;/em&gt; de 64 &lt;em&gt;bits&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Para iniciar o IrfanView, abra o &lt;strong&gt;menu Iniciar&lt;/strong&gt;, digite &lt;strong&gt;irfanview&lt;/strong&gt; na caixa de pesquisa e depois clique em &lt;strong&gt;IrfanView&lt;/strong&gt; (no meu computador, utilizo a versão de 64 &lt;em&gt;bits&lt;/em&gt;):&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/irfanview02.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/irfanview02.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Aqui está a tela inicial do IrfanView:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/irfanview03.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/irfanview03.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Para começar a captura de tela, clique no menu &lt;strong&gt;Options&lt;/strong&gt; e depois no item &lt;strong&gt;Capture/Screenshot&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/irfanview04.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/irfanview04.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Aparece uma caixa de diálogo na qual é possível configurar vários aspectos da captura de tela:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/irfanview05.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/irfanview05.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Observe que a maioria dos comandos do IrfanView possui teclas de atalho (do inglês &lt;em&gt;shortcut keys&lt;/em&gt; ou &lt;em&gt;hot keys&lt;/em&gt;) associadas. A tecla de atalho para o comando &lt;strong&gt;Capture/Screenshot&lt;/strong&gt; é &lt;strong&gt;C&lt;/strong&gt;, ou seja, apertar a tecla &lt;strong&gt;C&lt;/strong&gt; na tela principal produziria o mesmo efeito que clicar naquele item de menu: a exibição da caixa de diálogo &lt;strong&gt;Capture Setup&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Vejamos as opções dessa caixa de diálogo.&lt;/p&gt;
-
-&lt;p&gt;A seção &lt;strong&gt;Capture area&lt;/strong&gt; nos permite definir que parte da tela queremos capturar. As opções que eu mais utilizo são:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Full desktop area - all monitors&lt;/strong&gt;: captura a tela de todos os monitores, o mesmo comportamento da tecla &lt;strong&gt;Print Screen&lt;/strong&gt;;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Foreground window&lt;/strong&gt;: captura apenas a janela em uso, o mesmo comportamento da combinação de teclas &lt;strong&gt;Alt + Print Screen&lt;/strong&gt;; e&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Desktop area - current monitor (mouse)&lt;/strong&gt;: captura apenas a tela do monitor em uso (o monitor no qual o cursor do &lt;em&gt;mouse&lt;/em&gt; se encontra), útil se você tem vários monitores e deseja capturar a tela de apenas um.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A seção &lt;strong&gt;Capture method&lt;/strong&gt; nos permite definir com base em que evento a captura será iniciada: após o uso de uma combinação de teclas (&lt;strong&gt;Hot key&lt;/strong&gt;) ou após um determinado período de tempo (&lt;strong&gt;Automatic - timer delay&lt;/strong&gt;). Eu costumo selecionar a primeira opção e alterar a combinação de teclas, que por padrão é &lt;strong&gt;Ctrl + F11&lt;/strong&gt;, para apenas &lt;strong&gt;F11&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Sempre deixo a opção &lt;strong&gt;Include mouse cursor&lt;/strong&gt; marcada.&lt;/p&gt;
-
-&lt;p&gt;Por fim, a seção &lt;strong&gt;After the capture&lt;/strong&gt; nos permite definir o que acontecerá após a captura da tela. A opção selecionada por padrão, &lt;strong&gt;Show captured image in main window&lt;/strong&gt;, faz com que a captura de tela seja trazida para a janela do IrfanView, o que permite a você tratar a imagem usando as funcionalidades do IrfanView e salvar.&lt;/p&gt;
-
-&lt;p&gt;A opção &lt;strong&gt;Copy captured image to clipboard&lt;/strong&gt; equivale ao que acontece quando usamos a tecla &lt;strong&gt;Print Screen&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;A última opção, &lt;strong&gt;Save captured image as file&lt;/strong&gt;, permite salvar a captura de tela automaticamente. Uma boa ideia pode ser selecionar a última opção e configurar o IrfanView para automaticamente salvar a captura de tela na pasta do Dropbox ou do OneDrive.&lt;/p&gt;
-
-&lt;p&gt;Quando terminar de configurar a captura de tela, clique em &lt;strong&gt;Start&lt;/strong&gt; para começar.&lt;/p&gt;
-
-&lt;p&gt;Observe que o IrfanView some (na verdade, ele é minimizado) e permite que você prepare a tela para a captura. Para realizá-la, pressione a combinação de teclas configurada previamente.&lt;/p&gt;
-
-&lt;p&gt;O que acontece depois que a tela é capturada? Se você deixou marcada a opção &lt;strong&gt;Show captured image in main window&lt;/strong&gt;, o IrfanView aparece novamente com a imagem capturada e você pode então trabalhar nela usando o IrfanView:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/irfanview06.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/irfanview06.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Para salvar a imagem, clique no ícone do disquete ou abra o menu &lt;strong&gt;File&lt;/strong&gt; e clique em &lt;strong&gt;Save as&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;S&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p&gt;Se você marcou qualquer uma das outras opções na sessão &lt;strong&gt;After the capture&lt;/strong&gt;, após a captura o IrfanView permanecerá minimizado. Nesse caso, você pode algum tempo depois bater uma nova captura de tela usando as mesmas configurações. Para fazer outra captura com configurações diferentes, volte à tela inicial do IrfanView e recomece o passo a passo.&lt;/p&gt;
-
-&lt;p&gt;Aqui vão algumas sugestões de ações que você pode realizar sobre a imagem no IrfanView:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Para selecionar uma área da imagem, arraste o cursor do &lt;em&gt;mouse&lt;/em&gt; ao redor da área da imagem que você deseja selecionar (da mesma forma como você faria em outro programa, como o Paint);&lt;/li&gt;
-  &lt;li&gt;Para fazer um recorte da área selecionada (&lt;em&gt;crop&lt;/em&gt;), abra o menu &lt;strong&gt;Edit&lt;/strong&gt; e clique em &lt;strong&gt;Crop selection (Cut out)&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;Ctrl + Y&lt;/strong&gt;), a imagem então passa a ser apenas a área selecionada, a área que ficou de fora da seleção é descartada;&lt;/li&gt;
-  &lt;li&gt;Para girar a imagem para a esquerda, no sentido anti-horário, abra o menu &lt;strong&gt;Image&lt;/strong&gt; e clique em &lt;strong&gt;Rotate Left (counter-clockwise)&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;L&lt;/strong&gt;);&lt;/li&gt;
-  &lt;li&gt;Para girar a imagem para a direita, no sentido horário, abra o menu &lt;strong&gt;Image&lt;/strong&gt; e clique em &lt;strong&gt;Rotate Right (clockwise)&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;R&lt;/strong&gt;);&lt;/li&gt;
-  &lt;li&gt;Para redimensionar a imagem, abra o menu &lt;strong&gt;Image&lt;/strong&gt; e clique em &lt;strong&gt;Resize/Resample&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;Ctrl + R&lt;/strong&gt;), aparecerá uma caixa de diálogo com várias opções para redimensionar a imagem;&lt;/li&gt;
-  &lt;li&gt;Para desenhar, abra o menu &lt;strong&gt;Edit&lt;/strong&gt; e clique em &lt;strong&gt;Show Paint dialog&lt;/strong&gt; (tecla de atalho: &lt;strong&gt;F12&lt;/strong&gt;), uma caixa de ferramentas bastante semelhante com a do Paint aparecerá:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/irfanview07.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/irfanview07.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Para aplicar efeitos à imagem, abra o menu &lt;strong&gt;Image&lt;/strong&gt;, aponte para &lt;strong&gt;Effects&lt;/strong&gt; e clique em &lt;em&gt;Effects browser&lt;/em&gt;, aparecerá uma caixa de diálogo com várias opções de efeitos para aplicar à imagem.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Uma dica para a hora de salvar: se você instalou os &lt;em&gt;plugins&lt;/em&gt; do IrfanView, abra o menu &lt;strong&gt;File&lt;/strong&gt; e, ao invés de clicar em &lt;strong&gt;Save as&lt;/strong&gt;, clique em &lt;strong&gt;Save for Web… (PlugIn)&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/irfanview08.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/irfanview08.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Aparecerá então uma caixa de diálogo que oferecerá várias opções para comprimir a imagem:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/02/irfanview09.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/02/irfanview09.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Isso é bastante útil se o tamanho final do arquivo de imagem for importante (se ficou confuso, aqui estou falando de &lt;em&gt;bytes&lt;/em&gt; e não de &lt;em&gt;pixels&lt;/em&gt;). Exemplos desse caso incluem imagens que serão utilizadas em páginas da Internet, enviadas por &lt;em&gt;email&lt;/em&gt; ou utilizadas em apresentações de &lt;em&gt;slides&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Todas as imagens presentes nesse &lt;em&gt;post&lt;/em&gt; foram capturadas, tratadas e comprimidas usando o IrfanView. Espero que ele possa te ajudar como tem me ajudado.&lt;/p&gt;
-
-&lt;h2 id=&quot;referências&quot;&gt;Referências&lt;/h2&gt;
-
-&lt;p&gt;A maior parte do que escrevi aqui veio do que aprendi me aventurando a usar os programas que mencionei. No entanto, é bem verdade que consultei algumas páginas para me certificar de que não escrevi besteira. Então, deixo aqui, para referência, a lista dessas páginas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;[Como salvar automaticamente suas capturas de telas no Dropbox&lt;/td&gt;
-          &lt;td&gt;Dicas e Tutoriais&lt;/td&gt;
-          &lt;td&gt;TechTudo]&lt;a href=&quot;http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2013/10/como-salvar-automaticamente-suas-capturas-de-telas-no-dropbox.html&quot;&gt;referencia-1&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.dropbox.com/pt_BR/help/1964&quot;&gt;Como compartilhar e salvar capturas de tela com o Dropbox? (Central de ajuda do Dropbox)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://support.office.com/pt-br/article/Salvar-automaticamente-capturas-de-tela-no-OneDrive-d04df71c-1cb0-4ad6-9f9c-b08494d79d6a&quot;&gt;Salvar automaticamente capturas de tela no OneDrive&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://windows.microsoft.com/pt-br/windows-10/open-snipping-tool-and-take-a-screenshot&quot;&gt;Abrir a Ferramenta de Captura e tirar uma captura de tela - Ajuda do Windows&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">As funcionalidades de captura de tela que acompanham o Windows são um tanto limitadas. Confira aqui dicas e aplicativos para bater melhores capturas de tela.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2016/02/printscreen01.jpg" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">O pfSense é uma solução de firewall incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-lo. Ele permite criar VPNs utilizando, dentre outros protocolos, o OpenVPN, que é livre, versátil e seguro sem abrir mão da praticidade, motivos pelos quais é amplamente difundido. O que é uma VPN? Uma rede privada virtual (do inglês Virtual Private Network, ou VPN) estabelece uma conexão entre dois computadores distantes, que passam a se comunicar pela Internet como se estivessem conectados a um mesmo switch ou roteador. Ela funciona assim: os dois computadores pertencem, a princípio, a redes diferentes (eles podem estar em prédios, cidades ou até mesmo países diferentes, por exemplo). Mas eles precisam se comunicar e possuem conexão com a Internet. Então, eles estabelecem na rede mundial um circuito por onde trocam informações de forma privada. É como uma ligação telefônica que não pudesse ser grampeada. Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada Para quem utiliza esses computadores, é imperceptível que eles estão distantes. É como se eles estivessem conectados diretamente por um cabo, apesar de esse cabo não existir de verdade (por isso, essa rede é dita virtual). E a comunicação, apesar de ocorrer pela Internet, não pode ser lida pelos computadores no meio do caminho entre um e outro, porque os dois computadores que estabelecem a VPN utilizam criptografia para se comunicar (por isso, essa rede é dita privada). Porque a informação trafega por um circuito cujo conteúdo não pode ser lido pelos computadores que ajudam a formar o circuito, nem pelos que estão fora dele, apenas pelos computadores nas pontas (o remetente e o destinatário), a VPN também é conhecida como túnel. Um túnel é bem assim: só quem está dentro dele vê o que por ele passa Tentando explicar de forma simples, uma VPN é isso. Com VPNs, podemos fazer algumas coisas interessantes, como por exemplo: em casa ou durante uma viagem a negócios utilizar um notebook para acessar um computador do trabalho (como se estivesse dentro do trabalho); na rua, abrir, do celular, um arquivo que está no computador de casa (como se estivesse em casa); compartilhar arquivos e recursos (como impressoras ou servidores) entre sede e filial da empresa ou entre empresas diferentes. O Psiphon, que apresentei em outro post, é um exemplo interessante de VPN: ele cria um túnel entre seu computador e algum computador anônimo situado em algum lugar bem distante no mundo e redireciona todo o seu tráfego de Internet por esse computador anônimo. Dessa forma, o Psiphon permite que você utilize a Internet de forma anônima. Um uso prático disso é burlar bloqueios e censuras. Recentemente, o WhatsApp foi bloqueado no Brasil e muitos internautas recorreram a VPNs como o Psiphon para conseguir usar o aplicativo nos seus celulares. VPNs como essas são muito utilizadas em países com governos autoritários, como a China. O que preciso para criar uma VPN? Os dois computadores que queremos conectar precisam estar conectados à Internet. Um deles vai atuar como servidor, disponibilizando a VPN. O outro, vai atuar como cliente, utilizando a VPN. Eles também precisam de um protocolo para que consigam se comunicar. Existem alguns protocolos que podem ser usados para estabelecer VPNs, exemplos incluem: PPTP, L2TP, SSTP e OpenVPN. Cada protocolo serve a um tipo de VPN e pode ser mais adequado para uma ou outra finalidade. Aqui, vou explicar como estabelecer uma VPN entre um firewall pfSense (suponho que já esteja instalado e funcionando) e um computador com Windows ou um celular com Android. A ideia de escrever foi compartilhar a experiência vivida onde eu trabalho. Quero citar o excelente tutorial passo a passo do Thiago Melo, que aqui utilizo como base para escrever uma versão um pouco mais atual e acrescentando alguns comentários meus. Para referência futura, a versão do pfSense utilizado aqui é a 2.3, lançada em abril de 2016, e a do OpenVPN é a 2.1.11, lançada em maio de 2016. Criando a VPN no pfSense O pfSense vem com um assistente (wizard) que pode ser utilizado para criar VPNs, mais ou menos no famoso estilo next, next, next (avançar, avançar, avançar) do Windows. No entanto, eu o achei um tanto falho. Quando eu o utilizava, ele repetia algumas configurações entre as VPNs. Assim, passei a fazer a maior parte das etapas manualmente, deixando o assistente apenas para configurar a VPN propriamente dita e as regras do firewall, que são as etapas finais. Vamos configurar manualmente os pré-requisitos para a VPN. Primeiro, precisamos de uma autoridade certificadora (do inglês Certificate Authority, CA) para emitir os certificados do servidor e do cliente. Vá em System, Cert. Manager, aba CAs e clique no botão Add. Preencha o cadastro com as informações a seguir (claro, lembre-se sempre de alterar de acordo com as suas necessidades): Descriptive name: MINHACASA_CA Method: Create an internal Certificate Authority Country Code: BR State or Province: Rio Grande do Sul City: Pelotas Organization: Minha Casa Email Address: vinyanalista@minhacasa.net Common Name: minhacasa-ca Clique em Save: Depois, precisamos de um certificado para o servidor. De volta à tela Certificate Manager, clique na aba Certificates e clique no botão Add. Preencha o cadastro com as informações a seguir: Method: Create an internal Certificate Descriptive name: VPN de teste Certificate authority: MINHACASA_CA Certificate Type: Server Certificate Country Code: BR State or Province: Rio Grande do Sul City: Pelotas Organization: Minha Casa Email Address: vinyanalista@minhacasa.net Common Name: vpn-de-teste Clique em Save: Precisamos também cadastrar os usuários que utilizarão a VPN (login e senha) e criar certificados para esses usuários. Vá em System, User Manager e clique no botão Add. Preencha o cadastro com as informações a seguir: Username: vinyanalista Password: Alg0$3guro! Full name: Antônio Vinícius Menezes Medeiros Em Certificate, marque Click to create a user certificate para que ele gere um certificado para o usuário que estamos cadastrando. Acrescente as informações: Descriptive name: vinyanalista Certificate authority: MINHACASA_CA Clique em Save: Agora vamos à configuração da VPN propriamente dita. Vá em VPN, OpenVPN e clique na aba Wizards. É iniciado então o OpenVPN Remote Access Server Setup. Na primeira tela, Select an Authentication Backend Type, escolha Local User Access, e clique em Next: Na segunda tela, Choose a Certificate Authority (CA), selecione a autoridade cerficadora que foi criada anteriormente (MINHACASA_CA) e clique em Next: Na terceira tela, Choose a Server Certificate, selecione o certificado de servidor que foi criado anteriormente (VPN de teste) e clique em Next: Na tela seguinte, Server Setup, vamos configurar o servidor da VPN. Aqui, você deve preencher de acordo com as configurações da rede do seu servidor (a rede da sua empresa, por exemplo). Vejamos algumas configurações: Interface: WAN (interface de rede na qual o servidor aguardará pela conexão do cliente, deve apresentar conexão com a Internet) Local Port: 1194 (porta na qual o servidor aguardará pela conexão do cliente, 1194 é a porta convencional para o protocolo OpenVPN, você pode utilizar essa porta para a primeira VPN, mas se for criar outras, deverá reservar portas diferentes para cada VPN, por exemplo 1195, 1196…) Description: VPN de teste (descrição da VPN, deve ser um nome informativo, até porque aparecerá na tela do cliente identificando a conexão) Tunnel Network: 192.168.26.0/24 (endereço e máscara da rede virtual privada, no formato de CIDR, observe que o pfSense tomará o primeiro endereço IP para ele, nesse caso 192.168.26.1, e os demais endereços IPs serão atribuídos aos clientes) Local Network: 192.168.25.0/24 (endereço e máscara da rede interna que o cliente conectado pela VPN poderá acessar, é possível especificar mais de uma rede separando as redes por vírgula e até mesmo restringir o acesso a apenas um computador na rede interna, por exemplo 192.168.25.2/32) Com relação ao campo Tunnel Network, devo observar que ele determina a quantidade de computadores que poderão se conectar pela VPN. Obrigatoriamente, o servidor consumirá 1 endereço IP da VPN. Além disso, o pfSense não deixa criarmos uma VPN cujo endereço de rede utilize 30, 31 ou 32 bits do endereço IP. Então, a menor rede virtual privada que podemos criar utiliza 29 bits do endereço IP para se identificar. Com os 3 bits restantes, podemos endereçar 5 clientes. Para esclarecer a explicação, se tivéssemos preenchido o campo Tunnel Network com 192.168.26.0/29, os endereços da nossa VPN seriam assim: 192.168.26.0: endereço da rede 192.168.26.1: endereço do pfSense 192.168.26.2: endereço atribuído ao primeiro cliente que se conectar à VPN 192.168.26.3: endereço atribuído ao segundo cliente 192.168.26.4: endereço atribuído ao terceiro cliente 192.168.26.5: endereço atribuído ao quarto cliente 192.168.26.6: endereço atribuído ao quinto cliente 192.168.26.7: endereço de broadcast Provavelmente os campos Tunnel Network e Local Network são os que merecem mais cuidado nessa tela. Há alguns campos que podem ser preenchidos caso você necessite configurar o cliente conectado à VPN usando DHCP. Desses, destaco: DNS Default Domain DNS Server 1, DNS Server 2, DNS Server 3 e DNS Server 4 NTP Server e NTP Server 2 WINS Server 1 e WINS Server 2 Perceba que essa tela é extensa, mas nela estão quase todas as configurações da VPN: Quando terminar de configurar a VPN, clique em Next. Na penúltima tela do assistente, Firewall Rule Configuration, certifique-se de que as duas opções Firewall Rule e OpenVPN rule estejam marcadas. Com isso, o pfSense criará automaticamente as regras de firewall necessárias para que a VPN funcione. Clique em Next: A última tela apenas informa que a VPN foi criada. Clique em Finish: Exportando o software cliente O pfSense é capaz de exportar o software e os arquivos de configuração que devem ser instalados no computador cliente para que ele consiga se conectar à VPN. Para isso, usamos o OpenVPN Client Export Utility. Esse utilitário não acompanha a instalação padrão do pfSense, sendo disponibilizado como um pacote. Caso você ainda não o tenha instalado, vá em System, Package Manager, na aba Available Packages, busque por esse pacote e o instale clicando no botão Install: Com o utilitário instalado, vá em VPN, OpenVPN, aba Client Export. Em Remote Access Server, selecione a VPN (nesse exemplo, VPN de teste). Mais abaixo, no final da página, na linha correspondente ao usuário que deve acessar a VPN (nesse exemplo, vinyanalista), clique no botão correspondente ao cliente que deseja exportar. Vou demonstrar como conectar à VPN um computador cujo sistema operacional é o Windows 10 de 64 bits. Nesse caso, clique no botão x64-win6 para exportar o cliente correspondente: O download do instalador do cliente é iniciado. Esse arquivo (cujo nome deve ser algo parecido com firewall-udp-1194-vinyanalista-install.exe) deve ser copiado ou movido para o computador cliente. Também vou demonstrar como conectar à VPN um celular com sistema Android. Você pode aproveitar para já baixar também o arquivo de configuração que será necessário. Para isso, clique no botão Android. Esse arquivo (cujo nome deve ser algo parecido com firewall-udp-1194-vinyanalista-android-config.ovpn) deve ser copiado ou movido para o celular. No caso do Android, o software cliente é instalado pela Play Store, por isso o pfSense exporta apenas o arquivo de configuração. Conectando à VPN pelo Windows 10 No computador cliente, execute o instalador do cliente OpenVPN, baixado do pfSense. A instalação é bem simples. Aqui, mais uma vez, é next, next, next: Terminada a instalação, para iniciar o cliente OpenVPN, abra o menu Iniciar, clique em Todos os programas, depois em OpenVPN e, por fim, em OpenVPN GUI: O cliente OpenVPN é iniciado. Observe seu ícone na área de notificação: Dê dois clique nesse ícone. O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense e clique em OK: Se conseguir se conectar, o cliente OpenVPN mostra uma notificação com o endereço IP que foi atribuído ao computador dentro da rede privada virtual. Observe também que o ícone do cliente muda sua cor para verde, indicando que está conectado: Como teste, você pode abrir o Prompt de comando do Windows e verificar a conectividade com algum computador na rede da outra ponta da VPN: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 Microsoft Windows [versão 10.0.10240] (c) 2015 Microsoft Corporation. Todos os direitos reservados. C:\Users\Vinicius&amp;gt;ping 172.20.0.4 Disparando 172.20.0.4 com 32 bytes de dados: Resposta de 172.20.0.4: bytes=32 tempo=127ms TTL=62 Resposta de 172.20.0.4: bytes=32 tempo=78ms TTL=62 Resposta de 172.20.0.4: bytes=32 tempo=104ms TTL=62 Resposta de 172.20.0.4: bytes=32 tempo=97ms TTL=62 Estatísticas do Ping para 172.20.0.4: Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de perda), Aproximar um número redondo de vezes em milissegundos: Mínimo = 78ms, Máximo = 127ms, Média = 101ms C:\Users\Vinicius&amp;gt; Quando não precisar usar mais a VPN, clique com o botão direito do mouse no ícone do cliente OpenVPN e em seguida clique em Sair: Solução de problemas Caso você perceba que não conseguiu se conectar à VPN e o cliente exibe uma mensagem como esta: 1 TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity) Significa que o cliente e o servidor OpenVPN não estão conseguindo se comunicar, podendo a causa do problema estar em uma ponta ou outra da conexão. É provável que seu computador esteja sem conexão com a Internet ou algum firewall esteja impedindo a conexão do seu computador com o servidor da VPN. Algumas verificações que você pode fazer do lado do cliente: Tentar executar o cliente OpenVPN como administrador; Verificar a hora do computador (para que a conexão segura possa ser estabelecida é um pré-requisito que a hora esteja correta); Verificar no Firewall do Windows se a porta número 1194 está liberada para receber conexões TCP e UDP (se não estiver liberada, adicionar exceção); Verificar no Firewall do Windows se o aplicativo openvpn.exe está sendo bloqueado (se estiver bloqueado, adicionar exceção); Se houver algum firewall entre o computador e o provedor de Internet, verificá-lo também; e Se já havia um cliente OpenVPN instalado no computador e o instalador baixado do pfSense apenas acrescentou a configuração da VPN recém-criada, considere a possibilidade de desinstalar o cliente já instalado na máquina e instalar o fornecido, que pode ser mais novo e conter correções para bugs e falhas de segurança. Falando em bug, pode acontecer de o cliente OpenVPN relatar que conseguiu se conectar, mas não conseguiu configurar rotas para a rede privada virtual: 1 2 3 4 5 6 7 Tue Jun 14 22:15:09 2016 ROUTE: route addition failed using CreateIpForwardEntry: Acesso negado. [status=5 if_index=4] Tue Jun 14 22:15:09 2016 env_block: add PATH=C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem Tue Jun 14 22:15:09 2016 ERROR: Windows route add command failed [adaptive]: returned error code 1 Tue Jun 14 22:15:09 2016 ROUTE: route addition failed using CreateIpForwardEntry: Acesso negado. [status=5 if_index=4] Tue Jun 14 22:15:09 2016 env_block: add PATH=C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem Tue Jun 14 22:15:10 2016 ERROR: Windows route add command failed [adaptive]: returned error code 1 Tue Jun 14 22:15:10 2016 Initialization Sequence Completed Isso é um bug que afetava versões antigas do cliente OpenVPN, mas já foi corrigido. Você pode baixar a versão mais recente do cliente OpenVPN, instalá-la em seu computador e repetir os passos acima para se conectar à VPN normalmente. Ou, se não quiser fazer isso, você pode tentar executar o cliente já instalado em seu computador com permissões de administrador. Quando você conseguir se conectar sem problemas, o cliente OpenVPN deve exibir uma sequência de mensagens parecida com esta: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Tue Jun 14 22:18:06 2016 OpenVPN 2.3.11 x86_64-w64-mingw32 [SSL (OpenSSL)] [LZO] [PKCS11] [IPv6] built on May 10 2016 Tue Jun 14 22:18:06 2016 Windows version 6.2 (Windows 8 or greater) 64bit Tue Jun 14 22:18:06 2016 library versions: OpenSSL 1.0.1t 3 May 2016, LZO 2.09 Tue Jun 14 22:19:34 2016 Control Channel Authentication: using 'firewall-udp-1194-antonio.medeiros-tls.key' as a OpenVPN static key file Tue Jun 14 22:19:34 2016 UDPv4 link local (bound): [undef] Tue Jun 14 22:19:34 2016 UDPv4 link remote: [AF_INET]187.86.133.121:1194 Tue Jun 14 22:19:35 2016 WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this Tue Jun 14 22:19:35 2016 [VPN do HEUFPEL] Peer Connection Initiated with [AF_INET]187.86.133.121:1194 Tue Jun 14 22:19:38 2016 do_ifconfig, tt-&amp;gt;ipv6=0, tt-&amp;gt;did_ifconfig_ipv6_setup=0 Tue Jun 14 22:19:38 2016 open_tun, tt-&amp;gt;ipv6=0 Tue Jun 14 22:19:38 2016 TAP-WIN32 device [Ethernet 3] opened: \\.\Global\{2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30}.tap Tue Jun 14 22:19:38 2016 Set TAP-Windows TUN subnet mode network/local/netmask = 10.100.201.0/10.100.201.2/255.255.255.0 [SUCCEEDED] Tue Jun 14 22:19:38 2016 Notified TAP-Windows driver to set a DHCP IP/netmask of 10.100.201.2/255.255.255.0 on interface {2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30} [DHCP-serv: 10.100.201.254, lease-time: 31536000] Tue Jun 14 22:19:38 2016 Successful ARP Flush on interface [4] {2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30} Tue Jun 14 22:19:44 2016 Initialization Sequence Completed Conectando à VPN pelo Android Para conectar um celular com Android à VPN que acabamos de criar no nosso firewall pfSense, precisamos instalar um aplicativo cliente no celular. Aqui, vou demonstrar como usar o cliente oficial do OpenVPN, o OpenVPN Connect. Comece instalando o OpenVPN Connect pela Play Store: Clique para obter o OpenVPN Connect na Play Store Se ainda não passou, passe agora para o celular o arquivo de configuração exportado pelo pfSense. No celular, abra o menu de Aplicativos e toque no OpenVPN Connect: O cliente OpenVPN para Android é iniciado: Toque no botão de opções (o com 3 pontos que aparece no canto superior direito da tela), em seguida em Import e, por último, em Import Profile from SD card: Localize o arquivo de configuração na memória interna ou no cartão de memória do seu celular, toque nele e depois em Select: O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense. Opcionalmente, marque a opção Save para que ele memorize o usuário e a senha. Por fim, toque em Connect: Se conseguir se conectar, o cliente OpenVPN passa a exibir o status da conexão. Observe que ele fixa um ícone na área de notificação, indicando que está conectado: Quando não precisar usar mais a VPN, volte ao cliente OpenVPN e toque em Disconnect. Conclusão É isso. Espero que esse texto possa te ajudar caso necessite. A seguir, listo algumas referências que utilizei além dos links que já apareceram por todo o texto: O que é VPN? - TecMundo O que é e para que serve uma VPN? - Olhar Digital O que é VPN? - TechNet VPN e IPsec - UFRJ OpenVPN Errors - TLS handshake failed - fórum do pfSense OPENVPN no pfsense conectando cliente windows [RESOLVIDO] [servidores VPN] - Viva o Linux TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity) - FAQ do OpenVPN</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2016/06/pfsense-vpn-01.png" /></entry></feed>
