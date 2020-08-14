@@ -1,4 +1,210 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinyanalista.github.io/" rel="alternate" type="text/html" hreflang="pt" /><updated>2020-07-24T02:10:21-03:00</updated><id>https://vinyanalista.github.io/feed.xml</id><title type="html">Antônio Vinícius</title><subtitle>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</subtitle><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><entry><title type="html">Como resolver o problema do SATAFIRM S11 do SSD Kingston A400 (e outros modelos)</title><link href="https://vinyanalista.github.io/blog/2020/07/24/como-resolver-o-problema-do-satafirm-s11-do-ssd-kingston-a400-e-outros-modelos/" rel="alternate" type="text/html" title="Como resolver o problema do SATAFIRM S11 do SSD Kingston A400 (e outros modelos)" /><published>2020-07-24T02:00:00-03:00</published><updated>2020-07-24T02:07:52-03:00</updated><id>https://vinyanalista.github.io/blog/2020/07/24/como-resolver-o-problema-do-satafirm-s11-do-ssd-kingston-a400-e-outros-modelos</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2020/07/24/como-resolver-o-problema-do-satafirm-s11-do-ssd-kingston-a400-e-outros-modelos/">&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt"><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://vinyanalista.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinyanalista.github.io/" rel="alternate" type="text/html" hreflang="pt" /><updated>2020-08-14T00:22:34-03:00</updated><id>https://vinyanalista.github.io/feed.xml</id><title type="html">Antônio Vinícius</title><subtitle>Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)</subtitle><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><entry><title type="html">Configurando o modem HUMAX HG100R-L4 em modo bridge</title><link href="https://vinyanalista.github.io/blog/2020/08/14/configurando-o-modem-humax-hg100r-l4-em-modo-bridge/" rel="alternate" type="text/html" title="Configurando o modem HUMAX HG100R-L4 em modo bridge" /><published>2020-08-14T00:15:00-03:00</published><updated>2020-08-14T00:17:29-03:00</updated><id>https://vinyanalista.github.io/blog/2020/08/14/configurando-o-modem-humax-hg100r-l4-em-modo-bridge</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2020/08/14/configurando-o-modem-humax-hg100r-l4-em-modo-bridge/">&lt;p&gt;Uma &lt;em&gt;&lt;strong&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Bridge_(redes_de_computadores)&quot;&gt;bridge&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt; (“ponte”, em inglês) é um dispositivo de rede que une duas redes a nível de camada 2 do &lt;a href=&quot;https://pt.wikipedia.org/wiki/Modelo_OSI&quot;&gt;modelo OSI&lt;/a&gt; (camada de enlace). Normalmente, o modem da operadora atua como &lt;strong&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Roteador&quot;&gt;roteador&lt;/a&gt;&lt;/strong&gt; (&lt;em&gt;router&lt;/em&gt;), ou seja, atua na camada 3 (camada de rede), separando a rede de casa e a rede da operadora em espaços de endereços IP diferentes.&lt;/p&gt;
+
+&lt;p&gt;Se você tem outro roteador, como o &lt;a href=&quot;/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/&quot;&gt;MikroTik&lt;/a&gt; do qual tenho falado nos meus últimos &lt;em&gt;posts&lt;/em&gt;, pode ser interessante mudar o modem da operadora para o modo &lt;em&gt;bridge&lt;/em&gt;, o que faz com que seu outro roteador entre em contato direto com a rede da operadora, recebendo um endereço IP desta, e sendo o único responsável por gerenciar toda a rede da sua casa.&lt;/p&gt;
+
+&lt;p&gt;Tentando usar uma linguagem menos técnica, tornar o modem da operadora uma &lt;em&gt;bridge&lt;/em&gt; na prática seria como anulá-lo, ele passa a fazer apenas o “leva e traz” de dados na rede, enquanto quem faz o “trabalho pesado” mesmo é o roteador conectado a ele.&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/08/modem-bridge.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/08/modem-bridge.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Se você, assim como eu, confia mais no seu roteador do que no equipamento da operadora, configurar o modem em modo &lt;em&gt;bridge&lt;/em&gt; pode trazer mais segurança para a rede da sua casa.&lt;/p&gt;
+
+&lt;p&gt;Hoje eu sou cliente da &lt;a href=&quot;https://www.claro.com.br/&quot;&gt;Claro&lt;/a&gt; e tenho em minha casa o modem HUMAX HG100R-L4 e o roteador MikroTik hAP ac lite TC. Vou mostrar como deixar o modem HG100R-L4 em modo &lt;em&gt;bridge&lt;/em&gt; e o MikroTik como único roteador da casa.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;
+
+&lt;p&gt;Observe que as instruções de como configurar o modem em modo &lt;em&gt;bridge&lt;/em&gt; podem variar de modem para modem. Se seu modem é diferente, pesquise na Internet instruções específicas para ele. Observe também que esse procedimento pode não ser suportado pela operadora. Por isso, é importante que o primeiro passo seja fazer &lt;em&gt;backup&lt;/em&gt; das configurações do modem. Pode ser que você precise devolvê-las caso precise acionar o suporte da operadora no futuro.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;ponto-de-partida&quot;&gt;Ponto de partida&lt;/h2&gt;
+
+&lt;p&gt;Conecte seu roteador ao modem da operadora, como na imagem acima.&lt;/p&gt;
+
+&lt;p&gt;Conecte seu computador ao seu roteador.&lt;/p&gt;
+
+&lt;p&gt;Caso seu roteador seja um MikroTik como o meu e você tenha caído nessa página de paraquedas, talvez queira dar uma conferida os textos anteriores:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/&quot;&gt;Primeiros passos com o MikroTik hAP ac: roteador profissional para a rede de casa&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;2020-07-21-mikrotik-modo-de-seguranca-safe-mode&quot;&gt;MikroTik: modo de segurança (Safe Mode)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;acessando-a-interface-web-do-modem&quot;&gt;Acessando a interface web do modem&lt;/h2&gt;
+
+&lt;p&gt;Abra o navegador e acesse a interface &lt;em&gt;web&lt;/em&gt; do &lt;em&gt;modem&lt;/em&gt; da operadora. O endereço IP, assim como o &lt;em&gt;login&lt;/em&gt; e senha que você vai usar para acessar essa interface comumente podem ser encontrados em uma etiqueta no próprio modem ou fazendo uma pesquisa na Internet.&lt;/p&gt;
+
+&lt;p&gt;No caso do modem HUMAX HG100R-L4, o endereço IP é &lt;a href=&quot;http://192.168.0.1&quot;&gt;192.168.0.1&lt;/a&gt; e o &lt;em&gt;login&lt;/em&gt; e senha estão em uma etiqueta no próprio modem:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/08/modem-bridge-01.png&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/08/modem-bridge-01.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;A tela inicial resume as informações da conexão e traz as configurações mais comuns, que são o nome e a senha da rede Wi-Fi. Acesse as configurações avançadas clicando em &lt;strong&gt;Advanced Network Settings&lt;/strong&gt; (configurações avançadas de rede):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/08/modem-bridge-02.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/08/modem-bridge-02.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;fazendo-backup-da-configuração-atual&quot;&gt;Fazendo backup da configuração atual&lt;/h3&gt;
+
+&lt;p&gt;Nas configurações avançadas, selecione &lt;strong&gt;básico&lt;/strong&gt; no menu à esquerda, depois &lt;strong&gt;Back Up&lt;/strong&gt;. Selecione &lt;strong&gt;Salve Status Atual&lt;/strong&gt; e clique em &lt;strong&gt;aplicar&lt;/strong&gt; para baixar a configuração atual do modem:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/08/modem-bridge-03.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/08/modem-bridge-03.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;O navegador vai baixar um arquivo chamado &lt;code class=&quot;highlighter-rouge&quot;&gt;GatewaySettings.bin&lt;/code&gt;. Salve esse arquivo em um local seguro, que você se lembre depois, pro caso de precisar restaurar o &lt;em&gt;backup&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;desativando-a-rede-wi-fi-do-modem&quot;&gt;Desativando a rede Wi-Fi do modem&lt;/h3&gt;
+
+&lt;p&gt;Na interface &lt;em&gt;web&lt;/em&gt; do modem, selecione &lt;strong&gt;Sem fio&lt;/strong&gt; no menu à esquerda. À direita, marque a opção &lt;strong&gt;Inválido&lt;/strong&gt; e depois clique em &lt;strong&gt;aplicar&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/08/modem-bridge-04.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/08/modem-bridge-04.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;ativando-o-modo-bridge&quot;&gt;Ativando o modo bridge&lt;/h3&gt;
+
+&lt;p&gt;Ainda nas configurações avançadas do modem, selecione &lt;strong&gt;básico&lt;/strong&gt; no menu à esquerda, depois &lt;strong&gt;Definir&lt;/strong&gt;. Role a página à direita até encontrar a opção &lt;strong&gt;Modo Switch&lt;/strong&gt; e defina-a como &lt;strong&gt;Bridge&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/08/modem-bridge-05.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/08/modem-bridge-05.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Chegamos ao ponto de não retorno. Clique em &lt;strong&gt;aplicar&lt;/strong&gt; para ativar o modo &lt;em&gt;bridge&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;O modem será reiniciado. Você pode fechar a janela do navegador.&lt;/p&gt;
+
+&lt;p&gt;Abra uma janela do terminal e deixe um &lt;strong&gt;&lt;a href=&quot;https://man7.org/linux/man-pages/man8/ping.8.html&quot;&gt;ping&lt;/a&gt;&lt;/strong&gt; rodando para algum endereço IP na Internet (por exemplo, o &lt;a href=&quot;https://developers.google.com/speed/public-dns/docs/using&quot;&gt;servidor de DNS público do Google&lt;/a&gt;, 8.8.8.8). Observando o comando &lt;strong&gt;ping&lt;/strong&gt; é possível saber quando o modem terminou de reiniciar e a conexão com a Internet voltou:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;$ ping 8.8.8.8
+...
+From 10.0.0.1 icmp_seq=95 Destination Net Unreachable
+From 10.0.0.1 icmp_seq=96 Destination Net Unreachable
+From 10.0.0.1 icmp_seq=97 Destination Net Unreachable
+64 bytes from 8.8.8.8: icmp_seq=98 ttl=115 time=28.3 ms
+64 bytes from 8.8.8.8: icmp_seq=99 ttl=115 time=30.1 ms
+64 bytes from 8.8.8.8: icmp_seq=100 ttl=115 time=25.9 ms
+64 bytes from 8.8.8.8: icmp_seq=101 ttl=115 time=31.7 ms
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;verificando-a-conexão-do-roteador&quot;&gt;Verificando a conexão do roteador&lt;/h2&gt;
+
+&lt;p&gt;Se seu roteador estava configurado para obter &lt;a href=&quot;https://pt.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol&quot;&gt;DHCP&lt;/a&gt;, deve ter recebido um endereço IP diretamente da rede da operadora (não mais do modem, que agora está em modo &lt;em&gt;bridge&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;No caso do MikroTik, para verificar o endereço IP obtido, inicie o &lt;a href=&quot;/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/&quot;&gt;WinBox&lt;/a&gt;. Na janela do WinBox, à esquerda, expanda o menu &lt;strong&gt;IP&lt;/strong&gt;, depois clique no item &lt;strong&gt;Addresses&lt;/strong&gt; (endereços):&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/08/modem-bridge-06.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/08/modem-bridge-06.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;No meu exemplo, o MikroTik obteve o endereço IP &lt;code class=&quot;highlighter-rouge&quot;&gt;100.64.198.110/19&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/08/modem-bridge-07.jpg&quot; title=&quot;&quot;&gt;
+&lt;img src=&quot;/files/2020/08/modem-bridge-07.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;(se a notação &lt;code class=&quot;highlighter-rouge&quot;&gt;/19&lt;/code&gt; é nova para você — eu só a conheci quando tive a oportunidade de trabalhar com redes — ela quer dizer que os primeiros 19 &lt;em&gt;bits&lt;/em&gt; do endereço IP identificam a rede, para mais informações procure saber sobre &lt;a href=&quot;https://www.hardware.com.br/dicas/entendendo-cidr.html&quot;&gt;CIDR&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&quot;acessando-a-interface-web-da-bridge&quot;&gt;Acessando a interface web da bridge&lt;/h2&gt;
+
+&lt;p&gt;No futuro, caso precise usar a interface &lt;em&gt;web&lt;/em&gt; do modem, que agora está em modo &lt;em&gt;bridge&lt;/em&gt; — por exemplo, para restaurar o &lt;em&gt;backup&lt;/em&gt; das configurações do modem, desativando assim o modo &lt;em&gt;bridge&lt;/em&gt; — abra o navegador e acesse o endereço IP &lt;a href=&quot;http://192.168.100.1&quot;&gt;192.168.100.1&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Não sei como a &lt;em&gt;bridge&lt;/em&gt; responde por esse endereço IP, dado que ela não atua na camada 3 (camada de rede) do modelo OSI. Só sei que funciona. Parece mágica…&lt;/p&gt;
+
+&lt;h2 id=&quot;notas-sobre-carrier-grade-nat&quot;&gt;Notas sobre carrier-grade NAT&lt;/h2&gt;
+
+&lt;p&gt;O endereço IP &lt;code class=&quot;highlighter-rouge&quot;&gt;100.64.198.110/19&lt;/code&gt; pertence à rede &lt;code class=&quot;highlighter-rouge&quot;&gt;100.64.192.0&lt;/code&gt;. Não se trata de um endereço IP “real” (ou público), como seria de se esperar há alguns anos, mas de um &lt;a href=&quot;https://pt.wikipedia.org/wiki/Rede_privada&quot;&gt;endereço IP privado&lt;/a&gt; dentro da rede da operadora. Endereços IP como esse passaram a ser distribuídos para roteadores domésticos após o &lt;a href=&quot;https://pt.wikipedia.org/wiki/Exaustão_do_IPv4&quot;&gt;esgotamento dos endereços IPv4&lt;/a&gt;. As operadoras adotaram uma prática chamada de &lt;a href=&quot;https://pt.wikipedia.org/wiki/Carrier_Grade_NAT&quot;&gt;&lt;em&gt;carrier-grade&lt;/em&gt; NAT (CGN)&lt;/a&gt;, que reserva o bloco &lt;code class=&quot;highlighter-rouge&quot;&gt;100.64.0.0/10&lt;/code&gt; para a atribuição de endereços IP às residências.&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;carrier-grade&lt;/em&gt; NAT impossibilita a hospedagem de serviços e o redirecionamento de portas (com isso, você não pode servir um &lt;em&gt;site&lt;/em&gt; para o mundo a partir do seu computador de casa, por exemplo), mas é um “mal necessário” para viabilizar o uso de redes IPv4 hoje em dia, dado que os endereços IPv4 já se esgotaram. Caso você precise de um endereço IP público, uma alternativa é verificar junto à operadora a possibilidade de alugar um (a um custo adicional). Outra alternativa é ativar o &lt;a href=&quot;http://ipv6.br/&quot;&gt;IPv6&lt;/a&gt;, que veremos oportunamente como fazer.&lt;/p&gt;
+
+&lt;h2 id=&quot;por-que-eu-uso-o-modo-bridge&quot;&gt;Por que eu uso o modo bridge&lt;/h2&gt;
+
+&lt;p&gt;Em 2015, eu tive um problema com o modem ARRIS TG862 da NET: um vírus invadiu o modem e mudou os endereços dos servidores DNS. Com isso, vários &lt;em&gt;sites&lt;/em&gt; passaram a exibir anúncios bastante irritantes e inconvenientes em russo, como os das imagens abaixo.&lt;/p&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/08/arris-tg862-malware-1.jpg&quot; title=&quot;(fonte da imagem: [Clube do Hardware](https://www.clubedohardware.com.br/topic/1114991-adware-russo-que-nenhum-antiv%C3%ADrus-elimina/))&quot;&gt;
+&lt;img src=&quot;/files/2020/08/arris-tg862-malware-1.jpg&quot; alt=&quot;(fonte da imagem: [Clube do Hardware](https://www.clubedohardware.com.br/topic/1114991-adware-russo-que-nenhum-antiv%C3%ADrus-elimina/))&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;em class=&quot;caption&quot; itemprop=&quot;description&quot;&gt;
+&lt;p&gt;(fonte da imagem: &lt;a href=&quot;https://www.clubedohardware.com.br/topic/1114991-adware-russo-que-nenhum-antiv%C3%ADrus-elimina/&quot;&gt;Clube do Hardware&lt;/a&gt;)&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;a href=&quot;/files/2020/08/arris-tg862-malware-2.jpg&quot; title=&quot;(fonte da imagem: [Comunidade do Hardware.com.br](https://www.hardware.com.br/comunidade/adware-redirecionando/1372966/))&quot;&gt;
+&lt;img src=&quot;/files/2020/08/arris-tg862-malware-2.jpg&quot; alt=&quot;(fonte da imagem: [Comunidade do Hardware.com.br](https://www.hardware.com.br/comunidade/adware-redirecionando/1372966/))&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
+&lt;/a&gt;
+
+&lt;em class=&quot;caption&quot; itemprop=&quot;description&quot;&gt;
+&lt;p&gt;(fonte da imagem: &lt;a href=&quot;https://www.hardware.com.br/comunidade/adware-redirecionando/1372966/&quot;&gt;Comunidade do Hardware.com.br&lt;/a&gt;)&lt;/p&gt;
+
+&lt;/em&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Isso acontecia porque o servidor DNS farsante redirecionava as requisições ao &lt;a href=&quot;https://analytics.google.com/&quot;&gt;Google Analytics&lt;/a&gt; (um serviço usado por muitos &lt;em&gt;sites&lt;/em&gt;) para outro servidor que não era o do &lt;a href=&quot;https://google.com/&quot;&gt;Google&lt;/a&gt;, fazendo com que o navegador baixasse o &lt;em&gt;script&lt;/em&gt; dos anúncios em russo, em vez do &lt;em&gt;script&lt;/em&gt; requisitado pelo &lt;em&gt;site&lt;/em&gt;, que era o do Google Analytics.&lt;/p&gt;
+
+&lt;p&gt;A solução foi entrar na interface &lt;em&gt;web&lt;/em&gt; do modem, mudar a senha de administrador e mudar a configuração de DNS. Depois disso, os anúncios em russo pararam de aparecer.&lt;/p&gt;
+
+&lt;p&gt;Se tiver curiosidade de ler mais sobre o ocorrido, aqui vão alguns &lt;em&gt;links&lt;/em&gt; da época:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.tecmundo.com.br/malware/77194-novo-malware-sequestra-roteador-enche-sites-propagandas.htm&quot;&gt;Novo malware sequestra roteador e enche sites de propagandas - TecMundo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://g1.globo.com/tecnologia/blog/seguranca-digital/post/android-infectado-e-anuncios-estranhos-sao-sinais-de-ataque-roteador.html&quot;&gt;Android “infectado” e anúncios “estranhos” são sinais de ataque a roteador | G1 - Tecnologia e Games&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.clubedohardware.com.br/topic/1114991-adware-russo-que-nenhum-antivírus-elimina/&quot;&gt;Adware Russo que nenhum antivírus elimina - Invasões e infecções - Clube do Hardware&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.clubedohardware.com.br/topic/1116552-abrindo-propagandas-e-links-sozinho/&quot;&gt;Abrindo propagandas e links sozinho - Redes e Internet - Clube do Hardware&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hardware.com.br/comunidade/adware-redirecionando/1372966/&quot;&gt;Adware me enlouquecendo e redirecionando para sites russos - Comunidade do Hardware.com.br&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.theverge.com/2015/3/25/8290277/router-hack-adware-porn-security-ara-labs&quot;&gt;This router hack is injecting ads and porn into random websites - The Verge&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://uwnthesis.wordpress.com/2015/03/26/ad-fraud-malware-hijacks-router-dns-injects-ads-via-google-analytics/&quot;&gt;Ad-Fraud Malware Hijacks Router DNS – Injects Ads Via Google Analytics | University of South Wales:  Cyber University&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Desde 2016, quando comprei o MikroTik, já me mudei algumas vezes e sempre o deixo como o roteador da casa, sempre configuro o modem da operadora em modo &lt;em&gt;bridge&lt;/em&gt;. Com isso, tenho maior controle sobre a rede da minha casa e mais segurança.&lt;/p&gt;
+
+&lt;h2 id=&quot;referências&quot;&gt;Referências&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.net.com.br/documento/2019/07/01/hg100rl4_user_guide.pdf&quot;&gt;Manual de usuário do HG100R-L4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=k7uDrhdEPTI&quot;&gt;Configurando Modem da NET em Bridge HUMAX HG100R-L4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">Uma bridge (“ponte”, em inglês) é um dispositivo de rede que une duas redes a nível de camada 2 do modelo OSI (camada de enlace). Normalmente, o modem da operadora atua como roteador (router), ou seja, atua na camada 3 (camada de rede), separando a rede de casa e a rede da operadora em espaços de endereços IP diferentes. Se você tem outro roteador, como o MikroTik do qual tenho falado nos meus últimos posts, pode ser interessante mudar o modem da operadora para o modo bridge, o que faz com que seu outro roteador entre em contato direto com a rede da operadora, recebendo um endereço IP desta, e sendo o único responsável por gerenciar toda a rede da sua casa. Tentando usar uma linguagem menos técnica, tornar o modem da operadora uma bridge na prática seria como anulá-lo, ele passa a fazer apenas o “leva e traz” de dados na rede, enquanto quem faz o “trabalho pesado” mesmo é o roteador conectado a ele. Se você, assim como eu, confia mais no seu roteador do que no equipamento da operadora, configurar o modem em modo bridge pode trazer mais segurança para a rede da sua casa. Hoje eu sou cliente da Claro e tenho em minha casa o modem HUMAX HG100R-L4 e o roteador MikroTik hAP ac lite TC. Vou mostrar como deixar o modem HG100R-L4 em modo bridge e o MikroTik como único roteador da casa. Observe que as instruções de como configurar o modem em modo bridge podem variar de modem para modem. Se seu modem é diferente, pesquise na Internet instruções específicas para ele. Observe também que esse procedimento pode não ser suportado pela operadora. Por isso, é importante que o primeiro passo seja fazer backup das configurações do modem. Pode ser que você precise devolvê-las caso precise acionar o suporte da operadora no futuro. Ponto de partida Conecte seu roteador ao modem da operadora, como na imagem acima. Conecte seu computador ao seu roteador. Caso seu roteador seja um MikroTik como o meu e você tenha caído nessa página de paraquedas, talvez queira dar uma conferida os textos anteriores: Primeiros passos com o MikroTik hAP ac: roteador profissional para a rede de casa MikroTik: modo de segurança (Safe Mode) Acessando a interface web do modem Abra o navegador e acesse a interface web do modem da operadora. O endereço IP, assim como o login e senha que você vai usar para acessar essa interface comumente podem ser encontrados em uma etiqueta no próprio modem ou fazendo uma pesquisa na Internet. No caso do modem HUMAX HG100R-L4, o endereço IP é 192.168.0.1 e o login e senha estão em uma etiqueta no próprio modem: A tela inicial resume as informações da conexão e traz as configurações mais comuns, que são o nome e a senha da rede Wi-Fi. Acesse as configurações avançadas clicando em Advanced Network Settings (configurações avançadas de rede): Fazendo backup da configuração atual Nas configurações avançadas, selecione básico no menu à esquerda, depois Back Up. Selecione Salve Status Atual e clique em aplicar para baixar a configuração atual do modem: O navegador vai baixar um arquivo chamado GatewaySettings.bin. Salve esse arquivo em um local seguro, que você se lembre depois, pro caso de precisar restaurar o backup. Desativando a rede Wi-Fi do modem Na interface web do modem, selecione Sem fio no menu à esquerda. À direita, marque a opção Inválido e depois clique em aplicar: Ativando o modo bridge Ainda nas configurações avançadas do modem, selecione básico no menu à esquerda, depois Definir. Role a página à direita até encontrar a opção Modo Switch e defina-a como Bridge: Chegamos ao ponto de não retorno. Clique em aplicar para ativar o modo bridge. O modem será reiniciado. Você pode fechar a janela do navegador. Abra uma janela do terminal e deixe um ping rodando para algum endereço IP na Internet (por exemplo, o servidor de DNS público do Google, 8.8.8.8). Observando o comando ping é possível saber quando o modem terminou de reiniciar e a conexão com a Internet voltou: 1 2 3 4 5 6 7 8 9 $ ping 8.8.8.8 ... From 10.0.0.1 icmp_seq=95 Destination Net Unreachable From 10.0.0.1 icmp_seq=96 Destination Net Unreachable From 10.0.0.1 icmp_seq=97 Destination Net Unreachable 64 bytes from 8.8.8.8: icmp_seq=98 ttl=115 time=28.3 ms 64 bytes from 8.8.8.8: icmp_seq=99 ttl=115 time=30.1 ms 64 bytes from 8.8.8.8: icmp_seq=100 ttl=115 time=25.9 ms 64 bytes from 8.8.8.8: icmp_seq=101 ttl=115 time=31.7 ms Verificando a conexão do roteador Se seu roteador estava configurado para obter DHCP, deve ter recebido um endereço IP diretamente da rede da operadora (não mais do modem, que agora está em modo bridge). No caso do MikroTik, para verificar o endereço IP obtido, inicie o WinBox. Na janela do WinBox, à esquerda, expanda o menu IP, depois clique no item Addresses (endereços): No meu exemplo, o MikroTik obteve o endereço IP 100.64.198.110/19: (se a notação /19 é nova para você — eu só a conheci quando tive a oportunidade de trabalhar com redes — ela quer dizer que os primeiros 19 bits do endereço IP identificam a rede, para mais informações procure saber sobre CIDR) Acessando a interface web da bridge No futuro, caso precise usar a interface web do modem, que agora está em modo bridge — por exemplo, para restaurar o backup das configurações do modem, desativando assim o modo bridge — abra o navegador e acesse o endereço IP 192.168.100.1. Não sei como a bridge responde por esse endereço IP, dado que ela não atua na camada 3 (camada de rede) do modelo OSI. Só sei que funciona. Parece mágica… Notas sobre carrier-grade NAT O endereço IP 100.64.198.110/19 pertence à rede 100.64.192.0. Não se trata de um endereço IP “real” (ou público), como seria de se esperar há alguns anos, mas de um endereço IP privado dentro da rede da operadora. Endereços IP como esse passaram a ser distribuídos para roteadores domésticos após o esgotamento dos endereços IPv4. As operadoras adotaram uma prática chamada de carrier-grade NAT (CGN), que reserva o bloco 100.64.0.0/10 para a atribuição de endereços IP às residências. A carrier-grade NAT impossibilita a hospedagem de serviços e o redirecionamento de portas (com isso, você não pode servir um site para o mundo a partir do seu computador de casa, por exemplo), mas é um “mal necessário” para viabilizar o uso de redes IPv4 hoje em dia, dado que os endereços IPv4 já se esgotaram. Caso você precise de um endereço IP público, uma alternativa é verificar junto à operadora a possibilidade de alugar um (a um custo adicional). Outra alternativa é ativar o IPv6, que veremos oportunamente como fazer. Por que eu uso o modo bridge Em 2015, eu tive um problema com o modem ARRIS TG862 da NET: um vírus invadiu o modem e mudou os endereços dos servidores DNS. Com isso, vários sites passaram a exibir anúncios bastante irritantes e inconvenientes em russo, como os das imagens abaixo. (fonte da imagem: Clube do Hardware) (fonte da imagem: Comunidade do Hardware.com.br) Isso acontecia porque o servidor DNS farsante redirecionava as requisições ao Google Analytics (um serviço usado por muitos sites) para outro servidor que não era o do Google, fazendo com que o navegador baixasse o script dos anúncios em russo, em vez do script requisitado pelo site, que era o do Google Analytics. A solução foi entrar na interface web do modem, mudar a senha de administrador e mudar a configuração de DNS. Depois disso, os anúncios em russo pararam de aparecer. Se tiver curiosidade de ler mais sobre o ocorrido, aqui vão alguns links da época: Novo malware sequestra roteador e enche sites de propagandas - TecMundo Android “infectado” e anúncios “estranhos” são sinais de ataque a roteador | G1 - Tecnologia e Games Adware Russo que nenhum antivírus elimina - Invasões e infecções - Clube do Hardware Abrindo propagandas e links sozinho - Redes e Internet - Clube do Hardware Adware me enlouquecendo e redirecionando para sites russos - Comunidade do Hardware.com.br This router hack is injecting ads and porn into random websites - The Verge Ad-Fraud Malware Hijacks Router DNS – Injects Ads Via Google Analytics | University of South Wales: Cyber University Desde 2016, quando comprei o MikroTik, já me mudei algumas vezes e sempre o deixo como o roteador da casa, sempre configuro o modem da operadora em modo bridge. Com isso, tenho maior controle sobre a rede da minha casa e mais segurança. Referências Manual de usuário do HG100R-L4 Configurando Modem da NET em Bridge HUMAX HG100R-L4</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2020/08/modem-bridge.jpg" /></entry><entry><title type="html">Como resolver o problema do SATAFIRM S11 do SSD Kingston A400 (e outros modelos)</title><link href="https://vinyanalista.github.io/blog/2020/07/24/como-resolver-o-problema-do-satafirm-s11-do-ssd-kingston-a400-e-outros-modelos/" rel="alternate" type="text/html" title="Como resolver o problema do SATAFIRM S11 do SSD Kingston A400 (e outros modelos)" /><published>2020-07-24T02:00:00-03:00</published><updated>2020-07-24T02:07:52-03:00</updated><id>https://vinyanalista.github.io/blog/2020/07/24/como-resolver-o-problema-do-satafirm-s11-do-ssd-kingston-a400-e-outros-modelos</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2020/07/24/como-resolver-o-problema-do-satafirm-s11-do-ssd-kingston-a400-e-outros-modelos/">&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
 &lt;a href=&quot;/files/2020/07/kingston-a400-480gb.jpg&quot; title=&quot;&quot;&gt;
 &lt;img src=&quot;/files/2020/07/kingston-a400-480gb.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
 &lt;/a&gt;
@@ -2290,535 +2496,4 @@ uuid ( RO)           : de7ac7e8-b0f3-9ee2-19ef-eda6b2b9b368
   &lt;li&gt;&lt;a href=&quot;https://forum.pfsense.org/index.php?topic=44689.0&quot;&gt;Tutorial PFFense 2.0: Active Directory -&amp;gt; User Manager&lt;/a&gt; (sic)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://thiago.oxente.org/2011/11/09/pfsense-2-0-e-openvpn-e-autenticando-no-windows-2008/&quot;&gt;pfSense 2.0 e OpenVPN Autenticando no Windows 2008 : Thiago Melo&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/PFSENSE/comments/3hkm3x/ldap_authentication_against_security_group/&quot;&gt;ldap authentication against security group: PFSENSE&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">Se possuímos em uma mesma rede pfSense e Active Directory (AD), algumas possibilidades interessantes surgem, como: permitir que os administradores da rede (e apenas eles) acessem o pfSense com seus logins e senhas do AD; permitir acesso remoto via VPN utilizando os mesmos logins e senhas do AD; e exigir login e senha do AD para que se possa navegar na rede Wi-Fi (ou em qualquer outra rede). Nesse post, você verá como explorar essas possibilidades. webConfigurator autenticando no AD A interface web utilizada para configurar o pfSense é chamada de webConfigurator. Para acessá-la, devemos fornecer nome de usuário (username) e senha (password): Podemos configurá-la para que esse acesso utilize as mesmas credenciais do AD. Para isso, precisaremos criar uma conta de usuário no AD para o pfSense, para que ele possa se conectar ao AD e validar as credenciais fornecidas na tela de login: Observe que o pfSense precisa de uma conta só para ele porque o AD, por padrão, não permite conexão anônima (anonymous bind). Essa conta pode ser uma conta de usuário simples, não precisa de privilégios elevados. Recomendo que você utilize uma senha aleatória gerada pelo site RANDOM.ORG. Você pode verificar que ela é segura no site How Secure Is My Password? Desative a alteração de senha no próximo logon e também a expiração da senha: Agora acesse a interface web do pfSense com um usuário local (por padrão, caso você não tenha alterado após a instalação, nome de usuário admin e senha pfsense, se você não alterou essa senha, recomendo que altere). Vá em System, User Manager, aba Authentication Servers e clique no botão Add. Preencha o formulário com as informações sobre o seu domínio (a seguir, apresento exemplos, mas você deve alterar de acordo com a sua realidade): Descriptive name: AD da MINHACASA Type: selecione LDAP Hostname or IP address: 10.200.1.30 ou ad.minhacasa.net (endereço IP ou nome de máquina completo do controlador de domínio) Search scope: Level: selecione Entire Subtree (pesquisar em toda a árvore do AD) Base DN: DC=minhacasa,DC=net Authentication containers: CN=Users Desmarcar a opção Use anonymous binds to resolve distinguished names Bind credentials: User DN: CN=pfSense,CN=Users,DC=minhacasa,DC=net Password: a senha do usuário criado para o pfSense Initial Template: selecione Microsoft AD Para as demais opções, o padrão deve ser suficiente. Talvez você precise alterá-las de acordo com a configuração do seu controlador de domínio. Abaixo você pode ver o formulário completo, depois de preenchido: Clique em Save. Agora, vamos testar se o pfSense consegue autenticar um usuário do AD. Para isso, vá em Diagnostics, Authentication. Em Authentication Server, selecione o AD que você acabou de cadastrar. Informe um nome de usuário e senha e clique em Test: Se você digitou corretamente o nome de usuário e a senha, o pfSense deve mostrar uma mensagem de sucesso e listar os grupos do usuário, como na imagem acima. Para que possamos acessar o webConfigurator com nossa conta do AD, ainda faltam mais duas configurações. Vamos dar permissão a um grupo do AD para acessar todas as configurações (o grupo que contém os administradores de rede, por exemplo, TI-REDES). Vá em System, User Manager, aba Groups e clique no botão Add. Preencha o formulário com as informações sobre o grupo: Group name: TI-REDES Scope: selecione Remote Description: Administradores da rede (um texto apenas para informação) Clique em Save. De volta à tela que lista os grupos, na linha do grupo que acabamos de criar, clique no ícone do lápis para editar o grupo. Na sessão Assigned Privileges, clique no botão Add. Selecione o privilégio WebCfg - All pages e clique em Save: De volta à tela anterior, clique em Save. Finalmente, vamos dizer que o AD é onde o pfSense deve buscar os usuários. Clique na aba Settings. Em Authentication Server, selecione o AD. Clique em Save: Faça log out do webConfigurator e entre de novo, dessa vez utilizando sua conta do AD (deve ser uma conta pertencente ao grupo configurado). Deve funcionar. Se você fizer um teste utilizando uma conta do AD sem permissões previamente concedidas, o pfSense informará que não há uma página configurada para o usuário e oferecerá somente a opção de fazer log out: Você pode conceder diferentes permissões a diferentes grupos de usuários, por exemplo: Técnicos do Suporte (grupo TI-SUPORTE) podem acessar a lista de concessões DHCP para verificar qual endereço IP determinado computador recebeu, além de poder enviar comandos Wake-on-LAN para ligar computadores pela rede, para isso são necessárias as permissões: WebCfg - Status: DHCP leases WebCfg - Services: Wake-on-LAN Programadores (grupo TI-DESENV, assim nomeado porque o pfSense não aceita um nome de grupo maior que 16 caracteres) podem acessar as configurações do portal de captura (captive portal) para personalizar as páginas HTML do portal de captura, para isso são necessárias as permissões: WebCfg - Services: Captive portal WebCfg - Services: Captive portal: Edit Zones WebCfg - Services: Captive portal: File Manager WebCfg - Services: Captive portal Zones Observe que, depois de tudo isso, ainda é possível entrar no webConfigurator com o usuário local admin do pfSense. Por isso, é importante mudar a senha dele. VPN autenticando no AD No post anterior, vimos como configurar uma VPN utilizando pfSense e OpenVPN. Recomendo que você siga todo aquele passo a passo e faça o teste da VPN utilizando o usuário local criado no tutorial especificamente para testar a VPN. Vejamos agora como ajustar aquela configuração para que seja possível conectar à VPN informando login e senha do AD. No pfSense, vá em VPN, OpenVPN, aba Servers. Clique no ícone do lápis para editar o servidor OpenVPN. No campo Backend for authentication, em vez de Local Database, selecione o AD: Clique no botão Save, ao final da página. Agora vamos obter a configuração que deve ser usada com o cliente OpenVPN. Diferente do tutorial anterior, em que baixamos do pfSense o instalador com cliente e configuração já prontos, aqui vamos baixar do pfSense apenas a configuração. Vá em VPN, OpenVPN, aba Client Export. Na linha referente a um usuário local qualquer (seguindo o exemplo do post anterior, vinyanalista), clique no botão Others, abaixo de Inline Configurations, para baixar um arquivo contendo a configuração do cliente OpenVPN: Ele deve se chamar algo como firewall-udp-1194-vinyanalista-config.ovpn. Você pode renomeá-lo para, por exemplo, vpn-da-minhacasa.ovpn. No computador cliente (veremos aqui instruções para Windows), baixe e instale o software cliente do site do OpenVPN. A instalação é bem simples: no famoso estilo next, next, next. Recomendo, se possível, remover qualquer versão mais antiga, incluindo arquivos de configuração (para referência, no momento da escrita o cliente oficial do OpenVPN se encontra na versão 2.4.0, lançada em dezembro de 2016). Terminada a instalação, copie o arquivo de configuração para a pasta onde o cliente OpenVPN guarda suas configurações: No computador que eu utilizei, o caminho para essa pasta foi C:\Arquivos de Programas\OpenVPN\config. Depois disso, é só iniciar o cliente OpenVPN, como explicado no post anterior, e informar o usuário e a senha do AD para se conectar à VPN. Deve funcionar normalmente. Para Android, as instruções são bem semelhantes: baixe e instale o software cliente pela Play Store e baixe pelo pfSense o arquivo de configuração clicando no botão Android, abaixo de Inline Configurations. Esse arquivo deve se chamar algo como firewall-udp-1194-vinyanalista-android-config.ovpn. Você pode renomeá-lo para, por exemplo, vpn-da-minhacasa-android.ovpn e utilizá-lo no cliente OpenVPN, como mostrado no post anterior. Lembre-se de agora utilizar usuário e senha do AD. Restringindo o acesso à VPN a um grupo do AD Configurando a VPN como foi explicado acima, qualquer pessoa pode se conectar à VPN utilizando suas credenciais do AD. Que tal adicionar um certo controle permitindo que apenas usuários pertencentes a determinado grupo se conectem? Para isso, crie no AD um grupo chamado PFSENSE-VPN. Adicione a esse grupo os usuários que poderão se conectar à VPN. No pfSense, vá em System, User Manager, aba Authentication Servers e clique no botão Add. Preencha esse formulário com as mesmas informações que você informou antes, como se fosse cadastrar o AD de novo (de certa forma, é o que estamos fazendo, mas aqui seremos mais específicos). Ainda não clique em Save. Mude o nome (Descriptive name) para AD da MINHACASA - grupo PFSENSE-VPN. Ative a opção Enable extended query e preencha o campo Query com: 1 &amp;amp;(objectCategory=user)(memberOf=CN=PFSENSE-VPN,CN=Users,DC=minhacasa,DC=net) Agora sim clique em Save. Vá em VPN, OpenVPN, aba Servers. Clique no ícone do lápis para editar o servidor OpenVPN. No campo Backend for authentication, selecione AD da MINHACASA - grupo PFSENSE-VPN. Clique no botão Save, ao final da página. Teste essa configuração tentando se conectar à VPN com um usuário que pertence e outro que não pertence ao grupo PFSENSE-VPN. Deve funcionar só no primeiro caso. Você pode no AD tornar o grupo TI-REDES membro do grupo PFSENSE-VPN. Assim, por transitividade, todos os administradores da rede ganham permissão para usar a VPN, sem a necessidade de ter que adicioná-los um por um ao grupo PFSENSE-VPN. Rede Wi-Fi autenticando no AD Que tal prover para os funcionários da empresa uma rede Wi-Fi, mas só liberar o acesso mediante o fornecimento de login e senha do AD? Como ainda não fiz um post sobre como gerenciar uma rede Wi-Fi com o pfSense, decidi deixar esse tópico para o próximo post. Siga-me para ser notificado quando ele for publicado. No final das contas, percebi que este post acabou sendo uma atualização do anterior, acrescentando a integração com o Active Directory. No próximo post, teremos como novidade a rede Wi-Fi, incluindo a autenticação dela no AD. Referências Muito do que escrevi aqui aprendi na tentativa e erro e evoluindo conforme as demandas que iam surgindo no trabalho. Mas claro que comecei lendo alguns textos: Tutorial PFFense 2.0: Active Directory -&amp;gt; User Manager (sic) pfSense 2.0 e OpenVPN Autenticando no Windows 2008 : Thiago Melo ldap authentication against security group: PFSENSE</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2017/01/pfsense-ad-01.png" /></entry><entry><title type="html">Como criar uma VPN utilizando pfSense e OpenVPN</title><link href="https://vinyanalista.github.io/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/" rel="alternate" type="text/html" title="Como criar uma VPN utilizando pfSense e OpenVPN" /><published>2016-06-26T01:00:00-03:00</published><updated>2016-06-26T00:55:45-03:00</updated><id>https://vinyanalista.github.io/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn</id><content type="html" xml:base="https://vinyanalista.github.io/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/">&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-01.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-01.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;O &lt;a href=&quot;https://www.pfsense.org/&quot;&gt;pfSense&lt;/a&gt; é uma solução de &lt;em&gt;firewall&lt;/em&gt; incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-lo. Ele permite criar VPNs utilizando, dentre outros protocolos, o &lt;a href=&quot;https://openvpn.net/&quot;&gt;OpenVPN&lt;/a&gt;, que é &lt;a href=&quot;http://softwarelivre.org/portal/o-que-e&quot;&gt;livre&lt;/a&gt;, versátil e seguro sem abrir mão da praticidade, motivos pelos quais é amplamente difundido.&lt;/p&gt;
-
-&lt;h2 id=&quot;o-que-é-uma-vpn&quot;&gt;O que é uma VPN?&lt;/h2&gt;
-
-&lt;p&gt;Uma &lt;strong&gt;rede privada virtual&lt;/strong&gt; (do inglês &lt;em&gt;Virtual Private Network&lt;/em&gt;, ou VPN) estabelece uma conexão entre dois computadores distantes, que passam a se comunicar pela Internet como se estivessem conectados a um mesmo &lt;em&gt;switch&lt;/em&gt; ou roteador.&lt;/p&gt;
-
-&lt;p&gt;Ela funciona assim: os dois computadores pertencem, a princípio, a redes diferentes (eles podem estar em prédios, cidades ou até mesmo países diferentes, por exemplo). Mas eles precisam se comunicar e possuem conexão com a Internet. Então, eles estabelecem na rede mundial um circuito por onde trocam informações de forma privada. É como uma ligação telefônica que não pudesse ser grampeada.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-02.jpg&quot; title=&quot;Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-02.jpg&quot; alt=&quot;Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;em class=&quot;caption&quot; itemprop=&quot;description&quot;&gt;
-&lt;p&gt;Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada&lt;/p&gt;
-
-&lt;/em&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Para quem utiliza esses computadores, é imperceptível que eles estão distantes. É como se eles estivessem conectados diretamente por um cabo, apesar de esse cabo não existir de verdade (por isso, essa rede é dita &lt;strong&gt;virtual&lt;/strong&gt;). E a comunicação, apesar de ocorrer pela Internet, não pode ser lida pelos computadores no meio do caminho entre um e outro, porque os dois computadores que estabelecem a VPN utilizam criptografia para se comunicar (por isso, essa rede é dita &lt;strong&gt;privada&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p&gt;Porque a informação trafega por um circuito cujo conteúdo não pode ser lido pelos computadores que ajudam a formar o circuito, nem pelos que estão fora dele, apenas pelos computadores nas pontas (o remetente e o destinatário), a VPN também é conhecida como &lt;strong&gt;túnel&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-03.png&quot; title=&quot;Um túnel é bem assim: só quem está dentro dele vê o que por ele passa&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-03.png&quot; alt=&quot;Um túnel é bem assim: só quem está dentro dele vê o que por ele passa&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;em class=&quot;caption&quot; itemprop=&quot;description&quot;&gt;
-&lt;p&gt;Um túnel é bem assim: só quem está dentro dele vê o que por ele passa&lt;/p&gt;
-
-&lt;/em&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Tentando explicar de forma simples, uma VPN é isso.&lt;/p&gt;
-
-&lt;p&gt;Com VPNs, podemos fazer algumas coisas interessantes, como por exemplo: em casa ou durante uma viagem a negócios utilizar um &lt;em&gt;notebook&lt;/em&gt; para acessar um computador do trabalho (como se estivesse dentro do trabalho); na rua, abrir, do celular, um arquivo que está no computador de casa (como se estivesse em casa); compartilhar arquivos e recursos (como impressoras ou servidores) entre sede e filial da empresa ou entre empresas diferentes.&lt;/p&gt;
-
-&lt;p&gt;O Psiphon, que apresentei em &lt;a href=&quot;/blog/2015/12/17/acesse-sites-e-aplicativos-censurados-com-o-psiphon/&quot;&gt;outro post&lt;/a&gt;, é um exemplo interessante de VPN: ele cria um túnel entre seu computador e algum computador anônimo situado em algum lugar bem distante no mundo e redireciona todo o seu tráfego de Internet por esse computador anônimo. Dessa forma, o Psiphon permite que você utilize a Internet de forma anônima.&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2015/12/vpn.png&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2015/12/vpn.png&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Um uso prático disso é burlar bloqueios e censuras. Recentemente, &lt;a href=&quot;http://g1.globo.com/tecnologia/noticia/2015/12/operadoras-sao-intimadas-bloquear-whatsapp-no-brasil-por-48-horas.html&quot;&gt;o WhatsApp foi bloqueado no Brasil&lt;/a&gt; e muitos internautas recorreram a VPNs como o Psiphon para conseguir usar o aplicativo nos seus celulares. VPNs como essas são muito utilizadas em países com governos autoritários, como a &lt;a href=&quot;http://tecnologia.terra.com.br/internet/pai-da-censura-na-china-e-surpreendido-burlando-a-mesma-em-publico,1d6ba1d9b58468d4df30fb84daf29ee6e3c193t0.html&quot;&gt;China&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;o-que-preciso-para-criar-uma-vpn&quot;&gt;O que preciso para criar uma VPN?&lt;/h2&gt;
-
-&lt;p&gt;Os dois computadores que queremos conectar precisam estar conectados à Internet. Um deles vai atuar como servidor, disponibilizando a VPN. O outro, vai atuar como cliente, utilizando a VPN. Eles também precisam de um protocolo para que consigam se comunicar. Existem alguns protocolos que podem ser usados para estabelecer VPNs, exemplos incluem: &lt;a href=&quot;https://technet.microsoft.com/pt-br/library/cc771298(v=ws.10).aspx&quot;&gt;PPTP, L2TP, SSTP&lt;/a&gt; e &lt;a href=&quot;https://openvpn.net/&quot;&gt;OpenVPN&lt;/a&gt;. Cada protocolo serve a um tipo de VPN e pode ser mais adequado para uma ou outra finalidade.&lt;/p&gt;
-
-&lt;p&gt;Aqui, vou explicar como estabelecer uma VPN entre um &lt;em&gt;firewall&lt;/em&gt; pfSense (suponho que já esteja instalado e funcionando) e um computador com &lt;a href=&quot;https://www.microsoft.com/pt-br/windows/&quot;&gt;Windows&lt;/a&gt; ou um celular com &lt;a href=&quot;https://www.android.com/intl/pt-BR_br/&quot;&gt;Android&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;A ideia de escrever foi compartilhar a experiência vivida onde eu trabalho.&lt;/p&gt;
-
-&lt;p&gt;Quero citar o excelente tutorial passo a passo do &lt;a href=&quot;http://thiago.oxente.org/2011/11/09/pfsense-2-0-e-openvpn-e-autenticando-no-windows-2008/&quot;&gt;Thiago Melo&lt;/a&gt;, que aqui utilizo como base para escrever uma versão um pouco mais atual e acrescentando alguns comentários meus.&lt;/p&gt;
-
-&lt;p&gt;Para referência futura, a versão do pfSense utilizado aqui é a 2.3, lançada em &lt;a href=&quot;https://blog.pfsense.org/?p=2008&quot;&gt;abril de 2016&lt;/a&gt;, e a do OpenVPN é a 2.1.11, lançada em &lt;a href=&quot;http://swupdate.openvpn.org/community/releases/&quot;&gt;maio de 2016&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;criando-a-vpn-no-pfsense&quot;&gt;Criando a VPN no pfSense&lt;/h2&gt;
-
-&lt;p&gt;O pfSense vem com um assistente (&lt;em&gt;wizard&lt;/em&gt;) que pode ser utilizado para criar VPNs, mais ou menos no famoso estilo &lt;em&gt;next&lt;/em&gt;, &lt;em&gt;next&lt;/em&gt;, &lt;em&gt;next&lt;/em&gt; (avançar, avançar, avançar) do Windows. No entanto, eu o achei um tanto falho. Quando eu o utilizava, ele repetia algumas configurações entre as VPNs. Assim, passei a fazer a maior parte das etapas manualmente, deixando o assistente apenas para configurar a VPN propriamente dita e as regras do &lt;em&gt;firewall&lt;/em&gt;, que são as etapas finais.&lt;/p&gt;
-
-&lt;p&gt;Vamos configurar manualmente os pré-requisitos para a VPN.&lt;/p&gt;
-
-&lt;p&gt;Primeiro, precisamos de uma &lt;strong&gt;autoridade certificadora&lt;/strong&gt; (do inglês &lt;em&gt;Certificate Authority&lt;/em&gt;, CA) para emitir os certificados do servidor e do cliente. Vá em &lt;strong&gt;System&lt;/strong&gt;, &lt;strong&gt;Cert. Manager&lt;/strong&gt;, aba &lt;strong&gt;CAs&lt;/strong&gt; e clique no botão &lt;strong&gt;Add&lt;/strong&gt;. Preencha o cadastro com as informações a seguir (claro, lembre-se sempre de alterar de acordo com as suas necessidades):&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Descriptive name:&lt;/strong&gt; MINHACASA_CA&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Method:&lt;/strong&gt; Create an internal Certificate Authority&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Country Code:&lt;/strong&gt; BR&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;State or Province:&lt;/strong&gt; Rio Grande do Sul&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;City:&lt;/strong&gt; Pelotas&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Organization:&lt;/strong&gt; Minha Casa&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Email Address:&lt;/strong&gt; vinyanalista@minhacasa.net&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Common Name:&lt;/strong&gt; minhacasa-ca&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-04.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-04.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Depois, precisamos de um certificado para o servidor. De volta à tela &lt;strong&gt;Certificate Manager&lt;/strong&gt;, clique na aba &lt;strong&gt;Certificates&lt;/strong&gt; e clique no botão &lt;strong&gt;Add&lt;/strong&gt;. Preencha o cadastro com as informações a seguir:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Method&lt;/strong&gt;: Create an internal Certificate&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Descriptive name:&lt;/strong&gt; VPN de teste&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Certificate authority:&lt;/strong&gt; MINHACASA_CA&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Certificate Type:&lt;/strong&gt; Server Certificate&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Country Code:&lt;/strong&gt; BR&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;State or Province:&lt;/strong&gt; Rio Grande do Sul&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;City:&lt;/strong&gt; Pelotas&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Organization:&lt;/strong&gt; Minha Casa&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Email Address:&lt;/strong&gt; vinyanalista@minhacasa.net&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Common Name:&lt;/strong&gt; vpn-de-teste&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-05.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-05.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Precisamos também cadastrar os usuários que utilizarão a VPN (&lt;em&gt;login&lt;/em&gt; e senha) e criar certificados para esses usuários. Vá em &lt;strong&gt;System&lt;/strong&gt;, &lt;strong&gt;User Manager&lt;/strong&gt; e clique no botão &lt;strong&gt;Add&lt;/strong&gt;. Preencha o cadastro com as informações a seguir:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Username&lt;/strong&gt;: vinyanalista&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Password:&lt;/strong&gt; Alg0$3guro!&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Full name:&lt;/strong&gt; Antônio Vinícius Menezes Medeiros&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Em &lt;strong&gt;Certificate&lt;/strong&gt;, marque &lt;strong&gt;Click to create a user certificate&lt;/strong&gt; para que ele gere um certificado para o usuário que estamos cadastrando. Acrescente as informações:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Descriptive name:&lt;/strong&gt; vinyanalista&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Certificate authority:&lt;/strong&gt; MINHACASA_CA&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Clique em &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-06.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-06.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Agora vamos à configuração da VPN propriamente dita.&lt;/p&gt;
-
-&lt;p&gt;Vá em &lt;strong&gt;VPN&lt;/strong&gt;, &lt;strong&gt;OpenVPN&lt;/strong&gt; e clique na aba &lt;strong&gt;Wizards&lt;/strong&gt;. É iniciado então o &lt;strong&gt;OpenVPN Remote Access Server Setup&lt;/strong&gt;. Na primeira tela, &lt;strong&gt;Select an Authentication Backend Type&lt;/strong&gt;, escolha &lt;strong&gt;Local User Access&lt;/strong&gt;, e clique em &lt;strong&gt;Next&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-07.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-07.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Na segunda tela, &lt;strong&gt;Choose a Certificate Authority (CA)&lt;/strong&gt;, selecione a autoridade cerficadora que foi criada anteriormente (&lt;strong&gt;MINHACASA_CA&lt;/strong&gt;) e clique em &lt;strong&gt;Next&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-08.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-08.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Na terceira tela, &lt;strong&gt;Choose a Server Certificate&lt;/strong&gt;, selecione o certificado de servidor que foi criado anteriormente (&lt;strong&gt;VPN de teste&lt;/strong&gt;) e clique em &lt;strong&gt;Next&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-09.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-09.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Na tela seguinte, &lt;strong&gt;Server Setup&lt;/strong&gt;, vamos configurar o servidor da VPN. Aqui, você deve preencher de acordo com as configurações da rede do seu servidor (a rede da sua empresa, por exemplo). Vejamos algumas configurações:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Interface:&lt;/strong&gt; WAN (interface de rede na qual o servidor aguardará pela conexão do cliente, deve apresentar conexão com a Internet)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Local Port:&lt;/strong&gt; 1194 (porta na qual o servidor aguardará pela conexão do cliente, 1194 é a porta convencional para o protocolo OpenVPN, você pode utilizar essa porta para a primeira VPN, mas se for criar outras, deverá reservar portas diferentes para cada VPN, por exemplo 1195, 1196…)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; VPN de teste (descrição da VPN, deve ser um nome informativo, até porque aparecerá na tela do cliente identificando a conexão)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Tunnel Network:&lt;/strong&gt; 192.168.26.0/24 (endereço e máscara da rede virtual privada, no formato de &lt;a href=&quot;https://pt.wikipedia.org/wiki/CIDR&quot;&gt;CIDR&lt;/a&gt;, observe que o pfSense tomará o primeiro endereço IP para ele, nesse caso 192.168.26.1, e os demais endereços IPs serão atribuídos aos clientes)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Local Network:&lt;/strong&gt; 192.168.25.0/24 (endereço e máscara da rede interna que o cliente conectado pela VPN poderá acessar, é possível especificar mais de uma rede separando as redes por vírgula e até mesmo restringir o acesso a apenas um computador na rede interna, por exemplo 192.168.25.2/32)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Com relação ao campo &lt;strong&gt;Tunnel Network&lt;/strong&gt;, devo observar que ele determina a quantidade de computadores que poderão se conectar pela VPN. Obrigatoriamente, o servidor consumirá 1 endereço IP da VPN. Além disso, o pfSense não deixa criarmos uma VPN cujo endereço de rede utilize 30, 31 ou 32 &lt;em&gt;bits&lt;/em&gt; do endereço IP. Então, a menor rede virtual privada que podemos criar utiliza 29 &lt;em&gt;bits&lt;/em&gt; do endereço IP para se identificar. Com os 3 &lt;em&gt;bits&lt;/em&gt; restantes, podemos endereçar 5 clientes.&lt;/p&gt;
-
-&lt;p&gt;Para esclarecer a explicação, se tivéssemos preenchido o campo &lt;strong&gt;Tunnel Network&lt;/strong&gt; com &lt;strong&gt;192.168.26.0/29&lt;/strong&gt;, os endereços da nossa VPN seriam assim:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;192.168.26.0:&lt;/strong&gt; endereço da rede&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;192.168.26.1:&lt;/strong&gt; endereço do pfSense&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;192.168.26.2:&lt;/strong&gt; endereço atribuído ao primeiro cliente que se conectar à VPN&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;192.168.26.3:&lt;/strong&gt; endereço atribuído ao segundo cliente&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;192.168.26.4:&lt;/strong&gt; endereço atribuído ao terceiro cliente&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;192.168.26.5:&lt;/strong&gt; endereço atribuído ao quarto cliente&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;192.168.26.6:&lt;/strong&gt; endereço atribuído ao quinto cliente&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;192.168.26.7:&lt;/strong&gt; endereço de &lt;em&gt;broadcast&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Provavelmente os campos &lt;strong&gt;Tunnel Network&lt;/strong&gt; e &lt;strong&gt;Local Network&lt;/strong&gt; são os que merecem mais cuidado nessa tela.&lt;/p&gt;
-
-&lt;p&gt;Há alguns campos que podem ser preenchidos caso você necessite configurar o cliente conectado à VPN usando DHCP. Desses, destaco:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;DNS Default Domain&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;DNS Server 1&lt;/strong&gt;, &lt;strong&gt;DNS Server 2&lt;/strong&gt;, &lt;strong&gt;DNS Server 3&lt;/strong&gt; e &lt;strong&gt;DNS Server 4&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;NTP Server&lt;/strong&gt; e &lt;strong&gt;NTP Server 2&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;WINS Server 1&lt;/strong&gt; e &lt;strong&gt;WINS Server 2&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Perceba que essa tela é extensa, mas nela estão quase todas as configurações da VPN:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-10.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-10.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Quando terminar de configurar a VPN, clique em &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Na penúltima tela do assistente, &lt;strong&gt;Firewall Rule Configuration&lt;/strong&gt;, certifique-se de que as duas opções &lt;strong&gt;Firewall Rule&lt;/strong&gt; e &lt;strong&gt;OpenVPN rule&lt;/strong&gt; estejam marcadas. Com isso, o pfSense criará automaticamente as regras de &lt;em&gt;firewall&lt;/em&gt; necessárias para que a VPN funcione. Clique em &lt;strong&gt;Next&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-11.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-11.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;A última tela apenas informa que a VPN foi criada. Clique em &lt;strong&gt;Finish&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-12.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-12.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&quot;exportando-o-software-cliente&quot;&gt;Exportando o &lt;em&gt;software&lt;/em&gt; cliente&lt;/h2&gt;
-
-&lt;p&gt;O pfSense é capaz de exportar o &lt;em&gt;software&lt;/em&gt; e os arquivos de configuração que devem ser instalados no computador cliente para que ele consiga se conectar à VPN. Para isso, usamos o &lt;strong&gt;OpenVPN Client Export Utility&lt;/strong&gt;. Esse utilitário não acompanha a instalação padrão do pfSense, sendo disponibilizado como um pacote.&lt;/p&gt;
-
-&lt;p&gt;Caso você ainda não o tenha instalado, vá em &lt;strong&gt;System&lt;/strong&gt;, &lt;strong&gt;Package Manager&lt;/strong&gt;, na aba &lt;strong&gt;Available Packages&lt;/strong&gt;, busque por esse pacote e o instale clicando no botão &lt;strong&gt;Install&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-13.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-13.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Com o utilitário instalado, vá em &lt;strong&gt;VPN&lt;/strong&gt;, &lt;strong&gt;OpenVPN&lt;/strong&gt;, aba &lt;strong&gt;Client Export&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Em &lt;strong&gt;Remote Access Server&lt;/strong&gt;, selecione a VPN (nesse exemplo, &lt;strong&gt;VPN de teste&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p&gt;Mais abaixo, no final da página, na linha correspondente ao usuário que deve acessar a VPN (nesse exemplo, &lt;strong&gt;vinyanalista&lt;/strong&gt;), clique no botão correspondente ao cliente que deseja exportar.&lt;/p&gt;
-
-&lt;p&gt;Vou demonstrar como conectar à VPN um computador cujo sistema operacional é o Windows 10 de 64 &lt;em&gt;bits&lt;/em&gt;. Nesse caso, clique no botão &lt;strong&gt;x64-win6&lt;/strong&gt; para exportar o cliente correspondente:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-14.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-14.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;O &lt;em&gt;download&lt;/em&gt; do instalador do cliente é iniciado. Esse arquivo (cujo nome deve ser algo parecido com &lt;strong&gt;firewall-udp-1194-vinyanalista-install.exe&lt;/strong&gt;) deve ser copiado ou movido para o computador cliente.&lt;/p&gt;
-
-&lt;p&gt;Também vou demonstrar como conectar à VPN um celular com sistema Android. Você pode aproveitar para já baixar também o arquivo de configuração que será necessário. Para isso, clique no botão &lt;strong&gt;Android&lt;/strong&gt;. Esse arquivo (cujo nome deve ser algo parecido com &lt;strong&gt;firewall-udp-1194-vinyanalista-android-config.ovpn&lt;/strong&gt;) deve ser copiado ou movido para o celular. No caso do Android, o &lt;em&gt;software&lt;/em&gt; cliente é instalado pela &lt;a href=&quot;https://play.google.com/store/&quot;&gt;Play Store&lt;/a&gt;, por isso o pfSense exporta apenas o arquivo de configuração.&lt;/p&gt;
-
-&lt;h2 id=&quot;conectando-à-vpn-pelo-windows-10&quot;&gt;Conectando à VPN pelo Windows 10&lt;/h2&gt;
-
-&lt;p&gt;No computador cliente, execute o instalador do cliente OpenVPN, baixado do pfSense. A instalação é bem simples. Aqui, mais uma vez, é &lt;em&gt;next&lt;/em&gt;, &lt;em&gt;next&lt;/em&gt;, &lt;em&gt;next&lt;/em&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-15.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-15.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Terminada a instalação, para iniciar o cliente OpenVPN, abra o &lt;strong&gt;menu Iniciar&lt;/strong&gt;, clique em &lt;strong&gt;Todos os programas&lt;/strong&gt;, depois em &lt;strong&gt;OpenVPN&lt;/strong&gt; e, por fim, em &lt;strong&gt;OpenVPN GUI&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-16.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-16.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;O cliente OpenVPN é iniciado. Observe seu ícone na área de notificação:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-17.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-17.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Dê dois clique nesse ícone. O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense e clique em &lt;strong&gt;OK&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-18.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-18.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Se conseguir se conectar, o cliente OpenVPN mostra uma notificação com o endereço IP que foi atribuído ao computador dentro da rede privada virtual. Observe também que o ícone do cliente muda sua cor para verde, indicando que está conectado:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-19.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-19.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Como teste, você pode abrir o &lt;strong&gt;Prompt de comando&lt;/strong&gt; do Windows e verificar a conectividade com algum computador na rede da outra ponta da VPN:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;Microsoft Windows [versão 10.0.10240]
-(c) 2015 Microsoft Corporation. Todos os direitos reservados.
-
-C:\Users\Vinicius&amp;gt;ping 172.20.0.4
-
-Disparando 172.20.0.4 com 32 bytes de dados:
-Resposta de 172.20.0.4: bytes=32 tempo=127ms TTL=62
-Resposta de 172.20.0.4: bytes=32 tempo=78ms TTL=62
-Resposta de 172.20.0.4: bytes=32 tempo=104ms TTL=62
-Resposta de 172.20.0.4: bytes=32 tempo=97ms TTL=62
-
-Estatísticas do Ping para 172.20.0.4:
-    Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de
-             perda),
-Aproximar um número redondo de vezes em milissegundos:
-    Mínimo = 78ms, Máximo = 127ms, Média = 101ms
-
-C:\Users\Vinicius&amp;gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Quando não precisar usar mais a VPN, clique com o botão direito do &lt;em&gt;mouse&lt;/em&gt; no ícone do cliente OpenVPN e em seguida clique em &lt;strong&gt;Sair&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-20.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-20.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;h3 id=&quot;solução-de-problemas&quot;&gt;Solução de problemas&lt;/h3&gt;
-
-&lt;p&gt;Caso você perceba que não conseguiu se conectar à VPN e o cliente exibe uma mensagem como esta:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity)
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Significa que o cliente e o servidor OpenVPN não estão conseguindo se comunicar, podendo a causa do problema estar em uma ponta ou outra da conexão. É provável que seu computador esteja sem conexão com a Internet ou algum &lt;em&gt;firewall&lt;/em&gt; esteja impedindo a conexão do seu computador com o servidor da VPN.&lt;/p&gt;
-
-&lt;p&gt;Algumas verificações que você pode fazer do lado do cliente:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Tentar executar o cliente OpenVPN como administrador;&lt;/li&gt;
-  &lt;li&gt;Verificar a hora do computador (para que a conexão segura possa ser estabelecida é um pré-requisito que a hora esteja correta);&lt;/li&gt;
-  &lt;li&gt;Verificar no Firewall do Windows se a porta número 1194 está liberada para receber conexões TCP e UDP (se não estiver liberada, adicionar exceção);&lt;/li&gt;
-  &lt;li&gt;Verificar no Firewall do Windows se o aplicativo &lt;strong&gt;openvpn.exe&lt;/strong&gt; está sendo bloqueado (se estiver bloqueado, adicionar exceção);&lt;/li&gt;
-  &lt;li&gt;Se houver algum &lt;em&gt;firewall&lt;/em&gt; entre o computador e o provedor de Internet, verificá-lo também; e&lt;/li&gt;
-  &lt;li&gt;Se já havia um cliente OpenVPN instalado no computador e o instalador baixado do pfSense apenas acrescentou a configuração da VPN recém-criada, considere a possibilidade de desinstalar o cliente já instalado na máquina e instalar o fornecido, que pode ser mais novo e conter correções para &lt;em&gt;bugs&lt;/em&gt; e falhas de segurança.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Falando em &lt;em&gt;bug&lt;/em&gt;, pode acontecer de o cliente OpenVPN relatar que conseguiu se conectar, mas não conseguiu configurar rotas para a rede privada virtual:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;Tue Jun 14 22:15:09 2016 ROUTE: route addition failed using CreateIpForwardEntry: Acesso negado.   [status=5 if_index=4]
-Tue Jun 14 22:15:09 2016 env_block: add PATH=C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem
-Tue Jun 14 22:15:09 2016 ERROR: Windows route add command failed [adaptive]: returned error code 1
-Tue Jun 14 22:15:09 2016 ROUTE: route addition failed using CreateIpForwardEntry: Acesso negado.   [status=5 if_index=4]
-Tue Jun 14 22:15:09 2016 env_block: add PATH=C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem
-Tue Jun 14 22:15:10 2016 ERROR: Windows route add command failed [adaptive]: returned error code 1
-Tue Jun 14 22:15:10 2016 Initialization Sequence Completed
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Isso é um &lt;a href=&quot;https://community.openvpn.net/openvpn/ticket/68&quot;&gt;&lt;em&gt;bug&lt;/em&gt;&lt;/a&gt; que afetava versões antigas do cliente OpenVPN, mas já foi corrigido. Você pode &lt;a href=&quot;https://openvpn.net/index.php/open-source/downloads.html&quot;&gt;baixar a versão mais recente do cliente OpenVPN&lt;/a&gt;, instalá-la em seu computador e repetir os passos acima para se conectar à VPN normalmente. Ou, se não quiser fazer isso, você pode tentar executar o cliente já instalado em seu computador com permissões de administrador.&lt;/p&gt;
-
-&lt;p&gt;Quando você conseguir se conectar sem problemas, o cliente OpenVPN deve exibir uma sequência de mensagens parecida com esta:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;Tue Jun 14 22:18:06 2016 OpenVPN 2.3.11 x86_64-w64-mingw32 [SSL (OpenSSL)] [LZO] [PKCS11] [IPv6] built on May 10 2016
-Tue Jun 14 22:18:06 2016 Windows version 6.2 (Windows 8 or greater) 64bit
-Tue Jun 14 22:18:06 2016 library versions: OpenSSL 1.0.1t  3 May 2016, LZO 2.09
-Tue Jun 14 22:19:34 2016 Control Channel Authentication: using 'firewall-udp-1194-antonio.medeiros-tls.key' as a OpenVPN static key file
-Tue Jun 14 22:19:34 2016 UDPv4 link local (bound): [undef]
-Tue Jun 14 22:19:34 2016 UDPv4 link remote: [AF_INET]187.86.133.121:1194
-Tue Jun 14 22:19:35 2016 WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
-Tue Jun 14 22:19:35 2016 [VPN do HEUFPEL] Peer Connection Initiated with [AF_INET]187.86.133.121:1194
-Tue Jun 14 22:19:38 2016 do_ifconfig, tt-&amp;gt;ipv6=0, tt-&amp;gt;did_ifconfig_ipv6_setup=0
-Tue Jun 14 22:19:38 2016 open_tun, tt-&amp;gt;ipv6=0
-Tue Jun 14 22:19:38 2016 TAP-WIN32 device [Ethernet 3] opened: \\.\Global\{2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30}.tap
-Tue Jun 14 22:19:38 2016 Set TAP-Windows TUN subnet mode network/local/netmask = 10.100.201.0/10.100.201.2/255.255.255.0 [SUCCEEDED]
-Tue Jun 14 22:19:38 2016 Notified TAP-Windows driver to set a DHCP IP/netmask of 10.100.201.2/255.255.255.0 on interface {2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30} [DHCP-serv: 10.100.201.254, lease-time: 31536000]
-Tue Jun 14 22:19:38 2016 Successful ARP Flush on interface [4] {2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30}
-Tue Jun 14 22:19:44 2016 Initialization Sequence Completed
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;conectando-à-vpn-pelo-android&quot;&gt;Conectando à VPN pelo Android&lt;/h2&gt;
-
-&lt;p&gt;Para conectar um celular com Android à VPN que acabamos de criar no nosso &lt;em&gt;firewall&lt;/em&gt; pfSense, precisamos instalar um aplicativo cliente no celular. Aqui, vou demonstrar como usar o cliente oficial do OpenVPN, o OpenVPN Connect.&lt;/p&gt;
-
-&lt;p&gt;Comece instalando o OpenVPN Connect pela Play Store:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;https://play.google.com/store/apps/details?id=net.openvpn.openvpn&quot; title=&quot;Clique para obter o OpenVPN Connect na Play Store&quot;&gt;
-&lt;img src=&quot;/files/2015/12/google-play.png&quot; alt=&quot;Clique para obter o OpenVPN Connect na Play Store&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;em class=&quot;caption&quot; itemprop=&quot;description&quot;&gt;
-&lt;p&gt;Clique para obter o OpenVPN Connect na Play Store&lt;/p&gt;
-
-&lt;/em&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Se ainda não passou, passe agora para o celular o arquivo de configuração exportado pelo pfSense.&lt;/p&gt;
-
-&lt;p&gt;No celular, abra o &lt;strong&gt;menu de Aplicativos&lt;/strong&gt; e toque no &lt;strong&gt;OpenVPN Connect&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-21.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-21.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;O cliente OpenVPN para Android é iniciado:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-22.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-22.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Toque no &lt;strong&gt;botão de opções&lt;/strong&gt; (o com 3 pontos que aparece no canto superior direito da tela), em seguida em &lt;strong&gt;Import&lt;/strong&gt; e, por último, em &lt;strong&gt;Import Profile from SD card&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-23.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-23.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Localize o arquivo de configuração na memória interna ou no cartão de memória do seu celular, toque nele e depois em &lt;strong&gt;Select&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-24.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-24.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense. Opcionalmente, marque a opção &lt;strong&gt;Save&lt;/strong&gt; para que ele memorize o usuário e a senha. Por fim, toque em &lt;strong&gt;Connect&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-25.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-25.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Se conseguir se conectar, o cliente OpenVPN passa a exibir o &lt;em&gt;status&lt;/em&gt; da conexão. Observe que ele fixa um ícone na área de notificação, indicando que está conectado:&lt;/p&gt;
-
-&lt;div class=&quot;image no-ads-here text-center mb-3&quot; itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-&lt;a href=&quot;/files/2016/06/pfsense-vpn-26.jpg&quot; title=&quot;&quot;&gt;
-&lt;img src=&quot;/files/2016/06/pfsense-vpn-26.jpg&quot; alt=&quot;&quot; class=&quot;img-fluid img-thumbnail&quot; itemprop=&quot;contentUrl&quot; /&gt;
-&lt;/a&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;Quando não precisar usar mais a VPN, volte ao cliente OpenVPN e toque em &lt;strong&gt;Disconnect&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusão&quot;&gt;Conclusão&lt;/h2&gt;
-
-&lt;p&gt;É isso. Espero que esse texto possa te ajudar caso necessite. A seguir, listo algumas referências que utilizei além dos &lt;em&gt;links&lt;/em&gt; que já apareceram por todo o texto:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.tecmundo.com.br/1427-o-que-e-vpn-.htm&quot;&gt;O que é VPN? - TecMundo&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://olhardigital.uol.com.br/noticia/o-que-e-e-para-que-serve-uma-vpn/37913&quot;&gt;O que é e para que serve uma VPN? - Olhar Digital&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://technet.microsoft.com/pt-br/library/cc731954(v=ws.10).aspx&quot;&gt;O que é VPN? - TechNet&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.gta.ufrj.br/grad/13_1/vpn_ipsec/&quot;&gt;VPN e IPsec - UFRJ&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://forum.pfsense.org/index.php?topic=81287.0&quot;&gt;OpenVPN Errors - TLS handshake failed - fórum do pfSense&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.vivaolinux.com.br/topico/servidores-VPN/OPENVPN-no-pfsense-conectando-cliente-windows&quot;&gt;OPENVPN no pfsense conectando cliente windows  [RESOLVIDO] [servidores VPN] - Viva o Linux&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://openvpn.net/index.php/open-source/faq/79-client/253-tls-error-tls-key-negotiation-failed-to-occur-within-60-seconds-check-your-network-connectivity.html&quot;&gt;TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity) - FAQ do OpenVPN&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">O pfSense é uma solução de firewall incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-lo. Ele permite criar VPNs utilizando, dentre outros protocolos, o OpenVPN, que é livre, versátil e seguro sem abrir mão da praticidade, motivos pelos quais é amplamente difundido. O que é uma VPN? Uma rede privada virtual (do inglês Virtual Private Network, ou VPN) estabelece uma conexão entre dois computadores distantes, que passam a se comunicar pela Internet como se estivessem conectados a um mesmo switch ou roteador. Ela funciona assim: os dois computadores pertencem, a princípio, a redes diferentes (eles podem estar em prédios, cidades ou até mesmo países diferentes, por exemplo). Mas eles precisam se comunicar e possuem conexão com a Internet. Então, eles estabelecem na rede mundial um circuito por onde trocam informações de forma privada. É como uma ligação telefônica que não pudesse ser grampeada. Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada Para quem utiliza esses computadores, é imperceptível que eles estão distantes. É como se eles estivessem conectados diretamente por um cabo, apesar de esse cabo não existir de verdade (por isso, essa rede é dita virtual). E a comunicação, apesar de ocorrer pela Internet, não pode ser lida pelos computadores no meio do caminho entre um e outro, porque os dois computadores que estabelecem a VPN utilizam criptografia para se comunicar (por isso, essa rede é dita privada). Porque a informação trafega por um circuito cujo conteúdo não pode ser lido pelos computadores que ajudam a formar o circuito, nem pelos que estão fora dele, apenas pelos computadores nas pontas (o remetente e o destinatário), a VPN também é conhecida como túnel. Um túnel é bem assim: só quem está dentro dele vê o que por ele passa Tentando explicar de forma simples, uma VPN é isso. Com VPNs, podemos fazer algumas coisas interessantes, como por exemplo: em casa ou durante uma viagem a negócios utilizar um notebook para acessar um computador do trabalho (como se estivesse dentro do trabalho); na rua, abrir, do celular, um arquivo que está no computador de casa (como se estivesse em casa); compartilhar arquivos e recursos (como impressoras ou servidores) entre sede e filial da empresa ou entre empresas diferentes. O Psiphon, que apresentei em outro post, é um exemplo interessante de VPN: ele cria um túnel entre seu computador e algum computador anônimo situado em algum lugar bem distante no mundo e redireciona todo o seu tráfego de Internet por esse computador anônimo. Dessa forma, o Psiphon permite que você utilize a Internet de forma anônima. Um uso prático disso é burlar bloqueios e censuras. Recentemente, o WhatsApp foi bloqueado no Brasil e muitos internautas recorreram a VPNs como o Psiphon para conseguir usar o aplicativo nos seus celulares. VPNs como essas são muito utilizadas em países com governos autoritários, como a China. O que preciso para criar uma VPN? Os dois computadores que queremos conectar precisam estar conectados à Internet. Um deles vai atuar como servidor, disponibilizando a VPN. O outro, vai atuar como cliente, utilizando a VPN. Eles também precisam de um protocolo para que consigam se comunicar. Existem alguns protocolos que podem ser usados para estabelecer VPNs, exemplos incluem: PPTP, L2TP, SSTP e OpenVPN. Cada protocolo serve a um tipo de VPN e pode ser mais adequado para uma ou outra finalidade. Aqui, vou explicar como estabelecer uma VPN entre um firewall pfSense (suponho que já esteja instalado e funcionando) e um computador com Windows ou um celular com Android. A ideia de escrever foi compartilhar a experiência vivida onde eu trabalho. Quero citar o excelente tutorial passo a passo do Thiago Melo, que aqui utilizo como base para escrever uma versão um pouco mais atual e acrescentando alguns comentários meus. Para referência futura, a versão do pfSense utilizado aqui é a 2.3, lançada em abril de 2016, e a do OpenVPN é a 2.1.11, lançada em maio de 2016. Criando a VPN no pfSense O pfSense vem com um assistente (wizard) que pode ser utilizado para criar VPNs, mais ou menos no famoso estilo next, next, next (avançar, avançar, avançar) do Windows. No entanto, eu o achei um tanto falho. Quando eu o utilizava, ele repetia algumas configurações entre as VPNs. Assim, passei a fazer a maior parte das etapas manualmente, deixando o assistente apenas para configurar a VPN propriamente dita e as regras do firewall, que são as etapas finais. Vamos configurar manualmente os pré-requisitos para a VPN. Primeiro, precisamos de uma autoridade certificadora (do inglês Certificate Authority, CA) para emitir os certificados do servidor e do cliente. Vá em System, Cert. Manager, aba CAs e clique no botão Add. Preencha o cadastro com as informações a seguir (claro, lembre-se sempre de alterar de acordo com as suas necessidades): Descriptive name: MINHACASA_CA Method: Create an internal Certificate Authority Country Code: BR State or Province: Rio Grande do Sul City: Pelotas Organization: Minha Casa Email Address: vinyanalista@minhacasa.net Common Name: minhacasa-ca Clique em Save: Depois, precisamos de um certificado para o servidor. De volta à tela Certificate Manager, clique na aba Certificates e clique no botão Add. Preencha o cadastro com as informações a seguir: Method: Create an internal Certificate Descriptive name: VPN de teste Certificate authority: MINHACASA_CA Certificate Type: Server Certificate Country Code: BR State or Province: Rio Grande do Sul City: Pelotas Organization: Minha Casa Email Address: vinyanalista@minhacasa.net Common Name: vpn-de-teste Clique em Save: Precisamos também cadastrar os usuários que utilizarão a VPN (login e senha) e criar certificados para esses usuários. Vá em System, User Manager e clique no botão Add. Preencha o cadastro com as informações a seguir: Username: vinyanalista Password: Alg0$3guro! Full name: Antônio Vinícius Menezes Medeiros Em Certificate, marque Click to create a user certificate para que ele gere um certificado para o usuário que estamos cadastrando. Acrescente as informações: Descriptive name: vinyanalista Certificate authority: MINHACASA_CA Clique em Save: Agora vamos à configuração da VPN propriamente dita. Vá em VPN, OpenVPN e clique na aba Wizards. É iniciado então o OpenVPN Remote Access Server Setup. Na primeira tela, Select an Authentication Backend Type, escolha Local User Access, e clique em Next: Na segunda tela, Choose a Certificate Authority (CA), selecione a autoridade cerficadora que foi criada anteriormente (MINHACASA_CA) e clique em Next: Na terceira tela, Choose a Server Certificate, selecione o certificado de servidor que foi criado anteriormente (VPN de teste) e clique em Next: Na tela seguinte, Server Setup, vamos configurar o servidor da VPN. Aqui, você deve preencher de acordo com as configurações da rede do seu servidor (a rede da sua empresa, por exemplo). Vejamos algumas configurações: Interface: WAN (interface de rede na qual o servidor aguardará pela conexão do cliente, deve apresentar conexão com a Internet) Local Port: 1194 (porta na qual o servidor aguardará pela conexão do cliente, 1194 é a porta convencional para o protocolo OpenVPN, você pode utilizar essa porta para a primeira VPN, mas se for criar outras, deverá reservar portas diferentes para cada VPN, por exemplo 1195, 1196…) Description: VPN de teste (descrição da VPN, deve ser um nome informativo, até porque aparecerá na tela do cliente identificando a conexão) Tunnel Network: 192.168.26.0/24 (endereço e máscara da rede virtual privada, no formato de CIDR, observe que o pfSense tomará o primeiro endereço IP para ele, nesse caso 192.168.26.1, e os demais endereços IPs serão atribuídos aos clientes) Local Network: 192.168.25.0/24 (endereço e máscara da rede interna que o cliente conectado pela VPN poderá acessar, é possível especificar mais de uma rede separando as redes por vírgula e até mesmo restringir o acesso a apenas um computador na rede interna, por exemplo 192.168.25.2/32) Com relação ao campo Tunnel Network, devo observar que ele determina a quantidade de computadores que poderão se conectar pela VPN. Obrigatoriamente, o servidor consumirá 1 endereço IP da VPN. Além disso, o pfSense não deixa criarmos uma VPN cujo endereço de rede utilize 30, 31 ou 32 bits do endereço IP. Então, a menor rede virtual privada que podemos criar utiliza 29 bits do endereço IP para se identificar. Com os 3 bits restantes, podemos endereçar 5 clientes. Para esclarecer a explicação, se tivéssemos preenchido o campo Tunnel Network com 192.168.26.0/29, os endereços da nossa VPN seriam assim: 192.168.26.0: endereço da rede 192.168.26.1: endereço do pfSense 192.168.26.2: endereço atribuído ao primeiro cliente que se conectar à VPN 192.168.26.3: endereço atribuído ao segundo cliente 192.168.26.4: endereço atribuído ao terceiro cliente 192.168.26.5: endereço atribuído ao quarto cliente 192.168.26.6: endereço atribuído ao quinto cliente 192.168.26.7: endereço de broadcast Provavelmente os campos Tunnel Network e Local Network são os que merecem mais cuidado nessa tela. Há alguns campos que podem ser preenchidos caso você necessite configurar o cliente conectado à VPN usando DHCP. Desses, destaco: DNS Default Domain DNS Server 1, DNS Server 2, DNS Server 3 e DNS Server 4 NTP Server e NTP Server 2 WINS Server 1 e WINS Server 2 Perceba que essa tela é extensa, mas nela estão quase todas as configurações da VPN: Quando terminar de configurar a VPN, clique em Next. Na penúltima tela do assistente, Firewall Rule Configuration, certifique-se de que as duas opções Firewall Rule e OpenVPN rule estejam marcadas. Com isso, o pfSense criará automaticamente as regras de firewall necessárias para que a VPN funcione. Clique em Next: A última tela apenas informa que a VPN foi criada. Clique em Finish: Exportando o software cliente O pfSense é capaz de exportar o software e os arquivos de configuração que devem ser instalados no computador cliente para que ele consiga se conectar à VPN. Para isso, usamos o OpenVPN Client Export Utility. Esse utilitário não acompanha a instalação padrão do pfSense, sendo disponibilizado como um pacote. Caso você ainda não o tenha instalado, vá em System, Package Manager, na aba Available Packages, busque por esse pacote e o instale clicando no botão Install: Com o utilitário instalado, vá em VPN, OpenVPN, aba Client Export. Em Remote Access Server, selecione a VPN (nesse exemplo, VPN de teste). Mais abaixo, no final da página, na linha correspondente ao usuário que deve acessar a VPN (nesse exemplo, vinyanalista), clique no botão correspondente ao cliente que deseja exportar. Vou demonstrar como conectar à VPN um computador cujo sistema operacional é o Windows 10 de 64 bits. Nesse caso, clique no botão x64-win6 para exportar o cliente correspondente: O download do instalador do cliente é iniciado. Esse arquivo (cujo nome deve ser algo parecido com firewall-udp-1194-vinyanalista-install.exe) deve ser copiado ou movido para o computador cliente. Também vou demonstrar como conectar à VPN um celular com sistema Android. Você pode aproveitar para já baixar também o arquivo de configuração que será necessário. Para isso, clique no botão Android. Esse arquivo (cujo nome deve ser algo parecido com firewall-udp-1194-vinyanalista-android-config.ovpn) deve ser copiado ou movido para o celular. No caso do Android, o software cliente é instalado pela Play Store, por isso o pfSense exporta apenas o arquivo de configuração. Conectando à VPN pelo Windows 10 No computador cliente, execute o instalador do cliente OpenVPN, baixado do pfSense. A instalação é bem simples. Aqui, mais uma vez, é next, next, next: Terminada a instalação, para iniciar o cliente OpenVPN, abra o menu Iniciar, clique em Todos os programas, depois em OpenVPN e, por fim, em OpenVPN GUI: O cliente OpenVPN é iniciado. Observe seu ícone na área de notificação: Dê dois clique nesse ícone. O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense e clique em OK: Se conseguir se conectar, o cliente OpenVPN mostra uma notificação com o endereço IP que foi atribuído ao computador dentro da rede privada virtual. Observe também que o ícone do cliente muda sua cor para verde, indicando que está conectado: Como teste, você pode abrir o Prompt de comando do Windows e verificar a conectividade com algum computador na rede da outra ponta da VPN: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 Microsoft Windows [versão 10.0.10240] (c) 2015 Microsoft Corporation. Todos os direitos reservados. C:\Users\Vinicius&amp;gt;ping 172.20.0.4 Disparando 172.20.0.4 com 32 bytes de dados: Resposta de 172.20.0.4: bytes=32 tempo=127ms TTL=62 Resposta de 172.20.0.4: bytes=32 tempo=78ms TTL=62 Resposta de 172.20.0.4: bytes=32 tempo=104ms TTL=62 Resposta de 172.20.0.4: bytes=32 tempo=97ms TTL=62 Estatísticas do Ping para 172.20.0.4: Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de perda), Aproximar um número redondo de vezes em milissegundos: Mínimo = 78ms, Máximo = 127ms, Média = 101ms C:\Users\Vinicius&amp;gt; Quando não precisar usar mais a VPN, clique com o botão direito do mouse no ícone do cliente OpenVPN e em seguida clique em Sair: Solução de problemas Caso você perceba que não conseguiu se conectar à VPN e o cliente exibe uma mensagem como esta: 1 TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity) Significa que o cliente e o servidor OpenVPN não estão conseguindo se comunicar, podendo a causa do problema estar em uma ponta ou outra da conexão. É provável que seu computador esteja sem conexão com a Internet ou algum firewall esteja impedindo a conexão do seu computador com o servidor da VPN. Algumas verificações que você pode fazer do lado do cliente: Tentar executar o cliente OpenVPN como administrador; Verificar a hora do computador (para que a conexão segura possa ser estabelecida é um pré-requisito que a hora esteja correta); Verificar no Firewall do Windows se a porta número 1194 está liberada para receber conexões TCP e UDP (se não estiver liberada, adicionar exceção); Verificar no Firewall do Windows se o aplicativo openvpn.exe está sendo bloqueado (se estiver bloqueado, adicionar exceção); Se houver algum firewall entre o computador e o provedor de Internet, verificá-lo também; e Se já havia um cliente OpenVPN instalado no computador e o instalador baixado do pfSense apenas acrescentou a configuração da VPN recém-criada, considere a possibilidade de desinstalar o cliente já instalado na máquina e instalar o fornecido, que pode ser mais novo e conter correções para bugs e falhas de segurança. Falando em bug, pode acontecer de o cliente OpenVPN relatar que conseguiu se conectar, mas não conseguiu configurar rotas para a rede privada virtual: 1 2 3 4 5 6 7 Tue Jun 14 22:15:09 2016 ROUTE: route addition failed using CreateIpForwardEntry: Acesso negado. [status=5 if_index=4] Tue Jun 14 22:15:09 2016 env_block: add PATH=C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem Tue Jun 14 22:15:09 2016 ERROR: Windows route add command failed [adaptive]: returned error code 1 Tue Jun 14 22:15:09 2016 ROUTE: route addition failed using CreateIpForwardEntry: Acesso negado. [status=5 if_index=4] Tue Jun 14 22:15:09 2016 env_block: add PATH=C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem Tue Jun 14 22:15:10 2016 ERROR: Windows route add command failed [adaptive]: returned error code 1 Tue Jun 14 22:15:10 2016 Initialization Sequence Completed Isso é um bug que afetava versões antigas do cliente OpenVPN, mas já foi corrigido. Você pode baixar a versão mais recente do cliente OpenVPN, instalá-la em seu computador e repetir os passos acima para se conectar à VPN normalmente. Ou, se não quiser fazer isso, você pode tentar executar o cliente já instalado em seu computador com permissões de administrador. Quando você conseguir se conectar sem problemas, o cliente OpenVPN deve exibir uma sequência de mensagens parecida com esta: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 Tue Jun 14 22:18:06 2016 OpenVPN 2.3.11 x86_64-w64-mingw32 [SSL (OpenSSL)] [LZO] [PKCS11] [IPv6] built on May 10 2016 Tue Jun 14 22:18:06 2016 Windows version 6.2 (Windows 8 or greater) 64bit Tue Jun 14 22:18:06 2016 library versions: OpenSSL 1.0.1t 3 May 2016, LZO 2.09 Tue Jun 14 22:19:34 2016 Control Channel Authentication: using 'firewall-udp-1194-antonio.medeiros-tls.key' as a OpenVPN static key file Tue Jun 14 22:19:34 2016 UDPv4 link local (bound): [undef] Tue Jun 14 22:19:34 2016 UDPv4 link remote: [AF_INET]187.86.133.121:1194 Tue Jun 14 22:19:35 2016 WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this Tue Jun 14 22:19:35 2016 [VPN do HEUFPEL] Peer Connection Initiated with [AF_INET]187.86.133.121:1194 Tue Jun 14 22:19:38 2016 do_ifconfig, tt-&amp;gt;ipv6=0, tt-&amp;gt;did_ifconfig_ipv6_setup=0 Tue Jun 14 22:19:38 2016 open_tun, tt-&amp;gt;ipv6=0 Tue Jun 14 22:19:38 2016 TAP-WIN32 device [Ethernet 3] opened: \\.\Global\{2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30}.tap Tue Jun 14 22:19:38 2016 Set TAP-Windows TUN subnet mode network/local/netmask = 10.100.201.0/10.100.201.2/255.255.255.0 [SUCCEEDED] Tue Jun 14 22:19:38 2016 Notified TAP-Windows driver to set a DHCP IP/netmask of 10.100.201.2/255.255.255.0 on interface {2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30} [DHCP-serv: 10.100.201.254, lease-time: 31536000] Tue Jun 14 22:19:38 2016 Successful ARP Flush on interface [4] {2D6F99C4-A78C-48F2-A301-AEBFDD5B5E30} Tue Jun 14 22:19:44 2016 Initialization Sequence Completed Conectando à VPN pelo Android Para conectar um celular com Android à VPN que acabamos de criar no nosso firewall pfSense, precisamos instalar um aplicativo cliente no celular. Aqui, vou demonstrar como usar o cliente oficial do OpenVPN, o OpenVPN Connect. Comece instalando o OpenVPN Connect pela Play Store: Clique para obter o OpenVPN Connect na Play Store Se ainda não passou, passe agora para o celular o arquivo de configuração exportado pelo pfSense. No celular, abra o menu de Aplicativos e toque no OpenVPN Connect: O cliente OpenVPN para Android é iniciado: Toque no botão de opções (o com 3 pontos que aparece no canto superior direito da tela), em seguida em Import e, por último, em Import Profile from SD card: Localize o arquivo de configuração na memória interna ou no cartão de memória do seu celular, toque nele e depois em Select: O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense. Opcionalmente, marque a opção Save para que ele memorize o usuário e a senha. Por fim, toque em Connect: Se conseguir se conectar, o cliente OpenVPN passa a exibir o status da conexão. Observe que ele fixa um ícone na área de notificação, indicando que está conectado: Quando não precisar usar mais a VPN, volte ao cliente OpenVPN e toque em Disconnect. Conclusão É isso. Espero que esse texto possa te ajudar caso necessite. A seguir, listo algumas referências que utilizei além dos links que já apareceram por todo o texto: O que é VPN? - TecMundo O que é e para que serve uma VPN? - Olhar Digital O que é VPN? - TechNet VPN e IPsec - UFRJ OpenVPN Errors - TLS handshake failed - fórum do pfSense OPENVPN no pfsense conectando cliente windows [RESOLVIDO] [servidores VPN] - Viva o Linux TLS Error: TLS key negotiation failed to occur within 60 seconds (check your network connectivity) - FAQ do OpenVPN</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2016/06/pfsense-vpn-01.png" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Antônio Vinícius</name><email>vinyanalista@gmail.com</email></author><summary type="html">Se possuímos em uma mesma rede pfSense e Active Directory (AD), algumas possibilidades interessantes surgem, como: permitir que os administradores da rede (e apenas eles) acessem o pfSense com seus logins e senhas do AD; permitir acesso remoto via VPN utilizando os mesmos logins e senhas do AD; e exigir login e senha do AD para que se possa navegar na rede Wi-Fi (ou em qualquer outra rede). Nesse post, você verá como explorar essas possibilidades. webConfigurator autenticando no AD A interface web utilizada para configurar o pfSense é chamada de webConfigurator. Para acessá-la, devemos fornecer nome de usuário (username) e senha (password): Podemos configurá-la para que esse acesso utilize as mesmas credenciais do AD. Para isso, precisaremos criar uma conta de usuário no AD para o pfSense, para que ele possa se conectar ao AD e validar as credenciais fornecidas na tela de login: Observe que o pfSense precisa de uma conta só para ele porque o AD, por padrão, não permite conexão anônima (anonymous bind). Essa conta pode ser uma conta de usuário simples, não precisa de privilégios elevados. Recomendo que você utilize uma senha aleatória gerada pelo site RANDOM.ORG. Você pode verificar que ela é segura no site How Secure Is My Password? Desative a alteração de senha no próximo logon e também a expiração da senha: Agora acesse a interface web do pfSense com um usuário local (por padrão, caso você não tenha alterado após a instalação, nome de usuário admin e senha pfsense, se você não alterou essa senha, recomendo que altere). Vá em System, User Manager, aba Authentication Servers e clique no botão Add. Preencha o formulário com as informações sobre o seu domínio (a seguir, apresento exemplos, mas você deve alterar de acordo com a sua realidade): Descriptive name: AD da MINHACASA Type: selecione LDAP Hostname or IP address: 10.200.1.30 ou ad.minhacasa.net (endereço IP ou nome de máquina completo do controlador de domínio) Search scope: Level: selecione Entire Subtree (pesquisar em toda a árvore do AD) Base DN: DC=minhacasa,DC=net Authentication containers: CN=Users Desmarcar a opção Use anonymous binds to resolve distinguished names Bind credentials: User DN: CN=pfSense,CN=Users,DC=minhacasa,DC=net Password: a senha do usuário criado para o pfSense Initial Template: selecione Microsoft AD Para as demais opções, o padrão deve ser suficiente. Talvez você precise alterá-las de acordo com a configuração do seu controlador de domínio. Abaixo você pode ver o formulário completo, depois de preenchido: Clique em Save. Agora, vamos testar se o pfSense consegue autenticar um usuário do AD. Para isso, vá em Diagnostics, Authentication. Em Authentication Server, selecione o AD que você acabou de cadastrar. Informe um nome de usuário e senha e clique em Test: Se você digitou corretamente o nome de usuário e a senha, o pfSense deve mostrar uma mensagem de sucesso e listar os grupos do usuário, como na imagem acima. Para que possamos acessar o webConfigurator com nossa conta do AD, ainda faltam mais duas configurações. Vamos dar permissão a um grupo do AD para acessar todas as configurações (o grupo que contém os administradores de rede, por exemplo, TI-REDES). Vá em System, User Manager, aba Groups e clique no botão Add. Preencha o formulário com as informações sobre o grupo: Group name: TI-REDES Scope: selecione Remote Description: Administradores da rede (um texto apenas para informação) Clique em Save. De volta à tela que lista os grupos, na linha do grupo que acabamos de criar, clique no ícone do lápis para editar o grupo. Na sessão Assigned Privileges, clique no botão Add. Selecione o privilégio WebCfg - All pages e clique em Save: De volta à tela anterior, clique em Save. Finalmente, vamos dizer que o AD é onde o pfSense deve buscar os usuários. Clique na aba Settings. Em Authentication Server, selecione o AD. Clique em Save: Faça log out do webConfigurator e entre de novo, dessa vez utilizando sua conta do AD (deve ser uma conta pertencente ao grupo configurado). Deve funcionar. Se você fizer um teste utilizando uma conta do AD sem permissões previamente concedidas, o pfSense informará que não há uma página configurada para o usuário e oferecerá somente a opção de fazer log out: Você pode conceder diferentes permissões a diferentes grupos de usuários, por exemplo: Técnicos do Suporte (grupo TI-SUPORTE) podem acessar a lista de concessões DHCP para verificar qual endereço IP determinado computador recebeu, além de poder enviar comandos Wake-on-LAN para ligar computadores pela rede, para isso são necessárias as permissões: WebCfg - Status: DHCP leases WebCfg - Services: Wake-on-LAN Programadores (grupo TI-DESENV, assim nomeado porque o pfSense não aceita um nome de grupo maior que 16 caracteres) podem acessar as configurações do portal de captura (captive portal) para personalizar as páginas HTML do portal de captura, para isso são necessárias as permissões: WebCfg - Services: Captive portal WebCfg - Services: Captive portal: Edit Zones WebCfg - Services: Captive portal: File Manager WebCfg - Services: Captive portal Zones Observe que, depois de tudo isso, ainda é possível entrar no webConfigurator com o usuário local admin do pfSense. Por isso, é importante mudar a senha dele. VPN autenticando no AD No post anterior, vimos como configurar uma VPN utilizando pfSense e OpenVPN. Recomendo que você siga todo aquele passo a passo e faça o teste da VPN utilizando o usuário local criado no tutorial especificamente para testar a VPN. Vejamos agora como ajustar aquela configuração para que seja possível conectar à VPN informando login e senha do AD. No pfSense, vá em VPN, OpenVPN, aba Servers. Clique no ícone do lápis para editar o servidor OpenVPN. No campo Backend for authentication, em vez de Local Database, selecione o AD: Clique no botão Save, ao final da página. Agora vamos obter a configuração que deve ser usada com o cliente OpenVPN. Diferente do tutorial anterior, em que baixamos do pfSense o instalador com cliente e configuração já prontos, aqui vamos baixar do pfSense apenas a configuração. Vá em VPN, OpenVPN, aba Client Export. Na linha referente a um usuário local qualquer (seguindo o exemplo do post anterior, vinyanalista), clique no botão Others, abaixo de Inline Configurations, para baixar um arquivo contendo a configuração do cliente OpenVPN: Ele deve se chamar algo como firewall-udp-1194-vinyanalista-config.ovpn. Você pode renomeá-lo para, por exemplo, vpn-da-minhacasa.ovpn. No computador cliente (veremos aqui instruções para Windows), baixe e instale o software cliente do site do OpenVPN. A instalação é bem simples: no famoso estilo next, next, next. Recomendo, se possível, remover qualquer versão mais antiga, incluindo arquivos de configuração (para referência, no momento da escrita o cliente oficial do OpenVPN se encontra na versão 2.4.0, lançada em dezembro de 2016). Terminada a instalação, copie o arquivo de configuração para a pasta onde o cliente OpenVPN guarda suas configurações: No computador que eu utilizei, o caminho para essa pasta foi C:\Arquivos de Programas\OpenVPN\config. Depois disso, é só iniciar o cliente OpenVPN, como explicado no post anterior, e informar o usuário e a senha do AD para se conectar à VPN. Deve funcionar normalmente. Para Android, as instruções são bem semelhantes: baixe e instale o software cliente pela Play Store e baixe pelo pfSense o arquivo de configuração clicando no botão Android, abaixo de Inline Configurations. Esse arquivo deve se chamar algo como firewall-udp-1194-vinyanalista-android-config.ovpn. Você pode renomeá-lo para, por exemplo, vpn-da-minhacasa-android.ovpn e utilizá-lo no cliente OpenVPN, como mostrado no post anterior. Lembre-se de agora utilizar usuário e senha do AD. Restringindo o acesso à VPN a um grupo do AD Configurando a VPN como foi explicado acima, qualquer pessoa pode se conectar à VPN utilizando suas credenciais do AD. Que tal adicionar um certo controle permitindo que apenas usuários pertencentes a determinado grupo se conectem? Para isso, crie no AD um grupo chamado PFSENSE-VPN. Adicione a esse grupo os usuários que poderão se conectar à VPN. No pfSense, vá em System, User Manager, aba Authentication Servers e clique no botão Add. Preencha esse formulário com as mesmas informações que você informou antes, como se fosse cadastrar o AD de novo (de certa forma, é o que estamos fazendo, mas aqui seremos mais específicos). Ainda não clique em Save. Mude o nome (Descriptive name) para AD da MINHACASA - grupo PFSENSE-VPN. Ative a opção Enable extended query e preencha o campo Query com: 1 &amp;amp;(objectCategory=user)(memberOf=CN=PFSENSE-VPN,CN=Users,DC=minhacasa,DC=net) Agora sim clique em Save. Vá em VPN, OpenVPN, aba Servers. Clique no ícone do lápis para editar o servidor OpenVPN. No campo Backend for authentication, selecione AD da MINHACASA - grupo PFSENSE-VPN. Clique no botão Save, ao final da página. Teste essa configuração tentando se conectar à VPN com um usuário que pertence e outro que não pertence ao grupo PFSENSE-VPN. Deve funcionar só no primeiro caso. Você pode no AD tornar o grupo TI-REDES membro do grupo PFSENSE-VPN. Assim, por transitividade, todos os administradores da rede ganham permissão para usar a VPN, sem a necessidade de ter que adicioná-los um por um ao grupo PFSENSE-VPN. Rede Wi-Fi autenticando no AD Que tal prover para os funcionários da empresa uma rede Wi-Fi, mas só liberar o acesso mediante o fornecimento de login e senha do AD? Como ainda não fiz um post sobre como gerenciar uma rede Wi-Fi com o pfSense, decidi deixar esse tópico para o próximo post. Siga-me para ser notificado quando ele for publicado. No final das contas, percebi que este post acabou sendo uma atualização do anterior, acrescentando a integração com o Active Directory. No próximo post, teremos como novidade a rede Wi-Fi, incluindo a autenticação dela no AD. Referências Muito do que escrevi aqui aprendi na tentativa e erro e evoluindo conforme as demandas que iam surgindo no trabalho. Mas claro que comecei lendo alguns textos: Tutorial PFFense 2.0: Active Directory -&amp;gt; User Manager (sic) pfSense 2.0 e OpenVPN Autenticando no Windows 2008 : Thiago Melo ldap authentication against security group: PFSENSE</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://vinyanalista.github.io/files/2017/01/pfsense-ad-01.png" /></entry></feed>
