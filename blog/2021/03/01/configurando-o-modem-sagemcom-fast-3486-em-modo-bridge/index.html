@@ -17,10 +17,10 @@
         </script>
     
 
-    <title>Configurando o modem HUMAX HG100R-L4 em modo bridge - Antônio Vinícius</title>
+    <title>Configurando o modem Sagemcom F@ST 3486 em modo bridge - Antônio Vinícius</title>
     <meta name="author" content="Antônio Vinícius">
     <meta name="description" content="Uma bridge (“ponte”, em inglês) é um dispositivo de rede que une duas redes a nível de camada 2 do modelo OSI (camada de enlace). Normalmente, o modem da ope...">
-    <link rel="canonical" href="https://vinyanalista.github.io/blog/2020/08/14/configurando-o-modem-humax-hg100r-l4-em-modo-bridge/">
+    <link rel="canonical" href="https://vinyanalista.github.io/blog/2021/03/01/configurando-o-modem-sagemcom-fast-3486-em-modo-bridge/">
     <link rel="alternate" type="application/rss+xml" title="Antônio Vinícius" href="https://vinyanalista.github.io/feed.xml" />
 
     <!-- OpenSearch -->
@@ -28,7 +28,7 @@
 
     <!-- Open Graph -->
     
-        <meta property="article:published_time" content="2020-08-14 00:15:00 -0300"/>
+        <meta property="article:published_time" content="2021-03-01 01:00:00 -0300"/>
         
             <meta property="article:publisher" content="https://facebook.com/pages/vinyanalistacombr/1604841683119097" />
         
@@ -39,12 +39,12 @@
     
     <meta property="og:description" content="Uma bridge (“ponte”, em inglês) é um dispositivo de rede que une duas redes a nível de camada 2 do modelo OSI (camada de enlace). Normalmente, o modem da ope..." />
     
-        <meta property="og:image" content="https://vinyanalista.github.io/files/2020/08/modem-bridge.jpg" />
+        <meta property="og:image" content="https://vinyanalista.github.io/files/2021/03/modem-bridge-sagemcom.jpg" />
     
     <meta property="og:site_name" content="Antônio Vinícius" />
-    <meta property="og:title" content="Configurando o modem HUMAX HG100R-L4 em modo bridge" />
+    <meta property="og:title" content="Configurando o modem Sagemcom F@ST 3486 em modo bridge" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://vinyanalista.github.io/blog/2020/08/14/configurando-o-modem-humax-hg100r-l4-em-modo-bridge/" />
+    <meta property="og:url" content="https://vinyanalista.github.io/blog/2021/03/01/configurando-o-modem-sagemcom-fast-3486-em-modo-bridge/" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary" />
@@ -110,7 +110,7 @@
                 ui_language: 'pt'
             };
             var addthis_share = {
-                url: 'https://vinyanalista.github.io/blog/2020/08/14/configurando-o-modem-humax-hg100r-l4-em-modo-bridge/',
+                url: 'https://vinyanalista.github.io/blog/2021/03/01/configurando-o-modem-sagemcom-fast-3486-em-modo-bridge/',
                 title: document.title,
                 description: 'Uma bridge (“ponte”, em inglês) é um dispositivo de rede que une duas redes a nível de camada 2 do modelo OSI (camada de enlace). Normalmente, o modem da operadora atua como roteador (router), ou seja, atua na camada 3 (camada de rede), separando a rede de casa e a rede da operadora em espaços...'
             };
@@ -200,19 +200,19 @@
                         <div class="blog-post card mb-3">
     <header class="card-header">
         <h1 class="blog-post-title" itemprop="headline name">
-            <a class="blog-post-link" href="/blog/2020/08/14/configurando-o-modem-humax-hg100r-l4-em-modo-bridge/" itemprop="mainEntityOfPage url">
-                Configurando o modem HUMAX HG100R-L4 em modo bridge
+            <a class="blog-post-link" href="/blog/2021/03/01/configurando-o-modem-sagemcom-fast-3486-em-modo-bridge/" itemprop="mainEntityOfPage url">
+                Configurando o modem Sagemcom F@ST 3486 em modo bridge
             </a>
         </h1>
         <div class="blog-post-meta row">
             <div class='col-sm-6'>
-                <p class="blog-post-date" itemprop="datePublished" content="2020-08-14">
-                    <a href="/blog/2020/08/14/">
-                        14 de
+                <p class="blog-post-date" itemprop="datePublished" content="2021-03-01">
+                    <a href="/blog/2021/03/01/">
+                        01 de
                         
-                        Agosto
+                        Março
                         
-                        de 2020
+                        de 2021
                     </a>
                 </p>
                 <meta itemprop="dateModified" content="2021-03-01" />
@@ -254,20 +254,20 @@
         <div itemprop="articleBody mainEntity">
             <p>Uma <em><strong><a href="https://pt.wikipedia.org/wiki/Bridge_(redes_de_computadores)">bridge</a></strong></em> (“ponte”, em inglês) é um dispositivo de rede que une duas redes a nível de camada 2 do <a href="https://pt.wikipedia.org/wiki/Modelo_OSI">modelo OSI</a> (camada de enlace). Normalmente, o modem da operadora atua como <strong><a href="https://pt.wikipedia.org/wiki/Roteador">roteador</a></strong> (<em>router</em>), ou seja, atua na camada 3 (camada de rede), separando a rede de casa e a rede da operadora em espaços de endereços IP diferentes.</p>
 
-<p>Se você tem outro roteador, como o <a href="/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/">MikroTik</a> do qual tenho falado nos meus últimos <em>posts</em>, pode ser interessante mudar o modem da operadora para o modo <em>bridge</em>, o que faz com que seu outro roteador entre em contato direto com a rede da operadora, recebendo um endereço IP desta, e sendo o único responsável por gerenciar toda a rede da sua casa.</p>
+<p>Se você tem outro roteador, como o <a href="/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/">MikroTik</a> do qual já falei aqui em alguns <em>posts</em>, pode ser interessante mudar o modem da operadora para o modo <em>bridge</em>, o que faz com que seu outro roteador entre em contato direto com a rede da operadora, recebendo um endereço IP desta, e sendo o único responsável por gerenciar toda a rede da sua casa.</p>
 
 <p>Tentando usar uma linguagem menos técnica, tornar o modem da operadora uma <em>bridge</em> na prática seria como anulá-lo, ele passa a fazer apenas o “leva e traz” de dados na rede, enquanto quem faz o “trabalho pesado” mesmo é o roteador conectado a ele.</p>
 
 <div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
-<a href="/files/2020/08/modem-bridge.jpg" title="">
-<img src="/files/2020/08/modem-bridge.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+<a href="/files/2021/03/modem-bridge-sagemcom.jpg" title="">
+<img src="/files/2021/03/modem-bridge-sagemcom.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
 </div>
 
 <p>Se você, assim como eu, confia mais no seu roteador do que no equipamento da operadora, configurar o modem em modo <em>bridge</em> pode trazer mais segurança para a rede da sua casa.</p>
 
-<p>Hoje eu sou cliente da <a href="https://www.claro.com.br/">Claro</a> e tenho em minha casa o modem HUMAX HG100R-L4 e o roteador <a href="/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/">MikroTik hAP ac lite TC</a>. Vou mostrar como deixar o modem HG100R-L4 em modo <em>bridge</em> e o MikroTik como único roteador da casa.</p>
+<p>Hoje eu sou cliente da <a href="https://www.claro.com.br/">Claro</a> e tenho em minha casa o modem Sagemcom F@ST 3486 e o roteador <a href="/blog/2020/07/20/primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa/">MikroTik hAP ac lite TC</a>. Vou mostrar como deixar o modem Sagemcom em modo <em>bridge</em> e o MikroTik como único roteador da casa.</p>
 
 <div class="alert alert-warning" role="alert">
 
@@ -292,60 +292,75 @@
 
 <p>Abra o navegador e acesse a interface <em>web</em> do <em>modem</em> da operadora. O endereço IP, assim como o <em>login</em> e senha que você vai usar para acessar essa interface comumente podem ser encontrados em uma etiqueta no próprio modem ou fazendo uma pesquisa na Internet.</p>
 
-<p>No caso do modem HUMAX HG100R-L4, o endereço IP é <a href="http://192.168.0.1">192.168.0.1</a> e o <em>login</em> e senha estão em uma etiqueta no próprio modem:</p>
+<p>No caso do modem Sagemcom F@ST 3486, o endereço IP é <a href="http://192.168.0.1">192.168.0.1</a>, o <em>login</em> é <code class="highlighter-rouge">admin</code> e a senha também é <code class="highlighter-rouge">admin</code>:</p>
 
 <div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
-<a href="/files/2020/08/modem-bridge-01.png" title="">
-<img src="/files/2020/08/modem-bridge-01.png" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+<a href="/files/2021/03/modem-bridge-01.jpg" title="">
+<img src="/files/2021/03/modem-bridge-01.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
 </div>
 
-<p>A tela inicial resume as informações da conexão e traz as configurações mais comuns, que são o nome e a senha da rede Wi-Fi. Acesse as configurações avançadas clicando em <strong>Advanced Network Settings</strong> (configurações avançadas de rede):</p>
+<p>A tela inicial resume as informações da conexão e traz as configurações mais comuns, que são o nome e a senha da rede Wi-Fi. Clique em <strong>Configurações avançadas</strong>, no canto superior direito da tela:</p>
 
 <div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
-<a href="/files/2020/08/modem-bridge-02.jpg" title="">
-<img src="/files/2020/08/modem-bridge-02.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+<a href="/files/2021/03/modem-bridge-02.jpg" title="">
+<img src="/files/2021/03/modem-bridge-02.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
 </div>
 
 <h3 id="fazendo-backup-da-configuração-atual">Fazendo backup da configuração atual</h3>
 
-<p>Nas configurações avançadas, selecione <strong>básico</strong> no menu à esquerda, depois <strong>Back Up</strong>. Selecione <strong>Salve Status Atual</strong> e clique em <strong>aplicar</strong> para baixar a configuração atual do modem:</p>
+<p>Clique em <strong>Menu</strong>, no canto superior esquerdo da tela, expanda <strong>Administração</strong> e clique em <strong>Backup</strong>:</p>
 
 <div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
-<a href="/files/2020/08/modem-bridge-03.jpg" title="">
-<img src="/files/2020/08/modem-bridge-03.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+<a href="/files/2021/03/modem-bridge-03.jpg" title="">
+<img src="/files/2021/03/modem-bridge-03.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
 </div>
 
-<p>O navegador vai baixar um arquivo chamado <code class="highlighter-rouge">GatewaySettings.bin</code>. Salve esse arquivo em um local seguro, que você se lembre depois, pro caso de precisar restaurar o <em>backup</em>.</p>
+<p>Clique em <strong>Backup</strong> para baixar a configuração atual do modem:</p>
+
+<div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
+<a href="/files/2021/03/modem-bridge-04.jpg" title="">
+<img src="/files/2021/03/modem-bridge-04.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+</a>
+
+</div>
+
+<p>O navegador vai baixar um arquivo chamado <code class="highlighter-rouge">backupsettings.conf</code>. Salve esse arquivo em um local seguro, que você se lembre depois, pro caso de precisar restaurar o <em>backup</em>.</p>
 
 <h3 id="desativando-a-rede-wi-fi-do-modem">Desativando a rede Wi-Fi do modem</h3>
 
-<p>Na interface <em>web</em> do modem, selecione <strong>Sem fio</strong> no menu à esquerda, depois <strong>Rede Primária</strong>. À direita, marque a opção <strong>Inválido</strong> e depois clique em <strong>aplicar</strong>:</p>
+<p>Na interface <em>web</em> do modem, abra o <strong>Menu</strong>, expanda <strong>Wi-Fi</strong> e clique em <strong>Rádio</strong>.</p>
+
+<p>A rede de <strong>2.4 GHz</strong> já vem selecionada por padrão, desmarque a opção <strong>Ativar</strong>:</p>
 
 <div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
-<a href="/files/2020/08/modem-bridge-04.jpg" title="">
-<img src="/files/2020/08/modem-bridge-04.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+<a href="/files/2021/03/modem-bridge-05.jpg" title="">
+<img src="/files/2021/03/modem-bridge-05.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
 </div>
+
+<p>Depois, selecione a rede de <strong>5 GHz</strong> e também desmarque a opção <strong>Ativar</strong>.</p>
+
+<p>Desça até o final da página e clique em <strong>Aplicar Ajustes</strong>.</p>
 
 <h3 id="ativando-o-modo-bridge">Ativando o modo bridge</h3>
 
-<p>Ainda nas configurações avançadas do modem, selecione <strong>básico</strong> no menu à esquerda, depois <strong>Definir</strong>. Role a página à direita até encontrar a opção <strong>Modo Switch</strong> e defina-a como <strong>Bridge</strong>:</p>
+<p>Abra o <strong>Menu</strong>, expanda <strong>Rede</strong> e clique em <strong>Configurações Básicas</strong>. Role a página até encontrar a opção <strong>Tipo de conexão WAN</strong> e defina-a como <strong>Bridge Mode</strong>:</p>
 
 <div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
-<a href="/files/2020/08/modem-bridge-05.jpg" title="">
-<img src="/files/2020/08/modem-bridge-05.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+<a href="/files/2021/03/modem-bridge-06.jpg" title="">
+<img src="/files/2021/03/modem-bridge-06.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
 </div>
 
-<p>Chegamos ao ponto de não retorno. Clique em <strong>aplicar</strong> para ativar o modo <em>bridge</em>.</p>
+<p>Chegamos ao ponto de não retorno. Clique em <strong>Aplicar Ajustes</strong> para ativar o modo <em>bridge</em>.</p>
 
 <p>O modem será reiniciado. Você pode fechar a janela do navegador.</p>
 
@@ -358,17 +373,13 @@
 5
 6
 7
-8
-9
 </pre></td><td class="rouge-code"><pre>$ ping 8.8.8.8
 ...
-From 10.0.0.1 icmp_seq=95 Destination Net Unreachable
-From 10.0.0.1 icmp_seq=96 Destination Net Unreachable
-From 10.0.0.1 icmp_seq=97 Destination Net Unreachable
-64 bytes from 8.8.8.8: icmp_seq=98 ttl=115 time=28.3 ms
-64 bytes from 8.8.8.8: icmp_seq=99 ttl=115 time=30.1 ms
-64 bytes from 8.8.8.8: icmp_seq=100 ttl=115 time=25.9 ms
-64 bytes from 8.8.8.8: icmp_seq=101 ttl=115 time=31.7 ms
+From 10.0.0.1 icmp_seq=156 Destination Net Unreachable
+64 bytes from 8.8.8.8: icmp_seq=157 ttl=114 time=49.0 ms
+64 bytes from 8.8.8.8: icmp_seq=158 ttl=114 time=194 ms
+64 bytes from 8.8.8.8: icmp_seq=159 ttl=114 time=138 ms
+64 bytes from 8.8.8.8: icmp_seq=160 ttl=114 time=52.0 ms
 </pre></td></tr></tbody></table></code></pre></div></div>
 
 <h2 id="verificando-a-conexão-do-roteador">Verificando a conexão do roteador</h2>
@@ -384,28 +395,22 @@ From 10.0.0.1 icmp_seq=97 Destination Net Unreachable
 
 </div>
 
-<p>No meu exemplo, o MikroTik obteve o endereço IP <code class="highlighter-rouge">100.64.198.110/19</code>:</p>
+<p>No meu exemplo, o MikroTik obteve o endereço IP <code class="highlighter-rouge">179.216.177.166/21</code>:</p>
 
 <div class="image no-ads-here text-center mb-3" itemscope="" itemtype="http://schema.org/ImageObject">
-<a href="/files/2020/08/modem-bridge-07.jpg" title="">
-<img src="/files/2020/08/modem-bridge-07.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
+<a href="/files/2021/03/modem-bridge-07.jpg" title="">
+<img src="/files/2021/03/modem-bridge-07.jpg" alt="" class="img-fluid img-thumbnail" itemprop="contentUrl" />
 </a>
 
 </div>
 
-<p>(se a notação <code class="highlighter-rouge">/19</code> é nova para você — eu só a conheci quando tive a oportunidade de trabalhar com redes — ela quer dizer que os primeiros 19 <em>bits</em> do endereço IP identificam a rede, para mais informações procure saber sobre <a href="https://www.hardware.com.br/dicas/entendendo-cidr.html">CIDR</a>)</p>
+<p>(se a notação <code class="highlighter-rouge">/21</code> é nova para você — eu só a conheci quando tive a oportunidade de trabalhar com redes — ela quer dizer que os primeiros 21 <em>bits</em> do endereço IP identificam a rede, para mais informações procure saber sobre <a href="https://www.hardware.com.br/dicas/entendendo-cidr.html">CIDR</a>)</p>
 
 <h2 id="acessando-a-interface-web-da-bridge">Acessando a interface web da bridge</h2>
 
-<p>No futuro, caso precise usar a interface <em>web</em> do modem, que agora está em modo <em>bridge</em> — por exemplo, para restaurar o <em>backup</em> das configurações do modem, desativando assim o modo <em>bridge</em> — abra o navegador e acesse o endereço IP <a href="http://192.168.100.1">192.168.100.1</a>.</p>
+<p>No futuro, caso precise usar a interface <em>web</em> do modem, que agora está em modo <em>bridge</em> — por exemplo, para restaurar o <em>backup</em> das configurações do modem, desativando assim o modo <em>bridge</em> — abra o navegador e acesse o mesmo endereço IP de antes: <a href="http://192.168.0.1">192.168.0.1</a>.</p>
 
 <p>Não sei como a <em>bridge</em> responde por esse endereço IP, dado que ela não atua na camada 3 (camada de rede) do modelo OSI. Só sei que funciona. Parece mágica…</p>
-
-<h2 id="notas-sobre-carrier-grade-nat">Notas sobre carrier-grade NAT</h2>
-
-<p>O endereço IP <code class="highlighter-rouge">100.64.198.110/19</code> pertence à rede <code class="highlighter-rouge">100.64.192.0</code>. Não se trata de um endereço IP “real” (ou público), como seria de se esperar há alguns anos, mas de um <a href="https://pt.wikipedia.org/wiki/Rede_privada">endereço IP privado</a> dentro da rede da operadora. Endereços IP como esse passaram a ser distribuídos para roteadores domésticos após o <a href="https://pt.wikipedia.org/wiki/Exaustão_do_IPv4">esgotamento dos endereços IPv4</a>. As operadoras adotaram uma prática chamada de <a href="https://pt.wikipedia.org/wiki/Carrier_Grade_NAT"><em>carrier-grade</em> NAT (CGN)</a>, que reserva o bloco <code class="highlighter-rouge">100.64.0.0/10</code> para a atribuição de endereços IP às residências.</p>
-
-<p>A <em>carrier-grade</em> NAT impossibilita a hospedagem de serviços e o redirecionamento de portas (com isso, você não pode servir um <em>site</em> para o mundo a partir do seu computador de casa, por exemplo), mas é um “mal necessário” para viabilizar o uso de redes IPv4 hoje em dia, dado que os endereços IPv4 já se esgotaram. Caso você precise de um endereço IP público, uma alternativa é verificar junto à operadora a possibilidade de alugar um (a um custo adicional). Outra alternativa é ativar o <a href="http://ipv6.br/">IPv6</a>, que veremos oportunamente como fazer.</p>
 
 <h2 id="por-que-eu-uso-o-modo-bridge">Por que eu uso o modo bridge</h2>
 
@@ -456,8 +461,8 @@ From 10.0.0.1 icmp_seq=97 Destination Net Unreachable
 <h2 id="referências">Referências</h2>
 
 <ul>
-  <li><a href="https://www.net.com.br/documento/2019/07/01/hg100rl4_user_guide.pdf">Manual de usuário do HG100R-L4</a></li>
-  <li><a href="https://www.youtube.com/watch?v=k7uDrhdEPTI">Configurando Modem da NET em Bridge HUMAX HG100R-L4</a></li>
+  <li><a href="https://www.net.com.br/documento/2019/07/01/hg100rl4_user_guide.pdf">Manual de usuário do Sagemcom Fast 3184</a> (modelo parecido)</li>
+  <li><a href="https://www.youtube.com/watch?v=k7uDrhdEPTI">Colocar o modem da net Sagemcom F@ST3486 NET DOCSIS 3.0 em modo brigge</a></li>
 </ul>
 
 
@@ -488,7 +493,7 @@ From 10.0.0.1 icmp_seq=97 Destination Net Unreachable
             <div id="disqus_thread"></div>
             <script>
                 var disqus_config = function () {
-                    this.page.url = 'https://vinyanalista.github.io/blog/2020/08/14/configurando-o-modem-humax-hg100r-l4-em-modo-bridge/';
+                    this.page.url = 'https://vinyanalista.github.io/blog/2021/03/01/configurando-o-modem-sagemcom-fast-3486-em-modo-bridge/';
                 };
 
                 (function() {
@@ -595,7 +600,7 @@ From 10.0.0.1 icmp_seq=97 Destination Net Unreachable
 
 
     <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-        <meta itemprop="url" content="https://vinyanalista.github.io/files/2020/08/modem-bridge.jpg"/>
+        <meta itemprop="url" content="https://vinyanalista.github.io/files/2021/03/modem-bridge-sagemcom.jpg"/>
         <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
         <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
     </div>
